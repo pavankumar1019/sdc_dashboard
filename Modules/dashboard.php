@@ -274,10 +274,10 @@
             $title = isset($_GET['page']) ? ucwords(str_replace("_", ' ', $_GET['page'])) : "home";
              ?>
             <?php 
-            if(!file_exists('./modules/pages/'.$page.".php")){
+            if(!file_exists('./Modules/pages/'.$page.".php")){
               include './404.html';
             }else{
-            include './modules/pages/'.$page.'.php';
+            include './Modules/pages/'.$page.'.php';
             }
           ?>
             <!-- menu active function -->
