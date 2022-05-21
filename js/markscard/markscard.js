@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(document).on('click', '#print', function(){ 
 
-window.open("http://sdccollegebpet.in/php/sdccollege/Modules/api/markscard/index.php?reg_no="+$(this).attr('data-id'), "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
+window.open("http://sdccollegebpet.in/Modules/api/markscard/index.php?reg_no="+$(this).attr('data-id'), "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
 
   })
 
@@ -21,7 +21,7 @@ window.open("http://sdccollegebpet.in/php/sdccollege/Modules/api/markscard/index
     $('#print_all').click(function(){
       // window.open('http://localhost/php/sdccollege/Modules/api/markscard/index.php?reg_no=');
     // window.location = 'http://localhost/php/sdccollege/Modules/api/markscard/index.php?reg_no=';
-    window.open("http://sdccollegebpet.in/php/sdccollege/Modules/api/markscard/index.php?reg_no=", "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
+    window.open("http://sdccollegebpet.in/Modules/api/markscard/index.php?reg_no=", "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
 
     })
     // print function
