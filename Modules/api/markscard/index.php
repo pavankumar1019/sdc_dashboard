@@ -58,7 +58,7 @@ function numberTowords(float $number)
     $digits_length = strlen($no);
     $i = 0;
     $str = array();
-    $words = array(0 => '', 1 => 'One', 2 => 'Two',
+    $words = array(0 => 'Zero', 1 => 'One', 2 => 'Two',
         3 => 'Three', 4 => 'Four', 5 => 'Five', 6 => 'Six',
         7 => 'Seven', 8 => 'Eight', 9 => 'Nine',
         10 => 'Ten', 11 => 'Eleven', 12 => 'Twelve',
@@ -75,8 +75,8 @@ function numberTowords(float $number)
         $i += $divider == 10 ? 1 : 2;
         if ($number) {
             $plural = (($counter = count($str)) && $number > 9) ? 's' : null;
-            $hundred = ($counter == 1 && $str[0]) ? 'and ' : null;
-            $str [] = ($number < 21) ? $words[$number].' '. $digits[$counter]. $plural.' '.$hundred:$words[floor($number / 10) * 10].''.$words[$number % 10]. ' '.$digits[$counter].$plural.' '.$hundred;
+            $hundred = ($counter == 1 && $str[0]) ? 'and' : null;
+            $str [] = ($number < 21) ? $words[$number].' '. $digits[$counter]. $plural.' '.$hundred:$words[floor($number / 10) * 10].' '.$words[$number % 10]. ' '.$digits[$counter].$plural.' '.$hundred;
         } else $str[] = null;
     }
     $Rupees = implode('', array_reverse($str));
