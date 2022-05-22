@@ -67,8 +67,8 @@ $('#data').html(dataReasult);
             data: form_data,                         
             type: 'post',
             success: function(dataReasult){
-           
-           $('#mssg').html(dataReasult);
+              loadtable('');
+         
             }
          });
       }
@@ -97,7 +97,7 @@ $('#data').html(dataReasult);
                   data: form_data,                         
                   type: 'post',
                   success: function(dataReasult){
-
+                    loadtable('');
                   }
                });
             }
