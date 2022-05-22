@@ -304,7 +304,7 @@ else
    <td>100</td>
    <td>35</td>
    <td><?php echo $row['l1'];?></td>
-   <td><?php echo numberTowords($row['l2']);?></td>
+   <td><?php echo numberTowords($row['l1']);?></td>
    <td rowspan="7" colspan="2"><?php classobtained($row['gt'])?>%
    </td>
 
