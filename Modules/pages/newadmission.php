@@ -11,10 +11,10 @@
                 <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
             </div>
             <div class="form-group col-md-6">
-            <label for="inputAddress">Date of Birth</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group col-md-3">
+                <label for="inputAddress">Date of Birth</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group col-md-3">
                 <label for="inputState">Gender</label>
                 <select id="inputState" class="form-control">
                     <option selected>Choose...</option>
@@ -23,12 +23,12 @@
 
                 </select>
             </div>
-        <div class="form-group">
-            <label for="inputAddress2 col-md-3">Place of Birth</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        
-        <div class="form-group col-md-2">
+            <div class="form-group">
+                <label for="inputAddress2 col-md-3">Place of Birth</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+
+            <div class="form-group col-md-2">
                 <label for="inputCity">District</label>
                 <input type="text" class="form-control" id="inputCity">
             </div>
@@ -56,14 +56,44 @@
                 <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
 
             </div>
-            <div class="col-12">            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-</div>
-            <div class="form-group col-md-4">
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <div class="form-group col-md-6">
                 <label for="inputZip">Telephone / Mobile No</label>
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">E-mail ID</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+            <div class="col-12">            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+</div>
+<div class="form-group col-md-6">
+                <label for="inputZip">Father Name</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Occupation</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+<div class="form-group col-md-6">
+                <label for="inputZip">Mother Name</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Occupation</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
         </div>
+
+
         <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
