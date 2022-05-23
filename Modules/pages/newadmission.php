@@ -91,6 +91,16 @@
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Name of the guardian :</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Guardian address</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
         </div>
 
 
