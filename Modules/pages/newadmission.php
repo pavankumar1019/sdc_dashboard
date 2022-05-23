@@ -51,9 +51,10 @@
                 <label for="inputZip">Subcaste</label>
                 <input type="text" class="form-control" id="inputZip">
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
                 <label for="inputZip">Adsress</label>
-                <input type="text" class="form-control" id="inputZip">
+                <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+
             </div>
         </div>
         <div class="form-group">
