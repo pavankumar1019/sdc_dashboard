@@ -56,7 +56,7 @@
                 <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
 
             </div>
-            <hr>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <div class="form-group col-md-4">
                 <label for="inputZip">Telephone / Mobile No</label>
                 <input type="text" class="form-control" id="inputZip">
