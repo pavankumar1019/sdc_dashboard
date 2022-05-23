@@ -188,16 +188,29 @@
                 <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
             </div>
             <div class="form-group col-md-4">
-            <label for="inputZip">Total Marks Obtained</label>
-                <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
+            <label for="inputZip">Marks Obtained</label>
+                <input type="text" class="form-control" placeholder="Science" id="inputZip" >
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Maths" id="inputZip" disabled>
+            </div>
+            <div class="form-group col-md-4">
+            <label for="inputZip"> Marks Obtained</label>
+                <input type="text" class="form-control" placeholder="Science" id="inputZip" >
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Social Science" id="inputZip" disabled>
+            </div>
+            <div class="form-group col-md-4">
+            <label for="inputZip"> Marks Obtained</label>
+                <input type="text" class="form-control" placeholder="Social Science" id="inputZip" >
             </div>
             <div class="form-group col-md-4">
             <label for="inputZip">% of Marks Obtained</label>
-                <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
+                <input type="text" class="form-control" placeholder="Science" id="inputZip" >
             </div>
             <div class="form-group col-md-4">
             <label for="inputZip">Result</label>
-                <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
                 <select id="inputState" class="form-control">
                     <option selected>Passed</option>
                     <option>Failed</option>
