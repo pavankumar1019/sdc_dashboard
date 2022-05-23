@@ -103,6 +103,14 @@
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
+            <div class="col-12">            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+</div>
+            <div class="form-group col-md-12">
+                <label for="inputZip">Parents Annual Income :</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+  
         </div>
 
 
