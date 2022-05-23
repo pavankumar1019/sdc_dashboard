@@ -1,3 +1,4 @@
+<div class="container">
 <form>
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -44,3 +45,4 @@
   </div>
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
+</div>
