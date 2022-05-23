@@ -53,7 +53,7 @@
             </div>
             <div class="form-group col-md-12">
                 <label for="inputZip">Adsress</label>
-                <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
 
             </div>
         </div>
