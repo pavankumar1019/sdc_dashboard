@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container p-5">
+    <h4>New Admissions</h4>
 <form>
   <div class="form-row">
     <div class="form-group col-md-6">
