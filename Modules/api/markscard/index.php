@@ -298,7 +298,7 @@ else
     <title>Marks Card</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body style="padding:10px;">
+<body>
     
 <?php
 
