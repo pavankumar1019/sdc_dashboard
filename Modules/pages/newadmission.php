@@ -91,6 +91,8 @@
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
+            <div class="col-12">            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+</div>
             <div class="form-group col-md-6">
                 <label for="inputZip">Name of the guardian :</label>
                 <input type="text" class="form-control" id="inputZip">
