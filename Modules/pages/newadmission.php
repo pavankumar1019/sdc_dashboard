@@ -144,6 +144,9 @@
             <div class="col-12">
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
+            <div class="col-12">
+            <label for="inputZip">Subjects studied in 10th Standard and marks obtained</label> <br>
+            </div>
             <div class="form-group col-md-6">
                 <label for="inputZip">Language 1</label>
                 <select id="inputState" class="form-control">
