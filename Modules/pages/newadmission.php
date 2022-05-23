@@ -69,9 +69,10 @@
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
-            <div class="col-12">            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-</div>
-<div class="form-group col-md-6">
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <div class="form-group col-md-6">
                 <label for="inputZip">Father Name</label>
                 <input type="text" class="form-control" id="inputZip">
 
@@ -81,7 +82,7 @@
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
-<div class="form-group col-md-6">
+            <div class="form-group col-md-6">
                 <label for="inputZip">Mother Name</label>
                 <input type="text" class="form-control" id="inputZip">
 
@@ -91,8 +92,9 @@
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
-            <div class="col-12">            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-</div>
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
             <div class="form-group col-md-6">
                 <label for="inputZip">Name of the guardian :</label>
                 <input type="text" class="form-control" id="inputZip">
@@ -103,14 +105,39 @@
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
-            <div class="col-12">            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-</div>
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
             <div class="form-group col-md-12">
                 <label for="inputZip">Parents Annual Income :</label>
                 <input type="text" class="form-control" id="inputZip">
 
             </div>
-  
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Name of previous school :</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Address of previous school</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="inputZip">Particulars of SSLC / Equivalent Exam Passed</label>
+                <label for="inputZip">Reg No. :</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Year of Passing</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
         </div>
 
 
