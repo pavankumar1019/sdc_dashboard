@@ -207,7 +207,7 @@
                 <li class="nav-item"> <a class="nav-link" href="#">TC - Generator</a></li>
                 <li class="nav-item"> <a class="nav-link" href="./default.php?page=mcgenerator">MC - Generator</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Study Certificates</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">New Addmission</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./default.php?page=newadmission">New Addmission</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">ID Card Generator</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">ADD Staff</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">ADD Student</a></li>
