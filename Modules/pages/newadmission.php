@@ -179,8 +179,7 @@
                     <option>Hindi</option>
                 </select>
             </div>
-            <div class="form-group col-md-12">
-            </div>
+            
             <div class="form-group col-md-6">
                 <label for="inputZip">Marks Obtained</label>
                 <input type="text" class="form-control" id="inputZip">
@@ -189,8 +188,6 @@
             <div class="form-group col-md-6">
                 <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
             </div>
-            <div class="form-group col-md-12">
-            </div>
             <div class="form-group col-md-4">
             <label for="inputZip">Marks Obtained</label>
                 <input type="text" class="form-control" placeholder="Science" id="inputZip" >
@@ -198,16 +195,12 @@
             <div class="form-group col-md-6">
                 <input type="text" class="form-control" placeholder="Maths" id="inputZip" disabled>
             </div>
-            <div class="form-group col-md-12">
-            </div>
             <div class="form-group col-md-4">
             <label for="inputZip"> Marks Obtained</label>
                 <input type="text" class="form-control" placeholder="Science" id="inputZip" >
             </div>
             <div class="form-group col-md-6">
                 <input type="text" class="form-control" placeholder="Social Science" id="inputZip" disabled>
-            </div>
-            <div class="form-group col-md-12">
             </div>
             <div class="form-group col-md-4">
             <label for="inputZip"> Marks Obtained</label>
