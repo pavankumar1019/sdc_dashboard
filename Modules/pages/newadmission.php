@@ -141,15 +141,82 @@
                 <label for="inputZip">Year of Passing</label>
                 <input type="text" class="form-control" id="inputZip">
             </div>
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Language 1</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Kannada</option>
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Marks Obtained</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Language 2</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Kannada</option>
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Marks Obtained</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Language 3</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Kannada</option>
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Marks Obtained</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+           
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
+            </div>
+            <div class="form-group col-md-4">
+            <label for="inputZip">Total Marks Obtained</label>
+                <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
+            </div>
+            <div class="form-group col-md-4">
+            <label for="inputZip">% of Marks Obtained</label>
+                <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
+            </div>
+            <div class="form-group col-md-4">
+            <label for="inputZip">Result</label>
+                <input type="text" class="form-control" placeholder="Science" id="inputZip" disabled>
+                <select id="inputState" class="form-control">
+                    <option selected>Passed</option>
+                    <option>Failed</option>
+
+                </select>
+            </div>
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
         </div>
 
 
         <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Check me out
-                </label>
+                <p class="form-check-label" for="gridCheck">
+             I hereby accept that the detailes furnished above are true and i abide to the rules and regulations of the education department / college during my child's study in the college .I also accept to compensate for any 
+             damages in causes by my child to institution.I also examin the child's progrees in accademics and attendence from time to time .      
+                </p>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
