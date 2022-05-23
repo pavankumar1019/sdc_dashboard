@@ -10,8 +10,7 @@
       <label for="inputPassword4">Student Aadhaar No.</label>
       <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
     </div>
-  </div>
-  <div class="form-group col-md-6">
+    <div class="form-group col-md-6">
     <label for="inputAddress">Date of Birth</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
   </div>
@@ -43,6 +42,8 @@
       <label for="inputZip">Subcaste</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
+  </div>
+ 
   </div>
   <div class="form-group">
     <div class="form-check">
