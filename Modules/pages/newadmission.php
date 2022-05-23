@@ -154,6 +154,7 @@
                     <option>Kannada</option>
                     <option>English</option>
                     <option>Hindi</option>
+                    <option>Sanskrit</option>
                 </select>
             </div>
             <div class="form-group col-md-6">
@@ -167,6 +168,7 @@
                     <option>Kannada</option>
                     <option>English</option>
                     <option>Hindi</option>
+                    <option>Sanskrit</option>
                 </select>
             </div>
             <div class="form-group col-md-6">
@@ -180,6 +182,7 @@
                     <option>Kannada</option>
                     <option>English</option>
                     <option>Hindi</option>
+                    <option>Sanskrit</option>
                 </select>
             </div>
             
