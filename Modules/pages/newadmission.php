@@ -11,16 +11,16 @@
       <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group col-md-6">
     <label for="inputAddress">Date of Birth</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
   </div>
   <div class="form-group">
-    <label for="inputAddress2">Place of Birth</label>
+    <label for="inputAddress2 col-md-3">Place of Birth</label>
     <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group col-md-3">
       <label for="inputCity">District</label>
       <input type="text" class="form-control" id="inputCity">
     </div>
@@ -31,15 +31,15 @@
         <option>...</option>
       </select>
     </div>
-    <div class="form-group col-md-2">
+    <div class="form-group col-md-4">
       <label for="inputZip">Religion</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
-    <div class="form-group col-md-2">
+    <div class="form-group col-md-4">
       <label for="inputZip">Caste</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
-    <div class="form-group col-md-2">
+    <div class="form-group col-md-4">
       <label for="inputZip">Subcaste</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
