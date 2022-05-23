@@ -14,10 +14,20 @@
             <label for="inputAddress">Date of Birth</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
         </div>
+        <div class="form-group col-md-3">
+                <label for="inputState">Gender</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+
+                </select>
+            </div>
         <div class="form-group">
             <label for="inputAddress2 col-md-3">Place of Birth</label>
             <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
         </div>
+        
         <div class="form-group col-md-3">
                 <label for="inputCity">District</label>
                 <input type="text" class="form-control" id="inputCity">
