@@ -1,7 +1,7 @@
 <div class="container p-5">
     <h3>New Admissions</h3>
     <form>
-        <div class="form-row">
+        <div class="form-row" style="font-weight:bold;">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">Name Of Student </label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
