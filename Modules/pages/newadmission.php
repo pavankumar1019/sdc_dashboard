@@ -28,7 +28,7 @@
             <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
         </div>
         
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-2">
                 <label for="inputCity">District</label>
                 <input type="text" class="form-control" id="inputCity">
             </div>
@@ -39,15 +39,15 @@
                     <option>...</option>
                 </select>
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-2">
                 <label for="inputZip">Religion</label>
                 <input type="text" class="form-control" id="inputZip">
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-2">
                 <label for="inputZip">Caste</label>
                 <input type="text" class="form-control" id="inputZip">
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-2">
                 <label for="inputZip">Subcaste</label>
                 <input type="text" class="form-control" id="inputZip">
             </div>
