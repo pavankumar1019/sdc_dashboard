@@ -68,8 +68,7 @@ $('#data').html(dataReasult);
             type: 'post',
             success: function(dataReasult){
               loadtable('');
-              alert('deployed Success !');
-         
+              $('#mssg').html(dataReasult);
             }
          });
       }
