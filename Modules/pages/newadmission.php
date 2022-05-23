@@ -4,15 +4,15 @@
         <div class="form-row" style="font-weight:bold;">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">Name Of Student </label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">Student Aadhaar No.</label>
-                <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
+                <input type="text" class="form-control" id="inputPassword4" placeholder="Aadhar No">
             </div>
             <div class="form-group col-md-6">
                 <label for="inputAddress">Date of Birth</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="date" class="form-control" id="inputAddress" >
             </div>
             <div class="form-group col-md-3">
                 <label for="inputState">Gender</label>
