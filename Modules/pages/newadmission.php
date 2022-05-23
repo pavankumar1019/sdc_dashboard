@@ -128,8 +128,11 @@
             <div class="col-12">
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
-            <div class="form-group col-md-6">
+            <div class="col-12">
             <label for="inputZip">Particulars of SSLC / Equivalent Exam Passed</label> <br>
+            </div>
+            <div class="form-group col-md-6">
+         
                 <label for="inputZip">Reg No. :</label>
                 <input type="text" class="form-control" id="inputZip">
 
