@@ -56,6 +56,11 @@
                 <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
 
             </div>
+            <div class="form-group col-md-12">
+                <label for="inputZip">Telephone / Mobile No</label>
+                <input type="text" class="form-control" id="inputZip">
+
+            </div>
         </div>
         <div class="form-group">
             <div class="form-check">
