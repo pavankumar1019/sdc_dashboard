@@ -306,7 +306,7 @@ else
     {
         subj($row['class_code']);
      ?>
-     <div style="border:4px solid green;border-color:green; height: 1070px; padding:10px;" class="margin">
+     <div style="border:4px solid green;border-color:green; height: 1050px; padding:10px;" class="margin">
         <div class="grid-container" >
             <div class="cc">College Code : MM-0174</div>
             <div class="ph" style="padding-right:6px;">Ph : 8861731246</div>
