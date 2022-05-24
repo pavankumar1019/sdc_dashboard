@@ -1,5 +1,5 @@
 $(document).ready(function () {
-alert("sS");
+
 
 });
 function onlyOne(checkbox) {
