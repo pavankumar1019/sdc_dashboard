@@ -263,7 +263,7 @@ Science                </h5>
     <div class="container ">
       <div class="heading_container heading_center">
         <h2>
-          What Says Faculty
+          What Says
         </h2>
         <hr>
       </div>
@@ -334,7 +334,7 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
               </div>
               <div class="client_name">
                 <h5>
-                  Hilley James
+                
                 </h5>
                 <h6>
                   Student
