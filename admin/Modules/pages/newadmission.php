@@ -14,7 +14,25 @@
                 <label for="inputAddress">Date of Birth</label>
                 <input type="date" class="form-control" id="inputAddress" >
             </div>
-            
+            <input onchange="readURL(this);"  type="file" name="userfile" />
+<img src="" id="blah"/>
+<script>
+ function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150).height(200);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+        //console.log(reader);
+        //alert(reader.readAsDataURL(input.files[0]));
+    }
+}
+</script>
             <div class="form-group col-md-3" style="display:flex;">
             
             <div class="form-check form-check-flat">
