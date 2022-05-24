@@ -440,7 +440,7 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/sdc2.png" alt="">
+            <img src="images/college.png" alt="">
           </div>
         </div>
       </div>
