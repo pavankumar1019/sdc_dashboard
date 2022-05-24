@@ -14,7 +14,7 @@
                 <label for="inputAddress">Date of Birth</label>
                 <input type="date" class="form-control" id="inputAddress" >
             </div>
-            <img src="file:///C:/xampp/htdocs/php/collegemanagement/sdc_dashboard/images/sdc1.PNG" alt="">
+            <input type="file" class="filestyle" name="file-select[]" id="file-select" accept="b1.jpg" multiple>
             <div class="form-group col-md-3" style="display:flex;">
             
             <div class="form-check form-check-flat">
