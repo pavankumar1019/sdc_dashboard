@@ -16,7 +16,7 @@
             </div>
             
             <div class="form-group col-md-3" style="display:flex;">
-            <label for="inputAddress"></label>
+            
             <div class="form-check form-check-flat">
 													<label class="form-check-label">
 														<input class="checkbox" type="checkbox" name="check"  onclick="onlyOne(this)">
