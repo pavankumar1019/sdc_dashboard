@@ -18,7 +18,7 @@
                     </h2>
                     <p>
                       Smt. Danamma Channabasavaiah College of Arts, Commerce, Science and Management studies                    </p>
-                    <a href="">
+                    <a href="./index.php?page=about">
                       Read More
                     </a>
                   </div>
@@ -45,7 +45,7 @@
                       </h2>
                       <p>
                         Smt. Danamma Channabasavaiah College of Arts, Commerce, Science and Management studies                    </p>
-                      <a href="">
+                      <a href="./index.php?page=about">
                         Read More
                       </a>
                   </div>
@@ -72,7 +72,7 @@
                       </h2>
                       <p>
                         Smt. Danamma Channabasavaiah College of Arts, Commerce, Science and Management studies                    </p>
-                      <a href="">
+                      <a href="./index.php?page=about">
                         Read More
                       </a>
                   </div>
@@ -246,7 +246,7 @@ Science                </h5>
             </div>
             <p>
               S.D.C Degree College is a bright star in the galaxy of educational institutions run under the flagship of Smt. Usha Gangadhara. It is one of the emerging colleges in Kolar district. The primary objective of education at S.D.C is to create dynamic leaders in the corporate sector, entrepreneurs, academicians, researchers and professionals who contribute to the development of society and nation at large. We are committed to maintaining high academic standards and preparing our students to secure rewarding employment on graduation. At the same time we believe that S.D.C students should develop as individuals, gaining in self-confidence, self-discipline, skills and developing a sense of enterprise. With the best of faculty and infrastructure the campus ambiance is conducive to learning in a rural background. The Placement cell of S.D.C College has been training students and providing them with opportunities to get placed in leading &nbsp;MNC’S ( Like INFOSYS, IBM and HP ), Banks, educational institutions, biotech firms. Our spacious playground allows our students to indulge in sports which are a huge draw at our college. Under the umbrella of SDC, there are five high-performing institutions that take care of the educational needs of a student from the high school level to the professional stage.            </p>
-            <a href="">
+            <a href="./index.php?page=about">
               Read More
             </a>
           </div>
@@ -312,13 +312,13 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
                 </h5>
                 <h6>
                  M.com, M.phil, SLET <br>
-             Principal S.D.C Bangarapet.
+             Cheif Eexcutive Officer S.D.C Bangarapet.
                 </h6>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="col-lg-6 mx-auto">
+        <div class="col-lg-6 mx-auto">
           <div class="client_container ">
             <div class="detail-box">
               <p>
@@ -342,7 +342,7 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </section>
