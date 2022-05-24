@@ -263,14 +263,7 @@
             <label for="inputZip">% of Marks Obtained</label>
                 <input type="text" class="form-control" placeholder="Science" id="inputZip" >
             </div>
-            <div class="form-group col-md-4">
-            <label for="inputZip">Result</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Passed</option>
-                    <option>Failed</option>
-
-                </select>
-            </div>
+      
             <div class="col-12">
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
