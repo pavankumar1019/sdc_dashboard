@@ -22,6 +22,12 @@
 													Male
 													<i class="input-helper"></i></label>
 												</div>
+            <div class="form-check form-check-flat">
+													<label class="form-check-label">
+														<input class="checkbox" type="checkbox" checked="checked">
+													Female
+													<i class="input-helper"></i></label>
+												</div>
 </div>
           
             <div class="form-group">
