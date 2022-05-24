@@ -263,6 +263,7 @@
             <label for="inputZip">% of Marks Obtained</label>
                 <input type="text" class="form-control" placeholder="Science" id="inputZip" >
             </div>
+            <div class="form-group col-md-6">
             <div class="form-group row">
                       <label>File upload (only xls,csv)</label>
                    
@@ -270,6 +271,8 @@
                         <input type="file" class="form-control file-upload-info" id="deploy">
                                             </div>
                     </div>
+            </div>
+            
             <div class="col-12">
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
