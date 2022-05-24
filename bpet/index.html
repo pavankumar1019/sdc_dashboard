@@ -64,7 +64,7 @@ $("#foo").submit(function(event) {
     var values = $(this).serialize();
 
 $.ajax({
-       url: "./result.php",
+       url: "../result.php",
        type: "post",
        data: values ,
        success: function (response) {
