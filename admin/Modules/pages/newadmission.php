@@ -15,7 +15,7 @@
                 <input type="date" class="form-control" id="inputAddress" >
             </div>
             
-            <div class="form-group col-md-3" style="display:flex; flex-direction:column;">
+            <div class="form-group col-md-3" style="display:flex;">
             <div class="form-check form-check-flat">
 													<label class="form-check-label">
 														<input class="checkbox" type="checkbox" name="check"  onclick="onlyOne(this)">
