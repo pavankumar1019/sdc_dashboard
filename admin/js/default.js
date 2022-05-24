@@ -1,7 +1,10 @@
 $(document).ready(function () {
-$('input[type="checkbox"]').on('change', function() {
-    $(this).siblings('input[type="checkbox"]').prop('checked', false);
-    alert('add;')
- });
+
 
 });
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
