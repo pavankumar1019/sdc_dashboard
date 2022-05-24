@@ -50,7 +50,7 @@
                   <div class="card card-tale">
                     <div class="card-body">
                       <p class="mb-4">Total Staff</p>
-                      <p class="fs-30 mb-2">600</p>
+                      <p class="fs-30 mb-2">0</p>
                       <p>10.00% (Present Today)</p>
                     </div>
                   </div>
@@ -59,7 +59,7 @@
                   <div class="card card-dark-blue">
                     <div class="card-body">
                       <p class="mb-4">Total Students</p>
-                      <p class="fs-30 mb-2">800</p>
+                      <p class="fs-30 mb-2">0</p>
                       <p>22.00% (Present Today)</p>
                     </div>
                   </div>
@@ -70,7 +70,7 @@
                   <div class="card card-light-blue">
                     <div class="card-body">
                       <p class="mb-4">SMS Credit</p>
-                      <p class="fs-30 mb-2">65000</p>
+                      <p class="fs-30 mb-2">0</p>
                       
                     </div>
                   </div>
@@ -79,7 +79,7 @@
                   <div class="card card-light-danger">
                     <div class="card-body">
                       <p class="mb-4">New Admissions</p>
-                      <p class="fs-30 mb-2">47033</p>
+                      <p class="fs-30 mb-2">0</p>
                       <p>0.22% (30 days)</p>
                     </div>
                   </div>
