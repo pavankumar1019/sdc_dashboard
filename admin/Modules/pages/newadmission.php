@@ -265,7 +265,7 @@
             </div>
             <div class="form-group">
                       <label>Passport Image</label>
-                      <input type="file" name="img" class="file-upload-default">
+                      <input type="file" name="img">
                       
                     </div>
             <div class="col-12">
