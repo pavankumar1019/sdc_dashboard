@@ -30592,4 +30592,7 @@ div.tagsinput span.tag a {
   }
 }
 
+.form-control{
+  font-weight: 600 !important;
+}
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
