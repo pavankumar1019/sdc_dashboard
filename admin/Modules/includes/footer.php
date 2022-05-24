@@ -20,7 +20,6 @@
   <script src="js/settings.js"></script>
   <script src="js/todolist.js"></script>
   <!-- endinject -->
-  <script src="./js/default.js"></script>
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
   <script src="js/Chart.roundedBarCharts.js"></script>
@@ -29,6 +28,8 @@
 
   <!-- db scripts ajax includes -->
 <script src="./js/markscard/markscard.js"></script>
+<script src="./js/default.js"></script>
+
 </body>
 
 </html>
