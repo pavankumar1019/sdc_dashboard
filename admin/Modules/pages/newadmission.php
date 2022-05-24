@@ -265,10 +265,10 @@
             </div>
             <div class="form-group col-md-6">
            
-                      <label>File upload (only xls,csv)</label>
+                      <label>File upload (only img,png)</label>
                    
                       <div class="input-group col-xs-12">
-                        <input type="file" class="form-control file-upload-info" id="deploy">
+                        <input type="file" class="form-control file-upload-info" id="deploy" accept=".jpg, .png, .jpeg">
                                             </div>
                                </div>
             
