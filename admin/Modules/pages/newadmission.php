@@ -14,15 +14,16 @@
                 <label for="inputAddress">Date of Birth</label>
                 <input type="date" class="form-control" id="inputAddress" >
             </div>
+            
             <div class="form-group col-md-3">
-                <label for="inputState">Gender</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>Male</option>
-                    <option>Female</option>
-
-                </select>
-            </div>
+            <div class="form-check form-check-flat">
+													<label class="form-check-label">
+														<input class="checkbox" type="checkbox" checked="checked">
+													Male
+													<i class="input-helper"></i></label>
+												</div>
+</div>
+          
             <div class="form-group">
                 <label for="inputAddress2 col-md-3">Place of Birth</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
