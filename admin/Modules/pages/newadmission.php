@@ -263,10 +263,12 @@
             <label for="inputZip">% of Marks Obtained</label>
                 <input type="text" class="form-control" placeholder="Science" id="inputZip" >
             </div>
-            <div class="form-group">
-                      <label>Passport Image</label>
-                      <input type="file" name="img">
-                      
+            <div class="form-group row">
+                      <label>File upload (only xls,csv)</label>
+                   
+                      <div class="input-group col-xs-12">
+                        <input type="file" class="form-control file-upload-info" id="deploy">
+                                            </div>
                     </div>
             <div class="col-12">
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
