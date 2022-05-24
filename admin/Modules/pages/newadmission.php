@@ -18,13 +18,13 @@
             <div class="form-group col-md-3">
             <div class="form-check form-check-flat">
 													<label class="form-check-label">
-														<input class="checkbox" type="checkbox" checked="checked">
+														<input class="checkbox" type="checkbox" name="fooby[1][]">
 													Male
 													<i class="input-helper"></i></label>
 												</div>
             <div class="form-check form-check-flat">
 													<label class="form-check-label">
-														<input class="checkbox" type="checkbox" checked="checked">
+														<input class="checkbox" type="checkbox" name="fooby[1][]">
 													Female
 													<i class="input-helper"></i></label>
 												</div>
