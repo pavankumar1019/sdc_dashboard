@@ -50,7 +50,7 @@ Our Vision
                   #Near Canara Bank, Bangarpet-563114
                 </span>
               </a>
-              <a href="">
+              <a href="tel:08153255529">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call 08153-255529
