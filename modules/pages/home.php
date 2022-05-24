@@ -110,8 +110,8 @@
            Notifications
         </h2>
         <marquee direction="Up" height="150px" behavior="scroll" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-<a href="#" class="notify" style="font-weight: bold;">1st PUC Science and Commerece Results Announced 2022 Bangarpet</a> <br><br>
-<a href="#"  class="notify" style="font-weight: bold;">1st PUC Science and Commerece Results Announced 2022 KGF</a> 
+<a href="./bpet/" class="notify" style="font-weight: bold;">1st PUC Science and Commerece Results Announced 2022 Bangarpet</a> <br><br>
+<a href="./kgf/"  class="notify" style="font-weight: bold;">1st PUC Science and Commerece Results Announced 2022 KGF</a> 
 </marquee>
       </div>
     </div>
@@ -451,81 +451,5 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
 
   <!-- info section -->
 
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="info_detail">
-            <h4>
-Our Vision
-            </h4>
-            <p>
-              To Provide Affordable, quality education to a wide cross-section of society without any discrimination of caste or creed with emphasis on social justice and innovative practice in teaching using latest technologies. On social justice and innovative practice in teaching using latest technologies.            </p>
-            <div class="info_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  #Near Canara Bank, Bangarpet-563114
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call 08153-255529
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  sdcinstitution.bept@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="info_contact">
-            <h4>
-             For Notifications
-            </h4>
-            <form action="#">
-              <input type="text" placeholder="Enter email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info-col">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- end info section -->
