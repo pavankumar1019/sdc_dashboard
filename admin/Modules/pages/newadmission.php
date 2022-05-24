@@ -14,7 +14,8 @@
                 <label for="inputAddress">Date of Birth</label>
                 <input type="date" class="form-control" id="inputAddress" >
             </div>
-            <input onchange="readURL(this);"  type="file" name="userfile" />
+            <input onchange="readURL('b1
+            ');"  type="file" name="userfile" />
 <img src="" id="blah"/>
 <script>
  function readURL(input) {
