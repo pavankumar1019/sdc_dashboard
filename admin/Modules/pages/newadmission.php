@@ -8,7 +8,7 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">Student Aadhaar No.</label>
-                <input type="text" class="form-control" id="inputPassword4" placeholder="Aadhar No">
+                <input type="text" class="form-control text-dark" id="inputPassword4" placeholder="Aadhar No">
             </div>
             <div class="form-group col-md-6">
                 <label for="inputAddress">Date of Birth</label>
@@ -39,7 +39,7 @@
           
             <div class="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control text-dark">
                 <option value="SelectState">Select State</option>
                         <option value="Andra Pradesh">Andra Pradesh</option>
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
