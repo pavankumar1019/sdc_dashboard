@@ -67,7 +67,11 @@ if($total_data > 0)
 		  }else{
 $checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
 		  }
-	
+	$detailes='
+	<h3>'.$row['student_name'].'</h3>
+	<p>'.$row['father_name'].'</p>
+	<p>% in SSLC'.$row['per'].'<br> Combination Optained'.$row['combination_opted'].'<br> Language Optained'.$row['lang_opted'].'</p>
+	';
     $output .= '
     <tr>
       <td>'.$row["id"].'</td>
