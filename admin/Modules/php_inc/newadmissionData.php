@@ -72,7 +72,7 @@ $checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
 		  if($row["sats"] != 'null'){
 			$checksats= $row["sats"];
 		  }else{
-$checksats='<input type="text" name="sats" data-id="'.$row['id'].'"><br><br><button class="btn btn-outline-info btn-sm">ADD</button>';
+$checksats='<input type="text" name="sats" data-id="'.$row['id'].'">&nbsp;<button class="btn btn-outline-info btn-sm">ADD</button>';
 		  }
 	$detailes='
 	<h3>'.$row['student_name'].'</h3>
