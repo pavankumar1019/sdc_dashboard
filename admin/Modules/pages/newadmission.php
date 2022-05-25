@@ -4,7 +4,7 @@
         <div class="form-row" style="font-weight:bold;">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">Name Of Student </label>
-                <input type="email" class="form-control" id="inputEmail4" name="student_name" placeholder="Name" required>
+                <input type="text" class="form-control" id="inputEmail4" name="student_name" placeholder="Name" required>
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">Student Aadhaar No.</label>
