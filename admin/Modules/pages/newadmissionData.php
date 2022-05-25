@@ -18,8 +18,17 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12" >
-                                            <div id="target-content">loading...</div>
-    
+                                            <table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody id="post_data"></tbody>
+</table>     
       
       
                                             </div>
@@ -53,29 +62,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12">
-                                            <div class="clearfix">
-               
-               <ul class="pagination">
-               <?php 
-               if(!empty($total_pages)){
-                   for($i=1; $i<=$total_pages; $i++){
-                           if($i == 1){
-                               ?>
-                           <li class="pageitem active" id="<?php echo $i;?>"><a href="JavaScript:Void(0);" data-id="<?php echo $i;?>" class="page-link" ><?php echo $i;?></a></li>
-                                                       
-                           <?php 
-                           }
-                           else{
-                               ?>
-                           <li class="pageitem" id="<?php echo $i;?>"><a href="JavaScript:Void(0);" class="page-link" data-id="<?php echo $i;?>"><?php echo $i;?></a></li>
-                           <?php
-                           }
-                   }
-               }
-                           ?>
-               </ul>
-          </ul>
-       </div>
+                                            <div id="pagination_link"></div>
                                             </div>
                                         </div>
                                         <div class="row">
