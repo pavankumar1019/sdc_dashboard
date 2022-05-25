@@ -53,17 +53,26 @@ $output = '
 <table class="table table-striped table-bordered">
   <tr>
     <th>ID</th>
-    <th>Post Title</th>
+    <th>Detailes</th>
+    <th>Photo</th>
   </tr>
 ';
 if($total_data > 0)
 {
   foreach($result as $row)
   {
+	  function checkimage(){
+		  if($row["photo"] != 'null'){
+echo '<img src="./" >';
+		  }else{
+echo '<input type="file" name="photo" data-id="'.$row['id]'].'">';
+		  }
+	  }
     $output .= '
     <tr>
       <td>'.$row["id"].'</td>
       <td>'.$row["student_name"].'</td>
+      <td>'.checkimage().'</td>
     </tr>
     ';
   }
