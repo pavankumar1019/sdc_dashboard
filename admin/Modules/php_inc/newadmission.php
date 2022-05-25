@@ -85,7 +85,9 @@ if($conn->query($sql)== TRUE){
     $status = 'success'; 
     $statusMsg = "Image compressed successfully."; 
 }else{
-    $statusMsg="Failed to add";
+    $statusMsg="Failed to add".mysqli_error($conn);
+
+
 }
   
 }else{ 
