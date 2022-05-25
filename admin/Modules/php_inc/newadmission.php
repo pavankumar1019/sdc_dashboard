@@ -74,7 +74,7 @@ $per=(($_POST['marks'])/625)*100;
  "marks"=>$marks,
  "total"=>$_POST['marks'],
  "per"=>$per,
- "photo"=>$_POST['target_file'],
+ "photo"=>$target_file,
  "combination_opted"=>$_POST['combination_opted'],
  "lang_opted"=>$_POST['lang_opted'],
  );
@@ -92,8 +92,5 @@ if($conn->query($sql)== TRUE){
 
 
 
-// move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
-// Check if image file is a actual image or fake image
-echo $statusMsg;
 }
 
