@@ -1,6 +1,6 @@
 <div class="container p-5">
     <h3>New Admissions</h3>
-    <form>
+    <form  id="fupForm" enctype="multipart/form-data">
         <div class="form-row" style="font-weight:bold;">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">Name Of Student </label>
