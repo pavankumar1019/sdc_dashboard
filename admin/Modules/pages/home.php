@@ -79,7 +79,7 @@
                   <div class="card card-light-danger">
                     <div class="card-body">
                       <p class="mb-4">New Admissions</p>
-                      <p class="fs-30 mb-2">0</p>
+                      <p class="fs-30 mb-2" id="new_admission_count">0</p>
                       <p>0.22% (30 days)</p>
                     </div>
                   </div>
