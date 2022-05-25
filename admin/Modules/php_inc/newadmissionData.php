@@ -12,7 +12,7 @@ function get_total_row($connect)
 
 $total_record = get_total_row($connect);
 
-$limit = '2';
+$limit = '6';
 $page = 1;
 if($_POST['page'] > 1)
 {
