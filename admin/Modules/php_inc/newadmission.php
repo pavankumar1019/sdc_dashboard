@@ -82,16 +82,12 @@ $per=(($_POST['marks'])/625)*100;
  $table_data= implode("', '", $insert_data);
 $sql = "INSERT INTO new_admission_bpet ($table_columns) VALUES ('$table_data') "; 
 if($conn->query($sql)== TRUE){
-    $status = 'success'; 
-    $statusMsg = "Image compressed successfully."; 
+    echo json_encode(array("statusCode"=>200));
 }else{
-    $statusMsg="Failed to add".mysqli_error($conn);
-
-
+    echo json_encode(array("statusCode"=>201));
 }
-  
 }else{ 
-    $statusMsg = "Image compress failed!"; 
+    echo json_encode(array("statusCode"=>202));
 } 
 
 

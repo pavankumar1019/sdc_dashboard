@@ -10,20 +10,33 @@ $(document).ready(function(e){
             contentType: false,
             cache: false,
             processData:false,
-            beforeSend: function(){
-                $('.submitBtn').attr("disabled","disabled");
-                $('#fupForm').css("opacity",".5");
-            },
-            success: function(response){ //console.log(response);
-                $('.statusMsg').html('');
-                if(response.status == 1){
-                    $('#fupForm')[0].reset();
-                    $('.statusMsg').html('<p class="alert alert-success">'+response.message+'</p>');
-                }else{
-                    $('.statusMsg').html('<p class="alert alert-danger">'+response.message+'</p>');
-                }
-                $('#fupForm').css("opacity","");
-                $(".submitBtn").removeAttr("disabled");
+            success: function(dataResult){ //console.log(response);
+                var dataResult = JSON.parse(dataResult);
+			if(dataResult.statusCode==200){
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Your work has been saved',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })					
+			}
+			else if(dataResult.statusCode==201){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Failed to Add',
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                  })
+			}
+			else if(dataResult.statusCode==202){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Failed to Add',
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                  })
+			}
             }
         });
     });
