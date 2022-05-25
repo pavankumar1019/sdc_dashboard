@@ -12,7 +12,24 @@ $(document).ready(function(e){
             success: function(response){ 
                 console.log(response);
                 $('#message').html(response);
-                $("#fupForm").trigger("reset");
+                if(response=="done"){
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Your work has been saved',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                      $("#fupForm").trigger("reset");
+                }else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong! Failed',
+                        footer: '<a href="">Why do I have this issue?</a>'
+                      })
+                }
+              
             }
         });
     });
