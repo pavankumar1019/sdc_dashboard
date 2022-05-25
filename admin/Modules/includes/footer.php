@@ -38,6 +38,11 @@
 <script src="./js/markscard/markscard.js"></script>
 <?php
   }
+  if($_GET['page']=='home'){
+?>
+<script src="./js/dashboard/dashboard.js"></script>
+<?php
+  }
   ?>
 <script src="./js/default.js"></script>
 </body>
