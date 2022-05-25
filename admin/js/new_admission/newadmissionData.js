@@ -8,7 +8,7 @@ function load_data(query = '', page_number = 1)
 
 	var ajax_request = new XMLHttpRequest();
 
-	ajax_request.open('POST', 'process_data.php');
+	ajax_request.open('POST', './Modules/php_inc/newadmissionData.php');
 
 	ajax_request.send(form_data);
 
