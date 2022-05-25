@@ -1,4 +1,5 @@
 <?php 
+include '../../php_include/db/db.php';
 // function
 function compressImage($source, $destination, $quality) { 
     // Get image info 
