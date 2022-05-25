@@ -44,18 +44,18 @@ if(isset($_POST['name']) || isset($_POST['email']) || isset($_POST['file'])){
                 } 
             } 
              
-            if($uploadStatus == 1){ 
-                // Include the database config file 
-                include_once '../../../php_include/db/db.php'; 
+            // if($uploadStatus == 1){ 
+            //     // Include the database config file 
+            //     include_once '../../../php_include/db/db.php'; 
                  
-                // Insert form data in the database 
-                $insert = $conn->query("INSERT INTO form_data (name,email,file_name) VALUES ('".$name."','".$email."','".$uploadedFile."')"); 
+            //     // Insert form data in the database 
+            //     $insert = $conn->query("INSERT INTO form_data (name,email,file_name) VALUES ('".$name."','".$email."','".$uploadedFile."')"); 
                  
-                if($insert){ 
-                    $response['status'] = 1; 
-                    $response['message'] = 'Form data submitted successfully!'; 
-                } 
-            } 
+            //     if($insert){ 
+            //         $response['status'] = 1; 
+            //         $response['message'] = 'Form data submitted successfully!'; 
+            //     } 
+            // } 
         } 
     }else{ 
          $response['message'] = 'Please fill all the mandatory fields (name and email).'; 
