@@ -270,9 +270,9 @@
                       <div class="input-group col-xs-12">
                         <input type="file" class="form-control file-upload-info" name="file" id="deploy" accept=".jpg, .png, .jpeg" required>
                                             </div>
-                               </div>
+                               </div> -->
             
-            <div class="col-12"> -->
+            <div class="col-12">
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
             <div class="form-group col-md-6">
