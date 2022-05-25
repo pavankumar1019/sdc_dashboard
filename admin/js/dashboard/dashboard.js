@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    loadadmission();
     setInterval(function(){ 
         loadadmission();
     }, 1000);
