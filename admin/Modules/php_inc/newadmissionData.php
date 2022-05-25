@@ -75,7 +75,7 @@ $checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
     $output .= '
     <tr>
       <td>'.$row["id"].'</td>
-      <td>'.$row["student_name"].'</td>
+      <td>'.$detailes.'</td>
       <td>'.$checkimage.'</td>
     </tr>
     ';
