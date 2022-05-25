@@ -7,15 +7,7 @@ $response = array(
  
 // If form is submitted 
 if(isset($_POST['student_name']) || isset($_POST['student_aadhar']) || isset($_POST['reg_no_sslc'])){ 
-    // Get the submitted form data 
-    $student_name = $_POST['student_name']; 
-    $student_aadhar = $_POST['student_aadhar']; 
-     
-    // Check whether submitted data is not empty 
-    if(!empty($student_name) && !empty($student_aadhar)){ 
-        // Validate email 
-
-             
+   
             // Upload file 
             $uploadedFile = ''; 
             if(!empty($_FILES["file"]["name"])){ 
@@ -54,9 +46,7 @@ if(isset($_POST['student_name']) || isset($_POST['student_aadhar']) || isset($_P
             //     } 
             // } 
         } 
-    }else{ 
-         $response['message'] = 'Please fill all the mandatory fields (name and email).'; 
-    } 
+   
 
  
 // Return response 
