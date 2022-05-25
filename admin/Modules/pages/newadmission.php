@@ -263,7 +263,7 @@
             <label for="inputZip">total_marks_obtained</label>
                 <input type="text" name="marks"  class="form-control" placeholder="Science" id="inputZip" required>
             </div>
-            <div class="form-group col-md-6">
+            <!-- <div class="form-group col-md-6">
            
                       <label>File upload (only img,png)</label>
                    
@@ -272,7 +272,7 @@
                                             </div>
                                </div>
             
-            <div class="col-12">
+            <div class="col-12"> -->
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
             <div class="form-group col-md-6">
