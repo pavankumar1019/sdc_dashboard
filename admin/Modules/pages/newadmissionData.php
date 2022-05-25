@@ -2,7 +2,26 @@
 
 <div class="main-panel">
     <div class="content-wrapper">
+    <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-title">Jump to page</p>
+                        <div class="row">
+                            <div class="col-12">
+                            <div class="col-md-6">Sample Data</div>
+    				<div class="col-md-3 text-right"><b>Total Data - <span id="total_data"></span></b></div>
+    				<div class="col-md-3">
+    					<input type="text" name="search" class="form-control" id="search" placeholder="Search Here" onkeyup="load_data(this.value);" />
+    				</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
@@ -79,6 +98,7 @@
 
             </div>
         </div>
+       
     </div>
     
     <!-- content-wrapper ends -->
