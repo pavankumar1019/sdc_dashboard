@@ -2,6 +2,7 @@
 
 
     <div class="container">
+        <br>
         <h3 align="center">New Admissions 2022</h3>
         <br />
         <div class="card">
