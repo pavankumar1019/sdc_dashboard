@@ -2,7 +2,7 @@
 include '../../php_include/db/db.php';
 
 $limit = 5;  
-if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };  
+if (isset($_GET["tpage"])) { $page  = $_GET["tpage"]; } else { $page=1; };  
 $start_from = ($page-1) * $limit;  
   
 $sql = "SELECT * FROM new_admission_bpet ORDER BY id ASC LIMIT $start_from, $limit";  

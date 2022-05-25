@@ -1,6 +1,6 @@
 
 	$(document).ready(function() {
-		$("#target-content").load("pagination.php?page=0");
+		$("#target-content").load("&tpage=0");
 		$(".page-link").click(function(){
 			var id = $(this).attr("data-id");
 			var select_id = $(this).parent().attr("id");
