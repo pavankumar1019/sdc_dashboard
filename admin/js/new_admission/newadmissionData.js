@@ -1,51 +1,29 @@
-function load_data(query = '', page_number = 1)
-{
-	var form_data = new FormData();
+$(document).ready(function(){
 
-	form_data.append('query', query);
+    load_data(1);
 
-	form_data.append('page', page_number);
+    function load_data(page, query = '')
+    {
+      $.ajax({
+        url:"./Modules/php_inc/newadmissionData.php",
+        method:"POST",
+        data:{page:page, query:query},
+        success:function(data)
+        {
+          $('#dynamic_content').html(data);
+        }
+      });
+    }
 
-	var ajax_request = new XMLHttpRequest();
+    $(document).on('click', '.page-link', function(){
+      var page = $(this).data('page_number');
+      var query = $('#search_box').val();
+      load_data(page, query);
+    });
 
-	ajax_request.open('POST', './Modules/php_inc/newadmissionData.php');
+    $('#search_box').keyup(function(){
+      var query = $('#search_box').val();
+      load_data(1, query);
+    });
 
-	ajax_request.send(form_data);
-
-	ajax_request.onreadystatechange = function()
-	{
-		if(ajax_request.readyState == 4 && ajax_request.status == 200)
-		{
-			var response = JSON.parse(ajax_request.responseText);
-
-			var html = '';
-
-			var serial_no = 1;
-
-			if(response.data.length > 0)
-			{
-				for(var count = 0; count < response.data.length; count++)
-				{
-					html += '<tr>';
-					html += '<td>'+response.data[count].post_id+'</td>';
-					html += '<td>'+response.data[count].post_title+'</td>';
-					html += '<td>'+response.data[count].post_description+'</td>';
-					html += '</tr>';
-					serial_no++;
-				}
-			}
-			else
-			{
-				html += '<tr><td colspan="3" class="text-center">No Data Found</td></tr>';
-			}
-
-			document.getElementById('post_data').innerHTML = html;
-
-			document.getElementById('total_data').innerHTML = response.total_data;
-
-			document.getElementById('pagination_link').innerHTML = response.pagination;
-
-		}
-
-	}
-}
+  });
