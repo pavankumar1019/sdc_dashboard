@@ -80,7 +80,7 @@
                     <div class="card-body">
                       <p class="mb-4">New Admissions</p>
                       <p class="fs-30 mb-2" id="new_admission_count">0</p>
-                      <a href="#" style="color:white;font-weight:bold;" class="text-info">View all Records</a>
+                      <a href="#" style="color:white;font-weight:bold;text-decoration:underline;">View all Records</a>
                     </div>
                   </div>
                 </div>
