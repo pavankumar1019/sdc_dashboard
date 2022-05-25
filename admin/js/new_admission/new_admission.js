@@ -4,7 +4,7 @@ $(document).ready(function(e){
         e.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'submit.php',
+            url: '../../modules/api/new_admission/index.php',
             data: new FormData(this),
             dataType: 'json',
             contentType: false,
