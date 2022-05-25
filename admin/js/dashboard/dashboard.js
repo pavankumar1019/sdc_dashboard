@@ -10,7 +10,6 @@ function loadadmission(){
         dataType: "html",   //expect html to be returned                
         success: function(response){                    
             $("#new_admission_count").html(response); 
-            //alert(response);
         }
 
     });
