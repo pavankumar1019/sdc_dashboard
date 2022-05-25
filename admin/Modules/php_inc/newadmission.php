@@ -1,6 +1,9 @@
 <?php 
 $target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["file"]["name"]);
+$temp = explode(".", $_FILES["file"]["name"]);
+$extension = end($temp);
+$target_file = $target_dir."pavan.".$extension;
+
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
