@@ -11,8 +11,9 @@ $(document).ready(function(e){
             cache: false,
             processData:false,
             success: function(dataResult){ //console.log(response);
-                var dataResult = JSON.parse(dataResult);
                 console.log(dataResult);
+                var dataResult = JSON.parse(dataResult);
+            
 			if(dataResult.statusCode==200){
                 Swal.fire({
                     position: 'top-end',
