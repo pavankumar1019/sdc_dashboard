@@ -275,6 +275,30 @@
             <div class="col-12">
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Combination Opted</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>PCMB</option>
+                    <option>PCMCs</option>
+                    <option>EBACs</option>
+                    <option>EBAS</option>
+                    <option>BASM</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Language Opted</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Hindi</option>
+                    <option>Kannada</option>
+                    <option>Urdu</option>
+                    <option>Sanskrit</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
         </div>
 
 
