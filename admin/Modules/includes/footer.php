@@ -28,7 +28,7 @@
 
   <!-- db scripts ajax includes -->
   <?php
-  if(isset($_GET['page'])=='newadmission'){
+  if($_GET['page']=='newadmission'){
 ?>
 <script src="./js/new_admission/new_admission.js"></script>
 <?php
