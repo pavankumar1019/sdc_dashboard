@@ -11,34 +11,7 @@ $(document).ready(function(e){
             cache: false,
             processData:false,
             success: function(dataResult){ //console.log(response);
-                console.log('sdasdsad');
-                var dataResult = JSON.parse(dataResult);
-            
-			if(dataResult.statusCode==200){
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'Your work has been saved',
-                    showConfirmButton: false,
-                    timer: 1500
-                  })					
-			}
-			else if(dataResult.statusCode==201){
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Failed to Add',
-                    footer: '<a href="#">Why do I have this issue?</a>'
-                  })
-			}
-			else if(dataResult.statusCode==202){
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Failed to Add',
-                    footer: '<a href="#">Why do I have this issue?</a>'
-                  })
-			}
+                $('#message').html(dataResult);
             }
         });
     });

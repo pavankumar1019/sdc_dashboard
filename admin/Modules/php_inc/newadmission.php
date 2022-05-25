@@ -82,12 +82,12 @@ $per=(($_POST['marks'])/625)*100;
  $table_data= implode("', '", $insert_data);
 $sql = "INSERT INTO new_admission_bpet ($table_columns) VALUES ('$table_data') "; 
 if($conn->query($sql)== TRUE){
-    echo json_encode(array("statusCode"=>200));
+    echo "<p style='color:blue;font-weight:bold;'>Record Added :)</p>";
 }else{
-    echo json_encode(array("statusCode"=>201));
+    echo "<p style='color:red;font-weight:bold;'>Failed to add</p>";
 }
 }else{ 
-    echo json_encode(array("statusCode"=>202));
+    echo "<p style='color:green;font-weight:bold;'>Failed to compress image !</p>";
 } 
 
 
