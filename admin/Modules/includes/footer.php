@@ -33,11 +33,13 @@
 <script src="./js/new_admission/new_admission.js"></script>
 <?php
   }
-  ?>
+  if($_GET['page']=='mcgenerator'){
+?>
 <script src="./js/markscard/markscard.js"></script>
-
+<?php
+  }
+  ?>
 <script src="./js/default.js"></script>
-
 </body>
 
 </html>

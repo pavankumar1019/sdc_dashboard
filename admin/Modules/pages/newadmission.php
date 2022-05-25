@@ -302,7 +302,7 @@
         </div>
 
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <p class="form-check-label" for="gridCheck">
@@ -310,7 +310,7 @@
              damages in causes by my child to institution.I also examin the child's progrees in accademics and attendence from time to time .      
                 </p>
             </div>
-        </div>
+        </div> -->
         <button type="submit" class="btn btn-primary btn-block">Submit</button>
     </form>
 </div>
