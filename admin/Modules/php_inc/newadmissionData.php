@@ -66,7 +66,7 @@ if($total_data > 0)
 		  if($row["photo"] != 'null'){
 			$checkimage= '<img src="./" >';
 		  }else{
-$checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
+$checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'"><br><button class="btn btn-outline-primary">ADD</button>';
 		  }
 		  if($row["sats"] != 'null'){
 			$checksats= $row["sats"];
