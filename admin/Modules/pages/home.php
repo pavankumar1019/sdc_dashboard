@@ -76,7 +76,7 @@
                   </div>
                 </div>
                 <div class="col-md-6 stretch-card transparent">
-                  <div class="card card-light-danger">
+                  <div class="card card-light-danger" onclick="location.href='default.php?page=newadmissionData';">
                     <div class="card-body">
                       <p class="mb-4">New Admissions</p>
                       <p class="fs-30 mb-2" id="new_admission_count">0</p>
