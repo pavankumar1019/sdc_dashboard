@@ -10,8 +10,9 @@ $(document).ready(function(e){
             contentType: false,
             cache: false,
             processData:false,
-            success: function(dataResult){ //console.log(response);
-                $('#message').html(dataResult);
+            success: function(response){ 
+                console.log(response);
+                $('#message').html(response);
             }
         });
     });
