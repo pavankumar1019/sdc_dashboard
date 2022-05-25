@@ -12,7 +12,7 @@ $(document).ready(function(e){
             processData:false,
             success: function(dataResult){ //console.log(response);
                 var dataResult = JSON.parse(dataResult);
-                console.log(dataResult.statusCode);
+                console.log(dataResult);
 			if(dataResult.statusCode==200){
                 Swal.fire({
                     position: 'top-end',
