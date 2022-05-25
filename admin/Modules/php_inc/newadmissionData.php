@@ -56,6 +56,7 @@ $output = '
     <th>Detailes</th>
     <th>Photo</th>
     <th>Sats_Number</th>
+    <th>Crud</th>
   </tr>
 ';
 if($total_data > 0)
@@ -84,6 +85,7 @@ $checksats='<input type="text" name="sats" data-id="'.$row['id'].'"><br><br><but
       <td>'.$detailes.'</td>
       <td>'.$checkimage.'</td>
       <td>'.$checksats.'</td>
+      <td><button class="btn btn-outline-info">Edit</button></td>
     </tr>
     ';
   }
