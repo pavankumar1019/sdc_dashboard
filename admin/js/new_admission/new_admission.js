@@ -11,7 +11,7 @@ $(document).ready(function(e){
             cache: false,
             processData:false,
             success: function(dataResult){ //console.log(response);
-                console.log(dataResult);
+                console.log('sdasdsad');
                 var dataResult = JSON.parse(dataResult);
             
 			if(dataResult.statusCode==200){
