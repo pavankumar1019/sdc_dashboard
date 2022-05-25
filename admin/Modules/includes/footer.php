@@ -43,6 +43,11 @@
 <script src="./js/dashboard/dashboard.js"></script>
 <?php
   }
+  if($_GET['page']=='newadmissionData'){
+?>
+<script src="./js/new_admission/newadmissionData.js"></script>
+<?php
+  }
   ?>
 <script src="./js/default.js"></script>
 </body>
