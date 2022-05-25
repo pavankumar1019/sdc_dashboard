@@ -36,11 +36,9 @@ if(isset($_POST["query"]))
 		);
 
 		$query = "
-		SELECT id, post_title, post_description 
-		FROM post 
-		WHERE post_title LIKE :post_title 
-		OR post_description LIKE :post_description 
-		ORDER BY id DESC
+		SELECT *
+		FROM new_admission_bpet 
+		ORDER BY id ASC
 		";
 
 		$filter_query = $query . ' LIMIT ' . $start . ', ' . $limit . '';
@@ -67,9 +65,9 @@ if(isset($_POST["query"]))
 		foreach($result as $row)
 		{
 			$data[] = array(
-				'post_id'			=>	$row["id"],
-				'post_title'		=>	str_ireplace($replace_array_1, $replace_array_2, $row["post_title"]),
-				'post_description'	=>	str_ireplace($replace_array_1, $replace_array_2, $row["post_description"])
+				'id'			=>	$row["id"],
+				'student_name'		=>	str_ireplace($replace_array_1, $replace_array_2, $row["student_name"]),
+				'reg_no_sslc'	=>	str_ireplace($replace_array_1, $replace_array_2, $row["reg_no_sslc"])
 			);
 		}
 
@@ -78,9 +76,9 @@ if(isset($_POST["query"]))
 	{
 
 		$query = "
-		SELECT id, post_title, post_description 
-		FROM post 
-		ORDER BY id DESC
+        SELECT *
+		FROM new_admission_bpet 
+		ORDER BY id ASC
 		";
 
 		$filter_query = $query . ' LIMIT ' . $start . ', ' . $limit . '';
