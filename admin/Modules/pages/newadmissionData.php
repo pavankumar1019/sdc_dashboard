@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12 grid-margin">
             <div class="container">
-    <h3 align="center">Live Data Search with Pagination in PHP Mysql using Ajax</h3>
+    <h3 align="center">New Admissions 2022</h3>
     <br />
     <div class="card">
         <div class="card-header">Dynamic Data</div>
