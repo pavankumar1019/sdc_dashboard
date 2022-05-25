@@ -66,12 +66,12 @@ if($total_data > 0)
 		  if($row["photo"] != 'null'){
 			$checkimage= '<img src="./" >';
 		  }else{
-$checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'"><br><button class="btn btn-outline-primary">ADD</button>';
+$checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
 		  }
 		  if($row["sats"] != 'null'){
 			$checksats= $row["sats"];
 		  }else{
-$checksats='<input type="text" name="sats" data-id="'.$row['id'].'">';
+$checksats='<input type="text" name="sats" data-id="'.$row['id'].'"><br><br><button class="btn btn-outline-primary btn-sm">ADD</button>';
 		  }
 	$detailes='
 	<h3>'.$row['student_name'].'</h3>
