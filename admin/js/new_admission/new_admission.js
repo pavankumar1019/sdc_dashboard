@@ -12,6 +12,7 @@ $(document).ready(function(e){
             success: function(response){ 
                 console.log(response);
                 $('#message').html(response);
+                $("#fupForm").trigger("reset");
             }
         });
     });
