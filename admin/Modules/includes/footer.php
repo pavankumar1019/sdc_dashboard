@@ -27,8 +27,15 @@
 
 
   <!-- db scripts ajax includes -->
-<script src="./js/markscard/markscard.js"></script>
+  <?php
+  if(isset($_GET['page'])=='newadmission'){
+?>
 <script src="./js/new_admission/new_admission.js"></script>
+<?php
+  }
+  ?>
+<script src="./js/markscard/markscard.js"></script>
+
 <script src="./js/default.js"></script>
 
 </body>
