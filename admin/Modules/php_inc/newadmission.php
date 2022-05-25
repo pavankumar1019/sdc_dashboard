@@ -10,7 +10,7 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 if(isset($_POST["student_name"])) {
   $check = getimagesize($_FILES["file"]["tmp_name"]);
   if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
+    echo "File is an image - " . $check["mime"] . ".".$target_file;
     $uploadOk = 1;
   } else {
     echo "File is not an image.";
