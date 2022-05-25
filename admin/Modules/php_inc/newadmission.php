@@ -45,7 +45,7 @@ if($compressedImage){
 $marks=$_POST['l1_m'].",".$_POST['l2_m'].",".$_POST['l3_m'].$_POST['s1_m'].",".$_POST['s2_m'].",".$_POST['s3_m'];
 $per=($_POST['marks']/625)*100;
  $insert_data = array(
-"student_id"=>'',
+"student_id"=>'null',
 "student_name"=>$_POST['student_name'],
 "student_aadhar"=>$_POST['student_aadhar'],
  "dob"=>$_POST['dob'],
@@ -77,7 +77,6 @@ $per=($_POST['marks']/625)*100;
  "photo"=>$_POST['target_file'],
  "combination_opted"=>$_POST['combination_opted'],
  "lang_opted"=>$_POST['lang_opted'],
-
  );
  $table_columns= implode(',', array_keys($insert_data));
  $table_data= implode("', '", $insert_data);
