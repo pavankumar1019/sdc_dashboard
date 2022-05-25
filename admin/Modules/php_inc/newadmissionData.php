@@ -65,7 +65,7 @@ if($total_data > 0)
 		  if($row["photo"] != 'null'){
 echo '<img src="./" >';
 		  }else{
-echo '<input type="file" name="photo" data-id="'.$row['id]'].'">';
+echo '<input type="file" name="photo" data-id="'.$row['id'].'">';
 		  }
 	  }
     $output .= '
