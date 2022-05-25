@@ -5,7 +5,7 @@ include ("./Modules/includes/header.php");
 // include ("./Modules//header.php");
 if(isset($_SESSION['username']))
 {
-    include("./Modules/dashboard.php?page=home");
+    include("./Modules/dashboard.php");
 }
 else{
     header("location:./"); 
