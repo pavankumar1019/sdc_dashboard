@@ -49,7 +49,7 @@ $result = $statement->fetchAll();
 $total_filter_data = $statement->rowCount();
 
 $output = '
-<label>Total Records - '.$total_data.'</label>
+<label>Total Records Found - '.$total_data.'</label>
 <table class="table table-striped table-bordered">
   <tr>
     <th>ID</th>
