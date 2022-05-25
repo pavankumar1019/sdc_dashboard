@@ -268,7 +268,7 @@
                       <label>File upload (only img,png)</label>
                    
                       <div class="input-group col-xs-12">
-                        <input type="file" class="form-control file-upload-info" name="img" id="deploy" accept=".jpg, .png, .jpeg" required>
+                        <input type="file" class="form-control file-upload-info" name="file" id="deploy" accept=".jpg, .png, .jpeg" required>
                                             </div>
                                </div>
             

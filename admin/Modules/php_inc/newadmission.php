@@ -6,18 +6,15 @@ $response = array(
 ); 
  
 // If form is submitted 
-if(isset($_POST['name']) || isset($_POST['email']) || isset($_POST['file'])){ 
+if(isset($_POST['student_name']) || isset($_POST['student_aadhar']) || isset($_POST['reg_no_sslc'])){ 
     // Get the submitted form data 
-    $name = $_POST['name']; 
-    $email = $_POST['email']; 
+    $student_name = $_POST['student_name']; 
+    $student_aadhar = $_POST['student_aadhar']; 
      
     // Check whether submitted data is not empty 
-    if(!empty($name) && !empty($email)){ 
+    if(!empty($student_name) && !empty($student_aadhar)){ 
         // Validate email 
-        if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){ 
-            $response['message'] = 'Please enter a valid email.'; 
-        }else{ 
-            $uploadStatus = 1; 
+
              
             // Upload file 
             $uploadedFile = ''; 
@@ -60,7 +57,7 @@ if(isset($_POST['name']) || isset($_POST['email']) || isset($_POST['file'])){
     }else{ 
          $response['message'] = 'Please fill all the mandatory fields (name and email).'; 
     } 
-} 
+
  
 // Return response 
 echo json_encode($response);
