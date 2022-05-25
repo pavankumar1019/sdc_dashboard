@@ -1,115 +1,29 @@
-
-
-<div class="main-panel">
-    <div class="content-wrapper">
-    <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-title">Jump to page</p>
-                        <div class="row">
-                            <div class="col-12">
-                            <div class="col-md-6">Sample Data</div>
+<div class="container">
+    	<h2 class="text-center mt-4 mb-4">Ajax Pagination using JavaScript with PHP and MySQL</h2>
+    	
+    	<div class="card">
+    		<div class="card-header">
+    			<div class="row">
+    				<div class="col-md-6">Sample Data</div>
     				<div class="col-md-3 text-right"><b>Total Data - <span id="total_data"></span></b></div>
     				<div class="col-md-3">
     					<input type="text" name="search" class="form-control" id="search" placeholder="Search Here" onkeyup="load_data(this.value);" />
     				</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-title">1st PUC New Admission - 2022</p>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-6"></div>
-                                            <div class="col-sm-12 col-md-6"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12" >
-                                            <table class="table table-bordered">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-    </thead>
-    <tbody id="post_data"></tbody>
-</table>     
-      
-      
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-5"></div>
-                                            <div class="col-sm-12 col-md-7"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-title">Jump to page</p>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-6"></div>
-                                            <div class="col-sm-12 col-md-6"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                            <div id="pagination_link"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-5"></div>
-                                            <div class="col-sm-12 col-md-7"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-       
+    			</div>
+    		</div>
+    		<div class="card-body">
+    			<table class="table table-bordered">
+    				<thead>
+    					<tr>
+    						<th width="5%">#</th>
+    						<th width="35%">Post Title</th>
+    						<th width="60%">Description</th>
+    					</tr>
+    				</thead>
+    				<tbody id="post_data"></tbody>
+    			</table>
+    			<div id="pagination_link"></div>
+    		</div>
+    	</div>
+    	
     </div>
-    
-    <!-- content-wrapper ends -->
-    <!-- partial:partials/_footer.html -->
-    <footer class="footer">
-        <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022. PK | Developer
-                All
-                rights reserved.</span>
-
-        </div>
-    </footer>
-    <!-- partial -->
-</div>
