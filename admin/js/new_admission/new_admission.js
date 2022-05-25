@@ -6,7 +6,6 @@ $(document).ready(function(e){
             type: 'POST',
             url: './Modules/php_inc/newadmission.php',
             data: new FormData(this),
-            dataType: 'json',
             contentType: false,
             cache: false,
             processData:false,
