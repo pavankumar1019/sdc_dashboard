@@ -1,18 +1,18 @@
 <?php
 include '../../php_include/db/db.php';
-/*function get_total_row($connect)
+function get_total_row($connect)
 {
   $query = "
-  SELECT * FROM tbl_webslesson_post
+  SELECT * FROM new_admission_bpet
   ";
   $statement = $connect->prepare($query);
   $statement->execute();
   return $statement->rowCount();
 }
 
-$total_record = get_total_row($connect);*/
+$total_record = get_total_row($connect);
 
-$limit = '5';
+$limit = '2';
 $page = 1;
 if($_POST['page'] > 1)
 {
