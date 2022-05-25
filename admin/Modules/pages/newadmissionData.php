@@ -63,7 +63,7 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-title">1st PUC New Admission - 2022</p>
+                        <p class="card-title">Jump to page</p>
                         <div class="row">
                             <div class="col-12">
                                 <div class="table-responsive">
