@@ -32,7 +32,7 @@ $target_dir = "uploads/";
 if(isset($_POST["student_name"])) {
 $temp = explode(".", $_FILES["file"]["name"]);
 $extension = end($temp);
-$target_file = $target_dir."pavan23.".$extension;
+$target_file = $target_dir.$_POST["reg_no_sslc"].".".$extension;
 
 $uploadOk = 1;
 $imageTemp = $_FILES["file"]["tmp_name"];       
