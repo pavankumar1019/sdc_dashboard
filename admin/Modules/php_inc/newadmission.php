@@ -1,47 +1,55 @@
 <?php 
 include '../../php_include/db/db.php';
 // function
-function compressImage($source, $destination, $quality) { 
-    // Get image info 
-    $imgInfo = getimagesize($source); 
-    $mime = $imgInfo['mime']; 
+// function compressImage($source, $destination, $quality) { 
+//     // Get image info 
+//     $imgInfo = getimagesize($source); 
+//     $mime = $imgInfo['mime']; 
      
-    // Create a new image from file 
-    switch($mime){ 
-        case 'image/jpeg': 
-            $image = imagecreatefromjpeg($source); 
-            break; 
-        case 'image/png': 
-            $image = imagecreatefrompng($source); 
-            break; 
-        case 'image/gif': 
-            $image = imagecreatefromgif($source); 
-            break; 
-        default: 
-            $image = imagecreatefromjpeg($source); 
-    } 
+//     // Create a new image from file 
+//     switch($mime){ 
+//         case 'image/jpeg': 
+//             $image = imagecreatefromjpeg($source); 
+//             break; 
+//         case 'image/png': 
+//             $image = imagecreatefrompng($source); 
+//             break; 
+//         case 'image/gif': 
+//             $image = imagecreatefromgif($source); 
+//             break; 
+//         default: 
+//             $image = imagecreatefromjpeg($source); 
+//     } 
      
-    // Save image 
-    imagejpeg($image, $destination, $quality); 
+//     // Save image 
+//     imagejpeg($image, $destination, $quality); 
      
-    // Return compressed image 
-    return $destination; 
-} 
+//     // Return compressed image 
+//     return $destination; 
+// } 
 
-// upload date
+// // upload date
 
-$target_dir = "uploads/";
+// $target_dir = "uploads/";
+// if(isset($_POST["student_name"])) {
+// $temp = explode(".", $_FILES["file"]["name"]);
+// $extension = end($temp);
+// $target_file = $target_dir.$_POST["reg_no_sslc"].".".$extension;
+
+// $uploadOk = 1;
+// $imageTemp = $_FILES["file"]["tmp_name"];       
+// // Compress size and upload image 
+// $compressedImage = compressImage($imageTemp, $target_file, 50); 
+// if($compressedImage){ 
+   
+// }else{ 
+//     echo "<p style='color:green;font-weight:bold;font-size:20px;'>Failed to compress image !</p>";
+// } 
+// }
+
+// insert data
 if(isset($_POST["student_name"])) {
-$temp = explode(".", $_FILES["file"]["name"]);
-$extension = end($temp);
-$target_file = $target_dir.$_POST["reg_no_sslc"].".".$extension;
-
-$uploadOk = 1;
-$imageTemp = $_FILES["file"]["tmp_name"];       
-// Compress size and upload image 
-$compressedImage = compressImage($imageTemp, $target_file, 50); 
-if($compressedImage){ 
-    $subjects=$_POST['l1'].",".$_POST['l2'].",".$_POST['l3'].$_POST['Science'].",".$_POST['Maths'].",".$_POST['Social'];
+$subjects=$_POST['l1'].",".$_POST['l2'].",".$_POST['l3'].$_POST['Science'].",".$_POST['Maths'].",".$_POST['Social'];
 $marks=$_POST['l1_m'].",".$_POST['l2_m'].",".$_POST['l3_m'].$_POST['s1_m'].",".$_POST['s2_m'].",".$_POST['s3_m'];
 $per=(($_POST['marks'])/625)*100;
  $insert_data = array(
@@ -74,7 +82,7 @@ $per=(($_POST['marks'])/625)*100;
  "marks"=>$marks,
  "total"=>$_POST['marks'],
  "per"=>$per,
- "photo"=>$target_file,
+ "photo"=>'null',
  "combination_opted"=>$_POST['combination_opted'],
  "lang_opted"=>$_POST['lang_opted'],
  );
@@ -86,11 +94,6 @@ if($conn->query($sql)== TRUE){
 }else{
     echo "<p style='color:red;font-weight:bold;font-size:20px;'>Failed to add</p>";
 }
-}else{ 
-    echo "<p style='color:green;font-weight:bold;font-size:20px;'>Failed to compress image !</p>";
-} 
-
-
-
 }
+
 
