@@ -50,7 +50,7 @@ include '../../php_include/db/db.php';
 // insert data
 if(isset($_POST["student_name"])) {
 $subjects=$_POST['l1'].",".$_POST['l2'].",".$_POST['l3']."Science,Maths,Social";
-$marks=$_POST['l1_m'].",".$_POST['l2_m'].",".$_POST['l3_m'].$_POST['s1_m'].",".$_POST['s2_m'].",".$_POST['s3_m'];
+$marks=$_POST['l1_m'].",".$_POST['l2_m'].",".$_POST['l3_m'].",".$_POST['s1_m'].",".$_POST['s2_m'].",".$_POST['s3_m'];
 $per=(($_POST['marks'])/625)*100;
  $insert_data = array(
 "student_id"=>'null',
