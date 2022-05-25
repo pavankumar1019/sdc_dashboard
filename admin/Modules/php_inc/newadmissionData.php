@@ -55,6 +55,7 @@ $output = '
     <th>ID</th>
     <th>Detailes</th>
     <th>Photo</th>
+    <th>Sats_Number</th>
   </tr>
 ';
 if($total_data > 0)
@@ -67,6 +68,11 @@ if($total_data > 0)
 		  }else{
 $checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
 		  }
+		  if($row["sats"] != 'null'){
+			$checksats= $row["sats"];
+		  }else{
+$checksats='<input type="text" name="sats" data-id="'.$row['id'].'">';
+		  }
 	$detailes='
 	<h3>'.$row['student_name'].'</h3>
 	<p>'.$row['father_name'].'</p>
@@ -77,6 +83,7 @@ $checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
       <td>'.$row["id"].'</td>
       <td>'.$detailes.'</td>
       <td>'.$checkimage.'</td>
+      <td>'.$checksats.'</td>
     </tr>
     ';
   }
