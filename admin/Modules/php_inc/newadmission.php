@@ -94,7 +94,7 @@ if($conn->query($sql)== TRUE){
 	
 	// Message details
 	$mobileno = $_POST['mobile_no'];
-$content =  rawurlencode('Dear '.$_POST['student_aadhar'].' 
+$content =  rawurlencode('Dear '.$_POST['student_name'].' 
 Your admission is confirmed.Thank you for choosing our college.
 SDC COLLEGE BANGARPET-563114');
 
