@@ -12,7 +12,7 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="inputAddress">Date of Birth</label> <br>
-                <input type="date"  name="dob" id="inputAddress" required>
+                <input type="text" class="form-control" name="dob" id="inputAddress" required>
             </div>
             
             <div class="form-group col-md-3" style="display:flex;">
