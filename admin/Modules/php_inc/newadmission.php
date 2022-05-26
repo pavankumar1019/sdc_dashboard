@@ -90,6 +90,27 @@ $per=(($_POST['marks'])/625)*100;
  $table_data= implode("', '", $insert_data);
 $sql = "INSERT INTO new_admission_bpet ($table_columns) VALUES ('$table_data') "; 
 if($conn->query($sql)== TRUE){
+    $method = 'sendMessage';
+	
+	// Message details
+	$mobileno = $_POST['mobile_no'];
+$content =  rawurlencode('Dear '.$_POST['student_aadhar'].' 
+Your admission is confirmed.Thank you for choosing our college.
+SDC COLLEGE BANGARPET-563114');
+
+
+ 
+	// Prepare data for POST request
+	$data = array('method' => $method, 'mobileno' => $mobileno, 'content' => $content, 'loginid' =>'Sdcbpet2', 'auth_scheme'=>'PLAIN', 'password'=>'Sajsdc@25');
+ 
+	// Send the POST request with cURL
+	$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno=7483737698&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
+	curl_setopt($ch, CURLOPT_POST, false);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	$response = curl_exec($ch);
+	curl_close($ch);
+	// Process your response here
+	// echo $response;
     echo "done";
 }else{
     echo "failed";
