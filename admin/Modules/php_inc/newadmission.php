@@ -93,7 +93,7 @@ if($conn->query($sql)== TRUE){
     $method = 'sendMessage';
 	
 	// Message details
-	$mobileno = $_POST['mobile_no'];
+
 $content =  rawurlencode('Dear '.$_POST['student_name'].' 
 Your admission is confirmed.Thank you for choosing our college.
 SDC COLLEGE BANGARPET-563114');
@@ -104,7 +104,7 @@ SDC COLLEGE BANGARPET-563114');
 	$data = array('method' => $method, 'mobileno' => $mobileno, 'content' => $content, 'loginid' =>'Sdcbpet2', 'auth_scheme'=>'PLAIN', 'password'=>'Sajsdc@25');
  
 	// Send the POST request with cURL
-	$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno=7483737698&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
+	$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$_POST['mobile_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
 	curl_setopt($ch, CURLOPT_POST, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$response = curl_exec($ch);
