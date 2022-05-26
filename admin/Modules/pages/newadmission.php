@@ -11,7 +11,7 @@
                 <input type="text" class="form-control" id="inputPassword4" name="student_aadhar" placeholder="Aadhar No" required>
             </div>
             <div class="form-group col-md-6">
-                <label for="inputAddress">Date of Birth</label>
+                <label for="inputAddress">Date of Birth</label> <br>
                 <input type="date"  name="dob" id="inputAddress" required>
             </div>
             
