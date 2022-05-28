@@ -4,10 +4,10 @@
         <div class="form-row" style="font-weight:bold;">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">Name Of Student </label>
-                <input type="text" class="form-control" id="inputEmail4" name="student_name" placeholder="Name" required>
+                <input type="text" class="form-control" id="adhar" name="student_name" placeholder="Name" required>
             </div>
             <div class="form-group col-md-6">
-                <label for="inputPassword4">Student Aadhaar No.</label>
+                <label for="inputPassword4">Student Aadhaar No.  &nbsp;<span style="color:red">Data already Present</span></label>
                 <input type="text" class="form-control" id="inputPassword4" name="student_aadhar" placeholder="Aadhar No" required>
             </div>
             <div class="form-group col-md-6">
@@ -177,7 +177,7 @@
             </div>
             <div class="col-12">
             <label for="inputZip">Particulars of SSLC / Equivalent Exam Passed</label> <br>
-            <span style="color:red">Data already Present</span>
+          
             </div>
             <div class="form-group col-md-6">
          

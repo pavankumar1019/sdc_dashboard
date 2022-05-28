@@ -1,6 +1,6 @@
 $(document).ready(function(e){
-    $("#reg_no").change(function(){
-        alert("The text has been changed.");
+    $("#adhar").keyup(function(){
+       
       });
     // Submit form data via Ajax
     $("#fupForm").on('submit', function(e){
