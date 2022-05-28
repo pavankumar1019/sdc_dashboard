@@ -41,6 +41,7 @@ $(document).ready(function(e){
                         timer: 1500
                       })
                       $("#fupForm").trigger("reset");
+                      $('#checkdata').html('');
                 }else{
                     Swal.fire({
                         icon: 'error',
