@@ -177,6 +177,7 @@
             </div>
             <div class="col-12">
             <label for="inputZip">Particulars of SSLC / Equivalent Exam Passed</label> <br>
+            <span style="color:red">Data already Present</span>
             </div>
             <div class="form-group col-md-6">
          
