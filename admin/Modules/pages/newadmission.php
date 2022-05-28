@@ -182,7 +182,7 @@
             <div class="form-group col-md-6">
          
                 <label for="inputZip">Reg No. :</label>
-                <input type="text" name="reg_no_sslc" class="form-control" id="inputZip" required>
+                <input type="text" name="reg_no_sslc" class="form-control" id="reg_no" required>
 
             </div>
             <div class="form-group col-md-6">

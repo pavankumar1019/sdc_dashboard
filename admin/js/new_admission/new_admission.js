@@ -1,4 +1,7 @@
 $(document).ready(function(e){
+    $("#reg_no").change(function(){
+        alert("The text has been changed.");
+      });
     // Submit form data via Ajax
     $("#fupForm").on('submit', function(e){
         e.preventDefault();
