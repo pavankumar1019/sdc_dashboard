@@ -7,7 +7,7 @@
                 <input type="text" class="form-control" id="adhar" name="student_name" placeholder="Name" required>
             </div>
             <div class="form-group col-md-6">
-                <label for="inputPassword4">Student Aadhaar No.  &nbsp;<span style="color:red">Data already Present</span></label>
+                <label for="inputPassword4">Student Aadhaar No.  &nbsp;<span style="color:red" id="checkdata"></span></label>
                 <input type="text" class="form-control" id="inputPassword4" name="student_aadhar" placeholder="Aadhar No" required>
             </div>
             <div class="form-group col-md-6">
