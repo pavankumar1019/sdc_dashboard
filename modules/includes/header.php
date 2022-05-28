@@ -9,9 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
   <link rel="icon" href="images/logo1.svg" type="image/gif" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="sdc college bangarpet, SDC, SDC-college, Best College in Bangarpet" />
+  <meta name="description" content="Smt. Danamma Channabasavaiah College of Arts, Commerce, Science and Management studies (Bangarpet)
+" />
+  <meta name="author" content="PK | Web Devloper" />
 
   <title>SDC</title>
 
