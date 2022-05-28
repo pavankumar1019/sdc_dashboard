@@ -19,6 +19,26 @@ $(document).ready(function(e){
             }
         })  
       });
+    $("#aadhar").keydown(function(){
+        $.ajax({
+            type: "POST",
+            data: {
+                aadhar: $(this).val(),
+            },
+            url: "./Modules/php_inc/checkdata.php",
+            success: function(data)
+            {
+                if(data === 'USER_AVAILABLE')
+                {
+                   $('#checkdata').html('Data already Present');
+                }
+                else
+                {
+                    $('#checkdata').html('');
+                }
+            }
+        })  
+      });
     // Submit form data via Ajax
     $("#fupForm").on('submit', function(e){
         e.preventDefault();
