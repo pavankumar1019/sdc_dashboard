@@ -318,7 +318,7 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mx-auto">
+        <!-- <div class="col-lg-6 mx-auto">
           <div class="client_container ">
             <div class="detail-box">
               <p>
@@ -342,7 +342,7 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
