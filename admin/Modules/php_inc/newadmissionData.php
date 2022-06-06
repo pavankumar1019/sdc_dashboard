@@ -61,7 +61,11 @@ $output = '
 ';
 if($total_data > 0)
 {
-  foreach($result as $row)
+  function count_digit($number) {
+    echo strlen($number);
+  }
+  
+   foreach($result as $row)
   {
 	
 		  if($row["photo"] != 'null'){
@@ -69,10 +73,15 @@ if($total_data > 0)
 		  }else{
 $checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
 		  }
-		  if($row["sats"] != 'null'){
-			$checksats= $row["sats"];
+// 		  if($row["sats"] != 'null'){
+// 			$checksats= $row["sats"];
+// 		  }else{
+// $checksats='<input type="text" name="sats" data-id="'.$row['id'].'">&nbsp;<button class="btn btn-outline-info btn-sm">ADD</button>';
+// 		  }
+		  if(count_digit($row["mobile_no"]=="10")){
+			$checksats= $row["mobile_no"];
 		  }else{
-$checksats='<input type="text" name="sats" data-id="'.$row['id'].'">&nbsp;<button class="btn btn-outline-info btn-sm">ADD</button>';
+$checksats='<input type="text" name="sats" data-id="'.$row['id'].' value='.$row["mobile_no"].'">&nbsp;<button class="btn btn-outline-info btn-sm">ADD</button>';
 		  }
 	$detailes='
 	<h3>'.$row['student_name'].'</h3>
