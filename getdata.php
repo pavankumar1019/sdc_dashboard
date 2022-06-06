@@ -1,6 +1,6 @@
 <?php
 
-header("Content-Type: application/xls");    
+header("Content-Type: application/xlsx");    
 header("Content-Disposition: attachment; filename=getdata.xlsx");  
 header("Pragma: no-cache"); 
 header("Expires: 0");
