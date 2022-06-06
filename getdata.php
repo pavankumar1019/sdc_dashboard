@@ -1,9 +1,8 @@
 <?php
-
-header("Content-Type: application/xlsx");    
-header("Content-Disposition: attachment; filename=getdata.xlsx");  
-header("Pragma: no-cache"); 
-header("Expires: 0");
+header("Content-type: application/octet-stream");  
+header("Content-Disposition: attachment; filename=User_Detail.xls");  
+header("Pragma: no-cache");  
+header("Expires: 0");  
 
 $servername = "localhost";
 $username = "u430139865_sdc";
