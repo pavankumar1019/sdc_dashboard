@@ -78,7 +78,7 @@ $checkimage= '<input type="file" name="photo" data-id="'.$row['id'].'">';
 // 		  }else{
 // $checksats='<input type="text" name="sats" data-id="'.$row['id'].'">&nbsp;<button class="btn btn-outline-info btn-sm">ADD</button>';
 // 		  }
-		  if(count_digit($row["mobile_no"]=="10")){
+		  if(count_digit($row["mobile_no"])=="10"){
 			$checksats= $row["mobile_no"];
 		  }else{
 $checksats='<input type="text" name="sats" data-id="'.$row['id'].' value='.$row["mobile_no"].'">&nbsp;<button class="btn btn-outline-info btn-sm">ADD</button>';
