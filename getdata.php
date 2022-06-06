@@ -1,7 +1,7 @@
 <?php
 
 header("Content-Type: application/xls");    
-header("Content-Disposition: attachment; filename=getdata.xls");  
+header("Content-Disposition: attachment; filename=getdata.xlsx");  
 header("Pragma: no-cache"); 
 header("Expires: 0");
 
@@ -17,7 +17,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT `student_name`,`combination_opted`,`mobile_no` FROM `new_admission_bpet`"; 
+$sql = "SELECT `student_name`,`combination_opted`,`mobile_no` FROM `new_admission_bpet` where combination_opted='PCMB'"; 
 $result=$conn->query($sql);
 echo '<table border="1">';
 //make the column headers what you want in whatever order you want
