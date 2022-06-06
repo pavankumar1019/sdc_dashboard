@@ -1,5 +1,10 @@
 <?php
 
+header("Content-type: application/octet-stream");  
+header("Content-Disposition: attachment; filename=User_Detail.xls");  
+header("Pragma: no-cache");  
+header("Expires: 0");  
+
 $servername = "localhost";
 $username = "u430139865_sdc";
 $password = "Pavan5639";
@@ -23,8 +28,4 @@ foreach($result as $row){
 }
 echo '</table>';
 
-header("Content-type: application/octet-stream");  
-header("Content-Disposition: attachment; filename=User_Detail.xls");  
-header("Pragma: no-cache");  
-header("Expires: 0");  
 ?>
