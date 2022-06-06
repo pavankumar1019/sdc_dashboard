@@ -21,7 +21,7 @@ $sql = "SELECT `student_name`,`combination_opted`,`mobile_no` FROM `new_admissio
 $result=$conn->query($sql);
 echo '<table border="1">';
 //make the column headers what you want in whatever order you want
-echo '<tr><th>Field Name 1</th><th>Field Name 2</th><th>Field Name 3</th></tr>';
+echo '<tr><th> Name </th><th>Combination Opted</th><th>Phone_number</th></tr>';
 //loop the query data to the table in same order as the headers
 foreach($result as $row){
     echo "<tr><td>".$row['student_name']."</td><td>".$row['combination_opted']."</td><td>".$row['mobile_no']."</td></tr>";
