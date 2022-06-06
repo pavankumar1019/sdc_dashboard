@@ -23,9 +23,8 @@ foreach($result as $row){
 }
 echo '</table>';
 
-
-header("Content-Type: application/xls");    
-header("Content-Disposition: attachment; filename=filename.xls");  
-header("Pragma: no-cache"); 
-header("Expires: 0");
+header("Content-type: application/octet-stream");  
+header("Content-Disposition: attachment; filename=User_Detail.xls");  
+header("Pragma: no-cache");  
+header("Expires: 0");  
 ?>
