@@ -1,9 +1,6 @@
 <?php
 
-header("Content-Type: application/xls");    
-header("Content-Disposition: attachment; filename=getdata.xls");  
-header("Pragma: no-cache"); 
-header("Expires: 0");
+
 
 $servername = "localhost";
 $username = "u430139865_sdc";
@@ -27,5 +24,8 @@ foreach($result as $row){
     echo "<tr><td>".$row['student_name']."</td><td>".$row['combination_opted']."</td><td>".$row['mobile_no']."</td></tr>";
 }
 echo '</table>';
-
+header("Content-Type: application/xls");    
+header("Content-Disposition: attachment; filename=getdata.xls");  
+header("Pragma: no-cache"); 
+header("Expires: 0");
 ?>
