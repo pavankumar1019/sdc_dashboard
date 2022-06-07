@@ -12,6 +12,7 @@ function countdata()
         success:function(data)
         {
           $('#getcountdata').html(data);
+          $('#getcountdata2').html(data);
         }
       });
 }
