@@ -211,96 +211,12 @@
                                     <h5>Result Data</h5>
                                 </div>
                                 <div class="card-block px-0 py-3">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover">
-                                            <tbody>
-                                                <tr class="unread">
-                                                    <td>
-                                                    <h5 class="mb-1">S3501</h5>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="mb-1">PAVAN KUMAR S</h6>
-                                                        <p class="m-0">Hello Dad</p>
-                                                        <p class="m-0">PCMB</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L1
-                                                            20  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L2
-                                                            20</h6>
-                                                       
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S1
-                                                            20 &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S2
-                                                            20
-                                                        
-                                                        </h6>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S3
-                                                            20 &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S4
-                                                            20
-                                                        
-                                                        </h6>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-black f-10 m-r-15"></i>TOTAL : 
-                                                            20 
-                                                        </h6>
-                
-                                                    
-                                                    </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Print</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Edit</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td>
-                                                    <h5 class="mb-1">S3501</h5>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="mb-1">PAVAN KUMAR S</h6>
-                                                        <p class="m-0">Hello Dad</p>
-                                                        <p class="m-0">PCMB</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L1
-                                                            20  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L2
-                                                            20</h6>
-                                                       
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S1
-                                                            20 &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S2
-                                                            20
-                                                        
-                                                        </h6>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S3
-                                                            20 &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S4
-                                                            20
-                                                        
-                                                        </h6>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-black f-10 m-r-15"></i>TOTAL : 
-                                                            20 
-                                                        </h6>
-                
-                                                    
-                                                    </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Print</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Edit</a>
-                                                    </td>
-                                                </tr>
+                                    <div class="table-responsive" id="data">
+                                       
                                                 
-                                            </tbody>
-                                        </table>
+                                       
+                                                
+                                         
                                     </div>
                                 </div>
                             </div>
@@ -341,3 +257,119 @@
         return false;
     }
 </script> -->
+
+<script>
+    $(document).ready(function () {
+  $(document).on('click', '#print', function(){ 
+
+window.open("http://sdccollegebpet.in/bangarpet/office/templates/markscard/index.php?reg_no="+$(this).attr('data-id'), "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
+
+  })
+
+  loadtable('');
+    $('#inputsearch').keyup(function(){
+      var search=$(this).val();
+      if(search!=''){
+        loadtable(search);
+      }
+      else{
+        loadtable('');
+      }
+    });
+ 
+    // print all
+
+    $('#print_all').click(function(){
+      // window.open('http://localhost/php/sdccollege/Modules/api/markscard/index.php?reg_no=');
+    // window.location = 'http://localhost/php/sdccollege/Modules/api/markscard/index.php?reg_no=';
+    window.open("http://sdccollegebpet.in/admin/Modules/api/markscard/index.php?reg_no=", "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
+
+    })
+    // print function
+  
+    function loadtable(query){
+     var fd = new FormData();
+              importData(fd, query);
+                function importData(form_data, query){
+              form_data.append('type', 'loaddata');   
+              form_data.append('query', query);   
+              $.ajax({
+                url:"./php_operations/markscard.php", /*point to server-side PHP script */
+                /* what to expect back from the PHP script, if anything*/
+                  cache: false,
+                  contentType: false,
+                  processData: false,
+                  data: form_data,                         
+                  type: 'post',
+                  success: function(dataReasult){
+$('#data').html(dataReasult);
+                  }
+               });
+    }
+}
+    $('#deploy').change(function(){
+         var file_data = $(this).prop("files")[0];
+          var fd = new FormData();
+          fd.append('file', file_data); 
+        importData(fd);
+        })
+      function importData(form_data){
+        // console.log("ADDing.........");
+        // var file_data = $(this).prop('files')[0];   
+        // var form_data = new FormData();
+        // form_data.append('file', file_data);   
+        form_data.append('type', 'import_validate');   
+        $.ajax({
+          url:"./php_operations/markscard.php", /*point to server-side PHP script */
+       /* what to expect back from the PHP script, if anything*/
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,                         
+            type: 'post',
+            success: function(dataReasult){
+              loadtable('');
+              $('#mssg').html(dataReasult);
+            }
+         });
+      }
+      $('#truncate').click(function(){
+        Swal.fire({
+            title: 'Are you sure? want to delete all',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+         
+                var fd = new FormData();
+              importData(fd);
+                function importData(form_data){
+              form_data.append('type', 'truncate');   
+              $.ajax({
+                url:"./Modules/php_inc/upload_markscard.php", /*point to server-side PHP script */
+                /* what to expect back from the PHP script, if anything*/
+                  cache: false,
+                  contentType: false,
+                  processData: false,
+                  data: form_data,                         
+                  type: 'post',
+                  success: function(dataReasult){
+                    loadtable('');
+                  }
+               });
+            }
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+            }
+          })
+      })
+   
+});
+</script>
