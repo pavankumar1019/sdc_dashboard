@@ -3,7 +3,8 @@ $(document).ready(function(){
     setInterval(function(){ 
         countdata();
     }, 1000);
-function countdata(){
+function countdata()
+{
     $.ajax({
         url:"./php_operations/markscard.php",
         method:"POST",
