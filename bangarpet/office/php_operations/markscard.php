@@ -260,6 +260,15 @@ if($_POST['type']=="loaddata"){
     echo $output;
 }
 
+if($_POST['type']=="getcount"){
 
+    $query = "
+    SELECT * FROM sdc_marks_card_bpet
+    ";
+    $statement = $connect->prepare($query);
+    $statement->execute();
+    echo $statement->rowCount();
+
+}
 ?>
     

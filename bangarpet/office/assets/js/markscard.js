@@ -1,4 +1,20 @@
 $(document).ready(function(){
+    countdata();
+    setInterval(function(){ 
+        countdata();
+    }, 1000);
+function countdata(){
+    $.ajax({
+        url:"./php_operations/markscard.php",
+        method:"POST",
+        data:{type: "getcount"},
+        success:function(data)
+        {
+          $('#getcountdata').html(data);
+        }
+      });
+}
+
 
     load_data(1);
 
