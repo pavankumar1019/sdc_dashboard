@@ -119,7 +119,7 @@ if($_POST['type']=="loaddata"){
                                                     
                                                     </td>
                                                     <td><a 
-                                                            class="label theme-bg2 text-white f-12" data-id='.$row['reg_no'].' >Print</a><a
+                                                            class="label theme-bg2 text-white f-12" data-id='.$row['reg_no'].' id="print">Print</a><a
                                                             class="label theme-bg text-white f-12" data-id='.$row['reg_no'].' >Edit</a>
                                                     </td>
                                                 </tr>
