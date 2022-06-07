@@ -63,7 +63,22 @@ if($_POST['type']=="loaddata"){
        foreach($result as $row)
       {
         
-            
+            if($row['class_code']==5){
+                $class="PCMB";
+            }
+            if($row['class_code']==4){
+                $class="PCMCS";
+            }
+            if($row['class_code']==3){
+                $class="EBAS";
+            }
+            if($row['class_code']==2){
+                $class="EBACS";
+            }
+            if($row['class_code']==1){
+                $class="BASM";
+            }
+
         $output .= '
         <tr class="unread">
                                                     <td>
@@ -72,6 +87,7 @@ if($_POST['type']=="loaddata"){
                                                     <td>
                                                         <h6 class="mb-1">'.$row['student_name'].'</h6>
                                                         <p class="m-0">'.$row['father_name'].'</p>
+                                                        <p class="m-0">'.$class.'</p>
                                                       
                                                     </td>
                                                     <td>
