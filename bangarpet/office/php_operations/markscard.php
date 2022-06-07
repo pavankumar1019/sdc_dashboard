@@ -67,44 +67,44 @@ if($_POST['type']=="loaddata"){
         $output .= '
         <tr class="unread">
                                                     <td>
-                                                    <h5 class="mb-1">S3501</h5>
+                                                    <h5 class="mb-1">'.$row['reg_no'].'</h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">PAVAN KUMAR S</h6>
-                                                        <p class="m-0">Hello Dad</p>
-                                                        <p class="m-0">PCMB</p>
+                                                        <h6 class="mb-1">'.$row['student_name'].'</h6>
+                                                        <p class="m-0">'.$row['father_name'].'</p>
+                                                      
                                                     </td>
                                                     <td>
                                                         <h6 class="text-muted"><i
                                                                 class="fas fa-circle text-c-green f-10 m-r-15"></i>L1
-                                                            20  &nbsp;&nbsp;&nbsp;<i
+                                                                '.$row['l1'].'  &nbsp;&nbsp;&nbsp;<i
                                                                 class="fas fa-circle text-c-green f-10 m-r-15"></i>L2
-                                                            20</h6>
+                                                                '.$row['l2'].' </h6>
                                                        
                                                         <h6 class="text-muted"><i
                                                                 class="fas fa-circle text-c-blue f-10 m-r-15"></i>S1
-                                                            20 &nbsp;&nbsp;&nbsp;<i
+                                                                '.$row['s1'].'  &nbsp;&nbsp;&nbsp;<i
                                                                 class="fas fa-circle text-c-blue f-10 m-r-15"></i>S2
-                                                            20
+                                                                '.$row['s2'].' 
                                                         
                                                         </h6>
                                                         <h6 class="text-muted"><i
                                                                 class="fas fa-circle text-c-blue f-10 m-r-15"></i>S3
-                                                            20 &nbsp;&nbsp;&nbsp;<i
+                                                                '.$row['s3'].'  &nbsp;&nbsp;&nbsp;<i
                                                                 class="fas fa-circle text-c-blue f-10 m-r-15"></i>S4
-                                                            20
+                                                                '.$row['s4'].' 
                                                         
                                                         </h6>
                                                         <h6 class="text-muted"><i
                                                                 class="fas fa-circle text-c-black f-10 m-r-15"></i>TOTAL : 
-                                                            20 
+                                                                '.$row['gt'].' 
                                                         </h6>
                 
                                                     
                                                     </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Print</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Edit</a>
+                                                    <td><a 
+                                                            class="label theme-bg2 text-white f-12" data-id='.$row['reg_no'].' >Print</a><a
+                                                            class="label theme-bg text-white f-12" data-id='.$row['reg_no'].' >Edit</a>
                                                     </td>
                                                 </tr>
         ';
