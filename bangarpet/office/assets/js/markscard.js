@@ -78,4 +78,8 @@ function countdata()
   
           });
 
+
+          $(".modal").on("hidden.bs.modal", function(){
+          $('#markscardform').reset();
+        });
   });
