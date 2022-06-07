@@ -26,4 +26,14 @@ $(document).ready(function(){
       load_data(1, query);
     });
 
+
+    // print idividual marks card
+    $(document).on('click', '#print', function(){ 
+
+        window.open("http://sdccollegebpet.in/bangarpet/office/model/templates/index.php?reg_no="+$(this).attr('data-id'), "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
+        
+          })
+
+
+
   });
