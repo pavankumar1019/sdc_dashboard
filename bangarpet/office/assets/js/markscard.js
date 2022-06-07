@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    $('#btnmarkscard').click(function(){
+        $("#newadmissionmodal").modal('show');
+        $('#type').val('add');
+      });
+
+
     countdata();
     setInterval(function(){ 
         countdata();

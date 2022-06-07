@@ -270,5 +270,12 @@ if($_POST['type']=="getcount"){
     echo $statement->rowCount();
 
 }
+if($_POST['type']=="add"){
+
+   
+
+}
+
+
 ?>
     

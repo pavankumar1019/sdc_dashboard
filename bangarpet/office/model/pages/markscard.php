@@ -109,6 +109,7 @@
                                         <hr>
                                         
                                         <div class="form-group  col-12">
+                                            <input type="hidden" name="type" id="type">
                                         <input type="submit" name="submit"  class="btn btn-primary" />
                                         </div>
                                       
@@ -150,7 +151,7 @@
                     <div class="row">
                         <!--[ daily sales section ] start-->
                         <div class="col-md-6 col-xl-4 ">
-                            <div class="card daily-sales bg-dark " type="button" id="btnAdmissionModal">
+                            <div class="card daily-sales bg-dark " type="button" id="btnmarkscard">
                                 <div class="card-block">
                                     <h6 class="mb-4 text-white">MC- Generator</h6>
                                     <div class="row d-flex align-items-center">
