@@ -272,7 +272,38 @@ if($_POST['type']=="getcount"){
 }
 if($_POST['type']=="add"){
 
-   
+    $insert_data = array(
+        "sats_no"=>$_POST['sats_no'],
+        "student_no"=>$_POST['student_no'],
+        "reg_no"=>$_POST['reg_no'],
+         "student_name"=>$_POST['name'],
+         "father_name"=>$_POST['father_name'],
+         "mother_name"=>$_POST['mother_name'],
+         "langcode"=>$_POST['lang1'],
+         "l1"=>$_POST['l1'],
+         "l2"=>$_POST['l2'],
+         "s1"=>$_POST['s1'],
+         "s2"=>$_POST['s2'],
+         "s3"=>$_POST['s3'],
+         "s4"=>$_POST['s4'],
+         "gt"=>$_POST['gt'],
+         "class_code"=>$_POST['combination_opted'],
+         "year_of_passing"=>$_POST['year_of_passing'],
+         );
+         $table_columns= implode(',', array_keys($insert_data));
+         $table_data= implode("', '", $insert_data);
+       $sql = "INSERT INTO sdc_marks_card_bpet ($table_columns) VALUES ('$table_data') "; 
+       $conn->query($sql);
+    $error=true;
+        
+        if ($error==true) {
+          echo "Done";
+        } else {
+          echo "Failed Duplicate entry. !";
+        }
+    
+    
+    echo $html;
 
 }
 
