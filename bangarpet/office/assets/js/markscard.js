@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#btnmarkscard').click(function(){
         $("#newadmissionmodal").modal('show');
-        $('#markscardform').reset();
+        $('#markscardform').trigger("reset");
         $('#type').val('add');
       });
 
