@@ -63,10 +63,10 @@
                         <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users "></i></span><span class="pcoded-mtext">Student</span></a>
                         <ul class="pcoded-submenu">
                             <li class=""><a href="./dashboard.php?page=markscard" class="">Marks Card Print</a></li>
-                            <li class=""><a href="bc_badges.html" class="">ID- Genrator</a></li>
-                            <li class=""><a href="bc_breadcrumb-pagination.html" class="">Downloads</a></li>
-                            <li class=""><a href="bc_collapse.html" class="">Attendance Report</a></li>
-                            <li class=""><a href="bc_collapse.html" class="">Student DB</a></li>
+                            <li class=""><a href="#" class="">ID- Genrator</a></li>
+                            <li class=""><a href="#" class="">Downloads</a></li>
+                            <li class=""><a href="#" class="">Attendance Report</a></li>
+                            <li class=""><a href="#" class="">Student DB</a></li>
                         </ul>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
@@ -75,9 +75,9 @@
                     <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
                         <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users"></i></span><span class="pcoded-mtext">Staff</span></a>
                         <ul class="pcoded-submenu">
-                            <li class=""><a href="bc_button.html" class="">Enroll Staff</a></li>
-                            <li class=""><a href="bc_badges.html" class="">Reports</a></li>
-                            <li class=""><a href="bc_breadcrumb-pagination.html" class="">Downloads</a></li>
+                            <li class=""><a href="#" class="">Enroll Staff</a></li>
+                            <li class=""><a href="#" class="">Reports</a></li>
+                            <li class=""><a href="#" class="">Downloads</a></li>
                         </ul>
                     </li>
                   
