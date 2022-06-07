@@ -15,7 +15,7 @@
                                 </button> -->
                             </div>
                             <div class="modal-body">
-                                <form method="post" id="newadmissionsubmit">
+                                <form method="post" id="markscardform">
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
                                         <label for="numberonly">SATS No.</label>

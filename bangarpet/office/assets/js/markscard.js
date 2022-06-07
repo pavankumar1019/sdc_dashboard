@@ -60,4 +60,21 @@ function countdata()
 
 
 
+
+        //   add marks card custom
+        $('#markscardform').on('submit', function (e) {
+
+            e.preventDefault();
+  
+            $.ajax({
+              method:"POST",
+              url: './php_operations/markscard.php',
+              data: $('form').serialize(),
+              success: function () {
+                alert('form was submitted');
+              }
+            });
+  
+          });
+
   });
