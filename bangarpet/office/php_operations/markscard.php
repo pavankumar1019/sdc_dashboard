@@ -36,7 +36,7 @@ if($_POST['type']=="loaddata"){
       ';
     }
     
-    $query .= 'ORDER BY id ASC ';
+    $query .= 'ORDER BY reg_no ASC ';
     
     $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
