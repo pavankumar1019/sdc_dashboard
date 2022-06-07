@@ -70,8 +70,9 @@ function countdata()
               method:"POST",
               url: './php_operations/markscard.php',
               data: $('form').serialize(),
-              success: function () {
-                alert('form was submitted');
+              success: function (result) {
+                alert(result);
+                load_data(1);
               }
             });
   
