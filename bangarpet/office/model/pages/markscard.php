@@ -45,7 +45,7 @@
                                         <div class="form-group col-lg-4">
                                             <label for="inputPassword4">COMBINATION</label>
                                             <select id="inputState" name="combination_opted" class="form-control" required="">
-                    <option selected="">Choose...</option>
+                    <option selected disabled="disabled">Choose...</option>
                     <option value="5">PCMB</option>
                     <option value="4">PCMCs</option>
                     <option value="3">EBAS</option>
