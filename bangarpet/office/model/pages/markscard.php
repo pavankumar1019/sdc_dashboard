@@ -19,28 +19,28 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
                                         <label for="numberonly">SATS No.</label>
-                                        <input type="text" class="form-control p-lg-2" id="numberonly" name="sats_no" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                        <input type="text" class="form-control p-lg-2" id="numberonly" name="sats_no" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">STUDENT No.</label>
-                                            <input type="text" class="form-control" id="inputPassword4" name="student_no" placeholder="">
+                                            <input type="text" class="form-control" id="inputPassword4" name="student_no" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">REG No.</label>
-                                            <input type="text" class="form-control" id="inputPassword4" name="reg_no" placeholder="">
+                                            <input type="text" class="form-control" id="inputPassword4" name="reg_no" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">NAME</label>
-                                            <input type="text" class="form-control" id="inputPassword4" name="name" placeholder="">
+                                            <input type="text" class="form-control" id="inputPassword4" name="name" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">FATHER NAME</label>
-                                            <input type="text" class="form-control" id="inputPassword4" name="father_name" placeholder="">
+                                            <input type="text" class="form-control" id="inputPassword4" name="father_name" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">MOTHER NAME</label>
-                                            <input type="text" class="form-control" id="inputPassword4" name="mother_name" placeholder="">
+                                            <input type="text" class="form-control" id="inputPassword4" name="mother_name" placeholder="" required>
                                         </div>
                                         <div class="form-group col-lg-4">
                                             <label for="inputPassword4">COMBINATION</label>
@@ -66,49 +66,49 @@
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">L1 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="l1" id="numberonly">
+                                        <input type="text" class="form-control p-lg-2" name="l1" id="numberonly" required>
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">L2 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="l2" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                        <input type="text" class="form-control p-lg-2" name="l2" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S1 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s1" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                        <input type="text" class="form-control p-lg-2" name="s1" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S2 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s2" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                        <input type="text" class="form-control p-lg-2" name="s2" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S3 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s3" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                        <input type="text" class="form-control p-lg-2" name="s3" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S4 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s4" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                        <input type="text" class="form-control p-lg-2" name="s4" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-4">
                                         <label for="numberonly">TOTAL MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="gt" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                        <input type="text" class="form-control p-lg-2" name="gt" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-4">
                                         <label for="numberonly">YEAR OF PASSING</label>
-                                        <input type="text" class="form-control p-lg-2" name="year_of_passing" id="numberonly" >
+                                        <input type="text" class="form-control p-lg-2" name="year_of_passing" id="numberonly" required>
 
                                         </div>
                                         
                                         <hr>
                                         
                                         <div class="form-group  col-12">
-                                            <input type="hidden" name="type" id="type">
+                                            <input type="hidden" name="type" id="type" required>
                                         <input type="submit" name="submit"  class="btn btn-primary" />
                                         </div>
                                       
