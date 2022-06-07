@@ -44,9 +44,9 @@
                                         </div>
                                         <div class="form-group col-lg-4">
                                             <label for="inputPassword4">COMBINATION</label>
-                                            <select id="inputState" name="combination_opted" class="form-control" required="">
-                    <option selected disabled="disabled">Choose...</option>
-                    <option value="5">PCMB</option>
+                                            <select id="inputState" name="combination_opted" class="form-control" required>
+                                            <option value="">-select one-</option> 
+                                                                <option value="5">PCMB</option>
                     <option value="4">PCMCs</option>
                     <option value="3">EBAS</option>
                     <option value="2">EBACs</option>
@@ -55,9 +55,8 @@
                                         </div>
                                         <div class="form-group col-lg-4 col-2">
                                             <label for="inputPassword4">1ST LANGUAGE</label>
-                                            <select class="form-control dropdown" id="religion" name="lang1">
-    <option value="" selected="selected" disabled="disabled">-- select one --</option>
-  
+                                            <select class="form-control dropdown" id="religion" name="lang1" required>
+                                            <option value="">-select one-</option>  
     <option value="01">KANNADA</option>
     <option value="03">HINDI</option>
     <option value="08">URDU</option>
