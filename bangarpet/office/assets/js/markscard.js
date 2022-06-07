@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('#btnmarkscard').click(function(){
         $("#newadmissionmodal").modal('show');
+        $('#markscardform').reset();
         $('#type').val('add');
       });
 
@@ -79,7 +80,5 @@ function countdata()
           });
 
 
-          $(".modal").on("hidden.bs.modal", function(){
-          $('#markscardform').reset();
-        });
+    
   });
