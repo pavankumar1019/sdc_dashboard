@@ -211,7 +211,7 @@
                                     <h5>Result Data</h5>
                                 </div>
                                 <div class="card-block px-0 py-3">
-                                    <div class="table-responsive" id="data">
+                                    <div class="table-responsive" id="dynamic_content">
                                        
                                                 
                                        
