@@ -390,7 +390,7 @@ if($_POST['type']=="update"){
   )  
   output = id = '5'*/  
   $query = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";  
-  if(mysqli_query($this->conn, $query))  
+  if(mysqli_query($this->$conn, $query))  
   {  
       echo "done";
   }else{
