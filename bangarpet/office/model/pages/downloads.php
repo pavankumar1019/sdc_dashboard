@@ -137,7 +137,7 @@
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="./dashboard.php?page=home"><i
                                             class="feather icon-home"></i></a></li>
-                                <li class="breadcrumb-item"><a href="javascript:">Donload Data from Cloud</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:">Download Data from Cloud</a></li>
                             </ul>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                                                     class="feather icon-grid text-c-voilet f-30 m-r-10"></i> <span id="getcountdata">0</span> 
                                             </h3>
                                         </div>
-                                        <p class="text-white">xls,PDF,CSV</p>
+                                        <p class="text-white">xls</p>
                                     </div>
 
                                 </div>
@@ -177,7 +177,7 @@
                                             </h3>
                                             
                                         </div>
-                                        <p class="text-white">xls,PDF,CSV</p>
+                                        <p class="text-white">xls</p>
                                     </div>
 
                                 </div>
