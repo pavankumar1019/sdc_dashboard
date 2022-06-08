@@ -64,7 +64,7 @@
                         <ul class="pcoded-submenu">
                             <li class=""><a href="./dashboard.php?page=markscard" class="">Marks Card Print</a></li>
                             <li class=""><a href="#" class="">ID- Genrator</a></li>
-                            <li class=""><a href="#" class="">Downloads</a></li>
+                            <li class=""><a href="./dashboard.php?page=downloads" class="">Downloads</a></li>
                             <li class=""><a href="#" class="">Attendance Report</a></li>
                             <li class=""><a href="#" class="">Student DB</a></li>
                         </ul>
