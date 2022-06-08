@@ -22,6 +22,20 @@ $.ajax({
 
 
 // load data
+load_data(1);
+
+    function load_data(page, query = '')
+    {
+      $.ajax({
+        url:"./php_operations/newadmissions.php",
+        method:"POST",
+        data:{page:page, query:query, type: "loaddata"},
+        success:function(data)
+        {
+          $('#dynamic_content').html(data);
+        }
+      });
+    }
 
 
 
