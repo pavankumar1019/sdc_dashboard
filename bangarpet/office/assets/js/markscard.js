@@ -92,6 +92,7 @@ function countdata()
               dataType:"json",
               success:function(data)
               {
+                $("#newadmissionmodal").modal('show');
                 $('#sats_no').val(data.sats_no);
 
               }
