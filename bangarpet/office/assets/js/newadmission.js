@@ -2,7 +2,7 @@
 $(document).ready(function(){
   $('#btnAdmissionModal').click(function(){
     $("#newadmissionmodal").modal('show');
-    $('#markscardform').trigger("reset");
+    $('#newadmissionform').trigger("reset");
     $('#type').val('add');
   });
     // count total admissions
@@ -99,5 +99,22 @@ load_data(1);
           }
         });
       });
+// insert form
+$('#newadmissionform').on('submit', function (e) {
+
+  e.preventDefault();
+
+  $.ajax({
+    method:"POST",
+    url: './php_operations/newadmissions.php',
+    data: $('form').serialize(),
+    success: function (result) {
+      alert(result);
+      load_data(1);
+      $("#newadmissionmodal").modal('hide');
+    }
+  });
+
+});
 
 });

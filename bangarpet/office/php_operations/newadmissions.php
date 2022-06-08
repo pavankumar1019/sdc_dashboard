@@ -269,4 +269,65 @@ if($_POST['type']=="edit"){
   ));
   }
 }
+
+// add data
+if($_POST['type']=="add"){
+
+  $insert_data = array(
+    "student_name"=>$_POST['student_name'],
+    "student_aadhar"=>$_POST['student_aadhar'],
+    "dob"=>$_POST['dob'],
+    "gender"=>$_POST['gender'],
+    "father_name"=>$_POST['father_name'],
+    "mother_name"=>$_POST['mother_name'],
+    "religion"=>$_POST['religion'],
+    "caste"=>$_POST['caste'],
+    "subcaste"=>$_POST['subcaste'],
+    "address"=>$_POST['address'],
+    "mobile_no"=>$_POST['mobile_no'],
+    "email_id"=>$_POST['email_id'],
+    "reg_no_sslc"=>$_POST['reg_no_sslc'],
+    "total"=>$_POST['total'],
+    "year_of_passing"=>$_POST['year_of_passing'],
+    "combination_opted"=>$_POST['combination_opted'],
+    "lang_opted"=>$_POST['lang_opted']
+ 
+       );
+       $table_columns= implode(',', array_keys($insert_data));
+       $table_data= implode("', '", $insert_data);
+     $sql = "INSERT INTO new_admission_bpet ($table_columns) VALUES ('$table_data') "; 
+     $conn->query($sql);
+  $error=true;
+      
+      if ($error==true) {
+        $method = 'sendMessage';
+	
+        // Message details
+      
+      $content =  rawurlencode('Dear '.$_POST['student_name'].' 
+      Your admission is confirmed.Thank you for choosing our college.
+      SDC COLLEGE BANGARPET-563114');
+      
+      
+       
+        // Prepare data for POST request
+       
+        // Send the POST request with cURL
+        $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$_POST['mobile_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
+        curl_setopt($ch, CURLOPT_POST, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        curl_close($ch);
+        echo "Done";
+
+      } else {
+        echo "Failed Duplicate entry. !";
+      }
+  
+  
+  echo $html;
+
+}
+
+
 ?>
