@@ -329,11 +329,11 @@ SDC COLLEGE BANGARPET-563114');
 }
 
 if($_POST['type']=="update"){
-  $dob = $_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'];
+  
   $insert_data = array(
     "student_name"=>$_POST['student_name'],
     "student_aadhar"=>$_POST['student_aadhar'],
-    "dob"=>$dob,
+    "dob"=>$_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'],
     "gender"=>$_POST['gender'],
     "father_name"=>$_POST['father_name'],
     "mother_name"=>$_POST['mother_name'],
