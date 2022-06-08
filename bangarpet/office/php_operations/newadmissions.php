@@ -272,11 +272,11 @@ if($_POST['type']=="edit"){
 
 // add data
 if($_POST['type']=="add"){
-
+$dob = $_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'];
   $insert_data = array(
     "student_name"=>$_POST['student_name'],
     "student_aadhar"=>$_POST['student_aadhar'],
-    "dob"=>$_POST['dob'],
+    "dob"=>$dob,
     "gender"=>$_POST['gender'],
     "father_name"=>$_POST['father_name'],
     "mother_name"=>$_POST['mother_name'],
@@ -291,7 +291,6 @@ if($_POST['type']=="add"){
     "year_of_passing"=>$_POST['year_of_passing'],
     "combination_opted"=>$_POST['combination_opted'],
     "lang_opted"=>$_POST['lang_opted']
- 
        );
        $table_columns= implode(',', array_keys($insert_data));
        $table_data= implode("', '", $insert_data);
