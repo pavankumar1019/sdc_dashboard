@@ -20,29 +20,29 @@
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Name</label>
                                             <input type="text" class="form-control" id="student_name" name="student_name"
-                                                placeholder="">
+                                                placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">Aadhar No.</label>
-                                            <input type="text" class="form-control" id="student_aadhar" name="student_aadhar" placeholder="">
+                                            <input type="text" class="form-control" id="student_aadhar" name="student_aadhar" placeholder="" required>
                                         </div>
                                         <div class="form-group col-lg-1 col-4">
                                             <label for="inputPassword4">DOB(dd)</label>
                                             <input type="number" class="form-control p-lg-2" id="dd" name="dd"
                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                placeholder="DD" min="1" max="31" maxlength="2">
+                                                placeholder="DD" min="1" max="31" maxlength="2" required>
                                         </div>
                                         <div class="form-group col-lg-1 col-4">
                                             <label for="inputPassword4">/(mm)</label>
                                             <input type="number" class="form-control p-lg-2" id="mm" name="mm"
                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                placeholder="MM" min="1" max="12" maxlength="2">
+                                                placeholder="MM" min="1" max="12" maxlength="2" required>
                                         </div>
                                         <div class="form-group col-lg-2 col-4">
                                             <label for="inputPassword4">/(yy)</label>
                                             <input type="number" class="form-control p-lg-2" id="yy" placeholder="YYYY" name="yy"
                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                min="1990" max="2022" maxlength="4">
+                                                min="1990" max="2022" maxlength="4" required>
                                         </div>
                                         <div class="form-group col-md-1">
                                             <div class="custom-control custom-radio">
@@ -63,7 +63,7 @@
 
                                         <div class="form-group col-lg-3 col-4">
                                             <label for="inputPassword4">Religion</label>
-                                            <select class="form-control dropdown" id="religion" name="religion">
+                                            <select class="form-control dropdown" id="religion" name="religion" required>
                                                 <option value="" selected="selected" disabled="disabled">-- select one
                                                     --</option>
                                                 <option value="African Traditional &amp; Diasporic">African Traditional
@@ -106,37 +106,37 @@
                                         <div class="form-group col-lg-6 ">
                                             <label for="exampleFormControlTextarea1">Address</label>
                                             <textarea class="form-control" id="address" name="address" rows="3"
-                                                style="height: 54px;"></textarea>
+                                                style="height: 54px;" required></textarea>
                                         </div>
                                         <div class="form-group col-lg-6">
                                             <label for="inputPassword4">Phone_number</label>
                                             <input type="text" class="form-control p-lg-2" name="mobile_no" id="mobile_no"
                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                maxlength="10">
+                                                maxlength="10" required>
                                         </div>
                                         <div class="form-group col-lg-6 ">
                                             <label for="inputPassword4">Email</label>
-                                            <input type="email" id="email_id" name="email_id" class="form-control p-lg-2">
+                                            <input type="email" id="email_id" name="email_id" class="form-control p-lg-2" >
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">Father Name / Guardian</label>
-                                            <input type="text" id="father_name" name="father_name" class="form-control p-lg-2">
+                                            <input type="text" id="father_name" name="father_name" class="form-control p-lg-2" required>
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">Mother Name</label>
-                                            <input type="text" id="mother_name" name="mother_name"  class="form-control p-lg-2">
+                                            <input type="text" id="mother_name" name="mother_name"  class="form-control p-lg-2" required>
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">SSLC Reg</label>
-                                            <input type="text" id="reg_no_sslc" name="reg_no_sslc" class="form-control p-lg-2">
+                                            <input type="text" id="reg_no_sslc" name="reg_no_sslc" class="form-control p-lg-2" required>
                                         </div>
                                         <div class="form-group col-lg-2 ">
                                             <label for="inputPassword4">Year Of Passing</label>
-                                            <input type="text" id="year_of_passing" name="year_of_passing" class="form-control p-lg-2">
+                                            <input type="text" id="year_of_passing" name="year_of_passing" class="form-control p-lg-2" required>
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Total Marks OBT</label>
-                                            <input type="text" id="total" name="total" class="form-control p-lg-2">
+                                            <input type="text" id="total" name="total" class="form-control p-lg-2" required>
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Combination OPT</label>
@@ -152,7 +152,7 @@
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Language OPT</label>
-                                            <select id="lang_opted" name="lang_opted" class="form-control" required="">
+                                            <select id="lang_opted" name="lang_opted" class="form-control" required>
                                                 <option value="" selected>-select one-</option>
                                                 <option>Hindi</option>
                                                 <option>Kannada</option>
