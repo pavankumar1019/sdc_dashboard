@@ -345,55 +345,7 @@ if($_POST['type']=="edit"){
 
 // update marks card
 if($_POST['type']=="update"){
-  $insert_data = array(
-    "sats_no"=>$_POST['sats_no'],
-    "student_no"=>$_POST['student_no'],
-    "reg_no"=>$_POST['reg_no'],
-     "student_name"=>$_POST['name'],
-     "father_name"=>$_POST['father_name'],
-     "mother_name"=>$_POST['mother_name'],
-     "langcode"=>$_POST['lang1'],
-     "l1"=>$_POST['l1'],
-     "l2"=>$_POST['l2'],
-     "s1"=>$_POST['s1'],
-     "s2"=>$_POST['s2'],
-     "s3"=>$_POST['s3'],
-     "s4"=>$_POST['s4'],
-     "gt"=>$_POST['gt'],
-     "class_code"=>$_POST['combination_opted'],
-     "year_of_passing"=>$_POST['year_of_passing'],
-     );
-  $where_condition = array(
-    "reg_no"=>$_POST['id']
-        );
-  $query = '';  
-  $condition = '';  
-  foreach($insert_data as $key => $value)  
-  {  
-       $query .= $key . "='".$value."', ";  
-  }  
-  $query = substr($query, 0, -2);  
-  /*This code will convert array to string like this-  
-  input - array(  
-       'key1'     =>     'value1',  
-       'key2'     =>     'value2'  
-  )  
-  output = key1 = 'value1', key2 = 'value2'*/  
-  foreach($where_condition as $key => $value)  
-  {  
-       $condition .= $key . "='".$value."'";  
-  }  
-  $condition = substr($condition, 0, -5);  
-  /*This code will convert array to string like this-  
-  input - array(  
-       'id'     =>     '5'  
-  )  
-  output = id = '5'*/  
-  $sql = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";  
-  if(mysqli_query($this->$conn, $sql))  
-  {  
-      echo "done";
-  }  
+echo "a"; 
 
 }
 ?>
