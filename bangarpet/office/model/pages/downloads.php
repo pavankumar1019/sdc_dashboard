@@ -137,7 +137,7 @@
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="./dashboard.php?page=home"><i
                                             class="feather icon-home"></i></a></li>
-                                <li class="breadcrumb-item"><a href="javascript:">MC- Generator</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:">Donload Data from Cloud</a></li>
                             </ul>
                         </div>
                     </div>
@@ -153,11 +153,11 @@
                         <div class="col-md-6 col-xl-4 ">
                             <div class="card daily-sales bg-dark " type="button" id="btnmarkscard">
                                 <div class="card-block">
-                                    <h6 class="mb-4 text-white">MC- Generator</h6>
+                                    <h6 class="mb-4 text-white">New Admission</h6>
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-grid text-c-green f-30 m-r-10"></i> <span id="getcountdata">0</span> 
+                                                    class="feather icon-grid text-c-blue f-30 m-r-10"></i> <span id="getcountdata">0</span> 
                                             </h3>
                                         </div>
                                         <p class="text-white">Custom</p>
@@ -167,13 +167,13 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-4 ">
-                            <div class="card daily-sales bg-danger " type="button" id="btnAdmissionModal">
+                            <div class="card daily-sales bg-yellow " type="button" id="btnAdmissionModal">
                                 <div class="card-block">
-                                    <h6 class="mb-4 text-white">Truncate Data</h6>
+                                    <h6 class="mb-4 text-white">Attendance</h6>
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-alert-triangle text-c-green f-30 m-r-10"></i><span id="getcountdata2">0</span> 
+                                                    class="feather icon-grid text-c-green f-30 m-r-10"></i><span id="getcountdata2">0</span> 
                                             </h3>
                                             
                                         </div>
