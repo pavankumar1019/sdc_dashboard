@@ -32,6 +32,12 @@
                                         </div>
                                         <hr>
                                         <div class="form-group col-md-12 col-xl-12 ">
+                                            <p>To Select all > <br>select * from new_admission_bpet
+                                        To Select with columns > <br>
+                                        select column_name, column_name from  new_admission_bpet <br>
+                                        To Select with Condition > <br>
+                                        select column_name, column_name  from  new_admission_bpet where column_name="yourdata"
+                                        </p>
 </div>
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" value="downloadnewadmission">
