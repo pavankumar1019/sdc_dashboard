@@ -17,8 +17,6 @@ $(document).ready(function(){
           data: $('form').serialize(),
           success: function (result) {
             alert(result);
-            load_data(1);
-            $("#newadmissionmodal").modal('hide');
           }
         });
       });
