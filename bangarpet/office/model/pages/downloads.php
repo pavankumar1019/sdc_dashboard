@@ -15,7 +15,7 @@
                                 </button> -->
                             </div>
                             <div class="modal-body">
-                                <form id="downloadnewadmission">
+                                <form id="newadmissionform">
                                     <div class="form-row">
                                         <div class="form-group col-md-12 col-xl-12 ">
                                             <div class="card daily-sales">

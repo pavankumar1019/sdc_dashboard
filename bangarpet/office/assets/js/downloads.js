@@ -8,17 +8,19 @@ $(document).ready(function(){
 
 
     //   form submit
-    $('#downloadnewadmission').on('submit', function (e) {
+    $('#newadmissionform').on('submit', function (e) {
         e.preventDefault();
+  
         $.ajax({
           method:"POST",
-          url: './php_operations/markscard.php',
+          url: './php_operations/downloads.php',
           data: $('form').serialize(),
           success: function (result) {
             alert(result);
+            load_data(1);
+            $("#newadmissionmodal").modal('hide');
           }
         });
-alert('sdfds');
       });
 
 });
