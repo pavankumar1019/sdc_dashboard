@@ -31,6 +31,8 @@
                                         <b>select column_name, column_name from  new_admission_bpet</b> <br>
                                         To Select with Condition > <br>
                                        <b> select column_name, column_name  from  new_admission_bpet where column_name="yourdata"</b>
+                                       <br>
+                                       <br>
                                        <b style="color:blue">student_name , student_aadhar , dob , gender , father_name , mother_name , religion , mobile_no , total , year_of_passing , reg_no_sslc , combination_opted , lang_opted</b>
                                         </p>
                                                 </div>
