@@ -225,7 +225,7 @@
                                     <h6 class="mb-4">Query</h6>
                                     <div class="form-group">
                                         <label for="search">Search Here !</label>
-                                        <input type="text" class="form-control" id="search" placeholder="Search..">
+                                        <input type="text" class="form-control" id="search_box" placeholder="Search..">
 
                                     </div>
 
