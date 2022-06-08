@@ -20,9 +20,9 @@
                                         <div class="form-group col-md-12 col-xl-12 ">
                                             <div class="card daily-sales">
                                                 <div class="card-block">
-                                                    <h6 class="mb-4">Columns to export ex:- name/dob/</h6>
+                                                    <h6 class="mb-4">SQL CMD</h6>
                                                     <div class="form-group">
-                                                        <label for="search">Search Here !</label>
+                                                        <label for="search">CMD Here !</label>
                                                         <textarea type="text" class="form-control" id="search_box"
                                                             placeholder="Search.." name="cmd"></textarea>
                                                     </div>
@@ -31,12 +31,13 @@
                                             </div>
                                         </div>
                                         <hr>
-
+                                        <div class="form-group col-md-12 col-xl-12 ">
+</div>
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" value="downloadnewadmission">
                                             <input type="submit" name="submit" class="btn btn-primary" />
                                         </div>
-
+                         
 
                                     </div>
                                 </form>
