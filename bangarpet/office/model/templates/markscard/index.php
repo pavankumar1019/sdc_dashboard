@@ -362,7 +362,7 @@ else
                     <td>In Words</td>
                 </tr>
                 <tr>
-                    <td colspan="1"><?php language($row['langcode']);?></td>
+                    <td colspan="1" style="text-transform: uppercase"><?php language($row['langcode']);?></td>
                     <td><?php echo $row['langcode'];?></td>
                     <td>100</td>
                     <td>35</td>
@@ -373,7 +373,7 @@ else
 
                 </tr>
                 <tr>
-                    <td colspan="1"><?php echo "English" ?></td>
+                    <td colspan="1" style="text-transform: uppercase"><?php echo "English" ?></td>
                     <td>2</td>
                     <td>100</td>
                     <td>35</td>
