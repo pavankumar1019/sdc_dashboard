@@ -9,20 +9,16 @@ $(document).ready(function(){
 
     //   form submit
     $('#markscardform').on('submit', function (e) {
-
-        e.preventDefault();
-
-        $.ajax({
-          method:"POST",
-          url: './php_operations/markscard.php',
-          data: $('form').serialize(),
-          success: function (result) {
-            alert(result);
-            load_data(1);
-            $("#newadmissionmodal").modal('hide');
-          }
-        });
-
+        // e.preventDefault();
+        // $.ajax({
+        //   method:"POST",
+        //   url: './php_operations/markscard.php',
+        //   data: $('form').serialize(),
+        //   success: function (result) {
+        //     alert(result);
+        //   }
+        // });
+alert('')
       });
 
 });
