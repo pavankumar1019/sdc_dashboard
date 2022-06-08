@@ -76,7 +76,13 @@ if($_POST['type']=="loaddata"){
     
      foreach($result as $row)
     {
-      
+      if(strlen((string)$row['mobile_no'])==10){
+        $number_phone='<i
+        class="fas fa-circle text-c-green f-10 m-r-15"></i>'.$row['mobile_no'].'';
+      }else{
+        $number_phone='<i
+        class="fas fa-circle text-c-red f-10 m-r-15"></i>'.$row['mobile_no'].'';
+      }
           
       $output .= '
       <tr class="unread">
@@ -88,8 +94,7 @@ if($_POST['type']=="loaddata"){
           <p class="m-0">Father Name : '.$row['father_name'].'<br>Mother Name: '.$row['mother_name'].'<br>SSLC MARKS :  '.$row['total'].'<br>Combination Opted: '.$row['combination_opted'].'<br>Language Opted: '.$row['lang_opted'].'<br><b>DOB: '.$row['dob'].'</b></p>
       </td>
       <td>
-          <h6 class="text-muted"><i
-                  class="fas fa-circle text-c-green f-10 m-r-15"></i>'.$row['mobile_no'].'</h6>
+          <h6 class="text-muted">'.$number_phone.'</h6>
       </td>
       <td><a href="#!"
               class="label theme-bg2 text-white f-12" data-id='.$row['id'].'>Edit</a><a
