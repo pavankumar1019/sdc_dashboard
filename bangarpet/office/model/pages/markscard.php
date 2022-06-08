@@ -53,7 +53,7 @@
                     <option value="1">BASM</option>
                 </select>
                                         </div>
-                                        <div class="form-group col-lg-4 col-2">
+                                        <div class="form-group col-lg-4 ">
                                             <label for="inputPassword4">1ST LANGUAGE</label>
                                             <select class="form-control dropdown" id="lang1" name="lang1" required>
                                             <option value="">-select one-</option>  
