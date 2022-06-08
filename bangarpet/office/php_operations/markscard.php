@@ -364,11 +364,7 @@ if($_POST['type']=="update"){
      "class_code"=>$_POST['combination_opted'],
      "year_of_passing"=>$_POST['year_of_passing'],
      );
-  $where_condition = array(
-    "reg_no"=>$_POST['id']
-        );
-  $query = '';  
-  $condition = '';  
+  $query = '';   
   foreach($insert_data as $key => $value)  
   {  
        $query .= $key . "='".$value."', ";  
@@ -380,27 +376,14 @@ if($_POST['type']=="update"){
        'key2'     =>     'value2'  
   )  
   output = key1 = 'value1', key2 = 'value2'*/  
-  foreach($where_condition as $key => $value)  
-  {  
-    $condition .= $key . "='".$value."'"; 
-  }  
-  $condition = substr($condition, 0, -5);  
-  /*This code will convert array to string like this-  
-  input - array(  
-       'id'     =>     '5'  
-  )  
-  output = id = '5'*/  
-  $sql = 'UPDATE sdc_marks_card_bpet SET '.$query.' WHERE '.$condition.'';  
-  $statement = $connect->prepare($sql);
-  // $query .= '
-  // WHERE reg_no LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
-  // ';
-  if($statement->execute())  
-  {  
-      echo "done";
-  }else{
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  } 
+
+
+  $sql ="UPDATE sdc_marks_card_bpet SET '.$query.' WHERE reg_no=".$_POST['id']."";  
+  if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+  } else {
+    echo "Error updating record: " . $conn->error;
+  }
 
 }
 ?>
