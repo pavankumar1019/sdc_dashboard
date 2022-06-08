@@ -109,6 +109,7 @@
                                         
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" required>
+                                            <input type="hidden" name="id" id="id" >
                                         <input type="submit" name="submit"  class="btn btn-primary" />
                                         </div>
                                       

@@ -142,6 +142,7 @@ function countdata()
                 $('#s4').val(data.s4);
                 $('#gt').val(data.gt);
                 $('#year_of_passing').val(data.year_of_passing);
+                $('#id').val(data.reg_no);
 
               }
             });
