@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
-
+  $('#btnAdmissionModal').click(function(){
+    $("#newadmissionmodal").modal('show');
+    $('#markscardform').trigger("reset");
+    $('#type').val('add');
+  });
     // count total admissions
 
     countdata();
