@@ -10,7 +10,7 @@ setInterval(function(){
 function countdata()
 {
 $.ajax({
-    url:"./php_operations/newadmission.php",
+    url:"./php_operations/newadmissions.php",
     method:"POST",
     data:{type: "getcount"},
     success:function(data)
