@@ -157,7 +157,7 @@
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-grid text-c-blue f-30 m-r-10"></i> <span id="getcountdata">0</span> 
+                                                    class="feather icon-grid text-c-red f-30 m-r-10"></i> <span id="getcountdata">0</span> 
                                             </h3>
                                         </div>
                                         <p class="text-white">Custom</p>
