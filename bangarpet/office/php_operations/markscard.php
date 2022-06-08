@@ -318,14 +318,22 @@ if($_POST['type']=="edit"){
   foreach($result as $row){
     echo json_encode(array(
       "sats_no"=>$row['sats_no'],
-      "statusCode"=>200,
-      "statusCode"=>200,
-      "statusCode"=>200,
-      "statusCode"=>200,
-      "statusCode"=>200,
-      "statusCode"=>200,
-      "statusCode"=>200,
-      "statusCode"=>200
+      "student_no"=>$row['student_no'],
+      "reg_no"=>$row['reg_no'],
+      "name"=>$row['student_name'],
+      "father_name"=>$row['father_name'],
+      "mother_name"=>$row['mother_name'],
+      "combination_opted"=>$row['class_code'],
+      "lang1"=>$row['lang1'],
+      "l1"=>$row['l1'],
+      "l2"=>$row['l2'],
+      "s1"=>$row['s1'],
+      "s2"=>$row['s2'],
+      "s3"=>$row['s3'],
+      "s4"=>$row['s4'],
+      "gt"=>$row['gt'],
+      "year_of_passing"=>$row['year_of_passing']
+   
   ));
   }
 
