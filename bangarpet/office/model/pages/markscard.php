@@ -206,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-12 col-md-6">
+                        <div class="col-xl-12 col-md-12">
                             <div class="card Recent-Users">
                                 <div class="card-header">
                                     <h5>Result Data</h5>
