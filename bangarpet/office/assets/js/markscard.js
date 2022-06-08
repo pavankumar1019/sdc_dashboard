@@ -94,7 +94,7 @@ function countdata()
               {
                 $("#newadmissionmodal").modal('show');
 
-                $('#sats_no').val('update');
+                $('#type').val('update');
                 $('#sats_no').val(data.sats_no);
                 $('#student_no').val(data.student_no);
                 $('#reg_no').val(data.reg_no);
