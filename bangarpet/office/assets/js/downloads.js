@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 
     //   form submit
-    $('#markscardform').on('submit', function (e) {
+    $('#downloadnewadmission').on('submit', function (e) {
         // e.preventDefault();
         // $.ajax({
         //   method:"POST",
