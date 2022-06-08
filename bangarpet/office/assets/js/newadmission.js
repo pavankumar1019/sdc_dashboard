@@ -71,7 +71,7 @@ load_data(1);
             if(data.gender=="m"){
               ('#customRadio1').prop('checked', true);
             }else{
-              ('customRadio2').prop('checked', true);
+              ('#customRadio2').prop('checked', true);
             }
 
             $('#subcaste').val(data.subcaste);
