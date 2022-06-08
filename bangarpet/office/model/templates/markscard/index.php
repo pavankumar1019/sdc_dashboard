@@ -326,22 +326,22 @@ else
 
         <p style="font-size: 15px;padding:10px;">This is to certify that the candidate mentioned below has completed the
             I PUC course and has passed the I PUC Examination with the following details</p>
-        <div class="grid-container1" style="font-size: 20px;text-transform: uppercase;">
+        <div class="grid-container1" style="font-size: 20px;">
 
-            <div class="sats">SATS No.<span style="font-weight:600;"><?php echo $row['sats_no'];?></span></div>
-            <div class="studentnumber">Student No. <span style="font-weight:600;">
+            <div class="sats">SATS No.<span style="font-weight:600;text-transform: uppercase"><?php echo $row['sats_no'];?></span></div>
+            <div class="studentnumber">Student No. <span style="font-weight:600;text-transform: uppercase">
                     <?php echo $row['student_no'];?></span> </div>
             <div style="grid-row: span 4;text-align: center;">
                 <div style="border:2px solid black;height:150px;width:130px;">PHOTO</div>
             </div>
             <div class="sats " style="grid-column: span 2 ;">Student Name. <span
-                    style="font-weight:600;"><?php echo $row['student_name'];?></span></div>
+                    style="font-weight:600;text-transform: uppercase"><?php echo $row['student_name'];?></span></div>
             <div class="sats" style="grid-column: span 2 ;">Father Name. <span
-                    style="font-weight:600;"><?php echo $row['father_name'];?></span> &nbsp;&nbsp;&nbsp;&nbsp;Register
-                No.<span style="font-weight:600;">&nbsp;<?php echo $row['reg_no'];?></span></div>
+                    style="font-weight:600;text-transform: uppercase"><?php echo $row['father_name'];?></span> &nbsp;&nbsp;&nbsp;&nbsp;Register
+                No.<span style="font-weight:600;text-transform: uppercase">&nbsp;<?php echo $row['reg_no'];?></span></div>
             <div class="studentnumber" style="grid-column: span 2 ;">Mother Name. <span
-                    style="font-weight:600;"><?php echo $row['mother_name'];?></span> &nbsp;&nbsp;&nbsp;&nbsp;Date of
-                Passing<span style="font-weight:600;">&nbsp;<?php echo $row["year_of_passing"]?></span> </div>
+                    style="font-weight:600;text-transform: uppercase"><?php echo $row['mother_name'];?></span> &nbsp;&nbsp;&nbsp;&nbsp;Date of
+                Passing<span style="font-weight:600;text-transform: uppercase">&nbsp;<?php echo $row["year_of_passing"]?></span> </div>
 
         </div>
 
