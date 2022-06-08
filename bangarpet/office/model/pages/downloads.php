@@ -192,7 +192,7 @@
                 <div class="page-wrapper">
                     <!-- [ Main Content ] start -->
                     <div class="row">
-
+<!-- 
                         <div class="col-md-12 col-xl-12 ">
                             <div class="card daily-sales">
                                 <div class="card-block">
@@ -205,8 +205,8 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-12 col-md-6">
+                        </div> -->
+                        <!-- <div class="col-xl-12 col-md-6">
                             <div class="card Recent-Users">
                                 <div class="card-header">
                                     <h5>Result Data</h5>
@@ -221,7 +221,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- [ Main Content ] end -->
                 </div>
