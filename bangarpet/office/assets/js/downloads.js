@@ -10,7 +10,6 @@ $(document).ready(function(){
     //   form submit
     $('#newadmissionform').on('submit', function (e) {
         e.preventDefault();
-  
         $.ajax({
           method:"POST",
           url: './php_operations/downloads.php',
