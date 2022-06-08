@@ -9,16 +9,16 @@ $(document).ready(function(){
 
     //   form submit
     $('#downloadnewadmission').on('submit', function (e) {
-        // e.preventDefault();
-        // $.ajax({
-        //   method:"POST",
-        //   url: './php_operations/markscard.php',
-        //   data: $('form').serialize(),
-        //   success: function (result) {
-        //     alert(result);
-        //   }
-        // });
-alert('')
+        e.preventDefault();
+        $.ajax({
+          method:"POST",
+          url: './php_operations/markscard.php',
+          data: $('form').serialize(),
+          success: function (result) {
+            alert(result);
+          }
+        });
+alert('sdfds');
       });
 
 });
