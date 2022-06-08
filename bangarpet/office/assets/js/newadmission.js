@@ -70,6 +70,7 @@ load_data(1);
             $('#caste').val(data.caste);
             let text = data.dob;
             const myArray = text.split("-");
+            const myArray = text.split("/");
           $('#dd').val(myArray[0]);
             $('#mm').val(myArray[1]);
             $('#yy').val(myArray[2]);
