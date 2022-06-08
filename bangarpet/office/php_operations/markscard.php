@@ -345,6 +345,7 @@ if($_POST['type']=="edit"){
 
 // update marks card
 if($_POST['type']=="update"){
+  echo "as";
   $insert_data = array(
     "sats_no"=>$_POST['sats_no'],
     "student_no"=>$_POST['student_no'],
@@ -390,7 +391,9 @@ if($_POST['type']=="update"){
   )  
   output = id = '5'*/  
   $sql = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";  
-  if(mysqli_query($this->$conn, $sql))  
+  $statement = $connect->prepare($sql);
+  
+  if($statement->execute())  
   {  
       echo "done";
   }else{
