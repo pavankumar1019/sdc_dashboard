@@ -260,7 +260,7 @@ if($_POST['type']=="edit"){
       "address"=>$row['address'],
       "mobile_no"=>$row['mobile_no'],
       "email_id"=>$row['email_id'],
-      "reg_no_sslc "=>$row['reg_no_sslc '],
+      "reg_no_sslc "=>$row['reg_no_sslc'],
       "total"=>$row['total'],
       "year_of_passing"=>$row['year_of_passing'],
       "combination_opted"=>$row['combination_opted'],

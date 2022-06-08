@@ -19,12 +19,12 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Name</label>
-                                            <input type="text" class="form-control" id="name" name="name"
+                                            <input type="text" class="form-control" id="student_name" name="name"
                                                 placeholder="">
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">Aadhar No.</label>
-                                            <input type="text" class="form-control" id="inputPassword4" placeholder="">
+                                            <input type="text" class="form-control" id="student_aadhar" placeholder="">
                                         </div>
                                         <div class="form-group col-lg-1 col-4">
                                             <label for="inputPassword4">DOB(dd)</label>
@@ -97,50 +97,50 @@
                                         </div>
                                         <div class="form-group col-lg-3 col-4">
                                             <label for="inputPassword4">Caste</label>
-                                            <input type="text" class="form-control p-lg-2">
+                                            <input type="text" id="caste" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-2 col-4">
                                             <label for="inputPassword4">Sub-caste</label>
-                                            <input type="text" class="form-control p-lg-2">
+                                            <input type="text" id="subcaste" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-6 ">
                                             <label for="exampleFormControlTextarea1">Address</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            <textarea class="form-control" id="address" rows="3"
                                                 style="height: 54px;"></textarea>
                                         </div>
                                         <div class="form-group col-lg-6">
                                             <label for="inputPassword4">Phone_number</label>
-                                            <input type="text" class="form-control p-lg-2" id="numberonly"
+                                            <input type="text" class="form-control p-lg-2" id="mobile_no"
                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                                 maxlength="10">
                                         </div>
                                         <div class="form-group col-lg-6 ">
                                             <label for="inputPassword4">Email</label>
-                                            <input type="email" class="form-control p-lg-2">
+                                            <input type="email" id="email_id" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">Father Name / Guardian</label>
-                                            <input type="text" class="form-control p-lg-2">
+                                            <input type="text" id="father_name" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">Mother Name</label>
-                                            <input type="text" class="form-control p-lg-2">
+                                            <input type="text" id="mother_name"class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">SSLC Reg</label>
-                                            <input type="text" class="form-control p-lg-2">
+                                            <input type="text" id="reg_no_sslc" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-2 ">
                                             <label for="inputPassword4">Year Of Passing</label>
-                                            <input type="text" class="form-control p-lg-2">
+                                            <input type="text" id="year_of_passing" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Total Marks OBT</label>
-                                            <input type="text" class="form-control p-lg-2">
+                                            <input type="text" id="total" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Combination OPT</label>
-                                            <select id="inputState" name="combination_opted" class="form-control"
+                                            <select id="combination_opted" name="combination_opted" class="form-control"
                                                 required="">
                                                 <option value="" selected>-select one-</option>
                                                 <option vlaue="">PCMB</option>
@@ -152,7 +152,7 @@
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Language OPT</label>
-                                            <select id="inputState" name="lang_opted" class="form-control" required="">
+                                            <select id="lang_opted" name="lang_opted" class="form-control" required="">
                                                 <option value="" selected>-select one-</option>
                                                 <option>Hindi</option>
                                                 <option>Kannada</option>
