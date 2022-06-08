@@ -389,13 +389,16 @@ if($_POST['type']=="update"){
        'id'     =>     '5'  
   )  
   output = id = '5'*/  
-  $query = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";  
-  if(mysqli_query($this->$conn, $query))  
-  {  
-      echo "done";
-  }else{
-    echo "Failed";
-  } 
+  $sql = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";  
+  $conn->query($sql);
+  $error=true;
+      
+      if ($error==true) {
+        echo "Done";
+      } else {
+        echo "Failed Duplicate entry. !";
+      }
+  
 
 }
 ?>
