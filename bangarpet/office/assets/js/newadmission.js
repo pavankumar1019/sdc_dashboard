@@ -73,10 +73,6 @@ load_data(1);
           $('#dd').val(myArray[0]);
             $('#mm').val(myArray[1]);
             $('#yy').val(myArray[2]);
-            const myArray1 = text.split("/");
-          $('#dd').val(myArray1[0]);
-            $('#mm').val(myArray1[1]);
-            $('#yy').val(myArray1[2]);
 
 
             $('#religion').append(`<option value="${data.religion}" selected> ${data.religion} </option>`);
