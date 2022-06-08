@@ -381,7 +381,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
   foreach($where_condition as $key => $value)  
   {  
-       $condition .= $key . "='".$value."' AND ";  
+       $condition .= $key . "='".$value."'";  
   }  
   $condition = substr($condition, 0, -5);  
   /*This code will convert array to string like this-  
@@ -390,7 +390,7 @@ if($_POST['type']=="update"){
   )  
   output = id = '5'*/  
   $query = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";  
-  if(mysqli_query($this->con, $query))  
+  if(mysqli_query($this->conn, $query))  
   {  
       echo "done";
   }else{
