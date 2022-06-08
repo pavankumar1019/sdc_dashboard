@@ -242,12 +242,12 @@
                                         <table class="table table-hover">
                                             <tbody>
                                                 <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;"
+                                                    <!-- <td><img class="rounded-circle" style="width:40px;"
                                                             src="assets/images/user/avatar-1.jpg" alt="activity-user">
-                                                    </td>
+                                                    </td> -->
                                                     <td>
-                                                        <h6 class="mb-1">Isabella Christensen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply…</p>
+                                                        <h6 class="mb-1">Name</h6>
+                                                        <p class="m-0">Father Name : <br>Mother Name: <br>SSLC MARKS :  <br>Combination Opted: <br>Language Opted: </p>
                                                     </td>
                                                     <td>
                                                         <h6 class="text-muted"><i
@@ -255,82 +255,11 @@
                                                             MAY 12:56</h6>
                                                     </td>
                                                     <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Reject</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Approve</a>
+                                                            class="label theme-bg2 text-white f-12">Edit</a><a
+                                                            href="#!" class="label theme-bg text-white f-12">Delete</a>
                                                     </td>
                                                 </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;"
-                                                            src="assets/images/user/avatar-2.jpg" alt="activity-user">
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="mb-1">Mathilde Andersen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply text of…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-red f-10 m-r-15"></i>11
-                                                            MAY 10:35</h6>
-                                                    </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Reject</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Approve</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;"
-                                                            src="assets/images/user/avatar-3.jpg" alt="activity-user">
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="mb-1">Karla Sorensen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>9
-                                                            MAY 17:38</h6>
-                                                    </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Reject</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Approve</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;"
-                                                            src="assets/images/user/avatar-1.jpg" alt="activity-user">
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="mb-1">Ida Jorgensen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply text of…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted f-w-300"><i
-                                                                class="fas fa-circle text-c-red f-10 m-r-15"></i>19
-                                                            MAY 12:56</h6>
-                                                    </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Reject</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Approve</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;"
-                                                            src="assets/images/user/avatar-2.jpg" alt="activity-user">
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="mb-1">Albert Andersen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply dummy…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>21
-                                                            July 12:56</h6>
-                                                    </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Reject</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Approve</a>
-                                                    </td>
-                                                </tr>
+                                                
                                             </tbody>
                                         </table>
                                     </div>
