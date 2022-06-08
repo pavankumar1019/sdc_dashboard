@@ -345,7 +345,7 @@ if($_POST['type']=="edit"){
 
 // update marks card
 if($_POST['type']=="update"){
-  echo "as";
+  echo
   $insert_data = array(
     "sats_no"=>$_POST['sats_no'],
     "student_no"=>$_POST['student_no'],
