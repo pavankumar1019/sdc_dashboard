@@ -303,9 +303,9 @@ $dob = $_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'];
 	
         // Message details
       
-      $content =  rawurlencode('Dear '.$_POST['student_name'].' 
-      Your admission is confirmed.Thank you for choosing our college.
-      SDC COLLEGE BANGARPET-563114');
+$content =  rawurlencode('Dear '.$_POST['student_name'].' 
+Your admission is confirmed.Thank you for choosing our college.
+SDC COLLEGE BANGARPET-563114');
       
       
        
