@@ -237,5 +237,36 @@ if($_POST['type']=="loaddata"){
   
   echo $output;
 }
+// edit data get
+if($_POST['type']=="edit"){
+  $query = '
+  SELECT * FROM new_admission_bpet WHERE id="'.$_POST['id'].'"
+  ';
+  $statement = $connect->prepare($query);
+  $statement->execute();
+  $result = $statement->fetchAll();
 
+  foreach($result as $row){
+    echo json_encode(array(
+      "student_name"=>$row['student_name'],
+      "student_aadhar"=>$row['student_aadhar'],
+      "dob"=>$row['dob'],
+      "gender"=>$row['gender'],
+      "father_name"=>$row['father_name'],
+      "mother_name"=>$row['mother_name'],
+      "religion"=>$row['religion'],
+      "caste"=>$row['caste'],
+      "subcaste"=>$row['subcaste'],
+      "address"=>$row['address'],
+      "mobile_no"=>$row['mobile_no'],
+      "email_id"=>$row['email_id'],
+      "reg_no_sslc "=>$row['reg_no_sslc '],
+      "total"=>$row['total'],
+      "year_of_passing"=>$row['year_of_passing'],
+      "combination_opted"=>$row['combination_opted'],
+      "lang_opted"=>$row['lang_opted']
+   
+  ));
+  }
+}
 ?>

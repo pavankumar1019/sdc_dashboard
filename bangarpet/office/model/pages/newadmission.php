@@ -19,7 +19,8 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Name</label>
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="">
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                placeholder="">
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">Aadhar No.</label>
@@ -44,50 +45,55 @@
                                                 min="1990" max="2022" maxlength="4">
                                         </div>
                                         <div class="form-group col-md-1">
-                                        <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio1">Male</label>
-                                                    </div>
-                                                  
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio1" name="customRadio"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio1">Male</label>
+                                            </div>
+
                                         </div>
                                         <div class="form-group col-md-2">
-                                        <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Female</label>
-                                                    </div>
-                                                  
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio2">Female</label>
+                                            </div>
+
                                         </div>
 
                                         <div class="form-group col-lg-3 col-4">
                                             <label for="inputPassword4">Religion</label>
                                             <select class="form-control dropdown" id="religion" name="religion">
-    <option value="" selected="selected" disabled="disabled">-- select one --</option>
-    <option value="African Traditional &amp; Diasporic">African Traditional &amp; Diasporic</option>
-    <option value="Agnostic">Agnostic</option>
-    <option value="Atheist">Atheist</option>
-    <option value="Baha'i">Baha'i</option>
-    <option value="Buddhism">Buddhism</option>
-    <option value="Cao Dai">Cao Dai</option>
-    <option value="Chinese traditional religion">Chinese traditional religion</option>
-    <option value="Christianity">Christianity</option>
-    <option value="Hinduism">Hinduism</option>
-    <option value="Islam">Islam</option>
-    <option value="Jainism">Jainism</option>
-    <option value="Juche">Juche</option>
-    <option value="Judaism">Judaism</option>
-    <option value="Neo-Paganism">Neo-Paganism</option>
-    <option value="Nonreligious">Nonreligious</option>
-    <option value="Rastafarianism">Rastafarianism</option>
-    <option value="Secular">Secular</option>
-    <option value="Shinto">Shinto</option>
-    <option value="Sikhism">Sikhism</option>
-    <option value="Spiritism">Spiritism</option>
-    <option value="Tenrikyo">Tenrikyo</option>
-    <option value="Unitarian-Universalism">Unitarian-Universalism</option>
-    <option value="Zoroastrianism">Zoroastrianism</option>
-    <option value="primal-indigenous">primal-indigenous</option>
-    <option value="Other">Other</option>
-  </select>
+                                                <option value="" selected="selected" disabled="disabled">-- select one
+                                                    --</option>
+                                                <option value="African Traditional &amp; Diasporic">African Traditional
+                                                    &amp; Diasporic</option>
+                                                <option value="Agnostic">Agnostic</option>
+                                                <option value="Atheist">Atheist</option>
+                                                <option value="Baha'i">Baha'i</option>
+                                                <option value="Buddhism">Buddhism</option>
+                                                <option value="Cao Dai">Cao Dai</option>
+                                                <option value="Chinese traditional religion">Chinese traditional
+                                                    religion</option>
+                                                <option value="Christianity">Christianity</option>
+                                                <option value="Hinduism">Hinduism</option>
+                                                <option value="Islam">Islam</option>
+                                                <option value="Jainism">Jainism</option>
+                                                <option value="Juche">Juche</option>
+                                                <option value="Judaism">Judaism</option>
+                                                <option value="Neo-Paganism">Neo-Paganism</option>
+                                                <option value="Nonreligious">Nonreligious</option>
+                                                <option value="Rastafarianism">Rastafarianism</option>
+                                                <option value="Secular">Secular</option>
+                                                <option value="Shinto">Shinto</option>
+                                                <option value="Sikhism">Sikhism</option>
+                                                <option value="Spiritism">Spiritism</option>
+                                                <option value="Tenrikyo">Tenrikyo</option>
+                                                <option value="Unitarian-Universalism">Unitarian-Universalism</option>
+                                                <option value="Zoroastrianism">Zoroastrianism</option>
+                                                <option value="primal-indigenous">primal-indigenous</option>
+                                                <option value="Other">Other</option>
+                                            </select>
                                         </div>
                                         <div class="form-group col-lg-3 col-4">
                                             <label for="inputPassword4">Caste</label>
@@ -95,7 +101,7 @@
                                         </div>
                                         <div class="form-group col-lg-2 col-4">
                                             <label for="inputPassword4">Sub-caste</label>
-                                            <input type="text" class="form-control p-lg-2" >
+                                            <input type="text" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-6 ">
                                             <label for="exampleFormControlTextarea1">Address</label>
@@ -104,11 +110,13 @@
                                         </div>
                                         <div class="form-group col-lg-6">
                                             <label for="inputPassword4">Phone_number</label>
-                                            <input type="text" class="form-control p-lg-2" id="numberonly"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                            <input type="text" class="form-control p-lg-2" id="numberonly"
+                                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                maxlength="10">
                                         </div>
                                         <div class="form-group col-lg-6 ">
                                             <label for="inputPassword4">Email</label>
-                                            <input type="email" class="form-control p-lg-2" >
+                                            <input type="email" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">Father Name / Guardian</label>
@@ -116,11 +124,11 @@
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">Mother Name</label>
-                                            <input type="text" class="form-control p-lg-2" >
+                                            <input type="text" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3 ">
                                             <label for="inputPassword4">SSLC Reg</label>
-                                            <input type="text" class="form-control p-lg-2" >
+                                            <input type="text" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-2 ">
                                             <label for="inputPassword4">Year Of Passing</label>
@@ -128,35 +136,38 @@
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Total Marks OBT</label>
-                                            <input type="text" class="form-control p-lg-2" >
+                                            <input type="text" class="form-control p-lg-2">
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Combination OPT</label>
-                                            <select id="inputState" name="combination_opted" class="form-control" required="">
-                    <option selected="">Choose...</option>
-                    <option>PCMB</option>
-                    <option>PCMCs</option>
-                    <option>EBACs</option>
-                    <option>EBAS</option>
-                    <option>ABSM</option>
-                </select>
+                                            <select id="inputState" name="combination_opted" class="form-control"
+                                                required="">
+                                                <option value="" selected>-select one-</option>
+                                                <option vlaue="">PCMB</option>
+                                                <option vlaue="">PCMCs</option>
+                                                <option vlaue="">EBACs</option>
+                                                <option vlaue="">EBAS</option>
+                                                <option vlaue="">ABSM</option>
+                                            </select>
                                         </div>
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Language OPT</label>
                                             <select id="inputState" name="lang_opted" class="form-control" required="">
-                    <option selected="">Choose...</option>
-                    <option>Hindi</option>
-                    <option>Kannada</option>
-                    <option>Urdu</option>
-                    <option>Sanskrit</option>
-                </select>
+                                                <option value="" selected>-select one-</option>
+                                                <option>Hindi</option>
+                                                <option>Kannada</option>
+                                                <option>Urdu</option>
+                                                <option>Sanskrit</option>
+                                            </select>
                                         </div>
                                         <hr>
-                                        
+
                                         <div class="form-group  col-12">
-                                        <input type="submit" name="submit"  class="btn btn-primary" />
+                                            <input type="hidden" name="type" id="type" required>
+                                            <input type="hidden" name="id" id="id">
+                                            <input type="submit" name="submit" class="btn btn-primary" />
                                         </div>
-                                      
+
 
                                     </div>
 
@@ -201,7 +212,8 @@
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-user-check text-c-green f-30 m-r-10"></i> <span id="getcountdata"></span> 
+                                                    class="feather icon-user-check text-c-green f-30 m-r-10"></i> <span
+                                                    id="getcountdata"></span>
                                             </h3>
                                         </div>
                                     </div>
@@ -239,7 +251,7 @@
                                 </div>
                                 <div class="card-block px-0 py-3">
                                     <div class="table-responsive" id="dynamic_content">
-                                     
+
                                     </div>
                                 </div>
                             </div>
@@ -252,31 +264,3 @@
     </div>
 </div>
 </div>
-<!-- <script>
-    function onSubmit() {
-
-        var formData = new FormData();
-        formData.append("name", document.getElementById("name").value);
-         
-        var ajax = new XMLHttpRequest();
-        ajax.open("POST", "./php_operations/newadmissions.php", true);
-        ajax.send(formData);
- 
-        ajax.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
-            }
-        };
- 
-        var progress = document.getElementById("progress");
-             ajax.upload.onprogress = (event) => {
-    // event.loaded returns how many bytes are downloaded
-    // event.total returns the total number of bytes
-    // event.total is only available if server sends `Content-Length` header
-    progress.max = event.total;
-            progress.value = event.loaded;
-    console.log(`Uploaded ${event.loaded} of ${event.total} bytes`);
-}
-        return false;
-    }
-</script> -->
