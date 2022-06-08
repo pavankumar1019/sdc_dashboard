@@ -17,102 +17,26 @@
                             <div class="modal-body">
                                 <form method="post" id="markscardform">
                                     <div class="form-row">
-                                        <div class="form-group col-md-4">
-                                        <label for="numberonly">SATS No.</label>
-                                        <input type="text" class="form-control p-lg-2" id="sats_no" name="sats_no" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
+                                        <div class="form-group col-md-12 col-xl-12 ">
+                                            <div class="card daily-sales">
+                                                <div class="card-block">
+                                                    <h6 class="mb-4">Columns to export ex:- name/dob/</h6>
+                                                    <div class="form-group">
+                                                        <label for="search">Search Here !</label>
+                                                        <input type="text" class="form-control" id="search_box"
+                                                            placeholder="Search..">
+                                                    </div>
 
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">STUDENT No.</label>
-                                            <input type="text" class="form-control" id="student_no" name="student_no" placeholder="" required>
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">REG No.</label>
-                                            <input type="text" class="form-control" id="reg_no" name="reg_no" placeholder="" required>
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">NAME</label>
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="" required>
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">FATHER NAME</label>
-                                            <input type="text" class="form-control" id="father_name" name="father_name" placeholder="" required>
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">MOTHER NAME</label>
-                                            <input type="text" class="form-control" id="mother_name" name="mother_name" placeholder="" required>
-                                        </div>
-                                        <div class="form-group col-lg-4">
-                                            <label for="inputPassword4">COMBINATION</label>
-                                            <select id="combination_opted" name="combination_opted" class="form-control" required>
-                                            <option value="">-select one-</option> 
-                                                                <option value="5">PCMB</option>
-                    <option value="4">PCMCs</option>
-                    <option value="3">EBAS</option>
-                    <option value="2">EBACs</option>
-                    <option value="1">BASM</option>
-                </select>
-                                        </div>
-                                        <div class="form-group col-lg-4 ">
-                                            <label for="inputPassword4">1ST LANGUAGE</label>
-                                            <select class="form-control dropdown" id="lang1" name="lang1" required>
-                                            <option value="">-select one-</option>  
-    <option value="01">KANNADA</option>
-    <option value="03">HINDI</option>
-    <option value="08">URDU</option>
-    <option value="09">SANSKRIT</option>
- 
-  </select>
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                        <label for="numberonly">L1 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="l1" id="l1" required>
-
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                        <label for="numberonly">L2 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="l2" id="l2"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
-
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                        <label for="numberonly">S1 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s1" id="s1"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
-
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                        <label for="numberonly">S2 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s2" id="s2"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
-
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                        <label for="numberonly">S3 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s3" id="s3"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
-
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                        <label for="numberonly">S4 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s4" id="s4"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
-
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                        <label for="numberonly">TOTAL MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="gt" id="gt"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
-
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                        <label for="numberonly">YEAR OF PASSING</label>
-                                        <input type="text" class="form-control p-lg-2" name="year_of_passing" id="year_of_passing" required>
-
-                                        </div>
-                                        
                                         <hr>
-                                        
+
                                         <div class="form-group  col-12">
-                                            <input type="hidden" name="type" id="type" required>
-                                            <input type="hidden" name="id" id="id" >
-                                        <input type="submit" name="submit"  class="btn btn-primary" />
+                                            <input type="hidden" name="type" id="type" value="downloadnewadmission">
+                                            <input type="submit" name="Download" class="btn btn-primary" />
                                         </div>
-                                      
+
 
                                     </div>
 
@@ -157,7 +81,8 @@
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-download-cloud text-c-voilet f-30 m-r-10"></i> <span id="getcountdata">0</span> 
+                                                    class="feather icon-download-cloud text-c-voilet f-30 m-r-10"></i>
+                                                <span id="getcountdata">0</span>
                                             </h3>
                                         </div>
                                         <p class="text-white">xls</p>
@@ -173,9 +98,10 @@
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-download-cloud text-c-green f-30 m-r-10"></i><span id="getcountdata2">0</span> 
+                                                    class="feather icon-download-cloud text-c-green f-30 m-r-10"></i><span
+                                                    id="getcountdata2">0</span>
                                             </h3>
-                                            
+
                                         </div>
                                         <p class="text-white">xls</p>
                                     </div>
@@ -192,7 +118,7 @@
                 <div class="page-wrapper">
                     <!-- [ Main Content ] start -->
                     <div class="row">
-<!-- 
+                        <!-- 
                         <div class="col-md-12 col-xl-12 ">
                             <div class="card daily-sales">
                                 <div class="card-block">
@@ -230,5 +156,3 @@
     </div>
 </div>
 </div>
-
-
