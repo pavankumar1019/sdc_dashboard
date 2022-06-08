@@ -160,7 +160,7 @@
                                                     class="feather icon-grid text-c-voilet f-30 m-r-10"></i> <span id="getcountdata">0</span> 
                                             </h3>
                                         </div>
-                                        <p class="text-white">Custom</p>
+                                        <p class="text-white">xls, PDF, CSV</p>
                                     </div>
 
                                 </div>
@@ -177,7 +177,7 @@
                                             </h3>
                                             
                                         </div>
-                                        <p class="text-white"> Warning</p>
+                                        <p class="text-white"> xls, PDF, CSV</p>
                                     </div>
 
                                 </div>
