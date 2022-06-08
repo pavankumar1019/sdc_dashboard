@@ -238,30 +238,8 @@
                                     <h5>New Admissions</h5>
                                 </div>
                                 <div class="card-block px-0 py-3">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover" id="dynamic_content">
-                                            <tbody>
-                                                <tr class="unread">
-                                                    <!-- <td><img class="rounded-circle" style="width:40px;"
-                                                            src="assets/images/user/avatar-1.jpg" alt="activity-user">
-                                                    </td> -->
-                                                    <td>
-                                                        <h6 class="mb-1">Name</h6>
-                                                        <p class="m-0">Father Name : <br>Mother Name: <br>SSLC MARKS :  <br>Combination Opted: <br>Language Opted: </p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>11
-                                                            MAY 12:56</h6>
-                                                    </td>
-                                                    <td><a href="#!"
-                                                            class="label theme-bg2 text-white f-12">Edit</a><a
-                                                            href="#!" class="label theme-bg text-white f-12">Delete</a>
-                                                    </td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
+                                    <div class="table-responsive" id="dynamic_content">
+                                     
                                     </div>
                                 </div>
                             </div>
