@@ -47,15 +47,15 @@
                                         <div class="form-group col-md-1">
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="customRadio1" name="customRadio"
-                                                    class="custom-control-input">
+                                                    class="custom-control-input" value="m">
                                                 <label class="custom-control-label" for="customRadio1">Male</label>
                                             </div>
 
                                         </div>
                                         <div class="form-group col-md-2">
-                                            <div class="custom-control custom-radio">
+                                            <div class="custom-control custom-radio" >
                                                 <input type="radio" id="customRadio2" name="customRadio"
-                                                    class="custom-control-input">
+                                                    class="custom-control-input" value="f">
                                                 <label class="custom-control-label" for="customRadio2">Female</label>
                                             </div>
 

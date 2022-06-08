@@ -69,7 +69,7 @@ load_data(1);
             $('#mother_name').val(data.mother_name);
             $('#caste').val(data.caste);
           
-              ('#customRadio1').prop('checked', true);
+            $("[name=customRadio]").val([data.gender]);
          
               // ('#customRadio2').prop('checked', true);
          
