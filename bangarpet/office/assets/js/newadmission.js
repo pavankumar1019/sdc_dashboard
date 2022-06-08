@@ -36,7 +36,16 @@ load_data(1);
         }
       });
     }
-
+    $(document).on('click', '.page-link', function(){
+        var page = $(this).data('page_number');
+        var query = $('#search_box').val();
+        load_data(page, query);
+      });
+  
+      $('#search_box').keyup(function(){
+        var query = $('#search_box').val();
+        load_data(1, query);
+      });
 
 
 });
