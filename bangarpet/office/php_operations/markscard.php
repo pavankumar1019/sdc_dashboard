@@ -390,7 +390,7 @@ if($_POST['type']=="update"){
        'id'     =>     '5'  
   )  
   output = id = '5'*/  
-  $sql = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";        
+  $sql = "UPDATE sdc_marks_card_bpet SET '$query' WHERE '$condition'";        
         if ($conn->query($sql)) {
           echo "Done";
         } else {
