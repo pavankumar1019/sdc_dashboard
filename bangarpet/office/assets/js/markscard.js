@@ -74,6 +74,7 @@ function countdata()
               success: function (result) {
                 alert(result);
                 load_data(1);
+                $("#newadmissionmodal").modal('hide');
               }
             });
   
