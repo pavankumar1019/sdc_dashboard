@@ -50,7 +50,7 @@ if($_POST['type']=="loaddata"){
     ';
   }
   
-  $query .= 'ORDER BY time_stamp DSC ';
+  $query .= 'ORDER BY time_stamp ASC ';
   
   $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
   
