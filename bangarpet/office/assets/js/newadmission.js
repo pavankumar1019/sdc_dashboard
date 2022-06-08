@@ -67,6 +67,7 @@ load_data(1);
             $("#newadmissionmodal").modal('show');
 
             $('#type').val('update');
+            $('#id').val(data.id);
             $('#student_name').val(data.student_name);
             $('#student_aadhar').val(data.student_aadhar);
             $('#father_name').val(data.father_name);

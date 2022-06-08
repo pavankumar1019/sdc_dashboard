@@ -264,7 +264,8 @@ if($_POST['type']=="edit"){
       "total"=>$row['total'],
       "year_of_passing"=>$row['year_of_passing'],
       "combination_opted"=>$row['combination_opted'],
-      "lang_opted"=>$row['lang_opted']
+      "lang_opted"=>$row['lang_opted'],
+      "id"=>$row['id']
    
   ));
   }
