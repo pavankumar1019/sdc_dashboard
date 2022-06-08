@@ -63,13 +63,13 @@ function countdata()
 
 
         //   add marks card custom
-        $('#markscardform').on('submit', function (e) {
+        $('#downloadnewadmission').on('submit', function (e) {
 
             e.preventDefault();
   
             $.ajax({
               method:"POST",
-              url: './php_operations/markscard.php',
+              url: './php_operations/downloads.php',
               data: $('form').serialize(),
               success: function (result) {
                 alert(result);
