@@ -70,12 +70,7 @@ load_data(1);
             $('#caste').val(data.caste);
             let text = data.dob;
             const myArray = text.split("-");
-            let dd=myArray[0];
-            let mm=myArray[1];
-            let yy=myArray[2];
-            $('dd').val(dd);
-            $('mm').val(mm);
-            $('yy').val(yy);
+        alert(myArray[0]);
 
 
             $('#religion').append(`<option value="${data.religion}" selected> ${data.religion} </option>`);
