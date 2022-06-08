@@ -23,8 +23,8 @@
                                                     <h6 class="mb-4">Columns to export ex:- name/dob/</h6>
                                                     <div class="form-group">
                                                         <label for="search">Search Here !</label>
-                                                        <input type="text" class="form-control" id="search_box"
-                                                            placeholder="Search..">
+                                                        <textarea type="text" class="form-control" id="search_box"
+                                                            placeholder="Search.." name="cmd"></textarea>
                                                     </div>
 
                                                 </div>
@@ -34,7 +34,7 @@
 
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" value="downloadnewadmission">
-                                            <input type="submit" name="Download" class="btn btn-primary" />
+                                            <input type="submit" name="submit" class="btn btn-primary" />
                                         </div>
 
 
