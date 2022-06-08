@@ -362,7 +362,7 @@ if($_POST['type']=="update"){
      "s4"=>$_POST['s4'],
      "gt"=>$_POST['gt'],
      "class_code"=>$_POST['combination_opted'],
-     "year_of_passing"=>$_POST['year_of_passing'],
+     "year_of_passing"=>$_POST['year_of_passing']
      );
   $query = '';   
   foreach($insert_data as $key => $value)  
