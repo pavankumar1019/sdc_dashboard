@@ -68,7 +68,16 @@ load_data(1);
             $('#father_name').val(data.father_name);
             $('#mother_name').val(data.mother_name);
             $('#caste').val(data.caste);
-          
+            let text = data.dob;
+            const myArray = text.split("-");
+            let dd=myArray[0];
+            let mm=myArray[1];
+            let yy=myArray[2];
+            $('dd').val(dd);
+            $('mm').val(mm);
+            $('yy').val(yy);
+
+
             $('#religion').append(`<option value="${data.religion}" selected> ${data.religion} </option>`);
 
             $("[name=customRadio]").val([data.gender]);

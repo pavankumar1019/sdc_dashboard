@@ -34,7 +34,7 @@
                                         </div>
                                         <div class="form-group col-lg-1 col-4">
                                             <label for="inputPassword4">/(mm)</label>
-                                            <input type="number" class="form-control p-lg-2" id="month"
+                                            <input type="number" class="form-control p-lg-2" id="mm"
                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                                 placeholder="MM" min="1" max="12" maxlength="2">
                                         </div>
