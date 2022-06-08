@@ -68,8 +68,9 @@ load_data(1);
             $('#father_name').val(data.father_name);
             $('#mother_name').val(data.mother_name);
             $('#caste').val(data.caste);
-            $('#religion').val(data.religion);
           
+            $('#religion').append(`<option value="${data.religion}" selected> ${data.religion} </option>`);
+
             $("[name=customRadio]").val([data.gender]);
          
               // ('#customRadio2').prop('checked', true);
