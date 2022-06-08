@@ -26,11 +26,11 @@
                                                         <textarea type="text" class="form-control" id="search_box"
                                                             placeholder="Search.." name="cmd"></textarea>
                                                     </div>
-                                                    <p>To Select all > <br>select * from new_admission_bpet
+                                                    <p>To Select all > <br><b>select * from new_admission_bpet</b> <br>
                                         To Select with columns > <br>
-                                        select column_name, column_name from  new_admission_bpet <br>
+                                        <b>select column_name, column_name from  new_admission_bpet</b> <br>
                                         To Select with Condition > <br>
-                                        select column_name, column_name  from  new_admission_bpet where column_name="yourdata"
+                                       <b> select column_name, column_name  from  new_admission_bpet where column_name="yourdata"</b>
                                         </p>
                                                 </div>
                                             </div>
