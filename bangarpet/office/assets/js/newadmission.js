@@ -115,9 +115,9 @@ $('#newadmissionform').on('submit', function (e) {
       $('#submit').val("Submit");
     },
     success: function (result) {
-      alert(result);
       load_data(1);
-      $("#newadmissionmodal").modal('hide');
+      $('#newadmissionform').trigger("reset");
+
     }
   });
 
