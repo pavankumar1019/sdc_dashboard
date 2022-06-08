@@ -5,18 +5,4 @@ $(document).ready(function(){
         $('#markscardform').trigger("reset");
       });
 
-
-    //   form submit
-    $('#newadmissionform').on('submit', function (e) {
-        e.preventDefault();
-        $.ajax({
-          method:"POST",
-          url: './php_operations/download.php',
-          data: $('form').serialize(),
-          success: function (result) {
-            alert(result);
-          }
-        });
-      });
-
 });

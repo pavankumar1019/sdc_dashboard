@@ -15,7 +15,7 @@
                                 </button> -->
                             </div>
                             <div class="modal-body">
-                                <form id="newadmissionform">
+                                <form id="newadmissionform" method="POST" action="./php_operations/download.php">
                                     <div class="form-row">
                                         <div class="form-group col-md-12 col-xl-12 ">
                                             <div class="card daily-sales">
