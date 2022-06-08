@@ -68,7 +68,11 @@ load_data(1);
             $('#father_name').val(data.father_name);
             $('#mother_name').val(data.mother_name);
             $('#caste').val(data.caste);
-           
+          
+              ('#customRadio1').prop('checked', true);
+         
+              // ('#customRadio2').prop('checked', true);
+         
 
             $('#subcaste').val(data.subcaste);
             $('#address').val(data.address);
