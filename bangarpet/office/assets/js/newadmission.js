@@ -108,6 +108,12 @@ $('#newadmissionform').on('submit', function (e) {
     method:"POST",
     url: './php_operations/newadmissions.php',
     data: $('form').serialize(),
+    beforeSend: function(){
+      $('#submit').val("connecting...");
+    },
+    complete: function(){
+      $('#submit').val("Submit");
+    },
     success: function (result) {
       alert(result);
       load_data(1);

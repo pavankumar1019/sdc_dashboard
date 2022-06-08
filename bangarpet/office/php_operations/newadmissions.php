@@ -328,5 +328,47 @@ SDC COLLEGE BANGARPET-563114');
 
 }
 
+if($_POST['type']=="update"){
 
+  $insert_data = array(
+    "student_name"=>$_POST['student_name'],
+    "student_aadhar"=>$_POST['student_aadhar'],
+    "dob"=>$dob,
+    "gender"=>$_POST['gender'],
+    "father_name"=>$_POST['father_name'],
+    "mother_name"=>$_POST['mother_name'],
+    "religion"=>$_POST['religion'],
+    "caste"=>$_POST['caste'],
+    "subcaste"=>$_POST['subcaste'],
+    "address"=>$_POST['address'],
+    "mobile_no"=>$_POST['mobile_no'],
+    "email_id"=>$_POST['email_id'],
+    "reg_no_sslc"=>$_POST['reg_no_sslc'],
+    "total"=>$_POST['total'],
+    "year_of_passing"=>$_POST['year_of_passing'],
+    "combination_opted"=>$_POST['combination_opted'],
+    "lang_opted"=>$_POST['lang_opted']
+       );
+  $query = '';   
+  foreach($insert_data as $key => $value)  
+  {  
+       $query .= $key . "='".$value."', ";  
+  }  
+  $query = substr($query, 0, -2);  
+  /*This code will convert array to string like this-  
+  input - array(  
+       'key1'     =>     'value1',  
+       'key2'     =>     'value2'  
+  )  
+  output = key1 = 'value1', key2 = 'value2'*/  
+
+
+  $sql ="UPDATE new_admission_bpet SET ".$query." WHERE id=".$_POST['id']."";  
+  if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+  } else {
+    echo "Error updating record: " . $conn->error;
+  }
+
+}
 ?>
