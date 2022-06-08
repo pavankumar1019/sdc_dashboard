@@ -63,21 +63,20 @@ load_data(1);
             $("#newadmissionmodal").modal('show');
 
             $('#type').val('update');
-            $('#sats_no').val(data.sats_no);
-            $('#student_no').val(data.student_no);
-            $('#reg_no').val(data.reg_no);
-            $('#name').val(data.name);
+            $('#student_name').val(data.student_name);
+            $('#student_aadhar').val(data.student_aadhar);
             $('#father_name').val(data.father_name);
             $('#mother_name').val(data.mother_name);
-            $('#l1').val(data.l1);
-            $('#l2').val(data.l2);
-            $('#s1').val(data.s1);
-            $('#s2').val(data.s2);
-            $('#s3').val(data.s3);
-            $('#s4').val(data.s4);
-            $('#gt').val(data.gt);
+            $('#caste').val(data.caste);
+            $('#subcaste').val(data.subcaste);
+            $('#address').val(data.address);
+            $('#mobile_no').val(data.mobile_no);
+            $('#email_id').val(data.email_id);
+            $('#reg_no_sslc').val(data.reg_no_sslc);
             $('#year_of_passing').val(data.year_of_passing);
-            $('#id').val(data.reg_no);
+            $('#total').val(data.total);
+            $('#combination_opted').val(data.combination_opted);
+            $('#lang_opted').val(data.lang_opted);
 
           }
         });
