@@ -75,8 +75,8 @@
                                                 <option value="Cao Dai">Cao Dai</option>
                                                 <option value="Chinese traditional religion">Chinese traditional
                                                     religion</option>
-                                                <option value="Christianity">Christianity</option>
-                                                <option value="Hinduism">Hinduism</option>
+                                                <option value="CHRISTIN">Christianity</option>
+                                                <option value="Hindu">Hindu</option>
                                                 <option value="Islam">Islam</option>
                                                 <option value="Jainism">Jainism</option>
                                                 <option value="Juche">Juche</option>
