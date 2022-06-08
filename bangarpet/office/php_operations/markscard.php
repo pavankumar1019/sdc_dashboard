@@ -394,7 +394,7 @@ if($_POST['type']=="update"){
   {  
       echo "done";
   }else{
-    echo "Failed";
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   } 
 
 }
