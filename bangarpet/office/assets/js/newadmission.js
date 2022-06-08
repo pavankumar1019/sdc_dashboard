@@ -68,6 +68,12 @@ load_data(1);
             $('#father_name').val(data.father_name);
             $('#mother_name').val(data.mother_name);
             $('#caste').val(data.caste);
+            if(data.gender="m"){
+              ('#customRadio1').prop('checked', true);
+            }else{
+              ('customRadio2').prop('checked', true);
+            }
+
             $('#subcaste').val(data.subcaste);
             $('#address').val(data.address);
             $('#mobile_no').val(data.mobile_no);
