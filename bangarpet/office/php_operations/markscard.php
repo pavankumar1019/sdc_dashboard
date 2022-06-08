@@ -345,6 +345,7 @@ if($_POST['type']=="edit"){
 
 // update marks card
 if($_POST['type']=="update"){
+  echo "hemmo";
   $insert_data = array(
     "sats_no"=>$_POST['sats_no'],
     "student_no"=>$_POST['student_no'],
@@ -389,14 +390,11 @@ if($_POST['type']=="update"){
        'id'     =>     '5'  
   )  
   output = id = '5'*/  
-  $sql = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";  
-    $conn->query($sql);
-    $error=true;
-        
-        if ($error==true) {
+  $sql = "UPDATE sdc_marks_card_bpet SET ".$query." WHERE ".$condition."";        
+        if ($conn->query($sql)) {
           echo "Done";
         } else {
-          echo "Failed Duplicate entry. !";
+          echo "Error: " . $sql . "<br>" . $conn->error;
         }
     
 

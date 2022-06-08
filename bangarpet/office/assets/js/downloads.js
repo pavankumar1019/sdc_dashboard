@@ -10,7 +10,7 @@ $(document).ready(function(){
     //   form submit
     $('#newadmissionform').on('submit', function (e) {
         e.preventDefault();
-  alert('asdas');
+
       });
 
 });
