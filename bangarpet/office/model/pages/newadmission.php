@@ -201,7 +201,7 @@
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-user-check text-c-green f-30 m-r-10"></i>249
+                                                    class="feather icon-user-check text-c-green f-30 m-r-10"></i> <span id="getcountdata"></span> 249
                                             </h3>
                                         </div>
                                     </div>
@@ -239,7 +239,7 @@
                                 </div>
                                 <div class="card-block px-0 py-3">
                                     <div class="table-responsive">
-                                        <table class="table table-hover">
+                                        <table class="table table-hover" id="dynamic_content">
                                             <tbody>
                                                 <tr class="unread">
                                                     <!-- <td><img class="rounded-circle" style="width:40px;"

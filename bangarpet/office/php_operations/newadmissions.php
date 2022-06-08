@@ -1,27 +1,12 @@
 <?php
-echo $_POST['name'];
+if($_POST['type']=="getcount"){
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+  $query = "
+  SELECT * FROM new_admission_bpet
+  ";
+  $statement = $connect->prepare($query);
+  $statement->execute();
+  echo $statement->rowCount();
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
 }
-
-$sql = "INSERT INTO user (name)
-VALUES ('".$_POST['name']."')";
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-
 ?>

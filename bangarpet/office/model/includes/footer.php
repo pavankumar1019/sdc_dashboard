@@ -12,6 +12,11 @@ if($_GET['page']=="downloads"){
      <script src="assets/js/downloads.min.js"></script>
     <?php
 }
+if($_GET['page']=="newadmission"){
+    ?>
+     <script src="assets/js/newadmission.min.js"></script>
+    <?php
+}
 ?>
 </body>
 </html>
