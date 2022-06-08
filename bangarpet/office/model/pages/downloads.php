@@ -23,7 +23,7 @@
                                                     <h6 class="mb-4">SQL CMD</h6>
                                                     <div class="form-group">
                                                         <label for="search">CMD Here !</label>
-                                                        <textarea type="text" class="form-control" id="search_box"
+                                                        <textarea type="text" class="form-control bg-dark text-white" id="search_box"
                                                             placeholder="Search.." name="cmd"></textarea>
                                                     </div>
                                                     <p>To Select all > <br><b>select * from new_admission_bpet</b> <br>
