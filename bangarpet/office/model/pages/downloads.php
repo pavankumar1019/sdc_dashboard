@@ -39,10 +39,10 @@
 
 
                                     </div>
-
+                                </form>
                             </div>
 
-                            </form>
+
 
                         </div>
 
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-4 ">
-                            <div class="card daily-sales bg-primary " type="button" >
+                            <div class="card daily-sales bg-primary " type="button">
                                 <div class="card-block">
                                     <h6 class="mb-4 text-white">Attendance</h6>
                                     <div class="row d-flex align-items-center">
