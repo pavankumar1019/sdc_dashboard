@@ -120,7 +120,7 @@ if($_POST['type']=="loaddata"){
                                                     </td>
                                                     <td><a 
                                                             class="label theme-bg2 text-white f-12" data-id='.$row['reg_no'].' id="print" style="cursor: pointer;">Print</a><a
-                                                            class="label theme-bg text-white f-12" dataid='.$row['reg_no'].' id="edit">Edit</a>
+                                                            class="label theme-bg text-white f-12" data-id='.$row['reg_no'].' id="edit">Edit</a>
                                                     </td>
                                                 </tr>
         ';
@@ -307,6 +307,31 @@ if($_POST['type']=="add"){
 
 }
 
+if($_POST['type']=="edit"){
+  $query = '
+  SELECT * FROM sdc_marks_card_bpet WHERE reg_no="'.$_POST['id'].'"
+  ';
+  $statement = $connect->prepare($query);
+  $statement->execute();
+  $result = $statement->fetchAll();
+
+  foreach($result as $row){
+    echo json_encode(array(
+      "sats_no"=>$row['sats_no'],
+      "statusCode"=>200,
+      "statusCode"=>200,
+      "statusCode"=>200,
+      "statusCode"=>200,
+      "statusCode"=>200,
+      "statusCode"=>200,
+      "statusCode"=>200,
+      "statusCode"=>200
+  ));
+  }
+
+
+
+}
 
 ?>
     

@@ -86,19 +86,14 @@ function countdata()
             var id = $(this).attr('data-id');
             var type = 'edit';
             $.ajax({
-              url:"action.php",
+              url:"./php_operations/markscard.php",
               method:"POST",
               data:{id:id, type:type},
               dataType:"json",
               success:function(data)
               {
-                $('#first_name').val(data.first_name);
-                $('#last_name').val(data.last_name);
-                $('#user_dialog').attr('title', 'Edit Data');
-                $('#action').val('update');
-                $('#hidden_id').val(id);
-                $('#form_action').val('Update');
-                $('#user_dialog').dialog('open');
+                $('#sats_no').val(data.sats_no);
+
               }
             });
           });
