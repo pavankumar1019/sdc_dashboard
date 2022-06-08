@@ -382,7 +382,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
   foreach($where_condition as $key => $value)  
   {  
-       $condition .= $key . '=".$value."';  
+    $condition .= $key . "='".$value."'"; 
   }  
   $condition = substr($condition, 0, -5);  
   /*This code will convert array to string like this-  
