@@ -367,7 +367,7 @@ if($_POST['type']=="update"){
   $query = '';   
   foreach($insert_data as $key => $value)  
   {  
-       $query .= $key . "='".$value."', ";  
+       $query .= $key . '="'.$value.'", ';  
   }  
   $query = substr($query, 0, -2);  
   /*This code will convert array to string like this-  
@@ -378,7 +378,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE sdc_marks_card_bpet SET ".$query." WHERE reg_no=".$_POST['id']."";  
+  $sql ='UPDATE sdc_marks_card_bpet SET '.$query.' WHERE reg_no='.$_POST['id'].'';  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {
