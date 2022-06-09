@@ -46,7 +46,8 @@ if($_POST['type']=="loaddata"){
   if($_POST['query'] != '')
   {
     $query .= '
-    WHERE reg_no_sslc LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
+    WHERE reg_no_sslc LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR student_name  LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
+    OR combination_opted  LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
     ';
   }
   
