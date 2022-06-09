@@ -65,7 +65,7 @@ if($_POST['type']=="loaddata"){
   $total_filter_data = $statement->rowCount();
   
   $output = '
-<h2>'.$total_filter_data.'</h2>
+<h2>'.$total_data.'</h2>
   <table class="table table-hover">
   <tbody>
   ';
