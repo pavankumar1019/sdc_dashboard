@@ -105,11 +105,11 @@ if(isset($_SESSION["name"]))
             type: "POST",
             url: "./php_operations/login.php",
             beforeSend: function(){
-      $('#continue').val("connecting...");
+      $('#continue').html("connecting...");
       $('#continue').prop('disabled', true);
     },
     complete: function(){
-      $('#continue').val("continue");
+      $('#continue').html("continue");
       $('#continue').prop('disabled', false);
     },
             data: {
