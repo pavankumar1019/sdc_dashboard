@@ -104,6 +104,14 @@ if(isset($_SESSION["name"]))
           $.ajax({
             type: "POST",
             url: "./php_operations/login.php",
+            beforeSend: function(){
+      $('#continue').val("connecting...");
+      $('#continue').prop('disabled', true);
+    },
+    complete: function(){
+      $('#continue').val("continue");
+      $('#continue').prop('disabled', false);
+    },
             data: {
               type: 4,
               user_id: $("#user_id").val(),
@@ -142,7 +150,7 @@ if(isset($_SESSION["name"]))
   icon: 'error',
   title: 'Oops...',
   text: 'Invalid OTP!',
-  footer: '<a href="">Enter Correct OTP</a>'
+  footer: '<p>Enter Correct OTP</p>'
 })
                         }
                       },
