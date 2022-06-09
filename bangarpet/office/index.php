@@ -122,7 +122,7 @@ if(isset($_SESSION["name"]))
               if (dataResult.statusCode == 200) {
                 Swal.fire({
                   title:
-                    '  <p class="mb-4"><b>OTP Sent to Your Registered Number</b> <br>xxxxxxx'+dataResult.phone+'</p><br><p style="color:red;" id="msg"></p>',
+                    '  <p class="mb-4"><b>OTP Sent to Your Registered Number</b> <br>xxxxxxx'+dataResult.phone+'</p>',
                   input: "text",
                   inputAttributes: {
                     autocapitalize: "off",
@@ -146,7 +146,12 @@ if(isset($_SESSION["name"]))
                         if (dataResult.statusCode == 200) {
                           location.reload();
                         } else {
-                 ('#msg').html('Invalid OTP')
+                          Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Invalid OTP!',
+  footer: '<p>Enter Correct OTP</p>'
+})
                         }
                       },
                     });
