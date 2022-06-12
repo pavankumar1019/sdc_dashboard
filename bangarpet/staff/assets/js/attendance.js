@@ -68,15 +68,13 @@ function getstudentlist(class_id){
 
 
     $('#btn_submit').click(function(){
+      var reg_no = $("input[name='reg_no[]']")
+      .map(function(){return $(this).val();}).get();
   
-  if(!$("input[name='status[]']")
-  .map(function(){return $(this).val();}).get()){
-
-    var reg_no = $("input[name='reg_no[]']")
-    .map(function(){return $(this).val();}).get();
-
-    var status = $("input[name='status[]']")
-    .map(function(){return $(this).val();}).get();
+      var status = $("input[name='status[]']")
+      .map(function(){return $(this).val();}).get();
+  if(status.length != 0){
+ 
     $.ajax({
         url:'./php_operations/attendance.php',
         method:'POST',
