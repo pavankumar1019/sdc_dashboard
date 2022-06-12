@@ -70,7 +70,8 @@ function getstudentlist(class_id){
     $('#btn_submit').click(function(){
   
   if(!$("input[name='status[]']")
-  .map(function(){return $(this).val();})){
+  .map(function(){return $(this).val();}).get()){
+
     var reg_no = $("input[name='reg_no[]']")
     .map(function(){return $(this).val();}).get();
 
