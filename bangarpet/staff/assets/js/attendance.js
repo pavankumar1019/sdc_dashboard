@@ -68,8 +68,7 @@ function getstudentlist(class_id){
 
 
     $('#btn_submit').click(function(){
-  0
-  if(!$('#status').val()){
+ 
     var reg_no = $("input[name='reg_no[]']")
     .map(function(){return $(this).val();}).get();
 
@@ -100,9 +99,7 @@ function getstudentlist(class_id){
         }
         
        });
-  } else{
-    alert('Please mark all students ! :)');
-  }
+
     });
 
     // download
