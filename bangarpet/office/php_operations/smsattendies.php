@@ -2,7 +2,7 @@
 include('../db_bpet_sdc/db.php');
 if($_POST['type']=="add_atten")
 {
-    $class_id='22';
+    $class_id=$_POST['class_code'];
     $date=date("Y-m-d");
     $reg_no=$_POST['reg_no'];
     $status=$_POST['status'];

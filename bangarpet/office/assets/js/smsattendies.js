@@ -75,10 +75,11 @@ function getstudentlist(class_id){
 
     var status = $("input[name='status[]']")
     .map(function(){return $(this).val();}).get();
+    var class_code = $('#class_select').val();
     $.ajax({
         url:'./php_operations/smsattendies.php',
         method:'POST',
-        data:{status:status, reg_no:reg_no, type:"add_atten"},
+        data:{status:status, reg_no:reg_no, type:"add_atten", class_code:class_code},
         beforeSend: function(){
             $('#progress').html('Proccesing');
           $("#loading").animate({
