@@ -1,14 +1,7 @@
 
   // add to attendance
   $(document).ready(function(){
-    function markabsent(id){
-        $('#'+id+'').html('<i class="fas fa-circle text-c-red f-20 m-r-15"> &nbsp;A</i>');
-        $('.'+id+'').val('A');
-      }
-      function markpresent(id){
-        $('#'+id+'').html('<i class="fas fa-circle text-c-green f-20 m-r-15"> &nbsp;P</i>');
-        $('.'+id+'').val('P');
-      }
+ 
 // function call
 getstudentlist($('#class_select').val());
 
@@ -110,3 +103,11 @@ function getstudentlist(class_id){
       });
     
    });
+   function markabsent(id){
+    $('#'+id+'').html('<i class="fas fa-circle text-c-red f-20 m-r-15"> &nbsp;A</i>');
+    $('.'+id+'').val('A');
+  }
+  function markpresent(id){
+    $('#'+id+'').html('<i class="fas fa-circle text-c-green f-20 m-r-15"> &nbsp;P</i>');
+    $('.'+id+'').val('P');
+  }

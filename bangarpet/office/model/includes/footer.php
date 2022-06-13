@@ -19,7 +19,7 @@ if($_GET['page']=="newadmission"){
 }
 if($_GET['page']=="smsattendiees"){
     ?>
-     <script src="assets/js/smsattendies.min.js"></script>
+     <script src="assets/js/smsattendies.js"></script>
     <?php
 }
 ?>
