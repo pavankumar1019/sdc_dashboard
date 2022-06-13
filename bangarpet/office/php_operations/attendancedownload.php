@@ -86,10 +86,10 @@ if ($result->num_rows > 0) {
 echo '<tr><td>'.$row['rollno'].'</td><td>'.$row['studentname'].'</td>';
 
 for($i=0; $i<count($date); $i++){
-  echo '<td>'.$row[$date[$i]].'</td>';
+  echo '<td>'.$row[$date[$i]].'</td><td>'.$row['msg_status'].'</td>';
   }
 
-echo '<td>'.$row['msg_status'].'</td></tr>';
+echo '</tr>';
 }
 } else {
   echo "0 results";
