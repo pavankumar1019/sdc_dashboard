@@ -57,7 +57,6 @@ echo '  <td><b>'.$date[$i].'</b></td><td>MSSG_Status</td>';
 $sql = "select 
 ca.studentname,
 ca.rollno,
-ca.msg_status,
 ca.class";
 
 for($i=0; $i<count($date); $i++){
