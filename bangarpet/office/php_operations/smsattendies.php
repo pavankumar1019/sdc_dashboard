@@ -67,7 +67,7 @@ if ($result->num_rows > 0) {
         </td>
         <input type="hidden" name="reg_no[]" id="reg_no" value="'.$row['RollNo'].'"/>
         <input type="hidden" name="status[]" id="status" class="'.$row['RollNo'].'" value="P"  />
-        <td><a onclick="markabsent('.$row['RollNo'].')" class="label theme-bg2 text-white f-20" style="cursor: pointer;">A</a><a  style="cursor: pointer;" onclick="markpresent('.$row['RollNo'].')" class="label theme-bg text-white f-20">P</a></td>
+        <td><a onclick="markabsent("'.$row['RollNo'].'")" class="label theme-bg2 text-white f-20" style="cursor: pointer;">A</a><a  style="cursor: pointer;" onclick="markpresent("'.$row['RollNo'].'")" class="label theme-bg text-white f-20">P</a></td>
         </tr>
         
         ';
