@@ -106,7 +106,7 @@ function getstudentlist(class_id){
 
     // download
     $("#downloadexcelreport").click(function (event) {
-        window.location = './php_operations/download.php?type=downloadreport&class_id='+$('#class_select').val();
+        window.location = './php_operations/attendancedownload.php?type=downloadreport&class_id='+$('#class_select').val();
         event.preventDefault();
       });
     
