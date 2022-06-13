@@ -17,6 +17,11 @@ if($_GET['page']=="newadmission"){
      <script src="assets/js/newadmission.min.js"></script>
     <?php
 }
+if($_GET['page']=="smsattendiees"){
+    ?>
+     <script src="assets/js/smsattendies.min.js"></script>
+    <?php
+}
 ?>
 </body>
 </html>
