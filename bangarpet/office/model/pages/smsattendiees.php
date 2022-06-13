@@ -187,7 +187,7 @@
                                             <div class="row align-items-center justify-content-center card-active">
                                                 <div class="col-12">
                                                     <label for="">Check the Attendance before submit</label><br>
-                                                    <button type="button" id="btn_submit" class="btn btn-outline-info" title="" data-toggle="tooltip" data-original-title="Submit Attendance">SUBMIT</button>
+                                                    <button type="button" id="btn_submit" class="btn btn-outline-info" title="" data-toggle="tooltip" data-original-title="Submit Attendance">SUBMIT & SMS</button>
                                                 </div>
                                                 <div class="col-6">
                                                     <h6 class="text-center  m-b-10"><span class="text-muted m-r-5" id="progress"></span></h6>
