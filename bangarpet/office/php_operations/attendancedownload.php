@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php  
-include ('../db/db.php');
+include ('../db_bpet_sdc/db.php');
 if($_GET['type']=="downloadreport"){
 ?>
 <html lang="en">
