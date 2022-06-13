@@ -88,13 +88,13 @@
                                                    
                                                     <?php
                                                     require_once('./db_bpet_sdc/db.php');
-                                                    $sql = "SELECT class_id FROM staff where phone_no='7483737698'";
+                                                    $sql = "SELECT * FROM class ";
                                                     $result = $conn->query($sql);
                                                     
                                                     if ($result->num_rows > 0) {
                                                       // output data of each row
                                                       while($row = $result->fetch_assoc()) {
-                                                        echo "  <option value='".$row['class_id']."' selected>1st PUC PCMB 'A'</option>";
+                                                        echo "  <option value='".$row['id']."' selected>".$row['section']."-".$row['name']."</option>";
                                                       }
                                                     } else {
                                                       echo "0 results";
