@@ -46,7 +46,7 @@ border:1px solid black;
                 $string = $date[$i];
                 $timestamp = strtotime($string);
                 $day= date("d", $timestamp);
-echo '  <td><b>'.$date[$i].'</b></td>';
+echo '  <td><b>'.$date[$i].'</b></td><td>MSSG_Status</td>';
 
               }
               ?>
@@ -57,6 +57,7 @@ echo '  <td><b>'.$date[$i].'</b></td>';
 $sql = "select 
 ca.studentname,
 ca.rollno,
+ca.msg_status,
 ca.class";
 
 for($i=0; $i<count($date); $i++){
@@ -85,7 +86,7 @@ if ($result->num_rows > 0) {
 echo '<tr><td>'.$row['rollno'].'</td><td>'.$row['studentname'].'</td>';
 
 for($i=0; $i<count($date); $i++){
-  echo '<td>'.$row[$date[$i]].'</td>';
+  echo '<td>'.$row[$date[$i]].'</td><td>'.$row['msg_status'].'</td>';
   }
 
 echo '</tr>';
