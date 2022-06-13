@@ -94,7 +94,7 @@
                                                     if ($result->num_rows > 0) {
                                                       // output data of each row
                                                       while($row = $result->fetch_assoc()) {
-                                                        echo "  <option value='".$row['id']."' selected>".$row['section']."-".$row['name']."</option>";
+                                                        echo "  <option value='".$row['id']."' selected>".$row['section']."&nbsp;-&nbsp;".$row['name']."</option>";
                                                       }
                                                     } else {
                                                       echo "0 results";
