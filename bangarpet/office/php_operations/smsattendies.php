@@ -55,22 +55,22 @@ if ($result->num_rows > 0) {
     $sql="SELECT * FROM tbl_admission where Class='".$_POST['class_id']."'";
     $result=$conn->query($sql);
     foreach($result as $row){
-        echo "
-        <tr class='unread'>
-        <td><img class='rounded-circle' style='width:40px;' src='assets/images/user/avatar-1.jpg' alt='activity-user'></td>
+        echo '
+        <tr class="unread">
+        <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td>
         <td>
-            <h6 class='mb-1'>".$row['StudentName']."</h6>
-            <p class='m-0'>".$row['RollNo']."</p>
+            <h6 class="mb-1">'.$row['StudentName'].'</h6>
+            <p class="m-0">'.$row['RollNo'].'</p>
         </td>
         <td>
-            <h6 class='text-muted' id='".$row['RollNo']."'></h6>
+            <h6 class="text-muted" id="'.$row['RollNo'].'"></h6>
         </td>
-        <input type='hidden' name='reg_no[]' id='reg_no' value='".$row['RollNo']."'/>
-        <input type='hidden' name='status[]' id='status' class='".$row['RollNo']."' value='P'  />
-        <td><a onclick='markabsent('".$row['RollNo']."')' class='label theme-bg2 text-white f-20' style='cursor: pointer;'>A</a><a  style='cursor: pointer;' onclick='markpresent('".$row['RollNo']."')' class='label theme-bg text-white f-20'>P</a></td>
+        <input type="hidden" name="reg_no[]" id="reg_no" value="'.$row['RollNo'].'"/>
+        <input type="hidden" name="status[]" id="status" class="'.$row['RollNo'].'" value="P"  />
+        <td><a onclick="markabsent('.$row['RollNo'].')" class="label theme-bg2 text-white f-20" style="cursor: pointer;">A</a><a  style="cursor: pointer;" onclick="markpresent('.$row['RollNo'].')" class="label theme-bg text-white f-20">P</a></td>
         </tr>
-        "
-        ;
+        
+        ';
     }
 }
 }
