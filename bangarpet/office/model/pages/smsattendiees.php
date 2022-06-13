@@ -85,7 +85,7 @@
                                             </div>
                                             <br>
                                                 <select class="mb-3 form-control form-control-lg" id="class_select">
-                                                   
+                                                   <option value="" selected>--Choose Class---</option>
                                                     <?php
                                                     require_once('./db_bpet_sdc/db.php');
                                                     $sql = "SELECT * FROM class ";
@@ -94,7 +94,7 @@
                                                     if ($result->num_rows > 0) {
                                                       // output data of each row
                                                       while($row = $result->fetch_assoc()) {
-                                                        echo "  <option value='".$row['id']."' selected>".$row['section']."&nbsp;-&nbsp;".$row['name']."</option>";
+                                                        echo "  <option value='".$row['id']."' >".$row['section']."&nbsp;-&nbsp;".$row['name']."</option>";
                                                       }
                                                     } else {
                                                       echo "0 results";
