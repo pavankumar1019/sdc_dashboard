@@ -187,12 +187,12 @@
                     <div class="row align-items-center">
                         <div class="col-md-12">
                             <div class="page-header-title">
-                                <h5 class="m-b-10">New Admissions</h5>
+                                <h5 class="m-b-10">Students Database</h5>
                             </div>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="./dashboard.php?page=home"><i
                                             class="feather icon-home"></i></a></li>
-                                <li class="breadcrumb-item"><a href="javascript:">New Admissions</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:">Student Data base</a></li>
                             </ul>
                         </div>
                     </div>
@@ -208,7 +208,7 @@
                         <div class="col-md-6 col-xl-4 ">
                             <div class="card daily-sales bg-info " type="button" id="btnAdmissionModal">
                                 <div class="card-block">
-                                    <h6 class="mb-4 text-white"> New Admissions</h6>
+                                    <h6 class="mb-4 text-white">Students</h6>
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
