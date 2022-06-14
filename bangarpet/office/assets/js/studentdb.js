@@ -60,8 +60,15 @@ $(document).ready(function(){
             dataType:"json",
             success:function(data)
             {
+              $('#id').val(data.id);
               $('#class').append(`<option value="${data.class}" selected> ${data.class} </option>`);
+  
+    
+           
                 // ('#customRadio2').prop('checked', true);
+           
+  
+     
             }
           });
         });

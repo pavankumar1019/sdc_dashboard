@@ -249,7 +249,8 @@ if($_POST['type']=="edit"){
 
   foreach($result as $row){
     echo json_encode(array(
-      "class"=>$row['Class']
+      "class"=>$row['Class'],
+      "id"=>$row['id']
    
   ));
   }
@@ -316,23 +317,7 @@ SDC COLLEGE BANGARPET-563114');
 if($_POST['type']=="update"){
   
   $insert_data = array(
-    "student_name"=>$_POST['student_name'],
-    "student_aadhar"=>$_POST['student_aadhar'],
-    "dob"=>$_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'],
-    "gender"=>$_POST['customRadio'],
-    "father_name"=>$_POST['father_name'],
-    "mother_name"=>$_POST['mother_name'],
-    "religion"=>$_POST['religion'],
-    "caste"=>$_POST['caste'],
-    "subcaste"=>$_POST['subcaste'],
-    "address"=>$_POST['address'],
-    "mobile_no"=>$_POST['mobile_no'],
-    "email_id"=>$_POST['email_id'],
-    "reg_no_sslc"=>$_POST['reg_no_sslc'],
-    "total"=>$_POST['total'],
-    "year_of_passing"=>$_POST['year_of_passing'],
-    "combination_opted"=>$_POST['combination_opted'],
-    "lang_opted"=>$_POST['lang_opted']
+    "Class"=>$_POST['class']
        );
   $query = '';   
   foreach($insert_data as $key => $value)  
