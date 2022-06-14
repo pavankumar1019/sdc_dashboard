@@ -60,39 +60,8 @@ $(document).ready(function(){
             dataType:"json",
             success:function(data)
             {
-              $("#newadmissionmodal").modal('show');
-  
-              $('#type').val('update');
-              $('#id').val(data.id);
-              $('#student_name').val(data.student_name);
-              $('#student_aadhar').val(data.student_aadhar);
-              $('#father_name').val(data.father_name);
-              $('#mother_name').val(data.mother_name);
-              $('#caste').val(data.caste);
-              let text = data.dob;
-              const myArray = text.split("-");
-            $('#dd').val(myArray[0]);
-              $('#mm').val(myArray[1]);
-              $('#yy').val(myArray[2]);
-  
-  
-              $('#religion').append(`<option value="${data.religion}" selected> ${data.religion} </option>`);
-  
-              $("[name=customRadio]").val([data.gender]);
-           
+              $('#class').append(`<option value="${data.class}" selected> ${data.class} </option>`);
                 // ('#customRadio2').prop('checked', true);
-           
-  
-              $('#subcaste').val(data.subcaste);
-              $('#address').val(data.address);
-              $('#mobile_no').val(data.mobile_no);
-              $('#email_id').val(data.email_id);
-              $('#reg_no_sslc').val(data.reg_no_sslc);
-              $('#year_of_passing').val(data.year_of_passing);
-              $('#total').val(data.total);
-              $('#combination_opted').val(data.combination_opted);
-              $('#lang_opted').val(data.lang_opted);
-  
             }
           });
         });

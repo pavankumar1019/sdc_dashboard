@@ -17,7 +17,7 @@
                             <div class="modal-body">
                                 <form method="post" id="newadmissionform">
                                     <div class="form-row">
-                                        <div class="form-group col-lg-3">
+                                        <div class="form-group col-lg-12">
                                             <label for="inputPassword4">Class</label>
                                             <select id="class" name="class" class="form-control"
                                                 required="">
