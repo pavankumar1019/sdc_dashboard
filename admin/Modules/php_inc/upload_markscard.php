@@ -147,7 +147,7 @@ if($error !=0){
      );
      $table_columns= implode(',', array_keys($insert_data));
      $table_data= implode("', '", $insert_data);
-   $sql = "INSERT INTO sdc_marks_card_bpet ($table_columns) VALUES ('$table_data') "; 
+   $sql = "INSERT INTO sdc_marks_card_kgf ($table_columns) VALUES ('$table_data') "; 
    $conn->query($sql);
 $error=true;
     }
@@ -173,7 +173,7 @@ echo $html;
 
 
 if($_POST['type']=="truncate"){
-    $sql = "TRUNCATE TABLE sdc_marks_card_bpet"; 
+    $sql = "TRUNCATE TABLE sdc_marks_card_kgf"; 
    if($conn->query($sql)){
        echo "done";
    }else{
@@ -185,7 +185,7 @@ if($_POST['type']=="loaddata"){
     {
       $search = mysqli_real_escape_string($conn, $_POST["query"]);
       $query = "
-       SELECT * FROM sdc_marks_card_bpet 
+       SELECT * FROM sdc_marks_card_kgf 
        WHERE reg_no LIKE '%".$search."%'
        OR student_name LIKE '%".$search."%' 
       ";
@@ -193,7 +193,7 @@ if($_POST['type']=="loaddata"){
      else
      {
       $query = "
-       SELECT * FROM sdc_marks_card_bpet ORDER BY reg_no
+       SELECT * FROM sdc_marks_card_kgf ORDER BY reg_no
       ";
      }
      $result = $conn->query($query);

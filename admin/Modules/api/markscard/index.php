@@ -34,14 +34,14 @@ error_reporting(E_ALL & ~E_NOTICE);
     {
       $search = mysqli_real_escape_string($conn, $_GET["reg_no"]);
       $query = "
-       SELECT * FROM sdc_marks_card_bpet 
+       SELECT * FROM sdc_marks_card_kgf 
        WHERE reg_no LIKE '%".$search."%'
       ";
      }
      else
      {
       $query = "
-       SELECT * FROM sdc_marks_card_bpet ORDER BY reg_no
+       SELECT * FROM sdc_marks_card_kgf ORDER BY reg_no
       ";
      }
      $result = $conn->query($query);
