@@ -34,8 +34,7 @@ foreach($selectnumberresult as $stdnumber){
     // Message details
     
     $content =  rawurlencode('Dear '.$stdnumber['StudentName'].' 
-.
-SDC COLLEGE BANGARPET-563114');
+helloSDC COLLEGE BANGARPET-563114');
     
     
     
