@@ -32,11 +32,10 @@ foreach($selectnumberresult as $stdnumber){
     $method = 'sendMessage';
 	
     // Message details
-    
-    $content =  rawurlencode('Dear '.$stdnumber['StudentName'].' 
-hello
+$content =  rawurlencode('Dear '.$stdnumber['StudentName'].' 
+Your admission is confirmed.Thank you for choosing our college.
 SDC COLLEGE BANGARPET-563114');
-    
+          
     
     
     // Prepare data for POST request
