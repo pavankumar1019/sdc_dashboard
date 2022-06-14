@@ -33,7 +33,7 @@ foreach($selectnumberresult as $stdnumber){
 	
     // Message details
 $content =  rawurlencode('Dear '.$stdnumber['StudentName'].' 
-Your admission is confirmed.Thank you for choosing our college.
+is absent for todays class.
 SDC COLLEGE BANGARPET-563114');
           
     
@@ -46,7 +46,7 @@ SDC COLLEGE BANGARPET-563114');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
     curl_close($ch);
-    echo $stdnumber['StudentName'];
+    echo $stdnumber['StudentName']."&nbsp;-&nbsp; Message Sent";
 }
 
 }else{
