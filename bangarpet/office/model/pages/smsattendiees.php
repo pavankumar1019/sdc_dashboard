@@ -85,7 +85,7 @@
                                             </div>
                                             <br>
                                                 <select class="mb-3 form-control form-control-lg" id="class_select">
-                                                   <option value="" selected>--Choose Class---</option>
+                                                   <option value="0" selected>--Choose Class---</option>
                                                     <?php
                                                     require_once('./db_bpet_sdc/db.php');
                                                     $sql = "SELECT * FROM class ";
