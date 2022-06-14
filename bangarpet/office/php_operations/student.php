@@ -48,6 +48,7 @@ if($_POST['type']=="loaddata"){
     $query .= '
     WHERE RollNo  LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR StudentName  LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
     OR combination  LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"   OR mobile_no  LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
+    OR Class  LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  
     ';
   }
   
