@@ -23,7 +23,7 @@
                                                 required="">
                                                 <option value="" selected>-select one-</option>
                                           <?php
-                                          require_once('../db_bpet_sdc/db.php');
+                                          require('../db_bpet_sdc/db.php');
                                           $sql="SELECT * from class";
                                           $result=$conn->query($sql);
                                           foreach($result as $row){
