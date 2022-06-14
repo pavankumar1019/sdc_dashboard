@@ -40,6 +40,7 @@ function getstudentlist(class_id){
   loadtotalStudents();
    function loadtotalStudents(){
     var class_code = $('#class_select').val();
+    if(!class_code){
     $.ajax({
         url:'./php_operations/smsattendies.php',
         method:'POST',
@@ -50,6 +51,7 @@ function getstudentlist(class_id){
         }
         
        });
+      }
    }
   loadtotalAbsentiesStudents();
    function loadtotalAbsentiesStudents(){
