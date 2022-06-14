@@ -14,7 +14,7 @@ $(document).ready(function(){
   function countdata()
   {
   $.ajax({
-      url:"./php_operations/newadmissions.php",
+      url:"./php_operations/student.php",
       method:"POST",
       data:{type: "getcount"},
       success:function(data)
@@ -31,7 +31,7 @@ $(document).ready(function(){
       function load_data(page, query = '')
       {
         $.ajax({
-          url:"./php_operations/newadmissions.php",
+          url:"./php_operations/student.php",
           method:"POST",
           data:{page:page, query:query, type: "loaddata"},
           success:function(data)
@@ -58,7 +58,7 @@ $(document).ready(function(){
           var id = $(this).attr('data-id');
           var type = 'edit';
           $.ajax({
-            url:"./php_operations/newadmissions.php",
+            url:"./php_operations/student.php",
             method:"POST",
             data:{id:id, type:type},
             dataType:"json",
@@ -107,7 +107,7 @@ $(document).ready(function(){
   
     $.ajax({
       method:"POST",
-      url: './php_operations/newadmissions.php',
+      url: './php_operations/student.php',
       data: $('form').serialize(),
       beforeSend: function(){
         $('#submit').val("connecting...");
