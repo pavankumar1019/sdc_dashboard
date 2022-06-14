@@ -82,7 +82,7 @@ if($_POST['type']=="loaddata"){
         $number_phone='<i
         class="fas fa-circle text-c-red f-10 m-r-15"></i>Null';
       }else{
-        $class="SELECT * from class";
+        $class="SELECT * from class where id='".$row['Class']."'";
         $classresult= $conn->query($class);
         foreach($classresult as $cls){
             $number_phone='<i
