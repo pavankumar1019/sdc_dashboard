@@ -51,7 +51,7 @@ if($_POST['type']=="loaddata"){
     ';
   }
   
-  $query .= 'ORDER BY time_stamp ASC ';
+  $query .= 'ORDER BY RollNo ASC ';
   
   $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
   
