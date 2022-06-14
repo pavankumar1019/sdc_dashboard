@@ -61,7 +61,7 @@ $(document).ready(function(){
             success:function(data)
             {
               $('#id').val(data.id);
-              $('#class').append(`<option value="${data.class}" selected> ${data.class} </option>`);
+            //   $('#class').append(`<option value="${data.class}" selected> ${data.class} </option>`);
   
               $("#newadmissionmodal").modal('show');
   
