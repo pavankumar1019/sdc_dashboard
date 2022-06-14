@@ -66,7 +66,7 @@
                             <li class=""><a href="#" class="">ID- Genrator</a></li>
                             <li class=""><a href="./dashboard.php?page=downloads" class="">Downloads</a></li>
                             <li class=""><a href="./dashboard.php?page=smsattendiees" class="">SMS Attendies</a></li>
-                            <li class=""><a href="#" class="./dashboard.php?page=studendb">Student DB</a></li>
+                            <li class=""><a href="./dashboard.php?page=studendb" class="">Student DB</a></li>
                         </ul>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
