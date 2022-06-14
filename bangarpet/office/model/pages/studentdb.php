@@ -19,14 +19,17 @@
                                     <div class="form-row">
                                         <div class="form-group col-lg-3">
                                             <label for="inputPassword4">Class</label>
-                                            <select id="combination_opted" name="combination_opted" class="form-control"
+                                            <select id="class" name="class" class="form-control"
                                                 required="">
                                                 <option value="" selected>-select one-</option>
-                                                <option vlaue="">PCMB</option>
-                                                <option vlaue="">PCMCs</option>
-                                                <option vlaue="">EBACs</option>
-                                                <option vlaue="">EBAS</option>
-                                                <option vlaue="">ABSM</option>
+                                          <?php
+                                          require_once('../db_bpet_sdc/db.php');
+                                          $sql="SELECT * from class";
+                                          $result=$conn->query($sql);
+                                          foreach($result as $row){
+                                            echo '<option value="'.$row['id'].'" >'.$row['section'].' - '.$row['name'].'</option>';
+                                          }
+                                          ?>
                                             </select>
                                         </div>
                                         <hr>
