@@ -212,7 +212,7 @@
                                     <div class="row d-flex align-items-center">
                                         <div class="col-9">
                                             <h3 class="f-w-300 d-flex align-items-center m-b-0 text-white"><i
-                                                    class="feather icon-user-check text-c-green f-30 m-r-10"></i> <span
+                                                    class="fa fa-users text-c-green f-30 m-r-10"></i> <span
                                                     id="getcountdata"></span>
                                             </h3>
                                         </div>
