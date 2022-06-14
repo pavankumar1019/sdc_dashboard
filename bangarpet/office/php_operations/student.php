@@ -79,10 +79,10 @@ if($_POST['type']=="loaddata"){
     {
       if($row['Class']==0){
         $number_phone='<i
-        class="fas fa-circle text-c-red f-10 m-r-15"></i>'.$row['Class'].'';
+        class="fas fa-circle text-c-red f-10 m-r-15"></i>Null';
       }else{
         $number_phone='<i
-        class="fas fa-circle text-c-green f-10 m-r-15"></i>Null';
+        class="fas fa-circle text-c-green f-10 m-r-15"></i>'.$row['Class'].';
       }
           
       $output .= '
