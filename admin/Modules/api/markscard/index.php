@@ -308,11 +308,11 @@ else
      ?>
      <div style="border:4px solid green;border-color:green; height: 1050px; padding:10px;" class="margin">
         <div class="grid-container" >
-            <div class="cc">College Code : MM-0174</div>
-            <div class="ph" style="padding-right:6px;">Ph : 8861731246</div>
+            <div class="cc">College Code : MM-0273</div>
+            <div class="ph" style="padding-right:6px;">Ph : 9535081816</div>
             <div class="img" ><img src="./logo.jpg" width="120px" alt="" srcset=""></div>
             <div class="title"  style="font-weight: bolder;line-height:normal;">Smt. Danamma Channabasavaiah (SDC) <br> Independent P.U. College
-            <p style="font-size:15px;line-height:26px;">(Recognised by Govt. of Karnataka) <br> <span style="font-size:20px;font-weight: bold;">Near Canara Bank, Kolar Main Road, Bangarpet-563114</span></p>
+            <p style="font-size:15px;line-height:26px;">(Recognised by Govt. of Karnataka) <br> <span style="font-size:20px;font-weight: bold;">Krishnapuram, Oorigaumpet Post, K.G.F - 563121</span></p>
             <p style="border:3px solid green;border-color:green; color: red; font-weight: bold;width: 350px;">I PUC MARKS CARD</p>
     
         </div>
