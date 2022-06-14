@@ -22,14 +22,7 @@
                                             <select id="class" name="class" class="form-control"
                                                 required="">
                                                 <option value="" selected>-select one-</option>
-                                          <?php
-                                          require('../db_bpet_sdc/db.php');
-                                          $sql="SELECT * from class";
-                                          $result=$conn->query($sql);
-                                          foreach($result as $row){
-                                            echo '<option value="'.$row['id'].'" >'.$row['section'].' - '.$row['name'].'</option>';
-                                          }
-                                          ?>
+                                  
                                             </select>
                                         </div>
                                         <hr>
