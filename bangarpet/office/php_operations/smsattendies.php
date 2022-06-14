@@ -33,7 +33,7 @@ foreach($selectnumberresult as $stdnumber){
 	
     // Message details
     
-    $content =  rawurlencode('Dear '.$_POST['student_name'].' 
+    $content =  rawurlencode('Dear '.$stdnumber['StudentName'].' 
 .
 SDC COLLEGE BANGARPET-563114');
     
