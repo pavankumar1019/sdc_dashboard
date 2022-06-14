@@ -61,12 +61,12 @@ $(document).ready(function(){
             success:function(data)
             {
               $('#id').val(data.id);
-            //   $('#class').append(`<option value="${data.class}" selected> ${data.class} </option>`);
+              $('#class').append(`<option value="${data.class}" selected></option>`);
   
               $("#newadmissionmodal").modal('show');
   
               $('#type').val('update');
-              $(`#class option:contains("${data.class}")`).attr('selected', 'selected');
+            //   $(`#class option:contains("${data.class}")`).attr('selected', 'selected');
                 // ('#customRadio2').prop('checked', true);
            
   
