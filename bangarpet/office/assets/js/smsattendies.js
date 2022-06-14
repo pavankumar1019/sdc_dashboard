@@ -10,7 +10,7 @@ function markabsent(id){
   $(document).ready(function(){
   
 // function call
-
+getstudentlist($('#class_select').val());
 
    
   $('#class_select').on('change', function (e) {
