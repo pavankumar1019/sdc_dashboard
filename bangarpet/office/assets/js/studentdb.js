@@ -66,7 +66,12 @@ $(document).ready(function(){
               $("#newadmissionmodal").modal('show');
   
               $('#type').val('update');
-              $(`#class option:contains("${data.class}")`).attr('selected', 'selected');
+              if(data.class=0){
+                $(`#class option:contains("")`).attr('selected', 'selected');
+              }else{
+                $(`#class option:contains("${data.class}")`).attr('selected', 'selected');
+              }
+      
                 // ('#customRadio2').prop('checked', true);
            
   
