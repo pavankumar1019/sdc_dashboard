@@ -34,7 +34,8 @@ foreach($selectnumberresult as $stdnumber){
     // Message details
     
     $content =  rawurlencode('Dear '.$stdnumber['StudentName'].' 
-helloSDC COLLEGE BANGARPET-563114');
+hello
+SDC COLLEGE BANGARPET-563114');
     
     
     
@@ -46,7 +47,7 @@ helloSDC COLLEGE BANGARPET-563114');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
     curl_close($ch);
-    echo "Done";
+    echo $stdnumber['StudentName'];
 }
 
 }else{
