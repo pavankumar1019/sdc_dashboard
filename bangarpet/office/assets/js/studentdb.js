@@ -64,6 +64,8 @@ $(document).ready(function(){
               $('#class').append(`<option value="${data.class}" selected> ${data.class} </option>`);
   
               $("#newadmissionmodal").modal('show');
+  
+              $('#type').val('update');
            
                 // ('#customRadio2').prop('checked', true);
            
