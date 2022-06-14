@@ -14,12 +14,12 @@ getstudentlist($('#class_select').val());
 
    
   $('#class_select').on('change', function (e) {
+    if(!this.value){
       var class_id = this.value;
       loadtotalStudents();
-
       getstudentlist(class_id);
       loadtotalAbsentiesStudents();
-  
+    }
   });
 //   get function list
 function getstudentlist(class_id){
