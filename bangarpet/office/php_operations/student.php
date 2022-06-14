@@ -88,9 +88,8 @@ if($_POST['type']=="loaddata"){
           
       $output .= '
       <tr class="unread">
-      <!-- <td><img class="rounded-circle" style="width:40px;"
-              src="assets/images/user/avatar-1.jpg" alt="activity-user">
-      </td> -->
+      <td>   <h6 class="mb-1">'.$row['RollNo'].'</h6>
+      </td> 
       <td>
           <h6 class="mb-1">'.$row['StudentName'].'</h6>
           <p class="m-0">Father Name : '.$row['father_name'].'<br>'.$row['combination'].'<br>'.$row['lang_code'].'<br>'.$row['mobile_no'].'</p>
