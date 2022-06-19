@@ -2,7 +2,7 @@
 include('../db_bpet_sdc/db.php');
 
 $sql = "INSERT INTO tc (`name`)
-VALUES (".$row['id'].")";
+VALUES (".$_POST['id'].")";
 
 if (mysqli_query($conn, $sql)) {
   $last_id = mysqli_insert_id($conn);
