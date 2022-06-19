@@ -79,7 +79,7 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Nationality</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" value="Indian">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
