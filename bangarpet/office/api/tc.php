@@ -106,7 +106,7 @@ if (mysqli_query($conn, $sql)) {
               </td>
               <td>17.Date on which the application for  the transfer certificate was recived
                 <br>
-                <b><?php echo $_POST['17'];?></b>
+                <b><?php echo $_POST['t17'];?></b>
               </td>
 
             </tr>
