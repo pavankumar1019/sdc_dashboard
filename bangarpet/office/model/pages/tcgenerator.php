@@ -29,7 +29,7 @@
                                 <div class="card">
                                     <div class="card-header">
 <h5><?php
-require_once('../db_bpet_sdc/db.php');
+require_once('./db_bpet_sdc/db.php');
 
 $sql = "INSERT INTO tc (`name`)
 VALUES (' ')";
@@ -40,8 +40,6 @@ if (mysqli_query($conn, $sql)) {
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-
-mysqli_close($conn);
 ?></h5>
                                     </div>
                                     <div class="card-body">
