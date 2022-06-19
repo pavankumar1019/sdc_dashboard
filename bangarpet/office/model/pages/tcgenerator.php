@@ -48,26 +48,48 @@
 
                                                 </div>
                                                 <div class="col-md-8">
-                                                <label for="exampleInputEmail1">Name Of Student</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                    <label for="exampleInputEmail1">Name Of Student</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp" placeholder="">
                                                 </div>
                                                 <div class="col-md-8">
-                                                <label for="exampleInputEmail1">Place of Birth</label>
+                                                    <label for="exampleInputEmail1">Place of Birth</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp" placeholder="">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlSelect1">Gender</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option value="" selected>--Choose Gender--</option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                <label for="exampleInputEmail1">DOB</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
                                                 </div>
                                                 <div class="col-md-4">
-                                                <div class="form-group">
-                                                            <label for="exampleFormControlSelect1">Gender</label>
-                                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                                <option value="" selected>--Choose Gender--</option>
-                                                                <option>Male</option>
-                                                                <option>Female</option>
-                                                          
-                                                            </select>
-                                                        </div>
+                                                <label for="exampleInputEmail1">Nationality</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="">
                                                 </div>
+                                                <div class="col-md-4">
+                                                <label for="exampleInputEmail1">Religion</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="">
+                                                </div>
+                                                <div class="col-md-4">
+                                                <label for="exampleInputEmail1">Caste</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="">
+                                                </div>
+
+
                                             </div>
                                         </form>
                                     </div>
