@@ -96,6 +96,31 @@
                                                             aria-describedby="emailHelp" placeholder="">
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Name of Father</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Name Of Mother</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Whether the candidate belongs to Schedule Caste or Schedule Tribe</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option value="" selected>--Choose Yes / No--</option>
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
 
 
                                             </div>
