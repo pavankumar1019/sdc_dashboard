@@ -146,9 +146,6 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <br>
-                                                <h5>Education Details</h5>
-                                                <hr>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">1st language
