@@ -112,7 +112,8 @@
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Whether the candidate belongs to Schedule Caste or Schedule Tribe</label>
+                                                        <label for="exampleInputEmail1">Whether the candidate belongs to
+                                                            Schedule Caste or Schedule Tribe</label>
                                                         <select class="form-control" id="exampleFormControlSelect1">
                                                             <option value="" selected>--Choose Yes / No--</option>
                                                             <option>Yes</option>
@@ -123,8 +124,9 @@
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Whether qualified for promotion to the next standard
-</label>
+                                                        <label for="exampleInputEmail1">Whether qualified for promotion
+                                                            to the next standard
+                                                        </label>
                                                         <select class="form-control" id="exampleFormControlSelect1">
                                                             <option>Qualified</option>
                                                             <option>Not Qualified</option>
@@ -134,8 +136,9 @@
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1"> Standard in which the student was studying at time of leaving the college
-</label>
+                                                        <label for="exampleInputEmail1"> Standard in which the student
+                                                            was studying at time of leaving the college
+                                                        </label>
                                                         <select class="form-control" id="exampleFormControlSelect1">
                                                             <option>2nd PUC</option>
                                                             <option>1st PUC</option>
@@ -143,17 +146,31 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <br>
                                                 <h5>Education Details</h5>
-<hr>
-<div class="col-md-4">
+                                                <hr>
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">1st language
-</label>
+                                                        </label>
                                                         <select class="form-control" id="exampleFormControlSelect1">
                                                             <option>KANNADA</option>
                                                             <option>HINDI</option>
                                                             <option>URDU</option>
                                                             <option>SANSKRIT</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">COMBINATION
+                                                        </label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>PCMB</option>
+                                                            <option>PCMCs</option>
+                                                            <option>EBACS</option>
+                                                            <option>EBAS</option>
 
                                                         </select>
                                                     </div>
