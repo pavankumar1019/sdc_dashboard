@@ -27,6 +27,11 @@ if($_GET['page']=="studentdb"){
      <script src="assets/js/studentdb.min.js"></script>
     <?php
 }
+if($_GET['page']=="tcgenerator"){
+    ?>
+     <script src="assets/js/tcgenerator.min.js"></script>
+    <?php
+}
 ?>
 </body>
 </html>
