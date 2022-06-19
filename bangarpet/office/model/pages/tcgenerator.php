@@ -33,8 +33,8 @@
                                     <div class="card-body">
                                         <h5>Fill the Form</h5>
                                         <hr>
-                                        <form target="_blank" action="http://example.com"
-      method="post" id="mc-embedded-subscribe-form"
+                                        <form target="_blank" action="./api/tc.php"
+      method="post" id="tcform"
       name="mc-embedded-subscribe-form" class="validate">
                                             <div class="row">
                                                 <div class="col-md-4">
