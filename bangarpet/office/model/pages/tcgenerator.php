@@ -34,9 +34,13 @@ require_once('./db_bpet_sdc/db.php');
 $sql = "SELECT id FROM tc ORDER BY id DESC LIMIT 1";
 
 $result=mysqli_query($conn, $sql);
- foreach($result as $row){
-echo "No.".($row['id']+1);
- }
+if($result=TRUE){
+    foreach($result as $row){
+        echo "No.".($row['id']+1);
+         }
+}else{
+    echo "No. 1";
+}
 
 ?></h5>
                                     </div>
