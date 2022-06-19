@@ -183,7 +183,7 @@ if (mysqli_query($conn, $sql)) {
         <table style="width:100%;border: none;   border-collapse: collapse;">
 
             <tbody>
-                <tr><td style="border: none;"></td><td style="border: none;text-align: center;">  <h5></h5></td> <td style="border: none;text-align: right;">Date of Issue : <b>&nbsp;&nbsp;&nbsp;&nbsp;</b></td></tr>
+                <tr><td style="border: none;"></td><td style="border: none;text-align: center;">  <h5></h5></td> <td style="border: none;text-align: right;">Date of Issue : <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td></tr>
           
 
             </tbody>
