@@ -30,11 +30,14 @@
                                     <div class="card-header">
 <h5><?php
 require_once('./db_bpet_sdc/db.php');
+
+$sql = "SELECT id FROM tc ORDER BY id DESC LIMIT 1";
+
 if (mysqli_query($conn, $sql)) {
   $last_id = mysqli_insert_id($conn);
-  echo "Tc- Number : " . $last_id;
+  echo "New record created successfully. Last inserted ID is: " . $last_id;
 } else {
-'TC- Number : 1';
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 ?></h5>
                                     </div>
