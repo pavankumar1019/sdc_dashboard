@@ -40,7 +40,7 @@ if (mysqli_query($conn, $sql)) {
             <table style="width:100%;border: none;border-collapse: auto;">
 
                 <tbody>
-                    <tr><td style="border: none;">College Code: MM0174</td><td style="border: none;text-align: center;"> <h5>FOR PRE UNIVERSITY COLLEGE </h5></td> <td style="border: none;text-align: right;">No.2000040</td></tr>
+                    <tr><td style="border: none;">College Code: MM0174</td><td style="border: none;text-align: center;"> <h5>FOR PRE UNIVERSITY COLLEGE </h5></td> <td style="border: none;text-align: right;">No. &nbsp; <?php echo $_POST['id'];?></td></tr>
                 </tbody>
               </table>
         </div>
