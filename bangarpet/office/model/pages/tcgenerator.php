@@ -42,7 +42,7 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Admission No</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never
                                                             share your email with anyone else.</small> -->
                                                     </div>
@@ -52,17 +52,17 @@
                                                 <div class="col-md-8">
                                                     <label for="exampleInputEmail1">Name Of Student</label>
                                                     <input type="text" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp" placeholder="">
+                                                        aria-describedby="emailHelp" placeholder="" required>
                                                 </div>
                                                 <div class="col-md-8">
                                                     <label for="exampleInputEmail1">Place of Birth</label>
                                                     <input type="text" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp" placeholder="">
+                                                        aria-describedby="emailHelp" placeholder="" required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleFormControlSelect1">Gender</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="exampleFormControlSelect1" required>
                                                             <option value="" selected>--Choose Gender--</option>
                                                             <option>Male</option>
                                                             <option>Female</option>
@@ -74,49 +74,49 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">DOB</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-2">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Nationality</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" value="Indian">
+                                                            aria-describedby="emailHelp" placeholder="" value="Indian" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Religion</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Caste</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Name of Father</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Name Of Mother</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Whether the candidate belongs to
                                                             Schedule Caste or Schedule Tribe</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="exampleFormControlSelect1" required>
                                                             <option value="" selected>--Choose Yes / No--</option>
                                                             <option>Yes</option>
                                                             <option>No</option>
@@ -129,7 +129,7 @@
                                                         <label for="exampleInputEmail1">Whether qualified for promotion
                                                             to the next standard
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="exampleFormControlSelect1" required>
                                                             <option>Qualified</option>
                                                             <option>Not Qualified</option>
 
@@ -141,7 +141,7 @@
                                                         <label for="exampleInputEmail1"> Standard in which the student
                                                             was studying at time of leaving the college
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="exampleFormControlSelect1" required>
                                                             <option>2nd PUC</option>
                                                             <option>1st PUC</option>
 
@@ -152,7 +152,7 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">1st language
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="exampleFormControlSelect1" required>
                                                             <option>KANNADA</option>
                                                             <option>HINDI</option>
                                                             <option>URDU</option>
@@ -165,7 +165,7 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">COMBINATION
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="exampleFormControlSelect1" required>
                                                             <option>PCMB</option>
                                                             <option>PCMCs</option>
                                                             <option>EBACS</option>
@@ -178,7 +178,7 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of Student’s last attendance at college</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
@@ -193,21 +193,21 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date on which the application for the transfer certificate was recived</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Number of college working days upto the date of leaving the college</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Total number of days student attended</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" placeholder="" required>
                                                     </div>
                                                 </div>
                                             </div>
