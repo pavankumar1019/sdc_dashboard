@@ -35,7 +35,7 @@
                                         <hr>
                                         <form>
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-4">
 
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Admission No</label>
@@ -47,8 +47,8 @@
 
 
                                                 </div>
-                                                <div class="col-md-6">
-                                                <label for="exampleInputEmail1">Admission No</label>
+                                                <div class="col-md-8">
+                                                <label for="exampleInputEmail1">Name Of Student</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="Enter email">
                                                 </div>
