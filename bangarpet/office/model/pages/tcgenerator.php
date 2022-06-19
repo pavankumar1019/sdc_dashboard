@@ -143,7 +143,21 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <h5>Education Details</h5>
+<hr>
+<div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">1st language
+</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>KANNADA</option>
+                                                            <option>HINDI</option>
+                                                            <option>URDU</option>
+                                                            <option>SANSKRIT</option>
 
+                                                        </select>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </form>
