@@ -33,7 +33,9 @@
                                     <div class="card-body">
                                         <h5>Fill the Form</h5>
                                         <hr>
-                                        <form>
+                                        <form target="_blank" action="http://example.com"
+      method="post" id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form" class="validate">
                                             <div class="row">
                                                 <div class="col-md-4">
 
