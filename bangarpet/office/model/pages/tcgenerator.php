@@ -36,6 +36,7 @@ $sql = "SELECT id FROM tc ORDER BY id DESC LIMIT 1";
 $result=mysqli_query($conn, $sql);
  foreach($result as $row){
 echo "No.".($row['id']+1);
+$id=($row['id']+1);
  }
 
 ?></h5>
@@ -218,6 +219,7 @@ echo "No.".($row['id']+1);
                                                         <label for="exampleInputEmail1">Total number of days student attended</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="" required>
+                                                            <input type="hidden" name="id" value="<?php echo $id;?>" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
