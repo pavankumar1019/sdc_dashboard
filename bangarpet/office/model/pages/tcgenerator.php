@@ -40,7 +40,7 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Admission No</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                                            aria-describedby="emailHelp" placeholder="">
                                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never
                                                             share your email with anyone else.</small> -->
                                                     </div>
@@ -50,12 +50,12 @@
                                                 <div class="col-md-8">
                                                 <label for="exampleInputEmail1">Name Of Student</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                                            aria-describedby="emailHelp" placeholder="">
                                                 </div>
                                                 <div class="col-md-8">
                                                 <label for="exampleInputEmail1">Place of Birth</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                                            aria-describedby="emailHelp" placeholder="">
                                                 </div>
                                                 <div class="col-md-4">
                                                 <div class="form-group">
