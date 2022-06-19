@@ -53,7 +53,7 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Admission No</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t1" placeholder="" required>
                                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never
                                                             share your email with anyone else.</small> -->
                                                     </div>
@@ -63,17 +63,17 @@ $id=($row['id']+1);
                                                 <div class="col-md-8">
                                                     <label for="exampleInputEmail1">Name Of Student</label>
                                                     <input type="text" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp" placeholder="" required>
+                                                        aria-describedby="emailHelp" name="t2" placeholder="" required>
                                                 </div>
                                                 <div class="col-md-8">
                                                     <label for="exampleInputEmail1">Place of Birth</label>
                                                     <input type="text" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp" placeholder="" required>
+                                                        aria-describedby="emailHelp" name="t3" placeholder="" required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleFormControlSelect1">Gender</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t4" id="exampleFormControlSelect1" required>
                                                             <option value="" selected>--Choose Gender--</option>
                                                             <option>Male</option>
                                                             <option>Female</option>
@@ -92,42 +92,42 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Nationality</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" value="Indian" required>
+                                                            aria-describedby="emailHelp" name="t5" placeholder="" value="Indian" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Religion</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t6" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Caste</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t7" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Name of Father</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t8" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Name Of Mother</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t9" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Whether the candidate belongs to
                                                             Schedule Caste or Schedule Tribe</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t10" id="exampleFormControlSelect1" required>
                                                             <option value="" selected>--Choose Yes / No--</option>
                                                             <option>Yes</option>
                                                             <option>No</option>
@@ -140,7 +140,7 @@ $id=($row['id']+1);
                                                         <label for="exampleInputEmail1">Whether qualified for promotion
                                                             to the next standard
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t11" id="exampleFormControlSelect1" required>
                                                             <option>Qualified</option>
                                                             <option>Not Qualified</option>
 
@@ -152,7 +152,7 @@ $id=($row['id']+1);
                                                         <label for="exampleInputEmail1"> Standard in which the student
                                                             was studying at time of leaving the college
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t12" id="exampleFormControlSelect1" required>
                                                             <option>2nd PUC</option>
                                                             <option>1st PUC</option>
 
@@ -163,7 +163,7 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">1st language
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t13" id="exampleFormControlSelect1" required>
                                                             <option>KANNADA</option>
                                                             <option>HINDI</option>
                                                             <option>URDU</option>
@@ -176,7 +176,7 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">COMBINATION
                                                         </label>
-                                                        <select class="form-control" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="14" id="exampleFormControlSelect1" required>
                                                             <option>PCMB</option>
                                                             <option>PCMCs</option>
                                                             <option>EBACS</option>
@@ -189,14 +189,14 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of Student’s last attendance at college</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t15" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of Admission or promotion to next class or standard</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="">
+                                                            aria-describedby="emailHelp" name="t16" placeholder="">
                                                     </div>
                                                 </div>
                                             
@@ -204,20 +204,20 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date on which the application for the transfer certificate was recived</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t17" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Number of college working days upto the date of leaving the college</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="" required>
+                                                            aria-describedby="emailHelp" name="t18" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Total number of days student attended</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" name="t19" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="" required>
                                                             <input type="hidden" name="id" value="<?php echo $id;?>" required>
                                                     </div>
