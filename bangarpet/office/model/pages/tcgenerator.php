@@ -172,14 +172,14 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of Student’s last attendance at college</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of Admission or promotion to next class or standard</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
@@ -187,7 +187,7 @@
                                                     </div>
                                                 </div>
                                             
-                                                <div class="col-md-3">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of issue of the transfer certificate</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
