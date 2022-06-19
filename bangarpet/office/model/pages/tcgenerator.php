@@ -121,6 +121,28 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Whether qualified for promotion to the next standard
+</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>Qualified</option>
+                                                            <option>Not Qualified</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"> Standard in which the student was studying at time of leaving the college
+</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>2nd PUC</option>
+                                                            <option>1st PUC</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
 
 
                                             </div>
