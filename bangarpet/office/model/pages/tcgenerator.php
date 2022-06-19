@@ -186,16 +186,24 @@
                                                             aria-describedby="emailHelp" placeholder="">
                                                     </div>
                                                 </div>
+                                            
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Date on which the application for the transfer certificate was recived</label>
+                                                        <label for="exampleInputEmail1">Date of issue of the transfer certificate</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Date of issue of the transfer certificate</label>
+                                                        <label for="exampleInputEmail1">Number of college working days upto the date of leaving the college</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Total number of days student attended</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
                                                     </div>
