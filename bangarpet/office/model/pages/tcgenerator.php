@@ -33,12 +33,11 @@ require_once('./db_bpet_sdc/db.php');
 
 $sql = "SELECT id FROM tc ORDER BY id DESC LIMIT 1";
 
-if (mysqli_query($conn, $sql)) {
-  $last_id = mysqli_insert_id($conn);
-  echo "New record created successfully. Last inserted ID is: " . $last_id;
-} else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
+$result=mysqli_query($conn, $sql);
+ foreach($result as $row){
+echo "No.".$row['id'];
+ }
+
 ?></h5>
                                     </div>
                                     <div class="card-body">
