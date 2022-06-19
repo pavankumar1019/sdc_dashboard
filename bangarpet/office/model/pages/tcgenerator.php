@@ -52,6 +52,21 @@
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="Enter email">
                                                 </div>
+                                                <div class="col-md-8">
+                                                <label for="exampleInputEmail1">Place of Birth</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                                </div>
+                                                <div class="col-md-4">
+                                                <div class="form-group">
+                                                            <label for="exampleFormControlSelect1">Gender</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>Male</option>
+                                                                <option>Female</option>
+                                                          
+                                                            </select>
+                                                        </div>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
