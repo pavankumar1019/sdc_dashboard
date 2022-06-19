@@ -122,7 +122,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Whether qualified for promotion
                                                             to the next standard
@@ -134,7 +134,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1"> Standard in which the student
                                                             was studying at time of leaving the college
@@ -146,7 +146,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">1st language
                                                         </label>
@@ -159,7 +159,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">COMBINATION
                                                         </label>
