@@ -212,8 +212,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                       <input type="submit" value="Generate">
-                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>                                                    </div>
                                                 </div>
                                             </div>
                                         </form>
