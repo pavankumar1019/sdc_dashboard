@@ -194,14 +194,14 @@
                                                             aria-describedby="emailHelp" placeholder="">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Number of college working days upto the date of leaving the college</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Total number of days student attended</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
