@@ -69,24 +69,32 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                <label for="exampleInputEmail1">DOB</label>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">DOB</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                <label for="exampleInputEmail1">Nationality</label>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Nationality</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                <label for="exampleInputEmail1">Religion</label>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Religion</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                <label for="exampleInputEmail1">Caste</label>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Caste</label>
                                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                                             aria-describedby="emailHelp" placeholder="">
+                                                    </div>
                                                 </div>
 
 
