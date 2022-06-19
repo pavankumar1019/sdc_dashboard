@@ -143,7 +143,7 @@ if (mysqli_query($conn, $sql)) {
             <tr>
               <td>11.Date of birth
                 <br>
-                <b>1234566</b>
+                <b><?php echo $_POST['t20'];?></b>
               </td>
               <td>21.Total number of days student attended
                 <br>
