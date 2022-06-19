@@ -63,6 +63,7 @@
                         <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users "></i></span><span class="pcoded-mtext">Student</span></a>
                         <ul class="pcoded-submenu">
                             <li class=""><a href="./dashboard.php?page=markscard" class="">Marks Card Print</a></li>
+                            <li class=""><a href="./dashboard.php?page=tcgenerator" class="">TC - Genrator</a></li>
                             <li class=""><a href="#" class="">ID- Genrator</a></li>
                             <li class=""><a href="./dashboard.php?page=downloads" class="">Downloads</a></li>
                             <li class=""><a href="./dashboard.php?page=smsattendiees" class="">SMS Attendies</a></li>
@@ -108,6 +109,7 @@
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown">Operations</a>
                     <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./dashboard.php?page=tcgenerator">TC - Generator</a></li>
                         <li><a class="dropdown-item" href="./dashboard.php?page=newadmission">New Admission</a></li>
                         <li><a class="dropdown-item" href="javascript:">Enroll Staff</a></li>
                         <li><a class="dropdown-item" href="javascript:">New Updates</a></li>
