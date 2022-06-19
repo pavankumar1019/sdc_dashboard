@@ -33,9 +33,10 @@
                                     <div class="card-body">
                                         <h5>Fill the Form</h5>
                                         <hr>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <form>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6">
+
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Email address</label>
                                                         <input type="email" class="form-control" id="exampleInputEmail1"
@@ -55,10 +56,10 @@
                                                             out</label>
                                                     </div>
                                                     <button type="submit" class="btn btn-primary">Submit</button>
-                                                </form>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <form>
+
+                                                </div>
+                                                <div class="col-md-6">
+
                                                     <div class="form-group">
                                                         <label>Text</label>
                                                         <input type="text" class="form-control" placeholder="Text">
@@ -79,22 +80,21 @@
                                                         <textarea class="form-control" id="exampleFormControlTextarea1"
                                                             rows="3"></textarea>
                                                     </div>
-                                                </form>
+
+                                                </div>
                                             </div>
-                                        </div>
-                                       
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
-                              
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- [ Main Content ] end -->
             </div>
+            <!-- [ Main Content ] end -->
         </div>
     </div>
+</div>
 </div>
 </div>
 </div>
