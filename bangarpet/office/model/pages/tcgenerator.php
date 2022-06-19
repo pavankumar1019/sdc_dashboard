@@ -32,9 +32,9 @@
 require_once('./db_bpet_sdc/db.php');
 if (mysqli_query($conn, $sql)) {
   $last_id = mysqli_insert_id($conn);
-  echo "New record created successfully. Last inserted ID is: " . $last_id;
+  echo "Tc- Number : " . $last_id;
 } else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+'TC- Number : 1';
 }
 ?></h5>
                                     </div>
