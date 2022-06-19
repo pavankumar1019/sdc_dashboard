@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+section{
+
+    padding: 10px;
+    height: 1000px;
+}
+body{
+padding: 15px;
+   
+}
+.table_div table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+
+}
+table{
+    table-layout:fixed;
+    font-size:16px;
+    
+}
+table tr td{
+    padding: 5px
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+  }
