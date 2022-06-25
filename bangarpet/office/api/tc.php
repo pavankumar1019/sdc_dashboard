@@ -201,7 +201,7 @@ if($_POST['t14']==6){
       <div>
    
     </div>
-    <div>
+    <div style="margin-top:70px;">
             <table style="width:100%;border: none;   border-collapse: collapse;">
     
                 <tbody>
