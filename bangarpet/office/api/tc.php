@@ -201,9 +201,7 @@ if($_POST['t14']==6){
       <div>
    
     </div>
-    </section>
-    <footer>
-        <div>
+    <div>
             <table style="width:100%;border: none;   border-collapse: collapse;">
     
                 <tbody>
@@ -216,6 +214,9 @@ if($_POST['t14']==6){
                 </tbody>
               </table>
         </div>
+    </section>
+    <footer>
+        
     </footer>
 </div>
   </body>
