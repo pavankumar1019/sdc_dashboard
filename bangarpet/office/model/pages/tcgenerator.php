@@ -176,7 +176,7 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">COMBINATION
                                                         </label>
-                                                        <select class="form-control" name="14" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t14" id="exampleFormControlSelect1" required>
                                                             <option value="1">PCMB</option>
                                                             <option  value="2">PCMCs</option>
                                                             <option  value="3">EBACS</option>

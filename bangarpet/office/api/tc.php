@@ -163,7 +163,27 @@ if (mysqli_query($conn, $sql)) {
             <tr>
               <td>13.	Details of subject studied in  I / II PUC <br>
                 Part – I a) Language Studied : <b><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
-                Part -II b) Language Studied : <b><?php echo $_POST['14'];?>, MATHEMATICS, CHEMISTRY, COMPUTER SCIENCE</b>
+                Part -II b) Optional Subjects Studied : <b>
+
+                <?php 
+if($_POST['t14']==1){
+  echo "PHYSICS, CHEMISTRY, MATHEMATICS, BIOLOGY ";
+}
+if($_POST['t14']==2){
+  echo "PHYSICS, CHEMISTRY, MATHEMATICS, COMPUTER SCIENCE ";
+}
+if($_POST['t14']==3){
+  echo "ECONOMICS, BUSINESS STUDIES , ACCOUNTANCY, COMPUTER SCIENCE ";
+}
+if($_POST['t14']==6){
+  echo "ECONOMICS, BUSINESS STUDIES , ACCOUNTANCY, STATISTICS ";
+}
+if($_POST['t14']==6){
+  echo "BASIC MATHS, BUSINESS STUDIES , ACCOUNTANCY, STATISTICS ";
+
+}
+                ?>
+                </b>
                 </td>
             
               <td>23.Character and conduct
