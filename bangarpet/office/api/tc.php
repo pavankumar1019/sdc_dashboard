@@ -162,7 +162,7 @@ if (mysqli_query($conn, $sql)) {
             </tr>
             <tr>
               <td>13.	Details of subject studied in  I / II PUC <br>
-                Part – I a) Language Studied : <b><?php echo $_POST['13'];?></b>  <br>
+                Part – I a) Language Studied : <b><?php echo $_POST['t13'];?></b>  <br>
                 Part -II b) Language Studied :  <b>ENGLISH</b> <br>
                 Elective Subjects : <b><?php echo $_POST['14'];?>, MATHEMATICS, CHEMISTRY, COMPUTER SCIENCE</b>
                 </td>
