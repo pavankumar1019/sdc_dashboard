@@ -287,6 +287,6 @@ if($_POST['t14']==6){
         
     </footer>
 </div>
-<p align="center">STUDENT COPY</p>
+<p align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">STUDENT COPY</p>
   </body>
 </html>
