@@ -158,30 +158,7 @@ if (mysqli_query($conn, $sql)) {
                 Part -II b) Optional Subjects Studied : 
                 </td>
             
-         <td>
-         <b><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
-         <b>
 
-                <?php 
-if($_POST['t14']==1){
-  echo "PHYSICS, CHEMISTRY, MATHEMATICS, BIOLOGY ";
-}
-if($_POST['t14']==2){
-  echo "PHYSICS, CHEMISTRY, MATHEMATICS, COMPUTER SCIENCE ";
-}
-if($_POST['t14']==3){
-  echo "ECONOMICS, BUSINESS STUDIES , ACCOUNTANCY, COMPUTER SCIENCE ";
-}
-if($_POST['t14']==6){
-  echo "ECONOMICS, BUSINESS STUDIES , ACCOUNTANCY, STATISTICS ";
-}
-if($_POST['t14']==6){
-  echo "BASIC MATHS, BUSINESS STUDIES , ACCOUNTANCY, STATISTICS ";
-
-}
-                ?>
-                </b>
-         </td>
             </tr>
             <tr>
             <td>13.	Date  of Student’s  last attendance at college
