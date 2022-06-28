@@ -153,7 +153,7 @@ if (mysqli_query($conn, $sql)) {
              <td> <b><?php echo $_POST['t12'];?></b></td>
             </tr>
             <tr>
-              <td>13.	Details of subject studied in  I / II PUC <br>
+              <td rowspan="2">13.	Details of subject studied in  I / II PUC <br>
                 Part – I a) Language Studied : <b><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
                 Part -II b) Optional Subjects Studied : <b>
 
