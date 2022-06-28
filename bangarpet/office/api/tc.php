@@ -71,7 +71,7 @@ if (mysqli_query($conn, $sql)) {
               
                
               </td>
-           <td>
+           <td style="text-align:center ;">
            <b><?php echo $_POST['t4'];?></b>
            </td>
 
@@ -81,7 +81,7 @@ if (mysqli_query($conn, $sql)) {
                
             
               </td>
-         <td>
+         <td style="text-align:center ;">
          <b><?php echo $_POST['t5'];?></b>
          </td>
             </tr>
@@ -91,7 +91,7 @@ if (mysqli_query($conn, $sql)) {
               
               </td>
          
-             <td>
+             <td style="text-align:center ;">
 
              <b><?php echo $_POST['t6'];?>&nbsp;/ &nbsp;<?php echo $_POST['t7'];?></b>
              </td>
@@ -101,7 +101,7 @@ if (mysqli_query($conn, $sql)) {
                 
               
               </td>
-            <td>
+            <td style="text-align:center ;">
 
             <b><?php echo $_POST['t8'];?></b>
             </td>
@@ -112,7 +112,7 @@ if (mysqli_query($conn, $sql)) {
              
               
               </td>
-             <td>
+             <td style="text-align:center ;">
 
              <b><?php echo $_POST['t9'];?></b>
              </td>
@@ -122,7 +122,7 @@ if (mysqli_query($conn, $sql)) {
                 
               
               </td>
-             <td>
+             <td style="text-align:center ;">
 
              <b><?php echo $_POST['t20'];?></b>
              </td>
@@ -132,7 +132,7 @@ if (mysqli_query($conn, $sql)) {
                 
                
               </td>
-             <td>
+             <td style="text-align:center ;">
              <b><?php echo $_POST['t11'];?></b>
              </td>
             </tr>
@@ -141,7 +141,7 @@ if (mysqli_query($conn, $sql)) {
                 
                 
               </td>
-            <td>
+            <td style="text-align:center ;">
             <b><?php echo $_POST['t10'];?></b>
             </td>
             </tr>
@@ -150,7 +150,7 @@ if (mysqli_query($conn, $sql)) {
                 
                
               </td>
-             <td> <b><?php echo $_POST['t12'];?></b></td>
+             <td style="text-align:center ;"> <b><?php echo $_POST['t12'];?></b></td>
             </tr>
             <tr>
               <td colspan="2">13.	Details of subject studied in  I / II PUC <br>
@@ -185,7 +185,7 @@ if($_POST['t14']==6){
                 
               
               </td>
-              <td>
+              <td style="text-align:center ;">
               <b><?php echo $_POST['t15'];?></b>
               </td>
             </tr>
@@ -195,7 +195,7 @@ if($_POST['t14']==6){
                 
                
               </td>
-              <td>
+              <td style="text-align:center ;"> 
               <b>English</b>
               </td>
           </tr>
@@ -204,7 +204,7 @@ if($_POST['t14']==6){
                 
               
               </td>
-              <td>
+              <td style="text-align:center ;">
 
               <b><?php echo $_POST['t16'];?></b>
               </td>
@@ -213,7 +213,7 @@ if($_POST['t14']==6){
                 
                 
               </td>
-            <td>
+            <td style="text-align:center ;">
             <b><?php echo $_POST['t17'];?></b>
             </td>
             </tr>
@@ -223,7 +223,7 @@ if($_POST['t14']==6){
                 
               
               </td>
-              <td>
+              <td style="text-align:center ;">
               <b>Yes</b>
               </td>
          </tr>
@@ -238,13 +238,13 @@ if($_POST['t14']==6){
                 
                
               </td>
-              <td> <b><?php echo $_POST['t18'];?></b></td>
+              <td style="text-align:center ;"> <b><?php echo $_POST['t18'];?></b></td>
          </tr>
          <tr>  <td>21.Total number of days student attended
                 
                
               </td>
-            <td> <b><?php echo $_POST['t19'];?></b></td>
+            <td style="text-align:center ;"> <b><?php echo $_POST['t19'];?></b></td>
             </tr>
             <tr> <td>22.Scholarship if any (Nature & Period to be specified )
                
@@ -257,7 +257,7 @@ if($_POST['t14']==6){
               
                
               </td>
-              <td> <b>Satisfactory</b></td>
+              <td style="text-align:center ;"> <b>Satisfactory</b></td>
             </tr>
           </tbody>
         </table>
