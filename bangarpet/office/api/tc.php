@@ -22,7 +22,7 @@ if (mysqli_query($conn, $sql)) {
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <p align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">STUDENT COPY</p>
+  <p align="right" style="font-size:10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">STUDENT COPY</p>
 
     <div style="padding: 10px;    border: 5px solid salmon;    ">
     <section>
@@ -292,7 +292,7 @@ if($_POST['t14']==6){
 
 <!-- college copy -->
 <p style="break-after:page;"></p>
-<p align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">COLLEGE COPY</p>
+<p align="right" style="font-size:10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">COLLEGE COPY</p>
 
 <div style="padding: 10px;    border: 5px solid salmon;">
     <section>
