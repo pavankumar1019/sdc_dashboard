@@ -156,10 +156,11 @@ if (mysqli_query($conn, $sql)) {
               <td>12.	Details of subject studied in  I / II PUC <br>
                 Part – I a) Language Studied :  <br>
                 Part -II b) Optional Subjects Studied : 
+                <br>
                 </td>
                 <td>
-         <br><?php echo $_POST['t13'];?>, ENGLISH   <br>
-         
+         <b> <br> <br><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
+         <b>
 
                 <?php 
 if($_POST['t14']==1){
@@ -179,7 +180,7 @@ if($_POST['t14']==6){
 
 }
                 ?>
-                
+                </b>
          </td>
 
             </tr>
