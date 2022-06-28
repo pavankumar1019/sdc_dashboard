@@ -154,11 +154,11 @@ if (mysqli_query($conn, $sql)) {
             </tr>
             <tr>
               <td>12.	Details of subject studied in  I / II PUC <br>
-                Part – I a) Language Studied : 
+                Part – I a) Language Studied :  <br>
                 Part -II b) Optional Subjects Studied : 
                 </td>
                 <td>
-         <b><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
+         <b> <br><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
          <b>
 
                 <?php 
