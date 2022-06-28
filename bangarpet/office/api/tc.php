@@ -178,7 +178,7 @@ if($_POST['t14']==6){
                 </b>
                 </td>
             
-              <td></td>
+         
             </tr>
             <tr>
             <td>14.	Date  of Student’s  last attendance at college
