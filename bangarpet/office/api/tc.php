@@ -290,8 +290,8 @@ if($_POST['t14']==6){
 <p align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">STUDENT COPY</p>
 
 <!-- college copy -->
-<h1 style="break-after:page"></h1>
-<div style="padding: 10px;    border: 5px solid salmon;    ">
+
+<div style="padding: 10px;    border: 5px solid salmon;    break-after:page">
     <section>
         <div style="text-align:center;line-height:28px;">
             <div class="grid-container">
