@@ -287,6 +287,6 @@ if($_POST['t14']==6){
         
     </footer>
 </div>
-<p align="center">student copy</p>
+<p align="center">STUDENT COPY</p>
   </body>
 </html>
