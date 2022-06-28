@@ -67,7 +67,7 @@ if (mysqli_query($conn, $sql)) {
               <td style="text-align:center ;"> <b><?php echo $_POST['t3'];?></b></td>
             </tr> -->
             <tr>
-              <td>4.Gender
+              <td>3.Gender
               
                
               </td>
@@ -77,7 +77,7 @@ if (mysqli_query($conn, $sql)) {
 
             </tr>
             <tr>
-              <td>5.Nationality
+              <td>4.Nationality
                
             
               </td>
@@ -86,7 +86,7 @@ if (mysqli_query($conn, $sql)) {
          </td>
             </tr>
             <tr>
-              <td>6.Religion,  Caste 
+              <td>5.Religion,  Caste 
               
               
               </td>
@@ -97,7 +97,7 @@ if (mysqli_query($conn, $sql)) {
              </td>
             </tr>
             <tr>
-              <td>7.Name of the father
+              <td>6.Name of the father
                 
               
               </td>
@@ -108,7 +108,7 @@ if (mysqli_query($conn, $sql)) {
 
             </tr>
             <tr>
-              <td>8.Name of the mother
+              <td>7.Name of the mother
              
               
               </td>
@@ -118,7 +118,7 @@ if (mysqli_query($conn, $sql)) {
              </td>
             </tr>
             <tr>
-              <td>9.Date of birth
+              <td>8.Date of birth
                 
               
               </td>
@@ -128,7 +128,7 @@ if (mysqli_query($conn, $sql)) {
              </td>
             </tr>
             <tr>
-              <td>10.Whether qualified for promotion to the next standard
+              <td>9.Whether qualified for promotion to the next standard
                 
                
               </td>
@@ -137,7 +137,7 @@ if (mysqli_query($conn, $sql)) {
              </td>
             </tr>
             <tr>
-              <td>11. Whether the candidate belongs to  Schedule Caste or Schedule Tribe
+              <td>10. Whether the candidate belongs to  Schedule Caste or Schedule Tribe
                 
                 
               </td>
@@ -146,14 +146,14 @@ if (mysqli_query($conn, $sql)) {
             </td>
             </tr>
             <tr>
-              <td>12.	Standard in which the student  was studying at time of leaving the college
+              <td>11.	Standard in which the student  was studying at time of leaving the college
                 
                
               </td>
              <td style="text-align:center ;"> <b><?php echo $_POST['t12'];?></b></td>
             </tr>
             <tr>
-              <td colspan="2">13.	Details of subject studied in  I / II PUC <br>
+              <td colspan="2">12.	Details of subject studied in  I / II PUC <br>
                 Part – I a) Language Studied : <b><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
                 Part -II b) Optional Subjects Studied : <b>
 
@@ -181,7 +181,7 @@ if($_POST['t14']==6){
          
             </tr>
             <tr>
-            <td>14.	Date  of Student’s  last attendance at college
+            <td>13.	Date  of Student’s  last attendance at college
                 
               
               </td>
@@ -191,7 +191,7 @@ if($_POST['t14']==6){
             </tr>
           <tr>
             
-          <td>15.	Medium of instruction
+          <td>14.	Medium of instruction
                 
                
               </td>
@@ -200,7 +200,7 @@ if($_POST['t14']==6){
               </td>
           </tr>
           <tr>
-          <td>16.	Date of Admission or promotion to next class or standard
+          <td>15.	Date of Admission or promotion to next class or standard
                 
               
               </td>
@@ -209,7 +209,7 @@ if($_POST['t14']==6){
               <b><?php echo $_POST['t16'];?></b>
               </td>
           </tr>
-          <tr>  <td>17.Date on which the application for  the transfer certificate was recived
+          <tr>  <td>16.Date on which the application for  the transfer certificate was recived
                 
                 
               </td>
@@ -219,7 +219,7 @@ if($_POST['t14']==6){
             </tr>
 
          <tr>
-         <td>18.Whether the student has paid all the fees due to college?
+         <td>17.Whether the student has paid all the fees due to college?
                 
               
               </td>
@@ -228,32 +228,32 @@ if($_POST['t14']==6){
               </td>
          </tr>
          <tr>
-         <td>19.Date of issue of the transfer certificate
+         <td>18.Date of issue of the transfer certificate
  
               </td>
               <td></td>
          </tr>
          <tr>
-         <td>20.Number of college working days upto the date of leaving the college
+         <td>19.Number of college working days upto the date of leaving the college
                 
                
               </td>
               <td style="text-align:center ;"> <b><?php echo $_POST['t18'];?></b></td>
          </tr>
-         <tr>  <td>21.Total number of days student attended
+         <tr>  <td>20.Total number of days student attended
                 
                
               </td>
             <td style="text-align:center ;"> <b><?php echo $_POST['t19'];?></b></td>
             </tr>
-            <tr> <td>22.Scholarship if any (Nature & Period to be specified )
+            <tr> <td>21.Scholarship if any (Nature & Period to be specified )
                
               </td>
             <td>
 
             </td></tr>
             <tr>
-            <td>23.Character and conduct
+            <td>22.Character and conduct
               
                
               </td>
