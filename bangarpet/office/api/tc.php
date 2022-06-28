@@ -158,7 +158,7 @@ if (mysqli_query($conn, $sql)) {
                 Part -II b) Optional Subjects Studied : 
                 </td>
                 <td>
-         <b> <br> <br><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
+         <b> <br><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
          <b>
 
                 <?php 
