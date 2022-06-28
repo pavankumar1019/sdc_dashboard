@@ -118,13 +118,13 @@ if (mysqli_query($conn, $sql)) {
              </td>
             </tr>
             <tr>
-              <td>9.Whether the candidate belongs to  Schedule Caste or Schedule Tribe
+              <td>9.Date of birth
                 
               
               </td>
              <td>
 
-             <b><?php echo $_POST['t10'];?></b>
+             <b><?php echo $_POST['t20'];?></b>
              </td>
             </tr>
             <tr>
@@ -137,12 +137,12 @@ if (mysqli_query($conn, $sql)) {
              </td>
             </tr>
             <tr>
-              <td>11.Date of birth
+              <td>11. Whether the candidate belongs to  Schedule Caste or Schedule Tribe
                 
                 
               </td>
             <td>
-            <b><?php echo $_POST['t20'];?></b>
+            <b><?php echo $_POST['t10'];?></b>
             </td>
             </tr>
             <tr>
