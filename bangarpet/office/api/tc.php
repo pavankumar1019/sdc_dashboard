@@ -48,7 +48,7 @@ if (mysqli_query($conn, $sql)) {
         <table style="width: 100%">
           <tbody>
             <tr>
-              <td>1.Admission no
+              <td style="width:70%">1.Admission no
                 <br>
                
               </td>
