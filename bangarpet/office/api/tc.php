@@ -97,7 +97,7 @@ if (mysqli_query($conn, $sql)) {
              </td>
             </tr>
             <tr>
-              <td>6.Name of the father
+              <td>6.Name of the Father
                 
               
               </td>
@@ -108,7 +108,7 @@ if (mysqli_query($conn, $sql)) {
 
             </tr>
             <tr>
-              <td>7.Name of the mother
+              <td>7.Name of the Mother
              
               
               </td>
@@ -191,7 +191,7 @@ if($_POST['t14']==6){
             </tr>
           <tr>
             
-          <td>14.	Medium of instruction
+          <td>14.	Medium of Instruction
                 
                
               </td>
@@ -209,7 +209,7 @@ if($_POST['t14']==6){
               <b><?php echo $_POST['t16'];?></b>
               </td>
           </tr>
-          <tr>  <td>16.Date on which the application for  the transfer certificate was recived
+          <tr>  <td>16.Date on which the application for  the Transfer Certificate was recived
                 
                 
               </td>
@@ -228,7 +228,7 @@ if($_POST['t14']==6){
               </td>
          </tr>
          <tr>
-         <td>18.Date of issue of the transfer certificate
+         <td>18.Date of issue of the Transfer Certificate
  
               </td>
               <td></td>
