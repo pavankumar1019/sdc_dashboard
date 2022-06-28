@@ -48,7 +48,7 @@ if (mysqli_query($conn, $sql)) {
         <table style="width: 100%">
           <tbody>
             <tr>
-              <td style="width:70%">1.Admission no
+              <td style="width:60%">1.Admission no
                 <br>
                
               </td>
@@ -153,9 +153,14 @@ if (mysqli_query($conn, $sql)) {
              <td style="text-align:center ;"> <b><?php echo $_POST['t12'];?></b></td>
             </tr>
             <tr>
-              <td colspan="2">12.	Details of subject studied in  I / II PUC <br>
-                Part – I a) Language Studied : <b><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
-                Part -II b) Optional Subjects Studied : <b>
+              <td>12.	Details of subject studied in  I / II PUC <br>
+                Part – I a) Language Studied : 
+                Part -II b) Optional Subjects Studied : 
+                </td>
+            
+         <td>
+         <b><?php echo $_POST['t13'];?>, ENGLISH </b>  <br>
+         <b>
 
                 <?php 
 if($_POST['t14']==1){
@@ -176,9 +181,7 @@ if($_POST['t14']==6){
 }
                 ?>
                 </b>
-                </td>
-            
-         
+         </td>
             </tr>
             <tr>
             <td>13.	Date  of Student’s  last attendance at college
