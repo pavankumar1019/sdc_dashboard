@@ -555,6 +555,6 @@ if($_POST['t14']==6){
         
     </footer>
 </div>
-<p align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">STUDENT COPY</p>
+<p align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">COLLEGE COPY</p>
   </body>
 </html>
