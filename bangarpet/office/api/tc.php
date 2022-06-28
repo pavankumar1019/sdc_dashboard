@@ -291,7 +291,8 @@ if($_POST['t14']==6){
 </div>
 
 <!-- college copy -->
-<p align="center" style=" break-after:page;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">COLLEGE COPY</p>
+<p style="break-after:page;"></p>
+<p align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:bold;">COLLEGE COPY</p>
 
 <div style="padding: 10px;    border: 5px solid salmon;">
     <section>
