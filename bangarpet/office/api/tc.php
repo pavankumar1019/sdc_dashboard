@@ -60,81 +60,97 @@ if (mysqli_query($conn, $sql)) {
               </td>
               <td style="text-align:center ;"> <b><?php echo $_POST['t2'];?></b></td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td>3.Place of birth , district
                 <br>
               </td>
               <td style="text-align:center ;"> <b><?php echo $_POST['t3'];?></b></td>
-            </tr>
+            </tr> -->
             <tr>
               <td>4.Gender
-                <br>
-                <b><?php echo $_POST['t4'];?></b>
+              
+               
               </td>
            <td>
-
+           <b><?php echo $_POST['t4'];?></b>
            </td>
 
             </tr>
             <tr>
               <td>5.Nationality
-                <br>
-                <b><?php echo $_POST['t5'];?></b>
+               
+            
               </td>
          <td>
-
+         <b><?php echo $_POST['t5'];?></b>
          </td>
             </tr>
             <tr>
               <td>6.Religion,  Caste 
-                <br>
-                <b><?php echo $_POST['t6'];?>&nbsp;/ &nbsp;<?php echo $_POST['t7'];?></b>
+              
+              
               </td>
          
-             <td></td>
+             <td>
+
+             <b><?php echo $_POST['t6'];?>&nbsp;/ &nbsp;<?php echo $_POST['t7'];?></b>
+             </td>
             </tr>
             <tr>
               <td>7.Name of the father
-                <br>
-                <b><?php echo $_POST['t8'];?></b>
+                
+              
               </td>
-            <td></td>
+            <td>
+
+            <b><?php echo $_POST['t8'];?></b>
+            </td>
 
             </tr>
             <tr>
               <td>8.Name of the mother
-                <br>
-                <b><?php echo $_POST['t9'];?></b>
+             
+              
               </td>
-             <td></td>
+             <td>
+
+             <b><?php echo $_POST['t9'];?></b>
+             </td>
             </tr>
             <tr>
               <td>9.Whether the candidate belongs to  Schedule Caste or Schedule Tribe
-                <br>
-                <b><?php echo $_POST['t10'];?></b>
+                
+              
               </td>
-             <td></td>
+             <td>
+
+             <b><?php echo $_POST['t10'];?></b>
+             </td>
             </tr>
             <tr>
               <td>10.Whether qualified for promotion to the next standard
-                <br>
-                <b><?php echo $_POST['t11'];?></b>
+                
+               
               </td>
-             <td></td>
+             <td>
+             <b><?php echo $_POST['t11'];?></b>
+             </td>
             </tr>
             <tr>
               <td>11.Date of birth
-                <br>
-                <b><?php echo $_POST['t20'];?></b>
+                
+                
               </td>
-            <td></td>
+            <td>
+            <b><?php echo $_POST['t20'];?></b>
+            </td>
             </tr>
             <tr>
               <td>12.	Standard in which the student  was studying at time of leaving the college
-                <br>
-                <b><?php echo $_POST['t12'];?></b>
+                
+               
               </td>
-             <td></td>
+             <td> <b><?php echo $_POST['t12'];?></b></td>
             </tr>
             <tr>
               <td>13.	Details of subject studied in  I / II PUC <br>
@@ -166,78 +182,82 @@ if($_POST['t14']==6){
             </tr>
             <tr>
             <td>14.	Date  of Student’s  last attendance at college
-                <br>
-                <b><?php echo $_POST['t15'];?></b>
+                
+              
               </td>
               <td>
-                
+              <b><?php echo $_POST['t15'];?></b>
               </td>
             </tr>
           <tr>
             
           <td>15.	Medium of instruction
-                <br>
-                <b>English</b>
+                
+               
               </td>
               <td>
-                
+              <b>English</b>
               </td>
           </tr>
           <tr>
           <td>16.	Date of Admission or promotion to next class or standard
-                <br>
-                <b><?php echo $_POST['t16'];?></b>
+                
+              
               </td>
-              <td></td>
+              <td>
+
+              <b><?php echo $_POST['t16'];?></b>
+              </td>
           </tr>
           <tr>  <td>17.Date on which the application for  the transfer certificate was recived
-                <br>
-                <b><?php echo $_POST['t17'];?></b>
+                
+                
               </td>
-            <td></td>
+            <td>
+            <b><?php echo $_POST['t17'];?></b>
+            </td>
             </tr>
 
          <tr>
          <td>18.Whether the student has paid all the fees due to college?
-                <br>
-                <b>Yes</b>
+                
+              
               </td>
               <td>
-
+              <b>Yes</b>
               </td>
          </tr>
          <tr>
          <td>19.Date of issue of the transfer certificate
-                <br>
-                <b></b>
+ 
               </td>
               <td></td>
          </tr>
          <tr>
          <td>20.Number of college working days upto the date of leaving the college
-                <br>
-                <b><?php echo $_POST['t18'];?></b>
+                
+               
               </td>
-              <td></td>
+              <td> <b><?php echo $_POST['t18'];?></b></td>
          </tr>
          <tr>  <td>21.Total number of days student attended
-                <br>
-                <b><?php echo $_POST['t19'];?></b>
+                
+               
               </td>
-            <td></td>
+            <td> <b><?php echo $_POST['t19'];?></b></td>
             </tr>
             <tr> <td>22.Scholarship if any (Nature & Period to be specified )
-                <br>
-                <b></b>
+               
               </td>
             <td>
 
             </td></tr>
             <tr>
             <td>23.Character and conduct
-                <br>
-                <b>Satisfactory</b>
+              
+               
               </td>
+              <td> <b>Satisfactory</b></td>
             </tr>
           </tbody>
         </table>
