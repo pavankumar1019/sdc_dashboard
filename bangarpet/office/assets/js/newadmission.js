@@ -55,7 +55,16 @@ load_data(1);
 
     //   delete
     $(document).on('click', '#delete', function(){
-      var id = $(this).attr('data-id');
+      Swal.fire({
+        title: 'Are your sure want to Delete?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        denyButtonText: `Don't Delete`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          var id = $(this).attr('data-id');
       var type = 'delete';
       $.ajax({
         url:"./php_operations/newadmissions.php",
@@ -68,6 +77,11 @@ load_data(1);
 alert('Deleted successfully')
         }
       });
+        } else if (result.isDenied) {
+          Swal.fire('Not failed', '', 'info')
+        }
+      })
+     
     })
     //   edit
     $(document).on('click', '#edit', function(){
