@@ -444,12 +444,11 @@ if($_POST['t14']==2){
 if($_POST['t14']==3){
   echo "ECONOMICS, BUSINESS STUDIES , ACCOUNTANCY, COMPUTER SCIENCE ";
 }
-if($_POST['t14']==4){
+if($_POST['t14']==7){
   echo "ECONOMICS, BUSINESS STUDIES , ACCOUNTANCY, STATISTICS ";
 }
-if($_POST['t14']==5){
+if($_POST['t14']==8){
   echo "BASIC MATHS, BUSINESS STUDIES , ACCOUNTANCY, STATISTICS ";
-
 }
                 ?>
                 </b>
