@@ -55,17 +55,26 @@ load_data(1);
 
     //   delete
     $(document).on('click', '#delete', function(){
-      Swal.fire({
-        title: 'Are your sure want to Delete?',
-        showDenyButton: true,
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+      })
+      
+      swalWithBootstrapButtons.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
         showCancelButton: true,
-        confirmButtonText: 'Delete',
-        denyButtonText: `Don't Delete`,
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'No, cancel!',
+        reverseButtons: true
       }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
           var id = $(this).attr('data-id');
-      var type = 'delete';
+          var type = 'delete';
       $.ajax({
         url:"./php_operations/newadmissions.php",
         method:"POST",
@@ -73,13 +82,26 @@ load_data(1);
         dataType:"json",
         success:function(data)
         {   
-          Swal.fire('Done', '', 'info')
+          swalWithBootstrapButtons.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
         }
       });
-        } else if (result.isDenied) {
-          Swal.fire('Not failed', '', 'info')
+         
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            'Cancelled',
+            'Your imaginary file is safe :)',
+            'error'
+          )
         }
       })
+     
      
     })
     //   edit
