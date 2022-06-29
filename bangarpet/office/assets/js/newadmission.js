@@ -72,9 +72,8 @@ load_data(1);
         data:{id:id, type:type},
         dataType:"json",
         success:function(data)
-        {
-    
-alert('Deleted successfully !')
+        {   
+          Swal.fire('Done', '', 'info')
         }
       });
         } else if (result.isDenied) {
