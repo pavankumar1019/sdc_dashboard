@@ -98,8 +98,8 @@ if($_POST['type']=="loaddata"){
           <h6 class="text-muted">'.$number_phone.'</h6>
       </td>
       <td><a href="#!"
-              class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="edit">Edit</a><a
-              href="#!" class="label theme-bg text-white f-12" data-id='.$row['id'].' id="delete">Delete</a>
+              class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="edit">Edit</a>
+              <a href="#!" class="label theme-bg text-white f-12" data-id='.$row['id'].' id="deleteadd">Delete</a>
       </td>
   </tr>
       ';

@@ -54,9 +54,9 @@ load_data(1);
 
 
     //   delete
-    $(document).on('click', '#delete', function(){
- alert('asdsad');
-     
+    $(document).on('click', '#deleteadd', function(){
+ 
+     alert('sadsad');
     })
     //   edit
     $(document).on('click', '#edit', function(){
