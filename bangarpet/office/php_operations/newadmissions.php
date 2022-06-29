@@ -274,7 +274,7 @@ if($_POST['type']=="edit"){
 // delete
 if($_POST['type']=="delete"){
   $query = '
-  SELECT * FROM new_admission_bpet WHERE id="'.$_POST['id'].'"
+  DELETE FROM new_admission_bpet WHERE id="'.$_POST['id'].'"
   ';
   $statement = $connect->prepare($query);
   $statement->execute();  
