@@ -74,7 +74,7 @@ load_data(1);
         success:function(data)
         {
     
-alert('Deleted successfully')
+alert('Deleted successfully !')
         }
       });
         } else if (result.isDenied) {
