@@ -53,6 +53,22 @@ load_data(1);
 
 
 
+    //   delete
+    $(document).on('click', '#delete', function(){
+      var id = $(this).attr('data-id');
+      var type = 'delete';
+      $.ajax({
+        url:"./php_operations/newadmissions.php",
+        method:"POST",
+        data:{id:id, type:type},
+        dataType:"json",
+        success:function(data)
+        {
+    
+alert('Deleted successfully')
+        }
+      });
+    })
     //   edit
     $(document).on('click', '#edit', function(){
         var id = $(this).attr('data-id');

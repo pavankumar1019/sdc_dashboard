@@ -99,7 +99,7 @@ if($_POST['type']=="loaddata"){
       </td>
       <td><a href="#!"
               class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="edit">Edit</a><a
-              href="#!" class="label theme-bg text-white f-12" data-id='.$row['id'].'>Delete</a>
+              href="#!" class="label theme-bg text-white f-12" data-id='.$row['id'].' id="delete">Delete</a>
       </td>
   </tr>
       ';
@@ -270,6 +270,14 @@ if($_POST['type']=="edit"){
    
   ));
   }
+}
+// delete
+if($_POST['type']=="delete"){
+  $query = '
+  SELECT * FROM new_admission_bpet WHERE id="'.$_POST['id'].'"
+  ';
+  $statement = $connect->prepare($query);
+  $statement->execute();  
 }
 
 // add data
