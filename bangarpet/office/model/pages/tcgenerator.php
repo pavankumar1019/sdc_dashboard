@@ -84,8 +84,9 @@ $id=($row['id']+1);
                                                 <div class="col-md-2">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">DOB</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" name="t20" placeholder="" required>
+                                                        <textarea type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" name="t20" placeholder="" required></textarea>
+                                                    
                                                     </div>
                                                 </div>
                                                 <div class="col-md-2">
