@@ -213,8 +213,6 @@ return $response_txt;
 
              <b><?php echo $_POST['t20'];?>
             <?php
-            if(isset($_POST['t20']))  
-            {
             $birth_date = $_POST['t20'];
             $new_birth_date = explode('-', $birth_date);
             $year = $new_birth_date[0];
@@ -226,7 +224,7 @@ return $response_txt;
             $dateObj = DateTime::createFromFormat('!m', $monthNum);//Convert the number into month name
             $monthName = strtoupper($dateObj->format('F'));
             echo "<p align='center' style='color:blue'>$birth_day $monthName $birth_year</p>";
-            }
+          
             ?>
             
             </b>
