@@ -11,6 +11,91 @@ if (mysqli_query($conn, $sql)) {
 //   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
+function translate_names($num)
+{ 
+
+$ones = array(
+0 =>"ZERO", 
+1 => "ONE", 
+2 => "TWO", 
+3 => "THREE", 
+4 => "FOUR", 
+5 => "FIVE", 
+6 => "SIX", 
+7 => "SEVEN", 
+8 => "EIGHT", 
+9 => "NINE",
+10 => "TEN", 
+11 => "ELEVEN", 
+12 => "TWELVE", 
+13 => "THIRTEEN", 
+14 => "FOURTEEN", 
+15 => "FIFTEEN", 
+16 => "SIXTEEN", 
+17 => "SEVENTEEN", 
+18 => "EIGHTEEN", 
+19 => "NINETEEN",
+"014" => "FOURTEEN" 
+); 
+$tens = array( 
+0 => "ZERO",
+1 => "TEN",
+2 => "TWENTY", 
+3 => "THIRTY", 
+4 => "FORTY", 
+5 => "FIFTY", 
+6 => "SIXTY", 
+7 => "SEVENTY", 
+8 => "EIGHTY", 
+9 => "NINETY" 
+); 
+$hundreds = array( 
+"HUNDRED", 
+"THOUSAND",
+"MILLION", 
+"BILLION", 
+"TRILLION",
+"QUARDRILLION" 
+); /* limit t quadrillion */
+$num = number_format($num,2,".",",");
+$num_arr = explode(".",$num); 
+$wholenum = $num_arr[0]; 
+$no_of_dordr = $num_arr[1]; 
+$whole_arr = array_reverse(explode(",",$wholenum)); 
+krsort($whole_arr,1); 
+$response_txt = ""; 
+foreach($whole_arr as $key => $i){
+	
+while(substr($i,0,1)=="0")
+		$i=substr($i,1,5);
+if($i < 20){ 
+/* echo "getting:".$i; */
+$response_txt .= $ones[$i]; 
+}elseif($i < 100){ 
+if(substr($i,0,1)!="0")  $response_txt .= $tens[substr($i,0,1)]; 
+if(substr($i,1,1)!="0") $response_txt .= " ".$ones[substr($i,1,1)]; 
+}else{ 
+if(substr($i,0,1)!="0") $response_txt .= $ones[substr($i,0,1)]." ".$hundreds[0]; 
+if(substr($i,1,1)!="0")$response_txt .= " ".$tens[substr($i,1,1)]; 
+if(substr($i,2,1)!="0")$response_txt .= " ".$ones[substr($i,2,1)]; 
+} 
+if($key > 0){ 
+$response_txt .= " ".$hundreds[$key]." "; 
+} 
+} 
+if($no_of_dordr > 0){ 
+$response_txt .= " and "; 
+if($no_of_dordr < 20){ 
+$response_txt .= $ones[$no_of_dordr]; 
+}elseif($no_of_dordr < 100){ 
+$response_txt .= $tens[substr($no_of_dordr,0,1)]; 
+$response_txt .= " ".$ones[substr($no_of_dordr,1,1)]; 
+} 
+} 
+return $response_txt; 
+} 
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -126,7 +211,25 @@ if (mysqli_query($conn, $sql)) {
               </td>
              <td style="text-align:center ;">
 
-             <b><?php echo $_POST['t20'];?></b>
+             <b><?php echo $_POST['t20'];?>
+            <?php
+            if(isset($_POST['t20']))  
+            {
+            $birth_date = $_POST[birth_date];
+            $new_birth_date = explode('-', $birth_date);
+            $year = $new_birth_date[0];
+            $month = $new_birth_date[1];
+            $day  = $new_birth_date[2];
+            $birth_day=translate_names($day);
+            $birth_year=translate_names($year);
+            $monthNum = $month;
+            $dateObj = DateTime::createFromFormat('!m', $monthNum);//Convert the number into month name
+            $monthName = strtoupper($dateObj->format('F'));
+            echo "<p align='center' style='color:blue'>$birth_day $monthName $birth_year</p>";
+            }
+            ?>
+            
+            </b>
              </td>
             </tr>
             <tr>
