@@ -223,7 +223,7 @@ return $response_txt;
             $monthNum = $month;
             $dateObj = DateTime::createFromFormat('!m', $monthNum);//Convert the number into month name
             $monthName = strtoupper($dateObj->format('F'));
-            echo "<br>$birth_year - $monthName - $birth_day</p>";
+            echo "<br>$birth_year - $monthName - $birth_day";
           
             ?>
             
@@ -496,7 +496,22 @@ if($_POST['t14']==8){
               </td>
              <td style="text-align:center ;">
 
-             <b><?php echo $_POST['t20'];?></b>
+             <b><?php echo $_POST['t20'];?>
+             <?php
+            $birth_date = $_POST['t20'];
+            $new_birth_date = explode('-', $birth_date);
+            $year = $new_birth_date[0];
+            $month = $new_birth_date[1];
+            $day  = $new_birth_date[2];
+            $birth_day=translate_names($day);
+            $birth_year=translate_names($year);
+            $monthNum = $month;
+            $dateObj = DateTime::createFromFormat('!m', $monthNum);//Convert the number into month name
+            $monthName = strtoupper($dateObj->format('F'));
+            echo "<br>$birth_year - $monthName - $birth_day";
+          
+            ?>
+            </b>
              </td>
             </tr>
             <tr>
