@@ -223,7 +223,7 @@ return $response_txt;
             $monthNum = $month;
             $dateObj = DateTime::createFromFormat('!m', $monthNum);//Convert the number into month name
             $monthName = strtoupper($dateObj->format('F'));
-            echo "$birth_year - $monthName - $birth_day</p>";
+            echo "<br>$birth_year - $monthName - $birth_day</p>";
           
             ?>
             
