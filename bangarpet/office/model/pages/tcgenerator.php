@@ -35,8 +35,8 @@ $sql = "SELECT id FROM tc ORDER BY id DESC LIMIT 1";
 
 $result=mysqli_query($conn, $sql);
  foreach($result as $row){
-echo "No.".($row['id']+1);
 $id=($row['id']+1);
+echo "No.".$id;
  }
 
 ?></h5>
