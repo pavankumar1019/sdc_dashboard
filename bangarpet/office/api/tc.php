@@ -215,7 +215,7 @@ return $response_txt;
             <?php
             if(isset($_POST['t20']))  
             {
-            $birth_date = $_POST[birth_date];
+            $birth_date = $_POST['t20'];
             $new_birth_date = explode('-', $birth_date);
             $year = $new_birth_date[0];
             $month = $new_birth_date[1];
