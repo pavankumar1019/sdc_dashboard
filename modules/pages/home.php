@@ -318,31 +318,33 @@ Firstly I thank you for choosing SDC degree college Bangarapet. A journey of tho
             </div>
           </div>
         </div>
-        <!-- <div class="col-lg-6 mx-auto">
+        <div class="col-md-6 mx-auto">
           <div class="client_container ">
             <div class="detail-box">
               <p>
-                Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-              </p>
+              " I have the privilege to welcome you all to this great temple of learning. This is the prestigious institution that provides unique opportunities for the development of the young minds in a secular and conducive atmosphere. This type of atmosphere is the reflection of great vision of the Founder SDC Group of Institutions."              </p>
               <span>
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
               </span>
             </div>
             <div class="client_id">
               <div class="img-box">
-                <img src="images/c3.jpg" alt="">
+                <img src="images/ragavendra.jpeg" alt="">
               </div>
               <div class="client_name">
                 <h5>
-                
+                Raghavendra V L
+    
                 </h5>
                 <h6>
-                  Student
+                M.Sc,M.Phil, B.Ed<br>
+             Principal S.D.C KGF.
                 </h6>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+
       </div>
     </div>
   </section>
