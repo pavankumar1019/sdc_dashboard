@@ -66,6 +66,15 @@ if(isset($_SESSION["name"]))
             </div>
             <h3 class="mb-4">Login</h3>
             <div class="input-group mb-3">
+              <select  type=""
+                class="form-control"
+            
+                id="branch"></select>
+               
+         <option value="KGF-BRANCH">KGF-BRANCH</option>
+         <option value="KOLAR-BRANCH">KGF-BRANCH</option>
+            </div>
+            <div class="input-group mb-3">
               <input
                 type="text"
                 class="form-control"
