@@ -4,7 +4,7 @@ if($_POST['type']=="loaddata"){
     function get_total_row($connect)
     {
       $query = "
-      SELECT * FROM sdc_marks_card_bpet
+      SELECT * FROM ".$sdc_marks_card."
       ";
       $statement = $connect->prepare($query);
       $statement->execute();
@@ -26,7 +26,7 @@ if($_POST['type']=="loaddata"){
     }
     
     $query = "
-    SELECT * FROM sdc_marks_card_bpet 
+    SELECT * FROM ".$sdc_marks_card." 
     ";
     
     if($_POST['query'] != '')
@@ -263,7 +263,7 @@ if($_POST['type']=="loaddata"){
 if($_POST['type']=="getcount"){
 
     $query = "
-    SELECT * FROM sdc_marks_card_bpet
+    SELECT * FROM ".$sdc_marks_card."
     ";
     $statement = $connect->prepare($query);
     $statement->execute();
@@ -292,7 +292,7 @@ if($_POST['type']=="add"){
          );
          $table_columns= implode(',', array_keys($insert_data));
          $table_data= implode("', '", $insert_data);
-       $sql = "INSERT INTO sdc_marks_card_bpet ($table_columns) VALUES ('$table_data') "; 
+       $sql = "INSERT INTO ".$sdc_marks_card." ($table_columns) VALUES ('$table_data') "; 
        $conn->query($sql);
     $error=true;
         
@@ -309,7 +309,7 @@ if($_POST['type']=="add"){
 
 if($_POST['type']=="edit"){
   $query = '
-  SELECT * FROM sdc_marks_card_bpet WHERE reg_no="'.$_POST['id'].'"
+  SELECT * FROM ".$sdc_marks_card." WHERE reg_no="'.$_POST['id'].'"
   ';
   $statement = $connect->prepare($query);
   $statement->execute();
@@ -378,7 +378,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE sdc_marks_card_bpet SET ".$query." WHERE reg_no='".$_POST['id']."'";  
+  $sql ="UPDATE ".$sdc_marks_card." SET ".$query." WHERE reg_no='".$_POST['id']."'";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {
