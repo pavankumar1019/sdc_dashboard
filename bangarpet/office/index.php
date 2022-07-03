@@ -112,6 +112,7 @@ if(isset($_SESSION["name"]))
     <script>
       $("#continue").click(function () {
         if ($("#user_id").val() != "") {
+          if ($("#user_id").val() != "") {
           $("#verifyModal").modal("show");
           $.ajax({
             type: "POST",
@@ -176,7 +177,11 @@ if(isset($_SESSION["name"]))
               
             },
           });
-        } else {
+        }
+        else {
+          alert("Select the branch");
+        }
+      } else {
           alert("User_ID /  Key is required !");
         }
       });
