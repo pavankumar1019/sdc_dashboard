@@ -69,10 +69,12 @@ if(isset($_SESSION["name"]))
               <select  type=""
                 class="form-control"
             
-                id="branch"></select>
-               
-         <option value="KGF-BRANCH">KGF-BRANCH</option>
+                id="branch">
+                <option value="KGF-BRANCH">KGF-BRANCH</option>
          <option value="KOLAR-BRANCH">KGF-BRANCH</option>
+              </select>
+               
+       
             </div>
             <div class="input-group mb-3">
               <input
