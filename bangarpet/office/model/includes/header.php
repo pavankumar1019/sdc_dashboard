@@ -192,10 +192,10 @@
                             <div class="pro-head">
                                 <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
                                 <span style="text-transform: uppercase;"><?php echo $_SESSION['name']?> - <?php 
-                             if($_SESSION['branch']=1){
+                             if($_SESSION['branch']==1){
                                 echo "BANGARPET";
                              }
-                             if($_SESSION['branch']=2){
+                             if($_SESSION['branch']==2){
                                 echo "KGF";
                              }
                                  
