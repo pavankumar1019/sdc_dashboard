@@ -111,8 +111,8 @@ if(isset($_SESSION["name"]))
 
     <script>
       $("#continue").click(function () {
-        if ($("#user_id").val() != "") {
-          if ($("#user_id").val() != "") {
+        if ($("#branch").val() != ""){
+    if ($("#user_id").val() != "") {
           $("#verifyModal").modal("show");
           $.ajax({
             type: "POST",
@@ -179,10 +179,11 @@ if(isset($_SESSION["name"]))
           });
         }
         else {
-          alert("Select the branch");
+          alert("User_ID /  Key is required !");
         }
       } else {
-          alert("User_ID /  Key is required !");
+        alert("Select the branch");
+
         }
       });
 
