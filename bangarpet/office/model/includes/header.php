@@ -45,7 +45,15 @@
                     
                        <img src="./assets/images/logo.png" alt="" srcset="">
                     
-                    <span class="b-title">SDC-College</span>
+                    <span class="b-title">SDC-<?php 
+                             if($_SESSION['branch']==1){
+                                echo "BANGARPET";
+                             }
+                             if($_SESSION['branch']==2){
+                                echo "KGF";
+                             }
+                                 
+                                 ?></span>
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
             </div>
