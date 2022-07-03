@@ -70,7 +70,7 @@ if(isset($_SESSION["name"]))
                 class="form-control"
             
                 id="branch">
-                <option value="" selected>- Select Branch</option>
+                <option value="" selected>- Select Branch -</option>
                 <option value="KGF">KGF</option>
          <option value="KOLAR">KOLAR</option>
               </select>
