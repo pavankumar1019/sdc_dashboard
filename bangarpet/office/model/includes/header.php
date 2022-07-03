@@ -64,7 +64,17 @@
                         <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users "></i></span><span class="pcoded-mtext">Student</span></a>
                         <ul class="pcoded-submenu">
                             <li class=""><a href="./dashboard.php?page=markscard" class="">Marks Card Print</a></li>
-                            <li class=""><a href="./dashboard.php?page=tcgenerator" class="">TC - Genrator</a></li>
+                            <?php
+                               if($_SESSION['branch']==1){
+                         ?>
+                          <li class=""><a href="./dashboard.php?page=tcgenerator" class="">TC - Genrator</a></li>
+                         <?php
+                             }
+                            //  if($_SESSION['branch']==2){
+                             
+                            //  }
+                            ?>
+                           
                             <li class=""><a href="#" class="">ID- Genrator</a></li>
                             <li class=""><a href="./dashboard.php?page=downloads" class="">Downloads</a></li>
                             <li class=""><a href="./dashboard.php?page=smsattendiees" class="">SMS Attendies</a></li>
