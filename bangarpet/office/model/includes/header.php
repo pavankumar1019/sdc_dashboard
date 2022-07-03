@@ -191,7 +191,7 @@
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                                <span><?php echo $_SESSION['name']?> - <?php 
+                                <span style="text-transform: uppercase;"><?php echo $_SESSION['name']?> - <?php 
                              if($_SESSION['branch']=1){
                                 echo "BANGARPET";
                              }
