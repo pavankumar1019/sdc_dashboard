@@ -154,6 +154,7 @@ if(isset($_SESSION["name"]))
                         type: 2,
                         otp: result.value,
                         name: dataResult.name,
+                        branch: dataResult.branch,
                       },
                       success: function (dataResult) {
                         var dataResult = JSON.parse(dataResult);
