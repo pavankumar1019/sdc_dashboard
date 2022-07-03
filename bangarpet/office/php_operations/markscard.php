@@ -309,7 +309,7 @@ if($_POST['type']=="add"){
 
 if($_POST['type']=="edit"){
   $query = '
-  SELECT * FROM ".$sdc_marks_card." WHERE reg_no="'.$_POST['id'].'"
+  SELECT * FROM '.$sdc_marks_card.' WHERE reg_no="'.$_POST['id'].'"
   ';
   $statement = $connect->prepare($query);
   $statement->execute();
