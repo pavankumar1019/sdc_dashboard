@@ -38,7 +38,8 @@ if($_POST['type']==2){
 if($_POST['type']==4){
 	$user_id=$_POST['user_id'];
 	$key=$_POST['key'];
-	$sql = "SELECT * FROM `user_office` WHERE `user_name`='$user_id' AND `user_key`='$key'";
+	$branch=$_POST['branch'];
+	$sql = "SELECT * FROM `user_office` WHERE `user_name`='$user_id' AND `user_key`='$key' AND `user_office`='$branch'";
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

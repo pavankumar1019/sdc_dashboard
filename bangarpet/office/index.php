@@ -71,8 +71,8 @@ if(isset($_SESSION["name"]))
             
                 id="branch">
                 <option value="" selected>- Select Branch -</option>
-                <option value="KGF">KGF</option>
-         <option value="KOLAR">KOLAR</option>
+         <option value="1">BANGARPET</option>
+         <option value="2">KGF</option>
               </select>
                
        
@@ -129,6 +129,7 @@ if(isset($_SESSION["name"]))
               type: 4,
               user_id: $("#user_id").val(),
               key: $("#key").val(),
+              branch: $("#branch").val(),
             },
             success: function (dataResult) {
               var dataResult = JSON.parse(dataResult);
