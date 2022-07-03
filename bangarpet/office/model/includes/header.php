@@ -191,7 +191,15 @@
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                                <span>SDC</span>
+                                <span><?php echo $_SESSION['name']?> - <?php 
+                             if($_SESSION['branch']=1){
+                                echo "BANGARPET";
+                             }
+                             if($_SESSION['branch']=2){
+                                echo "KGF";
+                             }
+                                 
+                                 ?></span>
                                 <a href="./logout.php" class="dud-logout" title="Logout">
                                     <i class="feather icon-log-out"></i>
                                 </a>
