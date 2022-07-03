@@ -1,16 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "u430139865_sdc";
-$password = "Pavan5639";
-$dbname = "u430139865_sdc";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+include '../db_bpet_sdc/db.php';
 ?>
 <?php
 // Turn off error reporting
@@ -34,14 +23,14 @@ error_reporting(E_ALL & ~E_NOTICE);
     {
       $search = mysqli_real_escape_string($conn, $_GET["reg_no"]);
       $query = "
-       SELECT * FROM sdc_marks_card_bpet 
+       SELECT * FROM ".$sdc_marks_card." 
        WHERE reg_no LIKE '%".$search."%'
       ";
      }
      else
      {
       $query = "
-       SELECT * FROM sdc_marks_card_bpet ORDER BY reg_no
+       SELECT * FROM ".$sdc_marks_card." ORDER BY reg_no
       ";
      }
      $result = $conn->query($query);
@@ -310,10 +299,26 @@ else
      ?>
     <div style="border:4px solid green;border-color:green; height: 1050px; padding:10px;" class="margin">
         <div class="grid-container">
-            <div class="cc">College Code : MM-0174</div>
-            <div class="ph" style="padding-right:6px;">Ph : 8861731246</div>
+            <div class="cc">College Code : <?php
+               if($_SESSION['branch']==1){
+                echo "MM-0174";
+             }
+             if($_SESSION['branch']==2){
+                echo "MM-0273";
+             }
+            ?></div>
+            <div class="ph" style="padding-right:6px;">Ph : <?php
+               if($_SESSION['branch']==1){
+                echo "8861731246";
+             }
+             if($_SESSION['branch']==2){
+                echo "9535081816";
+             }
+            ?></div>
             <div class="img"><img src="./logo.jpg" width="120px" alt="" srcset=""></div>
-            <div class="title" style="font-weight: bolder;line-height:normal;">Smt. Danamma Channabasavaiah (SDC) <br>
+            <?php
+               if($_SESSION['branch']==1){
+                echo '   <div class="title" style="font-weight: bolder;line-height:normal;">Smt. Danamma Channabasavaiah (SDC) <br>
                 Independent P.U. College
                 <p style="font-size:15px;line-height:26px;">(Recognised by Govt. of Karnataka) <br> <span
                         style="font-size:20px;font-weight: bold;">Near Canara Bank, Kolar Main Road,
@@ -321,14 +326,29 @@ else
                 <p style="border:3px solid green;border-color:green; color: red; font-weight: bold;width: 350px;">I PUC
                     MARKS CARD</p>
 
-            </div>
+            </div>';
+             }
+             if($_SESSION['branch']==2){
+                echo '     <div class="title" style="font-weight: bolder;line-height:normal;">Smt. Danamma Channabasavaiah (SDC) <br>
+                Independent P.U. College
+                <p style="font-size:15px;line-height:26px;">(Recognised by Govt. of Karnataka) <br> <span
+                        style="font-size:20px;font-weight: bold;">Krishnapuram, Oorigaumpet Post, K.G.F - 563121</span>
+                </p>
+                <p style="border:3px solid green;border-color:green; color: red; font-weight: bold;width: 350px;">I PUC
+                    MARKS CARD</p>
+
+            </div>';
+             }
+            ?>
+         
         </div>
 
         <p style="font-size: 15px;padding:10px;">This is to certify that the candidate mentioned below has completed the
             I PUC course and has passed the I PUC Examination with the following details</p>
         <div class="grid-container1" style="font-size: 20px;">
 
-            <div class="sats">SATS No.<span style="font-weight:600;text-transform: uppercase"><?php echo $row['sats_no'];?></span></div>
+            <div class="sats">SATS No.<span
+                    style="font-weight:600;text-transform: uppercase"><?php echo $row['sats_no'];?></span></div>
             <div class="studentnumber">Student No. <span style="font-weight:600;text-transform: uppercase">
                     <?php echo $row['student_no'];?></span> </div>
             <div style="grid-row: span 4;text-align: center;">
@@ -337,11 +357,16 @@ else
             <div class="sats " style="grid-column: span 2 ;">Student Name. <span
                     style="font-weight:600;text-transform: uppercase"><?php echo $row['student_name'];?></span></div>
             <div class="sats" style="grid-column: span 2 ;">Father Name. <span
-                    style="font-weight:600;text-transform: uppercase"><?php echo $row['father_name'];?></span> &nbsp;&nbsp;&nbsp;&nbsp;Register
-                No.<span style="font-weight:600;text-transform: uppercase">&nbsp;<?php echo $row['reg_no'];?></span></div>
+                    style="font-weight:600;text-transform: uppercase"><?php echo $row['father_name'];?></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;Register
+                No.<span style="font-weight:600;text-transform: uppercase">&nbsp;<?php echo $row['reg_no'];?></span>
+            </div>
             <div class="studentnumber" style="grid-column: span 2 ;">Mother Name. <span
-                    style="font-weight:600;text-transform: uppercase"><?php echo $row['mother_name'];?></span> &nbsp;&nbsp;&nbsp;&nbsp;Date of
-                Passing<span style="font-weight:600;text-transform: uppercase">&nbsp;<?php echo $row["year_of_passing"]?></span> </div>
+                    style="font-weight:600;text-transform: uppercase"><?php echo $row['mother_name'];?></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;Date of
+                Passing<span
+                    style="font-weight:600;text-transform: uppercase">&nbsp;<?php echo $row["year_of_passing"]?></span>
+            </div>
 
         </div>
 
