@@ -1,5 +1,5 @@
 <?php
-include '../db_bpet_sdc/db.php';
+include '../../../db_bpet_sdc/db.php';
 ?>
 <?php
 // Turn off error reporting
