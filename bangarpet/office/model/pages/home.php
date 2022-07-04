@@ -15,9 +15,6 @@
                                                 $usercontroll=$conn->query($sql3);
 
 
-                                                $sql4="SELECT * FROM `".$tbl_admission."`";
-                                                $data_students_2nd_puc=$conn->query($sql4);
-
 
                                                 ?>
 <div class="pcoded-main-container">
@@ -95,7 +92,14 @@
                                                                 <p class="m-0">EBACS</p>
                                                             </td>
                                                             <td>
-                                                                <h1 class="text-muted">320</h1>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql4="SELECT * FROM `".$tbl_admission."` WHERE `combination`='PCMCS'";
+                                                $data_students_2nd_puc_PCMB=$conn->query($sql4);
+  echo mysqli_num_rows($data_students_2nd_puc_PCMB);
+                                                                    ?>
+                                                                </h1>
                                                             </td>
                                                             <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
                                                         </tr>
