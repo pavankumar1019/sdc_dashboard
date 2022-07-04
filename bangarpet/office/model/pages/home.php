@@ -121,6 +121,60 @@
                                                             </td>
                                                             <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
                                                         </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted">EBACS</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql6="SELECT * FROM `".$tbl_admission."` WHERE `combination`='EBACS'";
+                                                $data_students_2nd_puc_ebacs=$conn->query($sql6);
+  echo mysqli_num_rows($data_students_2nd_puc_ebacs);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted">EBAS</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql7="SELECT * FROM `".$tbl_admission."` WHERE `combination`='EBAS'";
+                                                $data_students_2nd_puc_ebas=$conn->query($sql7);
+  echo mysqli_num_rows($data_students_2nd_puc_ebas);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted">BASM</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql8="SELECT * FROM `".$tbl_admission."` WHERE `combination`='BASM'";
+                                                $data_students_2nd_puc_basm=$conn->query($sql8);
+  echo mysqli_num_rows($data_students_2nd_puc_basm);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
                                                       
                                                        
       
