@@ -88,8 +88,8 @@
                                                         <tr class="unread">
                                                             <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
                                                             <td>
-                                                                <h4 class="mb-1 text-muted">2nd PUC</h4>
-                                                                <p class="m-0">EBACS</p>
+                                                                <h4 class="mb-1 text-muted"> PCMB</h4>
+                                                                <p class="m-0">2nd PUC</p>
                                                             </td>
                                                             <td>
                                                                 <h1 class="text-muted">
@@ -106,8 +106,8 @@
                                                         <tr class="unread">
                                                             <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
                                                             <td>
-                                                                <h4 class="mb-1 text-muted">2nd PUC</h4>
-                                                                <p class="m-0">PCMCS</p>
+                                                                <h4 class="mb-1 text-muted"> PCMCS</h4>
+                                                                <p class="m-0">2nd PUC</p>
                                                             </td>
                                                             <td>
                                                                 <h1 class="text-muted">
