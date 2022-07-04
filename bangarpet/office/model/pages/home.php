@@ -16,12 +16,13 @@
                                             <h6 class="mb-4"> New Admissions</h6>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-9">
-                                                    <h3 class="f-w-300 d-flex align-items-center m-b-0"><i class="feather icon-user-check text-c-green f-30 m-r-10"></i>23</h3>
+                                                    <h3 class="f-w-300 d-flex align-items-center m-b-0"><i class="feather icon-user-check text-c-green f-30 m-r-10"></i>249</h3>
                                                 </div>
                                             </div>
                                           
                                         </div>
                                     </div>
+                                </div>
                                 <!--[ daily sales section ] end-->
                                 <!--[ Monthly  sales section ] starts-->
                                 <div class="col-md-6 col-xl-4">
