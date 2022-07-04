@@ -208,8 +208,12 @@
                                                     <i class="feather icon-users f-30 text-c-green"></i>
                                                 </div>
                                                 <div class="col">
-                                                    <h3 class="f-w-300">235</h3>
-                                                    <span class="d-block text-uppercase">TOTAL STUDENTS</span>
+                                                    <h3 class="f-w-300"><?php
+                                                      $sql8="SELECT * FROM `".$tbl_admission."` WHERE `class_name`=2";
+                                                      $data_students_2nd_puc_basm=$conn->query($sql8);
+        echo mysqli_num_rows($data_students_2nd_puc_basm);
+                                                    ?></h3>
+                                                    <span class="d-block text-uppercase">2ND PUC TOTAL STUDENTS</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,7 +224,7 @@
                                                 </div>
                                                 <div class="col">
                                                     <h3 class="f-w-300">26</h3>
-                                                    <span class="d-block text-uppercase">TOTAL STAFF</span>
+                                                    <span class="d-block text-uppercase">1ST PUC TOTAL STUDENTS</span>
                                                 </div>
                                             </div>
                                         </div>
