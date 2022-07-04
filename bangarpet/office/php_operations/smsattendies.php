@@ -10,7 +10,7 @@ if($_POST['type']=="add_atten")
 	VALUES ('$date')";
  $conn->query($sqlcal);
 //  validate already submited attendance
-$sqlvalidate = "SELECT * FROM tbl_absentees WHERE Date='$date' AND Class='$class_id'";
+$sqlvalidate = "SELECT * FROM ".$tbl_absentees." WHERE Date='$date' AND Class='$class_id'";
 $result = $conn->query($sqlvalidate);
 
 if ($result->num_rows > 0) {
@@ -24,9 +24,9 @@ if($stat=="A"){
 
 // echo $id." &nbsp;Is ".$stat."&nbsp; Message Sent<br> ";
 
-$sql = "INSERT INTO `tbl_absentees`( `Date`, `Status`, `RollNo`, `Class`, `msg_status`) 
+$sql = "INSERT INTO `".$tbl_absentees."`( `Date`, `Status`, `RollNo`, `Class`, `msg_status`) 
 VALUES ('$date','$stat','$id','$class_id', 'sent')";
-$selectnumber="SELECT * from tbl_admission where RollNo='".$id."'";
+$selectnumber="SELECT * from ".$tbl_admission." where RollNo='".$id."'";
 $selectnumberresult=$conn->query($selectnumber);
 foreach($selectnumberresult as $stdnumber){
     $method = 'sendMessage';
@@ -52,7 +52,7 @@ SDC COLLEGE BANGARPET-563114');
 }else{
 // echo $id." &nbsp;Is ".$stat."&nbsp;<br> ";
   
-$sql = "INSERT INTO `tbl_absentees`( `Date`, `Status`, `RollNo`, `Class`, `msg_status`) 
+$sql = "INSERT INTO `".$tbl_absentees."`( `Date`, `Status`, `RollNo`, `Class`, `msg_status`) 
 VALUES ('$date','$stat','$id','$class_id', '')";
 
 }
@@ -68,13 +68,13 @@ $conn->query($sql);
 
 if($_POST['type']=="getlist"){
     $date=date("Y-m-d");
-    $sqlvalidate = "SELECT * FROM tbl_absentees WHERE Date='$date' AND Class='".$_POST['class_id']."'";
+    $sqlvalidate = "SELECT * FROM ".$tbl_absentees." WHERE Date='$date' AND Class='".$_POST['class_id']."'";
 $result = $conn->query($sqlvalidate);
 
 if ($result->num_rows > 0) {
     echo "Attendance  submitted";
 } else {
-    $sql="SELECT * FROM tbl_admission where Class='".$_POST['class_id']."'";
+    $sql="SELECT * FROM ".$tbl_admission." where Class='".$_POST['class_id']."'";
     $result=$conn->query($sql);
     foreach($result as $row){
         echo '
@@ -100,7 +100,7 @@ if ($result->num_rows > 0) {
 // load total student data
 if($_POST['type']=="loadtotal"){
     
-$sql = 'SELECT * FROM tbl_admission where Class="'.$_POST['class_code'].'"';
+$sql = 'SELECT * FROM '.$tbl_admission.' where Class="'.$_POST['class_code'].'"';
 $result=$conn->query($sql);
 
 if($result->num_rows > 0){
@@ -114,7 +114,7 @@ if($result->num_rows > 0){
 if($_POST['type']=="loadabsenties"){
     $date=date("Y-m-d");
 
-     $sql = "SELECT * FROM tbl_absentees WHERE Date='$date' AND Class='".$_POST['class_code']."' AND Status='A'";
+     $sql = "SELECT * FROM ".$tbl_absentees." WHERE Date='$date' AND Class='".$_POST['class_code']."' AND Status='A'";
 $result=$conn->query($sql);
 
 if($result->num_rows > 0){
