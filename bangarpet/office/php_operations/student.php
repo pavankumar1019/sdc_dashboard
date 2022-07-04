@@ -4,7 +4,7 @@ include '../db_bpet_sdc/db.php';
 if($_POST['type']=="getcount"){
 
   $query = "
-  SELECT * FROM tbl_admission
+  SELECT * FROM ".$tbl_admission."
   ";
   $statement = $connect->prepare($query);
   $statement->execute();
@@ -18,7 +18,7 @@ if($_POST['type']=="loaddata"){
   function get_total_row($connect)
   {
     $query = "
-    SELECT * FROM tbl_admission
+    SELECT * FROM ".$tbl_admission."
     ";
     $statement = $connect->prepare($query);
     $statement->execute();
@@ -40,7 +40,7 @@ if($_POST['type']=="loaddata"){
   }
   
   $query = "
-  SELECT * FROM tbl_admission 
+  SELECT * FROM ".$tbl_admission." 
   ";
   
   if($_POST['query'] != '')
@@ -246,7 +246,7 @@ if($_POST['type']=="loaddata"){
 // edit data get
 if($_POST['type']=="edit"){
   $query = '
-  SELECT * FROM tbl_admission WHERE id="'.$_POST['id'].'"
+  SELECT * FROM '.$tbl_admission.' WHERE id="'.$_POST['id'].'"
   ';
   $statement = $connect->prepare($query);
   $statement->execute();
@@ -285,7 +285,7 @@ $dob = $_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'];
        );
        $table_columns= implode(',', array_keys($insert_data));
        $table_data= implode("', '", $insert_data);
-     $sql = "INSERT INTO tbl_admission ($table_columns) VALUES ('$table_data') "; 
+     $sql = "INSERT INTO ".$tbl_admission." ($table_columns) VALUES ('$table_data') "; 
      $conn->query($sql);
   $error=true;
       
@@ -338,7 +338,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE tbl_admission SET ".$query." WHERE id=".$_POST['id']."";  
+  $sql ="UPDATE ".$tbl_admission." SET ".$query." WHERE id=".$_POST['id']."";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {
