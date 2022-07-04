@@ -2,6 +2,9 @@
                                                 include('./db_bpet_sdc/db.php');
                                                 $sql="SELECT * FROM ".$new_admission;
                                                 $result=$conn->query($sql);
+                                                $date=date("Y-m-d");
+                                                $sql1="SELECT * FROM ".$tbl_absentees." WHERE Status='A' AND Date=".$date;
+                                                $absentees=$conn->query($sql1);
                                               
                                                 ?>
 <div class="pcoded-main-container">
@@ -37,7 +40,7 @@
                                             <h6 class="mb-4">Today Absent Students</h6>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-9">
-                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-users text-c-red f-30 m-r-10"></i>288</h3>
+                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-users text-c-red f-30 m-r-10"></i><?php  echo mysqli_num_rows($absentees); ?></h3>
                                                 </div>
                                              
                                             </div>
