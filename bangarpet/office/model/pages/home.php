@@ -95,9 +95,27 @@
                                                                 <h1 class="text-muted">
                                                                     <?php
                                                                     
-                                                $sql4="SELECT * FROM `".$tbl_admission."` WHERE `combination`='PCMCS'";
+                                                $sql4="SELECT * FROM `".$tbl_admission."` WHERE `combination`='PCMB'";
                                                 $data_students_2nd_puc_PCMB=$conn->query($sql4);
   echo mysqli_num_rows($data_students_2nd_puc_PCMB);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted">2nd PUC</h4>
+                                                                <p class="m-0">PCMCS</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql5="SELECT * FROM `".$tbl_admission."` WHERE `combination`='PCMCS'";
+                                                $data_students_2nd_puc_pcmcs=$conn->query($sql5);
+  echo mysqli_num_rows($data_students_2nd_puc_pcmcs);
                                                                     ?>
                                                                 </h1>
                                                             </td>
