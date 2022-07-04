@@ -10,6 +10,9 @@
                                                 
                                                 $sql2="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='P'";
                                                 $present=$conn->query($sql2);
+
+                                                $sql3="SELECT * FROM `user_office`";
+                                                $usercontroll=$conn->query($sql3);
                                                 ?>
 <div class="pcoded-main-container">
         <div class="pcoded-wrapper">
@@ -152,7 +155,7 @@
                                                 </div>
                                           
                                             </div>
-                                            <h2 class="mt-3 f-w-300">45</h2>
+                                            <h2 class="mt-3 f-w-300"><?php echo mysqli_num_rows($usercontroll); ?></h2>
                                             <h6 class="text-muted mt-4 mb-0">Users controll this software</h6>
                                             <i class="feather icon-users text-c-purple f-50"></i>
                                         </div>
