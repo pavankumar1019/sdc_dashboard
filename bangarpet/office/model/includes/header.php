@@ -116,7 +116,15 @@
             <a  href="./dashboard.php?page=home" class="b-brand">
                 <img src="./assets/images/logo.png" alt="" srcset="">
                     
-                <span class="b-title">SDC-College</span>
+                <span class="b-title">SDC-<?php 
+                             if($_SESSION['branch']==1){
+                                echo "BANGARPET";
+                             }
+                             if($_SESSION['branch']==2){
+                                echo "KGF";
+                             }
+                                 
+                                 ?></span>
                </a>
         </div>
         <a class="mobile-menu" id="mobile-header" href="javascript:">
