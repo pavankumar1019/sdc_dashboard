@@ -91,7 +91,7 @@
                                                         <tr class="unread">
                                                             <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
                                                             <td>
-                                                                <h4 class="mb-1">2nd PUC</h4>
+                                                                <h4 class="mb-1 text-muted">2nd PUC</h4>
                                                                 <p class="m-0">EBACS</p>
                                                             </td>
                                                             <td>
