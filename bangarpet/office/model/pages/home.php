@@ -4,9 +4,12 @@
                                                 $result=$conn->query($sql);
                                                 $date=date("Y-m-d");
 
-                                                $sql1="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='P'";
+                                                $sql1="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='A'";
                                                 $absentees=$conn->query($sql1);
                                               
+                                                
+                                                $sql2="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='P'";
+                                                $present=$conn->query($sql2);
                                                 ?>
 <div class="pcoded-main-container">
         <div class="pcoded-wrapper">
@@ -54,10 +57,10 @@
                                 <div class="col-md-6 col-xl-4">
                                     <div class="card Monthly-sales">
                                         <div class="card-block">
-                                            <h6 class="mb-4">Today Absent Students</h6>
+                                            <h6 class="mb-4">Today Present Students</h6>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-9">
-                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-users text-c-blue f-30 m-r-10"></i>288</h3>
+                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-users text-c-blue f-30 m-r-10"></i><?php  echo mysqli_num_rows($present); ?></h3>
                                                 </div>
                                              
                                             </div>
