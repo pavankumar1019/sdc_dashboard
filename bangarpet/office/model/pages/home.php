@@ -91,11 +91,11 @@
                                                         <tr class="unread">
                                                             <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
                                                             <td>
-                                                                <h6 class="mb-1">2nd PUC</h6>
+                                                                <h4 class="mb-1">2nd PUC</h4>
                                                                 <p class="m-0">EBACS</p>
                                                             </td>
                                                             <td>
-                                                                <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>320</h6>
+                                                                <h1 class="text-muted">320</h1>
                                                             </td>
                                                             <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
                                                         </tr>
