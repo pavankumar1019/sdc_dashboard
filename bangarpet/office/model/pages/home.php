@@ -3,7 +3,8 @@
                                                 $sql="SELECT * FROM ".$new_admission;
                                                 $result=$conn->query($sql);
                                                 $date=date("Y-m-d");
-                                                $sql1="SELECT * FROM ".$tbl_absentees." WHERE Status='A' AND Date=".$date;
+
+                                                $sql1="SELECT * FROM ".$tbl_absentees." WHERE Date=$date";
                                                 $absentees=$conn->query($sql1);
                                               
                                                 ?>
