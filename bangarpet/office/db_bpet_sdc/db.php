@@ -20,6 +20,8 @@ if($_SESSION['branch']==1){
 
   $tbl_absentees="tbl_absentees";
   $tbl_admission="tbl_admission";
+
+  $new_admission="new_admission_bpet";
 }
 if($_SESSION['branch']==2){
 // kgf branch tabels
@@ -27,5 +29,7 @@ $sdc_marks_card="sdc_marks_card_kgf";
 
 $tbl_absentees="tbl_absentees_kgf";
 $tbl_admission="tbl_admission_kgf";
+
+$new_admission="new_admission_kgf";
 }
 ?>

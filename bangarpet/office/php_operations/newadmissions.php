@@ -4,7 +4,7 @@ include '../db_bpet_sdc/db.php';
 if($_POST['type']=="getcount"){
 
   $query = "
-  SELECT * FROM new_admission_bpet
+  SELECT * FROM ".$new_admission."
   ";
   $statement = $connect->prepare($query);
   $statement->execute();
@@ -18,7 +18,7 @@ if($_POST['type']=="loaddata"){
   function get_total_row($connect)
   {
     $query = "
-    SELECT * FROM new_admission_bpet
+    SELECT * FROM ".$new_admission."
     ";
     $statement = $connect->prepare($query);
     $statement->execute();
@@ -40,7 +40,7 @@ if($_POST['type']=="loaddata"){
   }
   
   $query = "
-  SELECT * FROM new_admission_bpet 
+  SELECT * FROM ".$new_admission." 
   ";
   
   if($_POST['query'] != '')
@@ -241,7 +241,7 @@ if($_POST['type']=="loaddata"){
 // edit data get
 if($_POST['type']=="edit"){
   $query = '
-  SELECT * FROM new_admission_bpet WHERE id="'.$_POST['id'].'"
+  SELECT * FROM '.$new_admission.' WHERE id="'.$_POST['id'].'"
   ';
   $statement = $connect->prepare($query);
   $statement->execute();
@@ -274,7 +274,7 @@ if($_POST['type']=="edit"){
 // delete
 if($_POST['type']=="delete"){
   $query = '
-  DELETE FROM new_admission_bpet WHERE id="'.$_POST['id'].'"
+  DELETE FROM '.$new_admission.' WHERE id="'.$_POST['id'].'"
   ';
   $statement = $connect->prepare($query);
   $statement->execute();  
@@ -304,7 +304,7 @@ $dob = $_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'];
        );
        $table_columns= implode(',', array_keys($insert_data));
        $table_data= implode("', '", $insert_data);
-     $sql = "INSERT INTO new_admission_bpet ($table_columns) VALUES ('$table_data') "; 
+     $sql = "INSERT INTO ".$new_admission." ($table_columns) VALUES ('$table_data') "; 
      $conn->query($sql);
   $error=true;
       
@@ -373,7 +373,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE new_admission_bpet SET ".$query." WHERE id=".$_POST['id']."";  
+  $sql ="UPDATE ".$new_admission." SET ".$query." WHERE id=".$_POST['id']."";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {
