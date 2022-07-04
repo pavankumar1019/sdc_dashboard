@@ -223,7 +223,7 @@
                                                     <i class="feather icon-users f-30 text-c-blue"></i>
                                                 </div>
                                                 <div class="col">
-                                                    <h3 class="f-w-300">26</h3>
+                                                    <h3 class="f-w-300">0</h3>
                                                     <span class="d-block text-uppercase">1ST PUC TOTAL STUDENTS</span>
                                                 </div>
                                             </div>
