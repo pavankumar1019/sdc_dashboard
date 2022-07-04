@@ -69,9 +69,9 @@ from
 (
 select c.date, a.studentname, a.rollno, a.class
 from calendar c
-cross join tbl_admission a
+cross join ".$tbl_admission." a
 ) ca
-left join tbl_absentees p
+left join ".$tbl_absentees." p
 on ca.rollno = p.rollno
 and ca.date = p.date  where p.Class=".$_GET['class_id']."
 group by ca.studentname, ca.rollno, ca.class
