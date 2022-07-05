@@ -184,7 +184,7 @@ if(isset($_SESSION["name"]))
           alert("User_ID /  Key is required !");
         }
       } else {
-        alert("Select the branch");
+        alert("Select the Role");
 
         }
       });
