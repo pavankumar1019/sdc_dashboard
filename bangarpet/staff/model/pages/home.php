@@ -1,6 +1,6 @@
 <?php
                                                 include('./db_bpet_sdc/db.php');
-                                                $sql="SELECT * FROM ".$new_admission;
+                                                $sql="SELECT * FROM ".$tbl_admission." WHERE `Class`='".$_SESSION['role_staff']."'";
                                                 $result=$conn->query($sql);
                                                 $date=date("Y-m-d");
 
@@ -32,7 +32,7 @@
                                 <div class="col-md-6 col-xl-4" onclick="location.href='./dashboard.php?page=newadmission';">
                                     <div class="card daily-sales">
                                         <div class="card-block">
-                                            <h6 class="mb-4"> New Admissions</h6>
+                                            <h6 class="mb-4">Total Students</h6>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-9">
                                                     <h3 class="f-w-300 d-flex align-items-center m-b-0"><i class="feather icon-user-check text-c-green f-30 m-r-10"></i><?php  echo mysqli_num_rows($result);?></h3>
