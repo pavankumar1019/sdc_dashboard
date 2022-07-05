@@ -127,7 +127,7 @@ return $response_txt;
             <table style="width:100%;border: none;border-collapse: auto;">
 
                 <tbody>
-                    <tr><td style="border: none;">College Code: MM0174</td><td style="border: none;text-align: center;"> <h5>FOR PRE UNIVERSITY COLLEGE </h5></td> <td style="border: none;text-align: right;">No. &nbsp; <?php echo $_POST['id'];?></td></tr>
+                    <tr><td style="border: none;">College Code: MM0174</td><td style="border: none;text-align: center;"> <h5>FOR PRE UNIVERSITY COLLEGE </h5></td> <td style="border: none;text-align: right;">No. &nbsp; <?php echo $_POST['id'];?> / 21-22</td></tr>
                 </tbody>
               </table>
         </div>
@@ -412,7 +412,7 @@ if($_POST['t14']==8){
             <table style="width:100%;border: none;border-collapse: auto;">
 
                 <tbody>
-                    <tr><td style="border: none;">College Code: MM0174</td><td style="border: none;text-align: center;"> <h5>FOR PRE UNIVERSITY COLLEGE </h5></td> <td style="border: none;text-align: right;">No. &nbsp; <?php echo $_POST['id'];?></td></tr>
+                    <tr><td style="border: none;">College Code: MM0174</td><td style="border: none;text-align: center;"> <h5>FOR PRE UNIVERSITY COLLEGE </h5></td> <td style="border: none;text-align: right;">No. &nbsp; <?php echo $_POST['id'];?> / 21-22</td></tr>
                 </tbody>
               </table>
         </div>
