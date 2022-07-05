@@ -29,7 +29,7 @@
                             <!-- [ Main Content ] start -->
                             <div class="row">
                                 <!--[ daily sales section ] start-->
-                                <div class="col-md-6 col-xl-4" onclick="location.href='./dashboard.php?page=newadmission';">
+                                <div class="col-md-6 col-xl-4" >
                                     <div class="card daily-sales">
                                         <div class="card-block">
                                             <h6 class="mb-4">Total Students</h6>
