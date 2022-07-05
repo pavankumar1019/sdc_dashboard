@@ -43,7 +43,7 @@
             <div class="navbar-brand header-logo">
                 <a  href="./dashboard.php?page=home" class="b-brand">
                     
-                       <img src="<?php echo $_SESSION['profile_staff']?>" width="20px" alt="" srcset="">
+                       <img src="<?php echo $_SESSION['profile_staff']?>" width="40px" alt="" srcset="">
                     
                     <span class="b-title">SDC-<?php 
                              if($_SESSION['branch_staff']==1){
@@ -216,7 +216,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
-                                <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+                                <img src="<?php echo $_SESSION['profile_staff']?>" width="40px" class="img-radius" alt="User-Profile-Image">
                                 <span style="text-transform: uppercase;"><?php echo $_SESSION['name_staff']?> - <?php 
                              if($_SESSION['branch_staff']==1){
                                 echo "BANGARPET";
