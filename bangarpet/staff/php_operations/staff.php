@@ -51,7 +51,7 @@ SDC COLLEGE BANGARPET-563114');
 
 
 if($_POST['type']==2){
-	if($_SESSION['OTP']==$_POST['otp']){
+	if($_SESSION['OTP_staff']==$_POST['otp']){
 		echo json_encode(array("statusCode"=>200));
 		$_SESSION['name_staff']=$_POST['name'];
 		$_SESSION['branch_staff']=$_POST['branch'];
@@ -76,7 +76,7 @@ if ($result->num_rows > 0) {
 	$number=$row['phone_no'];
 	$otp=rand(100000,999999);
 	Fstmsms($number,$otp);
-	$_SESSION['OTP']=$otp;
+	$_SESSION['OTP_staff']=$otp;
 	echo json_encode(array(
 		"statusCode"=>200,
 		"phone"=>substr($row['phone_no'], -3),
