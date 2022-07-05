@@ -1,5 +1,4 @@
 <?php
-
 include '../db_bpet_sdc/db.php';
 if($_POST['type']=="loaddata"){
     function get_total_row($connect)
@@ -87,7 +86,7 @@ if($_POST['type']=="loaddata"){
                                                     <h5 class="mb-1">'.$row['reg_no'].'</h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">'.$row['StudentName'].'</h6>
+                                                        <h6 class="mb-1">'.$_SESSION['class_id'].'</h6>
                                                         <p class="m-0">'.$row['father_name'].'</p>
                                                         <p class="m-0">'.$class.'</p>
                                                       
