@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -86,6 +87,35 @@
     <!-- Required Js -->
 <script src="assets/js/vendor-all.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.uploadimg').on('change', function() {
+        console.log("test");
+    var file_data = $(this).prop('files')[0];   
+    var form_data = new FormData();
+    var ext = $(this).val().split('.').pop().toLowerCase();
+    if ($.inArray(ext, ['png','jpg','jpeg']) == -1)   {
+        alert("only jpg and png images allowed");
+        return;
+    }  
+    form_data.append('file', file_data);   
+    form_data.append('type', 'enroll');   
+    $.ajax({
+        url: './php_operations/staff.php', /*point to server-side PHP script */
+        dataType: 'text',  /* what to expect back from the PHP script, if anything*/
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,                         
+        type: 'post',
+        success: function(res){
+           console.log(res);
+        }
+     });
+});
+})
+</script>
+
 
 </body>
 </html>
