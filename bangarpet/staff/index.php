@@ -140,7 +140,7 @@ if(isset($_SESSION["name"]))
               type: 4,
               user_id: $("#user_id").val(),
               key: $("#key").val(),
-              key: $("#role").val(),
+              role: $("#role").val(),
               branch: $("#branch").val(),
             },
             success: function (dataResult) {
