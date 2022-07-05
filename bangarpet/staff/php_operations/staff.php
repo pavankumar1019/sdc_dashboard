@@ -53,9 +53,9 @@ SDC COLLEGE BANGARPET-563114');
 if($_POST['type']==2){
 	if($_SESSION['OTP']==$_POST['otp']){
 		echo json_encode(array("statusCode"=>200));
-		$_SESSION['name']=$_POST['name'];
-		$_SESSION['branch']=$_POST['branch'];
-		$_SESSION['role']=$_POST['role'];
+		$_SESSION['name_staff']=$_POST['name'];
+		$_SESSION['branch_staff']=$_POST['branch'];
+		$_SESSION['role_staff']=$_POST['role'];
 	}else{
 		echo json_encode(array("statusCode"=>201));
 
