@@ -46,10 +46,10 @@
                        <img src="./assets/images/logo.png" alt="" srcset="">
                     
                     <span class="b-title">SDC-<?php 
-                             if($_SESSION['branch']==1){
+                             if($_SESSION['branch_staff']==1){
                                 echo "BANGARPET";
                              }
-                             if($_SESSION['branch']==2){
+                             if($_SESSION['branch_staff']==2){
                                 echo "KGF";
                              }
                                  
@@ -73,12 +73,12 @@
                         <ul class="pcoded-submenu">
                             <li class=""><a href="./dashboard.php?page=markscard" class="">Marks Card Print</a></li>
                             <?php
-                               if($_SESSION['branch']==1){
+                               if($_SESSION['branch_staff']==1){
                          ?>
                           <li class=""><a href="./dashboard.php?page=tcgenerator" class="">TC - Genrator</a></li>
                          <?php
                              }
-                            //  if($_SESSION['branch']==2){
+                            //  if($_SESSION['branch_staff']==2){
                              
                             //  }
                             ?>
@@ -117,10 +117,10 @@
                 <img src="./assets/images/logo.png" alt="" srcset="">
                     
                 <span class="b-title">SDC-<?php 
-                             if($_SESSION['branch']==1){
+                             if($_SESSION['branch_staff']==1){
                                 echo "BANGARPET";
                              }
-                             if($_SESSION['branch']==2){
+                             if($_SESSION['branch_staff']==2){
                                 echo "KGF";
                              }
                                  
@@ -217,11 +217,11 @@
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                                <span style="text-transform: uppercase;"><?php echo $_SESSION['name']?> - <?php 
-                             if($_SESSION['branch']==1){
+                                <span style="text-transform: uppercase;"><?php echo $_SESSION['name_staff']?> - <?php 
+                             if($_SESSION['branch_staff']==1){
                                 echo "BANGARPET";
                              }
-                             if($_SESSION['branch']==2){
+                             if($_SESSION['branch_staff']==2){
                                 echo "KGF";
                              }
                                  
