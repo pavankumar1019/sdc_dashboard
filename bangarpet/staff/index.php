@@ -97,9 +97,7 @@ if(isset($_SESSION["name"]))
             <button class="btn btn-primary shadow-2 mb-4" id="continue">
               Continue
             </button>
-            <p class="mb-2 text-muted">
-              Not Enrolled? <a href="auth-reset-password.html">Click Here</a>
-            </p>
+            <p class="mb-0 text-muted">Not enrolled? <a href="auth-signup.html">Click Here</a></p>
           </div>
         </div>
       </div>
