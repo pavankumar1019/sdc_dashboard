@@ -70,6 +70,18 @@ if(isset($_SESSION["name"]))
                 class="form-control"
             
                 id="branch">
+                <option value="" selected>- Select Branch -</option>
+         <option value="1">BANGARPET</option>
+         <option value="2">KGF</option>
+              </select>
+               
+       
+            </div>
+            <div class="input-group mb-3">
+              <select  type=""
+                class="form-control"
+            
+                id="role">
                 <option value="" selected>- Select Role -</option>
          <option value="1">Principal</option>
          <option value="2">Class Teacher</option>
