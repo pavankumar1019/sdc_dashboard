@@ -33,7 +33,7 @@ $image_name = 'upload/' . time() . '.png';
 
 file_put_contents($image_name, $data);
 
-echo $image_name;
+echo $data;
 
 
 
