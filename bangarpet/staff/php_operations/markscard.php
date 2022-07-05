@@ -29,17 +29,9 @@ if($_POST['type']=="loaddata"){
     SELECT tbl_admission.StudentName
     FROM tbl_admission
     LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll
-   
     ";
     
-    if($_POST['query'] != '')
-    {
-      $query .= '
-     AND tbl_admission.RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
-      ';
-    }
-    
-    $query .= 'ORDER BY RollNo ASC ';
+   
     
     $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
