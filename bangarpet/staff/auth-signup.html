@@ -117,6 +117,9 @@ $(document).ready(function(){
     }  
     form_data.append('file', file_data);   
     form_data.append('type', 'enroll');   
+    form_data.append('name', $('#name').val());   
+    form_data.append('phone', $('#phone').val());   
+    form_data.append('branch', $('#branch').val());   
     $.ajax({
         url: './php_operations/staff.php', /*point to server-side PHP script */
         dataType: 'text',  /* what to expect back from the PHP script, if anything*/
