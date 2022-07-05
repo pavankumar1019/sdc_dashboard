@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../db_bpet_sdc/db.php';
 if($_POST['type']=="loaddata"){
     function get_total_row($connect)
