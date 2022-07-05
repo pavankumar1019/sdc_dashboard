@@ -77,7 +77,7 @@
                             <label for="checkbox-fill-2" class="cr">Send me the <a href="#!"> Newsletter</a> weekly.</label>
                         </div>
                     </div> -->
-                    <button class="btn btn-primary shadow-2 mb-4">Submit</button>
+                    <button class="btn btn-primary shadow-2 mb-4" id="submit">Submit</button>
                     <p class="mb-0 text-muted">Allready Enrolled? <a href="./index.php">Login in</a></p>
                 </div>
             </div>
@@ -89,7 +89,7 @@
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-    $('.uploadimg').on('change', function() {
+    $('#submit').on('click', function() {
         console.log("test");
     var file_data = $(this).prop('files')[0];   
     var form_data = new FormData();
