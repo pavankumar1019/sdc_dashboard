@@ -8,7 +8,7 @@
                                                 $absentees=$conn->query($sql1);
                                               
                                                 
-                                                $sql2="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='P'";
+                                                $sql2="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='P' AND `Class`='".$_SESSION['class_id']."'";
                                                 $present=$conn->query($sql2);
 
                                                 $sql3="SELECT * FROM `user_office`";
