@@ -4,10 +4,7 @@ if($_POST['type']=="loaddata"){
     function get_total_row($connect)
     {
       $query = "
-      SELECT *
-      FROM tbl_admission
-      LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll
-      ORDER BY tbl_admission.RollNo;
+      SELECT * FROM ".$sdc_marks_card."
       ";
       $statement = $connect->prepare($query);
       $statement->execute();
@@ -29,17 +26,20 @@ if($_POST['type']=="loaddata"){
     }
     
     $query = "
-    SELECT * FROM ".$sdc_marks_card." 
+    SELECT tbl_admission.StudentName
+    FROM tbl_admission
+    LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll
+   
     ";
     
     if($_POST['query'] != '')
     {
       $query .= '
-      WHERE reg_no LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
+      WHERE RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
       ';
     }
     
-    $query .= 'ORDER BY reg_no ASC ';
+    $query .= 'ORDER BY RollNo ASC ';
     
     $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
@@ -85,10 +85,10 @@ if($_POST['type']=="loaddata"){
         $output .= '
         <tr class="unread">
                                                     <td>
-                                                    <h5 class="mb-1">'.$row['RollNo'].'</h5>
+                                                    <h5 class="mb-1">'.$row['reg_no'].'</h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">'.$row['Student_Name'].'</h6>
+                                                        <h6 class="mb-1">'.$row['student_name'].'</h6>
                                                         <p class="m-0">'.$row['father_name'].'</p>
                                                         <p class="m-0">'.$class.'</p>
                                                       
