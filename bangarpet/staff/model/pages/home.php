@@ -4,7 +4,7 @@
                                                 $result=$conn->query($sql);
                                                 $date=date("Y-m-d");
 
-                                                $sql1="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='A'";
+                                                $sql1="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='A' AND `Class`='".$_SESSION['class_id']."'";
                                                 $absentees=$conn->query($sql1);
                                               
                                                 
