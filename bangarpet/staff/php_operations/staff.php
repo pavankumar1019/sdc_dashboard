@@ -1,8 +1,6 @@
 <?php
-$path = $_FILES['file']['name'];
-$type = pathinfo($path, PATHINFO_EXTENSION);
-$data = file_get_contents($path);
-$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+$bin_string = file_get_contents($_FILES["file"]["name"]);
+$base64 = 'data:image/' . $type . ';base64,' . base64_encode($bin_string);
 
 echo $base64;
 
