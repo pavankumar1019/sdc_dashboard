@@ -127,7 +127,7 @@
             </div>
             <!-- modal Close -->
             <!-- [ breadcrumb ] start -->
-            <div class="page-header">
+            <!-- <div class="page-header">
                 <div class="page-block">
                     <div class="row align-items-center">
                         <div class="col-md-12">
@@ -142,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Page inner -->
             <div class="main-body">
@@ -150,7 +150,7 @@
                     <!-- [ Main Content ] start -->
                     <div class="row">
                         <!--[ daily sales section ] start-->
-                        <div class="col-md-6 col-xl-4 ">
+                        <!-- <div class="col-md-6 col-xl-4 ">
                             <div class="card daily-sales bg-dark " type="button" id="btnmarkscard">
                                 <div class="card-block">
                                     <h6 class="mb-4 text-white">MC- Generator</h6>
@@ -165,8 +165,8 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4 ">
+                        </div> -->
+                        <!-- <div class="col-md-6 col-xl-4 ">
                             <div class="card daily-sales bg-danger " type="button" id="btnAdmissionModal">
                                 <div class="card-block">
                                     <h6 class="mb-4 text-white">Truncate Data</h6>
@@ -182,7 +182,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
