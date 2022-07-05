@@ -66,7 +66,7 @@ if($_POST['type']==4){
 	$key=$_POST['key'];
 	$branch=$_POST['branch'];
 	$role=$_POST['role'];
-	$sql = "SELECT * FROM `staff` WHERE `user_id`='$user_id' AND `ukey`='$key' AND `branch`='$role'";
+	$sql = "SELECT * FROM `staff` WHERE `user_id`='$user_id' AND `ukey`='$key' AND `branch`='$branch' AND `role`='$role'";
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
