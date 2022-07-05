@@ -25,10 +25,10 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "
+    $query = '
     SELECT tbl_admission.StudentName
     FROM tbl_admission
-    LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll AND tbl_admission.Class=".$_SESSION['class_id'];
+    LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll AND tbl_admission.Class='.$_SESSION['class_id'];
     
     if($_POST['query'] != '')
     {
