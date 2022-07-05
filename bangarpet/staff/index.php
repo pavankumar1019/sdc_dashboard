@@ -121,12 +121,13 @@ if(isset($_SESSION["name"]))
 
     <script>
       $("#continue").click(function () {
-        if ($("#branch").val() != ""){
-    if ($("#user_id").val() != "") {
+    
+          if( ($('#branch').val()!="")||($('#role').val()!="") ||($('#user_id').val()!="") ||($('#key').val()!="")){
+
           $("#verifyModal").modal("show");
           $.ajax({
             type: "POST",
-            url: "./php_operations/login.php",
+            url: "./php_operations/staff.php",
             beforeSend: function(){
       $('#continue').html("connecting...");
       $('#continue').prop('disabled', true);
@@ -139,6 +140,7 @@ if(isset($_SESSION["name"]))
               type: 4,
               user_id: $("#user_id").val(),
               key: $("#key").val(),
+              key: $("#role").val(),
               branch: $("#branch").val(),
             },
             success: function (dataResult) {
@@ -191,12 +193,9 @@ if(isset($_SESSION["name"]))
           });
         }
         else {
-          alert("User_ID /  Key is required !");
+          alert("Fill all the fields!");
         }
-      } else {
-        alert("Select the Role");
-
-        }
+      } 
       });
 
     
