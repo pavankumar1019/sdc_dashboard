@@ -92,12 +92,7 @@ $(document).ready(function(){
     $('#submit').on('click', function() {
         console.log("test");
         if( ($('#branch').val()!="")||($('#name').val()!="") ||($('#phone').val()!="") ||($('#photo').val()!="")){
-
-        }
-        else{
-            alert('please fill all the feilds');
-        }
-    var file_data = $('#photo').prop('files')[0];   
+            var file_data = $('#photo').prop('files')[0];   
     var form_data = new FormData();
     var ext = $(this).val().split('.').pop().toLowerCase();
     if ($.inArray(ext, ['png','jpg','jpeg']) == -1)   {
@@ -118,6 +113,11 @@ $(document).ready(function(){
            console.log(res);
         }
      });
+        }
+        else{
+            alert('please fill all the feilds');
+        }
+ 
 });
 })
 </script>
