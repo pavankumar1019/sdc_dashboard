@@ -68,7 +68,7 @@
                     <li class="nav-item pcoded-menu-caption">
                         <label>OPERATIONS</label>
                     </li>
-                    <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Upload Consolidate</span></a></li>
+                    <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=consolidate" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Upload Consolidate</span></a></li>
            
                  
                   
