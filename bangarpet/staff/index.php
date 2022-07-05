@@ -9,7 +9,7 @@ if(isset($_SESSION["name"]))
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SDC | Bangarpet Office Login</title>
+    <title>SDC | Bangarpet Staff Login</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -70,9 +70,9 @@ if(isset($_SESSION["name"]))
                 class="form-control"
             
                 id="branch">
-                <option value="" selected>- Select Branch -</option>
-         <option value="1">BANGARPET</option>
-         <option value="2">KGF</option>
+                <option value="" selected>- Select Role -</option>
+         <option value="1">Principal</option>
+         <option value="2">Class Teacher</option>
               </select>
                
        
