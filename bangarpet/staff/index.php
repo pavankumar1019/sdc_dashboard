@@ -161,12 +161,13 @@ if(isset($_SESSION["name"]))
                   if (result.isConfirmed) {
                     $.ajax({
                       type: "POST",
-                      url: "./php_operations/login.php",
+                      url: "./php_operations/staff.php",
                       data: {
                         type: 2,
                         otp: result.value,
                         name: dataResult.name,
                         branch: dataResult.branch,
+                        role: dataResult.role,
                       },
                       success: function (dataResult) {
                         var dataResult = JSON.parse(dataResult);
