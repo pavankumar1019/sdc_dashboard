@@ -19,7 +19,7 @@ else {
     else{
        
         $result = move_uploaded_file($_FILES['file']['tmp_name'], '../doc/' . $code.'.'.$ext);
-        echo json_encode(array("statusCode"=>200 ,'code'=>$code));
+        echo json_encode(array("statusCode"=>200 ,'code'=>$result));
     }
     
 }
