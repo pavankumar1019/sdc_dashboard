@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
    $image= json_encode(array("statusCode"=>200,'code'=>$base64));
 
 
-    $sqlinsert = "INSERT INTO `calendar`( `name`, `phone_no`, `photo`, `branch`) 
+    $sqlinsert = "INSERT INTO `staff`( `name`, `phone_no`, `photo`, `branch`) 
 	VALUES ('".$_POST['name']."', '".$_POST['phone']."', '$image', '".$_POST['branch']."' )";
 if($conn->query($sqlinsert)==TRUE){
   
