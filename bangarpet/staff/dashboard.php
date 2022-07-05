@@ -11,5 +11,4 @@ if(isset($_SESSION['name_staff']))
     header("location:index.php");
 }
 
-echo $_SESSION['name_staff'];
 ?>
