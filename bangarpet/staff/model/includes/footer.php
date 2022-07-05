@@ -2,7 +2,7 @@
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/pcoded.min.js"></script>
 <?php
-if($_GET['page']=="markscard"){
+if($_GET['page']=="consolidate"){
     ?>
      <script src="assets/js/markscard.min.js"></script>
     <?php
