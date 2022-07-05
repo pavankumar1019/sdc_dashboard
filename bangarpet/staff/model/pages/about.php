@@ -29,7 +29,7 @@
                                             <h5>Hello !</h5>
                                         </div>
                                         <div class="card-block">
-                                            <p>"This software is developed under PK | Developer"
+                                            <p>"This software is licensed under PK devloper"
                                             </p>
                                         </div>
                                     </div>

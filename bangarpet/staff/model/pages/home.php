@@ -1,3 +1,22 @@
+<?php
+                                                include('./db_bpet_sdc/db.php');
+                                                $sql="SELECT * FROM ".$new_admission;
+                                                $result=$conn->query($sql);
+                                                $date=date("Y-m-d");
+
+                                                $sql1="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='A'";
+                                                $absentees=$conn->query($sql1);
+                                              
+                                                
+                                                $sql2="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='P'";
+                                                $present=$conn->query($sql2);
+
+                                                $sql3="SELECT * FROM `user_office`";
+                                                $usercontroll=$conn->query($sql3);
+
+
+
+                                                ?>
 <div class="pcoded-main-container">
         <div class="pcoded-wrapper">
             <div class="pcoded-content">
@@ -10,99 +29,48 @@
                             <!-- [ Main Content ] start -->
                             <div class="row">
                                 <!--[ daily sales section ] start-->
-                                <!-- <div class="col-md-6 col-xl-4">
+                                <div class="col-md-6 col-xl-4" onclick="location.href='./dashboard.php?page=newadmission';">
                                     <div class="card daily-sales">
                                         <div class="card-block">
-                                            <h6 class="mb-4">Daily Sales</h6>
+                                            <h6 class="mb-4"> New Admissions</h6>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-9">
-                                                    <h3 class="f-w-300 d-flex align-items-center m-b-0"><i class="feather icon-arrow-up text-c-green f-30 m-r-10"></i>$ 249.95</h3>
-                                                </div>
-
-                                                <div class="col-3 text-right">
-                                                    <p class="m-b-0">67%</p>
+                                                    <h3 class="f-w-300 d-flex align-items-center m-b-0"><i class="feather icon-user-check text-c-green f-30 m-r-10"></i><?php  echo mysqli_num_rows($result);?></h3>
                                                 </div>
                                             </div>
-                                            <div class="progress m-t-30" style="height: 7px;">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                          
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 <!--[ daily sales section ] end-->
                                 <!--[ Monthly  sales section ] starts-->
-                                <!-- <div class="col-md-6 col-xl-4">
+                                <div class="col-md-6 col-xl-4">
                                     <div class="card Monthly-sales">
                                         <div class="card-block">
-                                            <h6 class="mb-4">Monthly Sales</h6>
+                                            <h6 class="mb-4">Today Absent Students</h6>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-9">
-                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-arrow-down text-c-red f-30 m-r-10"></i>$ 2.942.32</h3>
+                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-users text-c-red f-30 m-r-10"></i><?php  echo mysqli_num_rows($absentees); ?></h3>
                                                 </div>
-                                                <div class="col-3 text-right">
-                                                    <p class="m-b-0">36%</p>
-                                                </div>
+                                             
                                             </div>
-                                            <div class="progress m-t-30" style="height: 7px;">
-                                                <div class="progress-bar progress-c-theme2" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                          
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 <!--[ Monthly  sales section ] end-->
                                 <!--[ year  sales section ] starts-->
-                                <!-- <div class="col-md-12 col-xl-4">
-                                    <div class="card yearly-sales">
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="card Monthly-sales">
                                         <div class="card-block">
-                                            <h6 class="mb-4">Yearly Sales</h6>
+                                            <h6 class="mb-4">Today Present Students</h6>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-9">
-                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-arrow-up text-c-green f-30 m-r-10"></i>$ 8.638.32</h3>
+                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-users text-c-blue f-30 m-r-10"></i><?php  echo mysqli_num_rows($present); ?></h3>
                                                 </div>
-                                                <div class="col-3 text-right">
-                                                    <p class="m-b-0">80%</p>
-                                                </div>
-                                            </div>
-                                            <div class="progress m-t-30" style="height: 7px;">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- Mark Attendance -->
-                              <div class="col-md-12 col-xl-12">
-                                    <div class="card yearly-sales">
-                                        <div class="card-block">
-                                            <h6 class="mb-4">Mark Attendance</h6>
-                                            <div class="row d-flex align-items-center">
-                                                <div class="col-9">
-                                                    <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="fa fa-users" aria-hidden="true"></i>
-                                                       &nbsp;&nbsp;Your Class</h3>
-                                                </div>
-                                                <div class="col-3 text-right">
-                                                    <p class="m-b-0"></p>
-                                                </div>
-                                            </div>
-                                            <br>
-                                                <select class="mb-3 form-control form-control-lg" id="class_select">
-                                                   
-                                                    <?php
-                                                    require_once('./db/db.php');
-                                                    $sql = "SELECT class_id FROM staff where phone_no='7483737698'";
-                                                    $result = $conn->query($sql);
-                                                    
-                                                    if ($result->num_rows > 0) {
-                                                      // output data of each row
-                                                      while($row = $result->fetch_assoc()) {
-                                                        echo "  <option value='".$row['class_id']."' selected>1st PUC PCMB 'A'</option>";
-                                                      }
-                                                    } else {
-                                                      echo "0 results";
-                                                    }
-                                                    ?>
-                                                  
-                                                </select>                                       
                                              
+                                            </div>
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -111,13 +79,105 @@
                                 <div class="col-xl-8 col-md-6">
                                     <div class="card Recent-Users">
                                         <div class="card-header">
-                                            <h5>Students</h5>
+                                            <h5>Dashboard</h5>
                                         </div>
                                         <div class="card-block px-0 py-3">
                                             <div class="table-responsive">
                                                 <table class="table table-hover">
-                                                    <tbody id="student_list">
-                   
+                                                    <tbody>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted"> PCMB</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql4="SELECT * FROM `".$tbl_admission."` WHERE `combination`='PCMB'";
+                                                $data_students_2nd_puc_PCMB=$conn->query($sql4);
+  echo mysqli_num_rows($data_students_2nd_puc_PCMB);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted"> PCMCS</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql5="SELECT * FROM `".$tbl_admission."` WHERE `combination`='PCMCS'";
+                                                $data_students_2nd_puc_pcmcs=$conn->query($sql5);
+  echo mysqli_num_rows($data_students_2nd_puc_pcmcs);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted">EBACS</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql6="SELECT * FROM `".$tbl_admission."` WHERE `combination`='EBACS'";
+                                                $data_students_2nd_puc_ebacs=$conn->query($sql6);
+  echo mysqli_num_rows($data_students_2nd_puc_ebacs);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted">EBAS</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql7="SELECT * FROM `".$tbl_admission."` WHERE `combination`='EBAS'";
+                                                $data_students_2nd_puc_ebas=$conn->query($sql7);
+  echo mysqli_num_rows($data_students_2nd_puc_ebas);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                        <tr class="unread">
+                                                            <!-- <td><img class="rounded-circle" style="width:40px;" src="assets/images/user/avatar-1.jpg" alt="activity-user"></td> -->
+                                                            <td>
+                                                                <h4 class="mb-1 text-muted">BASM</h4>
+                                                                <p class="m-0">2nd PUC</p>
+                                                            </td>
+                                                            <td>
+                                                                <h1 class="text-muted">
+                                                                    <?php
+                                                                    
+                                                $sql8="SELECT * FROM `".$tbl_admission."` WHERE `combination`='BASM'";
+                                                $data_students_2nd_puc_basm=$conn->query($sql8);
+  echo mysqli_num_rows($data_students_2nd_puc_basm);
+                                                                    ?>
+                                                                </h1>
+                                                            </td>
+                                                            <!-- <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td> -->
+                                                        </tr>
+                                                      
+                                                       
+      
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -132,35 +192,39 @@
                                         <div class="card-block">
                                             <div class="row align-items-center justify-content-center">
                                                 <div class="col">
-                                                    <h5 class="m-0">Smart Card</h5>
+                                                    <h5 class="m-0">Total Users</h5>
                                                 </div>
-
+                                          
                                             </div>
-                                            <h2 class="mt-3 f-w-300">SCAN</h2>
-                                            <h6 class="text-muted mt-4 mb-0"></h6>
-                                            <i class="fa fa-id-card text-c-purple f-50"></i>
+                                            <h2 class="mt-3 f-w-300"><?php echo mysqli_num_rows($usercontroll); ?></h2>
+                                            <h6 class="text-muted mt-4 mb-0">Users controll this software</h6>
+                                            <i class="feather icon-users text-c-purple f-50"></i>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-block border-bottom">
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-auto">
-                                                    <i class="fa fa-users f-30 text-c-green"></i>
+                                                    <i class="feather icon-users f-30 text-c-green"></i>
                                                 </div>
                                                 <div class="col">
-                                                    <h3 class="f-w-300" id="total_student"></h3>
-                                                    <span class="d-block text-uppercase">TOTAL STUDENTS</span>
+                                                    <h3 class="f-w-300"><?php
+                                                      $sql8="SELECT * FROM `".$tbl_admission."` WHERE `class_name`=2";
+                                                      $data_students_2nd_puc_basm=$conn->query($sql8);
+        echo mysqli_num_rows($data_students_2nd_puc_basm);
+                                                    ?></h3>
+                                                    <span class="d-block text-uppercase">2ND PUC TOTAL STUDENTS</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card-block">
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-auto">
-                                                    <i class="fa fa-users f-30 text-c-red"></i>
+                                                    <i class="feather icon-users f-30 text-c-blue"></i>
                                                 </div>
                                                 <div class="col">
-                                                    <h3 class="f-w-300" id="total_student_absenties"></h3>
-                                                    <span class="d-block text-uppercase">TOTAL ABSENTIES</span>
+                                                    <h3 class="f-w-300">0</h3>
+                                                    <span class="d-block text-uppercase">1ST PUC TOTAL STUDENTS</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,53 +232,14 @@
                                 </div>
                                 <!-- [ statistics year chart ] end -->
                                 <!--[social-media section] start-->
-                                <div class="col-md-12 col-xl-12">
-                                    <div class="card card-social">
-                                        <div class="card-block border-bottom">
-                                            <div class="row align-items-center justify-content-center">
-                                                <div class="col-auto">
-                                                    <i class="fa fa-users text-primary f-36"></i>
-                                                </div>
-                                                <div class="col text-right">
-                                                
-                                                  
-                                                    <button class="text-c-green mb-0" id="downloadexcelreport"><i class="fa fa-download text-primary f-36"></i><span class="text-muted">Download Todays</span></button>
-                                               
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-block">
-                                            <div class="row align-items-center justify-content-center card-active">
-                                                <div class="col-12">
-                                                    <label for="">Check the Attendance before submit</label><br>
-                                                    <button type="button" id="btn_submit" class="btn btn-outline-info" title="" data-toggle="tooltip" data-original-title="Submit Attendance">SUBMIT</button>
-                                                </div>
-                                                <div class="col-6">
-                                                    <h6 class="text-center  m-b-10"><span class="text-muted m-r-5" id="progress"></span></h6>
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-c-theme2" id="loading" role="progressbar" style="height:6px;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              <div id="result">
-
-                              </div>
-                                <!--[social-media section] end-->
-                                <!-- [ rating list ] starts-->
-                    
-                                        
+                               
+                                
+                                
+                                
+                               
                                        
                                     </div>
                                 </div>
 
                             </div>
-                            <!-- [ Main Content ] end -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      

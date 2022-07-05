@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>SDC | Bangarpet Staff Login</title>
+    <title>SDC | Bangarpet OFFICE Login</title>
     <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 11]>
@@ -25,7 +26,7 @@
     <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -44,7 +45,15 @@
                     
                        <img src="./assets/images/logo.png" alt="" srcset="">
                     
-                    <span class="b-title">SDC-College</span>
+                    <span class="b-title">SDC-<?php 
+                             if($_SESSION['branch']==1){
+                                echo "BANGARPET";
+                             }
+                             if($_SESSION['branch']==2){
+                                echo "KGF";
+                             }
+                                 
+                                 ?></span>
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
             </div>
@@ -56,47 +65,42 @@
                     <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class='nav-item active'>
                         <a  href="./dashboard.php?page=home" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
                     </li>
-                    <!-- <li class="nav-item pcoded-menu-caption">
-                        <label>UI Element</label>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>student</label>
                     </li>
                     <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Components</span></a>
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users "></i></span><span class="pcoded-mtext">Student</span></a>
                         <ul class="pcoded-submenu">
-                            <li class=""><a href="bc_button.html" class="">Button</a></li>
-                            <li class=""><a href="bc_badges.html" class="">Badges</a></li>
-                            <li class=""><a href="bc_breadcrumb-pagination.html" class="">Breadcrumb & paggination</a></li>
-                            <li class=""><a href="bc_collapse.html" class="">Collapse</a></li>
-                            <li class=""><a href="bc_tabs.html" class="">Tabs & pills</a></li>
-                            <li class=""><a href="bc_typography.html" class="">Typography</a></li>
-
-
-                            <li class=""><a href="icon-feather.html" class="">Feather<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                            <li class=""><a href="./dashboard.php?page=markscard" class="">Marks Card Print</a></li>
+                            <?php
+                               if($_SESSION['branch']==1){
+                         ?>
+                          <li class=""><a href="./dashboard.php?page=tcgenerator" class="">TC - Genrator</a></li>
+                         <?php
+                             }
+                            //  if($_SESSION['branch']==2){
+                             
+                            //  }
+                            ?>
+                           
+                            <li class=""><a href="#" class="">ID- Genrator</a></li>
+                            <li class=""><a href="./dashboard.php?page=downloads" class="">Downloads</a></li>
+                            <li class=""><a href="./dashboard.php?page=smsattendiees" class="">SMS Attendies</a></li>
+                            <li class=""><a href="./dashboard.php?page=studentdb" class="">Student DB</a></li>
                         </ul>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
-                        <label>Forms & table</label>
+                        <label>STAFF</label>
                     </li>
-                    <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
-                        <a href="form_elements.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Form elements</span></a>
-                    </li>
-                    <li data-username="Table bootstrap datatable footable" class="nav-item">
-                        <a href="tbl_bootstrap.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-server"></i></span><span class="pcoded-mtext">Table</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Chart & Maps</label>
-                    </li>
-                    <li data-username="Charts Morris" class="nav-item"><a href="chart-morris.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a></li>
-                    <li data-username="Maps Google" class="nav-item"><a href="map-google.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a></li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Pages</label>
-                    </li>
-                    <li data-username="Authentication Sign up Sign in reset password Change password Personal information profile settings map form subscribe" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
+                    <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users"></i></span><span class="pcoded-mtext">Staff</span></a>
                         <ul class="pcoded-submenu">
-                            <li class=""><a href="auth-signup.html" class="" target="_blank">Sign up</a></li>
-                            <li class=""><a href="auth-signin.html" class="" target="_blank">Sign in</a></li>
+                            <li class=""><a href="#" class="">Enroll Staff</a></li>
+                            <li class=""><a href="#" class="">Reports</a></li>
+                            <li class=""><a href="#" class="">Downloads</a></li>
                         </ul>
-                    </li> -->
+                    </li>
+                  
                     <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">About</span></a></li>
                     <!-- <li data-username="Disabled Menu" class="nav-item disabled"><a href="javascript:" class="nav-link"><span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Disabled menu</span></a></li> -->
                 </ul>
@@ -112,7 +116,15 @@
             <a  href="./dashboard.php?page=home" class="b-brand">
                 <img src="./assets/images/logo.png" alt="" srcset="">
                     
-                <span class="b-title">SDC-College</span>
+                <span class="b-title">SDC-<?php 
+                             if($_SESSION['branch']==1){
+                                echo "BANGARPET";
+                             }
+                             if($_SESSION['branch']==2){
+                                echo "KGF";
+                             }
+                                 
+                                 ?></span>
                </a>
         </div>
         <a class="mobile-menu" id="mobile-header" href="javascript:">
@@ -124,8 +136,9 @@
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown">Operations</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="javascript:">Mark Attendance</a></li>
-                        <li><a class="dropdown-item" href="javascript:">Attendance Report</a></li>
+                    <li><a class="dropdown-item" href="./dashboard.php?page=tcgenerator">TC - Generator</a></li>
+                        <li><a class="dropdown-item" href="./dashboard.php?page=newadmission">New Admission</a></li>
+                        <li><a class="dropdown-item" href="javascript:">Enroll Staff</a></li>
                         <li><a class="dropdown-item" href="javascript:">New Updates</a></li>
                     </ul>
                 </li>
@@ -204,15 +217,23 @@
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                                <span>SDC</span>
-                                <a href="auth-signin.html" class="dud-logout" title="Logout">
+                                <span style="text-transform: uppercase;"><?php echo $_SESSION['name']?> - <?php 
+                             if($_SESSION['branch']==1){
+                                echo "BANGARPET";
+                             }
+                             if($_SESSION['branch']==2){
+                                echo "KGF";
+                             }
+                                 
+                                 ?></span>
+                                <a href="./logout.php" class="dud-logout" title="Logout">
                                     <i class="feather icon-log-out"></i>
                                 </a>
                             </div>
                             <ul class="pro-body">
                                 <li><a href="javascript:" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a></li>
                                 <li><a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
-                                <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+                                <li><a href="./logout.php" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
                             </ul>
                         </div>
                     </div>

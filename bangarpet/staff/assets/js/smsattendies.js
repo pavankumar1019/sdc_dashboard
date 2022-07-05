@@ -8,6 +8,7 @@ function markabsent(id){
   }
   // add to attendance
   $(document).ready(function(){
+  
 // function call
 getstudentlist($('#class_select').val());
 
@@ -23,7 +24,7 @@ getstudentlist($('#class_select').val());
 //   get function list
 function getstudentlist(class_id){
     $.ajax({
-        url:'./php_operations/attendance.php',
+        url:'./php_operations/smsattendies.php',
         method:'POST',
         data:{class_id:class_id, type:"getlist"},
         success:function(result)
@@ -40,7 +41,7 @@ function getstudentlist(class_id){
    function loadtotalStudents(){
     var class_code = $('#class_select').val();
     $.ajax({
-        url:'./php_operations/attendance.php',
+        url:'./php_operations/smsattendies.php',
         method:'POST',
         data:{type:"loadtotal", class_code:class_code},
         success:function(result)
@@ -54,7 +55,7 @@ function getstudentlist(class_id){
    function loadtotalAbsentiesStudents(){
     var class_code = $('#class_select').val();
     $.ajax({
-        url:'./php_operations/attendance.php',
+        url:'./php_operations/smsattendies.php',
         method:'POST',
         data:{type:"loadabsenties", class_code:class_code},
         success:function(result)
@@ -74,10 +75,11 @@ function getstudentlist(class_id){
 
     var status = $("input[name='status[]']")
     .map(function(){return $(this).val();}).get();
+    var class_code = $('#class_select').val();
     $.ajax({
-        url:'./php_operations/attendance.php',
+        url:'./php_operations/smsattendies.php',
         method:'POST',
-        data:{status:status, reg_no:reg_no, type:"add_atten"},
+        data:{status:status, reg_no:reg_no, type:"add_atten", class_code:class_code},
         beforeSend: function(){
             $('#progress').html('Proccesing');
           $("#loading").animate({
@@ -104,8 +106,9 @@ function getstudentlist(class_id){
 
     // download
     $("#downloadexcelreport").click(function (event) {
-        window.location = './php_operations/download.php?type=downloadreport&class_id='+$('#class_select').val();
+        window.location = './php_operations/attendancedownload.php?type=downloadreport&class_id='+$('#class_select').val();
         event.preventDefault();
       });
     
    });
+  
