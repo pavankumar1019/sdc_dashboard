@@ -196,7 +196,7 @@ if(isset($_SESSION["name"]))
         else {
           alert("Fill all the fields!");
         }
-      } 
+      
       });
 
     
