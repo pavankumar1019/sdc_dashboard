@@ -169,6 +169,7 @@ if(isset($_SESSION["name_staff"]))
                         branch: dataResult.branch,
                         role: dataResult.role,
                         img: dataResult.img,
+                        class_id: dataResult.class_id,
                       },
                       success: function (dataResult) {
                         var dataResult = JSON.parse(dataResult);

@@ -1,6 +1,6 @@
 <?php
                                                 include('./db_bpet_sdc/db.php');
-                                                $sql="SELECT * FROM ".$tbl_admission." WHERE `Class`='".$_SESSION['role_staff']."'";
+                                                $sql="SELECT * FROM ".$tbl_admission." WHERE `Class`='".$_SESSION['class_id']."'";
                                                 $result=$conn->query($sql);
                                                 $date=date("Y-m-d");
 
