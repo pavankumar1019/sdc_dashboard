@@ -11,14 +11,12 @@ if ($result->num_rows > 0) {
 }else{
     // convert to base 64 
     $bin_string = file_get_contents($_FILES["file"]["tmp_name"]);
-    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($bin_string);
-   $image= json_encode(array("statusCode"=>200,'code'=>$base64));
-
-
+    $image = 'data:image/' . $type . ';base64,' . base64_encode($bin_string);
+  
     $sqlinsert = "INSERT INTO `staff`( `name`, `phone_no`, `photo`, `branch`) 
 	VALUES ('".$_POST['name']."', '".$_POST['phone']."', '$image', '".$_POST['branch']."' )";
 if($conn->query($sqlinsert)==TRUE){
-  
+    echo json_encode(array("statusCode"=>200,'code'=>$image));
 }
 else{
     echo json_encode(array("statusCode"=>202,'code'=>'failed to enroll'));
