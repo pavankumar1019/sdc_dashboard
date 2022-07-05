@@ -80,7 +80,7 @@ if($_POST['type']=="loaddata"){
                                                     <h5 class="mb-1">'.$row['reg_no'].'</h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">'.$row['student_name'].'</h6>
+                                                        <h6 class="mb-1">'.$row['StudentName'].'</h6>
                                                         <p class="m-0">'.$row['father_name'].'</p>
                                                         <p class="m-0">'.$class.'</p>
                                                       
