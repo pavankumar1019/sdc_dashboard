@@ -4,7 +4,10 @@ if($_POST['type']=="loaddata"){
     function get_total_row($connect)
     {
       $query = "
-      SELECT * FROM ".$sdc_marks_card."
+      SELECT *
+      FROM tbl_admission
+      LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll
+      ORDER BY tbl_admission.RollNo;
       ";
       $statement = $connect->prepare($query);
       $statement->execute();
@@ -82,10 +85,10 @@ if($_POST['type']=="loaddata"){
         $output .= '
         <tr class="unread">
                                                     <td>
-                                                    <h5 class="mb-1">'.$row['reg_no'].'</h5>
+                                                    <h5 class="mb-1">'.$row['RollNo'].'</h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">'.$row['student_name'].'</h6>
+                                                        <h6 class="mb-1">'.$row['Student_Name'].'</h6>
                                                         <p class="m-0">'.$row['father_name'].'</p>
                                                         <p class="m-0">'.$class.'</p>
                                                       
