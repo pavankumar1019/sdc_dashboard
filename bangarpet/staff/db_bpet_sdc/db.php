@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 $connect = new PDO("mysql:host=localhost; dbname=u430139865_sdc", "u430139865_sdc", "Pavan5639");
 
 
-if($_SESSION['branch']==1){
+if($_SESSION['branch_staff']==1){
   // bangarpet branch tabels
   $sdc_marks_card="sdc_marks_card_bpet"; 
 
@@ -23,7 +23,7 @@ if($_SESSION['branch']==1){
 
   $new_admission="new_admission_bpet";
 }
-if($_SESSION['branch']==2){
+if($_SESSION['branch_staff']==2){
 // kgf branch tabels
 $sdc_marks_card="sdc_marks_card_kgf"; 
 

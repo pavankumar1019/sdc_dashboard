@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['name']))
+if(isset($_SESSION['name_staff']))
 {
     include ("./model/includes/header.php");
     include("./model/dashboard.php");
