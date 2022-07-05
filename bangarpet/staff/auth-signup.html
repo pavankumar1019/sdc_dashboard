@@ -16,7 +16,7 @@
     <meta name="description" content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
     <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
     <meta name="author" content="CodedThemes"/>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- fontawesome icon -->
@@ -83,7 +83,6 @@
                     </div> -->
                     <button class="btn btn-primary shadow-2 mb-4" id="submit">Submit</button>
                     <p class="mb-0 text-muted">Allready Enrolled? <a href="./index.php">Login in</a></p>
-                <div id="img"></div>
                 </div>
             </div>
         </div>
@@ -129,7 +128,14 @@ $(document).ready(function(){
         success: function(dataResult){
 				var dataResult = JSON.parse(dataResult);
 				if(dataResult.statusCode==200){
-				$('#img').html('<img src="'+dataResult.code+'" >')
+                    Swal.fire({
+  title: 'Done!',
+  text: 'Your enroll request sent User_ID and Key will be sent to vai SMS.',
+  imageUrl: dataResult.code,
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
 				}
 			}
      });
