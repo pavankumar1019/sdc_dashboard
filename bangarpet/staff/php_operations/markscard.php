@@ -35,7 +35,7 @@ if($_POST['type']=="loaddata"){
     if($_POST['query'] != '')
     {
       $query .= '
-      WHERE RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
+     AND tbl_admission.RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
       ';
     }
     
