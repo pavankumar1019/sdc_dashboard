@@ -209,7 +209,7 @@
                         <div class="col-xl-12 col-md-12">
                             <div class="card Recent-Users">
                                 <div class="card-header">
-                                    <h5>Result Data</h5>
+                                    <h5>Consolidate Data</h5>
                                 </div>
                                 <div class="card-block px-0 py-3">
                                     <div class="table-responsive" id="dynamic_content">
