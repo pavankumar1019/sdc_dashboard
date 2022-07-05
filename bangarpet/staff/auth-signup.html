@@ -91,6 +91,12 @@
 $(document).ready(function(){
     $('#submit').on('click', function() {
         console.log("test");
+        if( ($('#branch').val()!="")||($('#name').val()!="") ||($('#phone').val()!="") ||($('#photo').val()!="")){
+
+        }
+        else{
+            alert('please fill all the feilds');
+        }
     var file_data = $('#photo').prop('files')[0];   
     var form_data = new FormData();
     var ext = $(this).val().split('.').pop().toLowerCase();
