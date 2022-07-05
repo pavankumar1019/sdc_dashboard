@@ -66,40 +66,11 @@
                         <a  href="./dashboard.php?page=home" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
-                        <label>student</label>
+                        <label>OPERATIONS</label>
                     </li>
-                    <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users "></i></span><span class="pcoded-mtext">Student</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="./dashboard.php?page=markscard" class="">Marks Card Print</a></li>
-                            <?php
-                               if($_SESSION['branch_staff']==1){
-                         ?>
-                          <li class=""><a href="./dashboard.php?page=tcgenerator" class="">TC - Genrator</a></li>
-                         <?php
-                             }
-                            //  if($_SESSION['branch_staff']==2){
-                             
-                            //  }
-                            ?>
-                           
-                            <li class=""><a href="#" class="">ID- Genrator</a></li>
-                            <li class=""><a href="./dashboard.php?page=downloads" class="">Downloads</a></li>
-                            <li class=""><a href="./dashboard.php?page=smsattendiees" class="">SMS Attendies</a></li>
-                            <li class=""><a href="./dashboard.php?page=studentdb" class="">Student DB</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>STAFF</label>
-                    </li>
-                    <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users"></i></span><span class="pcoded-mtext">Staff</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="#" class="">Enroll Staff</a></li>
-                            <li class=""><a href="#" class="">Reports</a></li>
-                            <li class=""><a href="#" class="">Downloads</a></li>
-                        </ul>
-                    </li>
+                    <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">About</span></a></li>
+           
+                 
                   
                     <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">About</span></a></li>
                     <!-- <li data-username="Disabled Menu" class="nav-item disabled"><a href="javascript:" class="nav-link"><span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Disabled menu</span></a></li> -->
