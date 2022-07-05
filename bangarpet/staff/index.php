@@ -98,7 +98,7 @@ if(isset($_SESSION["name"]))
               Continue
             </button>
             <p class="mb-2 text-muted">
-              Forgot password? <a href="auth-reset-password.html">Reset</a>
+              Not Enrolled? <a href="auth-reset-password.html">Click Here</a>
             </p>
           </div>
         </div>
