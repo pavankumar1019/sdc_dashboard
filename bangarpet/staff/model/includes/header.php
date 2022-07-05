@@ -43,7 +43,7 @@
             <div class="navbar-brand header-logo">
                 <a  href="./dashboard.php?page=home" class="b-brand">
                     
-                       <img src="<?php echo $_SESSION['profile_staff']?>" width="10" alt="" srcset="">
+                       <img src="<?php echo $_SESSION['profile_staff']?>" width="20px" alt="" srcset="">
                     
                     <span class="b-title">SDC-<?php 
                              if($_SESSION['branch_staff']==1){
