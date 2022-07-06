@@ -128,8 +128,8 @@ $id=($row['id']+1);
                                                             Schedule Caste or Schedule Tribe</label>
                                                         <select class="form-control" name="t10" id="t10" required>
                                                             <option value="" selected>--Choose Yes / No--</option>
-                                                            <option>Yes</option>
-                                                            <option>No</option>
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
 
                                                         </select>
                                                     </div>
@@ -139,9 +139,9 @@ $id=($row['id']+1);
                                                         <label for="exampleInputEmail1">Whether qualified for promotion
                                                             to the next standard
                                                         </label>
-                                                        <select class="form-control" name="t11" id="exampleFormControlSelect1" required>
-                                                            <option>Qualified</option>
-                                                            <option>Not Qualified</option>
+                                                        <select class="form-control" name="t11" id="t11" required>
+                                                            <option value="Qualified">Qualified</option>
+                                                            <option value="Not Qualified">Not Qualified</option>
 
                                                         </select>
                                                     </div>
@@ -151,9 +151,9 @@ $id=($row['id']+1);
                                                         <label for="exampleInputEmail1"> Standard in which the student
                                                             was studying at time of leaving the college
                                                         </label>
-                                                        <select class="form-control" name="t12" id="exampleFormControlSelect1" required>
-                                                            <option>2nd PUC</option>
-                                                            <option>1st PUC</option>
+                                                        <select class="form-control" name="t12" id="t12" required>
+                                                            <option value="2nd PUC">2nd PUC</option>
+                                                            <option value="1st PUC">1st PUC</option>
 
                                                         </select>
                                                     </div>
@@ -162,11 +162,11 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">1st language
                                                         </label>
-                                                        <select class="form-control" name="t13" id="exampleFormControlSelect1" required>
-                                                            <option>KANNADA</option>
-                                                            <option>HINDI</option>
-                                                            <option>URDU</option>
-                                                            <option>SANSKRIT</option>
+                                                        <select class="form-control" name="t13" id="t13" required>
+                                                            <option value="KANNADA">KANNADA</option>
+                                                            <option value="HINDI">HINDI</option>
+                                                            <option value="URDU">URDU</option>
+                                                            <option value="SANSKRIT">SANSKRIT</option>
 
                                                         </select>
                                                     </div>
@@ -188,14 +188,14 @@ $id=($row['id']+1);
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of Student’s last attendance at college</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t15"
                                                             aria-describedby="emailHelp" name="t15" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date of Admission or promotion to next class or standard</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t16"
                                                             aria-describedby="emailHelp" name="t16" placeholder="">
                                                     </div>
                                                 </div>
@@ -255,15 +255,15 @@ $id=($row['id']+1);
      <p class="text-muted" style="font-size:20px;">Name of Father : <span id="vt8" class="text-muted" style="font-weight:bold;"></span></p>
      <p class="text-muted" style="font-size:20px;">Name Of Mother : <span id="vt9" class="text-muted" style="font-weight:bold;"></span></p>
      <p class="text-muted" style="font-size:20px;">Whether the candidate belongs to Schedule Caste or Schedule Tribe : <span id="vt10" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Whether qualified for promotion to the next standard: <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Standard in which the student was studying at time of leaving the college : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">1st language : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">COMBINATION : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Date of Student’s last attendance at college : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Date of Admission or promotion to next class or standard : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Date on which the application for the transfer certificate was recived : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Number of college working days upto the date of leaving the college <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Total number of days student attended <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Whether qualified for promotion to the next standard: <span id="vt11" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Standard in which the student was studying at time of leaving the college : <span id="vt12" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">1st language : <span id="vt13" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">COMBINATION : <span id="vt14" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Date of Student’s last attendance at college : <span id="vt15" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Date of Admission or promotion to next class or standard : <span id="vt16" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Date on which the application for the transfer certificate was recived : <span id="vt17" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Number of college working days upto the date of leaving the college <span id="vt18" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Total number of days student attended <span id="vt19" class="text-muted" style="font-weight:bold;"></span></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
