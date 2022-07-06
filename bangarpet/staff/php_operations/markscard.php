@@ -297,7 +297,7 @@ if($_POST['type']=="add"){
          );
          $table_columns= implode(',', array_keys($insert_data));
          $table_data= implode("', '", $insert_data);
-       $sql = "INSERT INTO ".$sdc_marks_card." ($table_columns) VALUES ('$table_data') "; 
+       $sql = "INSERT INTO class_test_marks_bpet ($table_columns) VALUES ('$table_data') "; 
        $conn->query($sql);
     $error=true;
         
@@ -373,7 +373,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE ".$sdc_marks_card." SET ".$query." WHERE reg_no='".$_POST['id']."'";  
+  $sql ="UPDATE class_test_marks_bpet SET ".$query." WHERE reg_no='".$_POST['id']."'";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {
