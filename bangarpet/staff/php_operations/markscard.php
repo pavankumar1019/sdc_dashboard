@@ -27,7 +27,7 @@ if($_POST['type']=="loaddata"){
     
     $query = "SELECT tbl_admission.StudentName
     FROM tbl_admission
-    INNER JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll AND tbl_admission.Class=".$_SESSION['class_id']."
+    LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll  WHERE tbl_admission.Class=".$_SESSION['class_id']." 
     ";
     
     if($_POST['query'] != '')
