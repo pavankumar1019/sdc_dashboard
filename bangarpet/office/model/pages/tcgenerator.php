@@ -55,8 +55,8 @@ $id=($row['id']+1);
 
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Admission No</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" name="t1" placeholder="" required>
+                                                        <input type="text" class="form-control" id="t1"
+                                                            aria-describedby="emailHelp" name="t1"  placeholder="" required>
                                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never
                                                             share your email with anyone else.</small> -->
                                                     </div>

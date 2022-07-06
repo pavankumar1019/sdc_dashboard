@@ -11,6 +11,5 @@
 $('#viewdata').on('click',  function(e){
     e.preventDefault();
     $('#exampleModalCenter').modal('show');
-    var t1 = $("#t1").val();
-    $('#vadmission').html(t1);
+    $('#vadmission').html($('#t1').val());
 })
