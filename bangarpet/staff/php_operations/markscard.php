@@ -33,7 +33,8 @@ if($_POST['type']=="loaddata"){
     if($_POST['query'] != '')
     {
       $query .= '
-     AND tbl_admission.RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
+     AND tbl_admission.RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR 
+     tbl_admission.StudentName LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  
       ';
     }
     
