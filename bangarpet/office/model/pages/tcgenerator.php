@@ -1,3 +1,15 @@
+<?php
+include('./db_bpet_sdc/db.php');
+
+$sql = "SELECT id FROM tc ORDER BY id DESC LIMIT 1";
+
+$result=mysqli_query($conn, $sql);
+ foreach($result as $row){
+$id=($row['id']+1);
+
+ }
+
+?>
 <div class="pcoded-main-container">
     <div class="pcoded-wrapper">
         <div class="pcoded-content">
@@ -28,18 +40,9 @@
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
-<h5><?php
-require_once('./db_bpet_sdc/db.php');
-
-$sql = "SELECT id FROM tc ORDER BY id DESC LIMIT 1";
-
-$result=mysqli_query($conn, $sql);
- foreach($result as $row){
-$id=($row['id']+1);
-echo "No.".$id;
- }
-
-?></h5>
+<h5>
+    <?php  echo "No.".$id; ?>
+</h5>
                                     </div>
                                     <div class="card-body">
                                         <h5>Fill the Form</h5>
