@@ -283,22 +283,14 @@ if($_POST['type']=="getcount"){
 if($_POST['type']=="add"){
 
     $insert_data = array(
-        "sats_no"=>$_POST['sats_no'],
-        "student_no"=>$_POST['student_no'],
-        "reg_no"=>$_POST['reg_no'],
-         "student_name"=>$_POST['name'],
-         "father_name"=>$_POST['father_name'],
-         "mother_name"=>$_POST['mother_name'],
-         "langcode"=>$_POST['lang1'],
+         "roll"=>$_POST['reg_no'],
          "l1"=>$_POST['l1'],
          "l2"=>$_POST['l2'],
          "s1"=>$_POST['s1'],
          "s2"=>$_POST['s2'],
          "s3"=>$_POST['s3'],
          "s4"=>$_POST['s4'],
-         "gt"=>$_POST['gt'],
-         "class_code"=>$_POST['combination_opted'],
-         "year_of_passing"=>$_POST['year_of_passing'],
+         "total"=>$_POST['gt'],
          );
          $table_columns= implode(',', array_keys($insert_data));
          $table_data= implode("', '", $insert_data);
