@@ -66,11 +66,11 @@ if($_POST['type']=="loaddata"){
       {
          if($row['l1']!="" && $row['l2']!="" && $row['s1']!="" && $row['s2']!="" && $row['s3']!="" && $row['s4']!=""){
           $status= '<span style="color:blue;">APPROVED</span>' ;
-          $function='  <a class="label theme-bg text-white f-12" data-id='.$row['RollNo'].' id="add" style="cursor: pointer;">UPDATE</a>';
+          $function='  <a class="label theme-bg text-white f-12" data-id='.$row['RollNo'].' id="edit" style="cursor: pointer;">UPDATE</a>';
 
             }else{
               $status= '<span style="color:red;">PENDING</span>' ;
-              $function='  <a class="label theme-bg2 text-white f-12" data-id='.$row['RollNo'].' id="edit" style="cursor: pointer;">ADD MARKS</a>';
+              $function='  <a class="label theme-bg2 text-white f-12" data-id='.$row['RollNo'].' id="add" style="cursor: pointer;">ADD MARKS</a>';
 
             }
         
