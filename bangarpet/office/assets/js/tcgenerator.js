@@ -24,7 +24,22 @@ $('#viewdata').on('click',  function(e){
     $('#vt11').html($('#t11').val());
     $('#vt12').html($('#t12').val());
     $('#vt13').html($('#t13').val());
-    $('#vt14').html($('#t14').val());
+    if($('#t14').val()==1){
+var comb="PCMB"
+    }
+    if($('#t14').val()==2){
+var comb="PCMCS"
+    }
+    if($('#t14').val()==3){
+var comb="EBACS"
+    }
+    if($('#t14').val()==4){
+var comb="EBAS"
+    }
+    if($('#t14').val()==5){
+var comb="ABMS"
+    }
+    $('#vt14').html(comb);
     $('#vt15').html($('#t15').val());
     $('#vt16').html($('#t16').val());
     $('#vt17').html($('#t17').val());
