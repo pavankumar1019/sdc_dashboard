@@ -66,6 +66,8 @@ if($_POST['type']=="loaddata"){
       {
          if($row['l1']!="" && $row['l2']!="" && $row['s1']!="" && $row['s2']!="" && $row['s3']!="" && $row['s4']!=""){
              $status= '<span style="color:red;">PENDING</span>' ;
+            }else{
+              $status= '<span style="color:blue;">APPROVED</span>' ;
             }
         
             // if($row['class_code']==5){
@@ -124,7 +126,7 @@ if($_POST['type']=="loaddata"){
                                                     
                                                     </td>
                                                     <td>
-                                                  <p class="text-muted">APPROVED</p>
+                                                  <p class="text-muted">'.$status.'</p>
                                                     </td>
                                                     <td><a 
                                                             class="label theme-bg2 text-white f-12" data-id='.$row['RollNo'].' id="print" style="cursor: pointer;">ADD MARKS</a><a
