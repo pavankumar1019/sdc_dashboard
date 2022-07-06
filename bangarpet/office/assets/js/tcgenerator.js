@@ -7,5 +7,5 @@
 //   };
 
 $( "#exampleModalCenter" ).on('shown', function(){
-    alert("I want this to appear after the modal has opened!");
+  $('#v_admission').html($('#t1').val());
 });
