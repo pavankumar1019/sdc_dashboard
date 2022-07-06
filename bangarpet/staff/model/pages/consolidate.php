@@ -17,15 +17,7 @@
                             <div class="modal-body">
                                 <form method="post" id="markscardform">
                                     <div class="form-row">
-                                        <div class="form-group col-md-4">
-                                        <label for="numberonly">SATS No.</label>
-                                        <input type="text" class="form-control p-lg-2" id="sats_no" name="sats_no" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
-
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">STUDENT No.</label>
-                                            <input type="text" class="form-control" id="student_no" name="student_no" placeholder="" required>
-                                        </div>
+                                        
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">REG No.</label>
                                             <input type="text" class="form-control" id="reg_no" name="reg_no" placeholder="" required>
@@ -42,28 +34,8 @@
                                             <label for="inputPassword4">MOTHER NAME</label>
                                             <input type="text" class="form-control" id="mother_name" name="mother_name" placeholder="" required>
                                         </div>
-                                        <div class="form-group col-lg-4">
-                                            <label for="inputPassword4">COMBINATION</label>
-                                            <select id="combination_opted" name="combination_opted" class="form-control" required>
-                                            <option value="">-select one-</option> 
-                                                                <option value="5">PCMB</option>
-                    <option value="4">PCMCs</option>
-                    <option value="3">EBAS</option>
-                    <option value="2">EBACs</option>
-                    <option value="1">BASM</option>
-                </select>
-                                        </div>
-                                        <div class="form-group col-lg-4 ">
-                                            <label for="inputPassword4">1ST LANGUAGE</label>
-                                            <select class="form-control dropdown" id="lang1" name="lang1" required>
-                                            <option value="">-select one-</option>  
-    <option value="01">KANNADA</option>
-    <option value="03">HINDI</option>
-    <option value="08">URDU</option>
-    <option value="09">SANSKRIT</option>
- 
-  </select>
-                                        </div>
+                                    
+                                      
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">L1 MARKS</label>
                                         <input type="text" class="form-control p-lg-2" name="l1" id="l1" required>
@@ -99,11 +71,7 @@
                                         <input type="text" class="form-control p-lg-2" name="gt" id="gt"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
-                                        <div class="form-group col-md-4">
-                                        <label for="numberonly">YEAR OF PASSING</label>
-                                        <input type="text" class="form-control p-lg-2" name="year_of_passing" id="year_of_passing" required>
-
-                                        </div>
+                                    
                                         
                                         <hr>
                                         
