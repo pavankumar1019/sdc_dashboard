@@ -129,7 +129,7 @@ if($_POST['type']=="loaddata"){
                                                   <p class="text-muted">'.$status.'</p>
                                                     </td>
                                                     <td><a 
-                                                            class="label theme-bg2 text-white f-12" data-id='.$row['RollNo'].' id="edit" style="cursor: pointer;">ADD MARKS</a><a
+                                                    class="label theme-bg text-white f-12" data-id='.$row['RollNo'].' id="edit" style="cursor: pointer;">ADD MARKS</a>
 
                                                     </td>
                                                 </tr>
