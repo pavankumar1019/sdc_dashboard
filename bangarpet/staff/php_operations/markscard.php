@@ -25,7 +25,7 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "SELECT tbl_admission.StudentName
+    $query = "SELECT tbl_admission.StudentName,  tbl_admission.fathername, tbl_admission.mobile_no, tbl_admission.RollNo,
     FROM tbl_admission
     LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll  WHERE tbl_admission.Class=".$_SESSION['class_id']." 
     ";
@@ -83,12 +83,12 @@ if($_POST['type']=="loaddata"){
         $output .= '
         <tr class="unread">
                                                     <td>
-                                                    <h5 class="mb-1">'.$row['reg_no'].'</h5>
+                                                    <h5 class="mb-1">'.$row['RollNo'].'</h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">'.$_SESSION['class_id'].'</h6>
+                                                        <h6 class="mb-1">'.$_SESSION['StudentName'].'</h6>
                                                         <p class="m-0">'.$row['father_name'].'</p>
-                                                        <p class="m-0">'.$class.'</p>
+                                                        <p class="m-0">'.$row['mobile_no'].'</p>
                                                       
                                                     </td>
                                                     <td>
@@ -119,9 +119,12 @@ if($_POST['type']=="loaddata"){
                 
                                                     
                                                     </td>
+                                                    <td>
+                                                  <p class="text-muted"> PENDING </p>
+                                                    </td>
                                                     <td><a 
-                                                            class="label theme-bg2 text-white f-12" data-id='.$row['reg_no'].' id="print" style="cursor: pointer;">Print</a><a
-                                                            class="label theme-bg text-white f-12" data-id='.$row['reg_no'].' id="edit" style="cursor: pointer;">Edit</a>
+                                                            class="label theme-bg2 text-white f-12" data-id='.$row['RollNo'].' id="print" style="cursor: pointer;">ADD MARKS</a><a
+
                                                     </td>
                                                 </tr>
         ';
