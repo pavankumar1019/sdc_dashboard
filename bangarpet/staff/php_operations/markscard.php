@@ -341,7 +341,7 @@ if($_POST['type']=="edit"){
       "s2"=>$row['s2'],
       "s3"=>$row['s3'],
       "s4"=>$row['s4'],
-      "gt"=>$row['gt'],  
+      "gt"=>$row['total'],  
   ));
   }
 
