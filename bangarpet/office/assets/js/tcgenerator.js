@@ -5,3 +5,7 @@
 //         document.getElementById("tcform").submit();
 //       }
 //   };
+
+$( "#exampleModalCenter" ).on('shown', function(){
+    alert("I want this to appear after the modal has opened!");
+});
