@@ -94,22 +94,22 @@ if($_POST['type']=="loaddata"){
                                                     </td>
                                                     <td>
                                                         <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L1
+                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L1 :
                                                                 '.$row['l1'].'  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L2
+                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L2 :
                                                                 '.$row['l2'].' </h6>
                                                        
                                                         <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S1
+                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S1 :
                                                                 '.$row['s1'].'  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S2
+                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S2 :
                                                                 '.$row['s2'].' 
                                                         
                                                         </h6>
                                                         <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S3
+                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S3 :
                                                                 '.$row['s3'].'  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S4
+                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S4 :
                                                                 '.$row['s4'].' 
                                                         
                                                         </h6>
