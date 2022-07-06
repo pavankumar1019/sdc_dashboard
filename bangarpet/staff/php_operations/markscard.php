@@ -124,7 +124,7 @@ if($_POST['type']=="loaddata"){
                                                         </h6>
                                                         <h6 class="text-muted"><i
                                                                 class="fas fa-circle text-c-black f-10 m-r-15"></i>TOTAL : 
-                                                                '.$row['gt'].' 
+                                                                '.$row['total'].' 
                                                         </h6>
                 
                                                     
