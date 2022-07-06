@@ -250,6 +250,24 @@ $id=($row['id']+1);
       </div>
       <div class="modal-body">
      <p class="text-muted" style="font-size:20px;">Admission Number : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Name Of Student : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Gender : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">DOB : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Nationality : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Religion : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Caste : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Name of Father : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Name Of Mother : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Whether the candidate belongs to Schedule Caste or Schedule Tribe : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Whether qualified for promotion to the next standard: <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Standard in which the student was studying at time of leaving the college : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">1st language : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">COMBINATION : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Date of Student’s last attendance at college : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Date of Admission or promotion to next class or standard : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Date on which the application for the transfer certificate was recived : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Number of college working days upto the date of leaving the college <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Total number of days student attended <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
