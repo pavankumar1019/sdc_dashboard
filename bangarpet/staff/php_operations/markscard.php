@@ -350,7 +350,7 @@ if($_POST['type']=="edit"){
 if($_POST['type']=="update"){
 
   $insert_data = array(
-    "roll"=>$_POST['reg_no'],
+ 
     "l1"=>$_POST['l1'],
     "l2"=>$_POST['l2'],
     "s1"=>$_POST['s1'],
