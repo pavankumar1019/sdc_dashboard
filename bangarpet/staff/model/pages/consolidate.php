@@ -20,7 +20,7 @@
                                         
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">REG No.</label>
-                                            <input type="text" class="form-control" id="reg_no" name="reg_no" placeholder="" disabled required>
+                                            <input type="text" class="form-control" id="reg_no" name="reg_no" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">NAME</label>
