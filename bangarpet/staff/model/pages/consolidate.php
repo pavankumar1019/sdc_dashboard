@@ -30,10 +30,7 @@
                                             <label for="inputPassword4">FATHER NAME</label>
                                             <input type="text" class="form-control" id="father_name" name="father_name" placeholder="" required>
                                         </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">MOTHER NAME</label>
-                                            <input type="text" class="form-control" id="mother_name" name="mother_name" placeholder="" required>
-                                        </div>
+                                   
                                     
                                       
                                         <div class="form-group col-md-2">
