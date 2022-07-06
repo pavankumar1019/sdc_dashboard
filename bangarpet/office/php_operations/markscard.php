@@ -32,7 +32,8 @@ if($_POST['type']=="loaddata"){
     if($_POST['query'] != '')
     {
       $query .= '
-      WHERE student_name LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
+      WHERE student_name LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" OR
+      reg_no LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"
       ';
     }
     
