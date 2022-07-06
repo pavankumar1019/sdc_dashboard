@@ -20,15 +20,15 @@
                                         
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">REG No.</label>
-                                            <input type="text" class="form-control" id="reg_no" name="reg_no" placeholder="" required>
+                                            <input type="text" class="form-control" id="reg_no" name="reg_no" placeholder="" disabled required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">NAME</label>
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="" required>
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="" disabled required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">FATHER NAME</label>
-                                            <input type="text" class="form-control" id="father_name" name="father_name" placeholder="" required>
+                                            <input type="text" class="form-control" id="father_name" name="father_name" disabled placeholder="" required>
                                         </div>
                                    
                                     
