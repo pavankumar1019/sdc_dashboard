@@ -18,10 +18,10 @@
                                 <form method="post" id="markscardform">
                                     <div class="form-row">
                                         
-                                        <div class="form-group col-md-4">
-                                            <label for="inputPassword4">REG No.</label>
+                                      
+                                       
                                             <input type="hidden" class="form-control" id="reg_no" name="reg_no" placeholder="" required>
-                                        </div>
+                                       
                                         <div class="form-group col-md-4">
                                             <label for="inputPassword4">NAME</label>
                                             <input type="text" class="form-control" id="name" name="name" placeholder="" disabled required>
