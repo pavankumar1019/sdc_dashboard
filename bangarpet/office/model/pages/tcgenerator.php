@@ -203,21 +203,21 @@ $id=($row['id']+1);
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Date on which the application for the transfer certificate was recived</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t17"
                                                             aria-describedby="emailHelp" name="t17" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Number of college working days upto the date of leaving the college</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t18"
                                                             aria-describedby="emailHelp" name="t18" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Total number of days student attended</label>
-                                                        <input type="text" class="form-control" name="t19" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" name="t19" id="t19"
                                                             aria-describedby="emailHelp" placeholder="" required>
                                                             <input type="hidden" name="id" value="<?php echo $id;?>" required>
                                                     </div>
