@@ -70,7 +70,7 @@ if($_POST['type']=="loaddata"){
 
             }else{
               $status= '<span style="color:red;">PENDING</span>' ;
-              $function='  <a class="label theme-bg text-white f-12" data-id='.$row['RollNo'].' id="edit" style="cursor: pointer;">ADD MARKS</a>';
+              $function='  <a class="label theme-bg2 text-white f-12" data-id='.$row['RollNo'].' id="edit" style="cursor: pointer;">ADD MARKS</a>';
 
             }
         
