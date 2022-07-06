@@ -245,7 +245,7 @@ $id=($row['id']+1);
         </button>
       </div>
       <div class="modal-body">
-     <p class="text-muted" style="font-size:20px;">Admission Number : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Admission Number : <span id="vadmission" class="text-muted" style="font-weight:bold; color:blue;"></span></p>
      <p class="text-muted" style="font-size:20px;">Name Of Student : <span id="vt2" class="text-muted" style="font-weight:bold;"></span></p>
      <p class="text-muted" style="font-size:20px;">Gender : <span id="vt4" class="text-muted" style="font-weight:bold;"></span></p>
      <p class="text-muted" style="font-size:20px;">DOB : <span id="vt20" class="text-muted" style="font-weight:bold;"></span></p>
