@@ -249,7 +249,7 @@ $id=($row['id']+1);
         </button>
       </div>
       <div class="modal-body">
-     <p>Admission Number : <span id="vadmission"></span></p>
+     <p class="text-muted" style="font-size:30px;">Admission Number : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
