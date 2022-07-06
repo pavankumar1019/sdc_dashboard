@@ -57,7 +57,7 @@ $id=($row['id']+1);
                                                         <label for="exampleInputEmail1">Admission No</label>
                                                         <input type="text" class="form-control" id="t1"
                                                             aria-describedby="emailHelp" name="t1"  placeholder="" required>
-                                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never
+                                                        <!-- <small id="emailHelp" class="form-text text-primary">We'll never
                                                             share your email with anyone else.</small> -->
                                                     </div>
 
@@ -245,25 +245,25 @@ $id=($row['id']+1);
         </button>
       </div>
       <div class="modal-body">
-     <p class="text-muted" style="font-size:20px;">Admission Number : <span id="vadmission" class="text-muted" style="font-weight:bold; color:blue;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Name Of Student : <span id="vt2" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Gender : <span id="vt4" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">DOB : <span id="vt20" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Nationality : <span id="vt5" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Religion : <span id="vt6" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Caste : <span id="vt7" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Name of Father : <span id="vt8" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Name Of Mother : <span id="vt9" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Whether the candidate belongs to Schedule Caste or Schedule Tribe : <span id="vt10" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Whether qualified for promotion to the next standard: <span id="vt11" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Standard in which the student was studying at time of leaving the college : <span id="vt12" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">1st language : <span id="vt13" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">COMBINATION : <span id="vt14" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Date of Student’s last attendance at college : <span id="vt15" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Date of Admission or promotion to next class or standard : <span id="vt16" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Date on which the application for the transfer certificate was recived : <span id="vt17" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Number of college working days upto the date of leaving the college <span id="vt18" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Total number of days student attended <span id="vt19" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Admission Number : <span id="vadmission" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Name Of Student : <span id="vt2" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Gender : <span id="vt4" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">DOB : <span id="vt20" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Nationality : <span id="vt5" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Religion : <span id="vt6" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Caste : <span id="vt7" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Name of Father : <span id="vt8" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Name Of Mother : <span id="vt9" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Whether the candidate belongs to Schedule Caste or Schedule Tribe : <span id="vt10" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Whether qualified for promotion to the next standard: <span id="vt11" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Standard in which the student was studying at time of leaving the college : <span id="vt12" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">1st language : <span id="vt13" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">COMBINATION : <span id="vt14" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Date of Student’s last attendance at college : <span id="vt15" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Date of Admission or promotion to next class or standard : <span id="vt16" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Date on which the application for the transfer certificate was recived : <span id="vt17" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Number of college working days upto the date of leaving the college <span id="vt18" class="text-primary" style="font-weight:bold;"></span></p>
+     <p class="text-primary" style="font-size:20px;">Total number of days student attended <span id="vt19" class="text-primary" style="font-weight:bold;"></span></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
