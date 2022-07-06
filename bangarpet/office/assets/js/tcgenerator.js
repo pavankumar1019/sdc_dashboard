@@ -12,4 +12,5 @@ $('#viewdata').on('click',  function(e){
     e.preventDefault();
     $('#exampleModalCenter').modal('show');
     $('#vadmission').html($('#t1').val());
+    $('#vt10').html($('#t10').val());
 })

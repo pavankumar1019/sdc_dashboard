@@ -65,18 +65,14 @@ $id=($row['id']+1);
                                                 </div>
                                                 <div class="col-md-8">
                                                     <label for="exampleInputEmail1">Name Of Student</label>
-                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                    <input type="text" class="form-control" id="t2"
                                                         aria-describedby="emailHelp" name="t2" placeholder="" required>
                                                 </div>
-                                                <div class="col-md-8">
-                                                    <label for="exampleInputEmail1">Place of Birth</label>
-                                                    <input type="text" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp" name="t3" placeholder="" required>
-                                                </div>
+                                             
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleFormControlSelect1">Gender</label>
-                                                        <select class="form-control" name="t4" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t4" id="t4" required>
                                                             <option value="" selected>--Choose Gender--</option>
                                                             <option>Male</option>
                                                             <option>Female</option>
@@ -87,42 +83,42 @@ $id=($row['id']+1);
                                                 <div class="col-md-2">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">DOB</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t20"
                                                             aria-describedby="emailHelp" name="t20" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-2">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Nationality</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t5"
                                                             aria-describedby="emailHelp" name="t5" placeholder="" value="Indian" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Religion</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t6"
                                                             aria-describedby="emailHelp" name="t6" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Caste</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t7"
                                                             aria-describedby="emailHelp" name="t7" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Name of Father</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t8"
                                                             aria-describedby="emailHelp" name="t8" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Name Of Mother</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        <input type="text" class="form-control" id="t9"
                                                             aria-describedby="emailHelp" name="t9" placeholder="" required>
                                                     </div>
                                                 </div>
@@ -130,7 +126,7 @@ $id=($row['id']+1);
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Whether the candidate belongs to
                                                             Schedule Caste or Schedule Tribe</label>
-                                                        <select class="form-control" name="t10" id="exampleFormControlSelect1" required>
+                                                        <select class="form-control" name="t10" id="t10" required>
                                                             <option value="" selected>--Choose Yes / No--</option>
                                                             <option>Yes</option>
                                                             <option>No</option>
@@ -250,15 +246,15 @@ $id=($row['id']+1);
       </div>
       <div class="modal-body">
      <p class="text-muted" style="font-size:20px;">Admission Number : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Name Of Student : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Gender : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">DOB : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Nationality : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Religion : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Caste : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Name of Father : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Name Of Mother : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
-     <p class="text-muted" style="font-size:20px;">Whether the candidate belongs to Schedule Caste or Schedule Tribe : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Name Of Student : <span id="vt2" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Gender : <span id="vt4" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">DOB : <span id="vt20" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Nationality : <span id="vt5" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Religion : <span id="vt6" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Caste : <span id="vt7" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Name of Father : <span id="vt8" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Name Of Mother : <span id="vt9" class="text-muted" style="font-weight:bold;"></span></p>
+     <p class="text-muted" style="font-size:20px;">Whether the candidate belongs to Schedule Caste or Schedule Tribe : <span id="vt10" class="text-muted" style="font-weight:bold;"></span></p>
      <p class="text-muted" style="font-size:20px;">Whether qualified for promotion to the next standard: <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
      <p class="text-muted" style="font-size:20px;">Standard in which the student was studying at time of leaving the college : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
      <p class="text-muted" style="font-size:20px;">1st language : <span id="vadmission" class="text-muted" style="font-weight:bold;"></span></p>
