@@ -169,7 +169,14 @@
                                         <input type="text" class="form-control" id="search_box" placeholder="Search..">
 
                                     </div>
+<p>
+    PCMB [ s1 = P , s2 = C , s3 = M , s4 = B] <br>
+    PCMCS [ s1 = P , s2 = C , s3 = M , s4 = CS] <br>
+    EBACS [ s1 = E , s2 = B , s3 = A , s4 = CS] <br>
+    EBAS [ s1 = E , s2 = B , s3 = A , s4 = S] <br>
+    BASM [ s1 = B , s2 = A , s3 = S , s4 = M] <br>
 
+</p>
                                 </div>
                             </div>
                         </div>
