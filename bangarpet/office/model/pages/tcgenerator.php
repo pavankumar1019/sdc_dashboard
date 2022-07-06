@@ -233,7 +233,7 @@ $id=($row['id']+1);
                    
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <button type="button" class="btn btn-primary" id="viewdata">
  View TC
 </button>                                                </div>                             <!-- Button trigger modal -->
 
@@ -249,7 +249,7 @@ $id=($row['id']+1);
         </button>
       </div>
       <div class="modal-body">
-     <p>Admission Number : <span id="v_admission"></span></p>
+     <p>Admission Number : <span id="vadmission"></span></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
