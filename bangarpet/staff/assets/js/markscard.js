@@ -82,6 +82,44 @@ function countdata()
 
 
 
+          // add marks card
+          $(document).on('click', '#add', function(){
+            var id = $(this).attr('data-id');
+            var type = 'edit';
+            $.ajax({
+              url:"./php_operations/markscard.php",
+              method:"POST",
+              data:{id:id, type:type},
+              dataType:"json",
+              success:function(data)
+              {
+                $("#newadmissionmodal").modal('show');
+
+                $('#type').val('add');
+    
+                $('#sats_no').val(data.sats_no);
+                $('#student_no').val(data.student_no);
+                $('#reg_no').val(data.reg_no);
+                $('#name').val(data.name);
+                $('#father_name').val(data.father_name);
+                $('#mother_name').val(data.mother_name);
+
+             
+     
+                $('#l1').val(data.l1);
+                $('#l2').val(data.l2);
+                $('#s1').val(data.s1);
+                $('#s2').val(data.s2);
+                $('#s3').val(data.s3);
+                $('#s4').val(data.s4);
+                $('#gt').val(data.gt);
+                $('#year_of_passing').val(data.year_of_passing);
+                $('#id').val(data.reg_no);
+
+              }
+            });
+      
+          })
           // edit marks card
           $(document).on('click', '#edit', function(){
             var id = $(this).attr('data-id');
