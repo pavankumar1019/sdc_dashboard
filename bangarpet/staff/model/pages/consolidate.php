@@ -161,7 +161,9 @@
                         <div class="col-md-12 col-xl-12 ">
                             <div class="card daily-sales">
                                 <div class="card-block">
-                                    <h6 class="mb-4">Query</h6>
+                                    <h2 class="mb-4" id="blink">                   
+       Term Test -1
+ </h2>
                                     <div class="form-group">
                                         <label for="search">Search Here !</label>
                                         <input type="text" class="form-control" id="search_box" placeholder="Search..">
@@ -174,10 +176,7 @@
                         <div class="col-xl-12 col-md-12">
                             <div class="card Recent-Users">
                                 <div class="card-header">
-                                <p id="blink">
-       Term Test -1
-    </p>
-
+                                    <h5>Consolidate Data - Term Test-1</h5>
                                 </div>
                                 <div class="card-block px-0 py-3">
                                     <div class="table-responsive" id="dynamic_content">
