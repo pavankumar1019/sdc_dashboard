@@ -373,7 +373,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE class_test_marks_bpet SET ".$query." WHERE reg_no='".$_POST['id']."'";  
+  $sql ="UPDATE class_test_marks_bpet SET ".$query." WHERE roll='".$_POST['id']."'";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {
