@@ -318,32 +318,30 @@ if($_POST['type']=="add"){
 }
 
 if($_POST['type']=="edit"){
-  $query = '
-  SELECT * FROM '.$sdc_marks_card.' WHERE reg_no="'.$_POST['id'].'"
-  ';
+  $query = 
+  "SELECT tbl_admission.StudentName,  tbl_admission.father_name, tbl_admission.mobile_no, tbl_admission.RollNo, class_test_marks_bpet.l1, class_test_marks_bpet.l2,  class_test_marks_bpet.s1, class_test_marks_bpet.s2,  class_test_marks_bpet.s3,  class_test_marks_bpet.s4,  class_test_marks_bpet.total
+    FROM tbl_admission
+    LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll  WHERE tbl_admission.Class=".$_SESSION['class_id']." 
+    "
+  ;
   $statement = $connect->prepare($query);
   $statement->execute();
   $result = $statement->fetchAll();
 
   foreach($result as $row){
     echo json_encode(array(
-      "sats_no"=>$row['sats_no'],
-      "student_no"=>$row['student_no'],
-      "reg_no"=>$row['reg_no'],
-      "name"=>$row['student_name'],
+  
+     
+      "reg_no"=>$row['RollNo'],
+      "name"=>$row['StudentName'],
       "father_name"=>$row['father_name'],
-      "mother_name"=>$row['mother_name'],
-      "combination_opted"=>$row['class_code'],
-      "lang1"=>$row['lang1'],
       "l1"=>$row['l1'],
       "l2"=>$row['l2'],
       "s1"=>$row['s1'],
       "s2"=>$row['s2'],
       "s3"=>$row['s3'],
       "s4"=>$row['s4'],
-      "gt"=>$row['gt'],
-      "year_of_passing"=>$row['year_of_passing']
-   
+      "gt"=>$row['gt'],  
   ));
   }
 
