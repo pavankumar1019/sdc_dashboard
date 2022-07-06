@@ -6,6 +6,6 @@
 //       }
 //   };
 
-$( "#exampleModalCenter" ).on('shown', function(){
+$( "#exampleModalCenter" ).on('show.bs.modal', function() {
   $('#v_admission').html($('#t1').val());
 });
