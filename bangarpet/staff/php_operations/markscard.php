@@ -65,9 +65,9 @@ if($_POST['type']=="loaddata"){
        foreach($result as $row)
       {
          if($row['l1']!="" || $row['l2']!="" || $row['s1']!="" || $row['s2']!="" || $row['s3']!="" || $row['s4']!=""){
-             $status= '<span style="color:red;">PENDING</span>' ;
+          $status= '<span style="color:blue;">APPROVED</span>' ;
             }else{
-              $status= '<span style="color:blue;">APPROVED</span>' ;
+              $status= '<span style="color:red;">PENDING</span>' ;
             }
         
             // if($row['class_code']==5){
