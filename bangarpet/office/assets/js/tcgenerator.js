@@ -22,6 +22,7 @@ $('#viewdata').on('click',  function(e){
     $('#vt8').html($('#t8').val());
     $('#vt9').html($('#t9').val());
     $('#vt11').html($('#t11').val());
+    $('#vt12').html($('#t12').val());
     $('#vt13').html($('#t13').val());
     $('#vt14').html($('#t14').val());
     $('#vt15').html($('#t15').val());
