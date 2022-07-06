@@ -33,10 +33,10 @@ var comb="PCMCS"
     if($('#t14').val()==3){
 var comb="EBACS"
     }
-    if($('#t14').val()==4){
+    if($('#t14').val()==7){
 var comb="EBAS"
     }
-    if($('#t14').val()==5){
+    if($('#t14').val()==8){
 var comb="ABMS"
     }
     $('#vt14').html(comb);
