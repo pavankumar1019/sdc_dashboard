@@ -37,14 +37,14 @@
                                          
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Photo</th>
+    <th>Detailes</th>
+    <th>Operations</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td><img src="" alt="" srcset=""></td>
+    <td>Pavan Kumar S</td>
+    <td><button class="btn bg-primary">Approve</button><button class="btn bg-danger">Update</button></td>
   </tr>
   <tr>
     <td>Centro comercial Moctezuma</td>
