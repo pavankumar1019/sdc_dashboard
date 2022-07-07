@@ -23,15 +23,8 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']."'";
-    
-    if($_POST['query'] != '')
-    {
-      $query .= '
-     AND name LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR 
-    phone_no LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  
-      ';
-    }
+    $query = "SELECT * FROM `staff` " 
+   
     
     $query .= 'ORDER BY id DSC ';
     
