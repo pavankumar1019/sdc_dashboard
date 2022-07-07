@@ -3,7 +3,8 @@ include '../db_bpet_sdc/db.php';
 if($_POST['type']=="loaddata"){
     function get_total_row($connect)
     {
-      $query = "SELECT * FROM staff WHERE branch='".$_SESSION['branch']."'";
+      $query = "SELECT * FROM staff WHERE branch='".$_SESSION['branch_staff']."'
+";
       $statement = $connect->prepare($query);
       $statement->execute();
       return $statement->rowCount();
@@ -23,7 +24,8 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "SELECT * FROM `staff` ";
+    $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']."'
+    ";
     
     if($_POST['query'] != '')
     {
