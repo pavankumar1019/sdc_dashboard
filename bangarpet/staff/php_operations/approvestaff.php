@@ -82,7 +82,7 @@ if($_POST['type']=="loaddata"){
         $output .= '
         <tr class="unread">
                                                     <td>
-                                                    <h5 class="mb-1">'.$row['name'].'</h5>
+                                                 <img src="'.$row['photo'].'" >
                                                     </td>
                                                     <td>
                                                         <h6 class="mb-1">'.$row['name'].'</h6>
