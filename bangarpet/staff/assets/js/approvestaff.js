@@ -13,7 +13,7 @@ $(document).ready(function(){
 function countdata()
 {
     $.ajax({
-        url:"./php_operations/markscard.php",
+        url:"./php_operations/approvestaff.php",
         method:"POST",
         data:{type: "getcount"},
         success:function(data)
@@ -30,7 +30,7 @@ function countdata()
     function load_data(page, query = '')
     {
       $.ajax({
-        url:"./php_operations/markscard.php",
+        url:"./php_operations/approvestaff.php",
         method:"POST",
         data:{page:page, query:query, type: "loaddata"},
         success:function(data)
@@ -69,7 +69,7 @@ function countdata()
   
             $.ajax({
               method:"POST",
-              url: './php_operations/markscard.php',
+              url: './php_operations/approvestaff.php',
               data: $('form').serialize(),
               success: function (result) {
                 alert(result);
@@ -87,7 +87,7 @@ function countdata()
             var id = $(this).attr('data-id');
             var type = 'edit';
             $.ajax({
-              url:"./php_operations/markscard.php",
+              url:"./php_operations/approvestaff.php",
               method:"POST",
               data:{id:id, type:type},
               dataType:"json",
@@ -125,7 +125,7 @@ function countdata()
             var id = $(this).attr('data-id');
             var type = 'edit';
             $.ajax({
-              url:"./php_operations/markscard.php",
+              url:"./php_operations/approvestaff.php",
               method:"POST",
               data:{id:id, type:type},
               dataType:"json",
