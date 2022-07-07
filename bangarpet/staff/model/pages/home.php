@@ -1,6 +1,23 @@
 <?php
                                                 include('./db_bpet_sdc/db.php');
-                                                $sql="SELECT * FROM ".$tbl_admission." WHERE `Class`='".$_SESSION['class_id']."'";
+
+                                             
+                if($_SESSION['role_staff']=="P"){
+                    $sql="SELECT * FROM ".$tbl_admission;
+                    $result=$conn->query($sql);
+                    $date=date("Y-m-d");
+
+                    $sql1="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='A'";
+                    $absentees=$conn->query($sql1);
+                  
+                    
+                    $sql2="SELECT * FROM `".$tbl_absentees."` WHERE `Date`='$date' AND `Status`='P' ";
+                    $present=$conn->query($sql2);
+
+                    $sql3="SELECT * FROM `user_office`";
+                    $usercontroll=$conn->query($sql3);
+                }else{
+                    $sql="SELECT * FROM ".$tbl_admission." WHERE `Class`='".$_SESSION['class_id']."'";
                                                 $result=$conn->query($sql);
                                                 $date=date("Y-m-d");
 
@@ -13,6 +30,9 @@
 
                                                 $sql3="SELECT * FROM `user_office`";
                                                 $usercontroll=$conn->query($sql3);
+                }
+
+                                                
 
 
 
