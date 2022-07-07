@@ -4,7 +4,7 @@ if($_POST['type']=="loaddata"){
     function get_total_row($connect)
     {
       $query = "
-      SELECT * FROM ".$sdc_marks_card."
+      SELECT * FROM staff WHERE branch='".$_SESSION['branch']."'
       ";
       $statement = $connect->prepare($query);
       $statement->execute();
@@ -62,15 +62,7 @@ if($_POST['type']=="loaddata"){
       
        foreach($result as $row)
       {
-         if($row['l1']!="" && $row['l2']!="" && $row['s1']!="" && $row['s2']!="" && $row['s3']!="" && $row['s4']!=""){
-          $status= '<span style="color:blue;">APPROVED</span>' ;
-          $function='  <a class="label theme-bg text-white f-12" data-id='.$row['RollNo'].' id="edit" style="cursor: pointer;">UPDATE</a>';
-
-            }else{
-              $status= '<span style="color:red;">PENDING</span>' ;
-              $function='  <a class="label theme-bg2 text-white f-12" data-id='.$row['RollNo'].' id="add" style="cursor: pointer;">ADD MARKS</a>';
-
-            }
+       
         
             // if($row['class_code']==5){
             //     $class="PCMB";
