@@ -18,7 +18,7 @@ if($_POST['type']=="loaddata"){
     $query = 'SELECT `name` FROM `staff` ' ;
    
     
-    $query .= 'ORDER BY id DSC ';
+    $query .= 'ORDER BY id  ';
     
     $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
