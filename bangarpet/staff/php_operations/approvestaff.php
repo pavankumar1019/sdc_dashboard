@@ -86,18 +86,16 @@ if($_POST['type']=="loaddata"){
                                                     </td>
                                                     <td>
                                                         <h3 class="mb-1">'.$row['name'].'</h3>
-                                                        <p class="m-0">'.$row['phone_no'].'</p>
+                                                       
                                                       
                                                       
                                                     </td>
                                                     <td>
-                                                    <p class="m-0">'.$row['name'].'</p>
+                                                    <p class="m-0">'.$row['phone_no'].'</p>
                 
                                                     
                                                     </td>
-                                                    <td>
-                                                  <p class="text-muted">'.$row['name'].'</p>
-                                                    </td>
+                                                
                                                     <td>
                                                     <a class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="edit" style="cursor: pointer;">Reject</a>
                                                     <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="edit" style="cursor: pointer;">Accept</a>
