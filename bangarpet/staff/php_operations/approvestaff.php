@@ -15,7 +15,7 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "SELECT `name` FROM `staff` " ;
+    $query = 'SELECT `name` FROM `staff` ' ;
    
     
     $query .= 'ORDER BY id DSC ';
