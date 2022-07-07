@@ -104,7 +104,7 @@ if($_POST['type']=="loaddata"){
       </td>
       <td><a href="#!"
               class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="edit">Edit</a><a
-              href="#!" class="label theme-bg text-white f-12" data-id='.$row['id'].'>Delete</a>
+              href="#!" class="label theme-bg text-white f-12" id="delete" data-id='.$row['id'].'>Delete</a>
       </td>
   </tr>
       ';
@@ -345,5 +345,18 @@ if($_POST['type']=="update"){
     echo "Error updating record: " . $conn->error;
   }
 
+}
+
+if($_POST['type']=="delete"){
+  $query = '
+  DELETE FROM '.$tbl_admission.' WHERE id="'.$_POST['id'].'"
+  ';
+  $statement = $connect->prepare($query);
+  $statement->execute();  
+  $query1 = '
+  DELETE FROM '.$tbl_absentees.' WHERE id="'.$_POST['id'].'"
+  ';
+  $statement1 = $connect->prepare($query1);
+  $statement1->execute();  
 }
 ?>
