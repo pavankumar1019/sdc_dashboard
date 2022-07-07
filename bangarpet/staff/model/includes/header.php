@@ -36,9 +36,9 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
-  overflow: scroll; /* Scrollbar are always visible */
-overflow: auto;   /* Scrollbar is displayed as it's needed */
+  width: 100% !important;
+  overflow: scroll !important; /* Scrollbar are always visible */
+overflow: auto !important;   /* Scrollbar is displayed as it's needed */
 }
 
 td, th {
