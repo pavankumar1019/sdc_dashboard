@@ -27,37 +27,6 @@
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-    <?php
-                if($_SESSION['role_staff']=="P"){
-                ?>
-                 <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100% !important;
-  overflow: scroll !important; /* Scrollbar are always visible */
-overflow: auto !important;   /* Scrollbar is displayed as it's needed */
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-                <?php
-                }
-                ?>
-   
-
-
-
 </head>
 
 <body>
