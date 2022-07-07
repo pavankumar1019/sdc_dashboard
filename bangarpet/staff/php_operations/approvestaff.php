@@ -1,7 +1,17 @@
 <?php
 include '../db_bpet_sdc/db.php';
 if($_POST['type']=="loaddata"){
- 
+    function get_total_row($connect)
+    {
+      $query = "
+      SELECT * FROM staff WHERE branch='".$_SESSION['branch']."'
+      ";
+      $statement = $connect->prepare($query);
+      $statement->execute();
+      return $statement->rowCount();
+    }
+    
+    $total_record = get_total_row($connect);
     
     $limit = '6';
     $page = 1;
@@ -15,10 +25,18 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = 'SELECT `name` FROM `staff` ' ;
-   
+    $query = " SELECT * FROM staff WHERE branch='".$_SESSION['branch']."'
+    ";
     
-    $query .= 'ORDER BY id  ';
+    if($_POST['query'] != '')
+    {
+      $query .= '
+     AND name LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR 
+    phone_no LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  
+      ';
+    }
+    
+    $query .= 'ORDER BY id DESC ';
     
     $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
@@ -82,8 +100,7 @@ if($_POST['type']=="loaddata"){
                                                   <p class="text-muted">'.$row['name'].'</p>
                                                     </td>
                                                     <td>
-                                                    <p class="text-muted">'.$row['name'].'</p>
-
+'.$function.'
                                                     </td>
                                                 </tr>
         ';
