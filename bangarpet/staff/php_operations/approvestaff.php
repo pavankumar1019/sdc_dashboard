@@ -83,47 +83,25 @@ if($_POST['type']=="loaddata"){
         $output .= '
         <tr class="unread">
                                                     <td>
-                                                    <h5 class="mb-1">'.$row['RollNo'].'</h5>
+                                                    <h5 class="mb-1">'.$row['name'].'</h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">'.$row['StudentName'].'</h6>
-                                                        <p class="m-0">'.$row['father_name'].'</p>
-                                                        <p class="m-0">'.$row['mobile_no'].'</p>
+                                                        <h6 class="mb-1">'.$row['name'].'</h6>
+                                                        <p class="m-0">'.$row['name'].'</p>
+                                                        <p class="m-0">'.$row['name'].'</p>
                                                       
                                                     </td>
                                                     <td>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L1 :
-                                                                '.$row['l1'].'  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-green f-10 m-r-15"></i>L2 :
-                                                                '.$row['l2'].' </h6>
-                                                       
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S1 :
-                                                                '.$row['s1'].'  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S2 :
-                                                                '.$row['s2'].' 
-                                                        
-                                                        </h6>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S3 :
-                                                                '.$row['s3'].'  &nbsp;&nbsp;&nbsp;<i
-                                                                class="fas fa-circle text-c-blue f-10 m-r-15"></i>S4 :
-                                                                '.$row['s4'].' 
-                                                        
-                                                        </h6>
-                                                        <h6 class="text-muted"><i
-                                                                class="fas fa-circle text-c-black f-10 m-r-15"></i>TOTAL : 
-                                                                '.$row['total'].' 
-                                                        </h6>
+                                                    <p class="m-0">'.$row['name'].'</p>
                 
                                                     
                                                     </td>
                                                     <td>
-                                                  <p class="text-muted">'.$status.'</p>
+                                                  <p class="text-muted">'.$row['name'].'</p>
                                                     </td>
                                                     <td>
-'.$function.'
+                                                    <p class="text-muted">'.$row['name'].'</p>
+
                                                     </td>
                                                 </tr>
         ';
