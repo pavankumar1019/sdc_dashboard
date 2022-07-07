@@ -1,15 +1,7 @@
 <?php
 include '../db_bpet_sdc/db.php';
 if($_POST['type']=="loaddata"){
-    function get_total_row($connect)
-    {
-      $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']."'";
-      $statement = $connect->prepare($query);
-      $statement->execute();
-      return $statement->rowCount();
-    }
-    
-    $total_record = get_total_row($connect);
+ 
     
     $limit = '6';
     $page = 1;
@@ -26,9 +18,9 @@ if($_POST['type']=="loaddata"){
     $query = "SELECT `name` FROM `staff` " ;
    
     
-    $query .= 'ORDER BY id DSC ';
+    // $query .= 'ORDER BY id DSC ';
     
-    $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
+    // $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
     $statement = $connect->prepare($query);
     $statement->execute();
