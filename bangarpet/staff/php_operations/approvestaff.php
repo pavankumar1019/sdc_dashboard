@@ -85,9 +85,9 @@ if($_POST['type']=="loaddata"){
                                                  <img src="'.$row['photo'].'" width="50">
                                                     </td>
                                                     <td>
-                                                        <h6 class="mb-1">'.$row['name'].'</h6>
-                                                        <p class="m-0">'.$row['name'].'</p>
-                                                        <p class="m-0">'.$row['name'].'</p>
+                                                        <h3 class="mb-1">'.$row['name'].'</h3>
+                                                        <p class="m-0">'.$row['phone_no'].'</p>
+                                                      
                                                       
                                                     </td>
                                                     <td>
