@@ -83,7 +83,7 @@ if(isset($_SESSION["name_staff"]))
             
                 id="role">
                 <option value="" selected>- Select Role -</option>
-         <option value="p">Principal</option>
+         <option value="P">Principal</option>
          <option value="ct">Class Teacher</option>
               </select>
                
