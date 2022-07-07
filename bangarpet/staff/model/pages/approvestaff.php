@@ -44,7 +44,7 @@
   <tr>
     <td><img src="" alt="" srcset=""></td>
     <td>Pavan Kumar S</td>
-    <td><button class="btn bg-primary">Approve</button><button class="btn bg-danger">Update</button></td>
+    <td><button class="btn bg-primary btn-sm">Approve</button><button class="btn bg-danger btn-sm">Update</button></td>
   </tr>
   <tr>
     <td>Centro comercial Moctezuma</td>
