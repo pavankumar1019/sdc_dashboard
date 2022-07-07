@@ -70,6 +70,12 @@
                     </li>
                     <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=consolidate" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Upload Consolidate</span></a></li>
            
+                <?php
+                if($_SESSION['role_staff']=="P"){
+                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=approvestaff" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Approve Satff</span></a></li>
+                    ';
+                }
+                ?>
                  
                   
                     <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">About</span></a></li>

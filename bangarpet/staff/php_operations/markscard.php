@@ -25,16 +25,16 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "SELECT tbl_admission.StudentName,  tbl_admission.father_name, tbl_admission.mobile_no, tbl_admission.RollNo, class_test_marks_bpet.l1, class_test_marks_bpet.l2,  class_test_marks_bpet.s1, class_test_marks_bpet.s2,  class_test_marks_bpet.s3,  class_test_marks_bpet.s4,  class_test_marks_bpet.total
-    FROM tbl_admission
-    LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll  WHERE tbl_admission.Class=".$_SESSION['class_id']." 
+    $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
+    FROM ".$tbl_admission."
+    LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll  WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']." 
     ";
     
     if($_POST['query'] != '')
     {
       $query .= '
-     AND tbl_admission.RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR 
-     tbl_admission.StudentName LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  
+     AND '.$tbl_admission.'.RollNo LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR 
+     '.$tbl_admission.'.StudentName LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  
       ';
     }
     
@@ -297,7 +297,7 @@ if($_POST['type']=="add"){
          );
          $table_columns= implode(',', array_keys($insert_data));
          $table_data= implode("', '", $insert_data);
-       $sql = "INSERT INTO class_test_marks_bpet ($table_columns) VALUES ('$table_data') "; 
+       $sql = "INSERT INTO ".$class_test_marks." ($table_columns) VALUES ('$table_data') "; 
        $conn->query($sql);
     $error=true;
         
@@ -314,9 +314,9 @@ if($_POST['type']=="add"){
 
 if($_POST['type']=="edit"){
   $query = 
-  'SELECT tbl_admission.StudentName,  tbl_admission.father_name, tbl_admission.mobile_no, tbl_admission.RollNo, class_test_marks_bpet.l1, class_test_marks_bpet.l2,  class_test_marks_bpet.s1, class_test_marks_bpet.s2,  class_test_marks_bpet.s3,  class_test_marks_bpet.s4,  class_test_marks_bpet.total
-    FROM tbl_admission
-    LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.roll  WHERE tbl_admission.Class='.$_SESSION['class_id'].' AND tbl_admission.RollNo="'.$_POST['id'].'"
+  'SELECT '.$tbl_admission.'.StudentName,  '.$tbl_admission.'.father_name, '.$tbl_admission.'.mobile_no, '.$tbl_admission.'.RollNo, '.$class_test_marks.'.l1, '.$class_test_marks.'.l2,  '.$class_test_marks.'.s1, '.$class_test_marks.'.s2,  '.$class_test_marks.'.s3,  '.$class_test_marks.'.s4,  '.$class_test_marks.'.total
+    FROM '.$tbl_admission.'
+    LEFT JOIN '.$class_test_marks.' ON '.$tbl_admission.'.RollNo = '.$class_test_marks.'.roll  WHERE '.$tbl_admission.'.Class='.$_SESSION['class_id'].' AND '.$tbl_admission.'.RollNo="'.$_POST['id'].'"
     '
   ;
   $statement = $connect->prepare($query);
@@ -373,7 +373,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE class_test_marks_bpet SET ".$query." WHERE roll='".$_POST['id']."'";  
+  $sql ="UPDATE ".$class_test_marks." SET ".$query." WHERE roll='".$_POST['id']."'";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {

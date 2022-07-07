@@ -16,7 +16,7 @@ $connect = new PDO("mysql:host=localhost; dbname=u430139865_sdc", "u430139865_sd
 
 if($_SESSION['branch_staff']==1){
   // bangarpet branch tabels
-  $sdc_marks_card="sdc_marks_card_bpet"; 
+  $class_test_marks="class_test_marks_bpet"; 
 
   $tbl_absentees="tbl_absentees";
   $tbl_admission="tbl_admission";
@@ -25,7 +25,7 @@ if($_SESSION['branch_staff']==1){
 }
 if($_SESSION['branch_staff']==2){
 // kgf branch tabels
-$sdc_marks_card="sdc_marks_card_kgf"; 
+$class_test_marks="class_test_marks_kgf"; 
 
 $tbl_absentees="tbl_absentees_kgf";
 $tbl_admission="tbl_admission_kgf";
