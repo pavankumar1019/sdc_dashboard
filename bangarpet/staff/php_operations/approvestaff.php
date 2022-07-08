@@ -50,7 +50,7 @@ if($_POST['type']=="loaddata"){
     
     $output = '
 <p>Total Requests : '.$total_data.' </p>
-    <table class="table table-hover">
+    <table class="table ">
     <tbody>
     ';
     if($total_data > 0)
