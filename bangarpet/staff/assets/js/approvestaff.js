@@ -94,6 +94,7 @@ function countdata()
                       
           $(document).on('click', '#reject', function(){
             var id = $(this).attr('data-id');
+            var type= "reject";  
             $.ajax({
              
               url: './php_operations/approvestaff.php',
