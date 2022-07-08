@@ -33,10 +33,12 @@ include('./db_bpet_sdc/db.php');
                                         <h5>Download</h5>
                                     </div>
                                     <div class="card-block">
-                                    <div class="form-group">
-                    <label for="exampleFormControlSelect1">Select Class</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="class_id" required>
-                        <?php
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Select Class</label>
+                                                <select class="form-control" id="exampleFormControlSelect1"
+                                                    name="class_id" required>
+                                                    <?php
                         
    $sql="SELECT * FROM class";
 $result=$conn->query($sql);
@@ -45,12 +47,16 @@ foreach($result as $row){
 }
 
    ?>
-                    </select>
-                </div>
-                <input type="hidden" name="id" id="id">
-                <input type="hidden" name="type" id="downloadconsolidate">
-              
-            </div>
+                                                </select>
+                                            </div>
+                                            <input type="hidden" name="id" id="id">
+                                            <input type="hidden" name="type" id="downloadconsolidate">
+
+                                            <button type="submit" align="center"><i
+                                                    class="feather icon-download"></i></button>
+                                        </form>
+
+
 
 
                                     </div>
