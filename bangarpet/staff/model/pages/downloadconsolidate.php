@@ -52,8 +52,8 @@ foreach($result as $row){
                                             <input type="hidden" name="id" id="id">
                                             <input type="hidden" name="type" id="downloadconsolidate">
 
-                                            <button type="submit" align="center"><i
-                                                    class="feather icon-download"></i></button>
+                                            <h1  align="center"><i
+                                                    class="feather icon-download"></i></h1>
                                         </form>
 
 
