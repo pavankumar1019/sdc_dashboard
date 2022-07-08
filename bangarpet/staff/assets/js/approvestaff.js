@@ -69,7 +69,7 @@ function countdata()
                 $('#continue').prop('disabled', true);
               },
               complete: function(){
-                $('#continue').html("continue");
+                $('#continue').html("Accept");
                 $('#continue').prop('disabled', false);
               },
               data: $('form').serialize(),
