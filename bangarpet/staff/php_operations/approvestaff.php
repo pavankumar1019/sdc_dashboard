@@ -293,7 +293,7 @@ if($_POST['type']=="accpet"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE ``staff` SET ".$query." WHERE id='".$_POST['id']."'";  
+  $sql ="UPDATE `staff` SET ".$query." WHERE id='".$_POST['id']."'";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {
