@@ -64,6 +64,14 @@ function countdata()
             $.ajax({
               method:"POST",
               url: './php_operations/approvestaff.php',
+              beforeSend: function(){
+                $('#continue').html("connecting...");
+                $('#continue').prop('disabled', true);
+              },
+              complete: function(){
+                $('#continue').html("continue");
+                $('#continue').prop('disabled', false);
+              },
               data: $('form').serialize(),
               success: function (result) {
               
