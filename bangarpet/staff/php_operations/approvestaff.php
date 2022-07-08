@@ -283,7 +283,7 @@ foreach($result as $row){
  
     "class_id"=>$_POST['class_id'],
     "user_id"=>$user_id,
-    "u_key"=>$u_key,
+    "ukey"=>$u_key,
   
     "role"=>"ct",
   );
