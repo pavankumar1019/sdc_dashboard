@@ -277,6 +277,7 @@ if($_POST['type']=="accpet"){
  
     "class_id"=>$_POST['class_id'],
   
+    "role"=>"ct",
   );
   $query = '';   
   foreach($insert_data as $key => $value)  

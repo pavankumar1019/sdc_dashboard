@@ -110,7 +110,7 @@ function countdata()
                   timer: 2000
                 })
                 load_data(1);
-                $("#exampleModalCenter").modal('hide');
+        
               }
             });
                       })
