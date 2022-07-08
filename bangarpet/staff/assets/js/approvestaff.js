@@ -103,24 +103,41 @@ function countdata()
           $(document).on('click', '#reject', function(){
             var id = $(this).attr('data-id');
             var type= "reject";  
-            $.ajax({
+ 
+            Swal.fire({
+              title: 'Are you sure?',
+              text: "You won't be able to revert this!",
+              icon: 'warning',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Yes, Reject it!'
+            }).then((result) => {
+              if (result.isConfirmed) {
+                $.ajax({
              
-              url: './php_operations/approvestaff.php',
-              method:"POST",
-              data:{id:id, type:type},
-              dataType:"json",
-              success: function (result) {
-                load_data(1);
-                Swal.fire({
-                  position: 'center',
-                  icon: 'success',
-                  title: 'Request Rejected',
-                  showConfirmButton: false,
-                  timer: 2000
-                })
-              
+                  url: './php_operations/approvestaff.php',
+                  method:"POST",
+                  data:{id:id, type:type},
+                  dataType:"json",
+                  success: function (result) {
+                    load_data(1);
+                    Swal.fire(
+                      'Rejected!',
+                      'Your file has been Rejected.',
+                      'success'
+                    )
+                  
+                  }
+                });
+               
               }
-            });
+            })
+
+
+
+
+           
                       })
           // edit marks card
         
