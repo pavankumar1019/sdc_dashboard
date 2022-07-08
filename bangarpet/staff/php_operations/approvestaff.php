@@ -277,7 +277,7 @@ $getdata='SELECT * from `staff` where id ="'.$_POST['id'].'"';
 $result=$conn->query($getdata);
 foreach($result as $row){
   $u_key = substr($row['phone_no'], -4);
-  $user_id = substr($row['name'], 0, 5)."u_key";
+  $user_id = substr($row['name'], 0, 5).$u_key;
   
 
   $insert_data = array(
