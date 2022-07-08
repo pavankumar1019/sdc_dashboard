@@ -27,7 +27,7 @@
    $sql="SELECT * FROM class";
 $result=$conn->query($sql);
 foreach($result as $row){
-    echo '<option value='.$row['id'].'>'.$row['section'].' - '.$row['name'].'</option>';
+    echo '<option value="'.$row['id'].'">'.$row['section'].' - '.$row['name'].'</option>';
 }
 
    ?>
