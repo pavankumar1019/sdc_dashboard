@@ -98,7 +98,7 @@ if($_POST['type']=="loaddata"){
                                                 
                                                     <td>
                                                     <a class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="reject" style="cursor: pointer;">Reject</a>
-                                                    <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="accpet" style="cursor: pointer;">Accept</a>
+                                                    <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="accpet" style="cursor: pointer;">Enroll</a>
                                                     </td>
                                                 </tr>
         ';
