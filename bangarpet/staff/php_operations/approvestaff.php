@@ -251,7 +251,7 @@ if($_POST['type']=="getcount"){
 if($_POST['type']=="reject"){
 
    
-       $sql = "INSERT INTO ".$class_test_marks." ($table_columns) VALUES ('$table_data') "; 
+       $sql = "DELETE * FROM `staff` WHERE id='".$_POST['id']."'";  
        $conn->query($sql);
     $error=true;
         
@@ -275,14 +275,9 @@ if($_POST['type']=="accpet"){
 
   $insert_data = array(
  
-    "l1"=>$_POST['l1'],
-    "l2"=>$_POST['l2'],
-    "s1"=>$_POST['s1'],
-    "s2"=>$_POST['s2'],
-    "s3"=>$_POST['s3'],
-    "s4"=>$_POST['s4'],
-    "total"=>$_POST['gt'],
-     );
+    "class_id"=>$_POST['class_id'],
+  
+  );
   $query = '';   
   foreach($insert_data as $key => $value)  
   {  
@@ -297,7 +292,7 @@ if($_POST['type']=="accpet"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE ".$class_test_marks." SET ".$query." WHERE roll='".$_POST['id']."'";  
+  $sql ="UPDATE ``staff` SET ".$query." WHERE id='".$_POST['id']."'";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {

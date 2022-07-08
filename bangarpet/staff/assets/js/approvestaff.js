@@ -72,7 +72,7 @@ function countdata()
                   icon: 'success',
                   title: 'Your work has been saved',
                   showConfirmButton: false,
-                  timer: 1500
+                  timer: 2000
                 })
                 load_data(1);
                 $("#exampleModalCenter").modal('hide');
@@ -90,8 +90,29 @@ function countdata()
                 $('#id').val(id);
                 $('#type').val('accept');
                       })
+
+                      
           $(document).on('click', '#reject', function(){
+            var id = $(this).attr('data-id');
+            $.ajax({
              
+              url: './php_operations/approvestaff.php',
+              method:"POST",
+              data:{id:id, type:type},
+              dataType:"json",
+              success: function (result) {
+              
+                Swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: 'Request Rejected',
+                  showConfirmButton: false,
+                  timer: 2000
+                })
+                load_data(1);
+                $("#exampleModalCenter").modal('hide');
+              }
+            });
                       })
           // edit marks card
         
