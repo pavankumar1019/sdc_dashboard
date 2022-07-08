@@ -248,13 +248,10 @@ if($_POST['type']=="getcount"){
     echo $statement->rowCount();
 
 }
-if($_POST['type']=="reject"){
-
-   
-       $sql = "DELETE * FROM `staff` WHERE id='".$_POST['id']."'";  
+if($_POST['type']=="reject"){   
+       $sql = "DELETE FROM `staff` WHERE id='".$_POST['id']."'";  
        $conn->query($sql);
     $error=true;
-        
         if ($error==true) {
           echo "Done";
         } else {
