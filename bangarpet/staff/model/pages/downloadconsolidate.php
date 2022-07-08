@@ -1,3 +1,6 @@
+<?php
+include('./db_bpet_sdc/db.php');
+?>
 <div class="pcoded-main-container">
     <div class="pcoded-wrapper">
         <div class="pcoded-content">
@@ -31,9 +34,10 @@
                                     </div>
                                     <div class="card-block">
                                     <div class="form-group">
-                    <label for="exampleFormControlSelect1">Assign Class</label>
+                    <label for="exampleFormControlSelect1">Select Class</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="class_id" required>
                         <?php
+                        
    $sql="SELECT * FROM class";
 $result=$conn->query($sql);
 foreach($result as $row){
