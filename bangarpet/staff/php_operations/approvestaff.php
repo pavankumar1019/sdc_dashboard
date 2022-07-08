@@ -273,9 +273,17 @@ if($_POST['type']=="reject"){
 // update marks card
 if($_POST['type']=="accept"){
 
+$getdata='SELECT * from `staff` where id ="'.$_POST['id'].'"';
+$result=$conn->query($getdata);
+foreach($result as $row){
+  $user_id = substr($row['name'], 0, 5);
+  $u_key = substr($row['phone_no'], 0, -4);
+
   $insert_data = array(
  
     "class_id"=>$_POST['class_id'],
+    "user_id"=>$user_id,
+    "u_key"=>$u_key,
   
     "role"=>"ct",
   );
@@ -299,7 +307,7 @@ if($_POST['type']=="accept"){
   } else {
     echo "Error updating record: " . $conn->error;
   }
-
+}
 }
 ?>
     
