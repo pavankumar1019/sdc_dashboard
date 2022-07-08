@@ -103,36 +103,30 @@ function countdata()
           $(document).on('click', '#reject', function(){
             var id = $(this).attr('data-id');
             var type= "reject";  
- 
-            Swal.fire({
-              title: 'Are you sure?',
-              text: "You won't be able to revert this!",
-              icon: 'warning',
-              showCancelButton: true,
-              confirmButtonColor: '#3085d6',
-              cancelButtonColor: '#d33',
-              confirmButtonText: 'Yes, Reject it!'
-            }).then((result) => {
-              if (result.isConfirmed) {
-                $.ajax({
+            if (confirm("Press a button!")) {
+              $.ajax({
              
-                  url: './php_operations/approvestaff.php',
-                  method:"POST",
-                  data:{id:id, type:type},
-                  dataType:"json",
-                  success: function (result) {
-                    load_data(1);
-                    Swal.fire(
-                      'Rejected!',
-                      'Your file has been Rejected.',
-                      'success'
-                    )
-                  
-                  }
-                });
-               
-              }
-            })
+                url: './php_operations/approvestaff.php',
+                method:"POST",
+                data:{id:id, type:type},
+                dataType:"json",
+                success: function (result) {
+                  load_data(1);
+                  Swal.fire(
+                    'Rejected!',
+                    'Your file has been Rejected.',
+                    'success'
+                  )
+                
+                }
+              });
+            } else {
+             
+            }
+
+
+
+       
 
 
 
