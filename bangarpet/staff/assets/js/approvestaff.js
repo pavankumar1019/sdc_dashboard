@@ -111,6 +111,7 @@ function countdata()
                 data:{id:id, type:type},
                 dataType:"json",
                 success: function (result) {
+                  console.log(result);
                   load_data(1);
                 }
               });
