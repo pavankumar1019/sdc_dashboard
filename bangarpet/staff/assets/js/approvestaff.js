@@ -103,7 +103,7 @@ function countdata()
           $(document).on('click', '#reject', function(){
             var id = $(this).attr('data-id');
             var type= "reject";  
-            if (confirm("Are you Sure ?!")) {
+            if (confirm("Are you Sure ? want to reject")) {
               $.ajax({
              
                 url: './php_operations/approvestaff.php',
