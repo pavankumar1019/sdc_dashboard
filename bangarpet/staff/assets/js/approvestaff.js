@@ -1,9 +1,5 @@
 $(document).ready(function(){
-    $('#btnmarkscard').click(function(){
-        $("#newadmissionmodal").modal('show');
-        $('#markscardform').trigger("reset");
-        $('#type').val('add');
-      });
+
 
 
     countdata();
@@ -53,20 +49,18 @@ function countdata()
 
 
     // print idividual marks card
-    $(document).on('click', '#print', function(){ 
+    // $(document).on('click', '#print', function(){ 
 
-        window.open("http://sdccollegebpet.in/bangarpet/office/model/templates/markscard/index.php?reg_no="+$(this).attr('data-id'), "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
+    //     window.open("http://sdccollegebpet.in/bangarpet/office/model/templates/markscard/index.php?reg_no="+$(this).attr('data-id'), "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
         
-          })
+    //       })
 
 
 
 
         //   add marks card custom
         $('#markscardform').on('submit', function (e) {
-
             e.preventDefault();
-  
             $.ajax({
               method:"POST",
               url: './php_operations/approvestaff.php',
@@ -83,42 +77,11 @@ function countdata()
 
 
           // add marks card
-          $(document).on('click', '#add', function(){
+          $(document).on('click', '#accept', function(){
             var id = $(this).attr('data-id');
-            var type = 'edit';
-            $.ajax({
-              url:"./php_operations/approvestaff.php",
-              method:"POST",
-              data:{id:id, type:type},
-              dataType:"json",
-              success:function(data)
-              {
-                $("#newadmissionmodal").modal('show');
-
-                $('#type').val('add');
-    
-                $('#sats_no').val(data.sats_no);
-                $('#student_no').val(data.student_no);
-                $('#reg_no').val(data.reg_no);
-                $('#name').val(data.name);
-                $('#father_name').val(data.father_name);
-                $('#mother_name').val(data.mother_name);
-
-             
-     
-                $('#l1').val(data.l1);
-                $('#l2').val(data.l2);
-                $('#s1').val(data.s1);
-                $('#s2').val(data.s2);
-                $('#s3').val(data.s3);
-                $('#s4').val(data.s4);
-                $('#gt').val(data.gt);
-                $('#year_of_passing').val(data.year_of_passing);
-                $('#id').val(data.reg_no);
-
-              }
-            });
-      
+            $("#exampleModalCenter").modal('show');
+            
+            
           })
           // edit marks card
           $(document).on('click', '#edit', function(){

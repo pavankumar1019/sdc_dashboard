@@ -97,8 +97,8 @@ if($_POST['type']=="loaddata"){
                                                     </td>
                                                 
                                                     <td>
-                                                    <a class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="edit" style="cursor: pointer;">Reject</a>
-                                                    <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="edit" style="cursor: pointer;">Accept</a>
+                                                    <a class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="reject" style="cursor: pointer;">Reject</a>
+                                                    <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="accpet" style="cursor: pointer;">Accept</a>
                                                     </td>
                                                 </tr>
         ';
@@ -248,20 +248,9 @@ if($_POST['type']=="getcount"){
     echo $statement->rowCount();
 
 }
-if($_POST['type']=="add"){
+if($_POST['type']=="reject"){
 
-    $insert_data = array(
-         "roll"=>$_POST['reg_no'],
-         "l1"=>$_POST['l1'],
-         "l2"=>$_POST['l2'],
-         "s1"=>$_POST['s1'],
-         "s2"=>$_POST['s2'],
-         "s3"=>$_POST['s3'],
-         "s4"=>$_POST['s4'],
-         "total"=>$_POST['gt'],
-         );
-         $table_columns= implode(',', array_keys($insert_data));
-         $table_data= implode("', '", $insert_data);
+   
        $sql = "INSERT INTO ".$class_test_marks." ($table_columns) VALUES ('$table_data') "; 
        $conn->query($sql);
     $error=true;
@@ -269,50 +258,20 @@ if($_POST['type']=="add"){
         if ($error==true) {
           echo "Done";
         } else {
-          echo "Failed Duplicate entry. !";
+          echo "Failed to reject. !";
         }
     
-    
+  
     echo $html;
 
 }
 
-if($_POST['type']=="edit"){
-  $query = 
-  'SELECT '.$tbl_admission.'.StudentName,  '.$tbl_admission.'.father_name, '.$tbl_admission.'.mobile_no, '.$tbl_admission.'.RollNo, '.$class_test_marks.'.l1, '.$class_test_marks.'.l2,  '.$class_test_marks.'.s1, '.$class_test_marks.'.s2,  '.$class_test_marks.'.s3,  '.$class_test_marks.'.s4,  '.$class_test_marks.'.total
-    FROM '.$tbl_admission.'
-    LEFT JOIN '.$class_test_marks.' ON '.$tbl_admission.'.RollNo = '.$class_test_marks.'.roll  WHERE '.$tbl_admission.'.Class='.$_SESSION['class_id'].' AND '.$tbl_admission.'.RollNo="'.$_POST['id'].'"
-    '
-  ;
-  $statement = $connect->prepare($query);
-  $statement->execute();
-  $result = $statement->fetchAll();
 
-  foreach($result as $row){
-    echo json_encode(array(
-  
-     
-      "reg_no"=>$row['RollNo'],
-      "name"=>$row['StudentName'],
-      "father_name"=>$row['father_name'],
-      "l1"=>$row['l1'],
-      "l2"=>$row['l2'],
-      "s1"=>$row['s1'],
-      "s2"=>$row['s2'],
-      "s3"=>$row['s3'],
-      "s4"=>$row['s4'],
-      "gt"=>$row['total'],  
-  ));
-  }
-
-
-
-}
 
 
 
 // update marks card
-if($_POST['type']=="update"){
+if($_POST['type']=="accpet"){
 
   $insert_data = array(
  

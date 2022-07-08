@@ -2,6 +2,46 @@
                 if($_SESSION['role_staff']=="P"){
                    
 ?>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Assign Class</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form>
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Assign Class</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+   <?php
+   $sql="SELECT * FROM class";
+$result=$conn->query($sql);
+foreach($result as $row){
+    echo '<option value='.$row['id'].'>'.$row['section'].' - '.$row['name'].'</option>';
+}
+
+   ?>
+    </select>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Accept</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="pcoded-main-container">
         <div class="pcoded-wrapper">
             <div class="pcoded-content">
