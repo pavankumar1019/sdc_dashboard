@@ -257,10 +257,6 @@ if($_POST['type']=="reject"){
         } else {
           echo "Failed to reject. !";
         }
-    
-  
-    echo $html;
-
 }
 
 

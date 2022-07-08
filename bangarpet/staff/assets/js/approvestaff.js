@@ -103,7 +103,7 @@ function countdata()
           $(document).on('click', '#reject', function(){
             var id = $(this).attr('data-id');
             var type= "reject";  
-            if (confirm("Press a button!")) {
+            if (confirm("Are you Sure ?!")) {
               $.ajax({
              
                 url: './php_operations/approvestaff.php',
@@ -112,12 +112,6 @@ function countdata()
                 dataType:"json",
                 success: function (result) {
                   load_data(1);
-                  Swal.fire(
-                    'Rejected!',
-                    'Your file has been Rejected.',
-                    'success'
-                  )
-                
                 }
               });
             } else {
