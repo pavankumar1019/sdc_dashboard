@@ -271,7 +271,7 @@ if($_POST['type']=="reject"){
 
 
 // update marks card
-if($_POST['type']=="accpet"){
+if($_POST['type']=="accept"){
 
   $insert_data = array(
  
