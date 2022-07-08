@@ -30,7 +30,23 @@
                                         <h5>Download</h5>
                                     </div>
                                     <div class="card-block">
+                                    <div class="form-group">
+                    <label for="exampleFormControlSelect1">Assign Class</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="class_id" required>
+                        <?php
+   $sql="SELECT * FROM class";
+$result=$conn->query($sql);
+foreach($result as $row){
+    echo '<option value="'.$row['id'].'">'.$row['section'].' - '.$row['name'].'</option>';
+}
 
+   ?>
+                    </select>
+                </div>
+                <input type="hidden" name="id" id="id">
+                <input type="hidden" name="type" id="downloadconsolidate">
+              
+            </div>
 
 
                                     </div>
