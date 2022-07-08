@@ -59,7 +59,7 @@ function countdata()
 
 
         //   add marks card custom
-        $('#markscardform').on('submit', function (e) {
+        $('#enroll').on('submit', function (e) {
             e.preventDefault();
             $.ajax({
               method:"POST",
@@ -79,6 +79,12 @@ function countdata()
           // add marks card
           $(document).on('click', '#accpet', function(){
                $("#exampleModalCenter").modal('show');
+               var id = $(this).attr('data-id');
+                $('#id').val(id);
+                $('#type').val('accept');
+                      })
+          $(document).on('click', '#reject', function(){
+             
                       })
           // edit marks card
         
