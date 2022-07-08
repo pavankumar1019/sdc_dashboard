@@ -26,7 +26,7 @@ include('./db_bpet_sdc/db.php');
 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Assign Class</label>
-                    <select class="form-control" id="exampleFormControlSelect1" required>
+                    <select class="form-control" id="exampleFormControlSelect1" name="class_id" required>
                         <?php
    $sql="SELECT * FROM class";
 $result=$conn->query($sql);
@@ -37,8 +37,8 @@ foreach($result as $row){
    ?>
                     </select>
                 </div>
-                <input type="text" name="id" id="id">
-                <input type="text" name="type" id="type">
+                <input type="hidden" name="id" id="id">
+                <input type="hidden" name="type" id="type">
               
             </div>
             <div class="modal-footer">

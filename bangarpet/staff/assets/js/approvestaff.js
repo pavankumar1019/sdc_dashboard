@@ -66,9 +66,16 @@ function countdata()
               url: './php_operations/approvestaff.php',
               data: $('form').serialize(),
               success: function (result) {
-                alert(result);
+              
+                Swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: 'Your work has been saved',
+                  showConfirmButton: false,
+                  timer: 1500
+                })
                 load_data(1);
-                $("#newadmissionmodal").modal('hide');
+                $("#exampleModalCenter").modal('hide');
               }
             });
   
