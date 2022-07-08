@@ -1,4 +1,6 @@
 <?php
+include('./db_bpet_sdc/db.php');
+
                 if($_SESSION['role_staff']=="P"){
                    
 ?>
