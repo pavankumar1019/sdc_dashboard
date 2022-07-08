@@ -14,20 +14,20 @@ include('./db_bpet_sdc/db.php');
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-        <form id="enroll">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Assign Class</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
+            <form id="enroll">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Assign Class</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
 
 
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Assign Class</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="class_id" required>
-                        <?php
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Assign Class</label>
+                        <select class="form-control" id="exampleFormControlSelect1" name="class_id" required>
+                            <?php
    $sql="SELECT * FROM class";
 $result=$conn->query($sql);
 foreach($result as $row){
@@ -35,16 +35,16 @@ foreach($result as $row){
 }
 
    ?>
-                    </select>
+                        </select>
+                    </div>
+                    <input type="hidden" name="id" id="id">
+                    <input type="hidden" name="type" id="type">
+
                 </div>
-                <input type="hidden" name="id" id="id">
-                <input type="hidden" name="type" id="type">
-              
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" id="continue">Accept</button>
-            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" id="continue">Accept</button>
+                </div>
             </form>
         </div>
     </div>
@@ -80,9 +80,11 @@ foreach($result as $row){
                                     <div class="card-header">
                                         <h5>Requests</h5>
                                     </div>
-                                    <div class="card-block" id="dynamic_content">
+                                    <div class="card-block">
 
+                                        <div class="table-responsive" id="dynamic_content">
 
+                                        </div>
 
                                     </div>
                                 </div>
