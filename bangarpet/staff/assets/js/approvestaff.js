@@ -102,7 +102,7 @@ function countdata()
               data:{id:id, type:type},
               dataType:"json",
               success: function (result) {
-              
+                load_data(1);
                 Swal.fire({
                   position: 'center',
                   icon: 'success',
@@ -110,8 +110,7 @@ function countdata()
                   showConfirmButton: false,
                   timer: 2000
                 })
-                load_data(1);
-        
+              
               }
             });
                       })
