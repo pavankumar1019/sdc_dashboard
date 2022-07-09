@@ -5,6 +5,7 @@ $sql='SELECT * FROM `current_test` ORDER BY id DESC LIMIT 0, 1';
 $result=$conn->query($sql);
 foreach($result as $row){
     $_SESSION['test_name']=$row['id'];
+    $testname=$row['name'];
 }
 ?>
 <div class="pcoded-main-container">
@@ -175,7 +176,8 @@ foreach($result as $row){
                             <div class="card daily-sales">
                                 <div class="card-block">
                                     <h2 class="mb-4" id="blink">                   
-       Term Test -1
+   
+       <?php echo $testname;  ?>
  </h2>
                                     <div class="form-group">
                                         <label for="search">Search Here !</label>
