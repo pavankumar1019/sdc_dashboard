@@ -26,7 +26,13 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+<style>
+  .add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+</style>
 <script>
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -95,6 +101,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
               <li class="nav-item">
                 <a class="nav-link" href="http://sdccollegebpet.in/bangarpet/staff/index.php">Staff</a>
               </li>
+              <button class="add-button">Add to home screen</button>
             </ul>
             <from class="search_form">
               <input type="text" class="form-control" placeholder="Search here...">
