@@ -1,3 +1,12 @@
+<?php
+include('./db_bpet_sdc/db.php');
+// SELECT * FROM `current_test` ORDER BY id DESC LIMIT 0, 1
+$sql='SELECT * FROM `current_test` ORDER BY id DESC LIMIT 0, 1';
+$result=$conn->query($sql);
+foreach($result as $row){
+    $_SESSION['test_name']=$row['id'];
+}
+?>
 <div class="pcoded-main-container">
     <div class="pcoded-wrapper">
         <div class="pcoded-content">
@@ -78,6 +87,7 @@
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" required>
                                             <input type="hidden" name="id" id="id" >
+                                            <input type="hidden" name="testname" id="testname" value="<?php echo $_SESSION['test_name']; ?>" >
                                         <input type="submit" name="submit"  class="btn btn-primary" />
                                         </div>
                                       
