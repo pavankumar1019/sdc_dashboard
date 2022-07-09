@@ -19,7 +19,7 @@
     <meta name="author" content="CodedThemes"/>
 
     <!-- Favicon icon -->
-    <link rel="icon" href="http://sdccollegebpet.in/SDC.ico" type="image/x-icon">
+    <link rel="icon" href="http://sdccollegebpet.in/SDC.jpg" type="image/x-icon">
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
     <!-- animation css -->
