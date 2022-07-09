@@ -27,9 +27,55 @@
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+})
+    </script>
+    <style>
+        .loader{
+  width: 120px;
+  height: 75px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+
+.ball {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: bounce .5s alternate infinite;
+}
+
+.ball:nth-child(2) {
+  animation-delay: .16s;
+}
+
+.ball:nth-child(3) {
+  animation-delay: .32s;
+}
+
+@keyframes bounce {
+  from {
+    tranform: scaleX(1.25);
+  }
+  to {
+    transform: translateY(-50px) scaleX(1)
+  }
+}
+    </style>
 </head>
 
 <body>
+<div class="loader">
+  <div class="ball"></div>
+  <div class="ball"></div>
+  <div class="ball"></div>
+</div>
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
         <div class="loader-track">
