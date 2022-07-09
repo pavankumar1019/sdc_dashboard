@@ -15,7 +15,8 @@
   <meta name="author" content="PK | Web Devloper" />
 
   <title>SDC</title>
-
+    <!-- Favicon icon -->
+    <link rel="icon" href="http://sdccollegebpet.in/SDC.ico" type="image/x-icon">
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- font awesome style -->
