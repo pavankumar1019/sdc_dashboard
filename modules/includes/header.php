@@ -26,7 +26,11 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <link rel="stylesheet" type="text/css" href="./css/addtohomescreen.css">
+<script src="./js/addtohomescreen.js"></script>
+<script>
+addToHomescreen();
+</script>
 </head>
 
 <body>
