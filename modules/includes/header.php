@@ -106,7 +106,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
               <li class="nav-item">
                 <a class="nav-link" href="http://sdccollegebpet.in/bangarpet/staff/index.php">Staff</a>
               </li>
-              <button class="add-button">Add to home screen</button>
+              <!-- <button class="add-button">Add to home screen</button> -->
             </ul>
             <from class="search_form">
               <input type="text" class="form-control" placeholder="Search here...">
