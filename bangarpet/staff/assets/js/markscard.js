@@ -194,6 +194,6 @@ function countdata()
   document.getElementById('blink');
 
 setInterval(function () {
-  blink.style.scale = 
-  (blink.style.scale == 0 ? 1 : 0);
+  blink.style.opacity = 
+  (blink.style.opacity == 0 ? 1 : 0);
 }, 100); 
