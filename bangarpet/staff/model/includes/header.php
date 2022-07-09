@@ -124,9 +124,7 @@
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown">Operations</a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./dashboard.php?page=tcgenerator">TC - Generator</a></li>
-                        <li><a class="dropdown-item" href="./dashboard.php?page=newadmission">New Admission</a></li>
-                        <li><a class="dropdown-item" href="javascript:">Enroll Staff</a></li>
+                    <li><a class="dropdown-item" href="./dashboard.php?page=consolidate">Upload Consolidate</a></li>
                         <li><a class="dropdown-item" href="javascript:">New Updates</a></li>
                     </ul>
                 </li>
