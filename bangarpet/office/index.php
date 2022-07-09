@@ -33,8 +33,8 @@ if(isset($_SESSION["name"]))
     />
     <meta name="author" content="CodedThemes" />
 
-    <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+     <!-- Favicon icon -->
+     <link rel="icon" href="http://sdccollegebpet.in/SDC.ico" type="image/x-icon">
     <!-- fontawesome icon -->
     <link
       rel="stylesheet"
