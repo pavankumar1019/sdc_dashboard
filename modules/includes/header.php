@@ -26,6 +26,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="manifest" href="manifest.webmanifest">
 <style>
   .add-button {
   position: absolute;
@@ -34,6 +35,9 @@
 }
 </style>
 <script>
+  let deferredPrompt;
+const addBtn = document.querySelector('.add-button');
+addBtn.style.display = 'none';
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
@@ -58,6 +62,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+
 </script>
 </head>
 
