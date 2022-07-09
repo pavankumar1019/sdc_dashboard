@@ -63,6 +63,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="./index.php?page=contact">Contact Us</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://sdccollegebpet.in/bangarpet/office/index.php">Office</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://sdccollegebpet.in/bangarpet/staff/index.php">Staff</a>
+              </li>
             </ul>
             <from class="search_form">
               <input type="text" class="form-control" placeholder="Search here...">
