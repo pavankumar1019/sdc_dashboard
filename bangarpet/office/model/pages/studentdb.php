@@ -33,6 +33,42 @@
                                             <input type="text" class="form-control" id="sats" name="sats"
                                                 placeholder="" required>
                                         </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Student Name </label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Father Name</label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Mother Name</label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">DOB</label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Mobile No</label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Combination</label>
+                                            <select id="class" name="class" class="form-control"
+                                                required="">
+                                            <option value="PCMB">PCMB</option>
+                                            <option value="PCMCs">PCMCs</option>
+                                            <option value="EBACS">EBACS</option>
+                                            <option value="EBAS">EBAS</option>
+                                            <option value="ABMS">ABMS</option>
+                                            </select>
+                                        </div>
                                     <div class="form-row">
                                         <div class="form-group col-lg-12">
                                             <label for="inputPassword4">Class</label>
