@@ -103,6 +103,16 @@
                          
                                             </select>
                                         </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Class Name</label>
+                                            <select id="class" name="class" class="form-control"
+                                                required="">
+                                            <option value="1">1st PUC</option>
+                                            <option value="2">2nd PUC</option>
+                                  
+                         
+                                            </select>
+                                        </div>
                                         <hr>
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" required>
