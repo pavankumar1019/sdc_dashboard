@@ -63,7 +63,7 @@
                                             <select id="class" name="class" class="form-control"
                                                 required="">
                                             <option value="PCMB">PCMB</option>
-                                            <option value="PCMCs">PCMCs</option>
+                                            <option value="PCMCS">PCMCS</option>
                                             <option value="EBACS">EBACS</option>
                                             <option value="EBAS">EBAS</option>
                                             <option value="ABMS">ABMS</option>
