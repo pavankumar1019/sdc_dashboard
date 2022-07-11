@@ -16,6 +16,21 @@
                             </div>
                             <div class="modal-body">
                                 <form method="post" id="newadmissionform">
+                                <div class="form-group col-md-4">
+                                            <label for="inputEmail4">SATS NO.</label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Roll No</label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Student Number</label>
+                                            <input type="text" class="form-control" id="sats" name="sats"
+                                                placeholder="" required>
+                                        </div>
                                     <div class="form-row">
                                         <div class="form-group col-lg-12">
                                             <label for="inputPassword4">Class</label>
@@ -37,7 +52,9 @@
                                                     }
                                                     ?>
                                             </select>
+
                                         </div>
+                                        
                                         <hr>
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" required>
