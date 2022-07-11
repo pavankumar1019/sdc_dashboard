@@ -152,10 +152,10 @@ $(document).ready(function(){
      
     })
 
+   $(document).on('click', '#btnAdmissionModal', function(){
 
 
-
-
+  })
 
 
   
