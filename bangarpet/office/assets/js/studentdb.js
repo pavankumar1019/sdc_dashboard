@@ -153,8 +153,7 @@ $(document).ready(function(){
     })
 
    $(document).on('click', '#btnAdmissionModal', function(){
-alert('hello');
-
+    $("#newadmissionmodal").modal('show');
   })
 
 
