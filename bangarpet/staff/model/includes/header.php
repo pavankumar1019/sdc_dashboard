@@ -19,7 +19,7 @@
     <meta name="author" content="CodedThemes"/>
 
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://sdccollegebpet.in/SDC.ico" type="image/x-icon">
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
     <!-- animation css -->
@@ -30,6 +30,7 @@
 </head>
 
 <body>
+    
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
         <div class="loader-track">
@@ -71,7 +72,7 @@
                     
                 <?php
                 if($_SESSION['role_staff']=="ct"){
-                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=consolidate" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Upload Consolidate</span></a></li>';
+                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=consolidate" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Upload Consolidate</span></a></li>';
                 }
                 ?>
            
@@ -124,9 +125,7 @@
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown">Operations</a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./dashboard.php?page=tcgenerator">TC - Generator</a></li>
-                        <li><a class="dropdown-item" href="./dashboard.php?page=newadmission">New Admission</a></li>
-                        <li><a class="dropdown-item" href="javascript:">Enroll Staff</a></li>
+                    <li><a class="dropdown-item" href="./dashboard.php?page=consolidate">Upload Consolidate</a></li>
                         <li><a class="dropdown-item" href="javascript:">New Updates</a></li>
                     </ul>
                 </li>
