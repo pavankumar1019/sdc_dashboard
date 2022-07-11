@@ -109,8 +109,6 @@
                                                 required="">
                                             <option value="1">1st PUC</option>
                                             <option value="2">2nd PUC</option>
-                                  
-                         
                                             </select>
                                         </div>
                                         <hr>
