@@ -25,42 +25,42 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Roll No</label>
-                                            <input type="text" class="form-control" id="sats" name="sats"
+                                            <input type="text" class="form-control" id="sats" name="roll"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Student Number</label>
-                                            <input type="text" class="form-control" id="sats" name="sats"
+                                            <input type="text" class="form-control" id="sats" name="student_number"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Student Name </label>
-                                            <input type="text" class="form-control" id="sats" name="sats"
+                                            <input type="text" class="form-control" id="sats" name="student_name"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Father Name</label>
-                                            <input type="text" class="form-control" id="sats" name="sats"
+                                            <input type="text" class="form-control" id="sats" name="father_name"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Mother Name</label>
-                                            <input type="text" class="form-control" id="sats" name="sats"
+                                            <input type="text" class="form-control" id="sats" name="mother_name"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">DOB</label>
-                                            <input type="text" class="form-control" id="sats" name="sats"
+                                            <input type="text" class="form-control" id="sats" name="dob"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Mobile No</label>
-                                            <input type="text" class="form-control" onkeypress="return onlyNumberKey(event)"  id="sats" name="sats"
+                                            <input type="text" class="form-control" onkeypress="return onlyNumberKey(event)"  id="sats" name="mobile_no"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Combination</label>
-                                            <select id="class" name="class" class="form-control"
+                                            <select id="class" name="combination" class="form-control"
                                                 required="">
                                             <option value="PCMB">PCMB</option>
                                             <option value="PCMCS">PCMCS</option>
@@ -94,7 +94,7 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Language</label>
-                                            <select id="class" name="class" class="form-control"
+                                            <select id="class" name="language" class="form-control"
                                                 required="">
                                             <option value="Kannada">Kannada</option>
                                             <option value="Hindi">Hindi</option>
@@ -105,8 +105,7 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Class Name</label>
-                                            <select id="class" name="class" class="form-control"
-                                                required="">
+                                            <select id="class" name="class_name" class="form-control" required="">
                                             <option value="1">1st PUC</option>
                                             <option value="2">2nd PUC</option>
                                             </select>
