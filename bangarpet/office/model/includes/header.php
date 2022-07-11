@@ -27,6 +27,16 @@
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+           function onlyNumberKey(evt) {
+          
+          // Only ASCII character in that range allowed
+          var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+          if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+              return false;
+          return true;
+      }
+    </script>
 </head>
 
 <body>
