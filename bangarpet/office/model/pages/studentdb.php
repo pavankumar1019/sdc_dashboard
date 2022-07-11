@@ -92,7 +92,17 @@
                                             </select>
 
                                         </div>
-                                        
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">Language</label>
+                                            <select id="class" name="class" class="form-control"
+                                                required="">
+                                            <option value="Kannada">Kannada</option>
+                                            <option value="Hindi">Hindi</option>
+                                            <option value="Urdu">Urdu</option>
+                                            <option value="Sanskrit">Sanskrit</option>
+                         
+                                            </select>
+                                        </div>
                                         <hr>
                                         <div class="form-group  col-12">
                                             <input type="hidden" name="type" id="type" required>
