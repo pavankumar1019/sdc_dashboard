@@ -255,7 +255,7 @@ if($_POST['type']=="edit"){
   foreach($result as $row){
     echo json_encode(array(
       "sats"=>$row['sats'],
-      "rollno"=>$row['RollNo'],
+      "RollNo"=>$row['RollNo'],
       "student_number"=>$row['student_number'],
       "StudentName"=>$row['StudentName'],
       "father_name"=>$row['father_name'],

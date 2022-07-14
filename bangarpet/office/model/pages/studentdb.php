@@ -25,42 +25,42 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Roll No</label>
-                                            <input type="text" class="form-control" id="sats" name="roll"
+                                            <input type="text" class="form-control" id="RollNo" name="RollNo"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Student Number</label>
-                                            <input type="text" class="form-control" id="sats" name="student_number"
+                                            <input type="text" class="form-control" id="student_number" name="student_number"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Student Name </label>
-                                            <input type="text" class="form-control" id="sats" name="student_name"
+                                            <input type="text" class="form-control" id="StudentName" name="StudentName"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Father Name</label>
-                                            <input type="text" class="form-control" id="sats" name="father_name"
+                                            <input type="text" class="form-control" id="father_name" name="father_name"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Mother Name</label>
-                                            <input type="text" class="form-control" id="sats" name="mother_name"
+                                            <input type="text" class="form-control" id="mother_name" name="mother_name"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">DOB</label>
-                                            <input type="text" class="form-control" id="sats" name="dob"
+                                            <input type="text" class="form-control" id="dob" name="dob"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Mobile No</label>
-                                            <input type="text" class="form-control" onkeypress="return onlyNumberKey(event)"  id="sats" name="mobile_no"
+                                            <input type="text" class="form-control" onkeypress="return onlyNumberKey(event)"  id="mobile_no" name="mobile_no"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Combination</label>
-                                            <select id="class" name="combination" class="form-control"
+                                            <select id="combination" name="combination" class="form-control"
                                                 required="">
                                             <option value="PCMB">PCMB</option>
                                             <option value="PCMCS">PCMCS</option>
@@ -72,7 +72,7 @@
                                     <div class="form-row">
                                         <div class="form-group col-lg-4">
                                             <label for="inputPassword4">Class</label>
-                                            <select id="class" name="class" class="form-control"
+                                            <select id="Class" name="Class" class="form-control"
                                                 required="">
                                                 <option value="" selected>-select one-</option>
                                                 <?php
@@ -94,7 +94,7 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Language</label>
-                                            <select id="class" name="language" class="form-control"
+                                            <select id="lang_code" name="lang_code" class="form-control"
                                                 required="">
                                             <option value="Kannada">Kannada</option>
                                             <option value="Hindi">Hindi</option>
@@ -105,7 +105,7 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Class Name</label>
-                                            <select id="class" name="class_name" class="form-control" required="">
+                                            <select id="class_name" name="class_name" class="form-control" required="">
                                             <option value="1">1st PUC</option>
                                             <option value="2">2nd PUC</option>
                                             </select>
