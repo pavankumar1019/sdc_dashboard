@@ -19,7 +19,7 @@
                                 <form method="post" id="newadmissionform">
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
-                                            <label for="inputEmail4">SATS NO. <span style="color:red">Number Exist</span></label>
+                                            <label for="inputEmail4">SATS NO. <span style="color:red" id="error"></span></label>
                                             <input type="text" class="form-control" onkeypress="return onlyNumberKey(event)" id="sats" name="sats" placeholder=""
                                                 required>
                                         </div>
