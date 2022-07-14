@@ -183,10 +183,12 @@ $(document).ready(function(){
       success: function(dataResult){
         var dataResult = JSON.parse(dataResult);
         if(dataResult.statusCode==200){
-          $('#error').html('Number Exist');					
+          $('#error').html('Number Exist');				
+          $(this).val('');	
         }
         else if(dataResult.statusCode==201){
           $('#error').html('');	
+          $(this).val('');
         }
         
       }
@@ -206,10 +208,12 @@ $(document).ready(function(){
       success: function(dataResult){
         var dataResult = JSON.parse(dataResult);
         if(dataResult.statusCode==200){
-          $('#error_roll').html('Number Exist');					
+          $('#error_roll').html('Number Exist');	
+          $(this).val('');				
         }
         else if(dataResult.statusCode==201){
           $('#error_roll').html('');	
+          $(this).val('');
         }
         
       }
