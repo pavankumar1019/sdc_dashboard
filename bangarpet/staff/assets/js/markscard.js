@@ -173,6 +173,7 @@ function countdata()
             .find("input[type=checkbox], input[type=radio]")
                .prop("checked", "")
                .end();
+               $("#gt1").html('');
         })
     
   });
