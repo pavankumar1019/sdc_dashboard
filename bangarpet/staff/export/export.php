@@ -137,12 +137,12 @@ $langname="KAN";
  if($row["lang_code"]==3){
 $langname="HIN";
  }
- $avgl1=($row2['l1']/$totalstudents)*100;
- $avgl2=($row2['l2']/$totalstudents)*100;
- $avgs1=($row2['s1']/$totalstudents)*100;
- $avgs2=($row2['s2']/$totalstudents)*100;
- $avgs3=($row2['s3']/$totalstudents)*100;
- $avgs4=($row2['s4']/$totalstudents)*100;
+ $avgl1=($row2['l1']/$totalstudents);
+ $avgl2=($row2['l2']/$totalstudents);
+ $avgs1=($row2['s1']/$totalstudents);
+ $avgs2=($row2['s2']/$totalstudents);
+ $avgs3=($row2['s3']/$totalstudents);
+ $avgs4=($row2['s4']/$totalstudents);
 $output .= '
  <tr>  
            
