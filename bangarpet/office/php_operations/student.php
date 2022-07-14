@@ -307,9 +307,7 @@ if($_POST['type']=="update"){
   
   $insert_data = array(
     "id"=>$_POST['id'],
-    "sats"=>$_POST['sats'],
-    "RollNo"=>$_POST['RollNo'],
-    "student_number"=>$_POST['student_number'],
+   
     "StudentName"=>$_POST['StudentName'],
     "father_name"=>$_POST['father_name'],
     "mother_name"=>$_POST['mother_name'],
