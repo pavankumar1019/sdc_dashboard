@@ -169,31 +169,31 @@ $(document).ready(function(){
     $("#student_number").removeAttr("disabled");
   })
 
-  $("#sats").change(function() {
-
   
-      $.ajax({
-        url:"./php_operations/student.php",
-        type: "POST",
-        data: {
-          type: "sats_check",
-          value: $(this).val()				
-        },
-        cache: false,
-        success: function(dataResult){
-          var dataResult = JSON.parse(dataResult);
-          if(dataResult.statusCode==200){
-            $('#error').html('Number Exist');					
-          }
-          else if(dataResult.statusCode==201){
-            $('#error').html('');	
-          }
-          
+  $("#sats").change(function() {
+    var val=$(this).val();
+    $.ajax({
+      url:"./php_operations/student.php",
+      type: "POST",
+      data: {
+        type: "sats_check",
+        value:val		
+      },
+      cache: false,
+      success: function(dataResult){
+        var dataResult = JSON.parse(dataResult);
+        if(dataResult.statusCode==200){
+          $('#error').html('Number Exist');					
         }
-      });
-    
-   
-  });
+        else if(dataResult.statusCode==201){
+          $('#error').html('');	
+        }
+        
+      }
+    });
+  
+ 
+});
 
   
   });
