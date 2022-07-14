@@ -49,7 +49,7 @@
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label for="inputEmail4">DOB</label>
+                                            <label for="inputEmail4">DOB <span>(YYYY/MM/DD)</span></label>
                                             <input type="text" class="form-control" id="dob" name="dob" placeholder=""
                                                 required>
                                         </div>
