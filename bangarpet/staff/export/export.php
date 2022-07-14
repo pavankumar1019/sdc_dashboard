@@ -41,7 +41,7 @@ tr:nth-child(even) {
 // export pdf
 if($_GET["data"]=="consolidate_pdf")
 {
-     $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, SUM(".$class_test_marks.".s1) as av_s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
+     $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
      FROM ".$tbl_admission."
      LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
      ";
@@ -83,8 +83,6 @@ $langname="KAN";
     if($row["lang_code"]==3){
 $langname="HIN";
     }
-
-
    $output .= '
     <tr>  
                          <td>'.$row["RollNo"].'</td>  
@@ -102,7 +100,6 @@ $langname="HIN";
                          <td>'.$percentage.'%</td>  
                     </tr>
    ';
-  
   }
   $output .= '
   <tr>
@@ -111,7 +108,7 @@ $langname="HIN";
    </tr> 
   <tr>
    <td colspan=2></td> 
-   <td colspan=2>'.$row['av_s1'].'</td> 
+   <td colspan=2>''</td> 
    </tr> 
   </table>
   </body>
