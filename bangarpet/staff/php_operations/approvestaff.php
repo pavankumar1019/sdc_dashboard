@@ -24,7 +24,7 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']."' AND role=''
+    $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']."' 
     ";
     
     if($_POST['query'] != '')
