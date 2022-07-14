@@ -24,6 +24,11 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+*{
+    margin: 0;
+    padding:0;
+}
+
 </style></head>
 <body>
 ';
