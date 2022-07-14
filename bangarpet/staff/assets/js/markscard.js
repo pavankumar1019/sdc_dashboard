@@ -142,38 +142,6 @@ function countdata()
                 $('#father_name').val(data.father_name);
                 $('#mother_name').val(data.mother_name);
 
-                // class option logic
-                if(data.combination_opted=5){
-                  optionText="PCMB";
-                }
-                if(data.combination_opted=4){
-                  optionText="PCMCS";
-                }
-                if(data.combination_opted=3){
-                  optionText="EBAS";
-                }
-                if(data.combination_opted=2){
-                  optionText="EBACS";
-                }
-                if(data.combination_opted=1){
-                  optionText="BASM";
-                }
-                $('#combination_opted').append(`<option value="${data.combination_opted}" selected> ${optionText} </option>`);
-                
-        // language function
-        if(data.lang1=1){
-          optionlangText="KANNADA";
-        }
-        if(data.lang1=3){
-          optionlangText="HINDI";
-        }
-        if(data.lang1=8){
-          optionlangText="URDU";
-        }
-        if(data.lang1=9){
-          optionlangText="SANSKRIT";
-        }
-        $('#lang1').append(`<option value="${data.lang1}" selected> ${optionlangText} </option>`);
                 $('#l1').val(data.l1);
                 $('#l2').val(data.l2);
                 $('#s1').val(data.s1);
@@ -183,7 +151,7 @@ function countdata()
                 $('#gt').val(data.gt);
                 $('#year_of_passing').val(data.year_of_passing);
                 $('#id').val(data.reg_no);
-
+                $("#gt1").html(data.gt);
               }
             });
           });
