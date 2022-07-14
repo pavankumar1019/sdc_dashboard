@@ -50,6 +50,7 @@ if($_GET["data"]=="consolidate_pdf")
 $totalmaxmarks= $_SESSION['maxmarks']*6;
  if(mysqli_num_rows($result) > 0)
  {
+  $totalstudents=mysqli_num_rows($result);
   $output .= '
    <table class="table" bordered="1"> 
    <tr>
@@ -124,7 +125,7 @@ $output .= '
 <th>Subject - 4</th>
 </tr>
 ';
-$totalstudents=mysqli_num_rows($result);
+
 while($row2 = mysqli_fetch_array($result1))
 {
  $percentage=($row["total"]/$totalmaxmarks)*100;
