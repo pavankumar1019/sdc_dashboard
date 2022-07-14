@@ -171,7 +171,6 @@ $(document).ready(function(){
 
   
   $("#sats").change(function() {
-    
     var val=$(this).val();
     $.ajax({
       url:"./php_operations/student.php",
@@ -187,7 +186,7 @@ $(document).ready(function(){
           $('#error').html('Number Exist');					
         }
         else if(dataResult.statusCode==201){
-          $('#error').html('');	
+          $('#error').html('asdsa');	
         }
         
       }
