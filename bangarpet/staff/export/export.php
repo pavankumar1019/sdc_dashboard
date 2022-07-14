@@ -15,7 +15,8 @@ if($_GET["data"]=="consolidate_pdf")
  {
   $output .= '
    <table class="table" bordered="1">  
-                    <tr>  
+                    <tr> 
+                    <th colspan=2>Internal Test - 1</th> 
                     <th>StudentName</th>
                     <th>father_name</th>
                 
