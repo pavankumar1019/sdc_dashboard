@@ -48,7 +48,7 @@ foreach($result as $row){
                                     
                                       
                                         <div class="form-group col-md-2">
-                                        <label for="numberonly">L1 MARKS</label>
+                                        <label for="numberonly">L1 MARK</label>
                                         <input type="text" class="form-control p-lg-2"  name="l1" id="l1 mark" >
 
                                         </div>
