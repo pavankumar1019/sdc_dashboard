@@ -76,6 +76,8 @@ $(document).ready(function(){
               $('#class_name').val(data.class_name);
               $('#Class').val(data.Class);
               $("#RollNo").attr("disabled", "disabled"); 
+              $("#sats").attr("disabled", "disabled"); 
+              $("#student_number").attr("disabled", "disabled"); 
     
             }
           });
