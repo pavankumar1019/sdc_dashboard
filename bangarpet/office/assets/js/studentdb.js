@@ -63,6 +63,19 @@ $(document).ready(function(){
               $('#id').val(data.id);
               $("#newadmissionmodal").modal('show');
               $('#type').val('update');
+              $('#sats').val(data.sats);
+              $('#RollNo').val(data.RollNo);
+              $('#student_number').val(data.student_number);
+              $('#StudentName').val(data.StudentName);
+              $('#father_name').val(data.father_name);
+              $('#mother_name').val(data.mother_name);
+              $('#dob').val(data.dob);
+              $('#mobile_no').val(data.mobile_no);
+              $('#combination').val(data.combination);
+              $('#lang_code').val(data.lang_code);
+              $('#class_name').val(data.class_name);
+              $('#Class').val(data.Class);
+            
     
             }
           });
