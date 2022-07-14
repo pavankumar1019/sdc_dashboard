@@ -130,7 +130,7 @@
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown">Operations</a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./dashboard.php?page=consolidate">Upload Consolidate</a></li>
+                    <li><a class="dropdown-item" href="./dashboard.php?page=consolidate">Upload Marks</a></li>
                         <li><a class="dropdown-item" href="javascript:">New Updates</a></li>
                     </ul>
                 </li>
