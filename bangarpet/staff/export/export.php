@@ -37,6 +37,8 @@ if($_GET["data"]=="consolidate_pdf")
   $mpdf->WriteHTML($output);
   $file=time().'.pdf';
   $mpdf->output($file, 'D');
+ }else{
+     echo "no data found";
  }
 }
 
