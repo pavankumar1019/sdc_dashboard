@@ -188,7 +188,15 @@ function countdata()
             });
           });
       
-
+          $('form#markscardform :input').change(function() {
+            var tot = 0;
+            $("form#markscardform :input").each(function() {
+              tot += Number($(this).val());
+              // Could be written as
+              // tot += +this.value;
+            });
+            $('#gt').val(tot);
+          });
     
   });
   
