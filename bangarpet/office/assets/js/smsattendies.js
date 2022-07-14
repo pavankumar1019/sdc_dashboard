@@ -89,7 +89,7 @@ function getstudentlist(class_id){
         },
         complete: function(){
             $('#progress').html('Done');
-
+            $('#exampleModalCenter').modal('hide');
           $("#loading").animate({
             width: "100%"
         }, 10);
@@ -97,7 +97,7 @@ function getstudentlist(class_id){
         },
         success:function(result)
         {
-    $('#result').html(result);
+    $('#result').html(result+'<br>');
     getstudentlist($('#class_select').val());
         }
         
