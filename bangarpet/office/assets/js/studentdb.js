@@ -184,11 +184,11 @@ $(document).ready(function(){
         var dataResult = JSON.parse(dataResult);
         if(dataResult.statusCode==200){
           $('#error').html('Number Exist');				
-          $(this).val('');	
+          $('#sats').val('');	
         }
         else if(dataResult.statusCode==201){
           $('#error').html('');	
-          $(this).val('');
+          $('#sats').val('');
         }
         
       }
@@ -209,11 +209,11 @@ $(document).ready(function(){
         var dataResult = JSON.parse(dataResult);
         if(dataResult.statusCode==200){
           $('#error_roll').html('Number Exist');	
-          $(this).val('');				
+          $('#RollNo').val('');				
         }
         else if(dataResult.statusCode==201){
           $('#error_roll').html('');	
-          $(this).val('');
+          $('#RollNo').val('');
         }
         
       }
