@@ -360,10 +360,11 @@ if($_POST['type']=="sats_check"){
   $statement = $connect->prepare($query);
   $statement->execute();
   $results = $statement->fetchAll();
-  if ($results->num_rows > 0) {}
+  if ($results->num_rows > 0) {
 	echo json_encode(array("statusCode"=>200));
 	} 
 	else {
 		echo json_encode(array("statusCode"=>201));
 	}
+}
 ?>
