@@ -46,12 +46,14 @@ if($_GET["data"]=="consolidate_pdf")
      LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
      ";
  $result = mysqli_query($conn, $query);
+
+$totalmaxmarks= $_SESSION['maxmarks']*6;
  if(mysqli_num_rows($result) > 0)
  {
   $output .= '
    <table class="table" bordered="1"> 
    <tr>
-   <th colspan=11>Internal Test - 1</th> 
+   <th colspan=12>Internal Test - 1; Total Maximum Marks'.$totalmaxmarks.'</th> 
    </tr> 
                     <tr> 
                    

@@ -5,6 +5,7 @@ $sql='SELECT * FROM `current_test` ORDER BY id DESC LIMIT 0, 1';
 $result=$conn->query($sql);
 foreach($result as $row){
     $_SESSION['test_name']=$row['id'];
+    $_SESSION['maxmarks']=$row['maxmarks'];
     $testname=$row['name'];
 }
 ?>
