@@ -187,17 +187,17 @@ function countdata()
               }
             });
           });
+       
 
-
+          $("#mark").on('change keyup paste', function () {
+            var total=$('#l1').val()+$('#l2').val()+$('#s1').val()+$('#s2').val()+$('#s3').val()+$('#s4').val();
+            $('#gt').val(total);
+         });
 
     
   });
-
-  function sumauto() {
-    var total=$('#l1').val()+$('#l2').val()+$('#s1').val()+$('#s2').val()+$('#s3').val()+$('#s4').val();
-    $('#gt').val(total)
-  }
   
+
   var blink = 
   document.getElementById('blink');
 

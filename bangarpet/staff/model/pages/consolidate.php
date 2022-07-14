@@ -49,37 +49,37 @@ foreach($result as $row){
                                       
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">L1 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" onchange="sumauto()" name="l1" id="l1" >
+                                        <input type="text" class="form-control p-lg-2"  name="l1" id="l1 mark" >
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">L2 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" onchange="sumauto()" name="l2" id="l2"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
+                                        <input type="text" class="form-control p-lg-2"  name="l2" id="l2 mark"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S1 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" onchange="sumauto()" name="s1" id="s1"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
+                                        <input type="text" class="form-control p-lg-2"  name="s1" id="s1 mark"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S2 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" onchange="sumauto()" name="s2" id="s2"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
+                                        <input type="text" class="form-control p-lg-2"  name="s2" id="s2 mark"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S3 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s3" id="s3"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
+                                        <input type="text" class="form-control p-lg-2" name="s3" id="s3 mark"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">S4 MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="s4" id="s4"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
+                                        <input type="text" class="form-control p-lg-2" name="s4" id="s4 mark"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
 
                                         </div>
                                         <div class="form-group col-md-4">
                                         <label for="numberonly">TOTAL MARKS</label>
-                                        <input type="text" class="form-control p-lg-2" name="gt" id="gt"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" onchange="sumauto()">
+                                        <input type="text" class="form-control p-lg-2" name="gt" id="gt"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" >
 
                                         </div>
                                     
