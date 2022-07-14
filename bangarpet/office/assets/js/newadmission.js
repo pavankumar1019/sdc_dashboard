@@ -79,14 +79,16 @@ load_data(1);
         url:"./php_operations/newadmissions.php",
         method:"POST",
         data:{id:id, type:type},
-        dataType:"json",
-        success:function(data)
-        {   
+        cache: false,
+        success:function(dataResult)
+        { 
+          load_data(1);  
           swalWithBootstrapButtons.fire(
             'Deleted!',
             'Your file has been deleted.',
             'success'
           )
+          console.log(dataResult)
         }
       });
          
