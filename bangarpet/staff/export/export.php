@@ -101,6 +101,44 @@ $langname="HIN";
                     </tr>
    ';
   }
+  $output .= '</table>';
+  // progress rport
+
+  $query1 = "SELECT   ".$tbl_admission.".RollNo, SUM(".$class_test_marks.".l1) as l1, SUM(".$class_test_marks.".l2) as l2,  SUM(".$class_test_marks.".s1) as s1, SUM(".$class_test_marks.".s2) as s2,  SUM(".$class_test_marks.".s3) as s3,  SUM(".$class_test_marks.".s4) as s4,  ".$class_test_marks.".total
+  FROM ".$tbl_admission."
+  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+  ";
+$result1 = mysqli_query($conn, $query1);
+
+if(mysqli_num_rows($result) > 0)
+{
+$output .= '
+<table class="table" bordered="1"> 
+<tr>
+<th colspan=12 rowspan=2>Average Progress </th> 
+<th>S1</th>
+
+';
+while($row2 = mysqli_fetch_array($result1))
+{
+ $percentage=($row["total"]/$totalmaxmarks)*100;
+ if($row["lang_code"]==1){
+$langname="KAN";
+ }
+ if($row["lang_code"]==3){
+$langname="HIN";
+ }
+$output .= '
+ <tr>  
+                <td></td>
+                <td>'.$row2['s1'].'</td>
+                 </tr>
+';
+}
+
+
+
+
   $output .= '</table>
   </body>
 </html>';
