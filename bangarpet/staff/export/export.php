@@ -85,7 +85,7 @@ if($_GET["data"]=="consolidate_pdf")
   $output .= '</table>
   </body>
 </html>';
-  $mpdf=new \Mpdf\Mpdf();
+  $mpdf=new \Mpdf\Mpdf('','A4');
   $mpdf->WriteHTML($output);
   $file=time().'.pdf';
   $mpdf->output($file, 'D');
