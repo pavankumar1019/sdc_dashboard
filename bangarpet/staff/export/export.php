@@ -101,7 +101,11 @@ $langname="HIN";
                     </tr>
    ';
   }
-  $output .= '</table>
+  $output .= '
+  <tr>
+   <th colspan=2>Average</th> 
+   </tr> 
+  </table>
   </body>
 </html>';
   $mpdf=new \Mpdf\Mpdf();
