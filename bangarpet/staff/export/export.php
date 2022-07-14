@@ -143,17 +143,17 @@ $langname="HIN";
 $output .= '
  <tr>  
            
-                <td>'.$avgl1.'</td>
+                <td>'.round($avgl1, 2).'</td>
            
-                <td>'.$avgl2.'</td>
+                <td>'.round($avgl2, 2).'</td>
            
-                <td>'.$avgs1.'</td>
+                <td>'.round($avgs1, 2).'</td>
            
-                <td>'.$avgs2.'</td>
+                <td>'.round($avgs2, 2).'</td>
            
-                <td>'.$avgs3.'</td>
+                <td>'.round($avgs3, 2).'</td>
            
-                <td>'.$avgs4.'</td>
+                <td>'.round($avgs4, 2).'</td>
                 
                
                  </tr>
