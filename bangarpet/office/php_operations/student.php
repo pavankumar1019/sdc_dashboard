@@ -265,7 +265,8 @@ if($_POST['type']=="edit"){
       "Class"=>$row['Class'],
       "combination"=>$row['combination'],
       "lang_code"=>$row['lang_code'],
-      "class_name"=>$row['class_name']
+      "class_name"=>$row['class_name'],
+      "id"=>$row['id']
     
    
   ));
@@ -276,64 +277,48 @@ if($_POST['type']=="edit"){
 if($_POST['type']=="add"){
 $dob = $_POST['dd'].'-'.$_POST['mm'].'-'.$_POST['yy'];
   $insert_data = array(
-    "student_name"=>$_POST['student_name'],
-    "student_aadhar"=>$_POST['student_aadhar'],
-    "dob"=>$dob,
-    "gender"=>$_POST['customRadio'],
+    "sats"=>$_POST['sats'],
+    "RollNo"=>$_POST['RollNo'],
+    "student_number"=>$_POST['student_number'],
+    "StudentName"=>$_POST['StudentName'],
     "father_name"=>$_POST['father_name'],
     "mother_name"=>$_POST['mother_name'],
-    "religion"=>$_POST['religion'],
-    "caste"=>$_POST['caste'],
-    "subcaste"=>$_POST['subcaste'],
-    "address"=>$_POST['address'],
+    "dob"=>$_POST['dob'],
     "mobile_no"=>$_POST['mobile_no'],
-    "email_id"=>$_POST['email_id'],
-    "reg_no_sslc"=>$_POST['reg_no_sslc'],
-    "total"=>$_POST['total'],
-    "year_of_passing"=>$_POST['year_of_passing'],
-    "combination_opted"=>$_POST['combination_opted'],
-    "lang_opted"=>$_POST['lang_opted']
+    "Class"=>$_POST['Class'],
+    "combination"=>$_POST['combination'],
+    "lang_code"=>$_POST['lang_code'],
+    "class_name"=>$_POST['class_name']
        );
        $table_columns= implode(',', array_keys($insert_data));
        $table_data= implode("', '", $insert_data);
      $sql = "INSERT INTO ".$tbl_admission." ($table_columns) VALUES ('$table_data') "; 
-     $conn->query($sql);
-  $error=true;
-      
-      if ($error==true) {
-        $method = 'sendMessage';
-	
-        // Message details
-      
-$content =  rawurlencode('Dear '.$_POST['student_name'].' 
-Your admission is confirmed.Thank you for choosing our college.
-SDC COLLEGE BANGARPET-563114');
-      
-      
-       
-        // Prepare data for POST request
-       
-        // Send the POST request with cURL
-        $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$_POST['mobile_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
-        curl_setopt($ch, CURLOPT_POST, false);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $response = curl_exec($ch);
-        curl_close($ch);
-        echo "Done";
-
-      } else {
-        echo "Failed Duplicate entry. !";
-      }
-  
-  
-  echo $html;
+     if($conn->query($sql)==TRUE){
+echo "Done";
+     }
+     else{
+      echo "Failed";
+     }
+ 
 
 }
 
 if($_POST['type']=="update"){
   
   $insert_data = array(
-    "Class"=>$_POST['class']
+    "id"=>$_POST['id'],
+    "sats"=>$_POST['sats'],
+    "RollNo"=>$_POST['RollNo'],
+    "student_number"=>$_POST['student_number'],
+    "StudentName"=>$_POST['StudentName'],
+    "father_name"=>$_POST['father_name'],
+    "mother_name"=>$_POST['mother_name'],
+    "dob"=>$_POST['dob'],
+    "mobile_no"=>$_POST['mobile_no'],
+    "Class"=>$_POST['Class'],
+    "combination"=>$_POST['combination'],
+    "lang_code"=>$_POST['lang_code'],
+    "class_name"=>$_POST['class_name']
        );
   $query = '';   
   foreach($insert_data as $key => $value)  

@@ -100,8 +100,8 @@ $(document).ready(function(){
       success: function (result) {
         load_data(1);
         $('#newadmissionform').trigger("reset");
-    
         $("#newadmissionmodal").modal('hide');
+        
       }
     });
   
