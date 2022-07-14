@@ -4,6 +4,10 @@ require ('../../../vendor/autoload.php');
 // export to pdf
 $output = '';
 $output .= '
+<html>
+<head>
+
+
 <style>
 table {
   font-family: arial, sans-serif;
@@ -20,7 +24,8 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-</style>
+</style></head>
+<body>
 ';
 // export pdf
 if($_GET["data"]=="consolidate_pdf")
@@ -72,7 +77,9 @@ if($_GET["data"]=="consolidate_pdf")
                     </tr>
    ';
   }
-  $output .= '</table>';
+  $output .= '</table>
+  </body>
+</html>';
   $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
   $file=time().'.pdf';
