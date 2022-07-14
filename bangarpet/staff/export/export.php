@@ -124,6 +124,7 @@ $output .= '
 <th>Subject - 4</th>
 </tr>
 ';
+$totalstudents=mysqli_num_rows($result);
 while($row2 = mysqli_fetch_array($result1))
 {
  $percentage=($row["total"]/$totalmaxmarks)*100;
@@ -133,20 +134,26 @@ $langname="KAN";
  if($row["lang_code"]==3){
 $langname="HIN";
  }
+ $avgl1=($row2['l1']/$totalstudents)*100;
+ $avgl2=($row2['l2']/$totalstudents)*100;
+ $avgs1=($row2['s1']/$totalstudents)*100;
+ $avgs2=($row2['s2']/$totalstudents)*100;
+ $avgs3=($row2['s3']/$totalstudents)*100;
+ $avgs4=($row2['s4']/$totalstudents)*100;
 $output .= '
  <tr>  
            
-                <td>'.$row2['s1'].'</td>
+                <td>'.$avgl1.'</td>
            
-                <td>'.$row2['s1'].'</td>
+                <td>'.$avgl2.'</td>
            
-                <td>'.$row2['s1'].'</td>
+                <td>'.$avgs1.'</td>
            
-                <td>'.$row2['s1'].'</td>
+                <td>'.$avgs2.'</td>
            
-                <td>'.$row2['s1'].'</td>
+                <td>'.$avgs3.'</td>
            
-                <td>'.$row2['s1'].'</td>
+                <td>'.$avgs4.'</td>
                 
                
                  </tr>
