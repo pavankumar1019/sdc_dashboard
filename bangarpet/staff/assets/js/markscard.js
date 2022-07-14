@@ -188,15 +188,15 @@ function countdata()
             });
           });
       
-          $('#mark').change(function() {
-            var tot = 0;
-            $("#mark").each(function() {
-              tot += Number($(this).val());
-              // Could be written as
-              // tot += +this.value;
+      
+          $(document).on("change", ".qty1", function() {
+            var sum = 0;
+            $(".qty1").each(function(){
+                sum += +$(this).val();
             });
-            $('#gt').val(tot);
-          });
+            $("#gt").val(sum);
+        });
+        
     
   });
   
