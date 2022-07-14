@@ -70,7 +70,7 @@
                                             </select>
                                         </div>
                                     <div class="form-row">
-                                        <div class="form-group col-lg-12">
+                                        <div class="form-group col-lg-4">
                                             <label for="inputPassword4">Class</label>
                                             <select id="class" name="class" class="form-control"
                                                 required="">
