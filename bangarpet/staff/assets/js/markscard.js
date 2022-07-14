@@ -189,8 +189,13 @@ function countdata()
           });
       
           $('#mark').change(function() {
-                    tot += Number($(this).val());
-                       $('#gt').val(tot);
+            var tot = 0;
+            $("#mark").each(function() {
+              tot += Number($(this).val());
+              // Could be written as
+              // tot += +this.value;
+            });
+            $('#gt').val(tot);
           });
     
   });
