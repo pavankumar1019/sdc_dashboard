@@ -49,12 +49,12 @@ foreach($result as $row){
                                       
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">L1 MARKS</label>
-                                        <input type="text" class="qty1 form-control p-lg-2"  name="l1" id="l1 mark" required>
+                                        <input type="text" class="qty1 form-control p-lg-2"  name="l1" id="l1" required>
 
                                         </div>
                                         <div class="form-group col-md-2">
                                         <label for="numberonly">L2 MARKS</label>
-                                        <input type="text" class="qty1 form-control p-lg-2" name="l2" id="l2 mark"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
+                                        <input type="text" class="qty1 form-control p-lg-2" name="l2" id="l2"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>
                                         <div class="form-group col-md-2">
