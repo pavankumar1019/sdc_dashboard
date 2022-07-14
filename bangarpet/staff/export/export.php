@@ -122,7 +122,7 @@ $output .= '
 <th>Subject - 2</th>
 <th>Subject - 3</th>
 <th>Subject - 4</th>
-
+</tr>
 ';
 while($row2 = mysqli_fetch_array($result1))
 {
