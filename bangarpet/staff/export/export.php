@@ -25,10 +25,10 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 @page *{
-    margin-top: 2.54cm;
-    margin-bottom: 2.54cm;
-    margin-left: 3.175cm;
-    margin-right: 3.175cm;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left: 0;
+    margin-right:0;
 }
 
 </style></head>
@@ -90,8 +90,6 @@ if($_GET["data"]=="consolidate_pdf")
   $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
   
-  $mpdf->SetDisplayMode('fullpage');
-
   $file=time().'.pdf';
   $mpdf->output($file, 'D');
  }else{
