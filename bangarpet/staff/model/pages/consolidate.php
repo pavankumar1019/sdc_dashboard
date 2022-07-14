@@ -78,7 +78,7 @@ foreach($result as $row){
 
                                         </div>
                                         <div class="form-group col-md-4">
-                                        <label for="numberonly">TOTAL MARKS - <span id="gt" ></span></label>
+                                        <label for="numberonly">TOTAL MARKS - <span id="gt1" ></span></label>
                                         <input type="hidden" class="form-control p-lg-2" name="gt" id="gt"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
 
                                         </div>

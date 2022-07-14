@@ -195,6 +195,7 @@ function countdata()
                 sum += +$(this).val();
             });
             $("#gt").val(sum);
+            $("#gt1").html(sum);
         });
         
     
