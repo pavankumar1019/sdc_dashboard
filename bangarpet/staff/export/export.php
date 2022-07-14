@@ -53,7 +53,7 @@ $totalmaxmarks= $_SESSION['maxmarks']*6;
   $output .= '
    <table class="table" bordered="1"> 
    <tr>
-   <th colspan=12>Internal Test - 1; Total Maximum Marks'.$totalmaxmarks.'</th> 
+   <th colspan=12>Internal Test - 1; Maximum Marks'.$totalmaxmarks.'</th> 
    </tr> 
                     <tr> 
                    
@@ -70,11 +70,13 @@ $totalmaxmarks= $_SESSION['maxmarks']*6;
                     <th>Subject-3</th>
                     <th>subject-4</th>
                     <th>Total</th>
+                    <th>%</th>
                  
                     </tr>
   ';
   while($row = mysqli_fetch_array($result))
   {
+    $percentage=($row["total"]/$totalmaxmarks)*100;
    $output .= '
     <tr>  
                          <td>'.$row["RollNo"].'</td>  
@@ -89,6 +91,7 @@ $totalmaxmarks= $_SESSION['maxmarks']*6;
                          <td>'.$row["s3"].'</td>  
                          <td>'.$row["s4"].'</td>  
                          <td>'.$row["total"].'</td>  
+                         <td>'.$percentage.'</td>  
                     </tr>
    ';
   }
