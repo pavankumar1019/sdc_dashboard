@@ -77,13 +77,19 @@ $totalmaxmarks= $_SESSION['maxmarks']*6;
   while($row = mysqli_fetch_array($result))
   {
     $percentage=($row["total"]/$totalmaxmarks)*100;
+    if($row["lang_code"]==1){
+$langname="KAN";
+    }
+    if($row["lang_code"]==3){
+$langname="HIN";
+    }
    $output .= '
     <tr>  
                          <td>'.$row["RollNo"].'</td>  
                          <td>'.$row["StudentName"].'</td>  
                          <td>'.$row["father_name"].'</td>  
                          <td>'.$row["combination"].'</td>  
-                         <td>'.$row["lang_code"].'</td>  
+                         <td>'.$langname.'</td>  
                          <td>'.$row["l1"].'</td>  
                          <td>'.$row["l2"].'</td>  
                          <td>'.$row["s1"].'</td>  
