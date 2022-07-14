@@ -188,12 +188,7 @@
                                                     <label for="">Check the Attendance before submit</label><br>
                                                     <button type="button" id="btn_submit" class="btn btn-outline-info" title="" data-toggle="tooltip" data-original-title="Submit Attendance">SUBMIT & SMS</button>
                                                 </div>
-                                                <div class="col-6">
-                                                    <h6 class="text-center  m-b-10"><span class="text-muted m-r-5" id="progress"></span></h6>
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-c-theme2" id="loading" role="progressbar" style="height:6px;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
+                                          
                                             </div>
                                         </div>
                                     </div>
@@ -223,17 +218,19 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Please Wait... ! Dont close</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+      <h6 class="text-center  m-b-10"><span class="text-muted m-r-5" id="progress"></span></h6>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-c-theme2" id="loading" role="progressbar" style="height:6px;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" id="closemodal" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
