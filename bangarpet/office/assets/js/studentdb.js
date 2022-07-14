@@ -143,7 +143,7 @@ $(document).ready(function(){
             'Your file has been deleted.',
             'success'
           )
-         
+         console.log(data)
         }
       });
          
