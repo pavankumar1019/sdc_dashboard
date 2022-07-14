@@ -188,7 +188,7 @@ $(document).ready(function(){
         }
         else if(dataResult.statusCode==201){
           $('#error').html('');	
-          $('#sats').val('');
+       
         }
         
       }
@@ -213,7 +213,7 @@ $(document).ready(function(){
         }
         else if(dataResult.statusCode==201){
           $('#error_roll').html('');	
-          $('#RollNo').val('');
+       
         }
         
       }
