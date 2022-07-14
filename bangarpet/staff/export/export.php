@@ -89,6 +89,9 @@ if($_GET["data"]=="consolidate_pdf")
 </html>';
   $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
+  
+  $mpdf->SetDisplayMode('fullpage');
+
   $file=time().'.pdf';
   $mpdf->output($file, 'D');
  }else{
