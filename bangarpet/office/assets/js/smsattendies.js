@@ -81,6 +81,7 @@ function getstudentlist(class_id){
         method:'POST',
         data:{status:status, reg_no:reg_no, type:"add_atten", class_code:class_code},
         beforeSend: function(){
+          $('#exampleModalCenter').modal('show');
             $('#progress').html('Proccesing');
           $("#loading").animate({
             width: "50%"
