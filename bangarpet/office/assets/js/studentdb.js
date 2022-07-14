@@ -169,7 +169,7 @@ $(document).ready(function(){
     $("#student_number").removeAttr("disabled");
   })
 
-  $( "sats" ).change(function() {
+  $("#sats").change(function() {
     alert( "Handler for .change() called." );
   });
 
