@@ -137,11 +137,6 @@ $(document).ready(function(){
         dataType:"json",
         success:function(data)
         {   
-          swalWithBootstrapButtons.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-          )
           load_data(1);
         }
       });
