@@ -20,7 +20,7 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">SATS NO.</label>
-                                            <input type="text" class="form-control" id="sats" name="sats" placeholder=""
+                                            <input type="text" class="form-control" onkeypress="return onlyNumberKey(event)" id="sats" name="sats" placeholder=""
                                                 required>
                                         </div>
                                         <div class="form-group col-md-4">
