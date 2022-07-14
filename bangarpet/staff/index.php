@@ -174,7 +174,7 @@ if(isset($_SESSION["name_staff"]))
                       success: function (dataResult) {
                         var dataResult = JSON.parse(dataResult);
                         if (dataResult.statusCode == 200) {
-                          $('#please wait...').prop('disabled', 'disabled');
+                          $('#continue').prop('disabled', 'disabled');
                           location.reload();
                         } else {
                           Swal.fire({
