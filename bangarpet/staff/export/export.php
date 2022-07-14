@@ -115,7 +115,7 @@ if(mysqli_num_rows($result) > 0)
 $output .= '
 <table class="table" bordered="1"> 
 <tr>
-<th colspan=5 rowspan=2>Average Progress </th> 
+<th colspan=5 rowspan=2>Class Average Marks </th> 
 <th>Language - 1</th>
 <th>English</th>
 <th>Subject -1</th>
@@ -135,6 +135,21 @@ $langname="HIN";
  }
 $output .= '
  <tr>  
+                <td></td>
+                <td>'.$row2['s1'].'</td>
+                 </tr>
+                <td></td>
+                <td>'.$row2['s1'].'</td>
+                 </tr>
+                <td></td>
+                <td>'.$row2['s1'].'</td>
+                 </tr>
+                <td></td>
+                <td>'.$row2['s1'].'</td>
+                 </tr>
+                <td></td>
+                <td>'.$row2['s1'].'</td>
+                 </tr>
                 <td></td>
                 <td>'.$row2['s1'].'</td>
                  </tr>
