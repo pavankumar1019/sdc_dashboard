@@ -358,7 +358,7 @@ if($_POST['type']=="sats_check"){
   SELECT * FROM '.$tbl_admission.' WHERE sats="'.$_POST['value'].'"
   ';
   $result = $conn->query($sql);
-  if ($results->num_rows > 0) {
+  if ($result->num_rows > 0) {
 	echo json_encode(array("statusCode"=>200));
 	} 
 	else {
