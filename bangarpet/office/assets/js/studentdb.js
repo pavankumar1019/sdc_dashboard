@@ -75,7 +75,7 @@ $(document).ready(function(){
               $('#lang_code').val(data.lang_code);
               $('#class_name').val(data.class_name);
               $('#Class').val(data.Class);
-            
+              $("#RollNo").attr("disabled", "disabled"); 
     
             }
           });
