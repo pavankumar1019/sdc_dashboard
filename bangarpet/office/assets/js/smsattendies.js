@@ -85,14 +85,14 @@ function getstudentlist(class_id){
             $('#progress').html('Proccesing');
           $("#loading").animate({
             width: "50%"
-        }, 5000 );
+        }, 9000 );
         },
         complete: function(){
             $('#progress').html('Done');
 
           $("#loading").animate({
             width: "100%"
-        }, 9000 );
+        }, 10);
       
         },
         success:function(result)
