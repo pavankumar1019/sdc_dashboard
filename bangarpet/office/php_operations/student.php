@@ -254,8 +254,19 @@ if($_POST['type']=="edit"){
 
   foreach($result as $row){
     echo json_encode(array(
-      "class"=>$row['Class'],
-      "id"=>$row['id']
+      "sats"=>$row['sats'],
+      "rollno"=>$row['RollNo'],
+      "student_number"=>$row['student_number'],
+      "StudentName"=>$row['StudentName'],
+      "father_name"=>$row['father_name'],
+      "mother_name"=>$row['mother_name'],
+      "dob"=>$row['dob'],
+      "mobile_no"=>$row['mobile_no'],
+      "Class"=>$row['Class'],
+      "combination"=>$row['combination'],
+      "lang_code"=>$row['lang_code'],
+      "class_name"=>$row['class_name']
+    
    
   ));
   }

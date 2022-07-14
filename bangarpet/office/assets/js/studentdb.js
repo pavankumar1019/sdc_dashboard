@@ -61,15 +61,9 @@ $(document).ready(function(){
             success:function(data)
             {
               $('#id').val(data.id);
-
-  
               $("#newadmissionmodal").modal('show');
-  
               $('#type').val('update');
-      
-           
-  
-     
+    
             }
           });
         });
