@@ -43,6 +43,8 @@ if($_GET["data"]=="consolidate_pdf")
                          <td>'.$row["StudentName"].'</td>  
                          <td>'.$row["father_name"].'</td>  
                          <td>'.$row["lang_code"].'</td>  
+                         <td>'.$row["l1"].'</td>  
+                         <td>'.$row["l2"].'</td>  
                          <td>'.$row["s1"].'</td>  
                          <td>'.$row["s2"].'</td>  
                          <td>'.$row["s3"].'</td>  
