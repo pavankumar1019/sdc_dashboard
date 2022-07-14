@@ -134,7 +134,6 @@ $(document).ready(function(){
         url:"./php_operations/student.php",
         method:"POST",
         data:{id:id, type:type},
-        dataType:"json",
         cache: false,
         success: function(dataResult)
         {   
