@@ -233,12 +233,13 @@
                     <div class="progress-bar progress-c-theme2" id="loading" role="progressbar" style="height:6px;"
                         aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <!-- <button type="button" id="closemodal" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
                 <div id="result">
 
 </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closemodal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+     
             </div>
         </div>
     </div>

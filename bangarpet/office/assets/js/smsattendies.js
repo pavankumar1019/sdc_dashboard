@@ -81,6 +81,7 @@ function getstudentlist(class_id){
         method:'POST',
         data:{status:status, reg_no:reg_no, type:"add_atten", class_code:class_code},
         beforeSend: function(){
+          $("#closemodal").attr("disabled", true);
           $('#exampleModalCenter').modal('show');
             $('#progress').html('Proccesing');
           $("#loading").animate({
@@ -89,7 +90,7 @@ function getstudentlist(class_id){
         },
         complete: function(){
             $('#progress').html('Done');
-            $('#exampleModalCenter').modal('hide');
+            $("#closemodal").removeAttr("disabled");
           $("#loading").animate({
             width: "100%"
         }, 10);
