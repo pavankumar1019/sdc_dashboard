@@ -135,23 +135,20 @@ $langname="HIN";
  }
 $output .= '
  <tr>  
-                <td></td>
+           
                 <td>'.$row2['s1'].'</td>
-                 </tr>
-                <td></td>
+           
                 <td>'.$row2['s1'].'</td>
-                 </tr>
-                <td></td>
+           
                 <td>'.$row2['s1'].'</td>
-                 </tr>
-                <td></td>
+           
                 <td>'.$row2['s1'].'</td>
-                 </tr>
-                <td></td>
+           
                 <td>'.$row2['s1'].'</td>
-                 </tr>
-                <td></td>
+           
                 <td>'.$row2['s1'].'</td>
+                
+               
                  </tr>
 ';
 }
