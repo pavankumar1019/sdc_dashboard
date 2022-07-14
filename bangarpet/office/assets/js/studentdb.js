@@ -138,6 +138,12 @@ $(document).ready(function(){
         success:function(data)
         {   
           load_data(1);
+          swalWithBootstrapButtons.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+         
         }
       });
          

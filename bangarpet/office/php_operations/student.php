@@ -352,6 +352,7 @@ if($_POST['type']=="delete"){
   ';
   $statement1 = $connect->prepare($query1);
   $statement1->execute();  
+  echo "done";
 }
 
 if($_POST['type']=="sats_check"){
