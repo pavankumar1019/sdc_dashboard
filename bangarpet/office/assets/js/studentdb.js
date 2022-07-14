@@ -191,8 +191,35 @@ $(document).ready(function(){
         
       }
     });
+   })
   
- 
-})
+  $("#RollNo").change(function() {
+    var val=$(this).val();
+    $.ajax({
+      url:"./php_operations/student.php",
+      type: "POST",
+      data: {
+        type: "roll_check",
+        value:val		
+      },
+      cache: false,
+      success: function(dataResult){
+        var dataResult = JSON.parse(dataResult);
+        if(dataResult.statusCode==200){
+          $('#error_roll').html('Number Exist');					
+        }
+        else if(dataResult.statusCode==201){
+          $('#error_roll').html('');	
+        }
+        
+      }
+    });
+   })
+
+
+
+
+
+
 
   });

@@ -367,6 +367,19 @@ if($_POST['type']=="sats_check"){
 	}
 }
 
+if($_POST['type']=="roll_check"){
+  $sql = '
+  SELECT * FROM '.$tbl_admission.' WHERE RollNo="'.$_POST['value'].'"
+  ';
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+	echo json_encode(array("statusCode"=>200));
+	} 
+	else {
+		echo json_encode(array("statusCode"=>201));
+	}
+}
+
 
 
 ?>

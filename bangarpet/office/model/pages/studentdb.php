@@ -24,7 +24,7 @@
                                                 required>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label for="inputEmail4">Roll No</label>
+                                            <label for="inputEmail4">Roll No <span style="color:red" id="error_roll"></span></label>
                                             <input type="text" class="form-control" id="RollNo" name="RollNo"
                                                 placeholder="" required>
                                         </div>
