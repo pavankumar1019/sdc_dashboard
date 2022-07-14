@@ -102,7 +102,7 @@ $langname="HIN";
                          <td>'.$percentage.'%</td>  
                     </tr>
    ';
-   $s1avg=$row['av_s1'];
+  
   }
   $output .= '
   <tr>
@@ -111,7 +111,7 @@ $langname="HIN";
    </tr> 
   <tr>
    <td colspan=2></td> 
-   <td colspan=2>'.$s1avg.'</td> 
+   <td colspan=2>'.$row['av_s1'].'</td> 
    </tr> 
   </table>
   </body>
