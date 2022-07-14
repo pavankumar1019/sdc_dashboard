@@ -190,7 +190,7 @@ function countdata()
       
           $('form#markscardform :input').change(function() {
             var tot = 0;
-            $("form#markscardform :input").each(function() {
+            $("#mark").each(function() {
               tot += Number($(this).val());
               // Could be written as
               // tot += +this.value;
