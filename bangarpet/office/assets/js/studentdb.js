@@ -186,7 +186,7 @@ $(document).ready(function(){
           $('#error').html('Number Exist');					
         }
         else if(dataResult.statusCode==201){
-          $('#error').html('asdsa');	
+          $('#error').html('');	
         }
         
       }
