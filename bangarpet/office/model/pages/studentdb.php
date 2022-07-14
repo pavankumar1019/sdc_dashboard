@@ -17,11 +17,11 @@
                             <div class="modal-body">
 
                                 <form method="post" id="newadmissionform">
-                                <div class="form-row">
+                                    <div class="form-row">
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">SATS NO.</label>
-                                            <input type="text" class="form-control" id="sats" name="sats"
-                                                placeholder="" required>
+                                            <input type="text" class="form-control" id="sats" name="sats" placeholder=""
+                                                required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Roll No</label>
@@ -30,8 +30,8 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Student Number</label>
-                                            <input type="text" class="form-control" id="student_number" name="student_number"
-                                                placeholder="" required>
+                                            <input type="text" class="form-control" id="student_number"
+                                                name="student_number" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Student Name </label>
@@ -50,30 +50,30 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">DOB</label>
-                                            <input type="text" class="form-control" id="dob" name="dob"
-                                                placeholder="" required>
+                                            <input type="text" class="form-control" id="dob" name="dob" placeholder=""
+                                                required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Mobile No</label>
-                                            <input type="text" class="form-control" onkeypress="return onlyNumberKey(event)"  id="mobile_no" name="mobile_no"
+                                            <input type="text" class="form-control"
+                                                onkeypress="return onlyNumberKey(event)" id="mobile_no" name="mobile_no"
                                                 placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Combination</label>
                                             <select id="combination" name="combination" class="form-control"
                                                 required="">
-                                            <option value="PCMB">PCMB</option>
-                                            <option value="PCMCS">PCMCS</option>
-                                            <option value="EBACS">EBACS</option>
-                                            <option value="EBAS">EBAS</option>
-                                            <option value="ABMS">ABMS</option>
+                                                <option value="PCMB">PCMB</option>
+                                                <option value="PCMCS">PCMCS</option>
+                                                <option value="EBACS">EBACS</option>
+                                                <option value="EBAS">EBAS</option>
+                                                <option value="ABMS">ABMS</option>
                                             </select>
                                         </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-lg-4">
+
+                                        <div class="form-group col-md-4">
                                             <label for="inputPassword4">Class</label>
-                                            <select id="Class" name="Class" class="form-control"
-                                                required="">
+                                            <select id="Class" name="Class" class="form-control" required="">
                                                 <option value="" selected>-select one-</option>
                                                 <?php
                                                     require_once('./db_bpet_sdc/db.php');
@@ -94,20 +94,19 @@
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Language</label>
-                                            <select id="lang_code" name="lang_code" class="form-control"
-                                                required="">
+                                            <select id="lang_code" name="lang_code" class="form-control" required="">
                                                 <option value="1">KANNADA</option>
-    <option value="3">HINDI</option>
-    <option value="8">URDU</option>
-    <option value="9">SANSKRIT</option>
-                         
+                                                <option value="3">HINDI</option>
+                                                <option value="8">URDU</option>
+                                                <option value="9">SANSKRIT</option>
+
                                             </select>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Class Name</label>
                                             <select id="class_name" name="class_name" class="form-control" required="">
-                                            <option value="1">1st PUC</option>
-                                            <option value="2">2nd PUC</option>
+                                                <option value="1">1st PUC</option>
+                                                <option value="2">2nd PUC</option>
                                             </select>
                                         </div>
                                         <hr>
@@ -118,7 +117,6 @@
                                         </div>
                                     </div>
                             </div>
-                                                </div>
                             </form>
 
                         </div>
