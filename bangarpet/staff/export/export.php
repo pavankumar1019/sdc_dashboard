@@ -91,7 +91,7 @@ $totalmaxmarks= $_SESSION['maxmarks']*6;
                          <td>'.$row["s3"].'</td>  
                          <td>'.$row["s4"].'</td>  
                          <td>'.$row["total"].'</td>  
-                         <td>'.$percentage.'</td>  
+                         <td>'.$percentage.'%</td>  
                     </tr>
    ';
   }
