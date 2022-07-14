@@ -24,9 +24,11 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-*{
-    margin: 0;
-    padding:0;
+@page *{
+    margin-top: 2.54cm;
+    margin-bottom: 2.54cm;
+    margin-left: 3.175cm;
+    margin-right: 3.175cm;
 }
 
 </style></head>
@@ -85,7 +87,7 @@ if($_GET["data"]=="consolidate_pdf")
   $output .= '</table>
   </body>
 </html>';
-  $mpdf=new \Mpdf\Mpdf('','A4');
+  $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
   $file=time().'.pdf';
   $mpdf->output($file, 'D');
