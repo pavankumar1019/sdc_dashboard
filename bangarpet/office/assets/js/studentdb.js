@@ -164,9 +164,9 @@ $(document).ready(function(){
    $(document).on('click', '#btnAdmissionModal', function(){
     $("#newadmissionmodal").modal('show');
     $('#type').val('add');
-    $("#RollNo").attr("disabled", "false"); 
-    $("#sats").attr("disabled", "false"); 
-    $("#student_number").attr("disabled", "false"); 
+    $("#RollNo").removeAttr("disabled");
+    $("#sats").removeAttr("disabled"); 
+    $("#student_number").removeAttr("disabled");
   })
 
 
