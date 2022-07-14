@@ -27,7 +27,7 @@ tr:nth-child(even) {
 @page {
 	size: auto; /* <length>{1,2} | auto | portrait | landscape */
 	    
-	margin:0px; /* <any of the usual CSS values for margins> */
+	margin:50px; /* <any of the usual CSS values for margins> */
 	             /*(% of page-box width for LR, of height for TB) */
 	margin-header: 5mm; /* <any of the usual CSS values for margins> */
 	margin-footer: 5mm; /* <any of the usual CSS values for margins> */
