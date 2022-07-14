@@ -24,11 +24,15 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-@page *{
-    margin-top:0;
-    margin-bottom:0;
-    margin-left: 0;
-    margin-right:0;
+@page {
+	size: 8.5in 11in; /* <length>{1,2} | auto | portrait | landscape */
+	    
+	margin: 50%; /* <any of the usual CSS values for margins> */
+	             /*(% of page-box width for LR, of height for TB) */
+	margin-header: 5mm; /* <any of the usual CSS values for margins> */
+	margin-footer: 5mm; /* <any of the usual CSS values for margins> */
+
+
 }
 
 </style></head>
