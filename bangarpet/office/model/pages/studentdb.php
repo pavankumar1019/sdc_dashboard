@@ -63,6 +63,7 @@
                                             <label for="inputEmail4">Combination</label>
                                             <select id="combination" name="combination" class="form-control"
                                                 required="">
+                                                <option value="" selected>-select one-</option>
                                                 <option value="PCMB">PCMB</option>
                                                 <option value="PCMCS">PCMCS</option>
                                                 <option value="EBACS">EBACS</option>
@@ -95,7 +96,8 @@
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Language</label>
                                             <select id="lang_code" name="lang_code" class="form-control" required="">
-                                                <option value="1">KANNADA</option>
+                                            <option value="" selected>-select one-</option>    
+                                            <option value="1">KANNADA</option>
                                                 <option value="3">HINDI</option>
                                                 <option value="8">URDU</option>
                                                 <option value="9">SANSKRIT</option>
@@ -105,7 +107,8 @@
                                         <div class="form-group col-md-4">
                                             <label for="inputEmail4">Class Name</label>
                                             <select id="class_name" name="class_name" class="form-control" required="">
-                                                <option value="1">1st PUC</option>
+                                            <option value="" selected>-select one-</option>   
+                                            <option value="1">1st PUC</option>
                                                 <option value="2">2nd PUC</option>
                                             </select>
                                         </div>
