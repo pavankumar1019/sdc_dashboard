@@ -28,6 +28,13 @@ function countdata()
       $.ajax({
         url:"./php_operations/approvestaff.php",
         method:"POST",
+        beforeSend: function(){
+          $('#loadmessage').html("Loading...");
+        
+        },
+        complete: function(){
+          $('#loadmessage').hide();
+          },
         data:{page:page, query:query, type: "loaddata"},
         success:function(data)
         {

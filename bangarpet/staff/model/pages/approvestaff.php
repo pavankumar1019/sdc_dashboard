@@ -83,7 +83,7 @@ foreach($result as $row){
                                     <div class="card-block">
 
                                         <div class="table-responsive" id="dynamic_content">
-
+<h3 id="loadmessage"></h3>
                                         </div>
 
                                     </div>
