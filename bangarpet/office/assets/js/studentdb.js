@@ -135,7 +135,8 @@ $(document).ready(function(){
         method:"POST",
         data:{id:id, type:type},
         dataType:"json",
-        success:function(data)
+        cache: false,
+        success: function(dataResult)
         {   
           load_data(1);
           swalWithBootstrapButtons.fire(
@@ -143,7 +144,7 @@ $(document).ready(function(){
             'Your file has been deleted.',
             'success'
           )
-         console.log(data)
+         console.log(dataResult)
         }
       });
          
