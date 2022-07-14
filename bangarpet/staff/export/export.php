@@ -16,7 +16,7 @@ if($_GET["data"]=="consolidate_pdf")
   $output .= '
    <table class="table" bordered="1"> 
    <tr>
-   <th colspan=2>Internal Test - 1</th> 
+   <th colspan=11>Internal Test - 1</th> 
    </tr> 
                     <tr> 
                    
@@ -32,7 +32,7 @@ if($_GET["data"]=="consolidate_pdf")
                     <th>Subject-3</th>
                     <th>subject-4</th>
                     <th>Total</th>
-                    <th>%</th>
+                 
                     </tr>
   ';
   while($row = mysqli_fetch_array($result))
