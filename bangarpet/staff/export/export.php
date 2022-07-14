@@ -50,7 +50,9 @@ if($_GET["data"]=="consolidate_pdf")
 $totalmaxmarks= $_SESSION['maxmarks']*6;
  if(mysqli_num_rows($result) > 0)
  {
-  $totalstudents=mysqli_num_rows($result);
+$tstud="SELECT * FROM ".$tbl_admission." WHERE Class=".$_SESSION['class_id']."";
+$result3=$conn->query($tstud);
+$totalstudents=mysqli_num_rows($result3);
   $output .= '
    <table class="table" bordered="1"> 
    <tr>
