@@ -353,5 +353,17 @@ if($_POST['type']=="delete"){
   $statement1->execute();  
 }
 
-
+if($_POST['type']=="sats_check"){
+  $query = '
+  SELECT * FROM '.$tbl_admission.' WHERE sats="'.$_POST['value'].'"
+  ';
+  $statement = $connect->prepare($query);
+  $statement->execute();
+  $results = $statement->fetchAll();
+  if ($results->num_rows > 0) {}
+	echo json_encode(array("statusCode"=>200));
+	} 
+	else {
+		echo json_encode(array("statusCode"=>201));
+	}
 ?>

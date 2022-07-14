@@ -171,6 +171,7 @@ $(document).ready(function(){
 
   
   $("#sats").change(function() {
+    
     var val=$(this).val();
     $.ajax({
       url:"./php_operations/student.php",
@@ -193,7 +194,7 @@ $(document).ready(function(){
     });
   
  
-});
+})
 
   
   });
