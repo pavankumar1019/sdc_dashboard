@@ -101,7 +101,7 @@ $(document).ready(function(){
         load_data(1);
         $('#newadmissionform').trigger("reset");
         $("#newadmissionmodal").modal('hide');
-        
+
       }
     });
   
@@ -169,6 +169,9 @@ $(document).ready(function(){
     $("#student_number").removeAttr("disabled");
   })
 
+  $( "sats" ).change(function() {
+    alert( "Handler for .change() called." );
+  });
 
   
   });
