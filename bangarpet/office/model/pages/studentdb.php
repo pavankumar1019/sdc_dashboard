@@ -96,10 +96,10 @@
                                             <label for="inputEmail4">Language</label>
                                             <select id="lang_code" name="lang_code" class="form-control"
                                                 required="">
-                                            <option value="Kannada">Kannada</option>
-                                            <option value="Hindi">Hindi</option>
-                                            <option value="Urdu">Urdu</option>
-                                            <option value="Sanskrit">Sanskrit</option>
+                                                <option value="01">KANNADA</option>
+    <option value="03">HINDI</option>
+    <option value="08">URDU</option>
+    <option value="09">SANSKRIT</option>
                          
                                             </select>
                                         </div>
