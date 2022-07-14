@@ -146,7 +146,7 @@ $langname="HIN";
 $output .= '
  <tr>  
            
-                <td>'.$totalstudents.'</td>
+                <td>'.round($avgl1, 2).'</td>
            
                 <td>'.round($avgl2, 2).'</td>
            
