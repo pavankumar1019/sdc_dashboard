@@ -1,6 +1,7 @@
 
 <?php
 include '../db_bpet_sdc/db.php';
+
 if($_POST['type']=="getcount"){
 
   $query = "
@@ -365,4 +366,7 @@ if($_POST['type']=="sats_check"){
 		echo json_encode(array("statusCode"=>201));
 	}
 }
+
+
+
 ?>
