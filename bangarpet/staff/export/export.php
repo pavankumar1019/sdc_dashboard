@@ -115,8 +115,13 @@ if(mysqli_num_rows($result) > 0)
 $output .= '
 <table class="table" bordered="1"> 
 <tr>
-<th colspan=12 rowspan=2>Average Progress </th> 
-<th>S1</th>
+<th colspan=5 rowspan=2>Average Progress </th> 
+<th>Language - 1</th>
+<th>English</th>
+<th>Subject -1</th>
+<th>Subject - 2</th>
+<th>Subject - 3</th>
+<th>Subject - 4</th>
 
 ';
 while($row2 = mysqli_fetch_array($result1))
