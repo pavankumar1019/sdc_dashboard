@@ -10,6 +10,4 @@ $('#consolidatep').click(function(){
     window.location = page;  
    });
 
-
-
 });
