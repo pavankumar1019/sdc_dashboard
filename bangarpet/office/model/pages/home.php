@@ -167,7 +167,7 @@
                                                                 <h1 class="text-muted">
                                                                     <?php
                                                                     
-                                                $sql8="SELECT * FROM `".$tbl_admission."` WHERE `combination`='MBAS'";
+                                                $sql8="SELECT * FROM `".$tbl_admission."` WHERE `combination`='BASM'";
                                                 $data_students_2nd_puc_basm=$conn->query($sql8);
   echo mysqli_num_rows($data_students_2nd_puc_basm);
                                                                     ?>
