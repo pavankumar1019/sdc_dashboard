@@ -57,8 +57,8 @@ foreach($result as $row){
                                          <br>
                                          <br>
                                          
-                                        <h1  align="center"><i
-                                                    class="feather icon-download"></i></h1>
+                                        <button  align="center"><i
+                                                    class="feather icon-download"></i></button>
 
 
 
