@@ -61,13 +61,13 @@ $totalstudents=mysqli_num_rows($result3);
    Maximum Marks: '.$totalmaxmarks.'</h4></th> 
    </tr> 
    <tr>
-   <td colspan=6 style="text-align:center;">
+   <td colspan=4 style="text-align:center;">
    Section: 
    </td>
-   <td colspan=6 style="text-align:center;">
+   <td colspan=4 style="text-align:center;">
    Class Teacher: 
    </td>
-   <td colspan=6 style="text-align:center;">
+   <td colspan=4 style="text-align:center;">
    No of Students: 
    </td>
    </tr>
