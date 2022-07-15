@@ -66,10 +66,7 @@ $totalstudents=mysqli_num_rows($result3);
    <th colspan=13 style="text-align:center;"><h2>
    Internal Test - 1</h2><h4>
    Maximum Marks: '.$totalmaxmarks.'</h4>
-   <p>Subjects Format : PCM B/CS <br>
-   EBACs <br>
-   E/M BAS <br>
-   </p>
+  
    </th> 
    </tr> 
    <tr>
