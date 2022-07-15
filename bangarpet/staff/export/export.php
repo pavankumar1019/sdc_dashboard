@@ -1,6 +1,13 @@
 <?php
 include '../db_bpet_sdc/db.php';
 require ('../../../vendor/autoload.php');
+
+//Get class name
+$getclassname="SELECT * FROM class WHERE id='".$_SESSION['class_id']."'";
+$classresult=$conn->query($getclassname);
+foreach($classresult as $rowclass){
+  $classname=$rowclass['section']."-".$rowclass['name'];
+}
 // export to pdf
 $output = '';
 $output .= '
@@ -62,7 +69,7 @@ $totalstudents=mysqli_num_rows($result3);
    </tr> 
    <tr>
    <td colspan=4 style="text-align:center;">
-   Section:
+ <h4> Section: '.$classname.' </h4>
    </td>
    <td colspan=4 style="text-align:center;">
    <h4>Class Teacher: '.$_SESSION['name_staff'].'</h4>
