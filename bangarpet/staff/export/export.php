@@ -74,7 +74,7 @@ $totalstudents=mysqli_num_rows($result3);
    <td colspan=4 style="text-align:center;">
    <h4>Class Teacher: '.$_SESSION['name_staff'].'</h4>
    </td>
-   <td colspan=4 style="text-align:right;">
+   <td colspan=5 style="text-align:right;">
  <h4>  No of Students: '.$totalstudents.'</h4>
    </td>
    </tr>
