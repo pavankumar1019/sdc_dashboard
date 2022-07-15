@@ -36,7 +36,7 @@ include('./db_bpet_sdc/db.php');
                                         <form>
                                             <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Select Class</label>
-                                                <select class="form-control" id="exampleFormControlSelect1"
+                                                <select class="form-control" id="consolidateclass"
                                                     name="class_id" required>
                                                     <?php
                         
@@ -57,7 +57,7 @@ foreach($result as $row){
                                          <br>
                                          <br>
                                          
-                                        <h1  align="center"><i
+                                        <h1  align="center" id="consolidatep"><i
                                                     class="feather icon-download"></i></h1>
 
 
