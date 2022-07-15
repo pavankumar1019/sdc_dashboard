@@ -120,7 +120,7 @@ $langname="HIN";
                          <td>'.$row["s3"].'</td>  
                          <td>'.$row["s4"].'</td>  
                          <td>'.$row["total"].'</td>  
-                         <td>'.$percentage.'%</td>  
+                         <td>'.round($percentage, 2).'%</td>  
                     </tr>
    ';
   }
