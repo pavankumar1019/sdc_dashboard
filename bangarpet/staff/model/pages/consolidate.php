@@ -172,7 +172,7 @@ include('./db_bpet_sdc/db.php');
                                 <div class="card-block">
                                     <h2 class="mb-4" id="blink">                   
    
-       <?php echo $testname;  ?>
+       <?php echo $_SESSION['testname'];  ?>
  </h2>
                                     <div class="form-group">
                                         <label for="search">Search Here !</label>

@@ -5,7 +5,7 @@
                                                 foreach($resultc as $rowc){
                                                     $_SESSION['test_name']=$rowc['id'];
                                                     $_SESSION['maxmarks']=$rowc['maxmarks'];
-                                                    $testname=$rowc['name'];
+                                                    $_SESSION['testname']=$rowc['name'];
                                                 }
                                              
                 if($_SESSION['role_staff']=="P"){
