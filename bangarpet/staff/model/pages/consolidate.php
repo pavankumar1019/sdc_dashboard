@@ -183,7 +183,7 @@ include('./db_bpet_sdc/db.php');
 Consolidate Subjects 1 , Subjects 2 , Subjects 3 , Subjects 4 is in order <br>
 PHY-CHEM-MATH-BIO / COMP_SC ;<br>
 ECO-BUSI-ACC-COMP_SC ; <br>
-ECO/BASIC_MATH-BUSI-ACC-SAT
+ECO/BASIC_MATH-BUSI-ACC-STAT
 </p>
                                 </div>
                             </div>
