@@ -201,7 +201,8 @@ if(mysqli_num_rows($result2) > 0)
 $output .= '
 <table class="table" bordered="1"> 
 <tr>
-<th  colspan=3> Class Toppers </th> 
+<th  colspan=3 style="align:center;"> <h1>
+Class Toppers</h1> </th> 
 </tr>
 ';
 
@@ -212,7 +213,7 @@ $output .= '
  <tr>  
                 <td>'.$row3['StudentName'].'</td>
                 <td>'.$row3['total'].'</td>
-                <td>'.$percentage1.'</td>
+                <td>'.round($percentage1, 2).'%</td>
                  </tr>
 ';
 }
