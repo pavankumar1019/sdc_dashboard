@@ -1,6 +1,12 @@
 <?php
                                                 include('./db_bpet_sdc/db.php');
-
+                                                $sqlc='SELECT * FROM `current_test` ORDER BY id DESC LIMIT 0, 1';
+                                                $resultc=$conn->query($sqlc);
+                                                foreach($resultc as $rowc){
+                                                    $_SESSION['test_name']=$rowc['id'];
+                                                    $_SESSION['maxmarks']=$rowc['maxmarks'];
+                                                    $testname=$rowc['name'];
+                                                }
                                              
                 if($_SESSION['role_staff']=="P"){
                     $sql="SELECT * FROM ".$tbl_admission;
