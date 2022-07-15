@@ -56,7 +56,7 @@ $totalstudents=mysqli_num_rows($result3);
   $output .= '
    <table class="table" bordered="1"> 
    <tr>
-   <th colspan=12>Internal Test - 1; Maximum Marks'.$totalmaxmarks.'</th> 
+   <th colspan=12 style="text-align:center;">Internal Test - 1; Maximum Marks'.$totalmaxmarks.'</th> 
    </tr> 
                     <tr> 
                    
