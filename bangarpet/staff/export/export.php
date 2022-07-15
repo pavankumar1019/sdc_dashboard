@@ -201,7 +201,7 @@ if(mysqli_num_rows($result2) > 0)
 $output .= '
 <table class="table" bordered="1"> 
 <tr>
-<th  colspan=3 style="align:center;"> <h1>
+<th  colspan=3 style="text-align:center;"> <h1>
 Class Toppers</h1> </th> 
 </tr>
 ';
