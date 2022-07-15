@@ -24,7 +24,7 @@ if($_POST['type']=="loaddata"){
       $start = 0;
     }
     
-    $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']." ORDER BY id DESC' 
+    $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']."' 
     ";
     
     if($_POST['query'] != '')
@@ -35,7 +35,7 @@ if($_POST['type']=="loaddata"){
       ';
     }
     
-    $query .= 'ORDER BY id ';
+    $query .= 'ORDER BY id DESC';
     
     $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
