@@ -190,7 +190,7 @@ $output .= '
 }
 $output .= '</table>';
 
-$query2 = "SELECT    ".$tbl_admission.".StudentName, TOP (5) ".$class_test_marks.".total
+$query2 = "SELECT    ".$tbl_admission.".StudentName, MAX(".$class_test_marks.".total)
   FROM ".$tbl_admission."
   LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
   GROUP BY total ORDER BY total DESC";
