@@ -62,13 +62,13 @@ $totalstudents=mysqli_num_rows($result3);
    </tr> 
    <tr>
    <td colspan=4 style="text-align:center;">
-   Section: 
+   Section:
    </td>
    <td colspan=4 style="text-align:center;">
-   Class Teacher: 
+   Class Teacher: '.$_SESSION['name_staff'].'
    </td>
    <td colspan=4 style="text-align:center;">
-   No of Students: 
+   No of Students: '.$totalstudents.'
    </td>
    </tr>
                     <tr> 
