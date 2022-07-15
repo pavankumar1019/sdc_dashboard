@@ -26,6 +26,7 @@ if($stat=="A"){
 
 $sql = "INSERT INTO `".$tbl_absentees."`( `Date`, `Status`, `RollNo`, `Class`, `msg_status`) 
 VALUES ('$date','$stat','$id','$class_id', 'sent')";
+$conn->query($sql);
 $selectnumber="SELECT * from ".$tbl_admission." where RollNo='".$id."'";
 $selectnumberresult=$conn->query($selectnumber);
 foreach($selectnumberresult as $stdnumber){
@@ -54,9 +55,9 @@ SDC COLLEGE BANGARPET-563114');
   
 $sql = "INSERT INTO `".$tbl_absentees."`( `Date`, `Status`, `RollNo`, `Class`, `msg_status`) 
 VALUES ('$date','$stat','$id','$class_id', '')";
-
-}
 $conn->query($sql);
+}
+
    }
 }
 // submit
