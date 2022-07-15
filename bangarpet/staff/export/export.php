@@ -201,18 +201,18 @@ if(mysqli_num_rows($result2) > 0)
 $output .= '
 <table class="table" bordered="1"> 
 <tr>
-<th  rowspan=3> Class Toppers </th> 
+<th  colspan=3> Class Toppers </th> 
 </tr>
 ';
 
 while($row3 = mysqli_fetch_array($result2))
 {
-  $percentage=($row3["total"]/$totalmaxmarks)*100;
+  $percentage1=($row3["total"]/$totalmaxmarks)*100;
 $output .= '
  <tr>  
                 <td>'.$row3['StudentName'].'</td>
                 <td>'.$row3['total'].'</td>
-                <td>'.$percentage.'</td>
+                <td>'.$percentage1.'</td>
                  </tr>
 ';
 }
