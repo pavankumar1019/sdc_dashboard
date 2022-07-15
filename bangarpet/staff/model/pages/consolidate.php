@@ -186,12 +186,10 @@ foreach($result as $row){
 
                                     </div>
 <p>
-    PCMB [ s1 = P , s2 = C , s3 = M , s4 = B] <br>
-    PCMCS [ s1 = P , s2 = C , s3 = M , s4 = CS] <br>
-    EBACS [ s1 = E , s2 = B , s3 = A , s4 = CS] <br>
-    EBAS [ s1 = E , s2 = B , s3 = A , s4 = S] <br>
-    BASM [ s1 = B , s2 = A , s3 = S , s4 = M] <br>
-
+Consolidate Subjects 1 , Subjects 2 , Subjects 3 , Subjects 4 is in order <br>
+PHY-CHEM-MATH-BIO / COMP_SC ;<br>
+ECO-BUSI-ACC-COMP_SC ; <br>
+ECO/BASIC_MATH-BUSI-ACC-SAT
 </p>
                                 </div>
                             </div>
