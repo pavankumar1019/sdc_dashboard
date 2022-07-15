@@ -188,10 +188,35 @@ $output .= '
                  </tr>
 ';
 }
+$output .= '</table>';
 
+$query2 = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
+  FROM ".$tbl_admission."
+  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+  ORDER BY total DESC LIMIT 5";
+$result2 = mysqli_query($conn, $query2);
 
+if(mysqli_num_rows($result2) > 0)
+{
+$output .= '
+<table class="table" bordered="1"> 
+<tr>
+<th  rowspan=3> Class Toppers </th> 
+</tr>
+';
 
-
+while($row3 = mysqli_fetch_array($result2))
+{
+  $percentage=($row3["total"]/$totalmaxmarks)*100;
+$output .= '
+ <tr>  
+                <td>'.$row3['StudentName'].'</td>
+                <td>'.$row3['total'].'</td>
+                <td>'.$percentage.'</td>
+                 </tr>
+';
+}
+}
   $output .= '</table>
   </body>
 </html>';
