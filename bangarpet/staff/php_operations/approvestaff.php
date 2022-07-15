@@ -35,7 +35,7 @@ if($_POST['type']=="loaddata"){
       ';
     }
     
-    $query .= ' ORDER BY id DESC';
+    $query .= 'ORDER BY id DESC';
     
     $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
     
