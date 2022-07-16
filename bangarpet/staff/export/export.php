@@ -192,8 +192,14 @@ $output .= '</table>';
 
 $query2 = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
   FROM ".$tbl_admission."
-  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  AND ".$class_test_marks.".l1>=18 AND ".$class_test_marks.".l2>=18  AND ".$class_test_marks.".s1>=18  AND ".$class_test_marks.".s2>=18  AND ".$class_test_marks.".s3>=18  AND ".$class_test_marks.".s4>=18
-  ORDER BY `".$class_test_marks."`.`total` DESC LIMIT 5";
+  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+  AND ".$class_test_marks.".l1>=18 
+  AND ".$class_test_marks.".l2>=18 
+   AND ".$class_test_marks.".s1>=18  
+   AND ".$class_test_marks.".s2>=18  
+   AND ".$class_test_marks.".s3>=18  
+   AND ".$class_test_marks.".s4>=18
+  ORDER BY `".$class_test_marks."`.`total` DESC LIMIT 10";
 $result2 = mysqli_query($conn, $query2);
 
 if(mysqli_num_rows($result2) > 0)
