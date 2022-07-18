@@ -93,6 +93,12 @@
                     ';
                 }
                 ?>
+                <?php
+                if($_SESSION['role_staff']=="P"){
+                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=smsmarks" class="nav-link"><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">SMS MARKS </span></a></li>
+                    ';
+                }
+                ?>
                  
                   
                     <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">About</span></a></li>
