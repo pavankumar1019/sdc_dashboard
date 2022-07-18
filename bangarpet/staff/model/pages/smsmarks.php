@@ -54,6 +54,14 @@ foreach($result as $row){
 
                                             
                                         </form>
+                                         <br>
+                                         <br>
+                                         
+                                        <h1  align="center" id="sendsms"><i
+                                                    class="feather icon-mail"></i></h1>
+
+
+
                                     </div>
                                 </div>
                             </div>
