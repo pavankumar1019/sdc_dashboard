@@ -77,6 +77,7 @@ tr:nth-child(even){background-color: #f2f2f2}
     </tr>
   </table>
 </div>
+<br>
 <div class="container">
   <div class="row">
     <div class="col text-center">
