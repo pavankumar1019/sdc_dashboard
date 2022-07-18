@@ -1,5 +1,5 @@
 <?php
-echo $_GET['class_id']
+// echo $_GET['class_id']
 
 ?>
 <!DOCTYPE html>
@@ -23,26 +23,18 @@ tr:nth-child(even){background-color: #f2f2f2}
 </style>
 </head>
 <body>
-
-<h2>Responsive Table</h2>
-<p>If you have a table that is too wide, you can add a container element with overflow-x:auto around the table, and it will display a horizontal scroll bar when needed.</p>
-<p>Resize the browser window to see the effect. Try to remove the div element and see what happens to the table.</p>
-
 <div style="overflow-x:auto;">
   <table>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>L1</th>
+      <th>L2</th>
+      <th>S1</th>
+      <th>S2</th>
+      <th>S3</th>
+      <th>S4</th>
+      <th>Total</th>
     </tr>
     <tr>
       <td>Jill</td>
@@ -54,9 +46,7 @@ tr:nth-child(even){background-color: #f2f2f2}
       <td>50</td>
       <td>50</td>
       <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
+    
     </tr>
     <tr>
       <td>Eve</td>
@@ -68,9 +58,7 @@ tr:nth-child(even){background-color: #f2f2f2}
       <td>94</td>
       <td>94</td>
       <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
+    
     </tr>
     <tr>
       <td>Adam</td>
@@ -82,9 +70,7 @@ tr:nth-child(even){background-color: #f2f2f2}
       <td>67</td>
       <td>67</td>
       <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
+  
     </tr>
   </table>
 </div>
