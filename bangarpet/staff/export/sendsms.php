@@ -86,8 +86,57 @@ tr:nth-child(even){background-color: #f2f2f2}
       <button class="btn btn-default bg-warning">Run SMS Server</button>
     </div>
   </div>
+</div><div class="container">
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>L1</th>
+      <th>L2</th>
+      <th>S1</th>
+      <th>S2</th>
+      <th>S3</th>
+      <th>S4</th>
+      <th>Total</th>
+    </tr>
+    <tr class="table-danger">
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+  
+    </tr>
+  </table>
 </div>
-
 </section>
 
 
