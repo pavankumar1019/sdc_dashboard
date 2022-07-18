@@ -54,14 +54,6 @@ foreach($result as $row){
 
                                             
                                         </form>
-                                         <br>
-                                         <br>
-                                         
-                                        <h1  align="center" id="consolidatep"><i
-                                                    class="feather icon-download"></i></h1>
-
-
-
                                     </div>
                                 </div>
                             </div>
