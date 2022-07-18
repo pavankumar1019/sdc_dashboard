@@ -26,6 +26,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 </head>
 <body>
+<div class="container">
 <div style="overflow-x:auto;">
   <table>
     <tr>
@@ -76,6 +77,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   
     </tr>
   </table>
+</div>
 </div>
 <br>
 <div class="container">
