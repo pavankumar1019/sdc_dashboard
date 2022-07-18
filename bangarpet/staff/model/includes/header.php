@@ -101,7 +101,7 @@
                 ?>
                  
                   
-                    <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">About</span></a></li>
+                    <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather message-square"></i></span><span class="pcoded-mtext">About</span></a></li>
                     <!-- <li data-username="Disabled Menu" class="nav-item disabled"><a href="javascript:" class="nav-link"><span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Disabled menu</span></a></li> -->
                 </ul>
             </div>
