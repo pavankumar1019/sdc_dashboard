@@ -86,7 +86,9 @@ tr:nth-child(even){background-color: #f2f2f2}
       <button class="btn btn-default bg-warning">Run SMS Server</button>
     </div>
   </div>
-</div><div class="container">
+</div>
+<br>
+<div class="container">
 <table>
     <tr>
       <th>Name</th>
