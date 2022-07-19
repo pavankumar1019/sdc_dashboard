@@ -350,6 +350,7 @@ if($_POST['type']=="edit"){
 // update marks card
 if($_POST['type']=="update"){
 
+  $total=$_POST['l1']+$_POST['l2']+$_POST['s1']+$_POST['s2']+$_POST['s3']+$_POST['s4'];
   $insert_data = array(
  
     "l1"=>$_POST['l1'],
@@ -358,7 +359,7 @@ if($_POST['type']=="update"){
     "s2"=>$_POST['s2'],
     "s3"=>$_POST['s3'],
     "s4"=>$_POST['s4'],
-    "total"=>$_POST['gt'],
+    "total"=>$total,
      );
   $query = '';   
   foreach($insert_data as $key => $value)  
