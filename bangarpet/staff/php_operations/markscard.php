@@ -284,7 +284,7 @@ if($_POST['type']=="getcount"){
 
 }
 if($_POST['type']=="add"){
-
+  $total=$_POST['l1']+$_POST['l2']+$_POST['s1']+$_POST['s2']+$_POST['s3']+$_POST['s4'];
     $insert_data = array(
          "roll"=>$_POST['reg_no'],
          "test_id"=>$_POST['testname'],
@@ -294,7 +294,7 @@ if($_POST['type']=="add"){
          "s2"=>$_POST['s2'],
          "s3"=>$_POST['s3'],
          "s4"=>$_POST['s4'],
-         "total"=>$_POST['gt'],
+         "total"=>$total,
          );
          $table_columns= implode(',', array_keys($insert_data));
          $table_data= implode("', '", $insert_data);
@@ -325,6 +325,7 @@ if($_POST['type']=="edit"){
   $result = $statement->fetchAll();
 
   foreach($result as $row){
+
     echo json_encode(array(
   
      
