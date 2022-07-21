@@ -33,7 +33,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 <body>
 <section><div class="container">
 <div style="overflow-x:auto;">
-  <table></table>
+  <table>
   <tr>
       <th>Name</th>
       <th>Phone Number</th>
