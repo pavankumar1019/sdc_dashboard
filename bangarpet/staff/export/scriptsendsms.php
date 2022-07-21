@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $query);
 $html='';
 if ($result->num_rows > 0) {
 	foreach($result as $row){
-        $html+='
+        $html.='
         <tr>
         <td>'.$row['StudentName'].'</td>
         <td>'.$row['mobile_no'].'</td>
