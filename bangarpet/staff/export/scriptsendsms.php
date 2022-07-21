@@ -27,7 +27,7 @@ $s2="BUS";
 $s3="ACC";
 $s4="ST";
 }
-if($row['combination']=="ABSM"){
+if($row['combination']=="BASM"){
 $s1="BM";
 $s2="BUS";
 $s3="ACC";
