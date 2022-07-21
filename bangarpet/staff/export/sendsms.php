@@ -71,7 +71,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 <div class="container">
   <div class="row">
     <div class="col text-center">
-    <form action="#"  method="post">
+    <form action=""  method="post">
       <button  name="test" class="btn btn-default bg-warning">Run SMS Server</button>
   </form>
     </div>
