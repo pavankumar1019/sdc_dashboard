@@ -75,6 +75,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 <div class="container">
   <div class="row">
     <div class="col text-center">
+      <input type="text" id="class_id" value="<?php echo $_GET['class_id']; ?>">
       <button class="btn btn-default bg-warning" id="butsave">Run SMS Server</button>
     </div>
   </div>
@@ -114,7 +115,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 $(document).ready(function() {
 $('#butsave').on('click', function() {
 $("#butsave").attr("disabled", "disabled");
-var class_id = <?php echo $_GET['class_id']; ?>;
+var class_id = $('#class_id').val();
 
 if(class_id!=""){
 	$.ajax({
