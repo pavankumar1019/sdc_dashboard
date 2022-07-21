@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
         $html.='
         <tr>
         <td>'.$row['StudentName'].'</td>
-        <td>'.$row['mobile_no'].'</td>
+        <td>'.$row['lang_code'].'</td>
         <td>'.$row['l1'].'</td>
         <td>'.$row['l2'].'</td>
         <td>'.$row['s1'].'</td>
@@ -41,7 +41,7 @@ if ($result->num_rows > 0) {
     echo $html;
 	} 
 	else {
-        echo "kkk";
+        echo "error";
 	}
 
 ?>
