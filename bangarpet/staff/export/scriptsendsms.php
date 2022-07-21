@@ -18,7 +18,8 @@ if ($result->num_rows > 0) {
         $html.='
         <tr>
         <td> Name : '.$row['StudentName'].' <br>
-        Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 
+        Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 <br>
+        KN=20,EN=30,PHY=10,CHE=20,MAT=50,CS=60 TOTAL=400.
         </td>
         </tr>
         ';
