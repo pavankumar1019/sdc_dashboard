@@ -8,6 +8,19 @@ LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_mar
 ";
 $result = mysqli_query($conn, $query);
 $html='';
+$html.='
+<tr>
+<th>Name</th>
+<th>Phone Number</th>
+<th>L1</th>
+<th>L2</th>
+<th>S1</th>
+<th>S2</th>
+<th>S3</th>
+<th>S4</th>
+<th>Total</th>
+</tr>
+';
 if ($result->num_rows > 0) {
 	foreach($result as $row){
         $html.='

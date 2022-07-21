@@ -83,17 +83,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 <br>
 <div class="container">
 <table>
-    <tr>
-      <th>Name</th>
-      <th>Phone Number</th>
-      <th>L1</th>
-      <th>L2</th>
-      <th>S1</th>
-      <th>S2</th>
-      <th>S3</th>
-      <th>S4</th>
-      <th>Total</th>
-    </tr>
+  
 <tbody id="data">
 
 </tbody>
