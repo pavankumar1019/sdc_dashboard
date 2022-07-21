@@ -71,9 +71,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 <div class="container">
   <div class="row">
     <div class="col text-center">
-    <form action=""  method="post">
-      <button  name="test" class="btn btn-default bg-warning">Run SMS Server</button>
-  </form>
+      <button class="btn btn-default bg-warning">Run SMS Server</button>
     </div>
   </div>
 </div>
@@ -81,11 +79,6 @@ tr:nth-child(even){background-color: #f2f2f2}
 <div class="container">
 <table>
     <tr>
-      <th><?php
-    if(isset($_POST['test'])){
-      echo "fucntion Running Successfully ";
-    }
-    ?></th>
       <th>Name</th>
       <th>Phone Number</th>
       <th>L1</th>
