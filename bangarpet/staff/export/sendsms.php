@@ -81,7 +81,7 @@ tr:nth-child(even){background-color: #f2f2f2}
     <tr>
       <th><?php
     if(isset($_POST['test'])){
-      echo "fucntion Running Successfully "
+      echo "fucntion Running Successfully ";
     }
     ?></th>
       <th>Name</th>
