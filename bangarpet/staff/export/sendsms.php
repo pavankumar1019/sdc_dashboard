@@ -33,7 +33,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 <body>
 <section><div class="container">
 <div style="overflow-x:auto;">
-  <table>
+  <table></table>
   <tr>
       <th>Name</th>
       <th>Phone Number</th>
@@ -45,7 +45,23 @@ tr:nth-child(even){background-color: #f2f2f2}
       <th>S4</th>
       <th>Total</th>
     </tr>
-
+    <?php
+    foreach($result as $row){
+      echo '
+      <tr>
+      <td>'.$row['StudentName'].'</td>
+      <td>'.$row['mobile_no'].'</td>
+      <td>'.$row['l1'].'</td>
+      <td>'.$row['l2'].'</td>
+      <td>'.$row['s1'].'</td>
+      <td>'.$row['s2'].'</td>
+      <td>'.$row['s3'].'</td>
+      <td>'.$row['s4'].'</td>
+      <td>'.$row['total'].'</td>
+    
+    </tr>
+      '
+    }    ?>
     
    
   </table>
