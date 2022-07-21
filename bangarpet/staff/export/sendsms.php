@@ -71,7 +71,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 <div class="container">
   <div class="row">
     <div class="col text-center">
-      <button class="btn btn-default bg-warning">Run SMS Server</button>
+      <button class="btn btn-default bg-warning" id="butsave">Run SMS Server</button>
     </div>
   </div>
 </div>
@@ -89,42 +89,10 @@ tr:nth-child(even){background-color: #f2f2f2}
       <th>S4</th>
       <th>Total</th>
     </tr>
-    <tr class="table-danger">
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-    
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-    
-    </tr>
-    <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-  
-    </tr>
+<tbody id="data">
+
+</tbody>
+ 
   </table>
 </div>
 </section>
@@ -137,5 +105,40 @@ tr:nth-child(even){background-color: #f2f2f2}
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+$('#butsave').on('click', function() {
+$("#butsave").attr("disabled", "disabled");
+var class_id = <?php echo $_GET['class_id']; ?>;
+
+if(class_id!=""){
+	$.ajax({
+		url: "./scriptsendsms.php",
+		type: "POST",
+		data: {
+			class_id: class_id
+					
+		},
+		cache: false,
+		success: function(dataResult){
+			var dataResult = JSON.parse(dataResult);
+			if(dataResult.statusCode==200){
+        $("#data").html(dataResult.data);
+			}
+			else if(dataResult.statusCode==201){
+				alert("Error occured !");
+			}
+			
+		}
+	});
+	}
+	else{
+		alert('Class ID is empty  !');
+	}
+});
+});
+</script>
+
+
 </body>
 </html>
