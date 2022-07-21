@@ -21,13 +21,18 @@ $l1="KAN";
           if($row['lang_code']==3){
 $l1="HIN";
           }
-
+if($row['combination']=="EBAS"){
+$s1="ECO";
+$s2="BUS";
+$s3="ACC";
+$s4="ST";
+}
 
         $html.='
         <tr>
         <td> Name : '.$row['StudentName'].' <br>
         Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 <br>
-        '.$l1.'=20,EN=30,PHY=10,CHE=20,MAT=50,CS=60 TOTAL=400.
+        '.$l1.'=20,EN=30,'.$s1.'=10,'.$s2.'=20,'.$s3.'=50,'.$s4.'=60 TOTAL=400.
         </td>
         </tr>
         ';
