@@ -15,11 +15,19 @@ $html.='
 ';
 if ($result->num_rows > 0) {
 	foreach($result as $row){
+          if($row['lang_code']==1){
+$l1="KAN";
+          }
+          if($row['lang_code']==3){
+$l1="HIN";
+          }
+
+
         $html.='
         <tr>
         <td> Name : '.$row['StudentName'].' <br>
         Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 <br>
-        KN=20,EN=30,PHY=10,CHE=20,MAT=50,CS=60 TOTAL=400.
+        '.$l1.'=20,EN=30,PHY=10,CHE=20,MAT=50,CS=60 TOTAL=400.
         </td>
         </tr>
         ';
