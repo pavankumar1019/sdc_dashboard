@@ -38,7 +38,7 @@ $s4="ST";
         <tr>
         <td> Name : '.$row['StudentName'].' <br>
         Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 <br>
-        '.$l1.'=20,EN=30,'.$s1.'=10,'.$s2.'=20,'.$s3.'=50,'.$s4.'=60 TOTAL=400.
+        '.$l1.'='.$row['l1'].',EN='.$row['l2'].','.$s1.'='.$row['s1'].','.$s2.'='.$row['s2'].','.$s3.'='.$row['s3'].','.$s4.'='.$row['s3'].' TOTAL='.$row['total'].'.
         </td>
         </tr>
         ';
