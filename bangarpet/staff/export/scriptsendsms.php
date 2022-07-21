@@ -10,30 +10,16 @@ $result = mysqli_query($conn, $query);
 $html='';
 $html.='
 <tr>
-<th>Name</th>
-<th>Phone Number</th>
-<th>L1</th>
-<th>L2</th>
-<th>S1</th>
-<th>S2</th>
-<th>S3</th>
-<th>S4</th>
-<th>Total</th>
+<th style="text-align:center;">Detailes</th>
 </tr>
 ';
 if ($result->num_rows > 0) {
 	foreach($result as $row){
         $html.='
         <tr>
-        <td>'.$row['StudentName'].'</td>
-        <td>'.$row['lang_code'].'</td>
-        <td>'.$row['l1'].'</td>
-        <td>'.$row['l2'].'</td>
-        <td>'.$row['s1'].'</td>
-        <td>'.$row['s2'].'</td>
-        <td>'.$row['s3'].'</td>
-        <td>'.$row['s4'].'</td>
-        <td>'.$row['total'].'</td>
+        <td> Name : '.$row['StudentName'].' <br>
+        Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 
+        </td>
         </tr>
         ';
     }
