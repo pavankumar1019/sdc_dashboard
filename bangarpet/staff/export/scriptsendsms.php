@@ -34,8 +34,7 @@ if ($result->num_rows > 0) {
         <td>'.$row['s3'].'</td>
         <td>'.$row['s4'].'</td>
         <td>'.$row['total'].'</td>
-      
-      </tr>
+        </tr>
         ';
     }
     echo $html;
