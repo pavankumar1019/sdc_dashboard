@@ -8,13 +8,10 @@ LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_mar
 ";
 $result = mysqli_query($conn, $query);
 if ($result->num_rows > 0) {
-		echo json_encode(array(
-            "statusCode"=>200,
-            "data"=>"hello pk"
-        ));
+		echo "a";
 	} 
 	else {
-		echo json_encode(array("statusCode"=>201));
+        echo "kkk";
 	}
 
 ?>

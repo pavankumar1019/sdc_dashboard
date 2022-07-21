@@ -127,13 +127,7 @@ if(class_id!=""){
 		},
 		cache: false,
 		success: function(dataResult){
-			var dataResult = JSON.parse(dataResult);
-			if(dataResult.statusCode==200){
-        $("#data").html(dataResult.data);
-			}
-			else if(dataResult.statusCode==201){
-				alert("Error occured !");
-			}
+      $("#data").html(dataResult);
 			
 		}
 	});
