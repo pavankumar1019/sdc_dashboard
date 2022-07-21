@@ -8,7 +8,22 @@ LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_mar
 ";
 $result = mysqli_query($conn, $query);
 if ($result->num_rows > 0) {
-		echo "a";
+	foreach($result as $row){
+        echo '
+        <tr>
+        <td>'.$row['StudentName'].'</td>
+        <td>'.$row['mobile_no'].'</td>
+        <td>'.$row['l1'].'</td>
+        <td>'.$row['l2'].'</td>
+        <td>'.$row['s1'].'</td>
+        <td>'.$row['s2'].'</td>
+        <td>'.$row['s3'].'</td>
+        <td>'.$row['s4'].'</td>
+        <td>'.$row['total'].'</td>
+      
+      </tr>
+        ';
+    }
 	} 
 	else {
         echo "kkk";

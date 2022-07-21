@@ -128,8 +128,7 @@ if(class_id!=""){
 		cache: false,
 		success: function(dataResult){
       $("#data").html(dataResult);
-			
-		}
+					}
 	});
 	}
 	else{
