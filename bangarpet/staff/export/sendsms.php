@@ -1,5 +1,5 @@
 <?php
-include ('../db_bpet_sdc/db.php');
+include('../db_bpet_sdc/db.php');
 // echo $_GET['class_id']
 $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
 FROM ".$tbl_admission."
@@ -45,23 +45,7 @@ tr:nth-child(even){background-color: #f2f2f2}
       <th>S4</th>
       <th>Total</th>
     </tr>
-    <?php
-    foreach($result as $row){
-      echo '
-      <tr>
-      <td>'.$row['StudentName'].'</td>
-      <td>'.$row['mobile_no'].'</td>
-      <td>'.$row['l1'].'</td>
-      <td>'.$row['l2'].'</td>
-      <td>'.$row['s1'].'</td>
-      <td>'.$row['s2'].'</td>
-      <td>'.$row['s3'].'</td>
-      <td>'.$row['s4'].'</td>
-      <td>'.$row['total'].'</td>
-    
-    </tr>
-      '
-    }    ?>
+
     
    
   </table>
