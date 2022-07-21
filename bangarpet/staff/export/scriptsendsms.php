@@ -7,9 +7,10 @@ FROM ".$tbl_admission."
 LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_POST['class_id']."  
 ";
 $result = mysqli_query($conn, $query);
+$html='';
 if ($result->num_rows > 0) {
 	foreach($result as $row){
-        echo '
+        $html+='
         <tr>
         <td>'.$row['StudentName'].'</td>
         <td>'.$row['mobile_no'].'</td>
@@ -24,6 +25,7 @@ if ($result->num_rows > 0) {
       </tr>
         ';
     }
+    echo $html;
 	} 
 	else {
         echo "kkk";
