@@ -44,24 +44,24 @@ $s4="ST";
         </td>
         </tr>
         ';
-// // send sms
-// $method = 'sendMessage';
+// send sms
+$method = 'sendMessage';
 	
-// // Message details
-// $content =  rawurlencode('Dear '.$row['StudentName'].' 
-// your score in Term Test 1 '.$l1.'='.$row['l1'].'/'.$_SESSION['maxmarks'].', EN='.$row['l2'].'/'.$_SESSION['maxmarks'].', '.$s1.'='.$row['s1'].'/'.$_SESSION['maxmarks'].', '.$s2.'='.$row['s2'].'/'.$_SESSION['maxmarks'].', '.$s3.'='.$row['s3'].'/'.$_SESSION['maxmarks'].', '.$s4.'='.$row['s4'].'/'.$_SESSION['maxmarks'].', Total '.$row['total'].'/'.$totalmaxmarks.'.
-// SDC COLLEGE BANGARPET-563114');
+// Message details
+$content =  rawurlencode('Dear '.$row['StudentName'].' 
+your score in Term Test 1 '.$l1.'='.$row['l1'].'/'.$_SESSION['maxmarks'].', EN='.$row['l2'].'/'.$_SESSION['maxmarks'].', '.$s1.'='.$row['s1'].'/'.$_SESSION['maxmarks'].', '.$s2.'='.$row['s2'].'/'.$_SESSION['maxmarks'].', '.$s3.'='.$row['s3'].'/'.$_SESSION['maxmarks'].', '.$s4.'='.$row['s4'].'/'.$_SESSION['maxmarks'].', Total '.$row['total'].'/'.$totalmaxmarks.'.
+SDC COLLEGE BANGARPET-563114');
       
 
 
-// // Prepare data for POST request
+// Prepare data for POST request
 
-// // Send the POST request with cURL
-// $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno=7483737698&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
-// curl_setopt($ch, CURLOPT_POST, false);
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-// $response = curl_exec($ch);
-// curl_close($ch);
+// Send the POST request with cURL
+$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno=7483737698&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
+curl_setopt($ch, CURLOPT_POST, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
         
     }
     echo $html;
