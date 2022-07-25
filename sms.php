@@ -5,7 +5,7 @@
 	$numbers = urlencode('7483737698');
    $sender = urlencode('SDCPUC');
 $message = rawurlencode('Dear pavan kuamr
-sdasds
+ sdasds
 SDC sdc ');
     // Prepare data for POST request
 	$data = 'apikey=' . $apiKey . '&numbers=' . $numbers . "&sender=" . $sender . "&message=" . $message;
