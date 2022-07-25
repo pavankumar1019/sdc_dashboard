@@ -4,7 +4,7 @@
    $numbers = array(7483737698);
    $sender = urlencode('SDCPUC');
 $message = rawurlencode('Dear pavan kuamr
-
+sdasds
 SDC sdc ');
     
    $numbers = implode(',', $numbers);
