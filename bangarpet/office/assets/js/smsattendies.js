@@ -88,18 +88,16 @@ function getstudentlist(class_id){
             width: "50%"
         }, 9000 );
         },
-        complete: function(){
-            $('#progress').html('Done');
-            $("#closemodal").removeAttr("disabled");
-          $("#loading").animate({
-            width: "100%"
-        }, 10);
       
-        },
         success:function(result)
         {
     $('#result').html(result+'<br>');
     getstudentlist($('#class_select').val());
+          $('#progress').html('Done');
+            $("#closemodal").removeAttr("disabled");
+          $("#loading").animate({
+            width: "100%"
+        }, 10);
         }
         
        });
