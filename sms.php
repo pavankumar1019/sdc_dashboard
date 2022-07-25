@@ -5,7 +5,7 @@
    $sender = urlencode('SDCPUC');
    $message = urlencode('Dear Hello
 your score in Term Test 1 
-SDC COLLEGE BANGARPET-563114');
+SDC COLLEGE');
     
    $numbers = implode(',', $numbers);
     // Prepare data for POST request
