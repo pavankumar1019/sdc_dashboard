@@ -37,9 +37,15 @@ $s4="ST";
 }
 if($row['combination']=="BASM"){
 $s1="BM";
-$s2="BUS";
-$s3="ACC";
+$s2="BS";
+$s3="AC";
 $s4="ST";
+}
+if($row['combination']=="EBACS"){
+$s1="EC";
+$s2="BS";
+$s3="AC";
+$s4="CS";
 }
 
         $html.='
