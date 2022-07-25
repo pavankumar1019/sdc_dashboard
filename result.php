@@ -33,31 +33,31 @@ function language($code) {
   $s;
   function subj($id) {
     global $s1,$s2,$s3,$s;
-  if($id==1){
+  if($id=="BASM"){
     $s1="BASIC MATHS";
     $s2=" BUSINESS STUDIES";
     $s3="ACCOUNTANCY";
     $s="STATISTICS";
   }
-  if($id==2){
+  if($id=="EBACS"){
     $s1="ECONOMICS";
     $s2="BUSINESS STUDIES";
     $s3="ACCOUNTANCY";
     $s="COMPUTER SCIENCE";
   }
-  if($id==3){
+  if($id=="EBAS"){
     $s1="ECONOMICS";
     $s2="BUSINESS STUDIES";
     $s3="ACCOUNTANCY";
     $s="STATISTICS";
   }
-  if($id==4){
+  if($id=="PCMB"){
     $s1="PHYSICS";
     $s2="CHEMISTRY";
     $s3="MATHEMATICS";
     $s="COMPUTER SCIENCE";
   }
-  if($id==5){
+  if($id=="PCMCS"){
     $s1="PHYSICS";
     $s2="CHEMISTRY";
     $s3="MATHEMATICS";
