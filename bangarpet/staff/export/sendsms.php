@@ -90,6 +90,31 @@ tr:nth-child(even){background-color: #f2f2f2}
  
   </table>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Please Wait... ! Dont close</h5>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+            </div>
+            <div class="modal-body">
+                <h6 class="text-center  m-b-10"><span class="text-muted m-r-5" id="progress"></span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-c-theme2" id="loading" role="progressbar" style="height:6px;"
+                        aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+           </div>
+            <div class="modal-footer">
+                <button type="button" id="closemodal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 
 
@@ -115,6 +140,22 @@ if(class_id!=""){
 			class_id: class_id
 					
 		},
+    beforeSend: function(){
+          $("#closemodal").attr("disabled", true);
+          $('#exampleModalCenter').modal('show');
+            $('#progress').html('Proccesing');
+          $("#loading").animate({
+            width: "50%"
+        }, 9000 );
+        },
+        complete: function(){
+            $('#progress').html('Done');
+            $("#closemodal").removeAttr("disabled");
+          $("#loading").animate({
+            width: "100%"
+        }, 10);
+      
+        },
 		cache: false,
 		success: function(dataResult){
       $("#data").html(dataResult);
