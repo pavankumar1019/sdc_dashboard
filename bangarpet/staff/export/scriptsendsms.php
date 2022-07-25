@@ -74,9 +74,9 @@ your score in Term Test 1 '.$l1.'='.$row['l1'].'/'.$_SESSION['maxmarks'].', EN='
 SDC COLLEGE BANGARPET-563114');
  
 // Prepare data for POST request
-$data = ‘apikey=’ . $apiKey . ‘&numbers=’ . $numbers . “&sender=” . $sender . “&message=” . $message;
+$data = 'apikey=' . $apiKey . '&numbers=' . $numbers . “&sender=” . $sender . “&message=” . $message;
 // Send the GET request with cURL
-$ch = curl_init(‘https://api.textlocal.in/send/?’ . $data);
+$ch = curl_init('https://api.textlocal.in/send/?' . $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);
