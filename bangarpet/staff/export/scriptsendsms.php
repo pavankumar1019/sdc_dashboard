@@ -1,4 +1,5 @@
 <?php
+ini_set('max_execution_time', '0');
 
 include('../db_bpet_sdc/db.php');
 
