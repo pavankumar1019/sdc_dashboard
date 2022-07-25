@@ -95,7 +95,7 @@ foreach($result as $row){
   ?>
   <table style="width:100%">
  <tr>
-   <th colspan="3" style="text-align:center;color:blue;font-size:20px;">SDC-Independent PU College , Bangarpet <br> MM0174</th>
+   <th colspan="3" style="text-align:center;color:blue;font-size:20px;">SDC-Independent PU College , Bangarpet MM0174 <br> Term Test -1 </th>
 
 
  </tr>
