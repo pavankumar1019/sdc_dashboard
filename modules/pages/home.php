@@ -110,8 +110,8 @@
            Notifications
         </h2>
         <marquee direction="Up" height="150px" behavior="scroll" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-<a href="./bpet/" class="notify" style="font-weight: bold;">1st PUC Science and Commerece Results Announced 2022 Bangarpet</a> <br><br>
-<a href="./kgf/"  class="notify" style="font-weight: bold;">1st PUC Science and Commerece Results Announced 2022 KGF</a> 
+<a href="./bpet/" class="notify" style="font-weight: bold;">2nd PUC Term Test - 1 Result Announced Bangarpet</a> <br><br>
+<!-- <a href="./kgf/"  class="notify" style="font-weight: bold;">1st PUC Science and Commerece Results Announced 2022 KGF</a>  -->
 </marquee>
       </div>
     </div>
