@@ -84,7 +84,7 @@ $response = curl_exec($ch);
 curl_close($ch);
         
     }
-    echo $html;
+    echo $response;
 	} 
 	else {
         echo "error";
