@@ -4,7 +4,6 @@
    // Message details
 $content =  rawurlencode('Dear PAVAN KUMAR S 
 your score in Term Test 1 KA=20/50, ENG=30/50, PHY=40/50, CHE=60/50, MAT=50/50, CS=60/50, Total 400/500.
-Download: http://sdccollegebpet.in/m.php?id=C123456
 SDC COLLEGE BANGARPET-563114');
          
    
