@@ -1,7 +1,8 @@
 <?php
    $apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
-   // Message details
-   $numbers = array(7483737698);
+
+	// Message details
+	$numbers = urlencode('7483737698');
    $sender = urlencode('SDCPUC');
 $message = rawurlencode('Dear pavan kuamr
 sdasds
