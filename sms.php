@@ -3,8 +3,8 @@
    // Message details
    $numbers = array(7483737698);
    $sender = urlencode('SDCPUC');
-   $message = 'Dear Hello 
-your score in Term Test 1 
+   $message = 'Dear Hello \n
+your score in Term Test 1 \n
 SDC COLLEGE BANGARPET-563114';
     
    $numbers = implode(',', $numbers);
