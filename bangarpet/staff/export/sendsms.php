@@ -148,17 +148,15 @@ if(class_id!=""){
             width: "50%"
         }, 9000 );
         },
-        complete: function(){
-            $('#progress').html('Done');
+     
+		cache: false,
+		success: function(dataResult){
+      $("#data").html(dataResult);
+      $('#progress').html('Done');
             $("#closemodal").removeAttr("disabled");
           $("#loading").animate({
             width: "100%"
         }, 10);
-      
-        },
-		cache: false,
-		success: function(dataResult){
-      $("#data").html(dataResult);
 					}
 	});
 	}
