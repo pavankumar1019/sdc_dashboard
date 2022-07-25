@@ -3,7 +3,7 @@
    // Message details
    $numbers = array(7483737698);
    $sender = urlencode('SDCPUC');
-   $message = rawurlencode('Dear
+$message = rawurlencode('Dear
 
 SDC ');
     
