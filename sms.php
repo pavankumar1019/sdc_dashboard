@@ -3,7 +3,7 @@
    // Message details
    $numbers = array(7483737698);
    $sender = urlencode('SDCPUC');
-   $message = urlencode('Dear Hello
+   $message = rawurlencode('Dear Hello
 your score in Term Test 1 
 SDC COLLEGE');
     
