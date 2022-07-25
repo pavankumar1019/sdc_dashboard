@@ -18,15 +18,21 @@ $html.='
 if ($result->num_rows > 0) {
 	foreach($result as $row){
           if($row['lang_code']==1){
-$l1="KAN";
+$l1="KN";
           }
           if($row['lang_code']==3){
-$l1="HIN";
+$l1="HN";
+          }
+          if($row['lang_code']==8){
+$l1="UD";
+          }
+          if($row['lang_code']==9){
+$l1="SK";
           }
 if($row['combination']=="EBAS"){
-$s1="ECO";
-$s2="BUS";
-$s3="ACC";
+$s1="EC";
+$s2="BS";
+$s3="AC";
 $s4="ST";
 }
 if($row['combination']=="BASM"){
