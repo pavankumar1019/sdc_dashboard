@@ -3,9 +3,9 @@
    // Message details
    $numbers = array(7483737698);
    $sender = urlencode('SDCPUC');
-$message = rawurlencode('Dear
+$message = rawurlencode('Dear pavan kuamr
 
-SDC ');
+SDC sdc ');
     
    $numbers = implode(',', $numbers);
     // Prepare data for POST request
