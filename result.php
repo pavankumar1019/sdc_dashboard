@@ -19,9 +19,7 @@ $result = mysqli_query($conn, $query);
 if ($result->num_rows > 0) {
 echo "a";
   }
- else {
-  echo "Not Found Result Please SDC-College Contact Office ";
-}
 
-$conn->close();
+
+
 ?>
