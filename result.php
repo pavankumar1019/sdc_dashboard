@@ -10,85 +10,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
-function language($code) {
-if($code==1){
-  echo "KANNADA";
-}
-if($code==3){
-  echo "HINDI";
-}
-if($code==8){
-  echo "URDU";
-}
-if($code==9){
-  echo "SANSKRIT";
-}
-};
-$s1;
-$s2;
-$s3;
-$s;
-function subj($id) {
-  global $s1,$s2,$s3,$s;
-if($id==1){
-  $s1="BASIC MATHS";
-  $s2=" BUSINESS STUDIES";
-  $s3="ACCOUNTANCY";
-  $s="STATISTICS";
-}
-if($id==2){
-  $s1="ECONOMICS";
-  $s2="BUSINESS STUDIES";
-  $s3="ACCOUNTANCY";
-  $s="COMPUTER SCIENCE";
-}
-if($id==3){
-  $s1="ECONOMICS";
-  $s2="BUSINESS STUDIES";
-  $s3="ACCOUNTANCY";
-  $s="STATISTICS";
-}
-if($id==4){
-  $s1="PHYSICS";
-  $s2="CHEMISTRY";
-  $s3="MATHEMATICS";
-  $s="COMPUTER SCIENCE";
-}
-if($id==5){
-  $s1="PHYSICS";
-  $s2="CHEMISTRY";
-  $s3="MATHEMATICS";
-  $s="BIOLOGY";
-}
-}
-function getclass($total){
-  $average=($total/600)*100;
-  if ($average>=85)
-{
-echo "<p style='color:blue;'>Distinction ".round($average, 2)."%</p>";
-}
-  else if ($average>=60)
-{
-echo "<p style='color:blue;'>First Class ".round($average, 2)."%</p>";
-}
-else if($average>=45)
-{
-echo "<p style='color:blue;'>Second Class ".round($average, 2)."%</p>";
-}
-else if($average>=35)
-{
-echo "<p style='color:blue;'>Pass ".round($average, 2)."%</p>";
-}
-else
-{
-echo "<p style='color:red;'>Failed ".round($average, 2)."%</p>";
-}
-
-
-}
-$sql = "SELECT * FROM bpet_ist_puc_result where reg_no='".$_POST['reg']."'";
-$result = $conn->query($sql);
+$query = "SELECT tbl_admission_bpet.StudentName,  tbl_admission_bpet.father_name, tbl_admission_bpet.combination, tbl_admission_bpet.lang_code, tbl_admission_bpet.mobile_no, tbl_admission_bpet.RollNo, class_test_marks_bpet.l1, class_test_marks_bpet.l2,  class_test_marks_bpet.s1, class_test_marks_bpet.s2,  class_test_marks_bpet.s3,  class_test_marks_bpet.s4,  class_test_marks_bpet.total
+FROM tbl_admission_bpet
+LEFT JOIN class_test_marks_bpet ON tbl_admission_bpet.RollNo = class_test_marks_bpet.roll AND class_test_marks_bpet.test_id=1 WHERE tbl_admission_bpet.RollNo=".$_POST['reg']."  
+";
+$result = mysqli_query($conn, $query);
 
 if ($result->num_rows > 0) {
   // output data of each row
@@ -97,13 +23,13 @@ if ($result->num_rows > 0) {
    ?>
    <table style="width:100%">
   <tr>
-    <th colspan="3">Register number : <?php echo $row['reg_no'];?></th>
+    <th colspan="3">Register number : <?php echo $row['RollNo'];?></th>
  
 
   </tr>
   <tr>
 
-    <td colspan="3"> <b style="color:blue;"> Name: &nbsp; &nbsp; &nbsp; <?php echo $row['student_name'];?></b> <br>
+    <td colspan="3"> <b style="color:blue;"> Name: &nbsp; &nbsp; &nbsp; <?php echo $row['StudentName'];?></b> <br>
      Father Name :  <?php echo $row['father_name'];?><br>
     Mother Name : <?php echo $row['mother_name'];?>
     </td>
