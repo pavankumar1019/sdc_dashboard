@@ -1,5 +1,1 @@
 Options -Indexes 
-
-<IfModule mod_php5.c>
-php_value max_execution_time 259200
-</IfModule>
