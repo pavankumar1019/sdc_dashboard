@@ -18,6 +18,6 @@ if ($result->num_rows > 0) {
 echo "a";
   }
 
-  echo "a";
+
 
 ?>
