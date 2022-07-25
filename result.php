@@ -58,8 +58,9 @@ function language($code) {
   
   }
 if ($result->num_rows > 0) {
+  
+foreach($result as $row){\
   subj($row['combination']);
-foreach($result as $row){
   function subj($id) {
     global $s1,$s2,$s3,$s;
   if($id=="BASM"){
