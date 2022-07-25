@@ -31,6 +31,35 @@ function language($code) {
   $s2;
   $s3;
   $s;
+ 
+  function getclass($total){
+    $average=($total/300)*100;
+    if ($average>=85)
+  {
+  echo "<p style='color:blue;'>Distinction ".round($average, 2)."%</p>";
+  }
+    else if ($average>=60)
+  {
+  echo "<p style='color:blue;'>First Class ".round($average, 2)."%</p>";
+  }
+  else if($average>=45)
+  {
+  echo "<p style='color:blue;'>Second Class ".round($average, 2)."%</p>";
+  }
+  else if($average>=35)
+  {
+  echo "<p style='color:blue;'>Pass ".round($average, 2)."%</p>";
+  }
+  else
+  {
+  echo "<p style='color:red;'>Failed ".round($average, 2)."%</p>";
+  }
+  
+  
+  }
+if ($result->num_rows > 0) {
+  subj($row['combination']);
+foreach($result as $row){
   function subj($id) {
     global $s1,$s2,$s3,$s;
   if($id=="BASM"){
@@ -64,33 +93,6 @@ function language($code) {
     $s="BIOLOGY";
   }
   }
-  function getclass($total){
-    $average=($total/300)*100;
-    if ($average>=85)
-  {
-  echo "<p style='color:blue;'>Distinction ".round($average, 2)."%</p>";
-  }
-    else if ($average>=60)
-  {
-  echo "<p style='color:blue;'>First Class ".round($average, 2)."%</p>";
-  }
-  else if($average>=45)
-  {
-  echo "<p style='color:blue;'>Second Class ".round($average, 2)."%</p>";
-  }
-  else if($average>=35)
-  {
-  echo "<p style='color:blue;'>Pass ".round($average, 2)."%</p>";
-  }
-  else
-  {
-  echo "<p style='color:red;'>Failed ".round($average, 2)."%</p>";
-  }
-  
-  
-  }
-if ($result->num_rows > 0) {
-foreach($result as $row){
   ?>
   <table style="width:100%">
  <tr>
