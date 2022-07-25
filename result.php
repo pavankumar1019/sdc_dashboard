@@ -15,7 +15,9 @@ LEFT JOIN class_test_marks_bpet ON tbl_admission.RollNo = class_test_marks_bpet.
 $result = mysqli_query($conn, $query);
 
 if ($result->num_rows > 0) {
-echo "a";
+foreach($result as $row){
+  echo $row['StudentName'];
+}
   }
 
 
