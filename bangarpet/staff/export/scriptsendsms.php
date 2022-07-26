@@ -47,6 +47,18 @@ $s2="BS";
 $s3="AC";
 $s4="CS";
 }
+if($row['combination']=="PCMB"){
+$s1="PH";
+$s2="CH";
+$s3="MT";
+$s4="BO";
+}
+if($row['combination']=="PCMCS"){
+$s1="PH";
+$s2="CH";
+$s3="MT";
+$s4="CS";
+}
 
         $html.='
         <tr>
