@@ -1,2 +1,5 @@
 # sdc
- https://auth-db674.hostinger.in/?_ga=2.99754841.656509639.1658725466-2014208895.1658725465
+https://auth-db674.hstgr.io/index.php?route=/sql&db=u430139865_sdc&table=current_test&pos=0
+
+
+
