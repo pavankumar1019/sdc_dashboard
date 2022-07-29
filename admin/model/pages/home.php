@@ -123,7 +123,7 @@
                   <div class="card-body collapse show" id="card1">
                     <h4 class="card-title">Special title treatment</h4>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-info">Go somewhere</a>
                   </div>
                 </div>
               </div>
@@ -135,7 +135,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Enroll New Admission</h4>
                     <p class="card-text">Make your work done easy.</p>
-                    <a href="#" class="btn btn-primary">Go</a>
+                    <a href="#" class="btn btn-info">Go</a>
                   </div>
                 </div>
               </div>
