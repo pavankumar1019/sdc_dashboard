@@ -52,9 +52,9 @@
                       </div>
                     </div>
 
-                    <div class="progress mt-auto">
+                    <!-- <div class="progress mt-auto">
                       <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -63,12 +63,12 @@
                 <div class="card border-0 bg-primary text-white text-center mb-grid w-100">
                   <div class="d-flex flex-row align-items-center h-100">
                     <div class="card-icon d-flex align-items-center h-100 justify-content-center">
-                      <i data-feather="shopping-cart"></i>
+                      <i data-feather="shopping-layers"></i>
                     </div>
                     <div class="card-body">
-                      <div class="card-info-title">Sales</div>
+                      <div class="card-info-title">PUC</div>
                       <h3 class="card-title mb-0">
-                        768
+                        ₹76800
                       </h3>
                     </div>
                   </div>
@@ -82,9 +82,9 @@
                       <i data-feather="users"></i>
                     </div>
                     <div class="card-body">
-                      <div class="card-info-title">Sign Ups (this week)</div>
+                      <div class="card-info-title">UG</div>
                       <h3 class="card-title mb-0">
-                        1,258
+                     ₹80000
                       </h3>
                     </div>
                   </div>
