@@ -30,7 +30,7 @@
                       </h5>
 
                       <div class="card-title-sub">
-                      1000 Q
+                      100 Q
                       </div>
                     </div>
 
@@ -48,7 +48,7 @@
                       </h5>
 
                       <div class="card-title-sub">
-                        18/30
+                       80 Q
                       </div>
                     </div>
 
