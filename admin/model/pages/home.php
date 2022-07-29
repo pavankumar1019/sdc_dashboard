@@ -134,7 +134,7 @@
                   </div>
                   <div class="card-body">
                     <h4 class="card-title">Enroll New Admission</h4>
-                    <p class="card-text">Enroll in easy steps.</p>
+                    <p class="card-text">Make your work done easy.</p>
                     <a href="#" class="btn btn-primary">Go</a>
                   </div>
                 </div>
