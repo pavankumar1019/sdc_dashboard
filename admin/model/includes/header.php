@@ -104,7 +104,7 @@
               <li class="sidebar-nav-item">
                 <a href="./layouts/charts_chartjs.html" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
-                  Con
+                  Cn
                   </span>
                   <span class="sidebar-nav-name">
                   Consolidate
@@ -118,7 +118,7 @@
                   Fee 
                   </span>
                   <span class="sidebar-nav-name">
-                  Fee Collection
+                  Fc Collection
                   </span>
                 </a>
               </li>
