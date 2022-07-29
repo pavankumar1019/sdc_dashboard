@@ -93,7 +93,7 @@
             </div>
 
             <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-8 zoomIn">
                 <div class="card">
                   <div class="card-header d-flex justify-content-between align-items-center">
                     <div class="card-header-title slideInRight">SDC-Institution</div>
