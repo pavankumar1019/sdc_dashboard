@@ -79,7 +79,7 @@
                 <i data-feather="layout"></i>
               </span>
               <span class="sidebar-nav-name">
-                Layout Options
+                Detailes Panel
               </span>
               <span class="sidebar-nav-end">
                 <span class="badge badge-info">4</span>
@@ -93,7 +93,7 @@
                 <i data-feather="pie-chart"></i>
               </span>
               <span class="sidebar-nav-name">
-                Charts
+              Report
               </span>
               <span class="sidebar-nav-end">
                 <i data-feather="chevron-right" class="nav-collapse-icon"></i>
@@ -104,10 +104,10 @@
               <li class="sidebar-nav-item">
                 <a href="./layouts/charts_chartjs.html" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
-                    Ch
+                    Consolidate
                   </span>
                   <span class="sidebar-nav-name">
-                    ChartJS
+                    Fee Collection
                   </span>
                 </a>
               </li>
