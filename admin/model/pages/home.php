@@ -122,7 +122,7 @@
                   </div>
                   <div class="card-body collapse show" id="card1">
                     <h4 class="card-title">Manul</h4>
-                    <p class="card-text">Need help get read of the manul.</p>
+                    <p class="card-text">Need help? Read our manul.</p>
                     <a href="#" class="btn btn-secondary">Read more..</a>
                   </div>
                 </div>
