@@ -123,7 +123,7 @@
                   <div class="card-body collapse show" id="card1">
                     <h4 class="card-title">Manul</h4>
                     <p class="card-text">Need help get read of the manul.</p>
-                    <a href="#" class="btn btn-info">Go somewhere</a>
+                    <a href="#" class="btn btn-info">Read more..</a>
                   </div>
                 </div>
               </div>
