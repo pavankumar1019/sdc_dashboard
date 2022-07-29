@@ -79,7 +79,7 @@
                 <div class="card border-0 bg-success text-white text-center mb-grid w-100">
                   <div class="d-flex flex-row align-items-center h-100">
                     <div class="card-icon d-flex align-items-center h-100 justify-content-center">
-                      <i data-feather="users"></i>
+                      <i data-feather="layers"></i>
                     </div>
                     <div class="card-body">
                       <div class="card-info-title">UG</div>
