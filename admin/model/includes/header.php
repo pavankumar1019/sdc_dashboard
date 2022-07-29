@@ -104,22 +104,22 @@
               <li class="sidebar-nav-item">
                 <a href="./layouts/charts_chartjs.html" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
-                    Consolidate
+                  Con
                   </span>
-                  <!-- <span class="sidebar-nav-name">
-                  
-                  </span> -->
+                  <span class="sidebar-nav-name">
+                  Consolidate
+                  </span>
                 </a>
               </li>
 
               <li class="sidebar-nav-item">
                 <a href="./layouts/charts_morris.html" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
+                  Fee 
+                  </span>
+                  <span class="sidebar-nav-name">
                   Fee Collection
                   </span>
-                  <!-- <span class="sidebar-nav-name">
-                    Morris
-                  </span> -->
                 </a>
               </li>
             </ul>
