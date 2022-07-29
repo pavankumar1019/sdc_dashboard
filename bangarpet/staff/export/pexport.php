@@ -86,6 +86,7 @@ $totalstudents=mysqli_num_rows($result3);
                     <th>StudentName</th>
                     <th>father_name</th>
                     <th>COMB</th>
+                    <th>Phone</th>
                     <th>Language</th>
                     <th>Language-1</th>
                     <th>English</th>
@@ -118,6 +119,7 @@ $langname="HIN";
                          <td>'.$row["StudentName"].'</td>  
                          <td>'.$row["father_name"].'</td>  
                          <td>'.$combination.'</td>  
+                         <td>'.$row['mobile_no'].'</td>  
                          <td>'.$langname.'</td>  
                          <td>'.$row["l1"].'</td>  
                          <td>'.$row["l2"].'</td>  

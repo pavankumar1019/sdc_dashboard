@@ -106,20 +106,20 @@
                   <span class="sidebar-nav-abbr">
                     Consolidate
                   </span>
-                  <span class="sidebar-nav-name">
-                    Fee Collection
-                  </span>
+                  <!-- <span class="sidebar-nav-name">
+                  
+                  </span> -->
                 </a>
               </li>
 
               <li class="sidebar-nav-item">
                 <a href="./layouts/charts_morris.html" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
-                    Mo
+                  Fee Collection
                   </span>
-                  <span class="sidebar-nav-name">
+                  <!-- <span class="sidebar-nav-name">
                     Morris
-                  </span>
+                  </span> -->
                 </a>
               </li>
             </ul>
