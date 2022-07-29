@@ -127,7 +127,7 @@
 
          
 
-          <li class="sidebar-nav-item">
+          <!-- <li class="sidebar-nav-item">
             <a class="sidebar-nav-link collapsed" data-toggle="collapse" href="#navForms" aria-expanded="false" aria-controls="navForms">
               <span class="sidebar-nav-icon">
                 <i data-feather="edit"></i>
@@ -163,9 +163,9 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
 
-          <li class="sidebar-nav-item">
+          <!-- <li class="sidebar-nav-item">
             <a class="sidebar-nav-link collapsed" data-toggle="collapse" href="#navUI" aria-expanded="false" aria-controls="navUI">
               <span class="sidebar-nav-icon">
                 <i data-feather="grid"></i>
@@ -234,9 +234,9 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
 
-          <li class="sidebar-nav-item">
+          <!-- <li class="sidebar-nav-item">
             <a class="sidebar-nav-link collapsed" data-toggle="collapse" href="#navExtra" aria-expanded="false" aria-controls="navExtra">
               <span class="sidebar-nav-icon">
                 <i data-feather="layers"></i>
@@ -316,6 +316,6 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div><!-- Sidebar End -->
