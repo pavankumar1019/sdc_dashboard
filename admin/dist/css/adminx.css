@@ -13044,8 +13044,8 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child 
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.0s steps(40, end),
-      blink-caret .75s step-end infinite;
+      typing 3.5s steps(40, end),
+      blink-caret .80s step-end infinite;
      
   }
   
