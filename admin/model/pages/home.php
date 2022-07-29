@@ -130,12 +130,12 @@
               <div class="col-lg-4">
                 <div class="card">
                   <div class="card-header">
-                    Featured
+                New Admission
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title">Special title treatment</h4>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h4 class="card-title">Enroll New Admission</h4>
+                    <p class="card-text">Enroll in easy steps.</p>
+                    <a href="#" class="btn btn-primary">Go</a>
                   </div>
                 </div>
               </div>
