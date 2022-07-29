@@ -121,8 +121,8 @@
                     </nav>
                   </div>
                   <div class="card-body collapse show" id="card1">
-                    <h4 class="card-title">Special title treatment</h4>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h4 class="card-title">Manul</h4>
+                    <p class="card-text">Need help get read of the manul.</p>
                     <a href="#" class="btn btn-info">Go somewhere</a>
                   </div>
                 </div>
