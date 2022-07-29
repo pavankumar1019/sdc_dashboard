@@ -21,7 +21,7 @@
             </div>
 
             <div class="row">
-              <div class="col-md-6 col-lg-3 d-flex">
+              <div class="col-md-6 col-lg-3 d-flex bounceIn">
                 <div class="card mb-grid w-100">
                   <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-3">
@@ -39,7 +39,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-3 d-flex">
+              <div class="col-md-6 col-lg-3 d-flex bounceIn">
                 <div class="card mb-grid w-100">
                   <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-3">
@@ -59,7 +59,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-3 d-flex">
+              <div class="col-md-6 col-lg-3 d-flex bounceIn">
                 <div class="card border-0 bg-info text-white text-center mb-grid w-100">
                   <div class="d-flex flex-row align-items-center h-100">
                     <div class="card-icon d-flex align-items-center h-100 justify-content-center">
@@ -75,7 +75,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-3 d-flex">
+              <div class="col-md-6 col-lg-3 d-flex bounceIn">
                 <div class="card border-0 bg-secondary text-white text-center mb-grid w-100">
                   <div class="d-flex flex-row align-items-center h-100">
                     <div class="card-icon d-flex align-items-center h-100 justify-content-center">
