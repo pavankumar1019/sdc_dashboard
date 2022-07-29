@@ -26,17 +26,15 @@
                   <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-3">
                       <h5 class="card-title mb-0">
-                        Total Admission Today PUC
+                       Admissions Today (PUC)
                       </h5>
 
                       <div class="card-title-sub">
-                        $753.82
+                      1000 Q
                       </div>
                     </div>
 
-                    <div class="progress mt-auto">
-                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">3/4</div>
-                    </div>
+                 
                   </div>
                 </div>
               </div>
@@ -46,7 +44,7 @@
                   <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-3">
                       <h5 class="card-title mb-0">
-                        Open Tasks
+                      Admissions Today (Degree)
                       </h5>
 
                       <div class="card-title-sub">
