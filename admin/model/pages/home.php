@@ -97,7 +97,7 @@
                 <div class="card">
                   <div class="card-header d-flex justify-content-between align-items-center">
                     <div class="card-header-title"><div class="typewriter">
-  <h1>The cat and the hat.</h1>
+  <h1>SDC-Institution.</h1>
 </div></div>
 
                     <nav class="card-header-actions">
