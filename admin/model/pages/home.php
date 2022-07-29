@@ -96,7 +96,7 @@
               <div class="col-lg-8">
                 <div class="card">
                   <div class="card-header d-flex justify-content-between align-items-center">
-                    <div class="card-header-title">Featured</div>
+                    <div class="card-header-title">SDC-Institution</div>
 
                     <nav class="card-header-actions">
                       <a class="card-header-action" data-toggle="collapse" href="#card1" aria-expanded="false" aria-controls="card1">
