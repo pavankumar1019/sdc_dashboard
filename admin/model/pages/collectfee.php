@@ -5,13 +5,13 @@
             <nav aria-label="breadcrumb" role="navigation">
                 <ol class="breadcrumb adminx-page-breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                    <li class="breadcrumb-item active  aria-current=" page">Elements</li>
+                    <li class="breadcrumb-item"><a href="#">Fee System</a></li>
+                    <li class="breadcrumb-item active  aria-current=" page">Collect Fee</li>
                 </ol>
             </nav>
 
             <div class="pb-3">
-                <h1>Elements</h1>
+                <h1>Collect Fee</h1>
             </div>
 
             <div class="row">
@@ -21,7 +21,7 @@
 
                     <div class="card mb-grid">
                         <div class="card-header">
-                            <div class="card-header-title">Column sizing</div>
+                            <div class="card-header-title">Functions</div>
                         </div>
                         <div class="card-body">
                             <form>
