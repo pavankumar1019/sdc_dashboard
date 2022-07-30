@@ -28,8 +28,8 @@
                                 <div class="form-row">
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlSelect1">Example
-                                                select</label>
+                                            <label class="form-label" for="exampleFormControlSelect1">
+                                                Select Course</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
                                                 <option value="">-Select one-</option>
                                                 <option>PUC</option>
@@ -40,8 +40,8 @@
                                     </div>
                                     <div class="col-lg-4">
                                     <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlSelect1">Example
-                                                select</label>
+                                            <label class="form-label" for="exampleFormControlSelect1">
+                                                Select Class</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
                                                 <option>1st PUC</option>
                                                 <option>2nd PUC</option>
