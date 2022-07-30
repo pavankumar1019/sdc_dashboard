@@ -52,10 +52,13 @@
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
-                                                Select Class</label>
+                                                Select Combination</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1st PUC</option>
-                                                <option>2nd PUC</option>
+                                                <option>PCMB</option>
+                                                <option>PCMCS</option>
+                                                <option>EBACS</option>
+                                                <option>EBAS</option>
+                                                <option>ABMS</option>
 
                                             </select>
                                         </div>
