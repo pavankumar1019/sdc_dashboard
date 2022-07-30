@@ -107,10 +107,10 @@
                             SRINIVASA
                             1 PUC EBACS
                           </td>
-                          <td>30,000</td>
+                          <td><h1><b>>₹30,000 </b></h1></td>
                           <td>
-                            20-01-2022:9:22:AM - 10,000 <br>
-                            20-01-2022:9:22:AM - 10,000 <br>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                           </td>
                           <td>
                             <span class="badge badge-pill badge-primary">Balance</span>
