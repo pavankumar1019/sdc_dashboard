@@ -66,7 +66,8 @@
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Select Combination</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>PCMB</option>
+                                            <option value="all">ALL</option>    
+                                            <option>PCMB</option>
                                                 <option>PCMCS</option>
                                                 <option>EBACS</option>
                                                 <option>EBAS</option>
