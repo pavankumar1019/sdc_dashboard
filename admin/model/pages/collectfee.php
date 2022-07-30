@@ -243,7 +243,9 @@
         </button> -->
       </div>
       <div class="modal-body">
-        ...
+       <h2>PAVAN KUMAR S</h2>
+       <h4>Fixation : <b>30,000</b></h4>
+       <input type="text" class="form-control" name="Ammount" style="font-size:100px" id="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
