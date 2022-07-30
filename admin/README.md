@@ -40,3 +40,4 @@ Credit is where credit's due: This admin template is inspired by the great [Admi
 
 ### License
 This project is licensed under [MIT](http://opensource.org/licenses/MIT).
+
