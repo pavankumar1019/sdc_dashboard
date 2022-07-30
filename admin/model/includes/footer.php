@@ -6,6 +6,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="./dist/js/vendor.js"></script>
     <script src="./dist/js/adminx.js"></script>
+    <script src="./dist/js/collectfee.js"></script>
     <script src="./dist/js/simple.money.format.js"></script>
     <!-- If you prefer vanilla JS these are the only required scripts -->
     <!-- script src="./dist/js/vendor.js"></script>
