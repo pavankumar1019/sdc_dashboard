@@ -34,24 +34,35 @@
                                                 <option value="">-Select one-</option>
                                                 <option>PUC</option>
                                                 <option>UG</option>
-                                               
+
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                    <div class="form-group">
+                                        <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Select Class</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
                                                 <option>1st PUC</option>
                                                 <option>2nd PUC</option>
-                                          
+
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                    <label class="form-label" for="exampleFormControlSelect1">
-                                                </label>
+                                        <div class="form-group">
+                                            <label class="form-label" for="exampleFormControlSelect1">
+                                                Select Class</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>1st PUC</option>
+                                                <option>2nd PUC</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label class="form-label" for="exampleFormControlSelect1">
+                                        </label>
                                         <input type="button" class="form-control btn bg-info btn-block" value="Get">
                                     </div>
                                 </div>
