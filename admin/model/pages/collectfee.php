@@ -127,15 +127,21 @@
                               <span class="custom-control-indicator"></span>
                             </label>
                           </th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
                           <td>
-                            <span class="badge badge-pill badge-primary">Author</span>
-                            <span class="badge badge-pill badge-primary">Developer</span>
+                            <h2>PAVAN KUMAR S</h2>
+                            SRINIVASA
+                            1 PUC EBACS
+                          </td>
+                          <td><h5><b>₹30,000 </b></h1></td>
+                          <td>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                           </td>
                           <td>
-                            <button class="btn btn-sm btn-primary">Edit</button>
+                            <span class="badge badge-pill badge-primary">Balance</span>
+                          </td>
+                          <td>
+                            <button class="btn btn-sm btn-primary">Collect</button>
                             <button class="btn btn-sm btn-danger">Delete</button>
                           </td>
                         </tr>
@@ -146,17 +152,50 @@
                               <span class="custom-control-indicator"></span>
                             </label>
                           </th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
                           <td>
-                            <span class="badge badge-pill badge-danger">Inactive</span>
+                            <h2>PAVAN KUMAR S</h2>
+                            SRINIVASA
+                            1 PUC EBACS
+                          </td>
+                          <td><h5><b>₹30,000 </b></h1></td>
+                          <td>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                           </td>
                           <td>
-                            <button class="btn btn-sm btn-primary">Edit</button>
+                            <span class="badge badge-pill badge-primary">Balance</span>
+                          </td>
+                          <td>
+                            <button class="btn btn-sm btn-primary">Collect</button>
                             <button class="btn btn-sm btn-danger">Delete</button>
                           </td>
                         </tr>
+                        <tr>
+                          <th scope="row">
+                            <label class="custom-control custom-checkbox m-0 p-0">
+                              <input type="checkbox" class="custom-control-input table-select-row">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                          </th>
+                          <td>
+                            <h2>PAVAN KUMAR S</h2>
+                            SRINIVASA
+                            1 PUC EBACS
+                          </td>
+                          <td><h5><b>₹30,000 </b></h1></td>
+                          <td>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                          </td>
+                          <td>
+                            <span class="badge badge-pill badge-primary">Balance</span>
+                          </td>
+                          <td>
+                            <button class="btn btn-sm btn-primary">Collect</button>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                 
                       </tbody>
                     </table>
                   </div>
