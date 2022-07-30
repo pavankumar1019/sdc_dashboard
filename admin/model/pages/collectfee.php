@@ -248,7 +248,7 @@
        setlocale(LC_MONETARY,"en_IN");
        echo money_format(" %i", "30000");
        ?></b></h4>
-       <input type="text" class="form-control" id="enterammount" name="Ammount" style="font-size:100px" id="">
+       <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount" name="Ammount" style="font-size:100px" id="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
