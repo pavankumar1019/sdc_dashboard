@@ -55,7 +55,7 @@
                                     <div class="col-lg-4">
                                     <label class="form-label" for="exampleFormControlSelect1">
                                                 </label>
-                                        <input type="button" class="form-control btn bg-info" placeholder="Get">
+                                        <input type="button" class="form-control btn bg-info" value="Get">
                                     </div>
                                 </div>
                             </form>
