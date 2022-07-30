@@ -155,10 +155,10 @@
               <li class="sidebar-nav-item">
                 <a href="./layouts/form_advanced.html" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
-                    Ad
+                    Nd
                   </span>
                   <span class="sidebar-nav-name">
-                    Advanced Elements
+                   New Admission
                   </span>
                 </a>
               </li>
