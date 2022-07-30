@@ -31,11 +31,10 @@
                                             <label class="form-label" for="exampleFormControlSelect1">Example
                                                 select</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
+                                                <option value="">-Select one-</option>
+                                                <option>PUC</option>
+                                                <option>UG</option>
+                                               
                                             </select>
                                         </div>
                                     </div>
@@ -44,11 +43,9 @@
                                             <label class="form-label" for="exampleFormControlSelect1">Example
                                                 select</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
+                                                <option>1st PUC</option>
+                                                <option>2nd PUC</option>
+                                          
                                             </select>
                                         </div>
                                     </div>
