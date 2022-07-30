@@ -104,7 +104,7 @@
                           </th>
                           <td>
                             <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA
+                            SRINIVASA <br>
                             1 PUC EBACS
                           </td>
                           <td><h5><b>₹30,000 </b></h1></td>
@@ -129,7 +129,7 @@
                           </th>
                           <td>
                             <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA
+                            SRINIVASA <br>
                             1 PUC EBACS
                           </td>
                           <td><h5><b>₹30,000 </b></h1></td>
@@ -154,7 +154,7 @@
                           </th>
                           <td>
                             <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA
+                            SRINIVASA <br>
                             1 PUC EBACS
                           </td>
                           <td><h5><b>₹30,000 </b></h1></td>
@@ -179,7 +179,7 @@
                           </th>
                           <td>
                             <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA
+                            SRINIVASA <br>
                             1 PUC EBACS
                           </td>
                           <td><h5><b>₹30,000 </b></h1></td>
