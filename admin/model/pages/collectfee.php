@@ -31,7 +31,7 @@
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Year</label>
                                             <select class="form-control" id="exampleFormControlSelect1">
-                                                <option value="">-Select one-</option>
+                                                <option value="">YYYY</option>
                                                 <option>2022</option>
                                                 <option>2021</option>
 
