@@ -26,23 +26,34 @@
                         <div class="card-body">
                             <form>
                                 <div class="form-row">
-                                    <div class="col-7">
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label class="form-label" for="exampleFormControlSelect1">Example
+                                                select</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
                                     <div class="form-group">
-                        <label class="form-label" for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                      </div>
+                                            <label class="form-label" for="exampleFormControlSelect1">Example
+                                                select</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="State">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Zip">
+                                        <input type="submit" class="form-control btn bg-info" placeholder="Get">
                                     </div>
                                 </div>
                             </form>
