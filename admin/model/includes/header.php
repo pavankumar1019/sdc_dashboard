@@ -142,9 +142,9 @@
 
             <ul class="sidebar-sub-nav collapse" id="navForms">
               <li class="sidebar-nav-item">
-                <a href="./layouts/form_elements.html" class="sidebar-nav-link">
+                <a href="./dashboard.php?page=collectfee" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
-                    Cl
+                    Cl 
                   </span>
                   <span class="sidebar-nav-name">
                     Collect Fee
