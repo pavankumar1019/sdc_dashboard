@@ -39,7 +39,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
                                     <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">Example
                                                 select</label>
@@ -52,7 +52,9 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
+                                    <label class="form-label" for="exampleFormControlSelect1">
+                                                </label>
                                         <input type="submit" class="form-control btn bg-info" placeholder="Get">
                                     </div>
                                 </div>
