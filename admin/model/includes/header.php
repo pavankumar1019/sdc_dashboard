@@ -127,13 +127,13 @@
 
          
 
-          <!-- <li class="sidebar-nav-item">
+         <li class="sidebar-nav-item">
             <a class="sidebar-nav-link collapsed" data-toggle="collapse" href="#navForms" aria-expanded="false" aria-controls="navForms">
               <span class="sidebar-nav-icon">
                 <i data-feather="edit"></i>
               </span>
               <span class="sidebar-nav-name">
-                Forms
+                Fee System
               </span>
               <span class="sidebar-nav-end">
                 <i data-feather="chevron-right" class="nav-collapse-icon"></i>
@@ -144,10 +144,10 @@
               <li class="sidebar-nav-item">
                 <a href="./layouts/form_elements.html" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
-                    El
+                    Cl
                   </span>
                   <span class="sidebar-nav-name">
-                    Elements
+                    Collect Fee
                   </span>
                 </a>
               </li>
@@ -163,7 +163,7 @@
                 </a>
               </li>
             </ul>
-          </li> -->
+          </li> 
 
           <!-- <li class="sidebar-nav-item">
             <a class="sidebar-nav-link collapsed" data-toggle="collapse" href="#navUI" aria-expanded="false" aria-controls="navUI">
