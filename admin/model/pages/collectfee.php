@@ -244,7 +244,10 @@
       </div>
       <div class="modal-body">
        <h2>PAVAN KUMAR S</h2>
-       <h4>Fixation : <b>30,000</b></h4>
+       <h4>Fixation : <b><?php
+       setlocale(LC_MONETARY,"en_US");
+       echo money_format("The price is %i", "30,000");
+       ?></b></h4>
        <input type="text" class="form-control" name="Ammount" style="font-size:100px" id="">
       </div>
       <div class="modal-footer">
