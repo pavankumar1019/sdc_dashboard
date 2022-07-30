@@ -26,7 +26,19 @@
                         <div class="card-body">
                             <form>
                                 <div class="form-row">
-                                    <div class="col-lg-4">
+                                   <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <label class="form-label" for="exampleFormControlSelect1">
+                                                Year</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option value="">-Select one-</option>
+                                                <option>2022</option>
+                                                <option>2021</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
                                         <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Select Course</label>
@@ -38,7 +50,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-3">
                                         <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Select Class</label>
@@ -49,7 +61,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-3">
                                         <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Select Combination</label>
@@ -72,137 +84,145 @@
                             </form>
                         </div>
                     </div>
-<!-- Datatable -->
-<div class="card mb-grid">
-                  <div class="card-header d-flex justify-content-between align-items-center">
-                    <div class="card-header-title">Data</div>
-                  </div>
-                  <div class="table-responsive-md">
-                    <table class="table table-actions table-striped table-hover mb-0">
-                      <thead>
-                        <tr>
-                          <th scope="col">
-                            <label class="custom-control custom-checkbox m-0 p-0">
-                              <input type="checkbox" class="custom-control-input table-select-all">
-                              <span class="custom-control-indicator"></span>
-                            </label>
-                          </th>
-                          <th scope="col">Detailes</th>
-                          <th scope="col">Fixation</th>
-                          <th scope="col">Paid Detailes</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">
-                            <label class="custom-control custom-checkbox m-0 p-0">
-                              <input type="checkbox" class="custom-control-input table-select-row">
-                              <span class="custom-control-indicator"></span>
-                            </label>
-                          </th>
-                          <td>
-                            <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA <br>
-                            1 PUC EBACS
-                          </td>
-                          <td><h5><b>₹30,000 </b></h1></td>
-                          <td>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                          </td>
-                          <td>
-                            <span class="badge badge-pill badge-primary">Balance</span>
-                          </td>
-                          <td>
-                            <button class="btn btn-sm btn-primary">Collect</button>
-                            <button class="btn btn-sm btn-danger">Delete</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            <label class="custom-control custom-checkbox m-0 p-0">
-                              <input type="checkbox" class="custom-control-input table-select-row">
-                              <span class="custom-control-indicator"></span>
-                            </label>
-                          </th>
-                          <td>
-                            <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA <br>
-                            1 PUC EBACS
-                          </td>
-                          <td><h5><b>₹30,000 </b></h1></td>
-                          <td>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                          </td>
-                          <td>
-                            <span class="badge badge-pill badge-primary">Balance</span>
-                          </td>
-                          <td>
-                            <button class="btn btn-sm btn-primary">Collect</button>
-                            <button class="btn btn-sm btn-danger">Delete</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            <label class="custom-control custom-checkbox m-0 p-0">
-                              <input type="checkbox" class="custom-control-input table-select-row">
-                              <span class="custom-control-indicator"></span>
-                            </label>
-                          </th>
-                          <td>
-                            <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA <br>
-                            1 PUC EBACS
-                          </td>
-                          <td><h5><b>₹30,000 </b></h1></td>
-                          <td>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                          </td>
-                          <td>
-                            <span class="badge badge-pill badge-primary">Balance</span>
-                          </td>
-                          <td>
-                            <button class="btn btn-sm btn-primary">Collect</button>
-                            <button class="btn btn-sm btn-danger">Delete</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            <label class="custom-control custom-checkbox m-0 p-0">
-                              <input type="checkbox" class="custom-control-input table-select-row">
-                              <span class="custom-control-indicator"></span>
-                            </label>
-                          </th>
-                          <td>
-                            <h2>PAVAN KUMAR S</h2>
-                            SRINIVASA <br>
-                            1 PUC EBACS
-                          </td>
-                          <td><h5><b>₹30,000 </b></h1></td>
-                          <td>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                          </td>
-                          <td>
-                            <span class="badge badge-pill badge-primary">Balance</span>
-                          </td>
-                          <td>
-                            <button class="btn btn-sm btn-primary">Collect</button>
-                            <button class="btn btn-sm btn-danger">Delete</button>
-                          </td>
-                        </tr>
-                 
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                    <!-- Datatable -->
+                    <div class="card mb-grid">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div class="card-header-title">Data</div>
+                        </div>
+                        <div class="table-responsive-md">
+                            <table class="table table-actions table-striped table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-all">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <th scope="col">Detailes</th>
+                                        <th scope="col">Fixation</th>
+                                        <th scope="col">Paid Detailes</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <h2>PAVAN KUMAR S</h2>
+                                            SRINIVASA <br>
+                                            1 PUC EBACS
+                                        </td>
+                                        <td>
+                                            <h5><b>₹30,000 </b></h1>
+                                        </td>
+                                        <td>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-pill badge-primary">Balance</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Collect</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <h2>PAVAN KUMAR S</h2>
+                                            SRINIVASA <br>
+                                            1 PUC EBACS
+                                        </td>
+                                        <td>
+                                            <h5><b>₹30,000 </b></h1>
+                                        </td>
+                                        <td>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-pill badge-primary">Balance</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Collect</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <h2>PAVAN KUMAR S</h2>
+                                            SRINIVASA <br>
+                                            1 PUC EBACS
+                                        </td>
+                                        <td>
+                                            <h5><b>₹30,000 </b></h1>
+                                        </td>
+                                        <td>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-pill badge-primary">Balance</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Collect</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <h2>PAVAN KUMAR S</h2>
+                                            SRINIVASA <br>
+                                            1 PUC EBACS
+                                        </td>
+                                        <td>
+                                            <h5><b>₹30,000 </b></h1>
+                                        </td>
+                                        <td>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-pill badge-primary">Balance</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Collect</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
 
-<!-- data table end  -->
+                    <!-- data table end  -->
 
 
                 </div>
