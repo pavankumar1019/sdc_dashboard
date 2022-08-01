@@ -195,8 +195,8 @@
                     <div class="card-header-title">Preview Panel</div>
                   </div>
                   <div class="card-body">
-                  <h2 id="v_name"></h2>
-                  <h5>SRINIVAS E</h5>
+                  <h2 id="v_name" style="text-transform: capitalize;"></h2>
+                  <h5  style="text-transform: capitalize;">SRINIVAS E</h5>
                   <p>DOB : 2000-02-09</p>
                   <h5><b>+91 1134567897</b></h5>
                   <p>Bangarpet , Kolar Karnataka</p>
