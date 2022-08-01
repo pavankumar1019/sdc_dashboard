@@ -122,6 +122,17 @@
                   </span>
                 </a>
               </li>
+
+              <li class="sidebar-nav-item">
+                <a href="./layouts/charts_morris.html" class="sidebar-nav-link">
+                  <span class="sidebar-nav-abbr">
+                  Ad
+                  </span>
+                  <span class="sidebar-nav-name">
+                  Admissions
+                  </span>
+                </a>
+              </li>
             </ul>
           </li>
 
