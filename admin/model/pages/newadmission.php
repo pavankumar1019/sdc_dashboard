@@ -97,6 +97,24 @@
                                         <label class="form-label" for="exampleInputPassword1">Fee Paid</label>
                                         <input type="text" class="paid form-control" onkeypress="return isNumber(event)"  id="enterammount1" name="Ammount" style="font-size:50px;color:blue;" id="">
                                     </div>
+                                    <div class="modal fade" id="payment_modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mode" ></h5>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      <div class="modal-body">
+        <p>Ricept No</p>
+    <input type="text" style="text-align: center;" class="form-control" name="" id="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Resend OTP</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
                                     <div class="col-lg-12">
                                         <label for=""></label>
                                         <button type="submit" class="btn btn-outline-primary btn-block">Proceed</button>
