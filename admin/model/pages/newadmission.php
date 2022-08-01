@@ -25,7 +25,7 @@
                                 <div class="form-row">
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Name</label>
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Father Name</label>
@@ -195,7 +195,7 @@
                     <div class="card-header-title">Preview Panel</div>
                   </div>
                   <div class="card-body">
-                  <h2>PAVAN KUMAR S</h2>
+                  <h2 id="v_name"></h2>
                   <h5>SRINIVAS E</h5>
                   <p>DOB : 2000-02-09</p>
                   <h5><b>+91 1134567897</b></h5>

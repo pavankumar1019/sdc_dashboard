@@ -2,6 +2,14 @@
 $(document).ready(function(){
     $('#enterammount').simpleMoneyFormat();
     $('#enterammount1').simpleMoneyFormat();
+
+// fee auto view panel 
+$("#name").change(function(){
+ $("#v_name").html($(this).val());
+});
+
+
+
   });
   
   function isNumber(evt) {
