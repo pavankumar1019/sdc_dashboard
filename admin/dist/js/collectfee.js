@@ -7,7 +7,15 @@ $(document).ready(function(){
 $("#name").change(function(){
  $("#v_name").html($(this).val());
 });
-
+$("#fathername").change(function(){
+  $("#v_fathername").html($(this).val());
+ });
+ $("#dob").change(function(){
+  $("#v_dob").html($(this).val());
+ });
+ $("#phone").change(function(){
+  $("#v_phone").html($(this).val());
+ });
 
 
   });

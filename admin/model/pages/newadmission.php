@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Father Name</label>
-                                        <input type="text" class="form-control" placeholder="Father name">
+                                        <input type="text" class="form-control" id="fathername" placeholder="Father name">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Gender</label>
@@ -40,11 +40,11 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">DOB</label>
-                                        <input type="date" class="form-control" placeholder="DOB">
+                                        <input type="date" class="form-control" id="dob" placeholder="DOB">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Phone_no</label>
-                                        <input type="text" class="form-control" placeholder="phone">
+                                        <input type="text" class="form-control" id="phone" placeholder="phone">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Address</label>
@@ -196,9 +196,9 @@
                   </div>
                   <div class="card-body">
                   <h2 id="v_name" style="text-transform: uppercase;"></h2>
-                  <h5  style="text-transform: uppercase;">SRINIVAS E</h5>
-                  <p>DOB : 2000-02-09</p>
-                  <h5><b>+91 1134567897</b></h5>
+                  <h5  id="v_fathername" style="text-transform: uppercase;">SRINIVAS E</h5>
+                  <p id="v_dob" >DOB : 2000-02-09</p>
+                  <h5><b id="v_phone">+91 1134567897</b></h5>
                   <p>Bangarpet , Kolar Karnataka</p>
                   <h6>1st PUC EBACS</h6>
                   <h5><b>+Fee Fixation</b> <br> 35,000</h5>
