@@ -23,14 +23,14 @@
                   <div class="card-body">
                     <form>
                       <div class="form-row">
-                        <div class="col-7">
+                        <div class="col-lg-3">
                         <label class="form-label" for="exampleInputPassword1">Name</label>
                           <input type="text" class="form-control" placeholder="City">
                         </div>
-                        <div class="col">
+                        <div class="col-lg-3">
                           <input type="text" class="form-control" placeholder="State">
                         </div>
-                        <div class="col">
+                        <div class="col-lg-3">
                           <input type="text" class="form-control" placeholder="Zip">
                         </div>
                       </div>
