@@ -73,9 +73,24 @@
                                     </div>
                                     <div class="col-lg-12">
                                     <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox"> Check me out
+                                    <label class="form-label" for="exampleInputPassword1">Mode of Payment</label>
+<div class="row">
+    <div class="col-lg-4">
+    <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Cash
                             </label>
+    </div>
+    <div class="col-lg-4">
+    <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Phone phe
+                            </label>
+    </div>
+    <div class="col-lg-4">
+    <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Cheque
+                            </label>
+    </div>
+</div>
                           </div>
                                     </div>
                                     <div class="col-lg-12">
