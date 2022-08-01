@@ -173,8 +173,9 @@
                     <div class="card-header-title">Preview Panel</div>
                   </div>
                   <div class="card-body">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label form-label">Email</label>
-                  <p>asdsadsa</p>
+                  <h2>PAVAN KUMAR S</h2>
+                  <h5>SRINIVAS E</h5>
+                  <p>DOB : 2000-02-09</p>
                   </div>
                 </div>
 
