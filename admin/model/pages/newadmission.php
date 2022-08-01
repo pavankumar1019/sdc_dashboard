@@ -15,7 +15,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-9">
                     <div class="card mb-grid">
                         <div class="card-header">
                             <div class="card-header-title">New Admission - <b>PUC</b></div>
@@ -167,7 +167,7 @@
                     </div> -->
 
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-3">
                 <div class="card mb-grid">
                   <div class="card-header">
                     <div class="card-header-title">Horizontal form</div>
