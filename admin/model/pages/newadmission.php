@@ -203,7 +203,7 @@
                   <h6><span id="v_class"></span><span id="v_comb"></span></h6>
                   <h5 id="v_fixation"></h5>
                   <h5 id="v_paid"></h5>
-                  <h5><b>Balance</b> <br>4000</h5>
+                  <h5 id="balance"></h5>
                   </div>
                 </div>
 

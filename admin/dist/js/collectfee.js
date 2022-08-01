@@ -28,9 +28,9 @@ $("#fathername").change(function(){
  $(".fixation").change(function(){
   $("#v_fixation").html("<b>+Fee Fixation</b> <br>"+$(this).val());
  });
- $(".paid").change(function(){
+ $(".paid").keypress(function(){
   $("#v_paid").html("<b>+Paying fee</b> <br>"+$(this).val());
-
+$('#balance').html("<b>Balance</b> <br>"+($('.fixation').val()-$(this).val()));
  });
  
 
