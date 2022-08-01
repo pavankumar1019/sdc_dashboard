@@ -179,6 +179,9 @@
                   <h5><b>+91 1134567897</b></h5>
                   <p>Bangarpet , Kolar Karnataka</p>
                   <h6>1st PUC EBACS</h6>
+                  <h5><b>+Fixation</b> <br> 35,000</h5>
+                  <h5><b>+Paid</b> <br>4000</h5>
+                  <h5><b>Balance</b> <br>4000</h5>
                   </div>
                 </div>
 
