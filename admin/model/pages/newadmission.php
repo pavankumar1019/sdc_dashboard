@@ -196,9 +196,9 @@
                   </div>
                   <div class="card-body">
                   <h2 id="v_name" style="text-transform: uppercase;"></h2>
-                  <h5  id="v_fathername" style="text-transform: uppercase;">SRINIVAS E</h5>
-                  <p id="v_dob" >DOB : 2000-02-09</p>
-                  <h5><b id="v_phone">+91 1134567897</b></h5>
+                  <h5  id="v_fathername" style="text-transform: uppercase;"></h5>
+                  <p id="v_dob" ></p>
+                  <h5><b id="v_phone"></b></h5>
                   <p>Bangarpet , Kolar Karnataka</p>
                   <h6>1st PUC EBACS</h6>
                   <h5><b>+Fee Fixation</b> <br> 35,000</h5>
