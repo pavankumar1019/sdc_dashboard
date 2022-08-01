@@ -36,6 +36,17 @@ $("#fathername").change(function(){
 $('#balance').html("<b>Balance</b> <br>"+total);
  });
  
+// radio check
+$('input[type=radio][name=m_pay]').change(function() {
+  if (this.value == 'cash') {
+      alert("Allot Thai Gayo Bhai");
+  }
+  else if (this.value == 'phonephe') {
+      alert("Transfer Thai Gayo");
+  }
+});
+
+
 
   });
 

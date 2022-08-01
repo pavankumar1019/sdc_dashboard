@@ -77,17 +77,17 @@
 <div class="row">
     <div class="col-lg-4">
     <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="m_pay"> Cash
+                              <input class="form-check-input" type="radio" name="m_pay" value="cash"> Cash
                             </label>
     </div>
     <div class="col-lg-4">
     <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="m_pay"> Phone phe
+                              <input class="form-check-input" type="radio" name="m_pay" value="phonephe"> Phone phe
                             </label>
     </div>
     <div class="col-lg-4">
     <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="m_pay"> Cheque
+                              <input class="form-check-input" type="radio" name="m_pay" value="cheque"> Cheque
                             </label>
     </div>
 </div>
