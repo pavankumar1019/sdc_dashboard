@@ -19,7 +19,12 @@ $("#fathername").change(function(){
  $("#address").change(function(){
   $("#v_address").html($(this).val());
  });
-
+ $("#class").change(function(){
+  $("#v_class").html($(this).val());
+ });
+ $("#comb").change(function(){
+  $("#v_comb").html($(this).val());
+ });
   });
   
   function isNumber(evt) {
