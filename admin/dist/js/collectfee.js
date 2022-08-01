@@ -29,8 +29,8 @@ $("#fathername").change(function(){
   $("#v_fixation").html("<b>+Fee Fixation</b> <br>"+$(this).val());
  });
  $(".paid").change(function(){
-  var val1 = $(".fixation").replace(/,/g, "");
-  var val2 = $(".paid").replace(/,/g, "");
+  var val1 = $(".fixation").val().replace(',', '');
+  var val2 = $(".paid").val().replace(',', '');
   var total = val1-val2;
   $("#v_paid").html("<b>+Paying fee</b> <br>"+$(this).val());
 $('#balance').html("<b>Balance</b> <br>"+total);
