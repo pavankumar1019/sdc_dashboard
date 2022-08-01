@@ -29,7 +29,8 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Father Name</label>
-                                        <input type="text" class="form-control" id="fathername" placeholder="Father name">
+                                        <input type="text" class="form-control" id="fathername"
+                                            placeholder="Father name">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Gender</label>
@@ -69,52 +70,42 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <label class="form-label" for="exampleInputPassword1">Fee Fixation</label>
-                                        <input type="text" class="fixation form-control" onkeypress="return isNumber(event)"  id="enterammount" name="Ammount" style="font-size:35px" id="">
+                                        <input type="text" class="fixation form-control"
+                                            onkeypress="return isNumber(event)" id="enterammount" name="Ammount"
+                                            style="font-size:35px" id="">
                                     </div>
                                     <div class="col-lg-12">
-                                    <div class="form-check">
-                                    <label class="form-label" for="exampleInputPassword1">Mode of Payment</label>
-<div class="row">
-    <div class="col-lg-4">
-    <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="m_pay" value="cash"> Cash
-                            </label>
-    </div>
-    <div class="col-lg-4">
-    <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="m_pay" value="phonephe"> Phone phe
-                            </label>
-    </div>
-    <div class="col-lg-4">
-    <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="m_pay" value="cheque"> Cheque
-                            </label>
-    </div>
-</div>
-                          </div>
+                                        <div class="form-check">
+                                            <label class="form-label" for="exampleInputPassword1">Mode of
+                                                Payment</label>
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="m_pay"
+                                                            value="cash"> Cash
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="m_pay"
+                                                            value="phonephe"> Phone phe
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="m_pay"
+                                                            value="cheque"> Cheque
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <label class="form-label" for="exampleInputPassword1">Fee Paid</label>
-                                        <input type="text" class="paid form-control" onkeypress="return isNumber(event)"  id="enterammount1" name="Ammount" style="font-size:50px;color:blue;" id="">
+                                        <input type="text" class="paid form-control" onkeypress="return isNumber(event)"
+                                            id="enterammount1" name="Ammount" style="font-size:50px;color:blue;" id="">
                                     </div>
-                                    <div class="modal fade" id="payment_modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="mode" ></h5>
-        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button> -->
-      </div>
-      <div class="modal-body">
-        <p>Ricept No</p>
-    <input type="text" style="text-align: center;" class="form-control" name="" id="">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Resend OTP</button>
-        <button type="button" class="btn btn-primary">Login</button>
-      </div>
-    </div>
+
                                     <div class="col-lg-12">
                                         <label for=""></label>
                                         <button type="submit" class="btn btn-outline-primary btn-block">Proceed</button>
@@ -208,29 +199,50 @@
 
                 </div>
                 <div class="col-lg-3">
-                <div class="card mb-grid">
-                  <div class="card-header">
-                    <div class="card-header-title">Preview Panel</div>
-                  </div>
-                  <div class="card-body">
-                  <h2 id="v_name" style="text-transform: uppercase;"></h2>
-                  <h5  id="v_fathername" style="text-transform: uppercase;"></h5>
-                  <p id="v_dob" ></p>
-                  <h5><b id="v_phone"></b></h5>
-                  <p id="v_address"></p>
-                  <h6><span id="v_class"></span><span id="v_comb"></span></h6>
-                  <h5 id="v_fixation"></h5>
-                  <h5 id="v_paid"></h5>
-                  <h5 id="balance"></h5>
-                  </div>
+                    <div class="card mb-grid">
+                        <div class="card-header">
+                            <div class="card-header-title">Preview Panel</div>
+                        </div>
+                        <div class="card-body">
+                            <h2 id="v_name" style="text-transform: uppercase;"></h2>
+                            <h5 id="v_fathername" style="text-transform: uppercase;"></h5>
+                            <p id="v_dob"></p>
+                            <h5><b id="v_phone"></b></h5>
+                            <p id="v_address"></p>
+                            <h6><span id="v_class"></span><span id="v_comb"></span></h6>
+                            <h5 id="v_fixation"></h5>
+                            <h5 id="v_paid"></h5>
+                            <h5 id="balance"></h5>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
-               
-
-              </div>
 
 
-
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="payment_modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mode"></h5>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+            </div>
+            <div class="modal-body">
+                <p>Ricept No</p>
+                <input type="text" style="text-align: center;" class="form-control" name="" id="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Resend OTP</button>
+                <button type="button" class="btn btn-primary">Login</button>
             </div>
         </div>
     </div>
