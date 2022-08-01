@@ -32,6 +32,13 @@
                           <input type="text" class="form-control" placeholder="State">
                         </div>
                         <div class="col-lg-3">
+                        <label class="form-label" for="exampleInputPassword1">Gender</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>1st PUC</option>
+                          <option>2nd PUC</option>
+                        </select>
+                        </div>
+                        <div class="col-lg-3">
                         <label class="form-label" for="exampleInputPassword1">DOB</label>
                           <input type="date" class="form-control" placeholder="Zip">
                         </div>
