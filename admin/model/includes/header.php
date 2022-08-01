@@ -153,7 +153,7 @@
               </li>
 
               <li class="sidebar-nav-item">
-                <a href="./layouts/form_advanced.html" class="sidebar-nav-link">
+                <a href="./dashboard.php?page=newadmission" class="sidebar-nav-link">
                   <span class="sidebar-nav-abbr">
                     Nd
                   </span>
