@@ -23,7 +23,7 @@ $("#fathername").change(function(){
   $("#v_class").html($(this).val());
  });
  $("#comb").change(function(){
-  $("#v_comb").html($(this).val());
+  $("#v_comb").html(" "+$(this).val());
  });
   });
   
