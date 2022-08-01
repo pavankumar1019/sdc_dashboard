@@ -25,11 +25,11 @@
                                 <div class="form-row">
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Name</label>
-                                        <input type="text" class="form-control" placeholder="City">
+                                        <input type="text" class="form-control" placeholder="Name">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Father Name</label>
-                                        <input type="text" class="form-control" placeholder="State">
+                                        <input type="text" class="form-control" placeholder="Father name">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Gender</label>
@@ -40,15 +40,15 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">DOB</label>
-                                        <input type="date" class="form-control" placeholder="Zip">
+                                        <input type="date" class="form-control" placeholder="DOB">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Phone_no</label>
-                                        <input type="text" class="form-control" placeholder="Zip">
+                                        <input type="text" class="form-control" placeholder="phone">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Address</label>
-                                        <input type="text" class="form-control" placeholder="Zip">
+                                        <input type="text" class="form-control" placeholder="address">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Class</label>
