@@ -34,8 +34,8 @@
                         <div class="col-lg-3">
                         <label class="form-label" for="exampleInputPassword1">Gender</label>
                         <select class="form-control" id="exampleFormControlSelect1">
-                          <option>1st PUC</option>
-                          <option>2nd PUC</option>
+                          <option>Male</option>
+                          <option>Female</option>
                         </select>
                         </div>
                         <div class="col-lg-3">
