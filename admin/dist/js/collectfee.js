@@ -41,7 +41,7 @@ $('input[type=radio][name=m_pay]').change(function() {
   if (this.value == 'cash') {
      $('#payment_modal').modal('show');
      $('#mode').html(this.value)
-     $("input#txt").hide();
+     $("#tx").hide();
   }
   else if (this.value == 'phonephe') {
     $('#payment_modal').modal('show');
