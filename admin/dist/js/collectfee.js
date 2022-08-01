@@ -43,11 +43,28 @@ $('input[type=radio][name=m_pay]').change(function() {
      $('#mode').html(this.value)
      $("#tx").hide();
      $("#tx1").hide();
+     $("#c_no").hide();
+     $("#c_no1").hide();
+     $("#cdate").hide();
+     $("#cdate1").hide();
   }
   else if (this.value == 'phonephe') {
     $('#payment_modal').modal('show');
     $("#tx").show();
     $("#tx1").show();
+    $("#c_no").hide();
+    $("#c_no1").hide();
+    $("#cdate").hide();
+    $("#cdate1").hide();
+  }
+  else if (this.value == 'cheque') {
+    $('#payment_modal').modal('show');
+    $("#tx").hide();
+    $("#tx1").hide();
+    $("#c_no").show();
+    $("#c_no1").show();
+    $("#cdate").show();
+    $("#cdate1").show();
   }
 });
 
