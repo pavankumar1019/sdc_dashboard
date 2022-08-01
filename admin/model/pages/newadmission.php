@@ -239,6 +239,12 @@
             <div class="modal-body">
                 <label>Ricept No</label>
                 <input type="text" style="text-align: center;" class="form-control" name="" id="">
+                <label>TXN ID</label>
+                <input type="text" style="text-align: center;" class="form-control" name="" id="">
+                <label>Check_No</label>
+                <input type="text" style="text-align: center;" class="form-control" name="" id="">
+                <label>Check Date</label>
+                <input type="text" style="text-align: center;" class="form-control" name="" id="">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
