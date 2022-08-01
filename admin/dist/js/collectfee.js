@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
     $('#enterammount').simpleMoneyFormat();
+    $('#enterammount1').simpleMoneyFormat();
   });
   
   function isNumber(evt) {
