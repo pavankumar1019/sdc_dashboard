@@ -18,7 +18,7 @@
                 <div class="col-lg-12">
                 <div class="card mb-grid">
                   <div class="card-header">
-                    <div class="card-header-title">New Admission</div>
+                    <div class="card-header-title">New Admission - <b>PUC</b></div>
                   </div>
                   <div class="card-body">
                     <form>
