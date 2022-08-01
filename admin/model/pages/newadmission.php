@@ -77,17 +77,17 @@
 <div class="row">
     <div class="col-lg-4">
     <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox"> Cash
+                              <input class="form-check-input" type="checkbox" name="m_pay"> Cash
                             </label>
     </div>
     <div class="col-lg-4">
     <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox"> Phone phe
+                              <input class="form-check-input" type="checkbox" name="m_pay"> Phone phe
                             </label>
     </div>
     <div class="col-lg-4">
     <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox"> Cheque
+                              <input class="form-check-input" type="checkbox" name="m_pay"> Cheque
                             </label>
     </div>
 </div>
