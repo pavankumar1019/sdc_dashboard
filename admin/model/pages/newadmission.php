@@ -24,6 +24,7 @@
                     <form>
                       <div class="form-row">
                         <div class="col-7">
+                        <label class="form-label" for="exampleInputPassword1">Name</label>
                           <input type="text" class="form-control" placeholder="City">
                         </div>
                         <div class="col">
