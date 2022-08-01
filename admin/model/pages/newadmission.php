@@ -72,6 +72,13 @@
                                         <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount" name="Ammount" style="font-size:35px" id="">
                                     </div>
                                     <div class="col-lg-12">
+                                    <div class="form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Check me out
+                            </label>
+                          </div>
+                                    </div>
+                                    <div class="col-lg-12">
                                         <label class="form-label" for="exampleInputPassword1">Fee Paid</label>
                                         <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount1" name="Ammount" style="font-size:50px;color:blue;" id="">
                                     </div>
