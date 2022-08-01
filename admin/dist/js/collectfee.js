@@ -50,6 +50,7 @@ $('input[type=radio][name=m_pay]').change(function() {
   }
   else if (this.value == 'phonephe') {
     $('#payment_modal').modal('show');
+    $('#mode').html(this.value)
     $("#tx").show();
     $("#tx1").show();
     $("#c_no").hide();
@@ -59,6 +60,7 @@ $('input[type=radio][name=m_pay]').change(function() {
   }
   else if (this.value == 'cheque') {
     $('#payment_modal').modal('show');
+    $('#mode').html(this.value)
     $("#tx").hide();
     $("#tx1").hide();
     $("#c_no").show();
