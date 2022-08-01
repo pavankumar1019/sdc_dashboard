@@ -177,6 +177,7 @@
                   <h5>SRINIVAS E</h5>
                   <p>DOB : 2000-02-09</p>
                   <h5><b>+91 1134567897</b></h5>
+                  <p>Bangarpet , Kolar Karnataka</p>
                   </div>
                 </div>
 
