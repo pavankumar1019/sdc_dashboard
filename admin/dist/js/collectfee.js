@@ -42,9 +42,12 @@ $('input[type=radio][name=m_pay]').change(function() {
      $('#payment_modal').modal('show');
      $('#mode').html(this.value)
      $("#tx").hide();
+     $("#tx1").hide();
   }
   else if (this.value == 'phonephe') {
     $('#payment_modal').modal('show');
+    $("#tx").show();
+    $("#tx1").show();
   }
 });
 

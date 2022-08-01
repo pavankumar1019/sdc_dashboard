@@ -240,7 +240,7 @@
                 <label>Ricept No</label>
                 <input type="text" style="text-align: center;" class="form-control" name="" id="">
                 <label id="tx">TXN ID</label>
-                <input type="text" style="text-align: center;" class="form-control" id="tx" name="" >
+                <input type="text" style="text-align: center;" class="form-control" id="tx1" name="" >
                 <label id="c_no">Check_No</label>
                 <input type="text" style="text-align: center;" class="form-control" name="" id="c_no">
                 <label id="cdate">Check Date</label>
