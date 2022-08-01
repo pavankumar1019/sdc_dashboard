@@ -25,12 +25,12 @@ $("#fathername").change(function(){
  $("#comb").change(function(){
   $("#v_comb").html(" "+$(this).val());
  });
- $("#fixation").change(function(){
+ $(".fixation").change(function(){
   $("#v_fixation").html("<b>+Fee Fixation</b> <br>"+$(this).val());
  });
- $("#paid").change(function(){
+ $(".paid").change(function(){
   $("#v_paid").html("<b>+Paying fee</b> <br>"+$(this).val());
-  
+
  });
  
 
