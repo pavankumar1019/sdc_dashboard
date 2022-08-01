@@ -67,8 +67,8 @@
 
                         </select>
                         </div>
-                        <div class="col-lg-3">
-                      <button type="submit" class="btn btn-outline-primary">ADD</button>
+                        <div class="col-lg-12">
+                      <button type="submit" class="btn btn-outline-primary btn-block">ADD</button>
                         </div>
                       </div>
                     </form>
