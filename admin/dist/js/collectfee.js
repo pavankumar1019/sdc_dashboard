@@ -31,8 +31,9 @@ $("#fathername").change(function(){
  $(".paid").change(function(){
   var val1 = parseInt($(".fixation").val());
   var val2 = parseInt($(this).val());
+  var total = val1-val2;
   $("#v_paid").html("<b>+Paying fee</b> <br>"+$(this).val());
-$('#balance').html("<b>Balance</b> <br>"+(val1 - val2));
+$('#balance').html("<b>Balance</b> <br>"+total);
  });
  
 
