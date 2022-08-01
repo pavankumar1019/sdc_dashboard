@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <label class="form-label" for="exampleInputPassword1">Fee Fixation</label>
-                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount" name="Ammount" style="font-size:35px" id="">
+                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount fixation" name="Ammount" style="font-size:35px" id="">
                                     </div>
                                     <div class="col-lg-12">
                                     <div class="form-check">
@@ -95,7 +95,7 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <label class="form-label" for="exampleInputPassword1">Fee Paid</label>
-                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount1" name="Ammount" style="font-size:50px;color:blue;" id="">
+                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount1 paid" name="Ammount" style="font-size:50px;color:blue;" id="">
                                     </div>
                                     <div class="col-lg-12">
                                         <label for=""></label>
@@ -201,8 +201,8 @@
                   <h5><b id="v_phone"></b></h5>
                   <p id="v_address"></p>
                   <h6><span id="v_class"></span><span id="v_comb"></span></h6>
-                  <h5><b>+Fee Fixation</b> <br> 35,000</h5>
-                  <h5><b>+Paying fee</b> <br>4000</h5>
+                  <h5 id="v_fixation"></h5>
+                  <h5 id="v_paid"></h5>
                   <h5><b>Balance</b> <br>4000</h5>
                   </div>
                 </div>

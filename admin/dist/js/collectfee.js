@@ -25,7 +25,17 @@ $("#fathername").change(function(){
  $("#comb").change(function(){
   $("#v_comb").html(" "+$(this).val());
  });
+ $("#fixation").change(function(){
+  $("#v_fixation").html("<b>+Fee Fixation</b> <br>"+$(this).val());
+ });
+ $("#paid").change(function(){
+  $("#v_paid").html("<b>+Paying fee</b> <br>"+$(this).val());
+  
+ });
+ 
+
   });
+
   
   function isNumber(evt) {
     evt = (evt) ? evt : window.event;
