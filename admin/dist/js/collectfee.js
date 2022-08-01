@@ -16,7 +16,9 @@ $("#fathername").change(function(){
  $("#phone").change(function(){
   $("#v_phone").html($(this).val());
  });
-
+ $("#address").change(function(){
+  $("#v_address").html($(this).val());
+ });
 
   });
   

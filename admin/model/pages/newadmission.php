@@ -48,22 +48,22 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Address</label>
-                                        <input type="text" class="form-control" placeholder="address">
+                                        <input type="text" class="form-control" id="address" placeholder="address">
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Class</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1st PUC</option>
-                                            <option>2nd PUC</option>
+                                        <select class="form-control" id="class">
+                                            <option value="1st PUC">1st PUC</option>
+                                            <option vlaue="2nd PUC">2nd PUC</option>
                                         </select>
                                     </div>
                                     <div class="col-lg-3">
                                         <label class="form-label" for="exampleInputPassword1">Combination</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>EBACS</option>
-                                            <option>EBAS</option>
-                                            <option>PCMB</option>
-                                            <option>PCMCS</option>
+                                        <select class="form-control" id="comb">
+                                            <option value="EBACS">EBACS</option>
+                                            <option value="EBAS">EBAS</option>
+                                            <option value="PCMB">PCMB</option>
+                                            <option value="PCMCS">PCMCS</option>
 
                                         </select>
                                     </div>
@@ -199,8 +199,8 @@
                   <h5  id="v_fathername" style="text-transform: uppercase;"></h5>
                   <p id="v_dob" ></p>
                   <h5><b id="v_phone"></b></h5>
-                  <p>Bangarpet , Kolar Karnataka</p>
-                  <h6>1st PUC EBACS</h6>
+                  <p id="v_address"></p>
+                  <h6><span id="v_class"></span><span id="v_comb"></span></h6>
                   <h5><b>+Fee Fixation</b> <br> 35,000</h5>
                   <h5><b>+Paying fee</b> <br>4000</h5>
                   <h5><b>Balance</b> <br>4000</h5>
