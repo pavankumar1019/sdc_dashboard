@@ -28,9 +28,15 @@
                           <input type="text" class="form-control" placeholder="City">
                         </div>
                         <div class="col-lg-3">
+                        <label class="form-label" for="exampleInputPassword1">Father Name</label>
                           <input type="text" class="form-control" placeholder="State">
                         </div>
                         <div class="col-lg-3">
+                        <label class="form-label" for="exampleInputPassword1">Phone_no</label>
+                          <input type="text" class="form-control" placeholder="Zip">
+                        </div>
+                        <div class="col-lg-3">
+                        <label class="form-label" for="exampleInputPassword1">Address</label>
                           <input type="text" class="form-control" placeholder="Zip">
                         </div>
                       </div>
