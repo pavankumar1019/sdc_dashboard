@@ -69,11 +69,11 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <label class="form-label" for="exampleInputPassword1">Fee Fixation</label>
-                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount" name="Ammount" style="font-size:50px" id="">
+                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount" name="Ammount" style="font-size:35px" id="">
                                     </div>
                                     <div class="col-lg-12">
                                         <label class="form-label" for="exampleInputPassword1">Fee Paid</label>
-                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount1" name="Ammount" style="font-size:50px" id="">
+                                        <input type="text" class="form-control" onkeypress="return isNumber(event)"  id="enterammount1" name="Ammount" style="font-size:50px;color:blue;" id="">
                                     </div>
                                     <div class="col-lg-12">
                                         <label for=""></label>
