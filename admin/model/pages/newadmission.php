@@ -241,8 +241,8 @@
                 <input type="text" style="text-align: center;" class="form-control" name="" id="">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Resend OTP</button>
-                <button type="button" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+               
             </div>
         </div>
     </div>
