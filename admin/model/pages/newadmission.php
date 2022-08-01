@@ -39,6 +39,26 @@
                         <label class="form-label" for="exampleInputPassword1">Address</label>
                           <input type="text" class="form-control" placeholder="Zip">
                         </div>
+                        <div class="col-lg-3">
+                        <label class="form-label" for="exampleInputPassword1">Class</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        </div>
+                        <div class="col-lg-3">
+                        <label class="form-label" for="exampleInputPassword1">Combination</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        </div>
                       </div>
                     </form>
                   </div>
