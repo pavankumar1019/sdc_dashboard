@@ -28,9 +28,9 @@ $("#fathername").change(function(){
  $(".fixation").change(function(){
   $("#v_fixation").html("<b>+Fee Fixation</b> <br>"+$(this).val());
  });
- $(".paid").keypress(function(){
-  var val1 = (isNaN(parseInt($('.fixation').val()))) ? 0 : parseInt($('.fixation').val());
-  var val2 = (isNaN(parseInt($(this).val()))) ? 0 : parseInt($(this).val());
+ $(".paid").change(function(){
+  var val1 = parseInt($('.fixation').val());
+  var val2 = parseInt($(this).val());
   $("#v_paid").html("<b>+Paying fee</b> <br>"+$(this).val());
 $('#balance').html("<b>Balance</b> <br>"+(val1 - val2));
  });
