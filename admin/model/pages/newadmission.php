@@ -237,7 +237,7 @@
         </button> -->
             </div>
             <div class="modal-body">
-                <p>Ricept No</p>
+                <label>Ricept No</label>
                 <input type="text" style="text-align: center;" class="form-control" name="" id="">
             </div>
             <div class="modal-footer">
