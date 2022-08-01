@@ -67,6 +67,9 @@
 
                         </select>
                         </div>
+                        <div class="col-lg-3">
+                      <button type="submit" class="btn btn-outline-primary">ADD</button>
+                        </div>
                       </div>
                     </form>
                   </div>
