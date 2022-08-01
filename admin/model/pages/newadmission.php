@@ -178,6 +178,7 @@
                   <p>DOB : 2000-02-09</p>
                   <h5><b>+91 1134567897</b></h5>
                   <p>Bangarpet , Kolar Karnataka</p>
+                  <h6>1st PUC EBACS</h6>
                   </div>
                 </div>
 
