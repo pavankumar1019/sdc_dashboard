@@ -32,6 +32,10 @@
                           <input type="text" class="form-control" placeholder="State">
                         </div>
                         <div class="col-lg-3">
+                        <label class="form-label" for="exampleInputPassword1">DOB</label>
+                          <input type="date" class="form-control" placeholder="Zip">
+                        </div>
+                        <div class="col-lg-3">
                         <label class="form-label" for="exampleInputPassword1">Phone_no</label>
                           <input type="text" class="form-control" placeholder="Zip">
                         </div>
