@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <label for=""></label>
-                                        <button type="submit" class="btn btn-outline-primary btn-block">ADD</button>
+                                        <button type="submit" class="btn btn-outline-primary btn-block">Proceed</button>
                                     </div>
                                 </div>
                             </form>
