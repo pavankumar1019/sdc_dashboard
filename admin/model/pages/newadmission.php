@@ -5,13 +5,13 @@
             <nav aria-label="breadcrumb" role="navigation">
                 <ol class="breadcrumb adminx-page-breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                    <li class="breadcrumb-item active  aria-current=" page">Elements</li>
+                    <li class="breadcrumb-item"><a href="#">Fee system</a></li>
+                    <li class="breadcrumb-item active  aria-current=" page">New Admission</li>
                 </ol>
             </nav>
 
             <div class="pb-3">
-                <h1>Elements</h1>
+                <h1>New Admission</h1>
             </div>
 
             <div class="row">
