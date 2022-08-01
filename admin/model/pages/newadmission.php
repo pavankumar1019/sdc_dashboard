@@ -18,7 +18,7 @@
                 <div class="col-lg-6">
                 <div class="card mb-grid">
                   <div class="card-header">
-                    <div class="card-header-title">Column sizing</div>
+                    <div class="card-header-title">New Admission</div>
                   </div>
                   <div class="card-body">
                     <form>
