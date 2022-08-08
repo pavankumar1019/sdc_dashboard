@@ -15,23 +15,23 @@
     <h2>ರಾಷ್ಟ್ರದೇವೋಭವ</h2>
 <form id="form-search">
   <div class="form-group">
-    <label for="exampleFormControlInput1">Name of the Participant</label>
+    <label for="exampleFormControlInput1">Name of the Participant <span style="color:red;"><b>*</b></span></label>
     <input type="text" class="form-control" name="name" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Name of the Parent</label>
+    <label for="exampleFormControlInput1">Name of the Parent  <span style="color:red;"><b>*</b></span></label>
     <input type="text" class="form-control" name="parent" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Date of Birth</label>
+    <label for="exampleFormControlInput1">Date of Birth  <span style="color:red;"><b>*</b></span></label>
     <input type="date" class="form-control" name="dob" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Residential Address</label>
+    <label for="exampleFormControlTextarea1">Residential Address  <span style="color:red;"><b>*</b></span></label>
     <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3" required></textarea>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Class</label>
+    <label for="exampleFormControlSelect1">Class  <span style="color:red;"><b>*</b></span></label>
     <select class="form-control" name="class" id="exampleFormControlSelect1" required>
       <option>1st PUC Commerce</option>
       <option>1st PUC Science</option>
@@ -40,7 +40,7 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">SDC Branch</label>
+    <label for="exampleFormControlSelect1">SDC Branch  <span style="color:red;"><b>*</b></span></label>
     <select class="form-control" name="branch" id="exampleFormControlSelect1" required>
       <option>Kolar</option>
       <option>Mulbagal</option>
@@ -51,15 +51,15 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Contact No.</label>
+    <label for="exampleFormControlInput1">Contact No.  <span style="color:red;"><b>*</b></span></label>
     <input type="number" class="form-control" name="contact" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email</label>
+    <label for="exampleFormControlInput1">Email  <span style="color:red;"><b>*</b></span></label>
     <input type="email" class="form-control" name="email" id="exampleFormControlInput1">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Events</label>
+    <label for="exampleFormControlSelect1">Events  <span style="color:red;"><b>*</b></span></label>
     <select class="form-control" name="event" id="exampleFormControlSelect1">
       <option>Quiz</option>
       <option>Debit</option>
