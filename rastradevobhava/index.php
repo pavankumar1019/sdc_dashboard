@@ -52,7 +52,7 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Contact No.  <span style="color:red;"><b>*</b></span></label>
-    <input type="number" class="form-control" name="contact" id="exampleFormControlInput1" required>
+    <input type="number" class="form-control" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" name="contact" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email</label>
