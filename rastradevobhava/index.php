@@ -65,7 +65,7 @@
     </select>
   </div>
   <div class="form-group">
- <input type="button" class="info" value="Register">
+ <input type="button" class="btn btn-info" value="Register">
   </div>
 </form>
 
