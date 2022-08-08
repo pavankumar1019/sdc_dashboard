@@ -14,8 +14,8 @@ if ($conn->connect_error) {
 $connect = new PDO("mysql:host=localhost; dbname=u430139865_sdc", "u430139865_sdc", "Pavan5639");
 
 if(isset($_POST['save'])){
-	$sql = "INSERT INTO `crud`( `FirstName`, `LastName`) 
-	VALUES ('$FirstName','$LastName')";
+	$sql = "INSERT INTO `crud`( `name`, `parents`) 
+	VALUES ('".$_POST['name']."','".$_POST['parent']."')";
 	if (mysqli_query($conn, $sql)) {
 		echo "Succeess !";
 	} 
