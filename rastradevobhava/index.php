@@ -30,6 +30,15 @@
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <div class="form-group">
+    <label for="exampleFormControlSelect1">Class</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1st PUC Commerce</option>
+      <option>1st PUC Science</option>
+      <option>2nd  PUC Commerce</option>
+      <option>2nd PUC Science</option>
+    </select>
+  </div>
+  <div class="form-group">
     <label for="exampleFormControlSelect1">Example select</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>1</option>
