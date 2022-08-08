@@ -16,23 +16,23 @@
 <form id="form-search">
   <div class="form-group">
     <label for="exampleFormControlInput1">Name of the Participant</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" required>
+    <input type="email" class="form-control" name="name" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Name of the Parent</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" required>
+    <input type="email" class="form-control" name="parent" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Date of Birth</label>
-    <input type="date" class="form-control" id="exampleFormControlInput1" required>
+    <input type="date" class="form-control" name="dob" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Residential Address</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3" required></textarea>
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Class</label>
-    <select class="form-control" id="exampleFormControlSelect1" required>
+    <select class="form-control" name="class" id="exampleFormControlSelect1" required>
       <option>1st PUC Commerce</option>
       <option>1st PUC Science</option>
       <option>2nd  PUC Commerce</option>
@@ -41,7 +41,7 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">SDC Branch</label>
-    <select class="form-control" id="exampleFormControlSelect1" required>
+    <select class="form-control" name="branch" id="exampleFormControlSelect1" required>
       <option>Kolar</option>
       <option>Mulbagal</option>
       <option>Bangarpet</option>
@@ -52,11 +52,15 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Contact No.</label>
-    <input type="number" class="form-control" id="exampleFormControlInput1" required>
+    <input type="number" class="form-control" name="contact" id="exampleFormControlInput1" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email</label>
+    <input type="email" class="form-control" name="email" id="exampleFormControlInput1">
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Events</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="event" id="exampleFormControlSelect1">
       <option>Quiz</option>
       <option>Debit</option>
       <option>Painting</option>
@@ -66,7 +70,7 @@
     </select>
   </div>
   <div class="form-group">
- <input type="button" id="save" class="btn btn-info" value="Register" >
+ <input type="button" id="save" class="btn btn-info" name="save" value="Register" >
   </div>
 </form>
 
