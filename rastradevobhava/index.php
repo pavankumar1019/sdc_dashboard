@@ -1,152 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
   <title>SDC</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-  <link rel="icon" href="http://sdccollegebpet.in/SDC.ico" type="image/x-icon">
-<style>
-    body{
-      background: #B8850B;
-      padding-top: 30px;
-    }
-.main-section{
-	padding: 15px;
-	background:#f1f1f1;
-}
-.custom-file-control::after {
-  content: "Choose file...";
-}
-.custom-file-control::before {
-  content: "Browse";
-}
-</style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
-  
-<div class="container">
-    <div class="row">
-      <div class="offset-lg-2 col-lg-8 col-sm-8 col-8 border rounded main-section">
-        <h3 class="text-center text-inverse">Rastradevobhava ()</h3>
-        <hr>
-        <form class="container" id="needs-validation" novalidate>
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-12">
-               <div class="form-group">
-                <label class="text-inverse" for="validationCustom01">First Name</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="First Name" required>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="text-inverse" for="validationCustom02">Last Name</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Last Name" required>
-              </div>  
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-12 col-12">
-              <div class="form-group">
-                <label class="text-inverse" for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Email.
-                </div>
-              </div>  
-            </div>
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="text-inverse" for="inputpassword">Password</label>
-                <input type="password" class="form-control" id="inputpassword" placeholder="password" required>
-                <div class="invalid-feedback">
-                  Please provide a valid password.
-                </div>
-              </div>  
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="text-inverse" for="validationCustom03">City</label>
-                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-                <div class="invalid-feedback">
-                  Please provide a valid city.
-                </div>
-              </div>  
-            </div>
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="text-inverse" for="select-menu">Select any value</label>
-                <select class="custom-select d-block form-control" id="image" required>
-                  <option value="">Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please selected any option.
-                </div>
-              </div>  
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="custom-file">
-                  <input type="file" id="file" class="form-control custom-file-input" required>
-                  <span class="custom-file-control"></span>
-                  <div class="invalid-feedback">
-                    Please selected any File.
-                  </div>
-                </label>
-              </div>  
-            </div>
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" required>
-                  <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Check this custom checkbox</span>
-                </label>
-              </div>  
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="custom-control custom-radio">
-                  <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
-                  <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Toggle this custom radio</span>
-                </label>
-              </div>  
-            </div>
-            <div class="col-lg-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label class="custom-control custom-radio">
-                  <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
-                  <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Or toggle this other custom radio</span>
-                </label>
-              </div>  
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-lg-12 col-sm-12 col-12 text-center">
-                <button class="btn btn-info" type="submit">Submit form</button>
-            </div>
-          </div>  
-        </form>
-      </div>
-    </div>  
-</div>
-        
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+  
