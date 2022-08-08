@@ -298,11 +298,9 @@ if($_POST['type']=="add"){
          );
          $table_columns= implode(',', array_keys($insert_data));
          $table_data= implode("', '", $insert_data);
-       $sql = "INSERT INTO ".$class_test_marks." ($table_columns) VALUES ('$table_data') "; 
-       $conn->query($sql);
-    $error=true;
-        
-        if ($error==true) {
+       $sql = "INSERT INTO ".$class_test_marks." ($table_columns) VALUES ('$table_data')"; 
+       
+          if ($conn->query($sql)) {
           echo "Done";
         } else {
           echo "Failed Duplicate entry. !";
