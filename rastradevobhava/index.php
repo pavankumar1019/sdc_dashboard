@@ -91,6 +91,7 @@ e.preventDefault();
          type: "post",
          url: "save.php",
          success: function(data){
+          $('#form-search').trigger("reset");
               alert(data);
               window.location.href = "http://sdccollegebpet.in/";
          }
