@@ -10,6 +10,7 @@
 
 </head>
 <body>
+<section class="m-5">
 <form>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
@@ -41,6 +42,8 @@
   </div>
 </form>
 
+
+</section>
 
 
 
