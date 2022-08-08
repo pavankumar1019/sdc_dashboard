@@ -26,7 +26,7 @@
 <div class="container">
     <div class="row">
       <div class="offset-lg-2 col-lg-8 col-sm-8 col-8 border rounded main-section">
-        <h3 class="text-center text-inverse">Form Validation</h3>
+        <h3 class="text-center text-inverse">Rastradevobhava ()</h3>
         <hr>
         <form class="container" id="needs-validation" novalidate>
           <div class="row">
