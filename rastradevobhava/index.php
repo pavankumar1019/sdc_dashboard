@@ -39,13 +39,14 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
+    <label for="exampleFormControlSelect1">SDC Branch</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+      <option>Kolar</option>
+      <option>Mulbagal</option>
+      <option>Bangarpet</option>
+      <option>KGF</option>
+      <option>Srinivasapura</option>
+
     </select>
   </div>
  
