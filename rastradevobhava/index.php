@@ -33,6 +33,7 @@
   <div class="form-group">
     <label for="exampleFormControlSelect1">Class  <span style="color:red;"><b>*</b></span></label>
     <select class="form-control" name="class" id="exampleFormControlSelect1" required>
+      <option value="">-Select One-</option>
       <option>1st PUC Commerce</option>
       <option>1st PUC Science</option>
       <option>2nd  PUC Commerce</option>
@@ -42,7 +43,8 @@
   <div class="form-group">
     <label for="exampleFormControlSelect1">SDC Branch  <span style="color:red;"><b>*</b></span></label>
     <select class="form-control" name="branch" id="exampleFormControlSelect1" required>
-      <option>Kolar</option>
+    <option value="">-Select One-</option>  
+    <option>Kolar</option>
       <option>Mulbagal</option>
       <option>Bangarpet</option>
       <option>KGF</option>
@@ -61,7 +63,8 @@
   <div class="form-group">
     <label for="exampleFormControlSelect1">Events  <span style="color:red;"><b>*</b></span></label>
     <select class="form-control" name="event" id="exampleFormControlSelect1">
-      <option>Quiz</option>
+    <option value="">-Select One-</option> 
+    <option>Quiz</option>
       <option>Debit</option>
       <option>Painting</option>
       <option>Essay Writting</option>
