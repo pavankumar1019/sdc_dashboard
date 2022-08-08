@@ -11,7 +11,7 @@
 </head>
 <body>
 <section class="m-5">
-    <h2>Rastradevobhava (ರಾಷ್ಟ್ರದೇವೋಭವ)</h2>
+    <h2>ರಾಷ್ಟ್ರದೇವೋಭವ</h2>
 <form>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
