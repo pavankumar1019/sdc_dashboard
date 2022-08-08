@@ -16,11 +16,11 @@
 <form id="form-search">
   <div class="form-group">
     <label for="exampleFormControlInput1">Name of the Participant</label>
-    <input type="email" class="form-control" name="name" id="exampleFormControlInput1" required>
+    <input type="text" class="form-control" name="name" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Name of the Parent</label>
-    <input type="email" class="form-control" name="parent" id="exampleFormControlInput1" required>
+    <input type="text" class="form-control" name="parent" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Date of Birth</label>
