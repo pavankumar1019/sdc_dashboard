@@ -15,7 +15,7 @@ $connect = new PDO("mysql:host=localhost; dbname=u430139865_sdc", "u430139865_sd
 
 if(!$_POST['name']=""){
 	$sql = "INSERT INTO `events`( `name`, `parents`, `dob`, `address`, `class`, `branch`, `contact`, `event`, `email`) 
-	VALUES ('".$_POST['name']."','".$_POST['parent']."','".$_POST['dob']."','".$_POST['address']."','".$_POST['class']."','".$_POST['branch']."','".$_POST['contact']."','".$_POST['event']."','".$_POST['email']."')";
+	VALUES ('".$_POST['name_std']."','".$_POST['parent']."','".$_POST['dob']."','".$_POST['address']."','".$_POST['class']."','".$_POST['branch']."','".$_POST['contact']."','".$_POST['event']."','".$_POST['email']."')";
 	if (mysqli_query($conn, $sql)) {
 		echo "Succeess !";
 	} 
