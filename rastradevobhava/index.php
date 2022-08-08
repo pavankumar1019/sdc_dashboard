@@ -14,8 +14,20 @@
     <h2>ರಾಷ್ಟ್ರದೇವೋಭವ</h2>
 <form>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <label for="exampleFormControlInput1">Name of the Participant</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name of the Parent</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Date of Birth</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Residential Address</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Example select</label>
