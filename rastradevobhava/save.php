@@ -17,7 +17,7 @@ if(!$_POST['name']=""){
 	$sql = "INSERT INTO `events`( `name`, `parents`, `dob`, `address`, `class`, `branch`, `contact`, `event`, `email`) 
 	VALUES ('".$_POST['name_std']."','".$_POST['parent']."','".$_POST['dob']."','".$_POST['address']."','".$_POST['class']."','".$_POST['branch']."','".$_POST['contact']."','".$_POST['event']."','".$_POST['email']."')";
 	if (mysqli_query($conn, $sql)) {
-		echo "Succeess !";
+		echo "Done you have registered successfully !";
 	} 
 	else {
 	    echo "Error !";

@@ -55,7 +55,7 @@
     <input type="number" class="form-control" name="contact" id="exampleFormControlInput1" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email  <span style="color:red;"><b>*</b></span></label>
+    <label for="exampleFormControlInput1">Email</label>
     <input type="email" class="form-control" name="email" id="exampleFormControlInput1">
   </div>
   <div class="form-group">
