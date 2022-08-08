@@ -92,6 +92,7 @@ e.preventDefault();
          url: "save.php",
          success: function(data){
               alert(data);
+              window.location.href = "http://sdccollegebpet.in/";
          }
 	});
 });
