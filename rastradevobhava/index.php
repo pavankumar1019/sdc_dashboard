@@ -54,8 +54,18 @@
     <input type="number" class="form-control" id="exampleFormControlInput1" >
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label for="exampleFormControlSelect1">Events</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Quiz</option>
+      <option>Debit</option>
+      <option>Painting</option>
+      <option>Essay Writting</option>
+      <option>Patriotic Song</option>
+
+    </select>
+  </div>
+  <div class="form-group">
+ <input type="button" class="info" value="Register">
   </div>
 </form>
 
