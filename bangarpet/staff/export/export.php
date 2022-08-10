@@ -115,7 +115,7 @@ $langname="HIN";
 if($row["l1"]>=$_SESSION['minmarks'] && $row["l2"]>=$_SESSION['minmarks'] && $row["s1"]>=$_SESSION['minmarks'] && $row["s2"]>=$_SESSION['minmarks'] && $row["s3"]>=$_SESSION['minmarks'] && $row["s4"]>=$_SESSION['minmarks']){
   $status="PASS";
 }else{
-  $status="Fail";
+  $status="<b style='color:red'>FAIL</b>";
 }
    $output .= '
     <tr>  
