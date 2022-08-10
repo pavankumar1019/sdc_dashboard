@@ -6,6 +6,7 @@
                                                     $_SESSION['test_name']=$rowc['id'];
                                                     $_SESSION['maxmarks']=$rowc['maxmarks'];
                                                     $_SESSION['testname']=$rowc['name'];
+                                                    $_SESSION['minmarks']=$rowc['minmarks'];
                                                 }
                                              
                 if($_SESSION['role_staff']=="P"){

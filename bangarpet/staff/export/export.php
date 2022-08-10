@@ -112,6 +112,7 @@ $langname="HIN";
     }else{
       $combination=$row["combination"];
     }
+
    $output .= '
     <tr>  
                          <td>'.$row["RollNo"].'</td>  
@@ -193,12 +194,12 @@ $output .= '</table>';
 $query2 = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
   FROM ".$tbl_admission."
   LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
-  AND ".$class_test_marks.".l1>=18 
-  AND ".$class_test_marks.".l2>=18 
-   AND ".$class_test_marks.".s1>=18  
-   AND ".$class_test_marks.".s2>=18  
-   AND ".$class_test_marks.".s3>=18  
-   AND ".$class_test_marks.".s4>=18
+  AND ".$class_test_marks.".l1>=".$_SESSION['minmarks']." 
+  AND ".$class_test_marks.".l2>=".$_SESSION['minmarks']."  
+   AND ".$class_test_marks.".s1>=".$_SESSION['minmarks']."   
+   AND ".$class_test_marks.".s2>=".$_SESSION['minmarks']."   
+   AND ".$class_test_marks.".s3>=".$_SESSION['minmarks']."   
+   AND ".$class_test_marks.".s4>=".$_SESSION['minmarks']." 
   ORDER BY `".$class_test_marks."`.`total` DESC LIMIT 20";
 $result2 = mysqli_query($conn, $query2);
 
