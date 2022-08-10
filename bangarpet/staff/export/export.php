@@ -95,7 +95,7 @@ $totalstudents=mysqli_num_rows($result3);
                     <th>subject-4</th>
                     <th>Total</th>
                     <th>%</th>
-                 
+                    <th>Status</th>
                     </tr>
   ';
   while($row = mysqli_fetch_array($result))
@@ -112,7 +112,11 @@ $langname="HIN";
     }else{
       $combination=$row["combination"];
     }
-
+if($row["l1"]>=$_SESSION['minmarks'] && $row["l2"]>=$_SESSION['minmarks'] && $row["s1"]>=$_SESSION['minmarks'] && $row["s2"]>=$_SESSION['minmarks'] && $row["s3"]>=$_SESSION['minmarks'] && $row["s4"]>=$_SESSION['minmarks']){
+  $status="PASS";
+}else{
+  $status="Fail";
+}
    $output .= '
     <tr>  
                          <td>'.$row["RollNo"].'</td>  
@@ -128,6 +132,7 @@ $langname="HIN";
                          <td>'.$row["s4"].'</td>  
                          <td>'.$row["total"].'</td>  
                          <td>'.round($percentage, 2).'%</td>  
+                         <td>'.$status.'</td> 
                     </tr>
    ';
   }
