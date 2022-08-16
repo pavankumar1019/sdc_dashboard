@@ -100,6 +100,8 @@ if($_POST['type']=="loaddata"){
           <h6 class="mb-1">'.$row['StudentName'].'</h6>
           <p class="m-0">Father Name : '.$row['father_name'].'<br>'.$row['combination'].'<br>'.$row['lang_code'].'<br>'.$row['mobile_no'].'</p>
       </td>
+      <td>   <h6 class="mb-1">'.$row['class_name'].'</h6>
+      </td> 
       <td>
           <h6 class="text-muted">'.$number_phone.'</h6>
       </td>
