@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img  src="images/ independenceday_sdc.jpg" alt="">
+                    <img  src="images/independenceday_sdc.jpg" alt="">
                    
                     <!-- Frame 3.jpg -->
                   </div>
