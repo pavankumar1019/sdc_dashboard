@@ -56,6 +56,7 @@ if($_POST['type']==2){
 		$_SESSION['name_staff']=$_POST['name'];
 		$_SESSION['branch_staff']=$_POST['branch'];
 		$_SESSION['role_staff']=$_POST['role'];
+		$_SESSION['id']=$_POST['id'];
 		$_SESSION['profile_staff']=$_POST['img'];
 		$_SESSION['class_id']=$_POST['class_id'];
 	}else{
@@ -86,6 +87,7 @@ if ($result->num_rows > 0) {
 		"branch"=>$row['branch'],
         "role"=>$row['role'],
         "img"=>$row['photo'],
+		"id"=>$row['id'],
         "class_id"=>$row['class_id']
 	));
   }
