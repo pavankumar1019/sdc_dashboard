@@ -11,7 +11,7 @@ include('./db_bpet_sdc/db.php');
             <form>
   <div class="form-row">
 
-<div class="col-12">
+<div class="form-group col-12">
 <select class="form-control form-control-lg">
   <option>--Select Class--</option>
   <?php
@@ -25,7 +25,7 @@ include('./db_bpet_sdc/db.php');
                         ?>
 </select>
 </div>
-   <div class="col-12">
+   <div class="form-group col-12">
    <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
   <label class="form-check-label" for="inlineCheckbox1">1</label>
