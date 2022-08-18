@@ -11,7 +11,7 @@ include('./db_bpet_sdc/db.php');
             <form>
   <div class="form-row">
   <select class="form-control form-control-lg">
-  <option>Select Class</option>
+  <option>--Select Class--</option>
   <?php
                         
                         $sql="SELECT * FROM class";
