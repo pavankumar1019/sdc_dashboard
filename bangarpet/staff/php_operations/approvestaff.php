@@ -263,65 +263,72 @@ if($_POST['type']=="reject"){
 
 // update marks card
 if($_POST['type']=="accept"){
+$sqlgetclass='SELECT * FROM class where id='.$_POST['class_id'].'';
+$result2=$conn->query($sqlgetclass);
 
-$getdata='SELECT * from `staff` where id ="'.$_POST['id'].'"';
-$result=$conn->query($getdata);
-foreach($result as $row){
-  $u_key = substr($row['phone_no'], -4);
-  $user_id = substr($row['name'], 0, 5).$u_key;
+foreach($result2 as $row2){
 
-
-
-  $insert_data = array(
- 
-    "class_id"=>$_POST['class_id'],
-    "user_id"=>$user_id,
-    "ukey"=>$u_key,
-  
-    "role"=>"ct",
-  );
-  $query = '';   
-  foreach($insert_data as $key => $value)  
-  {  
-       $query .= $key . "='".$value."', ";  
-  }  
-  $query = substr($query, 0, -2);  
-  /*This code will convert array to string like this-  
-  input - array(  
-       'key1'     =>     'value1',  
-       'key2'     =>     'value2'  
-  )  
-  output = key1 = 'value1', key2 = 'value2'*/  
-
-
-  $sql ="UPDATE `staff` SET ".$query." WHERE id='".$_POST['id']."'";  
-    if ($conn->query($sql) === TRUE) {
-    $method = 'sendMessage';
-
-    // Message details
-  
-$content =  rawurlencode('Dear '.$row['name'].' 
-Your Credentials to login into staff portal User_ID:'.$user_id.' Key:'.$u_key.'
-SDC COLLEGE BANGARPET-563114');
+  $getdata='SELECT * from `staff` where id ="'.$_POST['id'].'"';
+  $result=$conn->query($getdata);
+  foreach($result as $row){
+    $u_key = substr($row['phone_no'], -4);
+    $user_id = substr($row['name'], 0, 5).$u_key;
   
   
+  
+    $insert_data = array(
    
-    // Prepare data for POST request
-   
-    // Send the POST request with cURL
-    $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['phone_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
-    curl_setopt($ch, CURLOPT_POST, false);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
-    curl_close($ch);
-    echo "Done";
-
-  } else {
-    echo "Failed Duplicate entry. !";
-  }
-
-
-}
-}
-?>
+      "class_id"=>$_POST['class_id'],
+      "user_id"=>$user_id,
+      "ukey"=>$u_key,
+    "class"=>$row2['class'],
+      "role"=>"ct",
+    );
+    $query = '';   
+    foreach($insert_data as $key => $value)  
+    {  
+         $query .= $key . "='".$value."', ";  
+    }  
+    $query = substr($query, 0, -2);  
+    /*This code will convert array to string like this-  
+    input - array(  
+         'key1'     =>     'value1',  
+         'key2'     =>     'value2'  
+    )  
+    output = key1 = 'value1', key2 = 'value2'*/  
+  
+  
+    $sql ="UPDATE `staff` SET ".$query." WHERE id='".$_POST['id']."'";  
+      if ($conn->query($sql) === TRUE) {
+      $method = 'sendMessage';
+  
+      // Message details
     
+  $content =  rawurlencode('Dear '.$row['name'].' 
+  Your Credentials to login into staff portal User_ID:'.$user_id.' Key:'.$u_key.'
+  SDC COLLEGE BANGARPET-563114');
+    
+    
+     
+      // Prepare data for POST request
+     
+      // Send the POST request with cURL
+      $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['phone_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
+      curl_setopt($ch, CURLOPT_POST, false);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      $response = curl_exec($ch);
+      curl_close($ch);
+      echo "Done";
+  
+    } else {
+      echo "Failed Duplicate entry. !";
+    }
+  
+  }  
+
+}
+
+
+}
+
+?>
