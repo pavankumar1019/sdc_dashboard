@@ -72,7 +72,7 @@
                     
                 <?php
                 if($_SESSION['role_staff']=="ct"){
-                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=consolidate" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Upload Marks 222'.$_SESSION['id'].'</span></a></li>';
+                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=consolidate" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Upload Marks</span></a></li>';
                 }
                 ?>
                 <?php
@@ -100,7 +100,7 @@
                 }
                 ?>
                       <?php
-                if($_SESSION['id']==13){
+                if($_SESSION['id']==13 || $_SESSION['id']==21){
                     echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=checklist" class="nav-link"><span class="pcoded-micon"><i class="feather icon-mail"></i></span><span class="pcoded-mtext">Check List</span></a></li>
                     ';
                 }
