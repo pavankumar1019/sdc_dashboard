@@ -31,8 +31,6 @@ if($_POST['type']==2){
 		echo json_encode(array("statusCode"=>200));
 		$_SESSION['name']=$_POST['name'];
 		$_SESSION['branch']=$_POST['branch'];
-		$_SESSION['id']=$_POST['id'];
-		
 	}else{
 		echo json_encode(array("statusCode"=>201));
 
