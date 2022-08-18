@@ -31,6 +31,8 @@ if($_POST['type']==2){
 		echo json_encode(array("statusCode"=>200));
 		$_SESSION['name']=$_POST['name'];
 		$_SESSION['branch']=$_POST['branch'];
+		$_SESSION['id']=$_POST['id'];
+		
 	}else{
 		echo json_encode(array("statusCode"=>201));
 
@@ -55,7 +57,8 @@ if ($result->num_rows > 0) {
 		"statusCode"=>200,
 		"phone"=>substr($row['phone_no'], -3),
 		"name"=>$row['name'],
-		"branch"=>$row['branch']
+		"branch"=>$row['branch'],
+		"id"=>$row['id']
 	));
   }
 } 

@@ -170,6 +170,7 @@ if(isset($_SESSION["name_staff"]))
                         role: dataResult.role,
                         img: dataResult.img,
                         class_id: dataResult.class_id,
+                        id: dataResult.id,
                       },
                       success: function (dataResult) {
                         var dataResult = JSON.parse(dataResult);

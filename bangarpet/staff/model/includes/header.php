@@ -99,7 +99,12 @@
                     ';
                 }
                 ?>
-                 
+                      <?php
+                if($_SESSION['id']=="13" || $_SESSION['id']=="21" ){
+                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=smsmarks" class="nav-link"><span class="pcoded-micon"><i class="feather icon-mail"></i></span><span class="pcoded-mtext">SMS MARKS </span></a></li>
+                    ';
+                }
+                ?>
                   
                     <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=about" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">About</span></a></li>
                     <!-- <li data-username="Disabled Menu" class="nav-item disabled"><a href="javascript:" class="nav-link"><span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Disabled menu</span></a></li> -->
