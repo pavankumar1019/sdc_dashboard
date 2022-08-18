@@ -305,8 +305,8 @@ foreach($result2 as $row2){
       // Message details
     
   $content =  rawurlencode('Dear '.$row['name'].' 
-  Your Credentials to login into staff portal User_ID:'.$user_id.' Key:'.$u_key.'
-  SDC COLLEGE BANGARPET-563114');
+ Your Credentials to login into staff portal User_ID:'.$user_id.' Key:'.$u_key.'
+SDC COLLEGE BANGARPET-563114');
     
     
      
