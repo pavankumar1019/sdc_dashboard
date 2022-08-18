@@ -46,41 +46,31 @@ include('./db_bpet_sdc/db.php');
                             </div>
                             <div class="form-check form-check-inline">
                                 <div class="custom-control form-control-lg custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="languageobtained">
-                                    <label class="custom-control-label" for="languageobtained">Language Obtained</label>
+                                    <input type="checkbox" class="custom-control-input" id="combination">
+                                    <label class="custom-control-label" for="combination">Combination</label>
                                 </div>
                             </div>
                             <div class="form-check form-check-inline">
                                 <div class="custom-control form-control-lg custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="languageobtained">
-                                    <label class="custom-control-label" for="languageobtained">Language Obtained</label>
+                                    <input type="checkbox" class="custom-control-input" id="dob">
+                                    <label class="custom-control-label" for="dob">Date of Birth</label>
                                 </div>
                             </div>
                             <div class="form-check form-check-inline">
                                 <div class="custom-control form-control-lg custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="languageobtained">
-                                    <label class="custom-control-label" for="languageobtained">Language Obtained</label>
+                                    <input type="checkbox" class="custom-control-input" id="mobilenumber">
+                                    <label class="custom-control-label" for="mobilenumber">Mobile Number</label>
                                 </div>
                             </div>
                             <div class="form-check form-check-inline">
                                 <div class="custom-control form-control-lg custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="languageobtained">
-                                    <label class="custom-control-label" for="languageobtained">Language Obtained</label>
+                                    <input type="checkbox" class="custom-control-input" id="gender">
+                                    <label class="custom-control-label" for="gender">Gender</label>
                                 </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <div class="custom-control form-control-lg custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="languageobtained">
-                                    <label class="custom-control-label" for="languageobtained">Language Obtained</label>
-                                </div>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <div class="custom-control form-control-lg custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="languageobtained">
-                                    <label class="custom-control-label" for="languageobtained">Language Obtained</label>
-                                </div>
-                            </div>
-                            
+                           
+                           
+
 
 
 
