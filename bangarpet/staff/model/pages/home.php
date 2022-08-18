@@ -1,6 +1,6 @@
 <?php
                                                 include('./db_bpet_sdc/db.php');
-                                                $sqlc='SELECT * FROM `current_test` ORDER BY id DESC LIMIT 0, 1';
+                                                $sqlc='SELECT * FROM `current_test` WHERE class='.$_SESSION['class'].' ORDER BY id DESC LIMIT 0, 1';
                                                 $resultc=$conn->query($sqlc);
                                                 foreach($resultc as $rowc){
                                                     $_SESSION['test_name']=$rowc['id'];

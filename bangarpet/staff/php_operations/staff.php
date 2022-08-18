@@ -59,6 +59,7 @@ if($_POST['type']==2){
 		$_SESSION['id']=$_POST['id'];
 		$_SESSION['profile_staff']=$_POST['img'];
 		$_SESSION['class_id']=$_POST['class_id'];
+		$_SESSION['class']=$_POST['class'];
 	}else{
 		echo json_encode(array("statusCode"=>201));
 
@@ -88,6 +89,7 @@ if ($result->num_rows > 0) {
         "role"=>$row['role'],
         "img"=>$row['photo'],
 		"id"=>$row['id'],
+		"class"=>$row['class'],
         "class_id"=>$row['class_id']
 	));
   }

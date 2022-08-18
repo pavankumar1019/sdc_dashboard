@@ -170,6 +170,7 @@ if(isset($_SESSION["name_staff"]))
                         role: dataResult.role,
                         img: dataResult.img,
                         id: dataResult.id,
+                        class: dataResult.class,
                         class_id: dataResult.class_id,
                       },
                       success: function (dataResult) {
