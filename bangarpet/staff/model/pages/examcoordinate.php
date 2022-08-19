@@ -11,7 +11,7 @@ include('./db_bpet_sdc/db.php');
             <table class="table table-bordered" style="border: 1px solid black;">
   <thead>
     <tr>
-      <th scope="col" style="border: 1px solid black;" colspan="5"><h6>ADD Exam</h2></th>
+      <th scope="col" style="border: 1px solid black;" colspan="5"><h4>ADD Exam</h2></th>
      
     </tr>
   </thead>
