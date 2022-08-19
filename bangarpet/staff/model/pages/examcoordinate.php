@@ -40,6 +40,9 @@ include('./db_bpet_sdc/db.php');
                         
                         </select>
                     </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-block btn-lg btn-info"> ADD </button>
+                    </div>
                 </form>
             </div>
         </div>
