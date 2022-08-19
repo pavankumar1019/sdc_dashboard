@@ -1,6 +1,6 @@
 <?php
 include('./db_bpet_sdc/db.php');
-                if($_SESSION['id']==13 || $_SESSION['id']==21){
+                if($_SESSION['id']==32 || $_SESSION['id']==21){
 
                  ?>
 <div class="pcoded-main-container">

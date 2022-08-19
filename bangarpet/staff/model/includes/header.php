@@ -100,7 +100,7 @@
                 }
                 ?>
                       <?php
-                if($_SESSION['id']==13 || $_SESSION['id']==21){
+                if($_SESSION['id']==32 || $_SESSION['id']==21){
                     echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=checklist" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Check List</span></a></li>
                     ';
                 }
