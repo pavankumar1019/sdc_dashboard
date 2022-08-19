@@ -8,14 +8,34 @@ include('./db_bpet_sdc/db.php');
         <div class="pcoded-content">
             <div class="pcoded-inner-content">
 
-                <div class="row">
-                    <div class="col-lg-6 col-sm-3" style="border:1px solid black"><h4>ADD Current Exam</h4></div>
-                          </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6 col-sm-3" style="border:1px solid black">.col-6 .col-sm-3</div>
-                    <div class="col-lg-6 col-sm-3" style="border:1px solid black">.col-6 .col-sm-3</div>
-                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
