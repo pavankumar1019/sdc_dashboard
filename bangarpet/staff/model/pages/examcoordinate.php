@@ -11,18 +11,15 @@ include('./db_bpet_sdc/db.php');
             <table class="table table-bordered" style="border: 1px solid black;">
   <thead>
     <tr>
-      <th scope="col" style="border: 1px solid black;"><h2>ADD Exam</h2></th>
-      <th scope="col"style="border: 1px solid black;">First</th>
-      <th scope="col"style="border: 1px solid black;">Last</th>
-      <th scope="col" style="border: 1px solid black;">Handle</th>
+      <th scope="col" style="border: 1px solid black;" colspan="5"><h6>ADD Exam</h2></th>
+     
     </tr>
   </thead>
   <tbody>
     <tr style="border: 1px solid black;">
-      <th scope="row" style="border: 1px solid black;">1</th>
-      <td style="border: 1px solid black;">Mark</td>
-      <td style="border: 1px solid black;">Otto</td>
-      <td style="border: 1px solid black;">@mdo</td>
+      <th scope="row" style="border: 1px solid black;"><input type="text" name="" id=""></th>
+      <td style="border: 1px solid black;"><input type="text" name="" id=""></td>
+      <td style="border: 1px solid black;"><button class="btn btn-primary">ADD</button></td>
     </tr>
    
   </tbody>
