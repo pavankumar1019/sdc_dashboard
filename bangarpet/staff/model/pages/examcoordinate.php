@@ -14,7 +14,7 @@ include('./db_bpet_sdc/db.php');
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Test Name</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="">
+                                    placeholder="Ex. Unit Test 1">
                             </div>
                         </div>
                         <div class="col-3">
