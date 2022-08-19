@@ -9,9 +9,9 @@ include('./db_bpet_sdc/db.php');
             <div class="pcoded-inner-content">
 
                 <div class="row">
-                    <div class="col-lg-6 col-sm-3" style="border:1px solid black">.col-6 .col-sm-3</div>
-                    <div class="col-lg-6 col-sm-3" style="border:1px solid black">.col-6 .col-sm-3</div>
-                </div>
+                    <div class="col-lg-6 col-sm-3" style="border:1px solid black">ADD Current Exam</div>
+                          </div>
+                <br>
                 <div class="row">
                     <div class="col-lg-6 col-sm-3" style="border:1px solid black">.col-6 .col-sm-3</div>
                     <div class="col-lg-6 col-sm-3" style="border:1px solid black">.col-6 .col-sm-3</div>
