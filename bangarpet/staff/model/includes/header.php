@@ -27,15 +27,11 @@
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<style>
-    .table-bordered td, .table-bordered th {
-    border: 1 solid #000000;
-}
-</style>
 
 
 
 
+    
 </head>
 
 <body>
