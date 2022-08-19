@@ -13,22 +13,22 @@ include('./db_bpet_sdc/db.php');
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Test Name</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="">
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Min Marks</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
+                                <input type="number" class="form-control" id="exampleFormControlInput1"
+                                  >
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Max Marks</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
+                                <input type="number" class="form-control" id="exampleFormControlInput1"
+                                    >
                             </div>
                         </div>
                     </div>
