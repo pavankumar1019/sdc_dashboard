@@ -8,7 +8,7 @@ include('./db_bpet_sdc/db.php');
         <div class="pcoded-content">
             <div class="pcoded-inner-content">
 
-            <table class="table table-bordered">
+            <table class="table table-bordered" style="border: 1px solid black;">
   <thead>
     <tr>
       <th scope="col">#</th>
