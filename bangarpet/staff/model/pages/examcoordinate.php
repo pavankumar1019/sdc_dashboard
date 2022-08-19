@@ -9,7 +9,7 @@ include('./db_bpet_sdc/db.php');
             <div class="pcoded-inner-content">
 
                 <form>
-                    <div class="form-row">
+                    <div class="form-row" style="color:#595959">
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Email address</label>
