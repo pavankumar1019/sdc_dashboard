@@ -107,6 +107,12 @@ $langname="KAN";
     if($row["lang_code"]==3){
 $langname="HIN";
     }
+    if($row["lang_code"]==8){
+      $langname="URD";
+          }
+          if($row["lang_code"]==9){
+            $langname="SAN";
+                }
     if($row["combination"]=="BASM"){
       $combination='MBAS';
     }else{
