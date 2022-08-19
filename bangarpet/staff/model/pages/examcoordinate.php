@@ -6,10 +6,10 @@ include('./db_bpet_sdc/db.php');
 <div class="pcoded-main-container">
     <div class="pcoded-wrapper">
         <div class="pcoded-content">
-            <div class="pcoded-inner-content">
+            <div class="pcoded-inner-content" style="color:#333333">
 
                 <form>
-                    <div class="form-row" style="color:#595959">
+                    <div class="form-row" >
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Email address</label>
