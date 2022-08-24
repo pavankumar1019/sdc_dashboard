@@ -18,11 +18,11 @@ $(document).ready(function(){
             Swal.fire({
               position: 'center',
               icon: 'success',
-              title: 'Your work has been saved'.result,
+              title: 'Your work has been saved',
               showConfirmButton: false,
               timer: 2000
             })
-       
+       console.log(result);
           }
         });
 
