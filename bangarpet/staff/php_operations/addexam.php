@@ -30,8 +30,8 @@ if($_POST['type']=="getdata"){
           $start = 0;
         }
         
-        $query = "SELECT * FROM ".$current_test." WHERE 
-        ";
+        // $query = "SELECT * FROM ".$current_test." WHERE 
+        // ";
         
         if($_POST['query'] != '')
         {
