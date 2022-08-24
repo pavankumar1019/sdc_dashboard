@@ -58,21 +58,21 @@ if($_POST['type']=="getdata"){
     <p>Total Requests : '.$total_data.' </p>
         <table class="table ">
         <thead>
-        <th>
+      <tr>
         <td>Test Name</td>
-        </th>
-        <th>
+    
+
         <td>maxmarks</td>
-        </th>
-        <th>
+    
+
         <td>minmarks</td>
-        </th>
-        <th>
+    
+
         <td>class</td>
-        </th>
-        <th>
+  
+
         <td>Operation</td>
-        </th>
+        </tr>
         </thead>
         <tbody>
 
