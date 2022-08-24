@@ -22,6 +22,7 @@ if($_SESSION['branch_staff']==1){
   $tbl_admission="tbl_admission";
 
   $new_admission="new_admission_bpet";
+  $current_test="current_test";
 }
 if($_SESSION['branch_staff']==2){
 // kgf branch tabels

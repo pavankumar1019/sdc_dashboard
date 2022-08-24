@@ -8,7 +8,7 @@ if($_POST['type']=="add"){
 if($_POST['type']=="getdata"){
         function get_total_row($connect)
         {
-          $query = "SELECT * FROM staff WHERE branch='".$_SESSION['branch_staff']."'";
+          $query = "SELECT * FROM $current_test";
           $statement = $connect->prepare($query);
           $statement->execute();
           return $statement->rowCount();
@@ -28,14 +28,13 @@ if($_POST['type']=="getdata"){
           $start = 0;
         }
         
-        $query = "SELECT * FROM `staff` WHERE branch='".$_SESSION['branch_staff']."' 
+        $query = "SELECT * FROM $current_test WHERE 
         ";
         
         if($_POST['query'] != '')
         {
           $query .= '
-         AND name LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  OR 
-        phone_no LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"  
+         AND name LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" 
           ';
         }
         
@@ -76,14 +75,13 @@ if($_POST['type']=="getdata"){
                                                           
                                                         </td>
                                                         <td>
-                                                        <p class="m-0">'.$row['phone_no'].'</p>
+                                                        <p class="m-0">'.$row['maxmarks'].'</p>
                     
                                                         
                                                         </td>
                                                     
                                                         <td>
-                                                        <a class="label theme-bg2 text-white f-12" data-id='.$row['id'].' id="reject" style="cursor: pointer;">Reject</a>
-                                                        <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="accpet" style="cursor: pointer;">Enroll</a>
+                                                        <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="accpet" style="cursor: pointer;">Update</a>
                                                         </td>
                                                     </tr>
             ';
