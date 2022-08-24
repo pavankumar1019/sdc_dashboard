@@ -2,7 +2,7 @@
 include '../db_bpet_sdc/db.php';
 if($_POST['type']=="add"){
 
-    echo "dasd";
+    echo $current_test;
 
 }
 if($_POST['type']=="getdata"){
