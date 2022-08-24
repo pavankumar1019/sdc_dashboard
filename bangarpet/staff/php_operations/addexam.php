@@ -9,7 +9,7 @@ if($_POST['type']=="getdata"){
         function get_total_row($connect)
         {
           $query = "
-          SELECT * FROM `".$current_test."`
+          SELECT * FROM current_test
           ";
           $statement = $connect->prepare($query);
           $statement->execute();
