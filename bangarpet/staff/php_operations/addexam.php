@@ -8,8 +8,9 @@ if($_POST['type']=="add"){
 if($_POST['type']=="getdata"){
         function get_total_row($connect)
         {
-          $query = 'SELECT * FROM `current_test`
-          ';
+            $query = "
+            SELECT * FROM ".$new_admission."
+            ";
           $statement = $connect->prepare($query);
           $statement->execute();
           return $statement->rowCount();
