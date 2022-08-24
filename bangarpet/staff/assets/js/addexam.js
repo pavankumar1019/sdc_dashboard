@@ -29,7 +29,7 @@ $(document).ready(function(){
 
       });
 
-      function load(){
+      function load(page, query = ''){
         $.ajax({
             url:"./php_operations/addexam.php",
             method:"POST",
