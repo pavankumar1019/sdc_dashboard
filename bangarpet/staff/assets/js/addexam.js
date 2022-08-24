@@ -23,7 +23,7 @@ $(document).ready(function(){
               timer: 2000
             })
        console.log(result);
-       load();
+       load(1);
           }
         });
 
@@ -40,8 +40,6 @@ $(document).ready(function(){
             }
           });
       }
-
-
 
 
 })
