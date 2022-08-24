@@ -23,13 +23,13 @@ $(document).ready(function(){
               timer: 2000
             })
        console.log(result);
-       load(1);
+       load_data(1);
           }
         });
 
       });
-
-      function load(page, query = ''){
+      load_data(1);
+      function load_data(page, query = ''){
         $.ajax({
             url:"./php_operations/addexam.php",
             method:"POST",
