@@ -33,10 +33,17 @@ $(document).ready(function(){
         $.ajax({
             url:"./php_operations/approvestaff.php",
             method:"POST",
-            data:{type: "getdata"},
+            beforeSend: function(){
+              $('#loadmessage').html("Loading...");
+            
+            },
+            complete: function(){
+              $('#loadmessage').hide();
+              },
+            data:{page:page, query:query, type: "loaddata"},
             success:function(data)
             {
-                $('#table_id').DataTable();
+              $('#dynamic_content').html(data);
             }
           });
       }

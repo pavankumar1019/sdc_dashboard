@@ -46,6 +46,9 @@ include('./db_bpet_sdc/db.php');
                     </div>
                 </form>
             </div>
+            <div id="dynamic_content">
+                
+            </div>
         </div>
     </div>
 </div>
