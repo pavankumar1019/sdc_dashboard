@@ -16,9 +16,9 @@ $(document).ready(function(){
           success: function (result) {
           
             Swal.fire({
-              position: result,
+              position: 'center',
               icon: 'success',
-              title: 'Your work has been saved',
+              title: 'Your work has been saved'.result,
               showConfirmButton: false,
               timer: 2000
             })
