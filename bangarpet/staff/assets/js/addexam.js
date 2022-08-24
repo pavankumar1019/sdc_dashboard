@@ -33,15 +33,7 @@ $(document).ready(function(){
         $.ajax({
             url:"./php_operations/addexam.php",
             method:"POST",
-            data:{type: "getdata"},
-            beforeSend: function(){
-              $('#loadmessage').html("Loading...");
-            
-            },
-            complete: function(){
-              $('#loadmessage').hide();
-              },
-            data:{page:page, query:query, type: "loaddata"},
+            data:{page:page, query:query, type: "getdata"},
             success:function(data)
             {
               $('#dynamic_content').html(data);
