@@ -9,7 +9,7 @@ if($_POST['type']=="getdata"){
         function get_total_row($connect)
         {
             $query = "
-            SELECT * FROM ".$new_admission."
+            SELECT * FROM ".$current_test."
             ";
           $statement = $connect->prepare($query);
           $statement->execute();
@@ -31,7 +31,7 @@ if($_POST['type']=="getdata"){
         }
         
         $query = "
-        SELECT * FROM ".$new_admission." 
+        SELECT * FROM ".$current_test." 
         ";
         
         if($_POST['query'] != '')
