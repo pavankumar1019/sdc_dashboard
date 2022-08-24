@@ -70,6 +70,9 @@ if($_POST['type']=="getdata"){
         <th>
         <td>class</td>
         </th>
+        <th>
+        <td>Operation</td>
+        </th>
         </thead>
         <tbody>
 
