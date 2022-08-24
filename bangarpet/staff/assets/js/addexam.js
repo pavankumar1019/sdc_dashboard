@@ -31,8 +31,9 @@ $(document).ready(function(){
 
       function load(){
         $.ajax({
-            url:"./php_operations/approvestaff.php",
+            url:"./php_operations/addexam.php",
             method:"POST",
+            data:{type: "getdata"},
             beforeSend: function(){
               $('#loadmessage').html("Loading...");
             
