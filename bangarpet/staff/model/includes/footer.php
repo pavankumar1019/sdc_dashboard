@@ -13,6 +13,11 @@ if($_GET['page']=="consolidate"){
      <script src="assets/js/markscard.min.js"></script>
     <?php
 }
+if($_GET['page']=="examcoordinate"){
+    ?>
+     <script src="assets/js/addexam.js"></script>
+    <?php
+}
 if($_GET['page']=="downloads"){
     ?>
      <script src="assets/js/downloads.min.js"></script>
