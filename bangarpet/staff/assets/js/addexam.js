@@ -23,10 +23,25 @@ $(document).ready(function(){
               timer: 2000
             })
        console.log(result);
+       load();
           }
         });
 
       });
+
+      function load(){
+        $.ajax({
+            url:"./php_operations/approvestaff.php",
+            method:"POST",
+            data:{type: "getdata"},
+            success:function(data)
+            {
+                $('#table_id').DataTable();
+            }
+          });
+      }
+
+
 
 
 })
