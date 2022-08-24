@@ -1,9 +1,17 @@
 <?php
 include '../db_bpet_sdc/db.php';
 if($_POST['type']=="add"){
+    $insert_data = array(
+        "name"=>$_POST['name'],
+        "maxmarks"=>$_POST['maxmarks'],
+        "minmarks"=>$_POST['minmarks'],
+        "class"=>$_POST['class']
 
-    echo $current_test;
-
+           );
+           $table_columns= implode(',', array_keys($insert_data));
+           $table_data= implode("', '", $insert_data);
+         $sql = "INSERT INTO ".$current_test." ($table_columns) VALUES ('$table_data') "; 
+         $conn->query($sql);
 }
 if($_POST['type']=="getdata"){
         function get_total_row($connect)

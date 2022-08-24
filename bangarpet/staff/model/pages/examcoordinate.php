@@ -14,27 +14,29 @@ include('./db_bpet_sdc/db.php');
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Test Name</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Ex. Unit Test 1">
+                                    placeholder="Ex. Unit Test 1" name="name">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Min Marks</label>
                                 <input type="number" class="form-control" id="exampleFormControlInput1"
-                                  >
+                                  name="minmarks"
+                                >
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Max Marks</label>
                                 <input type="number" class="form-control" id="exampleFormControlInput1"
-                                    >
+                                    name="maxmarks"
+                                >
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Select Class</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="exampleFormControlSelect1" name="class">
                             <option value="1">1st PUC</option>
                             <option value="2">2nd PUC</option>
                         
