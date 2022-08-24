@@ -8,7 +8,7 @@ include('./db_bpet_sdc/db.php');
         <div class="pcoded-content">
             <div class="pcoded-inner-content" style="color:#333333">
 
-                <form>
+                <form id="exam">
                     <div class="form-row" >
                         <div class="col-6">
                             <div class="form-group">
@@ -40,8 +40,9 @@ include('./db_bpet_sdc/db.php');
                         
                         </select>
                     </div>
+                    <input type="hidden" name="type" value="add">
                     <div class="form-group">
-                        <button type="submit" class="btn btn-lg btn-info"> ADD </button>
+                        <button type="submit" class="btn btn-lg btn-info" id="continue"> ADD </button>
                     </div>
                 </form>
             </div>
