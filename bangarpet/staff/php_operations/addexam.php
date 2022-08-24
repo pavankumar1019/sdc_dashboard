@@ -85,7 +85,12 @@ if($_POST['type']=="getdata"){
           
            foreach($result as $row)
           {
-    
+            if($row['class']==1){
+                $rowclass='1st PUC';
+            }
+            if($row['class']==2){
+                $rowclass='2nd PUC';
+            }
             $output .= '
             <tr class="unread">
                                                
@@ -99,7 +104,7 @@ if($_POST['type']=="getdata"){
                                                         <p class="m-0">'.$row['minmarks'].'</p>
                                                         </td>
                                                         <td>
-                                                        <p class="m-0">'.$row['class'].'</p>
+                                                        <p class="m-0">'.$rowclass.'</p>
                                                         </td>
                                                         <td>
                                                         <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="accpet" style="cursor: pointer;">Update</a>
