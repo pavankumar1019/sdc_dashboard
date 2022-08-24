@@ -57,7 +57,22 @@ if($_POST['type']=="getdata"){
         $output = '
     <p>Total Requests : '.$total_data.' </p>
         <table class="table ">
+        <thead>
+        <th>
+        <td>Test Name</td>
+        </th>
+        <th>
+        <td>maxmarks</td>
+        </th>
+        <th>
+        <td>minmarks</td>
+        </th>
+        <th>
+        <td>class</td>
+        </th>
+        </thead>
         <tbody>
+
         ';
         if($total_data > 0)
         {
@@ -73,16 +88,16 @@ if($_POST['type']=="getdata"){
                                                
                                                         <td>
                                                             <h3 class="mb-1">'.$row['name'].'</h3>
-                                                           
-                                                          
-                                                          
                                                         </td>
                                                         <td>
                                                         <p class="m-0">'.$row['maxmarks'].'</p>
-                    
-                                                        
                                                         </td>
-                                                    
+                                                        <td>
+                                                        <p class="m-0">'.$row['minmarks'].'</p>
+                                                        </td>
+                                                        <td>
+                                                        <p class="m-0">'.$row['class'].'</p>
+                                                        </td>
                                                         <td>
                                                         <a class="label theme-bg text-white f-12" data-id='.$row['id'].' id="accpet" style="cursor: pointer;">Update</a>
                                                         </td>
