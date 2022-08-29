@@ -33,9 +33,7 @@ foreach($selectnumberresult as $stdnumber){
     $method = 'sendMessage';
 	
     // Message details
-$content =  rawurlencode('Dear '.$stdnumber['StudentName'].' 
-is absent for todays class.
-SDC COLLEGE BANGARPET-563114');
+$content =  rawurlencode('Dear '.$stdnumber['StudentName'].' was absent on todays class at SDC College Bangarpet/KGF.- SDC');
           
     
     
