@@ -9,15 +9,14 @@ function Fstmsms($number,$otp){
 	
 	// Message details
 
-$content =  rawurlencode('Dear OTP:'.$otp.'  
-to login into Office Portal.
-SDC COLLEGE BANGARPET-563114');
+$content =  rawurlencode('Your OTP : '.$otp.'
+SDC College Bangarpet - 563114');
 
 
  
  
 	// Send the POST request with cURL
-	$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$number.'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25');
+	$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$number.'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
 	curl_setopt($ch, CURLOPT_POST, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$response = curl_exec($ch);
