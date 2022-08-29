@@ -45,7 +45,7 @@ $content =  rawurlencode('Dear '.$stdnumber['StudentName'].' was absent on today
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
     curl_close($ch);
-    echo $stdnumber['StudentName']."&nbsp;-&nbsp; Message Sent";
+    echo $stdnumber['StudentName']."&nbsp;-&nbsp&nbsp; Message Sent";
 }
 
 }else{
