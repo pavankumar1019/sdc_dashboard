@@ -1,7 +1,7 @@
 <?php
 
 $method = 'sendMessage';
-	$stdnumber='King Salman bin Abdul-Aziz Al-Saud';
+	$stdnumber='King Salman bin Abdul-Aziz';
     // Message details
 $content =  rawurlencode('Dear '.$stdnumber.' was absent on todays class at SDC College Bangarpet/KGF.- SDC');
           
