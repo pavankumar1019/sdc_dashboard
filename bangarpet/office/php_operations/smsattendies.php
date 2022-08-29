@@ -29,11 +29,17 @@ VALUES ('$date','$stat','$id','$class_id', 'sent')";
 $conn->query($sql);
 $selectnumber="SELECT * from ".$tbl_admission." where RollNo='".$id."'";
 $selectnumberresult=$conn->query($selectnumber);
+if($_SESSION['branch']==1){
+    $branch_name= "BANGARPET";
+ }
+ if($_SESSION['branch']==2){
+    $branch_name= "KGF";
+ }
 foreach($selectnumberresult as $stdnumber){
     $method = 'sendMessage';
 	
     // Message details
-$content =  rawurlencode('Dear '.$stdnumber['StudentName'].' was absent on todays class at SDC College Bangarpet/KGF.- SDC');
+$content =  rawurlencode('Dear '.$stdnumber['StudentName'].' was absent on todays class at SDC College '.$branch_name.'.- SDC');
           
     
     
