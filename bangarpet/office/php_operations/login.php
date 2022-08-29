@@ -9,9 +9,8 @@ function Fstmsms($number,$otp){
 	
 	// Message details
 
-$content =  rawurlencode('Dear OTP:'.$otp.'  
-to login into Office Portal.
-SDC COLLEGE BANGARPET-563114');
+$content =  rawurlencode('Your OTP : '.$otp.'
+SDC College Bangarpet - 563114');
 
 
  
