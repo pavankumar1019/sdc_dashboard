@@ -13,7 +13,7 @@ if($_POST['type']=="loaddata"){
     
     $total_record = get_total_row($connect);
     
-    $limit = '47';
+    $limit = '60';
     $page = 1;
     if($_POST['page'] > 1)
     {
