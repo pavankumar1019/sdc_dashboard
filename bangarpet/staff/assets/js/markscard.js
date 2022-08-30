@@ -36,7 +36,7 @@ function countdata()
 }
 
 
-    load_data(1);
+    load_data(1, "" , $('#testname_p').val());
 
     function load_data(page, query = '', testvalue)
     {
