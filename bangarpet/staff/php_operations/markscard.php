@@ -287,7 +287,7 @@ if($_POST['type']=="add"){
   $total=$_POST['l1']+$_POST['l2']+$_POST['s1']+$_POST['s2']+$_POST['s3']+$_POST['s4'];
     $insert_data = array(
          "roll"=>$_POST['reg_no'],
-         "test_id"=>$_POST['testname'],
+         "test_id"=>$_POST['testval'],
          "l1"=>$_POST['l1'],
          "l2"=>$_POST['l2'],
          "s1"=>$_POST['s1'],
@@ -374,7 +374,7 @@ if($_POST['type']=="update"){
   output = key1 = 'value1', key2 = 'value2'*/  
 
 
-  $sql ="UPDATE ".$class_test_marks." SET ".$query." WHERE roll='".$_POST['id']."' AND test_id='". $_SESSION['test_name']."'";  
+  $sql ="UPDATE ".$class_test_marks." SET ".$query." WHERE roll='".$_POST['id']."' AND test_id='".$_POST['testval']."'";  
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
   } else {

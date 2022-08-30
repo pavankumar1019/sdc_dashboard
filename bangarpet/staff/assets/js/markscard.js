@@ -64,6 +64,7 @@ function countdata()
     $('#testname_p').on('change', function() {
       var query="";
       load_data(1, query, $(this).val());
+      $('#testname').val($(this).val());
     });
 
 

@@ -100,7 +100,7 @@ include('./db_bpet_sdc/db.php');
                                             <input type="hidden" name="type" id="type" required>
                                             <input type="hidden" name="id" id="id">
                                             <input type="hidden" name="testname" id="testname"
-                                                value="<?php echo $_SESSION['test_name']; ?>">
+                                                value="">
                                             <input type="submit" name="submit" class="btn btn-primary" />
                                         </div>
 
