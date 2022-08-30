@@ -17,7 +17,6 @@ $('#sendsms').click(function(){
    
 var classname=$("#class_name").val();
    gettest(classname);
-   alert();
    function gettest(valueclass){
      $.ajax({
        url:"./php_operations/markscard.php",
