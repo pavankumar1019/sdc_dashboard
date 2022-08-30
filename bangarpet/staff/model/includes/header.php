@@ -254,5 +254,5 @@
             </ul>
         </div>
     </header>
-    <input type="hidden" id="class_name" value="<?php echo $_SESSION['class_id']; ?>" />
+    <input type="hidden" id="class_name" value="<?php echo $_SESSION['class']; ?>" />
 
