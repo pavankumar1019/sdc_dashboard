@@ -82,7 +82,7 @@
                 ?>
                 <?php
                 if($_SESSION['role_staff']=="ct"){
-                    echo '<li data-username="Sample Page" class="nav-item"><a id="consolidate" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Download Consolidate</span></a></li>';
+                    echo '<li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=exportConsolidate"  class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Download Consolidate</span></a></li>';
                 }
                 ?>
            
