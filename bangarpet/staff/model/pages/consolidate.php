@@ -166,13 +166,21 @@ include('./db_bpet_sdc/db.php');
                 <div class="page-wrapper">
                     <!-- [ Main Content ] start -->
                     <div class="row">
+                    <div class="col-md-12 col-xl-12 ">
+                    <div class="form-group">
+                                        <label for="search">Search Here !</label>
+                                        <input type="text" class="form-control" id="search_box" placeholder="Search..">
 
+                                    </div>
+                    </div>
                         <div class="col-md-12 col-xl-12 ">
                             <div class="card daily-sales">
                                 <div class="card-block">
                                     <h2 class="mb-4" id="blink">                   
    
-       <?php echo $_SESSION['testname'];  ?>
+       <?php 
+    //    echo $_SESSION['testname']; 
+        ?>
  </h2>
                                     <div class="form-group">
                                         <label for="search">Search Here !</label>
