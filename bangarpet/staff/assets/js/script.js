@@ -14,16 +14,5 @@ $('#sendsms').click(function(){
     var page = "./export/sendsms.php?data=consolidate_pdf&class_id="+value;  
     window.location = page;  
    });
-   gettest();
-   function gettest(){
-     $.ajax({
-       url:"./php_operations/markscard.php",
-       method:"POST",
-       data:{type: "gettest", value: '2'},
-       success:function(data)
-       {
- $('#testname_p').append(data);
-       }
-     });
-   }
+
 });

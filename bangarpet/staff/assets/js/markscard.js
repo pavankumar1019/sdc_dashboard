@@ -1,5 +1,16 @@
 $(document).ready(function(){
-
+  gettest();
+  function gettest(){
+    $.ajax({
+      url:"./php_operations/markscard.php",
+      method:"POST",
+      data:{type: "gettest", value: '2'},
+      success:function(data)
+      {
+$('#testname_p').append(data);
+      }
+    });
+  }
     $('#btnmarkscard').click(function(){
         $("#newadmissionmodal").modal('show');
         $('#markscardform').trigger("reset");
