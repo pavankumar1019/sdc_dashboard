@@ -14,6 +14,7 @@ $('#sendsms').click(function(){
     var page = "./export/sendsms.php?data=consolidate_pdf&class_id="+value;  
     window.location = page;  
    });
+   
    gettest();
    function gettest(){
      $.ajax({
@@ -26,4 +27,5 @@ $('#sendsms').click(function(){
        }
      });
    }
+
 });
