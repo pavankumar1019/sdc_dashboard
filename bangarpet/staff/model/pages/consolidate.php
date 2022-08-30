@@ -186,12 +186,14 @@ include('./db_bpet_sdc/db.php');
                         <div class="col-xl-12 col-md-12">
                             <div class="card Recent-Users">
                                 <div class="card-header">
-                                    <h5>Consolidate Data</h5>
+                                    <h5>Your Test / Exam </h5>
                                 </div>
                                 <div class="form-group">
-                                    <label for="search">Search Here !</label>
-                                    <input type="text" class="form-control" id="search_box" placeholder="Search..">
-
+                                  
+                                    <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
                                 </div>
                             </div>
                         </div>
