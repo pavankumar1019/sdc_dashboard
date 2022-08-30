@@ -7,8 +7,7 @@ $(document).ready(function(){
       data:{type: "gettest", value: '2'},
       success:function(data)
       {
-$('#testname').html(data);
-
+$('#testname').append(data);
       }
     });
   }
