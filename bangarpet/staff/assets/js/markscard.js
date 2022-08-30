@@ -7,7 +7,7 @@ $(document).ready(function(){
       data:{type: "gettest", value: '2'},
       success:function(data)
       {
-$('#testname_p').html(data);
+$('#testname_p').append(data);
       }
     });
   }
@@ -36,8 +36,6 @@ function countdata()
 }
 
 
-var testvalname=$('#testname_p').val();
-    load_data(1, "", testvalname);
 
     function load_data(page, query = '', testvalue)
     {
