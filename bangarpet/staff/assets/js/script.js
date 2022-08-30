@@ -20,7 +20,7 @@ $('#sendsms').click(function(){
      $.ajax({
        url:"./php_operations/markscard.php",
        method:"POST",
-       data:{type: "gettest", value: '2'},
+       data:{type: "gettest", value:  $("#class_name").data('value')},
        success:function(data)
        {
  $('#testname_p').append(data);
