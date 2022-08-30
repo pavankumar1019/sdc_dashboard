@@ -1,5 +1,4 @@
 $(document).ready(function(){
-// hello
     $('#btnmarkscard').click(function(){
         $("#newadmissionmodal").modal('show');
         $('#markscardform').trigger("reset");

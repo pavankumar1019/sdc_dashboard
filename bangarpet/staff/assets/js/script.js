@@ -14,9 +14,7 @@ $('#sendsms').click(function(){
     var page = "./export/sendsms.php?data=consolidate_pdf&class_id="+value;  
     window.location = page;  
    });
-   
-var classname=$("#class_name").val();
-   gettest(classname);
+   gettest($("#class_name").val());
    function gettest(valueclass){
      $.ajax({
        url:"./php_operations/markscard.php",
