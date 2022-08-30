@@ -15,6 +15,7 @@ $('#sendsms').click(function(){
     window.location = page;  
    });
    
+   
    gettest($("#class_name").val());
    function gettest(value_class){
      $.ajax({
