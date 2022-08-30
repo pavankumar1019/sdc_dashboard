@@ -38,12 +38,12 @@ function countdata()
 
     load_data(1);
 
-    function load_data(page, query = '')
+    function load_data(page, query = '', testvalue)
     {
       $.ajax({
         url:"./php_operations/markscard.php",
         method:"POST",
-        data:{page:page, query:query, type: "loaddata"},
+        data:{page:page, query:query, type: "loaddata", testval:testvalue},
         success:function(data)
         {
           $('#dynamic_content').html(data);
@@ -60,6 +60,11 @@ function countdata()
     $('#search_box').keyup(function(){
       var query = $('#search_box').val();
       load_data(1, query);
+    });
+
+    $('#testname_p').on('change', function() {
+      var query="";
+      load_data(1, query, $(this).val());
     });
 
 
