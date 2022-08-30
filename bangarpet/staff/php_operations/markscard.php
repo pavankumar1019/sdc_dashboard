@@ -396,8 +396,6 @@ if($_POST['type']=="gettest"){
   foreach($result as $row){
 echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
 }
-
-echo "asd";
 }
 ?>
     
