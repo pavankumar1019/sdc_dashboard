@@ -53,12 +53,12 @@ function countdata()
     $(document).on('click', '.page-link', function(){
       var page = $(this).data('page_number');
       var query = $('#search_box').val();
-      load_data(page, query);
+      load_data(1, query, $('#testname_p').val());
     });
 
     $('#search_box').keyup(function(){
       var query = $('#search_box').val();
-      load_data(1, query);
+      load_data(1, query, $('#testname_p').val());
     });
 
     $('#testname_p').on('change', function() {
@@ -89,7 +89,7 @@ function countdata()
               data: $('form').serialize(),
               success: function (result) {
                 alert(result);
-                load_data(1);
+                load_data(1, query, $('#testname_p').val());
                 $("#newadmissionmodal").modal('hide');
               }
             });
