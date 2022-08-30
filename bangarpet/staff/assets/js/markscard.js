@@ -4,7 +4,7 @@ $(document).ready(function(){
     $.ajax({
       url:"./php_operations/markscard.php",
       method:"POST",
-      data:{type: "gettest", value: "<?php echo $_SESSION['class']; ?>"},
+      data:{type: "gettest", value: '2'},
       success:function(data)
       {
 $('#testname').html(data);
