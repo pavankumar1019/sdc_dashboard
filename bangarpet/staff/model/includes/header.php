@@ -249,7 +249,7 @@
                                 <li><a href="./logout.php" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
                             </ul>
                         </div>
-                        <input type="hidden" id="class_name" data-value="<?php echo $_SESSION['class_id']; ?>" />
+                        <input type="hidden" id="class_name" value="<?php echo $_SESSION['class_id']; ?>" />
 
                     </div>
                 </li>

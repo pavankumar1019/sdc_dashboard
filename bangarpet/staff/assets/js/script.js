@@ -15,12 +15,12 @@ $('#sendsms').click(function(){
     window.location = page;  
    });
    
-   gettest();
-   function gettest(){
+   gettest($("#class_name").val());
+   function gettest(value_class){
      $.ajax({
        url:"./php_operations/markscard.php",
        method:"POST",
-       data:{type: "gettest", value:  $("#class_name").data('value')},
+       data:{type: "gettest", value: value_class},
        success:function(data)
        {
  $('#testname_p').append(data);
