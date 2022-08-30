@@ -1,10 +1,10 @@
 $(document).ready(function(){
+// hello
     $('#btnmarkscard').click(function(){
         $("#newadmissionmodal").modal('show');
         $('#markscardform').trigger("reset");
         $('#type').val('add');
-      });
-
+      }); 
     countdata();
     setInterval(function(){ 
         countdata();
