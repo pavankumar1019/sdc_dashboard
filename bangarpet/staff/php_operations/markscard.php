@@ -387,7 +387,7 @@ if($_POST['type']=="update"){
 // update marks card
 if($_POST['type']=="gettest"){
   $query = 
-  'SELECT * FROM `'.$current_test.'` WHERE class='.$_POST['value'].' ORDER BY id DESC LIMIT 0, 1'
+  'SELECT * FROM `'.$current_test.'` WHERE class='.$_POST['value'].' ORDER BY id DESC'
   ;
   $statement = $connect->prepare($query);
   $statement->execute();

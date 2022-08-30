@@ -189,10 +189,10 @@ include('./db_bpet_sdc/db.php');
                                     <h5>Your Test / Exam </h5>
                                 </div>
                                 <div class="form-group p-2">
-                                  
-                                    <select id="testname" class="form-control" style="border:1px solid black;">
-    
-      </select>
+
+                                    <select id="testname_p" class="form-control" style="border:1px solid black;">
+
+                                    </select>
                                 </div>
                             </div>
                         </div>
