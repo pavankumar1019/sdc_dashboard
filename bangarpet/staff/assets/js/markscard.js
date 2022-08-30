@@ -100,11 +100,12 @@ function countdata()
           // add marks card
           $(document).on('click', '#add', function(){
             var id = $(this).attr('data-id');
+            var testvalue=$('#testname_p').val();
             var type = 'edit';
             $.ajax({
               url:"./php_operations/markscard.php",
               method:"POST",
-              data:{id:id, type:type},
+              data:{id:id, type:type, testval:testvalue},
               dataType:"json",
               success:function(data)
               {
@@ -139,10 +140,11 @@ function countdata()
           $(document).on('click', '#edit', function(){
             var id = $(this).attr('data-id');
             var type = 'edit';
+            var testvalue=$('#testname_p').val();
             $.ajax({
               url:"./php_operations/markscard.php",
               method:"POST",
-              data:{id:id, type:type},
+              data:{id:id, type:type, testval:testvalue},
               dataType:"json",
               success:function(data)
               {
