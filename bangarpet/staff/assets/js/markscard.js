@@ -53,7 +53,7 @@ function countdata()
     $(document).on('click', '.page-link', function(){
       var page = $(this).data('page_number');
       var query = $('#search_box').val();
-      load_data(1, query, $('#testname_p').val());
+      load_data(page, query, $('#testname_p').val());
     });
 
     $('#search_box').keyup(function(){
