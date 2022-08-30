@@ -33,7 +33,7 @@
 
 <select id="testname_p" class="form-control" style="border:1px solid black;">
 <option value="">-Select Test--</option>
-<option value="3">Unit Test - 2</option><option value="1">Term Exam - 1</option>    </select>
+
 </div>
                                             </p>
                                         </div>
