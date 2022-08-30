@@ -1,15 +1,6 @@
 <?php
-                                                include('./db_bpet_sdc/db.php');
-                                                $sqlc='SELECT * FROM `current_test` WHERE class='.$_SESSION['class'].' ORDER BY id DESC LIMIT 0, 1';
-                                                $resultc=$conn->query($sqlc);
-                                                foreach($resultc as $rowc){
-                                                    $_SESSION['test_name']=$rowc['id'];
-                                                    $_SESSION['maxmarks']=$rowc['maxmarks'];
-                                                    $_SESSION['testname']=$rowc['name'];
-                                                    $_SESSION['minmarks']=$rowc['minmarks'];
-                                                }
-                                             
-                if($_SESSION['role_staff']=="P"){
+                                                include('./db_bpet_sdc/db.php');    
+            if($_SESSION['role_staff']=="P"){
                     $sql="SELECT * FROM ".$tbl_admission;
                     $result=$conn->query($sql);
                     $date=date("Y-m-d");
