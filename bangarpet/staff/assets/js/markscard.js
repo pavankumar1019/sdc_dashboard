@@ -1,4 +1,22 @@
 $(document).ready(function(){
+  gettest();
+  function gettest(){
+    $.ajax({
+      url:"./php_operations/markscard.php",
+      method:"POST",
+      data:{type: "gettest", value: "<?php echo $_SESSION['class']; ?>"},
+      success:function(data)
+      {
+$('#testname').html(data);
+      }
+    });
+  }
+
+
+
+
+
+
     $('#btnmarkscard').click(function(){
         $("#newadmissionmodal").modal('show');
         $('#markscardform').trigger("reset");

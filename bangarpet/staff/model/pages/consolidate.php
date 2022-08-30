@@ -190,7 +190,7 @@ include('./db_bpet_sdc/db.php');
                                 </div>
                                 <div class="form-group p-2">
                                   
-                                    <select id="inputState" class="form-control" style="border:1px solid black;">
+                                    <select id="testname" class="form-control" style="border:1px solid black;">
         <option selected>CURRENT TEST</option>
         <option>Unit Test - 1</option>
         <option>Term Test - 1</option>

@@ -382,5 +382,24 @@ if($_POST['type']=="update"){
   }
 
 }
+
+// gettest name 
+// update marks card
+if($_POST['type']=="gettest"){
+
+
+  $query = 
+  'SELECT * FROM `'.$current_test.'` WHERE class='.$_POST['value'].' ORDER BY id DESC LIMIT 0, 1'
+  ;
+  $statement = $connect->prepare($query);
+  $statement->execute();
+  $result = $statement->fetchAll();
+
+  foreach($result as $row){
+echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+}
+
+
+}
 ?>
     
