@@ -386,8 +386,6 @@ if($_POST['type']=="update"){
 // gettest name 
 // update marks card
 if($_POST['type']=="gettest"){
-
-
   $query = 
   'SELECT * FROM `'.$current_test.'` WHERE class='.$_POST['value'].' ORDER BY id DESC LIMIT 0, 1'
   ;
@@ -399,7 +397,7 @@ if($_POST['type']=="gettest"){
 echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
 }
 
-
+echo "asd";
 }
 ?>
     
