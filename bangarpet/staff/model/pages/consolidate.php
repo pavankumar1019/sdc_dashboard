@@ -188,7 +188,7 @@ include('./db_bpet_sdc/db.php');
                                 <div class="card-header">
                                     <h5>Your Test / Exam </h5>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group p-2">
                                   
                                     <select id="inputState" class="form-control">
         <option selected>Choose...</option>
