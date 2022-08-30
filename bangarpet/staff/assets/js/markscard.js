@@ -89,7 +89,7 @@ function countdata()
               data: $('form').serialize(),
               success: function (result) {
                 alert(result);
-                load_data(1, query, $('#testname_p').val());
+                load_data(1, "", $('#testname_p').val());
                 $("#newadmissionmodal").modal('hide');
               }
             });
