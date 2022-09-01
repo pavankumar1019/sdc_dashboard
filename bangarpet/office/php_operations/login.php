@@ -54,7 +54,8 @@ if ($result->num_rows > 0) {
 		"statusCode"=>200,
 		"phone"=>substr($row['phone_no'], -3),
 		"name"=>$row['name'],
-		"branch"=>$row['branch']
+		"branch"=>$row['branch'],
+		"value"=>$otp
 	));
   }
 } 
