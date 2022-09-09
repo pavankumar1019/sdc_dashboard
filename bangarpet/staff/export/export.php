@@ -8,9 +8,10 @@ require ('../../../vendor/autoload.php');
 $gettest="SELECT * from ".$current_test." WHERE id=".$GET['testid']."";
 $gettestresult=$conn->query($gettest);
 foreach($gettestresult as $gettestresultrow){
-  $maximarks=$gettestresultrow['section'];
-  $name=$gettestresultrow['section'];
-  $minimarks=$gettestresultrow['section'];
+  $maximarks=$gettestresultrow['maxmarks'];
+  $class=$gettestresultrow['class'];
+  $name=$gettestresultrow['name'];
+  $minimarks=$gettestresultrow['minmarks'];
 }
 
 
@@ -67,7 +68,7 @@ if($_GET["data"]=="consolidate_pdf")
      ";
  $result = mysqli_query($conn, $query);
 
-$totalmaxmarks= $_SESSION['maxmarks']*6;
+$totalmaxmarks= $maximarks*6;
  if(mysqli_num_rows($result) > 0)
  {
 $tstud="SELECT * FROM ".$tbl_admission." WHERE Class=".$_SESSION['class_id']."";
@@ -131,7 +132,7 @@ $langname="HIN";
     }else{
       $combination=$row["combination"];
     }
-if($row["l1"]>=$_SESSION['minmarks'] && $row["l2"]>=$_SESSION['minmarks'] && $row["s1"]>=$_SESSION['minmarks'] && $row["s2"]>=$_SESSION['minmarks'] && $row["s3"]>=$_SESSION['minmarks'] && $row["s4"]>=$_SESSION['minmarks']){
+if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
   $status="PASS";
 }else{
   $status="<b style='color:red'>FAIL</b>";
@@ -218,12 +219,12 @@ $output .= '</table>';
 $query2 = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
   FROM ".$tbl_admission."
   LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
-  AND ".$class_test_marks.".l1>=".$_SESSION['minmarks']." 
-  AND ".$class_test_marks.".l2>=".$_SESSION['minmarks']."  
-   AND ".$class_test_marks.".s1>=".$_SESSION['minmarks']."   
-   AND ".$class_test_marks.".s2>=".$_SESSION['minmarks']."   
-   AND ".$class_test_marks.".s3>=".$_SESSION['minmarks']."   
-   AND ".$class_test_marks.".s4>=".$_SESSION['minmarks']." 
+  AND ".$class_test_marks.".l1>=".$minimarks." 
+  AND ".$class_test_marks.".l2>=".$minimarks."  
+   AND ".$class_test_marks.".s1>=".$minimarks."   
+   AND ".$class_test_marks.".s2>=".$minimarks."   
+   AND ".$class_test_marks.".s3>=".$minimarks."   
+   AND ".$class_test_marks.".s4>=".$minimarks." 
   ORDER BY `".$class_test_marks."`.`total` DESC LIMIT 20";
 $result2 = mysqli_query($conn, $query2);
 
