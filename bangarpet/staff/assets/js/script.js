@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 $('#consolidate').click(function(){
-    var page = "./export/export.php?data=consolidate_pdf";  
+    var page = "./export/export.php?data=consolidate_pdf&testid="+$('#testname_p').val();  
     window.location = page;
    });
 $('#consolidatep').click(function(){
