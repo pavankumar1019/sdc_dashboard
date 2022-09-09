@@ -29,7 +29,7 @@
                                     <div class="card-header">
                                         <h5>Select the Test / Exam</h5>
                                     </div>
-                                    <div class="card-block">
+                                    <!-- <div class="card-block">
                                         <div class="form-group p-2">
 
                                             <select id="testname_p" class="form-control"
@@ -38,7 +38,7 @@
 
                                         </div>
 
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-sm-12">
