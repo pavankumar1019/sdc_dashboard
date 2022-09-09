@@ -253,6 +253,7 @@
                 </li>
             </ul>
         </div>
+        <input type="hidden" id="class_name" value="<?php echo $_SESSION['class']; ?>" />
     </header>
-    <input type="hidden" id="class_name" value="<?php echo $_SESSION['class']; ?>" />
+ 
 
