@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                            div class="card">
+                            <div class="card">
                                     <div class="card-header">
                                         <h5>Download</h5>
                                     </div>
