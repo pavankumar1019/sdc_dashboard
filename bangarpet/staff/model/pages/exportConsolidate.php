@@ -31,7 +31,7 @@
                                     </div>
                                     <div class="card-block">
                                         <div class="form-group p-2">
-                                            <select id="class_name_consolidate" class="form-control"
+                                            <select id="testname_p" class="form-control"
                                                 style="border:1px solid black;">
                                                 <option value="">-Select Test--</option>
                                         </div>
