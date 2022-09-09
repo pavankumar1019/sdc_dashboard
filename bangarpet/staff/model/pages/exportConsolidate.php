@@ -39,13 +39,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+                        
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
                                 <div class="form-group p-2">
                                     <a class="btn btn-primary" id="consolidate" style="color:white;">Download</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
                     <!-- [ Main Content ] end -->
                 </div>
             </div>
