@@ -50,7 +50,7 @@
                                         <div class="form-group p-2">
 
                                             <a class="btn btn-primary" id="consolidate"
-                                                style="color:white;">Download</a>
+                                                style="color:white;">Download here</a>
 
                                         </div>
 
