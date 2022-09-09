@@ -22,7 +22,7 @@ $('#sendsms').click(function(){
        data:{type: "gettest", value: valueclass},
        success:function(data)
        {
- $('#testname_p').append(data);
+ $('#testname_p').html(data);
        }
      });
    }
