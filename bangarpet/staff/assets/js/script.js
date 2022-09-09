@@ -26,5 +26,16 @@ $('#sendsms').click(function(){
        }
      });
    }
-
+   gettest($("#class_name_consolidate").val());
+   function gettest(valueclass){
+     $.ajax({
+       url:"./php_operations/markscard.php",
+       method:"POST",
+       data:{type: "gettest", value: valueclass},
+       success:function(data)
+       {
+ $('#testname_p').html(data);
+       }
+     });
+   }
 });
