@@ -37,11 +37,14 @@
                                                 <option value="">-Select Test--</option>
 
                                         </div>
-                                        <div class="form-group p-2">
-                                            <a class="btn btn-primary" id="print">Download</a>
-                                        </div>
+
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row-6">
+                            <div class="form-group p-2">
+                                            <a class="btn btn-primary" id="print">Download</a>
+                                        </div>
                             </div>
                         </div>
                     </div>
@@ -50,5 +53,4 @@
             </div>
         </div>
     </div>
-</div>
 </div>
