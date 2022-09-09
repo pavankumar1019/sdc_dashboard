@@ -37,6 +37,11 @@
 </div>
                                             </p>
                                         </div>
+                                        <div class="form-group p-2">
+<a class="btn btn-primary" id="print">Download</a>
+                                        </div>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

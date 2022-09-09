@@ -1,5 +1,9 @@
 $(document).ready(function(){
+  $(document).on('click', '#print', function(){ 
 
+    window.open("http://sdccollegebpet.in/bangarpet/office/model/templates/markscard/index.php?reg_no="+$(this).attr('data-id'), "PopupWindow", "width=1000,height=800,scrollbars=yes,resizable=no");
+    
+      })
 $('#consolidate').click(function(){
     var page = "./export/export.php?data=consolidate_pdf";  
     window.location = page;
