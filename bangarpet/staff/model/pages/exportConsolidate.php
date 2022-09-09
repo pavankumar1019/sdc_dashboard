@@ -42,14 +42,11 @@
                         
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                                <div class="form-group p-2">
-                                    <a class="btn btn-primary" id="consolidate" style="color:white;">Download</a>
-                                </div>
-                            </div>
-                    <!-- [ Main Content ] end -->
+                                    <!-- [ Main Content ] end -->
                 </div>
-                <div class="main-body">
+                
+            </div>
+            <div class="main-body">
                     <div class="page-wrapper">
                         <!-- [ Main Content ] start -->
                         <div class="row">
@@ -68,7 +65,6 @@
                     </div>
                 
                 </div>
-            </div>
         </div>
     </div>
 </div>
