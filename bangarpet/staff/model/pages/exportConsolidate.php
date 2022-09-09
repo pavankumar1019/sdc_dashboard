@@ -28,43 +28,27 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <h5>Select the Test / Exam</h5>
-                                    </div>
-                                    <div class="card-block">
+
                                         <div class="form-group p-2">
                                             <select id="testname_p" class="form-control"
                                                 style="border:1px solid black;">
                                                 <option value="">-Select Test--</option>
                                         </div>
-
                                     </div>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                                    <!-- [ Main Content ] end -->
-                </div>
-                
-            </div>
-            <div class="main-body">
-                    <div class="page-wrapper">
-                        <!-- [ Main Content ] start -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="card">
                                     <div class="card-block">
-                                    <div class="form-group p-2">
-                                    <a class="btn btn-primary" id="consolidate" style="color:white;">Download</a>
-                                </div>
+                                        <a class="btn btn-primary" id="consolidate" style="color:white;">Download</a>
+
 
                                     </div>
                                 </div>
                             </div>
-                        
+
                         </div>
                     </div>
-                
+                    <!-- [ Main Content ] end -->
                 </div>
+
+            </div>
         </div>
     </div>
 </div>
