@@ -43,7 +43,7 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group p-2">
-                                    <a class="btn btn-primary" id="print">Download</a>
+                                    <a class="btn btn-primary" id="print" style="color:white;">Download</a>
                                 </div>
                             </div>
                         </div>
