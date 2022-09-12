@@ -1,9 +1,22 @@
 <?php
 include '../db_bpet_sdc/db.php';
 require ('../../../vendor/autoload.php');
+// get test and their max and mini 
+$testid= $GET['testid'];
+$gettest="
+SELECT * FROM ".$current_test." WHERE id=".$testid."
+";
+$gettestresult=$conn->query($gettest);
+foreach($gettestresult as $gettestresultrow){
+  $maximarks=$gettestresultrow['maxmarks'];
+  $class=$gettestresultrow['class'];
+  $name=$gettestresultrow['name'];
+  $minimarks=$gettestresultrow['minmarks'];
+  echo $maximarks;
+}
 
 
-echo $_GET['testid'];
+
 
 
 // //Get class name
