@@ -3,12 +3,12 @@
 $method = 'sendMessage';
 	//  variable
     $name ="PAVAN KUMAR";
-    $score="KA:100/100EN:100/100PH:100/100MA:100/100CH:100/100BI:100/100";
+    $score="KA-100/100EN-100/100PH-100/100MA-100/100CH-100/100BI-100/100";
     $testname="Unit Test - 1";
     // Message details
 $content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is 
 '.$score.'Grand Total :500/600 RESULT : FAIL
-SDC College BANGARPET');
+SDC College BANGARPET-563114');
 
     
     
