@@ -72,7 +72,7 @@ foreach($gettestresult as $gettestresultrow){
 }
      $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
      FROM ".$tbl_admission."
-     LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=".$testid."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+     LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $testid."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
      ";
  $result = mysqli_query($conn, $query);
 
@@ -169,7 +169,7 @@ if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks &&
 
   $query1 = "SELECT   ".$tbl_admission.".RollNo, SUM(".$class_test_marks.".l1) as l1, SUM(".$class_test_marks.".l2) as l2,  SUM(".$class_test_marks.".s1) as s1, SUM(".$class_test_marks.".s2) as s2,  SUM(".$class_test_marks.".s3) as s3,  SUM(".$class_test_marks.".s4) as s4,  ".$class_test_marks.".total
   FROM ".$tbl_admission."
-  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $testid."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
   ";
 $result1 = mysqli_query($conn, $query1);
 
@@ -226,7 +226,7 @@ $output .= '</table>';
 
 $query2 = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
   FROM ".$tbl_admission."
-  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $testid."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
   AND ".$class_test_marks.".l1>=".$minimarks." 
   AND ".$class_test_marks.".l2>=".$minimarks."  
    AND ".$class_test_marks.".s1>=".$minimarks."   
