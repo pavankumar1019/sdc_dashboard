@@ -60,7 +60,7 @@ if($_GET["data"]=="consolidate_pdf")
 {
   
 // get test and their max and mini 
-$testid= $GET['testid'];
+$testid= $_GET['testid'];
 $gettest="SELECT * FROM ".$current_test." WHERE id=".$testid."";
 $gettestresult=$conn->query($gettest);
 foreach($gettestresult as $gettestresultrow){
