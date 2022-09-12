@@ -3,15 +3,6 @@ include '../db_bpet_sdc/db.php';
 require ('../../../vendor/autoload.php');
 
 
-// get test and their max and mini 
-$gettest="SELECT * FROM `".$current_test."` WHERE id=".$GET['testid'];
-$gettestresult=$conn->query($gettest);
-foreach($gettestresult as $gettestresultrow){
-  $maximarks=$gettestresultrow['maxmarks'];
-  $class=$gettestresultrow['class'];
-  $name=$gettestresultrow['name'];
-  $minimarks=$gettestresultrow['minmarks'];
-}
 
 
 
@@ -61,6 +52,16 @@ tr:nth-child(even) {
 // export pdf
 if($_GET["data"]=="consolidate_pdf")
 {
+  
+// get test and their max and mini 
+// $gettest='SELECT * FROM `'.$current_test.'` WHERE id='".$GET['testid']"'';
+// $gettestresult=$conn->query($gettest);
+// foreach($gettestresult as $gettestresultrow){
+//   $maximarks=$gettestresultrow['maxmarks'];
+//   $class=$gettestresultrow['class'];
+//   $name=$gettestresultrow['name'];
+//   $minimarks=$gettestresultrow['minmarks'];
+// }
      $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
      FROM ".$tbl_admission."
      LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
@@ -131,11 +132,11 @@ $langname="HIN";
     }else{
       $combination=$row["combination"];
     }
-if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
-  $status="PASS";
-}else{
-  $status="<b style='color:red'>FAIL</b>";
-}
+// if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+//   $status="PASS";
+// }else{
+//   $status="<b style='color:red'>FAIL</b>";
+// }
    $output .= '
     <tr>  
                          <td>'.$row["RollNo"].'</td>  
