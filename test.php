@@ -3,7 +3,7 @@
 $method = 'sendMessage';
 	//  variable
     $name ="PAVAN KUMAR";
-    $score="KAN:25/100 ENG:25/100 PHY:25/100 MAT:25/100 CHE:25/100 BIO:25/100";
+    $score="KA:100/100EN:100/100PH:100/100MA:100/100CH:100/100BI:100/100";
     $testname="Unit Test - 1";
     // Message details
 $content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is 
