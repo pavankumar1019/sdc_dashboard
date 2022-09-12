@@ -20,5 +20,5 @@ SDC College BANGARPET');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
     curl_close($ch);
-    echo $stdnumber."&nbsp;-&nbsp; Message Sent";
+    echo $name."&nbsp;-&nbsp; Message Sent";
 ?>
