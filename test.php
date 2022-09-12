@@ -1,9 +1,14 @@
 <?php
 
 $method = 'sendMessage';
-	$stdnumber='King Salman bin Abdul-Aziz';
+	//  variable
+    $name =" PAVAN KUMAR";
+    $score="KAN:25/100 ENG:25/100 PHY:25/100 MAT:25/100 CHE:25/100 BIO:25/100";
+    $testname="Unit Test - 1";
     // Message details
-$content =  rawurlencode('Dear '.$stdnumber.' was absent on todays class at SDC College Bangarpet/KGF.- SDC');
+$content =  rawurlencode('Dear '$name' your score in '.$testname.' is 
+'.$score.'Grand Total :500/600 RESULT : FAIL
+SDC College BANGARPET');
           
     
     
