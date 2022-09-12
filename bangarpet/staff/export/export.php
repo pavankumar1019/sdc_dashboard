@@ -1,11 +1,14 @@
 <?php
 include '../db_bpet_sdc/db.php';
 require ('../../../vendor/autoload.php');
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // get test and their max and mini 
 $testid= $GET['testid'];
-$gettest="
-SELECT * FROM ".$current_test." WHERE id=".$testid."
-";
+echo $maximarks;
+$gettest="SELECT * FROM ".$current_test." WHERE id=".$testid."";
 $gettestresult=$conn->query($gettest);
 foreach($gettestresult as $gettestresultrow){
   $maximarks=$gettestresultrow['maxmarks'];
