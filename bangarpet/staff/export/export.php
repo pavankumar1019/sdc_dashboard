@@ -86,7 +86,7 @@ $totalstudents=mysqli_num_rows($result3);
    <table class="table" bordered="1"> 
    <tr>
    <th colspan=13 style="text-align:center;"><h2>
-   Internal Test - 1</h2><h4>
+   '.$name.'</h2><h4>
    Maximum Marks: '.$totalmaxmarks.'</h4>
    </th> 
    </tr> 
