@@ -1,6 +1,8 @@
 <?php
 include '../db_bpet_sdc/db.php';
-require ('../../../vendor/autoload.php');
+ob_end_flush();
+
+require_once  ('../../../vendor/autoload.php');
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -268,7 +270,7 @@ echo $output;
   
   // $file=time().'.pdf';
   $file=$filename.'.pdf';
-  $mpdf->output($file, 'I');
+  $mpdf->output($file, '');
  }else{
      echo "no data found";
  }
