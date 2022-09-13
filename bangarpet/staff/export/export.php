@@ -270,7 +270,7 @@ echo $output;
   
   // $file=time().'.pdf';
   $file=$filename.'.pdf';
-  $mpdf->output($file, '');
+  $mpdf->output($file, 'I');
  }else{
      echo "no data found";
  }
