@@ -262,6 +262,7 @@ $output .= '
   $output .= '</table>
   </body>
 </html>';
+echo $output;
   $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
   
