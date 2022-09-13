@@ -267,8 +267,8 @@ $output .= '
   $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
   
-  // $file=time().'.pdf';
-  $file=$filename.'.pdf';
+  $file=time().'.pdf';
+  // $file=$filename.'.pdf';
   $mpdf->output($file, 'I');
  }else{
      echo "no data found";
