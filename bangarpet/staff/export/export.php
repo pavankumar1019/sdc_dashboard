@@ -258,6 +258,12 @@ $output .= '
                  </tr>
 ';
 }
+}else{
+  $output .='
+  <tr>  
+  No Record Found
+                 </tr>
+                ';
 }
   $output .= '</table>
   </body>
