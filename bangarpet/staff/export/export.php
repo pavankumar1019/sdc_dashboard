@@ -234,7 +234,7 @@ $query2 = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
    AND ".$class_test_marks.".s2>=".$minimarks."   
    AND ".$class_test_marks.".s3>=".$minimarks."   
    AND ".$class_test_marks.".s4>=".$minimarks." 
-  ORDER BY `".$class_test_marks."`.`total` DESC LIMIT 10";
+  ORDER BY `".$class_test_marks."`.`total` DESC LIMIT 20";
 $result2 = mysqli_query($conn, $query2);
 
 if(mysqli_num_rows($result2) > 0)
