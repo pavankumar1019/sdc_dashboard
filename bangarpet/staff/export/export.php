@@ -17,6 +17,7 @@ $getclassname="SELECT * FROM class WHERE id='".$_SESSION['class_id']."'";
 $classresult=$conn->query($getclassname);
 foreach($classresult as $rowclass){
   $classname=$rowclass['section']."-".$rowclass['name'];
+  $filename=$rowclass['section']."_".$rowclass['name'];
 }
 // export to pdf
 $output = '';
@@ -265,7 +266,7 @@ $output .= '
   $mpdf->WriteHTML($output);
   
   // $file=time().'.pdf';
-  $file=$classname.'.pdf';
+  $file=$filename.'.pdf';
   $mpdf->output($file, 'D');
  }else{
      echo "no data found";
