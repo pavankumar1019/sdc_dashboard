@@ -381,7 +381,7 @@ if($_POST['type']=="gettest"){
   $result = $statement->fetchAll();
 
   foreach($result as $row){
-echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+echo '<option value="'.$row['id'].'" selected>'.$row['name'].'</option>';
 }
 }
 ?>
