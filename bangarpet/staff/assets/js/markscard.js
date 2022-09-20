@@ -38,7 +38,9 @@ function countdata()
         }
       });
     }
-    load_data(1, "", $('#testname_p').val());
+    var query="";
+    load_data(1, query, $('#testname_p').val());
+
     $(document).on('click', '.page-link', function(){
       var page = $(this).data('page_number');
       var query = $('#search_box').val();
