@@ -379,7 +379,7 @@ if($_POST['type']=="gettest"){
   $statement = $connect->prepare($query);
   $statement->execute();
   $result = $statement->fetchAll();
-$html='';
+$html='<option value="" selected>-Select Test-</option>';
   foreach($result as $row){
     $html.= '<option value="'.$row['id'].'" >'.$row['name'].'</option>';
 }
