@@ -38,9 +38,8 @@ function countdata()
       });
     }
     var query="";
-    $("option:last").attr('selected','selected')
+    $("option:last").attr('selected','selected');
     load_data(1, query, $('#testname_p').val());
-    alert($('#testname_p').val());
 
     $(document).on('click', '.page-link', function(){
       var page = $(this).data('page_number');
