@@ -34,7 +34,6 @@ function countdata()
         success:function(data)
         {
           $('#dynamic_content').html(data);
-          $('#testname').val($('#testname_p').val());
         }
       });
     }
