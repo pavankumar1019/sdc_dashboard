@@ -7,17 +7,7 @@ include '../db_bpet_sdc/db.php';
 
 
 if($_POST['type']=="loaddata"){
-    function get_total_row($connect)
-    {
-      $query = "
-      SELECT * FROM ".$sdc_marks_card."
-      ";
-      $statement = $connect->prepare($query);
-      $statement->execute();
-      return $statement->rowCount();
-    }
-    
-    $total_record = get_total_row($connect);
+
     
     $limit = '60';
     $page = 1;
@@ -279,16 +269,7 @@ if($_POST['type']=="loaddata"){
     echo $output;
 }
 
-if($_POST['type']=="getcount"){
 
-    $query = "
-    SELECT * FROM ".$sdc_marks_card."
-    ";
-    $statement = $connect->prepare($query);
-    $statement->execute();
-    echo $statement->rowCount();
-
-}
 if($_POST['type']=="add"){
   $total=$_POST['l1']+$_POST['l2']+$_POST['s1']+$_POST['s2']+$_POST['s3']+$_POST['s4'];
     $insert_data = array(
