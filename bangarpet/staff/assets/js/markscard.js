@@ -26,7 +26,7 @@ function countdata()
 
     function load_data(page, query = '', testvalue)
     {
-      $('#testname').val($('#testname_p').val());
+      
       $.ajax({
         url:"./php_operations/markscard.php",
         method:"POST",
@@ -34,6 +34,7 @@ function countdata()
         success:function(data)
         {
           $('#dynamic_content').html(data);
+          $('#testname').val($('#testname_p').val());
         }
       });
     }
