@@ -293,7 +293,7 @@ if($_POST['type']=="add"){
   $total=$_POST['l1']+$_POST['l2']+$_POST['s1']+$_POST['s2']+$_POST['s3']+$_POST['s4'];
     $insert_data = array(
          "roll"=>$_POST['reg_no'],
-         "test_id"=>$_POST['testval'],
+         "test_id"=>$_POST['testname'],
          "l1"=>$_POST['l1'],
          "l2"=>$_POST['l2'],
          "s1"=>$_POST['s1'],
