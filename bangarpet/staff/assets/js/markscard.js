@@ -38,7 +38,6 @@ function countdata()
       });
     }
     var query="";
-    $("option:last").attr('selected','selected');
     load_data(1, query, $('#testname_p').val());
 
     $(document).on('click', '.page-link', function(){
