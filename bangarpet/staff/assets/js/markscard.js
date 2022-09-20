@@ -39,6 +39,7 @@ function countdata()
     }
     var query="";
     load_data(1, query, $('#testname_p').val());
+    alert($('#testname_p').val());
 
     $(document).on('click', '.page-link', function(){
       var page = $(this).data('page_number');
