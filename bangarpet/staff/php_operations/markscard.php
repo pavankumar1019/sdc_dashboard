@@ -7,17 +7,17 @@ include '../db_bpet_sdc/db.php';
 
 
 if($_POST['type']=="loaddata"){
-    // function get_total_row($connect)
-    // {
-    //   $query = "
-    //   SELECT * FROM ".$sdc_marks_card."
-    //   ";
-    //   $statement = $connect->prepare($query);
-    //   $statement->execute();
-    //   return $statement->rowCount();
-    // }
+    function get_total_row($connect)
+    {
+      $query = "
+      SELECT * FROM ".$sdc_marks_card."
+      ";
+      $statement = $connect->prepare($query);
+      $statement->execute();
+      return $statement->rowCount();
+    }
     
-    // $total_record = get_total_row($connect);
+    $total_record = get_total_row($connect);
     
     $limit = '60';
     $page = 1;
@@ -279,21 +279,21 @@ if($_POST['type']=="loaddata"){
     echo $output;
 }
 
-// if($_POST['type']=="getcount"){
+if($_POST['type']=="getcount"){
 
-//     $query = "
-//     SELECT * FROM ".$sdc_marks_card."
-//     ";
-//     $statement = $connect->prepare($query);
-//     $statement->execute();
-//     echo $statement->rowCount();
+    $query = "
+    SELECT * FROM ".$sdc_marks_card."
+    ";
+    $statement = $connect->prepare($query);
+    $statement->execute();
+    echo $statement->rowCount();
 
-// }
+}
 if($_POST['type']=="add"){
   $total=$_POST['l1']+$_POST['l2']+$_POST['s1']+$_POST['s2']+$_POST['s3']+$_POST['s4'];
     $insert_data = array(
          "roll"=>$_POST['reg_no'],
-         "test_id"=>$_POST['testname'],
+         "test_id"=>$_POST['testval'],
          "l1"=>$_POST['l1'],
          "l2"=>$_POST['l2'],
          "s1"=>$_POST['s1'],
@@ -321,7 +321,7 @@ if($_POST['type']=="edit"){
   $query = 
   'SELECT '.$tbl_admission.'.StudentName,  '.$tbl_admission.'.father_name, '.$tbl_admission.'.mobile_no, '.$tbl_admission.'.RollNo, '.$class_test_marks.'.l1, '.$class_test_marks.'.l2,  '.$class_test_marks.'.s1, '.$class_test_marks.'.s2,  '.$class_test_marks.'.s3,  '.$class_test_marks.'.s4,  '.$class_test_marks.'.total
     FROM '.$tbl_admission.'
-    LEFT JOIN '.$class_test_marks.' ON '.$tbl_admission.'.RollNo = '.$class_test_marks.'.roll AND '.$class_test_marks.'.test_id='.$_POST['testname'].' WHERE '.$tbl_admission.'.Class='.$_SESSION['class_id'].' AND '.$tbl_admission.'.RollNo="'.$_POST['id'].'"
+    LEFT JOIN '.$class_test_marks.' ON '.$tbl_admission.'.RollNo = '.$class_test_marks.'.roll AND '.$class_test_marks.'.test_id='.$_POST['testval'].' WHERE '.$tbl_admission.'.Class='.$_SESSION['class_id'].' AND '.$tbl_admission.'.RollNo="'.$_POST['id'].'"
     '
   ;
   $statement = $connect->prepare($query);
