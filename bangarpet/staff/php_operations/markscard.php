@@ -294,7 +294,7 @@ if($_POST['type']=="add"){
         }
     
     
-    echo $html;
+    // echo $html;
 
 }
 
