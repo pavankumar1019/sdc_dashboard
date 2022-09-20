@@ -33,7 +33,7 @@ if($_POST['type']=="loaddata"){
    
     $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
     FROM ".$tbl_admission."
-    LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=".$_POST['testval']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+    LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=".$_POST['testname']."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
     ";
     
     if($_POST['query'] != '')
@@ -293,7 +293,7 @@ if($_POST['type']=="add"){
   $total=$_POST['l1']+$_POST['l2']+$_POST['s1']+$_POST['s2']+$_POST['s3']+$_POST['s4'];
     $insert_data = array(
          "roll"=>$_POST['reg_no'],
-         "test_id"=>$_POST['testval'],
+         "test_id"=>$_POST['testname'],
          "l1"=>$_POST['l1'],
          "l2"=>$_POST['l2'],
          "s1"=>$_POST['s1'],
@@ -321,7 +321,7 @@ if($_POST['type']=="edit"){
   $query = 
   'SELECT '.$tbl_admission.'.StudentName,  '.$tbl_admission.'.father_name, '.$tbl_admission.'.mobile_no, '.$tbl_admission.'.RollNo, '.$class_test_marks.'.l1, '.$class_test_marks.'.l2,  '.$class_test_marks.'.s1, '.$class_test_marks.'.s2,  '.$class_test_marks.'.s3,  '.$class_test_marks.'.s4,  '.$class_test_marks.'.total
     FROM '.$tbl_admission.'
-    LEFT JOIN '.$class_test_marks.' ON '.$tbl_admission.'.RollNo = '.$class_test_marks.'.roll AND '.$class_test_marks.'.test_id='.$_POST['testval'].' WHERE '.$tbl_admission.'.Class='.$_SESSION['class_id'].' AND '.$tbl_admission.'.RollNo="'.$_POST['id'].'"
+    LEFT JOIN '.$class_test_marks.' ON '.$tbl_admission.'.RollNo = '.$class_test_marks.'.roll AND '.$class_test_marks.'.test_id='.$_POST['testname'].' WHERE '.$tbl_admission.'.Class='.$_SESSION['class_id'].' AND '.$tbl_admission.'.RollNo="'.$_POST['id'].'"
     '
   ;
   $statement = $connect->prepare($query);
