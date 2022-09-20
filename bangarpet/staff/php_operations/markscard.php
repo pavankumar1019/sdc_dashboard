@@ -379,10 +379,11 @@ if($_POST['type']=="gettest"){
   $statement = $connect->prepare($query);
   $statement->execute();
   $result = $statement->fetchAll();
-
+$html='';
   foreach($result as $row){
-echo '<option value="'.$row['id'].'" >'.$row['name'].'</option>';
+    $html.= '<option value="'.$row['id'].'" >'.$row['name'].'</option>';
 }
+echo $html;
 }
 ?>
     
