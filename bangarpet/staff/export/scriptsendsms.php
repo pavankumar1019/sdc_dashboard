@@ -60,14 +60,6 @@ $s3="MT";
 $s4="CS";
 }
 
-        $html.='
-        <tr>
-        <td> Name : '.$row['StudentName'].' <br>
-        Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 <br>
-        '.$l1.'='.$row['l1'].',EN='.$row['l2'].','.$s1.'='.$row['s1'].','.$s2.'='.$row['s2'].','.$s3.'='.$row['s3'].','.$s4.'='.$row['s3'].' TOTAL='.$row['total'].'.
-        </td>
-        </tr>
-        ';
 $method = 'sendMessage';
 	//  variable
     $name ="PAVAN KUMAR";
@@ -91,6 +83,12 @@ SDC College BANGARPET-563114');
         
     }
 //     echo $response;
+
+$html.='
+<tr>
+<td>'.rawurldecode($content).' </td>
+</tr>
+';
 echo $html;
 	} 
 	else {
