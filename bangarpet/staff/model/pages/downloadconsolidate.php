@@ -38,17 +38,9 @@ include('./db_bpet_sdc/db.php');
                                                 <div class="col-6">
 
                                                     <label for="exampleFormControlSelect1">Select Test</label>
-                                                    <select class="form-control" id="consolidateclass" name="class_id"
+                                                    <select class="form-control" id="testname_p" name="class_id"
                                                         required>
-                                                        <?php
-                        
-   $sql="SELECT * FROM class";
-$result=$conn->query($sql);
-foreach($result as $row){
-    echo '<option value="'.$row['id'].'">'.$row['section'].' - '.$row['name'].'</option>';
-}
-
-   ?>
+           
                                                     </select>
 
                                                 </div>
