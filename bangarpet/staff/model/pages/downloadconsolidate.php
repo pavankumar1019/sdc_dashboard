@@ -34,13 +34,13 @@ include('./db_bpet_sdc/db.php');
                                     </div>
                                     <div class="card-block">
                                         <form>
-                                         <div class="row">
-                                            <div class="col-6">
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">Select Test</label>
-                                                <select class="form-control" id="consolidateclass"
-                                                    name="class_id" required>
-                                                    <?php
+                                            <div class="row">
+                                                <div class="col-6">
+
+                                                    <label for="exampleFormControlSelect1">Select Test</label>
+                                                    <select class="form-control" id="consolidateclass" name="class_id"
+                                                        required>
+                                                        <?php
                         
    $sql="SELECT * FROM class";
 $result=$conn->query($sql);
@@ -49,37 +49,36 @@ foreach($result as $row){
 }
 
    ?>
-                                                </select>
-                                            </div>
-                                            <div class="col-6">
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">Select Class</label>
-                                                <select class="form-control" id="consolidateclass"
-                                                    name="class_id" required>
-                                                    <?php
-                        
-   $sql="SELECT * FROM class";
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-6">
+                                            
+                                            <label for="exampleFormControlSelect1">Select Class</label>
+                                            <select class="form-control" id="consolidateclass"
+                                                name="class_id" required>
+                                                <?php
+                    
+$sql="SELECT * FROM class";
 $result=$conn->query($sql);
 foreach($result as $row){
-    echo '<option value="'.$row['id'].'">'.$row['section'].' - '.$row['name'].'</option>';
+echo '<option value="'.$row['id'].'">'.$row['section'].' - '.$row['name'].'</option>';
 }
 
-   ?>
-                                                </select>
+?>
+                                            </select>
+                                       
+                                        </div>
                                             </div>
-                                            </div>
-                                            </div>
-                                         </div>
                                             <input type="hidden" name="id" id="id">
                                             <input type="hidden" name="type" id="downloadconsolidate">
 
-                                            
+
                                         </form>
-                                         <br>
-                                         <br>
-                                         
-                                        <h1  align="center" id="consolidatep"><i
-                                                    class="feather icon-download"></i></h1>
+                                        <br>
+                                        <br>
+
+                                        <h1 align="center" id="consolidatep"><i class="feather icon-download"></i></h1>
 
 
 
