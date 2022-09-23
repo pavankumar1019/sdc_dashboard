@@ -141,8 +141,7 @@ if(class_id!=""){
 		type: "POST",
 		data: {
 			class_id: class_id,
-      test_id: test_id
-					
+      test_id: test_id		
 		},
     beforeSend: function(){
           $("#closemodal").attr("disabled", true);
