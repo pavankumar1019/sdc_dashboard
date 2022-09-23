@@ -7,7 +7,7 @@ $('#consolidate').click(function(){
 $('#consolidatep').click(function(){
 if(!$('#class_names').val()=="" && !$('#testname_p').val()==""){
   var value= $('#class_names').val();
-  var page = "./export/pexport.php?data=consolidate_pdf&class_id="+value;  
+  var page = "./export/pexport.php?data=consolidate_pdf&class_id="+value+"&test_id="+$('#testname_p').val();  
   window.location = page;
 }else{
   alert("Please Select Options");
