@@ -91,7 +91,7 @@ SDC College BANGARPET-563114');
         
     }
 //     echo $response;
-echo $content;
+echo $html;
 	} 
 	else {
         echo "error";
