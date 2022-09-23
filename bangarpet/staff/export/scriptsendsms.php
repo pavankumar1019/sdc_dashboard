@@ -70,7 +70,11 @@ $content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is
 '.$score.'Grand Total :500/600 RESULT : FAIL
 SDC College BANGARPET-563114');
 
-    
+$html.='
+<tr>
+<td>'.rawurldecode($content).' </td>
+</tr>
+';
     
     // Prepare data for POST request
     
@@ -84,11 +88,7 @@ SDC College BANGARPET-563114');
     }
 //     echo $response;
 
-$html.='
-<tr>
-<td>'.rawurldecode($content).' </td>
-</tr>
-';
+
 echo $html;
 	} 
 	else {
