@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 include('../db_bpet_sdc/db.php');
 
@@ -107,7 +110,7 @@ SDC College BANGARPET-563114');
 ';
 
     }
-//     echo $response;
+    echo $response;
 
 
 echo $html;
