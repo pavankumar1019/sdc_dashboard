@@ -385,5 +385,21 @@ $html='<option value="" selected>-Select Test-</option>';
 }
 echo $html;
 }
+
+// gettest_p
+if($_POST['type']=="gettest_p"){
+  $query = 
+  'SELECT * FROM `'.$current_test.'` WHERE class='.$_POST['value'].' ORDER BY id DESC'
+  ;
+  $statement = $connect->prepare($query);
+  $statement->execute();
+  $result = $statement->fetchAll();
+$html='<option value="" selected>-Select Test-</option>';
+  foreach($result as $row){
+    $html.= '<option value="'.$row['id'].'" >'.$row['name'].'</option>';
+}
+echo $html;
+}
+
 ?>
     

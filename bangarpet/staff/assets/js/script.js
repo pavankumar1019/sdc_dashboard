@@ -27,4 +27,19 @@ $('#sendsms').click(function(){
      });
    }
 
+   $('#class_names').on('change', function() {
+   
+    $.ajax({
+      url:"./php_operations/markscard.php",
+      method:"POST",
+      data:{type: "gettest_p", value:  $(this).attr("data-id")},
+      success:function(data)
+      {
+$('#testname_p').html(data);
+      }
+    });
+  });
+
+
+
 });
