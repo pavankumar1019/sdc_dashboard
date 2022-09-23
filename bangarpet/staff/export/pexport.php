@@ -8,6 +8,20 @@ $classresult=$conn->query($getclassname);
 foreach($classresult as $rowclass){
   $classname=$rowclass['section']."-".$rowclass['name'];
 }
+
+$testid= $_GET['test_id'];
+$gettest="SELECT * FROM ".$current_test." WHERE id=".$testid."";
+$gettestresult=$conn->query($gettest);
+foreach($gettestresult as $gettestresultrow){
+  $maximarks=$gettestresultrow['maxmarks'];
+  $class=$gettestresultrow['class'];
+  $name=$gettestresultrow['name'];
+  $minimarks=$gettestresultrow['minmarks'];
+
+}
+
+
+
 // export to pdf
 $output = '';
 $output .= '
@@ -54,7 +68,7 @@ if($_GET["data"]=="consolidate_pdf")
      ";
  $result = mysqli_query($conn, $query);
 
-$totalmaxmarks= $_SESSION['maxmarks']*6;
+$totalmaxmarks= $maximarks*6;
  if(mysqli_num_rows($result) > 0)
  {
 $tstud="SELECT * FROM ".$tbl_admission." WHERE Class=".$_GET['class_id']."";
@@ -137,7 +151,7 @@ $langname="HIN";
 
   $query1 = "SELECT   ".$tbl_admission.".RollNo, SUM(".$class_test_marks.".l1) as l1, SUM(".$class_test_marks.".l2) as l2,  SUM(".$class_test_marks.".s1) as s1, SUM(".$class_test_marks.".s2) as s2,  SUM(".$class_test_marks.".s3) as s3,  SUM(".$class_test_marks.".s4) as s4,  ".$class_test_marks.".total
   FROM ".$tbl_admission."
-  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_SESSION['test_name']."    WHERE ".$tbl_admission.".Class=".$_GET['class_id']."  
+  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $_GET['test_id']."    WHERE ".$tbl_admission.".Class=".$_GET['class_id']."  
   ";
 $result1 = mysqli_query($conn, $query1);
 
