@@ -68,39 +68,33 @@ $s4="CS";
         </td>
         </tr>
         ';
-// send sms
-// $method = 'sendMessage';
-	
-// Message details
-// $content =  rawurlencode('Dear '.$row['StudentName'].' 
-// your score in Term Test 1 '.$l1.'='.$row['l1'].'/'.$_SESSION['maxmarks'].', EN='.$row['l2'].'/'.$_SESSION['maxmarks'].', '.$s1.'='.$row['s1'].'/'.$_SESSION['maxmarks'].', '.$s2.'='.$row['s2'].'/'.$_SESSION['maxmarks'].', '.$s3.'='.$row['s3'].'/'.$_SESSION['maxmarks'].', '.$s4.'='.$row['s4'].'/'.$_SESSION['maxmarks'].', Total '.$row['total'].'/'.$totalmaxmarks.'.
-// SDC COLLEGE BANGARPET-563114');
-      
+$method = 'sendMessage';
+	//  variable
+    $name ="PAVAN KUMAR";
+    $score="KA-100/100EN-100/100PH-100/100MA-100/100CH-100/100BI-100/100";
+    $testname="Unit Test - 1";
+    // Message details
+$content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is 
+'.$score.'Grand Total :500/600 RESULT : FAIL
+SDC College BANGARPET-563114');
 
-$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
-// Message details
-$numbers = array($row['mobile_no']);
-$sender = urlencode('SDCPUC');
-$message = rawurlencode('Dear '.$row['StudentName'].' 
- your score in '.$_SESSION['testname'].' '.$l1.'='.$row['l1'].'/'.$_SESSION['maxmarks'].', EN='.$row['l2'].'/'.$_SESSION['maxmarks'].', '.$s1.'='.$row['s1'].'/'.$_SESSION['maxmarks'].', '.$s2.'='.$row['s2'].'/'.$_SESSION['maxmarks'].', '.$s3.'='.$row['s3'].'/'.$_SESSION['maxmarks'].', '.$s4.'='.$row['s4'].'/'.$_SESSION['maxmarks'].', Total '.$row['total'].'/'.$totalmaxmarks.'.
-SDC COLLEGE BANGARPET-563114');
- 
-$numbers = implode(',', $numbers);
- // Prepare data for POST request
-$data = array('apikey' => $apiKey, 'numbers' => $numbers,'sender' => $sender,'message' => $message);
-// Send the POST request with cURL
-$ch = curl_init('https://api.textlocal.in/send/');
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
-curl_close($ch);
+    
+    
+    // Prepare data for POST request
+    
+    // Send the POST request with cURL
+//     $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno=7483737698&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
+//     curl_setopt($ch, CURLOPT_POST, false);
+//     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//     $response = curl_exec($ch);
+//         curl_close($ch);
         
     }
-    echo $response;
+//     echo $response;
+echo $content;
 	} 
 	else {
         echo "error";
 	}
-
+        
 ?>
