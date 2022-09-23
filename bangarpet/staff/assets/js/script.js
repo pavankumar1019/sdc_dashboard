@@ -5,7 +5,7 @@ $('#consolidate').click(function(){
     window.location = page;
    });
 $('#consolidatep').click(function(){
-    var value=$('#consolidateclass').val();
+    var value= $('#class_names').val();
     var page = "./export/pexport.php?data=consolidate_pdf&class_id="+value;  
     window.location = page;  
    });
