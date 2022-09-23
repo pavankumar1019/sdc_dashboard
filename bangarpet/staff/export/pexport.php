@@ -20,6 +20,13 @@ foreach($gettestresult as $gettestresultrow){
 
 }
 
+$getclassteacher="SELECT * FROM staff WHERE class_id=".$_GET['class_id']."";
+$getclassteacherresult=$conn->query($getclassteacher);
+foreach($getclassteacherresult as $getclassteacherresultrow){
+  $class_teacher=$getclassteacherresultrow['name'];
+
+}
+
 
 
 // export to pdf
@@ -87,7 +94,7 @@ $totalstudents=mysqli_num_rows($result3);
  <h4> Section: '.$classname.' </h4>
    </td>
    <td colspan=4 style="text-align:center;">
- 
+ '.$class_teacher.'
    </td>
    <td colspan=5 style="text-align:right;">
  <h4>  No of Students: '.$totalstudents.'</h4>
