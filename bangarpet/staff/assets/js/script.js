@@ -14,9 +14,14 @@ if(!$('#class_names').val()=="" && !$('#testname_p').val()==""){
 }  
    });
 $('#sendsms').click(function(){
-    var value=$('#consolidateclass').val();
-    var page = "./export/sendsms.php?data=consolidate_pdf&class_id="+value;  
-    window.location = page;  
+  if(!$('#class_names').val()=="" && !$('#testname_p').val()==""){
+    var value= $('#class_names').val();
+    var page = "./export/sendsms.php?data=consolidate_pdf&class_id="+value+"&test_id="+$('#testname_p').val();  
+    window.location = page; 
+  }else{
+    alert("Please Select Options");
+  }
+ 
    });
    gettest($("#class_name").val());
    function gettest(valueclass){
