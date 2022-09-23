@@ -8,7 +8,7 @@ $gettestresult=$conn->query($gettest);
 foreach($gettestresult as $gettestresultrow){
   $maximarks=$gettestresultrow['maxmarks'];
   $class=$gettestresultrow['class'];
-  $name=$gettestresultrow['name'];
+  $name_test=$gettestresultrow['name'];
   $minimarks=$gettestresultrow['minmarks'];
 
 }
@@ -79,15 +79,20 @@ $s4="CS";
 // '.$l1.'='.$row['l1'].',EN='.$row['l2'].','.$s1.'='.$row['s1'].','.$s2.'='.$row['s2'].','.$s3.'='.$row['s3'].','.$s4.'='.$row['s3'].' TOTAL='.$row['total'].'.
 // </td>
 // </tr>
+if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+        $status="PASS";
+      }else{
+        $status="<b style='color:red'>FAIL</b>";
+      }
 
 $method = 'sendMessage';
 	//  variable
     $name =$row['StudentName'];
     $score=''.$l1.'-'.$row['l1'].'/'. $maximarks.'EN-'.$row['l2'].'/'. $maximarks.''.$s1.'-'.$row['s1'].'/'. $maximarks.''.$s2.'-'.$row['s2'].'/'. $maximarks.''.$s3.'-'.$row['s3'].'/'. $maximarks.''.$s4.'-'.$row['s4'].'/'. $maximarks.'';
-    $testname=$name;
+    $testname=$name_test;
     // Message details
 $content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is 
-'.$score.'Grand Total :500/600 RESULT : FAIL
+'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'
 SDC College BANGARPET-563114');
 
 $html.='
