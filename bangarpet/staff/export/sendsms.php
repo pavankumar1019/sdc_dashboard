@@ -78,6 +78,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   <div class="row">
     <div class="col text-center">
       <input type="hidden" id="class_id" value="<?php echo $_GET['class_id']; ?>">
+      <input type="hidden" id="class_id" value="<?php echo $_GET['test_id']; ?>">
       <button class="btn btn-default bg-warning" id="butsave">Run SMS Server</button>
     </div>
   </div>
@@ -133,13 +134,14 @@ $(document).ready(function() {
 $('#butsave').on('click', function() {
 $("#butsave").attr("disabled", "disabled");
 var class_id = $('#class_id').val();
-
+var test_id=$('#test_id').val();
 if(class_id!=""){
 	$.ajax({
 		url: "./scriptsendsms.php",
 		type: "POST",
 		data: {
-			class_id: class_id
+			class_id: class_id,
+      test_id: test_id
 					
 		},
     beforeSend: function(){
