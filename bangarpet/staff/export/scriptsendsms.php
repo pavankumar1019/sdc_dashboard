@@ -73,16 +73,10 @@ $s3="MT";
 $s4="CS";
 }
 
-// <tr>
-// <td> Name : '.$row['StudentName'].' <br>
-// Message : Dear '.$row['StudentName'].' as scored marks in Term Test - 1 <br>
-// '.$l1.'='.$row['l1'].',EN='.$row['l2'].','.$s1.'='.$row['s1'].','.$s2.'='.$row['s2'].','.$s3.'='.$row['s3'].','.$s4.'='.$row['s3'].' TOTAL='.$row['total'].'.
-// </td>
-// </tr>
 if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
         $status="PASS";
       }else{
-        $status="<b style='color:red'>FAIL</b>";
+        $status="FAIL";
       }
 
 $method = 'sendMessage';
@@ -95,21 +89,23 @@ $content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is
 '.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'
 SDC College BANGARPET-563114');
 
-$html.='
+
+    
+//     Prepare data for POST request
+    
+//     Send the POST request with cURL
+    $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno=7483737698&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
+    curl_setopt($ch, CURLOPT_POST, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+        curl_close($ch);
+        
+        $html.='
 <tr>
 <td>'.rawurldecode($content).' </td>
 </tr>
 ';
-    
-    // Prepare data for POST request
-    
-    // Send the POST request with cURL
-//     $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno=7483737698&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
-//     curl_setopt($ch, CURLOPT_POST, false);
-//     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-//     $response = curl_exec($ch);
-//         curl_close($ch);
-        
+
     }
 //     echo $response;
 
