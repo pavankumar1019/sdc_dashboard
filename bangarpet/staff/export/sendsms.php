@@ -78,7 +78,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   <div class="row">
     <div class="col text-center">
       <input type="hidden" id="class_id" value="<?php echo $_GET['class_id']; ?>">
-      <input type="hidden" id="class_id" value="<?php echo $_GET['test_id']; ?>">
+      <input type="hidden" id="test_id" value="<?php echo $_GET['test_id']; ?>">
       <button class="btn btn-default bg-warning" id="butsave">Run SMS Server</button>
     </div>
   </div>
