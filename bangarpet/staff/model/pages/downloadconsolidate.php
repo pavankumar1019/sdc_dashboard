@@ -34,6 +34,24 @@ include('./db_bpet_sdc/db.php');
                                     </div>
                                     <div class="card-block">
                                         <form>
+                                         <div class="row">
+                                            <div class="col-6">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Select Test</label>
+                                                <select class="form-control" id="consolidateclass"
+                                                    name="class_id" required>
+                                                    <?php
+                        
+   $sql="SELECT * FROM class";
+$result=$conn->query($sql);
+foreach($result as $row){
+    echo '<option value="'.$row['id'].'">'.$row['section'].' - '.$row['name'].'</option>';
+}
+
+   ?>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
                                             <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Select Class</label>
                                                 <select class="form-control" id="consolidateclass"
@@ -49,6 +67,9 @@ foreach($result as $row){
    ?>
                                                 </select>
                                             </div>
+                                            </div>
+                                            </div>
+                                         </div>
                                             <input type="hidden" name="id" id="id">
                                             <input type="hidden" name="type" id="downloadconsolidate">
 
