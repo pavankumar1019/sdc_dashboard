@@ -5,9 +5,13 @@ $('#consolidate').click(function(){
     window.location = page;
    });
 $('#consolidatep').click(function(){
-    var value= $('#class_names').val();
-    var page = "./export/pexport.php?data=consolidate_pdf&class_id="+value;  
-    window.location = page;  
+if(!$('#class_names').val()=="" && !$('#testname_p').val()==""){
+  var value= $('#class_names').val();
+  var page = "./export/pexport.php?data=consolidate_pdf&class_id="+value;  
+  window.location = page;
+}else{
+  alert("Please Select Options");
+}  
    });
 $('#sendsms').click(function(){
     var value=$('#consolidateclass').val();
