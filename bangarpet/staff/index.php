@@ -156,7 +156,7 @@ if(isset($_SESSION["name_staff"]))
                   showCancelButton: true,
                   confirmButtonText: "Login",
                   showLoaderOnConfirm: true,
-                  allowOutsideClick: () => !Swal.isLoading(),
+                allowOutsideClick: false,
                 }).then((result) => {
                   if (result.isConfirmed) {
                     $.ajax({
