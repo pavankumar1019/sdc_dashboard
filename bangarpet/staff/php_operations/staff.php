@@ -34,7 +34,7 @@ function Fstmsms($number,$otp){
 	// Message details
 
 $content =  rawurlencode('Your OTP : '.$otp.'
-SDC College Bangarpet - 563114');
+SDC College Bangarpet ');
 
 
  
