@@ -33,7 +33,7 @@ function Fstmsms($number,$otp){
 	
 	// Message details
 
-$content =  rawurlencode('Your OTP : '.$otp.'
+$content =  rawurlencode('Your OTP : '.$otp.' Please dont share
 SDC College Bangarpet ');
 
 
