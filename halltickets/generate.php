@@ -189,8 +189,9 @@ if($i % 2 == 0){
  ?>
  <section class="line p-5">
 <div style="margin-top:200px;">
-<p style="font-size:18px;"> 
 <h5 align="center">INSTRUCTIONS TO THE STUDENTS</h5>
+<p style="font-size:20px;"> 
+
 1)	Make yourself present at the exam hall 30 minutes before the commencement of examination. <br>
 2)	You should bring the Exam Hall Ticket and Identity card on all the days of examination.  You will not be allowed to write the examination without these. <br>
 3)	You should not involve in any sort of malpractices such as copying from bits, helping others to copy, exchanging of answer booklets or question papers etc. You will be debarred from examination in case you are found indulging in such activities. You will not be allowed to write on subsequent subjects.   <br>
@@ -199,9 +200,10 @@ if($i % 2 == 0){
 </p>
 
 </div>
-<div style="margin-top:450px;">
-<p style="font-size:18px;"> 
+<div style="margin-top:500px;">
 <h5 align="center">INSTRUCTIONS TO THE STUDENTS</h5>
+<p style="font-size:20px;"> 
+
 1)	Make yourself present at the exam hall 30 minutes before the commencement of examination. <br>
 2)	You should bring the Exam Hall Ticket and Identity card on all the days of examination.  You will not be allowed to write the examination without these. <br>
 3)	You should not involve in any sort of malpractices such as copying from bits, helping others to copy, exchanging of answer booklets or question papers etc. You will be debarred from examination in case you are found indulging in such activities. You will not be allowed to write on subsequent subjects.   <br>
