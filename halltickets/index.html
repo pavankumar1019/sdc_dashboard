@@ -78,7 +78,11 @@
         <button type="submit" class="btn btn-secondary">Generate Hall Tickets</button>
       </form>
     </section>
+    <section id="Validate_import">
+
+    </section>
   </main>
+
 
 
 
@@ -92,7 +96,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script>
-    $("form").submit(function () {
+    $("form").submit(function (e) {
+      e.preventDefault();
       alert("Submitted");
       // console.log("test");
       var file_data = $('#excel_file').prop('files')[0];
