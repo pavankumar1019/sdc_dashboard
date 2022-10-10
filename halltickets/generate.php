@@ -177,7 +177,7 @@ $i++;
     <div>
         <h6>Student's Signture</h6>
         <p class="text-right">
-            <img src="./pricipalsign1.png" width="200px" alt=""><br> PRINCIPAL</p>
+            <img src="./pricipalsign1.png" width="200px" alt=""></p>
     </div>
 
 
