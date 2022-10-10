@@ -84,7 +84,7 @@ if(isset($_POST['type'])=="import_validate"){
   foreach($data as $row){
 $i++;
 ?>
-<section class="line">
+<section class="line pt-5 pb-5 <?php if($i % 2 == 0){echo "pb-1";}else{echo "pd-1";} ?>">
 
     <div style="display: flex; flex-direction:row;" class="text-center mt-2 ">
 
