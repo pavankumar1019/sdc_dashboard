@@ -18,7 +18,12 @@ include './vendor/autoload.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
-    <style>
+    <style type="text/css">
+            @media print {
+            .line {
+              page-break-inside: avoid;
+            }
+        }
         table,
         tr,
         th,
@@ -44,7 +49,9 @@ include './vendor/autoload.php';
   left: -8px;
   right: -8px;
 }
+
     </style>
+ 
 </head>
 
 <body class="p-0">
@@ -174,7 +181,7 @@ $i++;
 <?php
 
 if($i % 2 == 0){
-    echo "Even"; 
+    echo "<div class='container-fluid line'></div>"; 
 }
 
 ?>
