@@ -201,7 +201,7 @@ $subjects='
                     <tr>
                         <th scope="col" class="p-1">Reg No: <?php echo $row[1]; ?></th>
                         <th scope="col" class="p-1">Student No.</th>
-                        <th scope="col" class="p-1" colspan="3">Combination</th>
+                        <th scope="col" class="p-1" colspan="3">Combination : <?php echo $row[2]; ?></th>
 
                     </tr>
                     <tr>
