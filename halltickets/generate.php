@@ -191,12 +191,12 @@ if($i % 2 == 0){
 
 // // add
 
-echo '$file = "headerPdfFile.pdf";
+// echo '$file = "headerPdfFile.pdf";
 
-$filename = "IamPdfFile.pdf";
-header("Content-type: application/pdf");
+// $filename = "IamPdfFile.pdf";
+// header("Content-type: application/pdf");
   
-header("Content-Disposition: inline; filename='.$filename.'"); ';
+// header("Content-Disposition: inline; filename='.$filename.'"); ';
 // Header content type
 
 ?>
