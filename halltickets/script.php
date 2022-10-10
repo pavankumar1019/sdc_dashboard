@@ -84,6 +84,9 @@ if($error !=0){
   $html.= '
   </tbody>
   </table>
+  <div>
+  <button class"btn btn-warning">Generate Hall Tickets</button>
+  </div>
 </div>';
 
 echo $html;
