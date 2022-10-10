@@ -96,7 +96,7 @@
   <script>
     $("form").submit(function (e) {
       e.preventDefault();
-      alert("Submitted");
+
       // console.log("test");
       var file_data = $('#excel_file').prop('files')[0];
       var form_data = new FormData();
@@ -119,7 +119,23 @@
 
     $(document).on('click','#button2', function()
 {
-    alert("Dynamic button action");
+  var file_data = $('#excel_file').prop('files')[0];
+      var form_data = new FormData();
+      form_data.append('file', file_data);
+      form_data.append('type', 'generate');
+      $.ajax({
+        url: "./script.php", /*point to server-side PHP script */
+        /* what to expect back from the PHP script, if anything*/
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,
+        type: 'post',
+        success: function (dataReasult) {
+           console.log(dataReasult);
+         
+        }
+      });
 });
 
 
