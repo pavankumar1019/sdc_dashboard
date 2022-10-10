@@ -85,7 +85,7 @@ if(isset($_POST['type'])=="import_validate"){
   foreach($data as $row){
 $i++;
 
-if($row[0]=="PCMB"){
+if($row[2]=="PCMB"){
     if($row[4]=="1"){
         $language='
         <tr>
