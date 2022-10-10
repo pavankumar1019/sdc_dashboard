@@ -45,6 +45,10 @@ if($data[0][3]=="" || $data[0][3]!="student_no"){
   $msg[]="student_no";
   $error+=1;
 }
+if($data[0][4]=="" || $data[0][4]!="language"){
+  $msg[]="language";
+  $error+=1;
+}
 
 for($i=0; $i<sizeof($data[0]); $i++){
       $usercolumn[]=$data[0][$i];
@@ -63,6 +67,7 @@ if($error !=0){
     <th>reg_no</th>
     <th>combination</th>
     <th>student_no</th>
+    <th>language</th>
     
   </tr>
   </thead>
@@ -77,6 +82,7 @@ if($error !=0){
     <td>'.$row[1].'</td>
     <td>'.$row[2].'</td>
     <td>'.$row[3].'</td>
+    <td>'.$row[4].'</td>
    
   </tr>
     ';
