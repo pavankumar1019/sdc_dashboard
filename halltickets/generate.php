@@ -19,46 +19,45 @@ include './vendor/autoload.php';
 
 
     <style type="text/css">
-    @media print {
-        .line {
-            page-break-inside: avoid !important;
+            @media print {
+            .line {
+                page-break-inside: avoid !important;
+            }
         }
-    }
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black !important;
 
-    table,
-    tr,
-    th,
-    td {
-        border: 1px solid black !important;
+        }
 
-    }
+        th {
+            font-size: 20px;
+        }
 
-    th {
-        font-size: 20px;
-    }
+        td {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        div.ten:before {
+  content: "";
+  position: absolute;
+  border: 10px dashed #FF0000;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+}
 
-    td {
-        font-weight: 600;
-        font-size: 18px;
-    }
-
-    div.ten:before {
-        content: "";
-        position: absolute;
-        border: 10px dashed #FF0000;
-        top: -8px;
-        bottom: -8px;
-        left: -8px;
-        right: -8px;
-    }
     </style>
-
+ 
 </head>
 
 <body class="p-0">
 
 
-    <?php
+<?php
 $result = array();
 if(isset($_POST['type'])=="import_validate"){
     if($_FILES["file"]["name"] != '')
@@ -85,103 +84,102 @@ if(isset($_POST['type'])=="import_validate"){
   foreach($data as $row){
 $i++;
 ?>
-    <div class="<?php if($i % 2 == 0){ echo "line"; }?>">
+<section class="line">
 
-        <div style="display: flex; flex-direction:row;" class="text-center mt-2 ">
+    <div style="display: flex; flex-direction:row;" class="text-center mt-2 ">
 
-            <div class="p-2">
-                <img src="logo.jpg" width="100px" alt="" srcset="">
-            </div>
-            <div class="text-center">
-                <h3>SMT. DANAMMA CHANNABASAVIAH (SDC) <br>
-                    INDEPENDENT PU COLLEGE
-                </h3>
-                <h5>Canara Bank Road, Bangarpet-563114</h5>
-                <h4>Exam Admit Card</h4>
-            </div>
-
+        <div class="p-2">
+            <img src="logo.jpg" width="100px" alt="" srcset="">
         </div>
-        <div class="row">
-            <div class="col-6 text-left">
-                <b> I / II PU MID-TERM EXAM - SEP 2022</b>
-            </div>
-            <div class="col-6 text-right">
-                <b>College Code : MM0174</b>
-            </div>
+        <div class="text-center">
+            <h3>SMT. DANAMMA CHANNABASAVIAH (SDC) <br>
+                INDEPENDENT PU COLLEGE
+            </h3>
+            <h5>Canara Bank Road, Bangarpet-563114</h5>
+            <h4>Exam Admit Card</h4>
         </div>
 
-        <div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col" colspan="5" class="p-0">Name of the student : <?php echo $row[0]; ?></th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col" class="p-1">Reg No</th>
-                        <th scope="col" class="p-1">Student No.</th>
-                        <th scope="col" class="p-1" colspan="2">Combination</th>
-
-                    </tr>
-                    <tr>
-                        <th scope="row" class="p-1">Date</th>
-                        <th scope="row" class="p-1" style="text-align: center;">Day</th>
-                        <th scope="row" class="p-1">Subject</th>
-                        <th scope="row" class="p-1">Invigilator Sign</th>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="p-1">08-09-2022</td>
-                        <td scope="row" class="p-1" style="text-align: center;">THUR</td>
-                        <td scope="row" class="p-1">Kannada/Hindi/Urdu/Sanskrit</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="p-1">09-09-2022</td>
-                        <td scope="row" class="p-1" style="text-align: center;">FIR</td>
-                        <td scope="row" class="p-1">Economics / Basic Maths</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="p-1">10-09-2022</td>
-                        <td scope="row" class="p-1" style="text-align: center;">SAT</td>
-                        <td scope="row" class="p-1">Business Studies</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="p-1">12-09-2022</td>
-                        <td scope="row" class="p-1" style="text-align: center;">MON</td>
-                        <td scope="row" class="p-1">Accountancy</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="p-1">13-09-2022</td>
-                        <td scope="row" class="p-1" style="text-align: center;">TUE</td>
-                        <td scope="row" class="p-1">Statistics / Computer Science</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="p-1">14-09-2022</td>
-                        <td scope="row" class="p-1" style="text-align: center;">WED</td>
-                        <td scope="row" class="p-1">English</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                </tbody>
-            </table>
-
-
+    </div>
+    <div class="row">
+        <div class="col-6 text-left">
+         <b>   I / II PU MID-TERM EXAM - SEP 2022</b>
         </div>
-        <div class="text-center mb-5">
-            <b>Note:</b> Exam Timings for all subjects <b>8:45AM</b> to <b>11:45AM</b>
+        <div class="col-6 text-right">
+            <b>College Code : MM0174</b>
         </div>
-        <div>
-            <h6>Student's Signture</h6>
-            <p class="text-right">
-                <img src="./pricipal sign.png" width="200px" alt=""><br> PRINCIPAL
-            </p>
-        </div>
-        <?php
+    </div>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="5" class="p-0">Name of the student : <?php echo $row[0]; ?></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col" class="p-1">Reg No</th>
+                    <th scope="col" class="p-1">Student No.</th>
+                    <th scope="col" class="p-1" colspan="2">Combination</th>
+
+                </tr>
+                <tr>
+                    <th scope="row" class="p-1">Date</th>
+                    <th scope="row" class="p-1" style="text-align: center;">Day</th>
+                    <th scope="row" class="p-1">Subject</th>
+                    <th scope="row" class="p-1">Invigilator Sign</th>
+                </tr>
+                <tr>
+                    <td scope="row" class="p-1">08-09-2022</td>
+                    <td scope="row" class="p-1" style="text-align: center;">THUR</td>
+                    <td scope="row" class="p-1">Kannada/Hindi/Urdu/Sanskrit</td>
+                    <td scope="row" class="p-1"></td>
+                </tr>
+                <tr>
+                    <td scope="row" class="p-1">09-09-2022</td>
+                    <td scope="row" class="p-1" style="text-align: center;">FIR</td>
+                    <td scope="row" class="p-1">Economics / Basic Maths</td>
+                    <td scope="row" class="p-1"></td>
+                </tr>
+                <tr>
+                    <td scope="row" class="p-1">10-09-2022</td>
+                    <td scope="row" class="p-1" style="text-align: center;">SAT</td>
+                    <td scope="row" class="p-1">Business Studies</td>
+                    <td scope="row" class="p-1"></td>
+                </tr>
+                <tr>
+                    <td scope="row" class="p-1">12-09-2022</td>
+                    <td scope="row" class="p-1" style="text-align: center;">MON</td>
+                    <td scope="row" class="p-1">Accountancy</td>
+                    <td scope="row" class="p-1"></td>
+                </tr>
+                <tr>
+                    <td scope="row" class="p-1">13-09-2022</td>
+                    <td scope="row" class="p-1" style="text-align: center;">TUE</td>
+                    <td scope="row" class="p-1">Statistics / Computer Science</td>
+                    <td scope="row" class="p-1"></td>
+                </tr>
+                <tr>
+                    <td scope="row" class="p-1">14-09-2022</td>
+                    <td scope="row" class="p-1" style="text-align: center;">WED</td>
+                    <td scope="row" class="p-1">English</td>
+                    <td scope="row" class="p-1"></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+    <div class="text-center mb-5">
+        <b>Note:</b> Exam Timings for all subjects <b>8:45AM</b> to <b>11:45AM</b>
+    </div>
+    <div>
+        <h6>Student's Signture</h6>
+        <p class="text-right">
+            <img src="./pricipal sign.png" width="200px" alt=""><br> PRINCIPAL</p>
+    </div>
+<?php
 
 if($i % 2 == 0){
     echo ""; 
@@ -190,8 +188,8 @@ if($i % 2 == 0){
 ?>
 
 
-    </div>
-    <?php
+</section>
+<?php
   }
 
 
@@ -212,15 +210,15 @@ if($i % 2 == 0){
 
 ?>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-    </script>
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 
-    <script>
-    window.print();
-    </script>
+        <script>
+            window.print();
+        </script>
 </body>
 
 </html>
