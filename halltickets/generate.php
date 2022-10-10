@@ -188,8 +188,8 @@ $i++;
 if($i % 2 == 0){
  ?>
  <section class="line p-5">
-<div>
-<p style="font-size:16px;"> 
+<div style="margin-top:200px;">
+<p style="font-size:18px;"> 
 <h5 align="center">INSTRUCTIONS TO THE STUDENTS</h5>
 1)	Make yourself present at the exam hall 30 minutes before the commencement of examination. <br>
 2)	You should bring the Exam Hall Ticket and Identity card on all the days of examination.  You will not be allowed to write the examination without these. <br>
@@ -200,7 +200,7 @@ if($i % 2 == 0){
 
 </div>
 <div style="margin-top:250px;">
-<p style="font-size:16px;"> 
+<p style="font-size:18px;"> 
 <h5 align="center">INSTRUCTIONS TO THE STUDENTS</h5>
 1)	Make yourself present at the exam hall 30 minutes before the commencement of examination. <br>
 2)	You should bring the Exam Hall Ticket and Identity card on all the days of examination.  You will not be allowed to write the examination without these. <br>
