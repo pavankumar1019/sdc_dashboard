@@ -84,19 +84,52 @@ if(isset($_POST['type'])=="import_validate"){
   $i=0;
   foreach($data as $row){
 $i++;
-
+if($row[4]=="1"){
+    $language='
+    <tr>
+    <td scope="row" class="p-1">19-10-2022</td>
+    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
+    <td scope="row" class="p-1" style="text-align: center;">WED</td>
+    <td scope="row" class="p-1">Kannada</td>
+    <td scope="row" class="p-1"></td>
+</tr>
+    ';
+}
+if($row[4]=="03"){
+    $language='
+    <tr>
+    <td scope="row" class="p-1">19-10-2022</td>
+    <td scope="row" class="p-1">1:30PM to 4:45PM</td>
+    <td scope="row" class="p-1" style="text-align: center;">WED</td>
+    <td scope="row" class="p-1">HINDI</td>
+    <td scope="row" class="p-1"></td>
+</tr>
+    ';
+}
+if($row[4]=="08"){
+    $language='
+    <tr>
+    <td scope="row" class="p-1">19-10-2022</td>
+    <td scope="row" class="p-1">1:30PM to 4:45PM</td>
+    <td scope="row" class="p-1" style="text-align: center;">WED</td>
+    <td scope="row" class="p-1">URDU</td>
+    <td scope="row" class="p-1"></td>
+</tr>
+    ';
+}
+if($row[4]=="09"){
+    $language='
+    <tr>
+    <td scope="row" class="p-1">19-10-2022</td>
+    <td scope="row" class="p-1">1:30PM to 4:45PM</td>
+    <td scope="row" class="p-1" style="text-align: center;">WED</td>
+    <td scope="row" class="p-1">SANSKRIT</td>
+    <td scope="row" class="p-1"></td>
+</tr>
+    ';
+}
+// stream PCMB
 if($row[2]=="PCMB"){
-    if($row[4]=="1"){
-        $language='
-        <tr>
-        <td scope="row" class="p-1">08-09-2022</td>
-        <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-        <td scope="row" class="p-1" style="text-align: center;">THUR</td>
-        <td scope="row" class="p-1">Kannada</td>
-        <td scope="row" class="p-1"></td>
-    </tr>
-        ';
-    }
 $subjects='
 <tr>
                     <td scope="row" class="p-1">21-10-2022</td>
