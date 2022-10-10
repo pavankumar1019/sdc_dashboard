@@ -59,27 +59,11 @@ if($error !=0){
   <table class="table table-striped">
   <thead>
   <tr>
-    <th>Categories</th>
-    <th>Acession_No</th>
-    <th>ISBN/ISSN</th>
-    <th>Title</th>
-    <th>Pages</th>
-    <th>Price</th>
-    <th>Invoice_No</th>
-    <th>Purchase_Date</th>
-    <th>Rack_ID</th>
-    <th>Main_Author</th>
-    <th>Joint_Author</th>
-    <th>Publisher</th>
-    <th>Place Of Publication</th>
-    <th>Year Of Publication</th>
-    <th>Edition</th>
-    <th>DDCN</th>
-    <th>Series</th>
-    <th>Volume</th>
-    <th>Department</th>
-    <th>Color</th>
-    <th>Note</th>
+    <th>name</th>
+    <th>reg_no</th>
+    <th>combination</th>
+    <th>student_no</th>
+    
   </tr>
   </thead>
   <tbody>
@@ -93,24 +77,7 @@ if($error !=0){
     <td>'.$row[1].'</td>
     <td>'.$row[2].'</td>
     <td>'.$row[3].'</td>
-    <td>'.$row[4].'</td>
-    <td>'.$row[5].'</td>
-    <td>'.$row[6].'</td>
-    <td>'.$row[7].'</td>
-    <td>'.$row[8].'</td>
-    <td>'.$row[9].'</td>
-    <td>'.$row[10].'</td>
-    <td>'.$row[11].'</td>
-    <td>'.$row[12].'</td>
-    <td>'.$row[13].'</td>
-    <td>'.$row[14].'</td>
-    <td>'.$row[15].'</td>
-    <td>'.$row[16].'</td>
-    <td>'.$row[17].'</td>
-    <td>'.$row[18].'</td>
-    <td>'.$row[19].'</td>
-    <td>'.$row[20].'</td>
-    <td>'.$row[21].'</td>
+   
   </tr>
     ';
   }
