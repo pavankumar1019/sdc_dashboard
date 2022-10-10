@@ -191,14 +191,14 @@ if($i % 2 == 0){
 
 // // add
 
-// $file = 'headerPdfFile.pdf';
+echo '$file = "headerPdfFile.pdf";
 
-// $filename = 'IamPdfFile.pdf';
+$filename = "IamPdfFile.pdf";
+header("Content-type: application/pdf");
   
-// // Header content type
-// header('Content-type: application/pdf');
-  
-// header('Content-Disposition: inline; filename="' . $filename . '"');  
+header("Content-Disposition: inline; filename='.$filename.'"); ';
+// Header content type
+
 ?>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
