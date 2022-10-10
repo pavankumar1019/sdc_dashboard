@@ -199,7 +199,7 @@ if($i % 2 == 0){
 </p>
 
 </div>
-<div style="margin-top:250px;">
+<div style="margin-top:450px;">
 <p style="font-size:18px;"> 
 <h5 align="center">INSTRUCTIONS TO THE STUDENTS</h5>
 1)	Make yourself present at the exam hall 30 minutes before the commencement of examination. <br>
