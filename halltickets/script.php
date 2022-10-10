@@ -29,88 +29,20 @@ $error=0;
 $msg=array();
 $usercolumn=array();
 $html='';
-if($data[0][0]=="" || $data[0][0]!="categories"){
-  $msg[]="categories";
+if($data[0][0]=="" || $data[0][0]!="name"){
+  $msg[]="name";
   $error+=1;
 }
-if($data[0][1]=="" || $data[0][1]!="acession_no"){
-  $msg[]="acession_no";
+if($data[0][1]=="" || $data[0][1]!="reg_no"){
+  $msg[]="reg_no";
   $error+=1;
 }
-if($data[0][2]=="" || $data[0][2]!="isbn_issn_no"){
-  $msg[]="acession_no";
+if($data[0][2]=="" || $data[0][2]!="combination"){
+  $msg[]="combination";
   $error+=1;
 }
-if($data[0][3]=="" || $data[0][3]!="title"){
-  $msg[]="title";
-  $error+=1;
-}
-if($data[0][4]=="" || $data[0][4]!="pages"){
-  $msg[]="pages";
-  $error+=1;
-}
-if($data[0][5]=="" || $data[0][5]!="price"){
-  $msg[]="price";
-  $error+=1;
-}
-if($data[0][6]=="" || $data[0][6]!="invoice_no"){
-  $msg[]="invoice_no";
-  $error+=1;
-}
-if($data[0][7]=="" || $data[0][7]!="purchase_date"){
-  $msg[]="purchase_date";
-  $error+=1;
-}
-if($data[0][8]=="" || $data[0][8]!="rack_id"){
-  $msg[]="rack_id";
-  $error+=1;
-}
-if($data[0][9]=="" || $data[0][9]!="main_author"){
-  $msg[]="main_author";
-  $error+=1;
-}
-if($data[0][10]=="" || $data[0][10]!="joint_author"){
-  $msg[]="joint_author";
-  $error+=1;
-}
-if($data[0][11]=="" || $data[0][11]!="publisher"){
-  $msg[]="publisher";
-  $error+=1;
-}
-if($data[0][12]=="" || $data[0][12]!="place_publication"){
-  $msg[]="place_publication";
-  $error+=1;
-}
-if($data[0][13]=="" || $data[0][13]!="year_publication"){
-  $msg[]="year_publication";
-  $error+=1;
-}
-if($data[0][14]=="" || $data[0][14]!="edition"){
-  $msg[]="edition";
-  $error+=1;
-}
-if($data[0][15]=="" || $data[0][15]!="ddcn"){
-  $msg[]="ddcn";
-  $error+=1;
-}
-if($data[0][16]=="" || $data[0][16]!="series"){
-  $msg[]="series";
-  $error+=1;
-}
-if($data[0][17]=="" || $data[0][17]!="volume"){
-  $msg[]="volume";
-  $error+=1;
-}
-if($data[0][18]=="" || $data[0][18]!="department"){
-  $msg[]="department";
-  $error+=1;
-}
-if($data[0][19]=="" || $data[0][19]!="color"){
-  $msg[]="color";
-  $error+=1;
-}
-if($data[0][20]=="" || $data[0][20]!="note"){
-  $msg[]="note";
+if($data[0][3]=="" || $data[0][3]!="student_no"){
+  $msg[]="student_no";
   $error+=1;
 }
 
