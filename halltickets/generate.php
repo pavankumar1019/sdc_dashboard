@@ -102,7 +102,7 @@ $i++;
     </div>
     <div class="row">
         <div class="col-6 text-left">
-         <b>   I / II PU MID-TERM EXAM - SEP 2022</b>
+         <b>   I / II PU MID-TERM Examination - OCT 2022</b>
         </div>
         <div class="col-6 text-right">
             <b>College Code : MM0174</b>
@@ -121,47 +121,54 @@ $i++;
                 <tr>
                     <th scope="col" class="p-1">Reg No</th>
                     <th scope="col" class="p-1">Student No.</th>
-                    <th scope="col" class="p-1" colspan="2">Combination</th>
+                    <th scope="col" class="p-1" colspan="3">Combination</th>
 
                 </tr>
                 <tr>
                     <th scope="row" class="p-1">Date</th>
+                    <th scope="row" class="p-1">Timings</th>
                     <th scope="row" class="p-1" style="text-align: center;">Day</th>
                     <th scope="row" class="p-1">Subject</th>
                     <th scope="row" class="p-1">Invigilator Sign</th>
                 </tr>
                 <tr>
                     <td scope="row" class="p-1">08-09-2022</td>
+                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
                     <td scope="row" class="p-1" style="text-align: center;">THUR</td>
-                    <td scope="row" class="p-1">Kannada/Hindi/Urdu/Sanskrit</td>
+                    <td scope="row" class="p-1">Kannada</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
                     <td scope="row" class="p-1">09-09-2022</td>
+                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
                     <td scope="row" class="p-1" style="text-align: center;">FIR</td>
-                    <td scope="row" class="p-1">Economics / Basic Maths</td>
+                    <td scope="row" class="p-1">Economics</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
                     <td scope="row" class="p-1">10-09-2022</td>
+                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
                     <td scope="row" class="p-1" style="text-align: center;">SAT</td>
-                    <td scope="row" class="p-1">Business Studies</td>
+                    <td scope="row" class="p-1">Business</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
                     <td scope="row" class="p-1">12-09-2022</td>
+                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
                     <td scope="row" class="p-1" style="text-align: center;">MON</td>
                     <td scope="row" class="p-1">Accountancy</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
                     <td scope="row" class="p-1">13-09-2022</td>
+                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
                     <td scope="row" class="p-1" style="text-align: center;">TUE</td>
-                    <td scope="row" class="p-1">Statistics / Computer Science</td>
+                    <td scope="row" class="p-1">Statistics</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
                     <td scope="row" class="p-1">14-09-2022</td>
+                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
                     <td scope="row" class="p-1" style="text-align: center;">WED</td>
                     <td scope="row" class="p-1">English</td>
                     <td scope="row" class="p-1"></td>
@@ -172,7 +179,7 @@ $i++;
 
     </div>
     <div class="text-center mb-5">
-        <b>Note:</b> Exam Timings for all subjects <b>8:45AM</b> to <b>11:45AM</b>
+        <b>Note:</b> Your are not allowed to leave the exam hall before the last bell.</b>
     </div>
     <div>
         <h6>Student's Signture</h6>
