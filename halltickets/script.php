@@ -2,7 +2,7 @@
 
 //import.php
 
-include '../vendor/autoload.php';
+include './vendor/autoload.php';
 
 $result = array();
 if(isset($_POST['type'])=="import_validate"){
