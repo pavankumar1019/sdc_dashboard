@@ -148,7 +148,7 @@ $subjects='
                 <tr>
                 <td scope="row" class="p-1">28-10-2022</td>
                 <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                <td scope="row" class="p-1" style="text-align: center;">SAT</td>
+                <td scope="row" class="p-1" style="text-align: center;">FRI</td>
                 <td scope="row" class="p-1">CHEMISTRY</td>
                 <td scope="row" class="p-1"></td>
             </tr>
