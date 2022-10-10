@@ -21,7 +21,7 @@ include './vendor/autoload.php';
     <style type="text/css">
             @media print {
             .line {
-              page-break-inside: avoid;
+                page-break-inside: avoid !important;
             }
         }
         table,
@@ -85,7 +85,7 @@ if(isset($_POST['type'])=="import_validate"){
 $i++;
 ?>
 
-    <div style="display: flex; flex-direction:row;" class="text-center mt-2">
+    <div style="display: flex; flex-direction:row;" class="text-center mt-2 <?php if($i % 2 == 0){ echo "line"; }?>">
 
         <div class="p-2">
             <img src="logo.jpg" width="100px" alt="" srcset="">
@@ -181,7 +181,7 @@ $i++;
 <?php
 
 if($i % 2 == 0){
-    echo "<div class='container-fluid line'></div>"; 
+    echo ""; 
 }
 
 ?>
