@@ -85,7 +85,7 @@ if($error !=0){
   </tbody>
   </table>
   <div>
-  <button class="btn btn-primary">Generate Hall Tickets</button>
+  <button class="btn btn-primary" id="button2">Generate Hall Tickets</button>
 
   </div>
 </div>';
