@@ -124,7 +124,7 @@
       form_data.append('file', file_data);
       form_data.append('type', 'generate');
       $.ajax({
-        url: "./script.php", /*point to server-side PHP script */
+        url: "./generate.php", /*point to server-side PHP script */
         /* what to expect back from the PHP script, if anything*/
         cache: false,
         contentType: false,
@@ -133,7 +133,7 @@
         type: 'post',
         success: function (dataReasult) {
            console.log(dataReasult);
-         
+         alert("Generating..")
         }
       });
 });
