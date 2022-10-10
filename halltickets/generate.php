@@ -171,7 +171,13 @@ $i++;
         <p class="text-right">
             <img src="./pricipal sign.png" width="200px" alt=""><br> PRINCIPAL</p>
     </div>
+<?php
 
+if($i % 2 == 0){
+    echo "Even"; 
+}
+
+?>
 
 
 <?php
@@ -185,7 +191,14 @@ $i++;
 
 // add
 
+$file = 'headerPdfFile.pdf';
 
+$filename = 'IamPdfFile.pdf';
+  
+// Header content type
+header('Content-type: application/pdf');
+  
+header('Content-Disposition: inline; filename="' . $filename . '"');  
 ?>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
