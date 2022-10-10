@@ -179,16 +179,39 @@ $i++;
         <p class="text-right">
             <img src="./pricipal sign.png" width="200px" alt=""><br> PRINCIPAL</p>
     </div>
+
+
+
+</section>
 <?php
 
 if($i % 2 == 0){
-    echo ""; 
+ ?>
+ <section class="line p-5">
+<div>
+INSTRUCTIONS TO THE STUDENTS
+1)	Make yourself present at the exam hall 30 minutes before the commencement of examination.
+2)	You should bring the Exam Hall Ticket and Identity card on all the days of examination.  You will not be allowed to write the examination without these.
+3)	You should not involve in any sort of malpractices such as copying from bits, helping others to copy, exchanging of answer booklets or question papers etc. You will be debarred from examination in case you are found indulging in such activities. You will not be allowed to write on subsequent subjects.  
+4)	You are not allowed to leave the exam hall before the last bell. 
+5)	Write your hall ticket number and other details as being asked on the answer booklets.
+
+</div>
+<div>
+INSTRUCTIONS TO THE STUDENTS
+1)	Make yourself present at the exam hall 30 minutes before the commencement of examination.
+2)	You should bring the Exam Hall Ticket and Identity card on all the days of examination.  You will not be allowed to write the examination without these.
+3)	You should not involve in any sort of malpractices such as copying from bits, helping others to copy, exchanging of answer booklets or question papers etc. You will be debarred from examination in case you are found indulging in such activities. You will not be allowed to write on subsequent subjects.  
+4)	You are not allowed to leave the exam hall before the last bell. 
+5)	Write your hall ticket number and other details as being asked on the answer booklets.
+
+</div>
+ </section>
+ <?php
 }
 
 ?>
 
-
-</section>
 <?php
   }
 
