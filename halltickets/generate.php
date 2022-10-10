@@ -84,8 +84,9 @@ if(isset($_POST['type'])=="import_validate"){
   foreach($data as $row){
 $i++;
 ?>
+<section class="<?php if($i % 2 == 0){ echo "line"; }?>">
 
-    <div style="display: flex; flex-direction:row;" class="text-center mt-2 <?php if($i % 2 == 0){ echo "line"; }?>">
+    <div style="display: flex; flex-direction:row;" class="text-center mt-2 ">
 
         <div class="p-2">
             <img src="logo.jpg" width="100px" alt="" srcset="">
@@ -187,6 +188,7 @@ if($i % 2 == 0){
 ?>
 
 
+</section>
 <?php
   }
 
