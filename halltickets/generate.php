@@ -374,7 +374,7 @@ if($row[2]=="BASM"){
         <div class="text-center mb-5">
             <b>Note:</b> Your are not allowed to leave the exam hall before the last bell.</b>
         </div>
-        <div style="margin:100px;">
+        <div  <?php if($i % 2 == 0){echo "";}else{echo "style='margin:100px;'";} ?>>
             <h6>Student's Signture</h6>
             <p class="text-right">
             <h6 class="text-right">
