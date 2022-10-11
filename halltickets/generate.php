@@ -375,7 +375,7 @@ if($row[2]=="BASM"){
             <b>Note:</b> Your are not allowed to leave the exam hall before the last bell.</b>
         </div>
         <div >
-            <h6>Student's Signture</h6>
+            <h5>Student's Signture</h5>
           
         </div>
 
