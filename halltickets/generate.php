@@ -378,7 +378,7 @@ if($row[2]=="BASM"){
             <h6>Student's Signture</h6>
             <p class="text-right">
             <h6 class="text-right">
-            <img src="./pricipal sign.png" width="200px" alt=""> <br> PRINCIPAL</h6>
+             <br> PRINCIPAL</h6>
             </p>
         </div>
 
