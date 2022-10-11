@@ -308,7 +308,7 @@ if($row[2]=="BASM"){
     ';
     }
 ?>
-    <section class="line pt-5  <?php if($i % 2 == 0){echo "pb-1";}else{echo "pb-1";} ?>">
+    <section class="line pt-5 " style="padding-bottom:100px;">
 
         <div style="display: flex; flex-direction:row;" class="text-center mt-2 ">
 
