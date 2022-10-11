@@ -360,7 +360,7 @@ if($row[2]=="BASM"){
                     <tr>
                         <td scope="row" class="p-1">20-10-2022</td>
                         <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                        <td scope="row" class="p-1" style="text-align: center;">THR</td>
+                        <td scope="row" class="p-1" style="text-align: center;">THUR</td>
                         <td scope="row" class="p-1">ENGLISH</td>
                         <td scope="row" class="p-1"></td>
                     </tr>
@@ -375,7 +375,7 @@ if($row[2]=="BASM"){
             <b>Note:</b> Your are not allowed to leave the exam hall before the last bell.</b>
         </div>
         <div >
-            <h5>Student's Signture</h5>
+            <h5>Student Signature</h5>
           
         </div>
 
