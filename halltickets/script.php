@@ -90,11 +90,27 @@ if($error !=0){
   $html.= '
   </tbody>
   </table>
-  <div>
+  
+</div>
+
+<form>
+<div class="form-group">
+<label for="exampleInputEmail1">College Address</label>
+<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter College Address" required/>
+
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">College Code</label>
+<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password" required/>
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+</div>
   <button class="btn btn-primary" id="button2">Generate Hall Tickets</button>
 
-  </div>
-</div>';
+  </form>
+';
 
 echo $html;
 
