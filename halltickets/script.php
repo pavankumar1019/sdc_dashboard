@@ -93,18 +93,18 @@ if($error !=0){
   
 </div>
 
-<form>
+<form id="form2">
 <div class="form-group">
 <label for="exampleInputEmail1">College Address</label>
-<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter College Address" required/>
+<input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter College Address" required/>
 
 </div>
 <div class="form-group">
 <label for="exampleInputPassword1">College Code</label>
-<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password" required/>
+<input type="text" class="form-control" id="code" placeholder="code" required/>
 </div>
 <div class="form-check">
-<button class="btn btn-primary" id="button2">Generate Hall Tickets</button>
+<button  class="btn btn-primary" id="button2">Generate Hall Tickets</button>
 </div>
 
   </form>

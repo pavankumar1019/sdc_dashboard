@@ -117,14 +117,17 @@
       });
     });
 
-    $(document).on('click','#button2', function()
+    $(document).on('submit','#form2', function()
 {
+  e.preventDefault();
   var file_data = $('#excel_file').prop('files')[0];
       var form_data = new FormData();
       form_data.append('file', file_data);
       form_data.append('type', 'generate');
+      form_data.append('address', $('#address').val());
+      form_data.append('code', $('#code').val());
       $.ajax({
-        url: "./generate.php", /*point to server-side PHP script */
+        url: "./generate.php", /*point to server-side PHP script code */
         /* what to expect back from the PHP script, if anything*/
         cache: false,
         contentType: false,
