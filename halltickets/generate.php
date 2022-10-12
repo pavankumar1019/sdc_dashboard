@@ -319,7 +319,7 @@ if($row[2]=="BASM"){
                 <h3>SMT. DANAMMA CHANNABASAVIAH (SDC) <br>
                     INDEPENDENT PU COLLEGE
                 </h3>
-                <h5>Canara Bank Road, Bangarpet-563114</h5>
+                <h5><?php echo $_POST['address']; ?></h5>
                 <h4>Exam Admit Card</h4>
             </div>
 
@@ -329,7 +329,7 @@ if($row[2]=="BASM"){
                 <b> I / II PU MID-TERM Examination - OCT 2022</b>
             </div>
             <div class="col-6 text-right">
-                <b>College Code : MM0174</b>
+                <b>College Code : <?php echo $_POST['code'];?></b>
             </div>
         </div>
 
