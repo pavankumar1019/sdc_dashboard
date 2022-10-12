@@ -104,10 +104,8 @@ if($error !=0){
 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password" required/>
 </div>
 <div class="form-check">
-<input type="checkbox" class="form-check-input" id="exampleCheck1">
-
+<button class="btn btn-primary" id="button2">Generate Hall Tickets</button>
 </div>
-  <button class="btn btn-primary" id="button2">Generate Hall Tickets</button>
 
   </form>
 ';
