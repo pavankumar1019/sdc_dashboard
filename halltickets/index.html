@@ -117,7 +117,7 @@
       });
     });
 
-    $(document).on('submit','#form2', function()
+    $(document).on('submit','#form2', function(e)
 {
   e.preventDefault();
   var file_data = $('#excel_file').prop('files')[0];
