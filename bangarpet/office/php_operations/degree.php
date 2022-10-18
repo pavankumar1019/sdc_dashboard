@@ -33,7 +33,7 @@ if($_POST['type']=="sendsms")
   $query = "SELECT * FROM degree_data WHERE id = '".$id."'";
   $result=$conn->query($query);
   foreach($result as $row){
-echo "hello";
+echo $row['id'];
   }
  }
 }
