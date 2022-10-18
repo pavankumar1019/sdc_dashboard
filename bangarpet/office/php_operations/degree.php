@@ -14,6 +14,7 @@ if($_POST['type']=="loadtotal"){
             <td  style="border:1px solid black;">'.$row['name'].'</td>
             <td   style="border:1px solid black;">'.$row['fathername'].'</td>
             <td   style="border:1px solid black;">'.$row['phone_number'].'</td>
+            <td   style="border:1px solid black;">'.$row['ad_year'].'</td>
             <td   style="border:1px solid black;"><div class="custom-control form-control-lg custom-checkbox">
           <input type="checkbox" class="check custom-control-input" name="reg_no[]" id="reg_no" value="'.$row['id'].'">
           <label class="custom-control-label" for="reg_no"  style="user-select: none;">Check Here</label>

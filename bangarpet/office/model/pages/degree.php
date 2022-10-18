@@ -36,6 +36,7 @@
       <th scope="col"  style="border:1px solid black;">Name</th>
       <th scope="col"  style="border:1px solid black;">Father Name</th>
       <th scope="col"  style="border:1px solid black;">Phone number</th>
+      <th scope="col"  style="border:1px solid black;">Admission Year</th>
       <th scope="col"  style="border:1px solid black;">OP</th>
     </tr>
   </thead>
