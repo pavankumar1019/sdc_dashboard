@@ -1,6 +1,6 @@
 <?php
 include('../db_bpet_sdc/db.php');
-if($_POST['type']=="getlist"){
+if($_POST['type']=="loadtotal"){
      $sql="SELECT * FROM degree_data";
     $result=$conn->query($sql);
     if ($result->num_rows > 0) {
