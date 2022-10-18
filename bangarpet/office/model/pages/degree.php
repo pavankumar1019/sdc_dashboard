@@ -44,7 +44,7 @@
   </tbody>
   <tfoot>
     <tr>
-      <td><button  class="btn btn-primary">Send SMS</button></td>
+      <td><button  class="btn btn-primary" id="btn_delete">Send SMS</button></td>
 
     </tr>
   </tfoot>
