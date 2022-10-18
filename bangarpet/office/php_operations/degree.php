@@ -37,14 +37,14 @@ if($_POST['type']=="sendsms")
 $method = 'sendMessage';
 	
 // Message details
-$content =  rawurlencode('Dear '.$row['name'].' was absent on todays class at SDC College '.$branch_name.'.- SDC');
+$content =  rawurlencode('Dear '.$row['name'].' was absent on todays class at SDC College Bangarpet.- SDC');
       
 
 
 // Prepare data for POST request
 
 // Send the POST request with cURL
-$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['phone_number'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
+$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['phone_number'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCDGR');
 curl_setopt($ch, CURLOPT_POST, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
