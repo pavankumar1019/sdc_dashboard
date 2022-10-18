@@ -39,22 +39,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+     <tr>
+      <td scope="col"  style="border:1px solid black;">#</td>
+      <td scope="col"  style="border:1px solid black;">First</td>
+      <td scope="col"  style="border:1px solid black;">Last</td>
+      <td scope="col"  style="border:1px solid black;">Handle</td>
     </tr>
   </tbody>
 </table>
