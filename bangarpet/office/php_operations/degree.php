@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include('../db_bpet_sdc/db.php');
 if($_POST['type']=="loadtotal"){
      $sql="SELECT * FROM degree_data";
