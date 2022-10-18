@@ -33,7 +33,23 @@ if($_POST['type']=="sendsms")
   $query = "SELECT * FROM degree_data WHERE id = '".$id."'";
   $result=$conn->query($query);
   foreach($result as $row){
-echo $row['phone_number'];
+
+$method = 'sendMessage';
+	
+// Message details
+$content =  rawurlencode('Dear '.$stdnumber['name'].' was absent on todays class at SDC College '.$branch_name.'.- SDC');
+      
+
+
+// Prepare data for POST request
+
+// Send the POST request with cURL
+$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$stdnumber['phone_number'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
+curl_setopt($ch, CURLOPT_POST, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+echo $stdnumber['name']."&nbsp;-&nbsp&nbsp; Message Sent";
   }
  }
 }
