@@ -99,6 +99,8 @@
                             <li class=""><a href="./dashboard.php?page=studentdb" class="">Student DB</a></li>
                         </ul>
                     </li>
+                    <li data-username="Sample Page" class="nav-item"><a href="./dashboard.php?page=degree" class="nav-link"><span class="pcoded-micon"><i class="fa fa-users"></i></span><span class="pcoded-mtext">Degree Students</span></a></li>
+
                     <li class="nav-item pcoded-menu-caption">
                         <label>STAFF</label>
                     </li>
