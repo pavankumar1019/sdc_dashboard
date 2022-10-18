@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $('tr').click(function() {
+  $(document).on('click','tr', function()
+{
+  
       var inp = $(this).find('.check');
       var tr = $(this).closest('tr');
       inp.prop('checked', !inp.is(':checked'))
@@ -8,7 +10,8 @@ $(document).ready(function() {
     });
   
     // do nothing when clicking on checkbox, but bubble up to tr
-    $('.check').click(function(e) {
+    $(document).on('click','.check', function(e)
+    {
       e.preventDefault();
     })
 
