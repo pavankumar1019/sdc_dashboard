@@ -41,6 +41,8 @@
     <style>
         .isChecked {
   background-color: grey;
+  color:white;
+  font-weight:bold;
 }
     </style>
 </head>
