@@ -23,5 +23,15 @@ if($_POST['type']=="loadtotal"){
 }
 
 }
-
+if($_POST['type']=="sendsms")
+{
+ foreach($_POST["id"] as $id)
+ {
+  $query = "SELECT * FROM degree_data WHERE id = '".$id."'";
+  $result=$conn->query($sql);
+  foreach($result as $row){
+echo "hello";
+  }
+ }
+}
 ?>
