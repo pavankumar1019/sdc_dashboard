@@ -32,6 +32,11 @@ if($_GET['page']=="tcgenerator"){
      <script src="assets/js/tcgenerator.min.js"></script>
     <?php
 }
+if($_GET['page']=="degree"){
+    ?>
+     <script src="assets/js/degree.min.js"></script>
+    <?php
+}
 ?>
 </body>
 </html>
