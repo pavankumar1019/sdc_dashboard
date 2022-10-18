@@ -39,17 +39,8 @@
       <th scope="col"  style="border:1px solid black;">OP</th>
     </tr>
   </thead>
-  <tbody>
-     <tr>
-      <td scope="row"  style="border:1px solid black;">1</td>
-      <td  style="border:1px solid black;">Pavan Kumar</td>
-      <td   style="border:1px solid black;">PK</td>
-      <td   style="border:1px solid black;">7483737698</td>
-      <td   style="border:1px solid black;"><div class="custom-control form-control-lg custom-checkbox">
-    <input type="checkbox" class="check custom-control-input" id="customCheck1">
-    <label class="custom-control-label" for="customCheck1" style="user-select: none;">Check Here</label>
-</div></td>
-    </tr>
+  <tbody id="total_student">
+     
   </tbody>
 </table>
                                         </div>

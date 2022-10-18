@@ -11,4 +11,26 @@ $(document).ready(function() {
     $('.check').click(function(e) {
       e.preventDefault();
     })
+
+    loadtotalStudents();
+    function loadtotalStudents(){
+     $.ajax({
+         url:'./php_operations/degree.php',
+         method:'POST',
+         data:{type:"loadtotal"},
+         success:function(result)
+         {
+     $('#total_student').html(result);
+         }
+         
+        });
+    }
+
+
+
+
+
+
+
+
   })
