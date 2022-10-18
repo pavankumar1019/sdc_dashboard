@@ -47,7 +47,7 @@
       <td   style="border:1px solid black;">7483737698</td>
       <td   style="border:1px solid black;"><div class="custom-control form-control-lg custom-checkbox">
     <input type="checkbox" class="check custom-control-input" id="customCheck1">
-    <label class="custom-control-label" for="customCheck1">Check Here</label>
+    <label class="custom-control-label" for="customCheck1" style="user-select: none;">Check Here</label>
 </div></td>
     </tr>
   </tbody>
