@@ -26,11 +26,10 @@
                                 <div class="col-sm-12">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h5>Hello !</h5>
+                                            <h5>Your Data Here !</h5>
                                         </div>
                                         <div class="card-block">
-                                            <p>"This software is licensed under PK devloper"
-                                            </p>
+                                      
                                         </div>
                                     </div>
                                 </div>
