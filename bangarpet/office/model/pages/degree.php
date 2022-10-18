@@ -32,18 +32,23 @@
                                         <table class="table " style="border:1px solid black;">
   <thead>
     <tr>
-      <th scope="col"  style="border:1px solid black;">#</th>
-      <th scope="col"  style="border:1px solid black;">First</th>
-      <th scope="col"  style="border:1px solid black;">Last</th>
-      <th scope="col"  style="border:1px solid black;">Handle</th>
+      <th scope="col"  style="border:1px solid black;">#No</th>
+      <th scope="col"  style="border:1px solid black;">Name</th>
+      <th scope="col"  style="border:1px solid black;">Father Name</th>
+      <th scope="col"  style="border:1px solid black;">Phone number</th>
+      <th scope="col"  style="border:1px solid black;">OP</th>
     </tr>
   </thead>
   <tbody>
      <tr>
-      <td scope="col"  style="border:1px solid black;">#</td>
-      <td scope="col"  style="border:1px solid black;">First</td>
-      <td scope="col"  style="border:1px solid black;">Last</td>
-      <td scope="col"  style="border:1px solid black;">Handle</td>
+      <td scope="row"  style="border:1px solid black;">#</td>
+      <td  style="border:1px solid black;">Pavan Kumar</td>
+      <td   style="border:1px solid black;">PK</td>
+      <td   style="border:1px solid black;">7483737698</td>
+      <td   style="border:1px solid black;"><div class="custom-control form-control-lg custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck1">
+    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+</div></td>
     </tr>
   </tbody>
 </table>
