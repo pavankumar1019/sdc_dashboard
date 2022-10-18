@@ -37,6 +37,12 @@
           return true;
       }
     </script>
+
+    <style>
+        .isChecked {
+  background-color: grey;
+}
+    </style>
 </head>
 
 <body>
