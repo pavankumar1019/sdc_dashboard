@@ -29,13 +29,13 @@
                                             <h5>Your Data Here !</h5>
                                         </div>
                                         <div class="card-block">
-                                        <table class="table " style="border:1px solid block;">
+                                        <table class="table " style="border:1px solid black;">
   <thead>
     <tr>
-      <th scope="col"  style="border:1px solid block;">#</th>
-      <th scope="col"  style="border:1px solid block;">First</th>
-      <th scope="col"  style="border:1px solid block;">Last</th>
-      <th scope="col"  style="border:1px solid block;">Handle</th>
+      <th scope="col"  style="border:1px solid black;">#</th>
+      <th scope="col"  style="border:1px solid black;">First</th>
+      <th scope="col"  style="border:1px solid black;">Last</th>
+      <th scope="col"  style="border:1px solid black;">Handle</th>
     </tr>
   </thead>
   <tbody>
