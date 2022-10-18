@@ -36,7 +36,7 @@ $(document).ready(function() {
  
 $('#btn_delete').click(function(){
   
-  if(confirm("Are you sure you want to delete this?"))
+  if(confirm("Are you sure you want to SMS this?"))
   {
    var id = [];
    
@@ -44,12 +44,7 @@ $('#btn_delete').click(function(){
     id[i] = $(this).val();
    });
    
-   if(id.length === 0) //tell you if the array is empty
-   {
-    alert("Please Select atleast one checkbox");
-   }
-   else
-   {
+ 
     $.ajax({
      url:'./php_operations/degree.php',
      method:'POST',
@@ -64,7 +59,7 @@ $('#btn_delete').click(function(){
      }
      
     });
-   }
+   
    
   }
   else
