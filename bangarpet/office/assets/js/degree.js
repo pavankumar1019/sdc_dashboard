@@ -55,6 +55,7 @@ $('#btn_delete').click(function(){
       {
        $('tr#'+id[i]+'').css('background-color', '#ccc');
        $('tr#'+id[i]+'').fadeOut('slow');
+       $('#total_student').html('<b>Attendance Submitted</b>');
       }
      }
      
