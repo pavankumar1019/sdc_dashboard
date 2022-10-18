@@ -42,6 +42,12 @@
   <tbody id="total_student">
      
   </tbody>
+  <tfoot>
+    <tr>
+      <td><button  class="btn btn-primary">Send SMS</button></td>
+
+    </tr>
+  </tfoot>
 </table>
                                         </div>
                                     </div>
