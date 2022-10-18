@@ -9,7 +9,7 @@ if($_POST['type']=="loadtotal"){
     if ($result->num_rows > 0) {
         foreach($result as $row){
             echo '
-            <tr>
+            <tr id='.$row['id'].'>
             <td scope="row"  style="border:1px solid black;">'.$row['id'].'</td>
             <td  style="border:1px solid black;">'.$row['name'].'</td>
             <td   style="border:1px solid black;">'.$row['fathername'].'</td>
@@ -33,7 +33,7 @@ if($_POST['type']=="sendsms")
   $query = "SELECT * FROM degree_data WHERE id = '".$id."'";
   $result=$conn->query($query);
   foreach($result as $row){
-echo $row['id'];
+echo $row['phone_number'];
   }
  }
 }
