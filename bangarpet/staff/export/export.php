@@ -353,10 +353,10 @@ $querycount = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".to
    AND ".$class_test_marks.".s4>=".$s6min." 
   ORDER BY `".$class_test_marks."`.`total` ";
 $resultcount = mysqli_query($conn, $querycount);
-
+$passper=mysqli_num_rows($resultcount)/$totalstudents;
   $output .= '</table>
   <h1>No. Passed :- '.mysqli_num_rows($resultcount).' / '.$totalstudents.'</h1>
-  <h1>Pass % :- '.(mysqli_num_rows($resultcount)/$totalstudents)*100.'%</h1>
+  <h1>Pass % :- '.$passper*100.'%</h1>
   </body>
 </html>';
   $mpdf=new \Mpdf\Mpdf();
