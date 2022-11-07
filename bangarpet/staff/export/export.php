@@ -341,8 +341,21 @@ $output .= '
                  </tr>
                 ';
 }
+
+$querycount = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
+  FROM ".$tbl_admission."
+  LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $testid."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+  AND ".$class_test_marks.".l1>=".$s1min." 
+  AND ".$class_test_marks.".l2>=".$s2min."  
+   AND ".$class_test_marks.".s1>=".$s3min."   
+   AND ".$class_test_marks.".s2>=".$s4min."   
+   AND ".$class_test_marks.".s3>=".$s5min."   
+   AND ".$class_test_marks.".s4>=".$s6min." 
+  ORDER BY `".$class_test_marks."`.`total` ";
+$resultcount = mysqli_query($conn, $querycount);
+
   $output .= '</table>
-  <h1>hello</h1>
+  <h1>No. Passed '.mysqli_num_rows($resultcount).'</h1>
   </body>
 </html>';
   $mpdf=new \Mpdf\Mpdf();
