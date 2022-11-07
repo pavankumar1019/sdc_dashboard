@@ -272,15 +272,44 @@ $output .= '
 }
 $output .= '</table>';
 
+if($examid==9 || $examid==10){
+  if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+    $s1min=21;
+    $s2min=21;
+    $s3min=21;
+    $s4min=21;
+    $s5min=21;
+    $s6min=21;
+  }
+  if($row["combination"]=="EBACS"){
+    $s1min=$minimarks;
+    $s2min=$minimarks;
+    $s3min=$minimarks;
+    $s4min=$minimarks;
+    $s5min=$minimarks;
+    $s6min=21;
+  }else{
+    $s1min=$minimarks;
+    $s2min=$minimarks;
+    $s3min=$minimarks;
+    $s4min=$minimarks;
+    $s5min=$minimarks;
+    $s6min=$minimarks;
+  }
+  
+  }
+  else{
+    $totalmaxmarks= $maximarks*6;
+  }
 $query2 = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".total
   FROM ".$tbl_admission."
   LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id=". $testid."    WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
-  AND ".$class_test_marks.".l1>=".$minimarks." 
-  AND ".$class_test_marks.".l2>=".$minimarks."  
-   AND ".$class_test_marks.".s1>=".$minimarks."   
-   AND ".$class_test_marks.".s2>=".$minimarks."   
-   AND ".$class_test_marks.".s3>=".$minimarks."   
-   AND ".$class_test_marks.".s4>=".$minimarks." 
+  AND ".$class_test_marks.".l1>=".$s1min." 
+  AND ".$class_test_marks.".l2>=".$s2min."  
+   AND ".$class_test_marks.".s1>=".$s3min."   
+   AND ".$class_test_marks.".s2>=".$s4min."   
+   AND ".$class_test_marks.".s3>=".$s5min."   
+   AND ".$class_test_marks.".s4>=".$s6min." 
   ORDER BY `".$class_test_marks."`.`total` DESC LIMIT 20";
 $result2 = mysqli_query($conn, $query2);
 
