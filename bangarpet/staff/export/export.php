@@ -155,12 +155,14 @@ $langname="HIN";
     }else{
       $combination=$row["combination"];
     }
+    $count=0;
     // logic for mid term exam 
  if($examid==9 || $examid==10){
   // if pcmb or pcmcs
   if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
     if($row["l1"]>=35 && $row["l2"]>=35 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=35 && $row["s4"]>=21){
       $status="PASS";
+      $count++;
     }else{
       $status="<b style='color:red'>FAIL</b>";
     }  
@@ -169,6 +171,7 @@ $langname="HIN";
   if($row["combination"]=="EBACS"){
     if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=21){
       $status="PASS";
+      $count++;
     }else{
       $status="<b style='color:red'>FAIL</b>";
     }  
@@ -176,6 +179,7 @@ $langname="HIN";
  else{
   if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
     $status="PASS";
+    $count++;
   }else{
     $status="<b style='color:red'>FAIL</b>";
   }
@@ -186,6 +190,7 @@ $langname="HIN";
 else{
   if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
     $status="PASS";
+    $count++;
   }else{
     $status="<b style='color:blue'>FAIL</b>";
   }
@@ -342,7 +347,20 @@ $output .= '
                 ';
 }
   $output .= '</table>
-  </body>
+<table>
+<tbody>
+<tr>'.$count.'</tr>
+
+
+';
+
+$output .= '
+</tbody>
+</table>
+
+  
+
+</body>
 </html>';
   $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
