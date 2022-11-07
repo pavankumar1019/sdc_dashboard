@@ -142,18 +142,40 @@ $langname="HIN";
       $combination=$row["combination"];
     }
     // logic for mid term exam 
- if($examid==9){
+ if($examid==9 || $examid==10){
   // if pcmb or pcmcs
-  $status="adsd";
+  if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+    if($row["l1"]>=21 && $row["l2"]>=21 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=21 && $row["s4"]>=21){
+      $status="PASS";
+    }else{
+      $status="<b style='color:red'>FAIL</b>";
+    }  
+  }
+  // if ebacs
+  if($row["combination"]=="EBACS"){
+    if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=21){
+      $status="PASS";
+    }else{
+      $status="<b style='color:blue'>FAIL</b>";
+    }  
+  }
+ else{
+  if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+    $status="PASS";
+  }else{
+    $status="<b style='color:red'>FAIL</b>";
+  }
 
  }
-// else{
-//   if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
-//     $status="PASS";
-//   }else{
-//     $status="<b style='color:blue'>FAIL</b>";
-//   }
-// }
+
+ }
+else{
+  if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+    $status="PASS";
+  }else{
+    $status="<b style='color:blue'>FAIL</b>";
+  }
+}
 
 
 
