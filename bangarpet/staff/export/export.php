@@ -273,7 +273,7 @@ $output .= '
 $output .= '</table>';
 
 if($examid==9 || $examid==10){
-  if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+  if($combination=="PCMB" || $row["combination"]=="PCMCS"){
     $s1min=21;
     $s2min=21;
     $s3min=21;
@@ -281,7 +281,7 @@ if($examid==9 || $examid==10){
     $s5min=21;
     $s6min=21;
   }
-  if($row["combination"]=="EBACS"){
+  if($combination=="EBACS"){
     $s1min=$minimarks;
     $s2min=$minimarks;
     $s3min=$minimarks;
