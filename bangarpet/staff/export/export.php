@@ -166,7 +166,7 @@ $langname="HIN";
     }  
   }
   // if ebacs
-  if($row["combination"]=="EBACS"){
+ elseif($row["combination"]=="EBACS"){
     if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=21){
       $status="PASS";
     }else{
