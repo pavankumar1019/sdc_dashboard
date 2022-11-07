@@ -169,13 +169,13 @@ $langname="HIN";
  }
 
  }
-else{
-  if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
-    $status="PASS";
-  }else{
-    $status="<b style='color:blue'>FAIL</b>";
-  }
-}
+// else{
+//   if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+//     $status="PASS";
+//   }else{
+//     $status="<b style='color:blue'>FAIL</b>";
+//   }
+// }
 
 
 
