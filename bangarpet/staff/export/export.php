@@ -127,7 +127,7 @@ $totalstudents=mysqli_num_rows($result3);
       if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
         $totalmaxmarks=510;
       }
-      if($row["combination"]=="EBACS"){
+      elseif($row["combination"]=="EBACS"){
         $totalmaxmarks=570;
       }else{
         $totalmaxmarks= $maximarks*6;
@@ -281,7 +281,7 @@ if($examid==9 || $examid==10){
     $s5min=35;
     $s6min=21;
   }
-  if($combination=="EBACS"){
+  elseif($combination=="EBACS"){
     $s1min=$minimarks;
     $s2min=$minimarks;
     $s3min=$minimarks;
