@@ -77,18 +77,7 @@ foreach($gettestresult as $gettestresultrow){
      ";
  $result = mysqli_query($conn, $query);
 
-if($examid==9 || $examid==10){
-if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
-  $totalmaxmarks= 70*6;
-}if($row["combination"]=="EBACS"){
-  $totalmaxmarks= 570;
-}else{
-  $totalmaxmarks= $maximarks*6;
-}
 
-}else{
-  $totalmaxmarks= $maximarks*6;
-}
  if(mysqli_num_rows($result) > 0)
  {
 $tstud="SELECT * FROM ".$tbl_admission." WHERE Class=".$_SESSION['class_id']."";
@@ -134,6 +123,20 @@ $totalstudents=mysqli_num_rows($result3);
   ';
   while($row = mysqli_fetch_array($result))
   {
+    if($examid==9 || $examid==10){
+      if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+        $totalmaxmarks=70*6;
+      }
+      if($row["combination"]=="EBACS"){
+        $totalmaxmarks=570;
+      }else{
+        $totalmaxmarks= $maximarks*6;
+      }
+      
+      }
+      else{
+        $totalmaxmarks= $maximarks*6;
+      }
     $percentage=($row["total"]/$totalmaxmarks)*100;
     if($row["lang_code"]==1){
 $langname="KAN";
