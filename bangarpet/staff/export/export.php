@@ -357,7 +357,7 @@ $passno=mysqli_num_rows($resultcount);
 $passper=($passno/$totalstudents)*100;
   $output .= '</table>
   <h1>No. Passed :- '.mysqli_num_rows($resultcount).' / '.$totalstudents.'</h1>
-  <h1>Pass % :- '.$passper.'%</h1>
+  <h1>Pass % :- '.round($passper, 2).'%</h1>
   </body>
 </html>';
   $mpdf=new \Mpdf\Mpdf();
