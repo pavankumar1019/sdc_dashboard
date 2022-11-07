@@ -69,7 +69,7 @@ foreach($gettestresult as $gettestresultrow){
   $class=$gettestresultrow['class'];
   $name=$gettestresultrow['name'];
   $minimarks=$gettestresultrow['minmarks'];
-
+  $examid=$gettestresultrow['id'];
 }
      $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
      FROM ".$tbl_admission."
@@ -141,11 +141,44 @@ $langname="HIN";
     }else{
       $combination=$row["combination"];
     }
-if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
-  $status="PASS";
-}else{
-  $status="<b style='color:red'>FAIL</b>";
+    // logic for mid term exam 
+ if($examid=="9"){
+  // if pcmb or pcmcs
+  if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+    if($row["l1"]>=21 && $row["l2"]>=21 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=21 && $row["s4"]>=21){
+      $status="PASS";
+    }else{
+      $status="<b style='color:red'>FAIL</b>";
+    }  
+  }
+  // if ebacs
+  if($row["combination"]=="EBACS"){
+    if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=21){
+      $status="PASS";
+    }else{
+      $status="<b style='color:red'>FAIL</b>";
+    }  
+  }
+ else{
+  if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+    $status="PASS";
+  }else{
+    $status="<b style='color:red'>FAIL</b>";
+  }
+
+ }
+
+ }
+else{
+  if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+    $status="PASS";
+  }else{
+    $status="<b style='color:red'>FAIL</b>";
+  }
 }
+
+
+
    $output .= '
     <tr>  
                          <td>'.$row["RollNo"].'</td>  
