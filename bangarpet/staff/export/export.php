@@ -77,7 +77,18 @@ foreach($gettestresult as $gettestresultrow){
      ";
  $result = mysqli_query($conn, $query);
 
-$totalmaxmarks= $maximarks*6;
+if($examid==9 || $examid==10){
+if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+  $totalmaxmarks= 70*6;
+}if($row["combination"]=="EBACS"){
+  $totalmaxmarks= 570;
+}else{
+  $totalmaxmarks= $maximarks*6;
+}
+
+}else{
+  $totalmaxmarks= $maximarks*6;
+}
  if(mysqli_num_rows($result) > 0)
  {
 $tstud="SELECT * FROM ".$tbl_admission." WHERE Class=".$_SESSION['class_id']."";
