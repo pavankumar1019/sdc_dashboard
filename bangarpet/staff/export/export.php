@@ -125,7 +125,7 @@ $totalstudents=mysqli_num_rows($result3);
   {
     if($examid==9 || $examid==10){
       if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
-        $totalmaxmarks=70*6;
+        $totalmaxmarks=510;
       }
       if($row["combination"]=="EBACS"){
         $totalmaxmarks=570;
@@ -159,7 +159,7 @@ $langname="HIN";
  if($examid==9 || $examid==10){
   // if pcmb or pcmcs
   if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
-    if($row["l1"]>=21 && $row["l2"]>=21 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=21 && $row["s4"]>=21){
+    if($row["l1"]>=21 && $row["l2"]>=21 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=35 && $row["s4"]>=21){
       $status="PASS";
     }else{
       $status="<b style='color:red'>FAIL</b>";
@@ -278,7 +278,7 @@ if($examid==9 || $examid==10){
     $s2min=21;
     $s3min=21;
     $s4min=21;
-    $s5min=21;
+    $s5min=35;
     $s6min=21;
   }
   if($combination=="EBACS"){
