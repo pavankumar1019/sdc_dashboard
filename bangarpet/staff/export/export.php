@@ -346,22 +346,20 @@ $output .= '
                  </tr>
                 ';
 }
+
   $output .= '</table>
 <table>
 <tbody>
+<h1>asdadas</h1>
 <tr>No. Passed : '.$count.'</tr>
-
+</tbody>
+</table>
+</body>
+</html>
 
 ';
 
-$output .= '
-</tbody>
-</table>
 
-  
-
-</body>
-</html>';
   $mpdf=new \Mpdf\Mpdf();
   $mpdf->WriteHTML($output);
   
