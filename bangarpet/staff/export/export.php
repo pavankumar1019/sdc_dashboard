@@ -349,7 +349,7 @@ $output .= '
   $output .= '</table>
 <table>
 <tbody>
-<tr>'.$count.'</tr>
+<tr>No. Passed : '.$count.'</tr>
 
 
 ';
