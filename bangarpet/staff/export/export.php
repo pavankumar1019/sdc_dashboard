@@ -355,7 +355,7 @@ $querycount = "SELECT   ".$tbl_admission.".StudentName, ".$class_test_marks.".to
 $resultcount = mysqli_query($conn, $querycount);
 
   $output .= '</table>
-  <h1>No. Passed '.mysqli_num_rows($resultcount).'</h1>
+  <h1>No. Passed '.mysqli_num_rows($resultcount).' / '.$totalstudents.'</h1>
   </body>
 </html>';
   $mpdf=new \Mpdf\Mpdf();
