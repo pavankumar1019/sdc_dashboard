@@ -159,7 +159,7 @@ $langname="HIN";
  if($examid==9 || $examid==10){
   // if pcmb or pcmcs
   if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
-    if($row["l1"]>=21 && $row["l2"]>=21 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=35 && $row["s4"]>=21){
+    if($row["l1"]>=35 && $row["l2"]>=35 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=35 && $row["s4"]>=21){
       $status="PASS";
     }else{
       $status="<b style='color:red'>FAIL</b>";
@@ -274,8 +274,8 @@ $output .= '</table>';
 
 if($examid==9 || $examid==10){
   if($combination=="PCMB" || $row["combination"]=="PCMCS"){
-    $s1min=21;
-    $s2min=21;
+    $s1min=35;
+    $s2min=35;
     $s3min=21;
     $s4min=21;
     $s5min=35;
