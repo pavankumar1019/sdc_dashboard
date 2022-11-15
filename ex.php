@@ -12,7 +12,11 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $connect = new PDO("mysql:host=localhost; dbname=u430139865_sdc", "u430139865_sdc", "Pavan5639");
-
+header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
+header("Content-Disposition: attachment; filename=abc.xls");  //File name extension was wrong
+header("Expires: 0");
+header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+header("Cache-Control: private",false);
 ?>
 <!DOCTYPE html>
 <html lang="en">
