@@ -185,15 +185,16 @@ SDC College BANGARPET-563114');
         
         $html.='
 <tr>
-<td>'.rawurldecode($content).' </td>
+
+<td>'.$response.' </td>
 </tr>
 ';
 
     }
-    echo $response;
+    // echo $response;
+    // <td>'.rawurldecode($content).' </td>
 
-
-// echo $html;
+echo $html;
 	} 
 	else {
         echo "error";
