@@ -13,7 +13,7 @@ foreach($gettestresult as $gettestresultrow){
   $class=$gettestresultrow['class'];
   $name_test=$gettestresultrow['name'];
   $minimarks=$gettestresultrow['minmarks'];
-
+  $examid=$gettestresultrow['id'];
 }
 
 
@@ -31,6 +31,35 @@ $html.='
 <th style="text-align:center;">Detailes</th>
 </tr>
 ';
+if($examid==9 || $examid==10){
+  if($combination=="PCMB" || $row["combination"]=="PCMCS"){
+    $s1min=35;
+    $s2min=35;
+    $s3min=21;
+    $s4min=21;
+    $s5min=35;
+    $s6min=21;
+  }
+  elseif($combination=="EBACS"){
+    $s1min=$minimarks;
+    $s2min=$minimarks;
+    $s3min=$minimarks;
+    $s4min=$minimarks;
+    $s5min=$minimarks;
+    $s6min=21;
+  }else{
+    $s1min=$minimarks;
+    $s2min=$minimarks;
+    $s3min=$minimarks;
+    $s4min=$minimarks;
+    $s5min=$minimarks;
+    $s6min=$minimarks;
+  }
+  
+  }
+  else{
+    $totalmaxmarks= $maximarks*6;
+  }
 if ($result->num_rows > 0) {
 	foreach($result as $row){
           if($row['lang_code']==1){
@@ -75,17 +104,80 @@ $s2="CH";
 $s3="MT";
 $s4="CS";
 }
-
-if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
-        $status="PASS";
-      }else{
-        $status="FAIL";
+if($examid==9 || $examid==10){
+  if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+    $totalmaxmarks=510;
+  }
+  elseif($row["combination"]=="EBACS"){
+    $totalmaxmarks=570;
+  }else{
+    $totalmaxmarks= $maximarks*6;
+  }
+  
+  }
+  else{
+    $totalmaxmarks= $maximarks*6;
+  }
+$percentage=($row["total"]/$totalmaxmarks)*100;
+if($row["lang_code"]==1){
+$langname="KAN";
+}
+if($row["lang_code"]==3){
+$langname="HIN";
+}
+if($row["lang_code"]==8){
+  $langname="URD";
       }
+      if($row["lang_code"]==9){
+        $langname="SAN";
+            }
+if($row["combination"]=="BASM"){
+  $combination='MBAS';
+}else{
+  $combination=$row["combination"];
+}
+// logic for mid term exam 
+if($examid==9 || $examid==10){
+// if pcmb or pcmcs
+if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
+if($row["l1"]>=35 && $row["l2"]>=35 && $row["s1"]>=21 && $row["s2"]>=21 && $row["s3"]>=35 && $row["s4"]>=21){
+  $status="PASS";
+}else{
+  $status="<b style='color:red'>FAIL</b>";
+}  
+}
+// if ebacs
+elseif($row["combination"]=="EBACS"){
+if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=21){
+  $status="PASS";
+}else{
+  $status="<b style='color:red'>FAIL</b>";
+}  
+}
+else{
+if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+$status="PASS";
+}else{
+$status="<b style='color:red'>FAIL</b>";
+}
+
+}
+
+}
+else{
+if($row["l1"]>=$minimarks && $row["l2"]>=$minimarks && $row["s1"]>=$minimarks && $row["s2"]>=$minimarks && $row["s3"]>=$minimarks && $row["s4"]>=$minimarks){
+$status="PASS";
+}else{
+$status="<b style='color:blue'>FAIL</b>";
+}
+}
+
+
 
 $method = 'sendMessage';
 	//  variable
     $name =$row['StudentName'];
-    $score=''.$l1.'-'.$row['l1'].'/'. $maximarks.'EN-'.$row['l2'].'/'. $maximarks.''.$s1.'-'.$row['s1'].'/'. $maximarks.''.$s2.'-'.$row['s2'].'/'. $maximarks.''.$s3.'-'.$row['s3'].'/'. $maximarks.''.$s4.'-'.$row['s4'].'/'. $maximarks.'';
+    $score=''.$l1.'-'.$row['l1'].'/'. $s1min.'EN-'.$row['l2'].'/'. $s2min.''.$s1.'-'.$row['s1'].'/'. $s3min.''.$s2.'-'.$row['s2'].'/'. $s4min.''.$s3.'-'.$row['s3'].'/'. $s5min.''.$s4.'-'.$row['s4'].'/'. $s6min.'';
     $testname=$name_test;
     // Message details
 $content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is 
@@ -97,11 +189,11 @@ SDC College BANGARPET-563114');
 //     Prepare data for POST request
 
 //     Send the POST request with cURL
-    $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['mobile_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
-    curl_setopt($ch, CURLOPT_POST, false);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
-        curl_close($ch);
+    // $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['mobile_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
+    // curl_setopt($ch, CURLOPT_POST, false);
+    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    // $response = curl_exec($ch);
+    //     curl_close($ch);
         
         $html.='
 <tr>
@@ -110,7 +202,7 @@ SDC College BANGARPET-563114');
 ';
 
     }
-    echo $response;
+    // echo $response;
 
 
 echo $html;
