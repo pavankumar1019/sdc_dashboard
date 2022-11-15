@@ -66,7 +66,7 @@ $result = mysqli_query($conn, $query);
   <tr>
     <td>Id</td>
     <td><?php echo $row['StudentName'];?></td>
-    <td>50</td>
+    <td><?php echo $row['combination'];?></td>
     <td>Jill</td>
     <td>Smith</td>
     <td>50</td>
