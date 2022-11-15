@@ -46,19 +46,19 @@ if($examid==9 || $examid==10){
     $s6min=70;
   }
   elseif($row["combination"]=="EBACS"){
-    $s1min=$minimarks;
-    $s2min=$minimarks;
-    $s3min=$minimarks;
-    $s4min=$minimarks;
-    $s5min=$minimarks;
+    $s1min=$maximarks;
+    $s2min=$maximarks;
+    $s3min=$maximarks;
+    $s4min=$maximarks;
+    $s5min=$maximarks;
     $s6min=70;
   }else{
-    $s1min=$minimarks;
-    $s2min=$minimarks;
-    $s3min=$minimarks;
-    $s4min=$minimarks;
-    $s5min=$minimarks;
-    $s6min=$minimarks;
+    $s1min=$maximarks;
+    $s2min=$maximarks;
+    $s3min=$maximarks;
+    $s4min=$maximarks;
+    $s5min=$maximarks;
+    $s6min=$maximarks;
   }
   
   }
