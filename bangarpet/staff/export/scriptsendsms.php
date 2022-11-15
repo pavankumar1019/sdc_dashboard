@@ -38,12 +38,12 @@ if ($result->num_rows > 0) {
 // data
 if($examid==9 || $examid==10){
   if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
-    $s1min=35;
-    $s2min=35;
-    $s3min=21;
-    $s4min=21;
-    $s5min=35;
-    $s6min=21;
+    $s1min=100;
+    $s2min=100;
+    $s3min=70;
+    $s4min=70;
+    $s5min=100;
+    $s6min=70;
   }
   elseif($row["combination"]=="EBACS"){
     $s1min=$minimarks;
@@ -51,7 +51,7 @@ if($examid==9 || $examid==10){
     $s3min=$minimarks;
     $s4min=$minimarks;
     $s5min=$minimarks;
-    $s6min=21;
+    $s6min=70;
   }else{
     $s1min=$minimarks;
     $s2min=$minimarks;
