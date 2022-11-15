@@ -17,6 +17,13 @@ header("Content-Disposition: attachment; filename=abc.xls");  //File name extens
 header("Expires: 0");
 header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 header("Cache-Control: private",false);
+
+$query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
+FROM ".$tbl_admission."
+LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id='10'   WHERE ".$tbl_admission.".Class=".$_SESSION['class_id']."  
+";
+$result = mysqli_query($conn, $query);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,8 +53,14 @@ header("Cache-Control: private",false);
     <th>s4</th>
     <th>status</th>
   </tr>
+  <?php
+  if(mysqli_num_rows($result) > 0)
+  {
+  while($row = mysqli_fetch_array($result))
+  {
+?>
   <tr>
-    <td>Jill</td>
+    <td><?php echo $row['id'] ?></td>
     <td>Smith</td>
     <td>50</td>
     <td>Jill</td>
@@ -59,32 +72,10 @@ header("Cache-Control: private",false);
     <td>Jill</td>
   
   </tr>
-  <tr>
-  <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
-  
-  </tr>
-  <tr>
-  <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
-  
-  </tr>
+<?php
+  }   
+  }
+ ?>
 </table>
 </body>
 </html>
