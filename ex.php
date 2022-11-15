@@ -7,7 +7,8 @@ $servername = "localhost";
 $username = "u430139865_sdc";
 $password = "Pavan5639";
 $dbname = "u430139865_sdc";
-
+$tbl_admission="tbl_admission";
+$class_test_marks="class_test_marks_bpet";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
