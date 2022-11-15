@@ -31,6 +31,11 @@ $html.='
 <th style="text-align:center;">Detailes</th>
 </tr>
 ';
+
+if ($result->num_rows > 0) {
+	foreach($result as $row){
+
+// data
 if($examid==9 || $examid==10){
   if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
     $s1min=35;
@@ -60,8 +65,7 @@ if($examid==9 || $examid==10){
   else{
     $totalmaxmarks= $maximarks*6;
   }
-if ($result->num_rows > 0) {
-	foreach($result as $row){
+
           if($row['lang_code']==1){
 $l1="KN";
           }
