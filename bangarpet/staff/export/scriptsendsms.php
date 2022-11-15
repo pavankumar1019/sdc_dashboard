@@ -32,7 +32,7 @@ $html.='
 </tr>
 ';
 if($examid==9 || $examid==10){
-  if($combination=="PCMB" || $row["combination"]=="PCMCS"){
+  if($row["combination"]=="PCMB" || $row["combination"]=="PCMCS"){
     $s1min=35;
     $s2min=35;
     $s3min=21;
@@ -40,7 +40,7 @@ if($examid==9 || $examid==10){
     $s5min=35;
     $s6min=21;
   }
-  elseif($combination=="EBACS"){
+  elseif($row["combination"]=="EBACS"){
     $s1min=$minimarks;
     $s2min=$minimarks;
     $s3min=$minimarks;
