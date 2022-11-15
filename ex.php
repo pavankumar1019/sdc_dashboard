@@ -62,21 +62,25 @@ $result = mysqli_query($conn, $query);
   {
   while($row = mysqli_fetch_array($result))
   {
-?>
-  <tr>
-    <td>Id</td>
-    <td><?php echo $row['StudentName'];?></td>
-    <td><?php echo $row['combination'];?></td>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td></td>
-    <td></td>
-  
-  </tr>
-<?php
+    $output = '';
+  $output .= '
+  <tr>  
+                       <td>'.$row["RollNo"].'</td>  
+                       <td>'.$row["StudentName"].'</td>  
+                       <td>'.$row["father_name"].'</td>  
+                       <td>'.$combination.'</td>  
+                       <td>'.$langname.'</td>  
+                       <td>'.$row["l1"].'</td>  
+                       <td>'.$row["l2"].'</td>  
+                       <td>'.$row["s1"].'</td>  
+                       <td>'.$row["s2"].'</td>  
+                       <td>'.$row["s3"].'</td>  
+                       <td>'.$row["s4"].'</td>  
+                       <td>'.$row["total"].'</td>  
+                 
+                  </tr>
+ ';
+ echo $output;
   }   
   }
  ?>
