@@ -16,11 +16,9 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $connect = new PDO("mysql:host=localhost; dbname=u430139865_sdc", "u430139865_sdc", "Pavan5639");
-// header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
-// header("Content-Disposition: attachment; filename=abc.xls");  //File name extension was wrong
-// header("Expires: 0");
-// header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-// header("Cache-Control: private",false);
+header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
+header("Content-Disposition: attachment; filename=abc.xls");  
+
 
 $query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
 FROM ".$tbl_admission."
