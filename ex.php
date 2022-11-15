@@ -67,6 +67,8 @@ $result = mysqli_query($conn, $query);
   <tr>  
                        <td>'.$row["RollNo"].'</td>  
                        <td>'.$row["StudentName"].'</td>  
+                       <td>'.$row["combination"].'</td>  
+
                                     <td>'.$row["l1"].'</td>  
                        <td>'.$row["l2"].'</td>  
                        <td>'.$row["s1"].'</td>  
