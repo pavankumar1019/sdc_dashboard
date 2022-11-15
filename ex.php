@@ -71,8 +71,8 @@ $result = mysqli_query($conn, $query);
     <td>50</td>
     <td>Jill</td>
     <td>Smith</td>
-    <td>50</td>
-    <td>Jill</td>
+    <td></td>
+    <td></td>
   
   </tr>
 <?php
