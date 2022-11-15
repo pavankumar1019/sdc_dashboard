@@ -63,7 +63,7 @@ $result = mysqli_query($conn, $query);
   {
 ?>
   <tr>
-    <td><?php echo $row['id'] ?></td>
+    <td><?php echo $row['name']; ?></td>
     <td>Smith</td>
     <td>50</td>
     <td>Jill</td>
