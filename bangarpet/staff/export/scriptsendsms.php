@@ -119,23 +119,7 @@ if($examid==9 || $examid==10){
     $totalmaxmarks= $maximarks*6;
   }
 $percentage=($row["total"]/$totalmaxmarks)*100;
-if($row["lang_code"]==1){
-$langname="KAN";
-}
-if($row["lang_code"]==3){
-$langname="HIN";
-}
-if($row["lang_code"]==8){
-  $langname="URD";
-      }
-      if($row["lang_code"]==9){
-        $langname="SAN";
-            }
-if($row["combination"]=="BASM"){
-  $combination='MBAS';
-}else{
-  $combination=$row["combination"];
-}
+
 // logic for mid term exam 
 if($examid==9 || $examid==10){
 // if pcmb or pcmcs
