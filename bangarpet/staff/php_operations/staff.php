@@ -89,7 +89,8 @@ if ($result->num_rows > 0) {
         "img"=>$row['photo'],
 		"id"=>$row['id'],
 		"class"=>$row['class'],
-        "class_id"=>$row['class_id']
+        "class_id"=>$row['class_id'],
+		"value"=>$otp
 	));
   }
 } 
