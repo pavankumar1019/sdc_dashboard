@@ -7,6 +7,8 @@ $servername = "localhost";
 $username = "u430139865_sdc";
 $password = "Pavan5639";
 $dbname = "u430139865_sdc";
+$tbl_admission="tbl_admission";
+$class_test_marks="class_test_marks_bpet";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -14,13 +16,14 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $connect = new PDO("mysql:host=localhost; dbname=u430139865_sdc", "u430139865_sdc", "Pavan5639");
-// header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
-// header("Content-Disposition: attachment; filename=abc.xls");  
+header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
+header("Content-Disposition: attachment; filename=abc.xls");  
 
-$query ="SELECT staff.name, staff.phone_no, class.name, class.section
-FROM staff
-FULL OUTER JOIN staff ON staff.CustomerID=Orders.CustomerID
-ORDER BY Customers.CustomerName;";
+
+$query = "SELECT ".$tbl_admission.".StudentName,  ".$tbl_admission.".father_name, ".$tbl_admission.".combination, ".$tbl_admission.".lang_code, ".$tbl_admission.".mobile_no, ".$tbl_admission.".RollNo, ".$class_test_marks.".l1, ".$class_test_marks.".l2,  ".$class_test_marks.".s1, ".$class_test_marks.".s2,  ".$class_test_marks.".s3,  ".$class_test_marks.".s4,  ".$class_test_marks.".total
+FROM ".$tbl_admission."
+LEFT JOIN ".$class_test_marks." ON ".$tbl_admission.".RollNo = ".$class_test_marks.".roll AND ".$class_test_marks.".test_id='10'   WHERE ".$tbl_admission.".class_name=1
+";
 $result = mysqli_query($conn, $query);
 
 ?>
