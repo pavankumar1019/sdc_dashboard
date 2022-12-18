@@ -100,7 +100,7 @@
 	curl_close($ch);
 	
 	// Process your response here
-	echo $response;
+	echo $response[0];
 ?>
                       </h3>
                     </div>
