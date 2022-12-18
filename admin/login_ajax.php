@@ -9,7 +9,7 @@
 			$row  = mysqli_fetch_array($result);
 			if(is_array($row)){
 		// Account details
-	$apiKey = urlencode('Your apiKey');
+	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
 	$rndno=rand(100000, 999999);
 	// Message details
 	$numbers = array(918123456789, 918987654321);
