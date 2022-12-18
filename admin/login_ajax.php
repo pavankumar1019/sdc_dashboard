@@ -44,4 +44,39 @@ error_reporting(E_ALL);
 			echo json_encode(array("statusCode"=>201));
 		}
 	}
+
+
+
+
+
+  // function to login 
+  function Fstmsms($number,$otp){
+ 	// Account details
+   $apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
+	
+   // Message details
+   $numbers = array($number);
+   $sender = urlencode('SDCPUC');
+   $message = rawurlencode('Dear # your score in # is 
+   #Grand Total #
+   SDC College OTP:'.$otp);
+  
+   $numbers = implode(',', $numbers);
+  
+   // Prepare data for POST request
+   $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
+  
+   // Send the POST request with cURL
+   $ch = curl_init('https://api.textlocal.in/send/');
+   curl_setopt($ch, CURLOPT_POST, true);
+   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+   $response = curl_exec($ch);
+   curl_close($ch);
+   
+   // Process your response here
+   echo $response;
+  
+  }
+  
 ?>
