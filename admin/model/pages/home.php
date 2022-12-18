@@ -102,7 +102,7 @@
 
   $result = json_decode($response, true);
 	// Process your response here
-  echo $result[1][1];
+  echo $result['balance']['sms'];
 ?>
                       </h3>
                     </div>
