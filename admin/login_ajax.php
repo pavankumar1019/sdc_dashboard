@@ -22,12 +22,7 @@ error_reporting(E_ALL);
                 "statusCode"=>200,
                 "phone"=>substr($row['phone_no'], -3),
                 "name"=>$row['name'],
-                "branch"=>$row['branch'],
-                "role"=>$row['role'],
-                "img"=>$row['photo'],
-                "id"=>$row['id'],
-                "class"=>$row['class'],
-                "class_id"=>$row['class_id'],
+           
                 "value"=>$otp
             ));
           }
