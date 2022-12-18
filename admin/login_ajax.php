@@ -7,12 +7,15 @@
             $key=$_POST['key'];
 			$result = mysqli_query($connection,"SELECT * FROM user_office WHERE user_name='$userId' AND user_key='$key'");
 			$row  = mysqli_fetch_array($result);
+            foreach($row as $dt){
+                $phone=$dt['phone_no'];
+            }
 			if(is_array($row)){
 		// Account details
 	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
 	$rndno=rand(100000, 999999);
 	// Message details
-	$numbers = array(918123456789, 918987654321);
+	$numbers = array(918123456789);
 	$sender = urlencode('SDCPUC');
 	$message = rawurlencode('Dear # your score in # is 
 #Grand Total 
