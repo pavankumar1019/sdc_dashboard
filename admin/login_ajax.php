@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	error_reporting(0);
-	include 'database.php';
+    include ('./db_bpet_sdc/db.php');
 	if($_POST["type"]==2){
 		    $userId=$_POST['userId'];
             $key=$_POST['key'];
