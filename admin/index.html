@@ -22,15 +22,15 @@
           <div class="card-body">
             <form>
               <div class="form-group">
-                <label for="exampleDropdownFormEmail1" class="form-label">User ID</label>
-                <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="User_ID">
+                <label for="userId" class="form-label">User ID</label>
+                <input type="text" class="form-control" id="userId"  placeholder="User_ID">
               </div>
               <div class="form-group">
-                <label for="exampleDropdownFormPassword1" class="form-label">Key</label>
-                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                <label for="key" class="form-label">Key</label>
+                <input type="password" class="form-control" id="key" placeholder="Password">
               </div>
          
-              <button type="submit" class="btn btn-sm btn-block btn-primary"> Continue</button>
+              <button type="submit" class="btn btn-sm btn-block btn-primary" id="continue"> Continue</button>
             </form>
           </div>
           <div class="card-footer text-center">
@@ -76,5 +76,57 @@
     <!-- If you prefer vanilla JS these are the only required scripts -->
     <!-- script src="./dist/js/vendor.js"></script>
     <script src="./dist/js/adminx.vanilla.js"></script-->
+      <script>
+        $(document).on('click','#continue',function(e) {
+            var userId = $('#userId').val();
+            var key = $('#key').val();
+            $.ajax({
+                 data: {
+                  type: 2,
+                  userId: userId,
+                  key: key
+                        
+                },
+                 type: "post",
+                 url: "login_ajax.php",
+                success: function(dataResult){
+                  var dataResult = JSON.parse(dataResult);
+                  if(dataResult.statusCode==200){
+                    $("#exampleModalCenter").show();
+                   
+                    
+                  }
+                  else{
+                      alert(dataResult);
+                  }
+                  
+                }
+          });
+          
+        });
+        $(document).on('click','#login',function(e) {
+            var otp = $('#otp').val();
+            $.ajax({
+                data:   {
+                      type: 3,
+                      otp: otp
+                            
+                    },
+                type: "post",
+                url : "login_ajax.php",
+                success: function(dataResult){
+                  var dataResult = JSON.parse(dataResult);
+                  if(dataResult.statusCode==200){
+                    alert("Login successful !");
+                  }
+                  else{
+                      alert("Invalid OTP !");
+                  }
+                  
+                }
+          });
+          
+        });
+        </script>
   </body>
 </html>
