@@ -5,7 +5,6 @@
 	if($_POST["type"]==2){
 		    $userId=$_POST['userId'];
             $key=$_POST['key'];
-			
             $sql = "SELECT * FROM user_office WHERE user_name='$userId' AND user_key='$key'";
             $result = $conn->query($sql);
         
