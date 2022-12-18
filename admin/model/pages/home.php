@@ -102,7 +102,7 @@
 
   $result = json_decode($response, true);
 	// Process your response here
-	echo $result->status;
+  var_dump($result);
 ?>
                       </h3>
                     </div>
