@@ -99,8 +99,10 @@
 	$response = curl_exec($ch);
 	curl_close($ch);
 	
+
+  $data = json_decode($response, true);
 	// Process your response here
-	echo $response['balance']['sms'];
+	echo $data[0]['sms'];
 ?>
                       </h3>
                     </div>
