@@ -100,7 +100,7 @@
 	curl_close($ch);
 	
 	// Process your response here
-	echo $response[0];
+	echo $response['balance'];
 ?>
                       </h3>
                     </div>
