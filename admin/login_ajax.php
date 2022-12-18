@@ -5,7 +5,7 @@
 	if($_POST["type"]==2){
 		    $userId=$_POST['userId'];
             $key=$_POST['key'];
-			$result = mysqli_query($connection,"SELECT * FROM user_office WHERE user_name='$userId' AND user_name='$user_key' ");
+			$result = mysqli_query($connection,"SELECT * FROM user_office WHERE user_name='$userId' AND user_name='$key' ");
 			$row  = mysqli_fetch_array($result);
 			if(is_array($row)){
 		// Account details
