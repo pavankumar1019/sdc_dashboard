@@ -100,9 +100,9 @@
 	curl_close($ch);
 	
 
-  $data = json_decode($response, true);
+  $result = json_decode($response, true);
 	// Process your response here
-	echo $data;
+	echo $result;
 ?>
                       </h3>
                     </div>
