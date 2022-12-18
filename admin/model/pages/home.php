@@ -102,7 +102,7 @@
 
   $data = json_decode($response, true);
 	// Process your response here
-	echo $data[0]['sms'];
+	echo $data;
 ?>
                       </h3>
                     </div>
