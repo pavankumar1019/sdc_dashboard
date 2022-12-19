@@ -54,56 +54,50 @@
                         <div class="table-responsive-md">
                             <table class="table table-actions table-striped table-hover mb-0">
                                 <thead>
-                                    <tr>
-                                       
-                                        <th scope="col">Date</th>
-                                        <th scope="col">To</th>
-                                        <th scope="col">From</th>
-                                        <th scope="col">Message</th>
+                                <tr>
+                                        <th scope="col">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-all">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <th scope="col">Detailes</th>
+                                        <th scope="col">Fixation</th>
+                                        <th scope="col">Paid Detailes</th>
                                         <th scope="col">Status</th>
+                                        <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php
-	// Account details
-	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
-	// Prepare data for POST request
-	$data = array('apikey' => $apiKey);
-	// Send the POST request with cURL
-	$ch = curl_init('https://api.textlocal.in/get_history_api/');
-	curl_setopt($ch, CURLOPT_POST, true);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	$report = curl_exec($ch);
-	curl_close($ch);
-	$data=json_decode($report, true);
-	// Process your response here
-    foreach($data['messages'] as $repo){
-      ?>
-         <tr>
-                                       
+                                <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
                                         <td>
-                                            <?php echo $repo['datetime']; ?>
-                                            
+                                            <h2>PAVAN KUMAR S</h2>
+                                            SRINIVASA <br>
+                                            1 PUC EBACS
                                         </td>
                                         <td>
-                                            <h5><b><?php echo $repo['number']; ?></b></h1>
+                                            <h5><b>₹30,000 </b></h1>
                                         </td>
                                         <td>
-                                        <?php echo $repo['sender']; ?>
-                                        
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                                         </td>
                                         <td>
-                                        <?php echo $repo['content']; ?>
+                                            <span class="badge badge-pill badge-primary">Balance</span>
                                         </td>
                                         <td>
-                                        <?php echo $repo['status']; ?>
+                                            <button class="btn btn-sm btn-primary" type="button"  data-toggle="modal" data-target="#exampleModalCenter">Collect</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
                                         </td>
                                     </tr>
-      <?php
         
-    };
-?>
+
                                  
                                    
                                     
