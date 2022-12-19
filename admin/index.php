@@ -173,7 +173,7 @@ if(isset($_SESSION["user_id"]))
                     location.reload();
                   }
                   else{
-                  
+                    $('#otp_resent').show();
                     $('#otp_resent').toggleClass("alert-danger");
                       $('#otp_resent').html('Invalid OTP !');
                   }
