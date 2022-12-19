@@ -49,7 +49,7 @@
               <a class="dropdown-item" href="#">My Tasks</a>
               <a class="dropdown-item" href="#">Settings</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-danger" href="#">Sign out</a>
+              <a class="dropdown-item text-danger" href="./logout.php">Sign out</a>
             </div>
           </li>
         </ul>
