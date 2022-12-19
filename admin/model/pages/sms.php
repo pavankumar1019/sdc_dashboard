@@ -66,44 +66,9 @@
                                             <input type="datetime-local" class="form-control" id="exampleFormControlSelect1">
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlSelect1">
-                                                Select Course</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option value="">-Select one-</option>
-                                                <option>PUC</option>
-                                                <option>UG</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlSelect1">
-                                                Select Class</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1st PUC</option>
-                                                <option>2nd PUC</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlSelect1">
-                                                Select Combination</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                            <option value="all">ALL</option>    
-                                            <option>PCMB</option>
-                                                <option>PCMCS</option>
-                                                <option>EBACS</option>
-                                                <option>EBAS</option>
-                                                <option>ABMS</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
+                                   
+                                   
+                                    
                                     <div class="col-lg-4">
                                         <label class="form-label" for="exampleFormControlSelect1">
                                         </label>
