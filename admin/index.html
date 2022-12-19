@@ -77,11 +77,7 @@
     <!-- script src="./dist/js/vendor.js"></script>
     <script src="./dist/js/adminx.vanilla.js"></script-->
       <script>
-        $(document).ready(function() {
-  $("#otp_input").inputFilter(function(value) {
-    return /^\d*$/.test(value);    // Allow digits only, using a RegExp
-  },"Only digits allowed");
-});
+   
         $(document).on('click','#continue',function(e) {
             var userId = $('#userId').val();
             var key = $('#key').val();
