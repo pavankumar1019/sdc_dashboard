@@ -12,5 +12,5 @@
 	curl_close($ch);
 	
 	// Process your response here
-	echo $report;
+	echo $report['messages'];
 ?>
