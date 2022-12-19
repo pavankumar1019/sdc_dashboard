@@ -44,7 +44,7 @@
                                 </h5>
 
                                 <div class="card-title-sub">
-                                   
+                                   NEW
                                 </div>
                             </div>
 
