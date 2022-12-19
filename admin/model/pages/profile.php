@@ -26,7 +26,7 @@
                         <div class="card-body">
                             <form>
                                 <div class="form-row">
-                                   <div class="col-lg-3">
+                                   <div class="col-lg-8">
                                         <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Search By Student ID</label>
