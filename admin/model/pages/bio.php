@@ -36,14 +36,8 @@
                                             SRINIVASA <br>
                                             1 PUC EBACS <br>
                                             <b>Phone: 7483737698</b> <br>
-                                            <br>
-                                            <p style="font-size: medium;"><b>Fixation</b></p>
-                                            <h1 style="color:blue;"><b>₹30,000 </b></h1>
-                                            <p style="font-size: medium;"><b>Balance</b></p>
-                                            <h1 style="color:red;"><b>₹10,000 </b></h1>
-                                            <p style="font-size: medium;"><b>Paid Detailes</b></p>
-                                            <p>20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br></p>
+                                          
+                                      
             </div>
                                     </div>
                                 </div>
@@ -53,7 +47,7 @@
                     <!-- Datatable -->
                     <div class="card mb-grid">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <div class="card-header-title">Data</div>
+                            <div class="card-header-title">Fee Data</div>
                         </div>
                         <div class="table-responsive-md">
                             <table class="table table-actions table-striped table-hover mb-0">
@@ -68,7 +62,7 @@
                                         <th scope="col">Detailes</th>
                                         <th scope="col">Fixation</th>
                                         <th scope="col">Paid Detailes</th>
-                                        <th scope="col">Status</th>
+                                        <th scope="col">Balance</th>
                                         <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
@@ -81,9 +75,9 @@
                                             </label>
                                         </th>
                                         <td>
-                                            <h2>PAVAN KUMAR S</h2>
-                                            SRINIVASA <br>
-                                            1 PUC EBACS
+                                            <h2>1st PUC PCMB</h2>
+                                             2020-2021<br>
+                                          
                                         </td>
                                         <td>
                                             <h1><b>₹30,000 </b></h1>
@@ -93,7 +87,7 @@
                                             20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                                         </td>
                                         <td>
-                                            <span class="badge badge-pill badge-primary">Balance</span>
+                                        <h1 style="color:red;"><b>₹10,000 </b></h1>
                                         </td>
                                         <td>
                                             <button class="btn btn-sm btn-primary" type="button"  onClick="location.href='./dashboard.php?page=bio&student_id=217486'">Veiw Profile</button>
