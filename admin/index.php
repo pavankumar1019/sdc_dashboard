@@ -145,6 +145,7 @@ if(isset($_SESSION["user_id"]))
                  $('#otp_resent').show();
                  $('#resendotp').attr('disabled', true);
                  $('#otp_resent').toggleClass("alert-danger");
+                 $('#otp_resent').html('OTP Resent!');
                   }
                   else{
                       
