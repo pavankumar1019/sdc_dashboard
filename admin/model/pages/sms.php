@@ -157,12 +157,7 @@
     foreach($data['messages'] as $repo){
       ?>
          <tr>
-                                        <th scope="row">
-                                            <label class="custom-control custom-checkbox m-0 p-0">
-                                                <input type="checkbox" class="custom-control-input table-select-row">
-                                                <span class="custom-control-indicator"></span>
-                                            </label>
-                                        </th>
+                                       
                                         <td>
                                             <h4><?php echo $repo['datetime']; ?> </h2>
                                             
