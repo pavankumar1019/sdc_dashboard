@@ -198,7 +198,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">TRANSFER CERTIFICATE</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
