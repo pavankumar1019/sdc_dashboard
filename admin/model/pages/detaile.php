@@ -141,7 +141,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS </div>
+                            <div class="card-info-title">EXAM PLANNER</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">MARKS CARD</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">PROFILE</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
