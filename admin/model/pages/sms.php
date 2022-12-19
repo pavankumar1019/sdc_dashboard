@@ -156,7 +156,7 @@
 	curl_close($ch);
 	
 	// Process your response here
-	echo $report['messages'];
+	var_dump( $report['messages']);
 ?>
                                     <tr>
                                         <th scope="row">
