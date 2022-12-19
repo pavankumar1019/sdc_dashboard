@@ -29,9 +29,9 @@
                                    <div class="col-lg-3">
                                         <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
-                                                Year</label>
+                                                Search By Student ID</label>
                                           
-                                            <input type="datetime-local" class="form-control" id="exampleFormControlSelect1">
+                                            <input type="text" class="form-control" id="exampleFormControlSelect1">
                                         </div>
                                     </div>
                                    
