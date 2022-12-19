@@ -33,6 +33,8 @@
                                     <div class="col-lg-8">
                                     <div class="pb-3">
                 <h1>PAVAN KUMAR S</h1>
+                                            SRINIVASA <br>
+                                            1 PUC EBACS
             </div>
                                     </div>
                                 </div>
