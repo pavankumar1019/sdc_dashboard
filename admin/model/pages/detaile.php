@@ -293,7 +293,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">MARK ATTENDANCE</div>
+                            <div class="card-info-title">ATTENDANCE</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
@@ -312,7 +312,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title"></div>
+                            <div class="card-info-title">MAP COURCE</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
