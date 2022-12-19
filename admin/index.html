@@ -88,6 +88,7 @@
                         
                 },
                  type: "POST",
+                 dataType: "json",
                  url: "./login_ajax.php",
                 success: function(dataResult){
                   var dataResult = JSON.parse(dataResult);
@@ -97,7 +98,7 @@
                   else{
                       alert(dataResult);
                   }
-                  alert('hello');
+                 
                 }
           });
           
