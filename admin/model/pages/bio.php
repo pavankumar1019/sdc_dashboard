@@ -171,12 +171,12 @@
                                         </td>
                                         <td>
                                             <p><b>
-                                                KANNADA  20 / 100
-                                                ENGLISH  20 / 100
-                                                PHYSICS  20 / 100
-                                               CHEMISTRY 20 / 100
-                                               MATHEMATICS 20 / 100
-                                               COMPUTER SCIENCE 20 / 100
+                                                KANNADA  20 / 100 <br>
+                                                ENGLISH  20 / 100<br>
+                                                PHYSICS  20 / 100<br>
+                                               CHEMISTRY 20 / 100<br>
+                                               MATHEMATICS 20 / 100<br>
+                                               COMPUTER SCIENCE 20 / 100<br><br>
  TOTAL 600 / 100
                                                 
 
