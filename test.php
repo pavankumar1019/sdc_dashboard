@@ -12,5 +12,5 @@
 	curl_close($ch);
 	$data=json_decode($report, true);
 	// Process your response here
-	echo $data['total'];
+	echo $data['messages'][0][1];
 ?>
