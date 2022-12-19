@@ -40,11 +40,11 @@
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex justify-content-between mb-3">
                                 <h5 class="card-title mb-0">
-                                    Admissions Today (PUC)
+                                     Raise New Voucher
                                 </h5>
 
                                 <div class="card-title-sub">
-                                    100 Q
+                                   
                                 </div>
                             </div>
 
