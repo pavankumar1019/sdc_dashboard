@@ -13,44 +13,46 @@
             <div class="pb-3">
                 <h1>Voucher</h1>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex bounceIn">
-                <div class="card border-0 bg-secondary text-white text-center mb-grid w-100">
-                    <div class="d-flex flex-row align-items-center h-100">
-                        <div class="card-icon d-flex align-items-center h-100 justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-layers">
-                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                <polyline points="2 17 12 22 22 17"></polyline>
-                                <polyline points="2 12 12 17 22 12"></polyline>
-                            </svg>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex bounceIn">
+                    <div class="card border-0 bg-secondary text-white text-center mb-grid w-100">
+                        <div class="d-flex flex-row align-items-center h-100">
+                            <div class="card-icon d-flex align-items-center h-100 justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-layers">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info-title">Wallet</div>
+                                <h3 class="card-title mb-0">
+                                    5,000 ₹
+                                </h3>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="card-info-title">Wallet</div>
-                            <h3 class="card-title mb-0">
-                                5,000 ₹
-                            </h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex bounceIn">
+                    <div class="card mb-grid w-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="card-title mb-0">
+                                    Admissions Today (PUC)
+                                </h5>
+
+                                <div class="card-title-sub">
+                                    100 Q
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex bounceIn">
-                <div class="card mb-grid w-100">
-                  <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between mb-3">
-                      <h5 class="card-title mb-0">
-                       Admissions Today (PUC)
-                      </h5>
-
-                      <div class="card-title-sub">
-                      100 Q
-                      </div>
-                    </div>
-
-                 
-                  </div>
-                </div>
-              </div>
             <div class="row">
                 <div class="col-lg-12">
 
