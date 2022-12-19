@@ -140,6 +140,24 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <?php
+	// Account details
+	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
+ 
+	// Prepare data for POST request
+	$data = array('apikey' => $apiKey);
+ 
+	// Send the POST request with cURL
+	$ch = curl_init('https://api.textlocal.in/get_history_api/');
+	curl_setopt($ch, CURLOPT_POST, true);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	$report = curl_exec($ch);
+	curl_close($ch);
+	
+	// Process your response here
+	echo $report['messages'];
+?>
                                     <tr>
                                         <th scope="row">
                                             <label class="custom-control custom-checkbox m-0 p-0">
