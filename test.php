@@ -10,7 +10,7 @@
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$report = curl_exec($ch);
 	curl_close($ch);
-	$data=json_decode($report, true)
+	$data=json_decode($report, true);
 	// Process your response here
 	echo $data['messages'];
 ?>
