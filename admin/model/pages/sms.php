@@ -148,23 +148,21 @@
                                             </label>
                                         </th>
                                         <td>
-                                            <h2>PAVAN KUMAR S</h2>
-                                            SRINIVASA <br>
-                                            1 PUC EBACS
+                                            <h2> 20-01-2022:9:22:AM</h2>
+                                            
                                         </td>
                                         <td>
-                                            <h5><b>₹30,000 </b></h1>
+                                            <h5><b>7483737698</b></h1>
                                         </td>
                                         <td>
-                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                            <b>SDCPUC</b> 
+                                        
                                         </td>
                                         <td>
-                                            <span class="badge badge-pill badge-primary">Balance</span>
+                                        Your OTP : 333259 Do not share OTP SDC College Bangarpet  
                                         </td>
                                         <td>
-                                            <button class="btn btn-sm btn-primary" type="button"  data-toggle="modal" data-target="#exampleModalCenter">Collect</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        <b>Undelivered </b> 
                                         </td>
                                     </tr>
                                    
