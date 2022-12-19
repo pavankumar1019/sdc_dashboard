@@ -37,9 +37,7 @@
             <a href="http://sdccollegebpet.in/"><small>SDC Portal</small></a>
           </div>
           <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -53,13 +51,13 @@
       </div>
       <div class="modal-body">
         <p>OTP Sent to XXXXX<span id="mobile_last_digit"></span></p>
-        <div class="alert alert-primary" id="otp_resent" role="alert">
+        <div class="alert alert-primary" id="otp_resent" role="alert" style="display: none;">
         OTP Resent
         </div>
     <input type="text" style="text-align: center;" class="form-control" name=""  onkeypress='validate(event)' id="otp_input">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="resendotp">Resend OTP</button>
+        <button type="button" class="btn btn-secondary" id="resendotp" >Resend OTP</button>
         <button type="button" id="login" class="btn btn-primary">Login</button>
       </div>
     </div>
