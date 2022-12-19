@@ -64,7 +64,7 @@
                                         <th scope="col">Detailes</th>
                                         <th scope="col">Fixation</th>
                                         <th scope="col">Paid Detailes</th>
-                                        <th scope="col">Status</th>
+                                       
                                         <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
@@ -79,18 +79,16 @@
                                         <td>
                                             <h2>PAVAN KUMAR S</h2>
                                             SRINIVASA <br>
-                                            1 PUC EBACS
+                                           
                                         </td>
                                         <td>
-                                            <h5><b>₹30,000 </b></h1>
+                                            <h5><b> 1 PUC EBACS</b></h1>
                                         </td>
                                         <td>
-                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
-                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                             <b>7483737698</b> <br>
+                                           
                                         </td>
-                                        <td>
-                                            <span class="badge badge-pill badge-primary">Balance</span>
-                                        </td>
+                                     
                                         <td>
                                             <button class="btn btn-sm btn-primary" type="button"  onClick="location.href='./dashboard.php?page=bio&student_id=217486'">Veiw Profile</button>
                                         </td>
