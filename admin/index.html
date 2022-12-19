@@ -53,7 +53,7 @@
       </div>
       <div class="modal-body">
         <p>OTP Sent to XXXXX<span id="mobile_last_digit"></span></p>
-    <input type="text" style="text-align: center;" class="form-control" name="" id="">
+    <input type="text" style="text-align: center;" class="form-control" name="" id="otp_input">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Resend OTP</button>
@@ -77,6 +77,11 @@
     <!-- script src="./dist/js/vendor.js"></script>
     <script src="./dist/js/adminx.vanilla.js"></script-->
       <script>
+        $(document).ready(function() {
+  $("#otp_input").inputFilter(function(value) {
+    return /^\d*$/.test(value);    // Allow digits only, using a RegExp
+  },"Only digits allowed");
+});
         $(document).on('click','#continue',function(e) {
             var userId = $('#userId').val();
             var key = $('#key').val();
