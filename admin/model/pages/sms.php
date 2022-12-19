@@ -70,7 +70,7 @@
                                    
                                     
                                     <div class="col-lg-4">
-                                        <label class="form-label" for="exampleFormControlSelect1">
+                                        <label class="form-label" for="exampleFormControlSelect1">Action
                                         </label>
                                         <input type="button" class="form-control btn btn-outline-info btn-block" value="Get">
                                     </div>
