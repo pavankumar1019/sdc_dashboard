@@ -10,9 +10,7 @@
                 </ol>
             </nav>
 
-            <div class="pb-3">
-                <h1>PAVAN KUMAR S</h1>
-            </div>
+         
          
             <div class="row">
                 <div class="col-lg-12">
@@ -33,9 +31,9 @@
                                    
                                     
                                     <div class="col-lg-8">
-                                        <label class="form-label" for="exampleFormControlSelect1">Action
-                                        </label>
-                                        <input type="button" class="form-control btn btn-outline-info btn-block" value="Get">
+                                    <div class="pb-3">
+                <h1>PAVAN KUMAR S</h1>
+            </div>
                                     </div>
                                 </div>
                             </form>
