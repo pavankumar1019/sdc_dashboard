@@ -64,7 +64,7 @@
                                         <th scope="col">Fixation</th>
                                         <th scope="col">Paid Detailes</th>
                                         <th scope="col">Balance</th>
-                                        <th scope="col">Actions</th>
+                                        <!-- <th scope="col">Actions</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
