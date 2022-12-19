@@ -27,7 +27,7 @@
                             <form>
                                 <div class="form-row">
                                    <div class="col-lg-6">
-                                   <img src="http://sdccollegebpet.in/admin/demo/img/logo.png" alt="sdc" class="img-thumbnail">
+                                   <img src="http://sdccollegebpet.in/admin/demo/img/logo.png" width="100" height="70" alt="sdc" class="img-thumbnail">
                                     </div>
                                    
                                    
