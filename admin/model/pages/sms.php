@@ -164,7 +164,7 @@
                                             </label>
                                         </th>
                                         <td>
-                                            <h2><?php echo $repo['datetime']; ?> </h2>
+                                            <h4><?php echo $repo['datetime']; ?> </h2>
                                             
                                         </td>
                                         <td>
