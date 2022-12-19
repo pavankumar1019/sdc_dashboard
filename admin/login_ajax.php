@@ -52,8 +52,8 @@ error_reporting(E_ALL);
    // Message details
    $numbers = array($number);
    $sender = urlencode('SDCPUC');
-   $message = rawurlencode('Your OTP : '.$otp.' Do not share OTP
-   SDC College Bangarpet');
+$message =  rawurlencode('Your OTP : '.$otp.' Do not share OTP
+SDC College Bangarpet ');
    
    $numbers = implode(',', $numbers);
   
