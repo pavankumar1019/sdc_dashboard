@@ -170,7 +170,7 @@
 
                                         </td>
                                         <td>
-                                            <h1><b>
+                                            <p><b>
                                                 KANNADA  20 / 100
                                                 ENGLISH  20 / 100
                                                 PHYSICS  20 / 100
