@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 d-flex bounceIn" onClick="location.href='./dashboard.php?page=sms'">
-                <div class="card border-0 bg-secondary text-white text-center mb-grid w-100">
+                <div class="card border-0 bg-warning text-white text-center mb-grid w-100">
                     <div class="d-flex flex-row align-items-center h-100">
                         <div class="card-icon d-flex align-items-center h-100 justify-content-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -46,7 +46,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">COUSTOM SMS</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
