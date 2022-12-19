@@ -62,7 +62,7 @@ if(isset($_SESSION["user_id"]))
         <div class="alert alert-primary" id="otp_resent" role="alert" style="display: none;">
         OTP Resent
         </div>
-    <input type="text" style="text-align: center;" class="form-control" name=""  onkeypress='validate(event)' id="otp_input">
+    <input type="text" style="text-align: center;" class="form-control" name=""  onkeypress='validate(event)' id="otp">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" id="resendotp" >Resend OTP</button>
