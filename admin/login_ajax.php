@@ -2,9 +2,9 @@
 
 session_start();
 include ('./db_bpet_sdc/db.php');
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
     
 	if($_POST["type"]==2){
 		    $userId=$_POST['userId'];
