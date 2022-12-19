@@ -177,7 +177,7 @@
                                                CHEMISTRY 20 / 100<br>
                                                MATHEMATICS 20 / 100<br>
                                                COMPUTER SCIENCE 20 / 100<br><br>
- TOTAL 600 / 100
+                                        TOTAL 600 / 100
                                                 
 
                                         </b></h1>
@@ -188,7 +188,37 @@
                                   
                                  
                                     </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <h2>Preparatory - 1</h2>
+                                         
+
+                                        </td>
+                                        <td>
+                                            <p><b>
+                                                KANNADA  20 / 100 <br>
+                                                ENGLISH  20 / 100<br>
+                                                PHYSICS  20 / 100<br>
+                                               CHEMISTRY 20 / 100<br>
+                                               MATHEMATICS 20 / 100<br>
+                                               COMPUTER SCIENCE 20 / 100<br><br>
+                                        TOTAL 600 / 100
+                                                
+
+                                        </b></h1>
+                                        </td>
+                                        <td>
+                                          <h3> PASS</h3>
+                                        </td>
+                                  
                                  
+                                    </tr>
 
 
 
