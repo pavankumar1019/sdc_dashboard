@@ -74,7 +74,7 @@
           </li>
 
           <li class="sidebar-nav-item">
-            <a href="#" class="sidebar-nav-link">
+            <a href="./dashboard.php?page=detaile" class="sidebar-nav-link">
               <span class="sidebar-nav-icon">
                 <i data-feather="layout"></i>
               </span>
