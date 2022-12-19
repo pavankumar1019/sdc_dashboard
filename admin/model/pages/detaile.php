@@ -217,7 +217,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">STUDY CERTIFICATE</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">PDC</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">CONSOLIDATES</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
@@ -274,7 +274,7 @@
                             </svg>
                         </div>
                         <div class="card-body">
-                            <div class="card-info-title">SMS Credits</div>
+                            <div class="card-info-title">PETTY CASH</div>
                             <h3 class="card-title mb-0"></h3>
                         </div>
                     </div>
