@@ -17,7 +17,8 @@ error_reporting(E_ALL);
           while($row = $result->fetch_assoc()) {
             $number=$row['phone_no'];
             $otp=rand(100000,999999);
-            // Fstmsms($number,$otp);
+            Fstmsms($number,$otp);
+            $_SESSION['phone']=$number;
             $_SESSION['OTP_staff']=$otp;
             echo json_encode(array(
                 "statusCode"=>200,
@@ -39,6 +40,16 @@ error_reporting(E_ALL);
 			echo json_encode(array("statusCode"=>201));
 		}
 	}
+	if($_POST["type"]==4){
+    $otp=rand(100000,999999);
+    $_SESSION['OTP_staff']=$otp;
+    Fstmsms($_SESSION['phone'],$otp);
+    echo json_encode(array("statusCode"=>200));
+	}
+
+
+
+
 
 
 
@@ -73,4 +84,8 @@ SDC College Bangarpet ');
   
   }
   
+
+
+
+
 ?>

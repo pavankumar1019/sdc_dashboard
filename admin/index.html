@@ -56,7 +56,7 @@
     <input type="text" style="text-align: center;" class="form-control" name=""  onkeypress='validate(event)' id="otp_input">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Resend OTP</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="resendotp">Resend OTP</button>
         <button type="button" id="login" class="btn btn-primary">Login</button>
       </div>
     </div>
@@ -116,6 +116,29 @@
                       alert(dataResult);
                   }
                  
+                }
+          });
+          
+        });
+        $(document).on('click','#resendotp',function(e) {
+            var otp = $('#otp').val();
+            $.ajax({
+                data:   {
+                      type: 4,
+                      otp: otp
+                            
+                    },
+                type: "post",
+                url : "login_ajax.php",
+                success: function(dataResult){
+                  var dataResult = JSON.parse(dataResult);
+                  if(dataResult.statusCode==200){
+                    alert("OTP Re Sent");
+                  }
+                  else{
+                      alert("Failed OTP !");
+                  }
+                  
                 }
           });
           
