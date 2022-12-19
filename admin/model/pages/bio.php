@@ -90,11 +90,11 @@
                                         <td>
                                             <h1 style="color:red;"><b>₹10,000 </b></h1>
                                         </td>
-                                        <td>
+                                        <!-- <td>
                                             <button class="btn btn-sm btn-primary" type="button"
                                                 onClick="location.href='./dashboard.php?page=bio&student_id=217486'">Veiw
                                                 Profile</button>
-                                        </td>
+                                        </td> -->
                                     </tr>
                                     <tr>
                                         <th scope="row">
@@ -118,11 +118,11 @@
                                         <td>
                                             <h1 style="color:red;"><b>₹10,000 </b></h1>
                                         </td>
-                                        <td>
+                                        <!-- <td>
                                             <button class="btn btn-sm btn-primary" type="button"
                                                 onClick="location.href='./dashboard.php?page=bio&student_id=217486'">Veiw
                                                 Profile</button>
-                                        </td>
+                                        </td> -->
                                     </tr>
 
 
