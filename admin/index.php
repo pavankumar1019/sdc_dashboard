@@ -1,3 +1,11 @@
+<?php
+//index.php
+session_start();
+if(isset($_SESSION["user_id"]))
+{
+ header("location:dashboard.php?page=home");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -147,10 +155,14 @@
         });
         $(document).on('click','#login',function(e) {
             var otp = $('#otp').val();
+            var userId = $('#userId').val();
+            var key = $('#key').val();
             $.ajax({
                 data:   {
                       type: 3,
-                      otp: otp
+                      otp: otp,
+                      userId: userId,
+                      key: key
                             
                     },
                 type: "post",
@@ -158,7 +170,7 @@
                 success: function(dataResult){
                   var dataResult = JSON.parse(dataResult);
                   if(dataResult.statusCode==200){
-                    alert("Login successful !");
+                    location.reload();
                   }
                   else{
                       alert("Invalid OTP !");

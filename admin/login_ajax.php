@@ -34,7 +34,19 @@ error_reporting(E_ALL);
         }
 	if($_POST["type"]==3){
 		if($_POST["otp"]==$_SESSION['otp']){
-			echo json_encode(array("statusCode"=>200));
+      $userId=$_POST['userId'];
+      $key=$_POST['key'];
+      $sql = "SELECT * FROM user_office WHERE user_name='$userId' AND user_key='$key' AND branch=1";
+      $result = $conn->query($sql);
+  
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      $_SESSION['user_id']=$row['name'];
+      echo json_encode(array("statusCode"=>200));
+    }
+  } 
+			
 		}
 		else{
 			echo json_encode(array("statusCode"=>201));
@@ -44,6 +56,10 @@ error_reporting(E_ALL);
     $otp=rand(100000,999999);
     $_SESSION['OTP_staff']=$otp;
     // Fstmsms($_SESSION['phone'],$otp);
+
+    
+
+
     echo json_encode(array("statusCode"=>200));
 	}
 
