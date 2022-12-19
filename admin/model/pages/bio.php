@@ -35,6 +35,7 @@
                 <h1>PAVAN KUMAR S</h1>
                                             SRINIVASA <br>
                                             1 PUC EBACS <br>
+                                            <b>Phone: 7483737698</b> <br>
                                             <br>
                                             <p style="font-size: medium;"><b>Fixation</b></p>
                                             <h1 style="color:blue;"><b>₹30,000 </b></h1>
