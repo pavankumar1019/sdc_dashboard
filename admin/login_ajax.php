@@ -18,12 +18,12 @@ error_reporting(E_ALL);
             $otp=rand(1000,9999);
             // Fstmsms($number,$otp);
             $_SESSION['OTP_staff']=$otp;
-            echo json_encode(array(
+            echo json_encode(
                 "statusCode"=>200,
                 "phone"=>substr($row['phone_no'], -3),
                 "name"=>$row['name'],
                 "value"=>$otp
-            ));
+            );
           }
         } 
         else {
