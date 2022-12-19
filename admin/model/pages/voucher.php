@@ -71,53 +71,33 @@
                                     <tr>
                                        
                                         <th scope="col">Date</th>
-                                        <th scope="col">To</th>
-                                        <th scope="col">From</th>
-                                        <th scope="col">Message</th>
-                                        <th scope="col">Status</th>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ammount Paid</th>
+                                        <th scope="col">Description</th>
+                                       
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php
-	// Account details
-	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
-	// Prepare data for POST request
-	$data = array('apikey' => $apiKey);
-	// Send the POST request with cURL
-	$ch = curl_init('https://api.textlocal.in/get_history_api/');
-	curl_setopt($ch, CURLOPT_POST, true);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	$report = curl_exec($ch);
-	curl_close($ch);
-	$data=json_decode($report, true);
-	// Process your response here
-    foreach($data['messages'] as $repo){
-      ?>
-         <tr>
+                   
+                                <tr>
                                        
                                         <td>
-                                            <?php echo $repo['datetime']; ?>
-                                            
+                                        2022-12-19 15:26:02
+                                           
                                         </td>
                                         <td>
-                                            <h5><b><?php echo $repo['number']; ?></b></h1>
+                                            <h5><b>892</b></h1>
                                         </td>
                                         <td>
-                                        <?php echo $repo['sender']; ?>
-                                        
+                                             <b>₹500</b> <br>
+                                           
                                         </td>
                                         <td>
-                                        <?php echo $repo['content']; ?>
+                                             <b>To Shiva kumar sir for petrol ddpu kolar</b> <br>
+                                           
                                         </td>
-                                        <td>
-                                        <?php echo $repo['status']; ?>
-                                        </td>
+                                     
                                     </tr>
-      <?php
-        
-    };
-?>
                                  
                                    
                                     
