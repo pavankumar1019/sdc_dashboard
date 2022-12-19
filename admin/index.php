@@ -144,6 +144,7 @@ if(isset($_SESSION["user_id"]))
                   if(dataResult.statusCode==200){
                  $('#otp_resent').show();
                  $('#resendotp').attr('disabled', true);
+                 $('#otp_resent').toggleClass("alert-danger");
                   }
                   else{
                       
