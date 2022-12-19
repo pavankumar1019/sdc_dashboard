@@ -12,6 +12,8 @@
 	curl_close($ch);
 	$data=json_decode($report, true);
 	// Process your response here
-    foreach($data['messages'] as $repo);
-	var_dump($repo['number']);
+    foreach($data['messages'] as $repo){
+        var_dump($repo['number']);
+    };
+
 ?>
