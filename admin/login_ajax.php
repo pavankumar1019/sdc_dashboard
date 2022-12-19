@@ -19,7 +19,7 @@ error_reporting(E_ALL);
             $otp=rand(100000,999999);
             // Fstmsms($number,$otp);
             $_SESSION['phone']=$number;
-            $_SESSION['OTP_staff']=$otp;
+            $_SESSION['OTP']=$otp;
             echo json_encode(array(
                 "statusCode"=>200,
                 "phone"=>substr($row['phone_no'], -3),
@@ -33,7 +33,7 @@ error_reporting(E_ALL);
         }
         }
 	if($_POST["type"]==3){
-		if($_POST['otp']==$_SESSION['otp']){
+		if($_POST['otp']==$_SESSION['OTP']){
       $userId=$_POST['userId'];
       $key=$_POST['key'];
       $sql = "SELECT * FROM user_office WHERE user_name='$userId' AND user_key='$key' AND branch=1";
