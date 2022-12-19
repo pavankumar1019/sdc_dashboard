@@ -126,12 +126,7 @@
                             <table class="table table-actions table-striped table-hover mb-0">
                                 <thead>
                                     <tr>
-                                        <th scope="col">
-                                            <label class="custom-control custom-checkbox m-0 p-0">
-                                                <input type="checkbox" class="custom-control-input table-select-all">
-                                                <span class="custom-control-indicator"></span>
-                                            </label>
-                                        </th>
+                                       
                                         <th scope="col">Date</th>
                                         <th scope="col">To</th>
                                         <th scope="col">From</th>
