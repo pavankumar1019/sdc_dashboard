@@ -62,12 +62,8 @@
                                         <div class="form-group">
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Year</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option value="">YYYY</option>
-                                                <option>2022</option>
-                                                <option>2021</option>
-
-                                            </select>
+                                          
+                                            <input type="timestamp" class="form-control" id="exampleFormControlSelect1">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
