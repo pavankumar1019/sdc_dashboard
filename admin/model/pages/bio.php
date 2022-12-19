@@ -26,13 +26,13 @@
                         <div class="card-body">
                             <form>
                                 <div class="form-row">
-                                   <div class="col-lg-8">
+                                   <div class="col-lg-6">
                                    <img src="http://sdccollegebpet.in/admin/demo/img/logo.png" alt="sdc" class="img-thumbnail">
                                     </div>
                                    
                                    
                                     
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <label class="form-label" for="exampleFormControlSelect1">Action
                                         </label>
                                         <input type="button" class="form-control btn btn-outline-info btn-block" value="Get">
