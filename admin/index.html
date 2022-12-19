@@ -52,12 +52,12 @@
         </button> -->
       </div>
       <div class="modal-body">
-        <p>OTP Sent to XXXXX769</p>
+        <p>OTP Sent to XXXXX<span id="mobile_last_digit"></span></p>
     <input type="text" style="text-align: center;" class="form-control" name="" id="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Resend OTP</button>
-        <button type="button" class="btn btn-primary">Login</button>
+        <button type="button" id="login" class="btn btn-primary">Login</button>
       </div>
     </div>
   </div>
@@ -92,6 +92,7 @@
                 success: function(dataResult){
                   var dataResult = JSON.parse(dataResult);
                   if(dataResult.statusCode==200){
+                    $('mobile_last_digit').dataResult.phone
                  $('#exampleModalCenter').modal('show');
                   }
                   else{
