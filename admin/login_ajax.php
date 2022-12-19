@@ -17,7 +17,7 @@ error_reporting(E_ALL);
           while($row = $result->fetch_assoc()) {
             $number=$row['phone_no'];
             $otp=rand(100000,999999);
-            // Fstmsms($number,$otp);
+            Fstmsms($number,$otp);
             $_SESSION['phone']=$number;
             $_SESSION['OTP']=$otp;
             echo json_encode(array(
@@ -57,10 +57,6 @@ error_reporting(E_ALL);
     $otp=rand(100000,999999);
     $_SESSION['OTP_staff']=$otp;
     Fstmsms($_SESSION['phone'],$otp);
-
-    
-
-
     echo json_encode(array("statusCode"=>200));
 	}
 
