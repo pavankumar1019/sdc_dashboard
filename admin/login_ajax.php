@@ -16,7 +16,7 @@ error_reporting(E_ALL);
           // output data of each row
           while($row = $result->fetch_assoc()) {
             $number=$row['phone_no'];
-            $otp=rand(10000,99999);
+            $otp=rand(100000,999999);
             Fstmsms($number,$otp);
             $_SESSION['OTP_staff']=$otp;
             echo json_encode(array(
