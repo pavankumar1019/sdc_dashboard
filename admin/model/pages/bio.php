@@ -10,8 +10,8 @@
                 </ol>
             </nav>
 
-         
-         
+
+
             <div class="row">
                 <div class="col-lg-12">
 
@@ -24,21 +24,22 @@
                         <div class="card-body">
                             <form>
                                 <div class="form-row">
-                                   <div class="col-lg-4">
-                                   <img src="http://sdccollegebpet.in/admin/demo/img/logo.png" width="100" height="70" alt="sdc" class="img-thumbnail">
+                                    <div class="col-lg-4">
+                                        <img src="http://sdccollegebpet.in/admin/demo/img/logo.png" width="100"
+                                            height="70" alt="sdc" class="img-thumbnail">
                                     </div>
-                                   
-                                   
-                                    
+
+
+
                                     <div class="col-lg-8">
-                                    <div class="pb-3">
-                <h1>PAVAN KUMAR S</h1>
+                                        <div class="pb-3">
+                                            <h1>PAVAN KUMAR S</h1>
                                             SRINIVASA <br>
                                             1 PUC EBACS <br>
                                             <b>Phone: 7483737698</b> <br>
-                                          
-                                      
-            </div>
+
+
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -52,7 +53,7 @@
                         <div class="table-responsive-md">
                             <table class="table table-actions table-striped table-hover mb-0">
                                 <thead>
-                                <tr>
+                                    <tr>
                                         <th scope="col">
                                             <label class="custom-control custom-checkbox m-0 p-0">
                                                 <input type="checkbox" class="custom-control-input table-select-all">
@@ -67,7 +68,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
+                                    <tr>
                                         <th scope="row">
                                             <label class="custom-control custom-checkbox m-0 p-0">
                                                 <input type="checkbox" class="custom-control-input table-select-row">
@@ -76,8 +77,8 @@
                                         </th>
                                         <td>
                                             <h2>1st PUC PCMB</h2>
-                                             2020-2021<br>
-                                          
+                                            2020-2021<br>
+
                                         </td>
                                         <td>
                                             <h1><b>₹30,000 </b></h1>
@@ -87,18 +88,47 @@
                                             20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                                         </td>
                                         <td>
-                                        <h1 style="color:red;"><b>₹10,000 </b></h1>
+                                            <h1 style="color:red;"><b>₹10,000 </b></h1>
                                         </td>
                                         <td>
-                                            <button class="btn btn-sm btn-primary" type="button"  onClick="location.href='./dashboard.php?page=bio&student_id=217486'">Veiw Profile</button>
+                                            <button class="btn btn-sm btn-primary" type="button"
+                                                onClick="location.href='./dashboard.php?page=bio&student_id=217486'">Veiw
+                                                Profile</button>
                                         </td>
                                     </tr>
-        
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <h2>2nd PUC PCMB</h2>
+                                            2020-2021<br>
 
-                                 
-                                   
-                                    
-                                   
+                                        </td>
+                                        <td>
+                                            <h1><b>₹30,000 </b></h1>
+                                        </td>
+                                        <td>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                            20-01-2022:9:22:AM - <b>₹10,000</b> <br>
+                                        </td>
+                                        <td>
+                                            <h1 style="color:red;"><b>₹10,000 </b></h1>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary" type="button"
+                                                onClick="location.href='./dashboard.php?page=bio&student_id=217486'">Veiw
+                                                Profile</button>
+                                        </td>
+                                    </tr>
+
+
+
+
+
 
                                 </tbody>
                             </table>
@@ -115,4 +145,3 @@
         </div>
     </div>
 </div>
-
