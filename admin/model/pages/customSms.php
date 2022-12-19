@@ -2,7 +2,7 @@
     <div class="adminx-main-content">
         <div class="container-fluid">
 
-            <section class="m-5">
+          
                 <form>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Select Combination</label>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </form>
-            </section>
+          
 
         </div>
     </div>
