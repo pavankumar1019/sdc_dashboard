@@ -12,5 +12,5 @@
 	curl_close($ch);
 	
 	// Process your response here
-	var_dump( $report['total']);
+	echo $report;
 ?>
