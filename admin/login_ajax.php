@@ -22,7 +22,6 @@ error_reporting(E_ALL);
                 "statusCode"=>200,
                 "phone"=>substr($row['phone_no'], -3),
                 "name"=>$row['name'],
-           
                 "value"=>$otp
             ));
           }
