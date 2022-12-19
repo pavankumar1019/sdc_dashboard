@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex bounceIn" onClick="location.href='./dashboard.php?page=sms'">
+            <div class="col-md-6 col-lg-3 d-flex bounceIn" onClick="location.href='./dashboard.php?page=customSms'">
                 <div class="card border-0 bg-warning text-white text-center mb-grid w-100">
                     <div class="d-flex flex-row align-items-center h-100">
                         <div class="card-icon d-flex align-items-center h-100 justify-content-center">
