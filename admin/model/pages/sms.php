@@ -63,7 +63,7 @@
                                             <label class="form-label" for="exampleFormControlSelect1">
                                                 Year</label>
                                           
-                                            <input type="timestamp" class="form-control" id="exampleFormControlSelect1">
+                                            <input type="datetime-local" class="form-control" id="exampleFormControlSelect1">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
