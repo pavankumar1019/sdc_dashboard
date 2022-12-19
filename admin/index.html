@@ -53,6 +53,9 @@
       </div>
       <div class="modal-body">
         <p>OTP Sent to XXXXX<span id="mobile_last_digit"></span></p>
+        <div class="alert alert-primary" id="otp_resent" role="alert">
+        OTP Resent
+        </div>
     <input type="text" style="text-align: center;" class="form-control" name=""  onkeypress='validate(event)' id="otp_input">
       </div>
       <div class="modal-footer">
@@ -133,10 +136,10 @@
                 success: function(dataResult){
                   var dataResult = JSON.parse(dataResult);
                   if(dataResult.statusCode==200){
-                    alert("OTP Re Sent");
+                 $('#otp_resent').show();
                   }
                   else{
-                      alert("Failed OTP !");
+                      
                   }
                   
                 }
