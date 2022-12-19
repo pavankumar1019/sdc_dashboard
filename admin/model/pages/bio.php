@@ -6,12 +6,12 @@
                 <ol class="breadcrumb adminx-page-breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Profile</a></li>
-                    <li class="breadcrumb-item active  aria-current=" page">Profile</li>
+                    <li class="breadcrumb-item active  aria-current=" page">123246652</li>
                 </ol>
             </nav>
 
             <div class="pb-3">
-                <h1>STUDENT PROFILE</h1>
+                <h1>PAVAN KUMAR S</h1>
             </div>
          
             <div class="row">
@@ -21,18 +21,13 @@
 
                     <div class="card mb-grid">
                         <div class="card-header">
-                            <div class="card-header-title">Functions</div>
+                            <div class="card-header-title">BASIC PROFILE</div>
                         </div>
                         <div class="card-body">
                             <form>
                                 <div class="form-row">
                                    <div class="col-lg-8">
-                                        <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlSelect1">
-                                                Search By Student ID</label>
-                                          
-                                            <input type="text" class="form-control" id="exampleFormControlSelect1">
-                                        </div>
+                                   <img src="http://sdccollegebpet.in/admin/demo/img/logo.png" alt="sdc" class="img-thumbnail">
                                     </div>
                                    
                                    
