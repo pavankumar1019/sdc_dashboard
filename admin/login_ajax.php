@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 	if($_POST["type"]==2){
 		    $userId=$_POST['userId'];
             $key=$_POST['key'];
-            $sql = "SELECT * FROM user_office WHERE user_name='$userId' AND user_key='$key'";
+            $sql = "SELECT * FROM user_office WHERE user_name='$userId' AND user_key='$key' AND branch=1";
             $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
