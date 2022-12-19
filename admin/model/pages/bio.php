@@ -35,7 +35,7 @@
                 <h1>PAVAN KUMAR S</h1>
                                             SRINIVASA <br>
                                             1 PUC EBACS <br>
-                                            <h5>Paid Detailes</h5>
+                                            <h5><b>Paid Detailes</b></h5>
                                             <p>20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                                             20-01-2022:9:22:AM - <b>₹10,000</b> <br></p>
             </div>
