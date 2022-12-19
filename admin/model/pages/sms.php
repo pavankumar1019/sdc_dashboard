@@ -154,7 +154,7 @@
          <tr>
                                        
                                         <td>
-                                            <h4><?php echo $repo['datetime']; ?> </h2>
+                                            <?php echo $repo['datetime']; ?>
                                             
                                         </td>
                                         <td>
