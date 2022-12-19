@@ -33,7 +33,7 @@ error_reporting(E_ALL);
         }
         }
 	if($_POST["type"]==3){
-		if($_POST["otp"]==$_SESSION['otp']){
+		if($_POST['otp']==$_SESSION['otp']){
       $userId=$_POST['userId'];
       $key=$_POST['key'];
       $sql = "SELECT * FROM user_office WHERE user_name='$userId' AND user_key='$key' AND branch=1";
@@ -52,6 +52,7 @@ error_reporting(E_ALL);
 			echo json_encode(array("statusCode"=>201));
 		}
 	}
+
 	if($_POST["type"]==4){
     $otp=rand(100000,999999);
     $_SESSION['OTP_staff']=$otp;

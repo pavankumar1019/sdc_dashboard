@@ -154,13 +154,13 @@ if(isset($_SESSION["user_id"]))
           
         });
         $(document).on('click','#login',function(e) {
-            var otp = $('#otp').val();
+            var otps = $('#otp').val();
             var userId = $('#userId').val();
             var key = $('#key').val();
             $.ajax({
                 data:   {
                       type: 3,
-                      otp: otp,
+                      otp: otps,
                       userId: userId,
                       key: key
                             
