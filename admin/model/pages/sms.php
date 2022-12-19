@@ -143,10 +143,8 @@
                                 <?php
 	// Account details
 	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
- 
 	// Prepare data for POST request
 	$data = array('apikey' => $apiKey);
- 
 	// Send the POST request with cURL
 	$ch = curl_init('https://api.textlocal.in/get_history_api/');
 	curl_setopt($ch, CURLOPT_POST, true);
@@ -156,7 +154,7 @@
 	curl_close($ch);
 	
 	// Process your response here
-	var_dump( $report['messages']);
+	var_dump( $report['total']);
 ?>
                                     <tr>
                                         <th scope="row">
