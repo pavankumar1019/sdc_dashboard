@@ -135,6 +135,7 @@
                   var dataResult = JSON.parse(dataResult);
                   if(dataResult.statusCode==200){
                  $('#otp_resent').show();
+                 $('#resendotp').attr('disabled', true);
                   }
                   else{
                       
