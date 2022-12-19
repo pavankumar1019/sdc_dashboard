@@ -55,7 +55,7 @@ error_reporting(E_ALL);
 
 	if($_POST["type"]==4){
     $otp=rand(100000,999999);
-    $_SESSION['OTP_staff']=$otp;
+    $_SESSION['OTP']=$otp;
     Fstmsms($_SESSION['phone'],$otp);
     echo json_encode(array("statusCode"=>200));
 	}
