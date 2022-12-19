@@ -51,9 +51,8 @@ error_reporting(E_ALL);
    // Message details
    $numbers = array($number);
    $sender = urlencode('SDCPUC');
-   $message = rawurlencode('Dear asas your score in asasa is
-   asasGrand Total asas
-   SDC College ');
+   $message = rawurlencode('Your OTP : '.$otp
+   'SDC College Bangarpet');
    
    $numbers = implode(',', $numbers);
   
