@@ -12,5 +12,5 @@
 	curl_close($ch);
 	$data=json_decode($report, true);
 	// Process your response here
-	var_dump($data['messages'][0]);
+	var_dump($data['messages']);
 ?>
