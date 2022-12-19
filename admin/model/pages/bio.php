@@ -134,8 +134,71 @@
                             </table>
                         </div>
                     </div>
+<!--Performance Report -->
+                    <div class="card mb-grid">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div class="card-header-title">Performance Report</div>
+                        </div>
+                        <div class="table-responsive-md">
+                            <table class="table table-actions table-striped table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-all">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <th scope="col">Exam</th>
+                                        <th scope="col">Score</th>
+                                        <th scope="col">Result</th>
+                                     
+                                     
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="custom-control custom-checkbox m-0 p-0">
+                                                <input type="checkbox" class="custom-control-input table-select-row">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <h2>Unit Test - 1</h2>
+                                         
+
+                                        </td>
+                                        <td>
+                                            <h1><b>
+                                                KANNADA  20 / 100
+                                                ENGLISH  20 / 100
+                                                PHYSICS  20 / 100
+                                               CHEMISTRY 20 / 100
+                                               MATHEMATICS 20 / 100
+                                               COMPUTER SCIENCE 20 / 100
+ TOTAL 600 / 100
+                                                
+
+                                        </b></h1>
+                                        </td>
+                                        <td>
+                                           PASS
+                                        </td>
+                                  
+                                 
+                                    </tr>
+                                 
 
 
+
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                     <!-- data table end  -->
 
 
