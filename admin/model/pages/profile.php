@@ -92,8 +92,7 @@
                                             <span class="badge badge-pill badge-primary">Balance</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-sm btn-primary" type="button"  data-toggle="modal" data-target="#exampleModalCenter">Collect</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                            <button class="btn btn-sm btn-primary" type="button"  data-toggle="modal" data-target="#exampleModalCenter">Veiw Profile</button>
                                         </td>
                                     </tr>
         
