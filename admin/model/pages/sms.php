@@ -164,21 +164,21 @@
                                             </label>
                                         </th>
                                         <td>
-                                            <h2> <?php echo $repo['number']; ?></h2>
+                                            <h2><?php echo $repo['datetime']; ?> </h2>
                                             
                                         </td>
                                         <td>
-                                            <h5><b>7483737698</b></h1>
+                                            <h5><b><?php echo $repo['number']; ?></b></h1>
                                         </td>
                                         <td>
-                                            <b>SDCPUC</b> 
+                                        <?php echo $repo['sender']; ?>
                                         
                                         </td>
                                         <td>
-                                        Your OTP : 333259 Do not share OTP SDC College Bangarpet  
+                                        <?php echo $repo['content']; ?>
                                         </td>
                                         <td>
-                                        <b>Undelivered </b> 
+                                        <?php echo $repo['status']; ?>
                                         </td>
                                     </tr>
       <?php
