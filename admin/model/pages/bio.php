@@ -39,6 +39,8 @@
                                             <br>
                                             <p style="font-size: medium;"><b>Fixation</b></p>
                                             <h1 style="color:blue;"><b>₹30,000 </b></h1>
+                                            <p style="font-size: medium;"><b>Balance</b></p>
+                                            <h1 style="color:red;"><b>₹10,000 </b></h1>
                                             <p style="font-size: medium;"><b>Paid Detailes</b></p>
                                             <p>20-01-2022:9:22:AM - <b>₹10,000</b> <br>
                                             20-01-2022:9:22:AM - <b>₹10,000</b> <br></p>
