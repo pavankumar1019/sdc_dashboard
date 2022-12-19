@@ -52,7 +52,7 @@ error_reporting(E_ALL);
    // Message details
    $numbers = array($number);
    $sender = urlencode('SDCPUC');
-   $message =  rawurlencode('Dear sdc your score in sdc is 
+   $message = rawurlencode('Dear sdc your score in sdc is 
    sdc Grand Total :sdc RESULT : sdc
    SDC College BANGARPET-563114');
   
