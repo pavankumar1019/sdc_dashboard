@@ -164,7 +164,7 @@
                                             </label>
                                         </th>
                                         <td>
-                                            <h2> <?php echo $repo['numbers']; ?></h2>
+                                            <h2> <?php echo $repo['number']; ?></h2>
                                             
                                         </td>
                                         <td>
