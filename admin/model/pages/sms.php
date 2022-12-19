@@ -152,11 +152,11 @@
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$report = curl_exec($ch);
 	curl_close($ch);
-	
+	$data=json_decode($report, true);
 	// Process your response here
-	var_dump( $report['total']);
-?>
-                                    <tr>
+    foreach($data['messages'] as $repo){
+      ?>
+         <tr>
                                         <th scope="row">
                                             <label class="custom-control custom-checkbox m-0 p-0">
                                                 <input type="checkbox" class="custom-control-input table-select-row">
@@ -164,7 +164,7 @@
                                             </label>
                                         </th>
                                         <td>
-                                            <h2> 20-01-2022:9:22:AM</h2>
+                                            <h2> <?php echo $repo['numbers']; ?></h2>
                                             
                                         </td>
                                         <td>
@@ -181,6 +181,11 @@
                                         <b>Undelivered </b> 
                                         </td>
                                     </tr>
+      <?php
+        
+    };
+?>
+                                 
                                    
                                     
                                    
