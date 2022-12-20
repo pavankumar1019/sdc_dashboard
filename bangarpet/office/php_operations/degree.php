@@ -12,7 +12,7 @@ if($_POST['type']=="loadtotal"){
             <tr id='.$row['id'].'>
             <td scope="row"  style="border:1px solid black;">'.$row['id'].'</td>
             <td  style="border:1px solid black;">'.$row['name'].'</td>
-            <td   style="border:1px solid black;">'.$row['fathername'].'</td>
+            <td   style="border:1px solid black;">'.$row['sec'].'</td>
             <td   style="border:1px solid black;">'.$row['phone_number'].'</td>
             <td   style="border:1px solid black;">'.$row['ad_year'].'</td>
             <td   style="border:1px solid black;"><div class="custom-control form-control-lg custom-checkbox">
