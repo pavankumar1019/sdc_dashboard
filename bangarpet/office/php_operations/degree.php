@@ -34,19 +34,25 @@ if($_POST['type']=="sendsms")
   $query = "SELECT * FROM degree_data WHERE id = '".$id."'";
   $result=$conn->query($query);
   foreach($result as $row){
-
-$method = 'sendMessage';
+    $apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
 	
+
+$sender = urlencode('SDCPUC');
 // Message details
-$content =  rawurlencode('Dear '.$row['name'].' was absent on todays class at SDC College Bangarpet.- SDC');
+$message =  rawurlencode('Dear '.$row['name'].' was absent on todays class at SDC College Bangarpet.- SDC');
       
 
 
+ 
+$numbers = $row['phone_number'];
+  
 // Prepare data for POST request
+$data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
 
 // Send the POST request with cURL
-$ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['phone_number'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCDGR');
-curl_setopt($ch, CURLOPT_POST, false);
+$ch = curl_init('https://api.textlocal.in/send/');
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);
