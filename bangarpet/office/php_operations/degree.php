@@ -37,7 +37,7 @@ if($_POST['type']=="sendsms")
     $apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
 	
 
-$sender = urlencode('SDCPUC');
+$sender = urlencode('SDCDGR');
 // Message details
 $message =  rawurlencode('Dear '.$row['name'].' was absent on todays class at SDC College Bangarpet.- SDC');
       
