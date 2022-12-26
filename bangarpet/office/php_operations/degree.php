@@ -43,6 +43,8 @@ $message =  rawurlencode('Dear '.$row['name'].' was absent on todays class at SD
       
 
 
+
+
  
 $numbers = $row['phone_number'];
   
