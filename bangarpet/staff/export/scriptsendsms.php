@@ -175,11 +175,11 @@ $method = 'sendMessage';
 
   $sender = urlencode('SDCDGR');
     $name =$row['StudentName'];
-    $score=''.$l1.'-'.$row['l1'].'/'. $s1min.'EN-'.$row['l2'].'/'. $s2min.''.$s1.'-'.$row['s1'].'/'. $s3min.''.$s2.'-'.$row['s2'].'/'. $s4min.''.$s3.'-'.$row['s3'].'/'. $s5min.''.$s4.'-'.$row['s4'].'/'. $s6min.'';
-    $testname=$name_test;
+    $score='';
     // Message details
-$content ='Dear '.$name.' your score in '.$testname.' is%n'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'%nSDC College BANGARPET-563114';
+// $content ='Dear  your score in '.$testname.' is%n'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'%nSDC College BANGARPET-563114';
 
+$content='SDC PU COLLEGE BANGARPET%n #No '.$testname.' RESULT%nName:  '.$name_test.'%n'.$l1.'-'.$row['l1'].'/'. $s1min.'%n EN-'.$row['l2'].'/'. $s2min.'%n '.$s1.'-'.$row['s1'].'/'. $s3min.'%n '.$s2.'-'.$row['s2'].'/'. $s4min.'%n '.$s3.'-'.$row['s3'].'/'. $s5min.'%n '.$s4.'-'.$row['s4'].'/'. $s6min.'%nTotal: x%nResult: x';
 
 $numbers = $row['mobile_no'];
       
