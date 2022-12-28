@@ -24,16 +24,11 @@ Result: {#var#}');
 // Prepare data for POST request
 $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $content);
 	// Send the POST request with cURL
-	$ch = curl_init('https://api.textlocal.in/get_history_api/');
+	$ch = curl_init('https://api.textlocal.in/send/');
 	curl_setopt($ch, CURLOPT_POST, true);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	$report = curl_exec($ch);
-	curl_close($ch);
-	$data=json_decode($report, true);
-	// Process your response here
-    foreach($data['messages'] as $repo){
-        var_dump($repo['number']);
-    };
+	$response = curl_exec($ch);
+	echo $response;
 
 ?>
