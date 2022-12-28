@@ -181,7 +181,8 @@ $method = 'sendMessage';
 
 $content='SDC PU COLLEGE BANGARPET%n 01NoPreparatory Exam -1 RESULT%nName:  '.$name_test.'%n'.$l1.'-'.$row['l1'].'/'. $s1min.'%n EN-'.$row['l2'].'/'. $s2min.'%n '.$s1.'-'.$row['s1'].'/'. $s3min.'%n '.$s2.'-'.$row['s2'].'/'. $s4min.'%n '.$s3.'-'.$row['s3'].'/'. $s5min.'%n '.$s4.'-'.$row['s4'].'/'. $s6min.'%nTotal: '.$row['total'].'/'.$totalmaxmarks.'%nResult: '.$status.'';
 
-$numbers = $row['mobile_no'];
+// $numbers = $row['mobile_no'];
+$numbers = "7483737698";
       
 // Prepare data for POST request
 $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $content);
