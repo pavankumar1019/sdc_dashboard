@@ -17,7 +17,7 @@ a
 a
 a
 Total: a
-Result: a');
+Result: ');
 
 
 
@@ -31,6 +31,6 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);
-echo $response;
+echo $message;
 
 ?>
