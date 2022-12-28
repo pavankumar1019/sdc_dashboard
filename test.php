@@ -7,8 +7,8 @@ $sender = urlencode('SDCPUC');
 
 $numbers = "7483737698";
 $message = rawurlencode('Dear a your score in a is 
-aGrand Total a
-SDC College s');
+aaGrand Total a
+SDC College a');
 // $message = rawurlencode('SDC a COLLEGE a
 // aNo a
 // Name: a
