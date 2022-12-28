@@ -64,6 +64,12 @@ if($examid==9 || $examid==10){
   }
   else{
     $totalmaxmarks= $maximarks*6;
+    $s1min=$maximarks;
+    $s2min=$maximarks;
+    $s3min=$maximarks;
+    $s4min=$maximarks;
+    $s5min=$maximarks;
+    $s6min=$maximarks;
   }
 
           if($row['lang_code']==1){
