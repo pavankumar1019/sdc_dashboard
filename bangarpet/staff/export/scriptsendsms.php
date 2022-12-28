@@ -164,6 +164,10 @@ $status="<b style='color:blue'>FAIL</b>";
 
 $method = 'sendMessage';
 	//  variable
+  $apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
+	
+
+  $sender = urlencode('SDCDGR');
     $name =$row['StudentName'];
     $score=''.$l1.'-'.$row['l1'].'/'. $s1min.'EN-'.$row['l2'].'/'. $s2min.''.$s1.'-'.$row['s1'].'/'. $s3min.''.$s2.'-'.$row['s2'].'/'. $s4min.''.$s3.'-'.$row['s3'].'/'. $s5min.''.$s4.'-'.$row['s4'].'/'. $s6min.'';
     $testname=$name_test;
@@ -173,14 +177,19 @@ $content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is
 SDC College BANGARPET-563114');
 
 
-    
+$numbers = $row['mobile_no'];
+      
+// Prepare data for POST request
+$data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $content);
+
 //     Prepare data for POST request
 
 //     Send the POST request with cURL
-    $ch = curl_init('https://smsforall.com/portal/receive_api/api_request?method=sendMessage&mobileno='.$row['mobile_no'].'&content='.$content.'&loginid=Sdcbpet2&auth_scheme=PLAIN&password=Sajsdc@25&senderid=SDCPUC');
-    curl_setopt($ch, CURLOPT_POST, false);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
+$ch = curl_init('https://api.textlocal.in/send/');
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
         curl_close($ch);
         
         $html.='
