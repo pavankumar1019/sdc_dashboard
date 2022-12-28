@@ -2,7 +2,7 @@
 	// Account details
 	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
 	// Prepare data for POST request
-$sender = urlencode('SDCDGR');
+$sender = urlencode('SDCPUC');
 
 
 $numbers = "7483737698";
