@@ -178,7 +178,7 @@ $method = 'sendMessage';
     $score=''.$l1.'-'.$row['l1'].'/'. $s1min.'EN-'.$row['l2'].'/'. $s2min.''.$s1.'-'.$row['s1'].'/'. $s3min.''.$s2.'-'.$row['s2'].'/'. $s4min.''.$s3.'-'.$row['s3'].'/'. $s5min.''.$s4.'-'.$row['s4'].'/'. $s6min.'';
     $testname=$name_test;
     // Message details
-$content ='Dear '.$name.' your score in '.$testname.' is%n'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'%nSDC College BANGARPET-563114';
+// $content ='Dear '.$name.' your score in '.$testname.' is%n'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'%nSDC College BANGARPET-563114';
 
 
 // $numbers = $row['mobile_no'];
