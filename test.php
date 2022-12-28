@@ -2,12 +2,12 @@
 	// Account details
 	$apiKey = urlencode('NDM1OTMzNTA0MjUyMzk2MzVhNGUzMDQ4NzY3NTM5Njc=');
 	// Prepare data for POST request
-	$sender = urlencode('SDCDGR');
+$sender = urlencode('SDCDGR');
 
 
-	$numbers = "7483737698";
+$numbers = "7483737698";
 
-$content =  rawurlencode('SDC 123 COLLEGE 122
+$message =  rawurlencode('SDC 123 COLLEGE 122
 22No22
 Name: 22
 45
