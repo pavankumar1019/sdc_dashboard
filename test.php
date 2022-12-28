@@ -7,9 +7,17 @@
 
 	$numbers = "7483737698";
 
-$content =  rawurlencode('Dear '.$name.' your score in '.$testname.' is 
-'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'
-SDC College BANGARPET-563114');
+$content =  rawurlencode('SDC {#var#} COLLEGE {#var#}
+{#var#}No{#var#}
+Name: {#var#}
+{#var#}
+{#var#}
+{#var#}
+{#var#}
+{#var#}
+{#var#}
+Total: {#var#}
+Result: {#var#}');
 
 
 
