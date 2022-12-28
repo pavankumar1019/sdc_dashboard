@@ -6,18 +6,18 @@ $sender = urlencode('SDCPUC');
 
 
 $numbers = "7483737698";
-
-$message = rawurlencode('SDC a COLLEGE a
-aNo a
-Name: a
-a
-a
-a
-a
-a
-a
-Total: a
-Result: kumar');
+$message =  rawurlencode('Dear pavan was absent on todays class at SDC College Bangarpet.- SDC');
+// $message = rawurlencode('SDC a COLLEGE a
+// aNo a
+// Name: a
+// a
+// a
+// a
+// a
+// a
+// a
+// Total: a
+// Result: kumar');
 
 
 
