@@ -175,7 +175,7 @@ $method = 'sendMessage';
 
   $sender = urlencode('SDCDGR');
     $name =$row['StudentName'];
-    $testname="Preparatory Exam -1";
+    $testname=$name_test;
     // Message details
 // $content ='Dear  your score in '.$testname.' is%n'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'%nSDC College BANGARPET-563114';
 
