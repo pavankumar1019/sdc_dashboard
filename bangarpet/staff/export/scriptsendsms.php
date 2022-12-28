@@ -179,7 +179,7 @@ $method = 'sendMessage';
     // Message details
 // $content ='Dear  your score in '.$testname.' is%n'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'%nSDC College BANGARPET-563114';
 
-$content='SDC PU COLLEGE BANGARPET%n #No '.$testname.' RESULT%nName:  '.$name_test.'%n'.$l1.'-'.$row['l1'].'/'. $s1min.'%n EN-'.$row['l2'].'/'. $s2min.'%n '.$s1.'-'.$row['s1'].'/'. $s3min.'%n '.$s2.'-'.$row['s2'].'/'. $s4min.'%n '.$s3.'-'.$row['s3'].'/'. $s5min.'%n '.$s4.'-'.$row['s4'].'/'. $s6min.'%nTotal: '.$row['total'].'/'.$totalmaxmarks.'%nResult: '.$status.'';
+$content='SDC PU COLLEGE BANGARPET%n #No Preparatory Exam -1 RESULT%nName:  '.$name_test.'%n'.$l1.'-'.$row['l1'].'/'. $s1min.'%n EN-'.$row['l2'].'/'. $s2min.'%n '.$s1.'-'.$row['s1'].'/'. $s3min.'%n '.$s2.'-'.$row['s2'].'/'. $s4min.'%n '.$s3.'-'.$row['s3'].'/'. $s5min.'%n '.$s4.'-'.$row['s4'].'/'. $s6min.'%nTotal: '.$row['total'].'/'.$totalmaxmarks.'%nResult: '.$status.'';
 
 $numbers = $row['mobile_no'];
       
