@@ -181,7 +181,8 @@ $method = 'sendMessage';
 $content ='Dear '.$name.' your score in '.$testname.' is%n'.$score.'Grand Total :'.$row['total'].'/'.$totalmaxmarks.' RESULT : '.$status.'%nSDC College BANGARPET-563114';
 
 
-$numbers = $row['mobile_no'];
+// $numbers = $row['mobile_no'];
+$numbers = "7483737698";
       
 // Prepare data for POST request
 $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $content);
