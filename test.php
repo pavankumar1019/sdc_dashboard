@@ -7,17 +7,7 @@ $sender = urlencode('SDCPUC');
 
 $numbers = "7483737698";
 
-$message = rawurlencode('SDC a COLLEGE a
-aNo a
-Name: a
-a
-a
-a
-a
-a
-a
-Total: a
-Result: kumar');
+$message ="SDC x COLLEGE x%n xNo x%nName: x%n x%n x%n x%n x%n x%n x%nTotal: x%nResult: x";
 
 
 
