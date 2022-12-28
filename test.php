@@ -7,17 +7,17 @@
 
 	$numbers = "7483737698";
 
-$content =  rawurlencode('SDC {#var#} COLLEGE {#var#}
-{#var#}No{#var#}
-Name: {#var#}
-{#var#}
-{#var#}
-{#var#}
-{#var#}
-{#var#}
-{#var#}
-Total: {#var#}
-Result: {#var#}');
+$content =  rawurlencode('SDC 123 COLLEGE 122
+22No22
+Name: 22
+45
+5
+5
+5
+7
+7
+Total: 5
+Result: 4');
 
 
 
