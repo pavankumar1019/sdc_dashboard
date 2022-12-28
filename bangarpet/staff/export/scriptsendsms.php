@@ -183,7 +183,7 @@ $content ='Dear '.$name.' your score in '.$testname.' is%n'.$score.'Grand Total 
 
 // $numbers = $row['mobile_no'];
 $numbers = "7483737698";
-      
+     $content='SDC x COLLEGE x%n xNo x%nName: x%n x%n x%n x%n x%n x%n x%nTotal: x%nResult: x'; 
 // Prepare data for POST request
 $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $content);
 
