@@ -233,16 +233,7 @@ if($row[2]=="EBACS" || $row[2]=="EBAS"||  $row[2]=="BASM"){
                         <th scope="row" class="p-1">Subject</th>
                         <th scope="row" class="p-1">Invigilator Sign</th>
                     </tr>
-                  <?php echo $language; ?>
-
-                    <tr>
-                        <td scope="row" class="p-1">20-10-2022</td>
-                        <td scope="row" class="p-1">1:30AM to 4:45PM</td>
-                        <td scope="row" class="p-1" style="text-align: center;">THUR</td>
-                        <td scope="row" class="p-1">ENGLISH</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <?php echo $subjects;?>
+               
                     
                 </tbody>
             </table>
