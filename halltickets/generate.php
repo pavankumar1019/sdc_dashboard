@@ -234,6 +234,9 @@ if($row[2]=="EBACS" || $row[2]=="EBAS"||  $row[2]=="BASM"){
                         <th scope="row" class="p-1">Invigilator Sign</th>
                     </tr>
                
+
+                   
+                    <?php echo $subjects;?>
                     
                 </tbody>
             </table>
