@@ -84,229 +84,107 @@ if(isset($_POST['type'])=="import_validate"){
   $i=0;
   foreach($data as $row){
 $i++;
-if($row[4]=="1"){
-    $language='
-    <tr>
-    <td scope="row" class="p-1">19-10-2022</td>
-    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-    <td scope="row" class="p-1" style="text-align: center;">WED</td>
-    <td scope="row" class="p-1">Kannada</td>
-    <td scope="row" class="p-1"></td>
-</tr>
-    ';
-}
-if($row[4]=="03"){
-    $language='
-    <tr>
-    <td scope="row" class="p-1">19-10-2022</td>
-    <td scope="row" class="p-1">1:30PM to 4:45PM</td>
-    <td scope="row" class="p-1" style="text-align: center;">WED</td>
-    <td scope="row" class="p-1">HINDI</td>
-    <td scope="row" class="p-1"></td>
-</tr>
-    ';
-}
-if($row[4]=="08"){
-    $language='
-    <tr>
-    <td scope="row" class="p-1">19-10-2022</td>
-    <td scope="row" class="p-1">1:30PM to 4:45PM</td>
-    <td scope="row" class="p-1" style="text-align: center;">WED</td>
-    <td scope="row" class="p-1">URDU</td>
-    <td scope="row" class="p-1"></td>
-</tr>
-    ';
-}
-if($row[4]=="09"){
-    $language='
-    <tr>
-    <td scope="row" class="p-1">19-10-2022</td>
-    <td scope="row" class="p-1">1:30PM to 4:45PM</td>
-    <td scope="row" class="p-1" style="text-align: center;">WED</td>
-    <td scope="row" class="p-1">SANSKRIT</td>
-    <td scope="row" class="p-1"></td>
-</tr>
-    ';
-}
+
 // stream PCMB
-if($row[2]=="PCMB"){
+if($row[2]=="PCMB" || $row[2]=="PCMCS"){
 $subjects='
 <tr>
-                    <td scope="row" class="p-1">21-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                    <td scope="row" class="p-1" style="text-align: center;">FRI</td>
-                    <td scope="row" class="p-1">PHYSICS</td>
+<td scope="row" class="p-1">03/01/2023</td>
+<td scope="row" class="p-1">1:30PM to 4:45PM</td>
+<td scope="row" class="p-1" style="text-align: center;">TUE</td>
+<td scope="row" class="p-1">LANG(FT)/ENG(ST)</td>
+<td scope="row" class="p-1"></td>
+</tr>
+<tr>
+                    <td scope="row" class="p-1">05/01/2023</td>
+                    <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+                    <td scope="row" class="p-1" style="text-align: center;">THUR</td>
+                    <td scope="row" class="p-1">PHY(FT)/BIO(ST)/CS(ST)</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
-                    <td scope="row" class="p-1">22-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
+                    <td scope="row" class="p-1">07/01/2023</td>
+                    <td scope="row" class="p-1">1:30AM to 4:45PM</td>
                     <td scope="row" class="p-1" style="text-align: center;">SAT</td>
-                    <td scope="row" class="p-1">MATHEMATICS</td>
+                    <td scope="row" class="p-1">CHEM(FT)/MATH(ST)</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
-                <td scope="row" class="p-1">28-10-2022</td>
-                <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                <td scope="row" class="p-1" style="text-align: center;">FRI</td>
-                <td scope="row" class="p-1">CHEMISTRY</td>
+                <td scope="row" class="p-1">09/01/2023</td>
+                <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+                <td scope="row" class="p-1" style="text-align: center;">MON</td>
+                <td scope="row" class="p-1">ENG(FT)/LANG(ST)</td>
                 <td scope="row" class="p-1"></td>
             </tr>
             <tr>
-            <td scope="row" class="p-1">29-10-2022</td>
-            <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-            <td scope="row" class="p-1" style="text-align: center;">SAT</td>
-            <td scope="row" class="p-1">BIOLOGY</td>
+            <td scope="row" class="p-1">11/01/2023</td>
+            <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+            <td scope="row" class="p-1" style="text-align: center;">TUE</td>
+            <td scope="row" class="p-1">MATH(FT)/CHEM(ST)</td>
             <td scope="row" class="p-1"></td>
         </tr>
+        <tr>
+        <td scope="row" class="p-1">13/01/2023</td>
+        <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+        <td scope="row" class="p-1" style="text-align: center;">FIR</td>
+        <td scope="row" class="p-1">BIO(FT)/CS(FT)/PHY(ST)</td>
+        <td scope="row" class="p-1"></td>
+    </tr>
                 
 ';
 }
-// stream PCMcs
-if($row[2]=="PCMCS"){
-    $subjects='
-    <tr>
-                        <td scope="row" class="p-1">21-10-2022</td>
-                        <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                        <td scope="row" class="p-1" style="text-align: center;">FRI</td>
-                        <td scope="row" class="p-1">PHYSICS</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="p-1">22-10-2022</td>
-                        <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                        <td scope="row" class="p-1" style="text-align: center;">SAT</td>
-                        <td scope="row" class="p-1">MATHEMATICS</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-                    <tr>
-                    <td scope="row" class="p-1">27-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                    <td scope="row" class="p-1" style="text-align: center;">THUR</td>
-                    <td scope="row" class="p-1">COMPUTER SCIENCE</td>
-                    <td scope="row" class="p-1"></td>
-                </tr>
-                    <tr>
-                    <td scope="row" class="p-1">28-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                    <td scope="row" class="p-1" style="text-align: center;">FRI</td>
-                    <td scope="row" class="p-1">CHEMISTRY</td>
-                    <td scope="row" class="p-1"></td>
-                </tr>
-              
-                    
-    ';
-    }
+
     // stream EBACS
-if($row[2]=="EBACS"){
+if($row[2]=="EBACS" || $row[2]=="EBAS"||  $row[2]=="BASM"){
     $subjects='
     <tr>
-                        <td scope="row" class="p-1">22-10-2022</td>
-                        <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                        <td scope="row" class="p-1" style="text-align: center;">SAT</td>
-                        <td scope="row" class="p-1">ECONOMICS</td>
+    <td scope="row" class="p-1">03/01/2023</td>
+    <td scope="row" class="p-1">1:30PM to 4:45PM</td>
+    <td scope="row" class="p-1" style="text-align: center;">TUE</td>
+    <td scope="row" class="p-1">LANG(FT)/ENG(ST)</td>
+    <td scope="row" class="p-1"></td>
+    </tr>
+    <tr>
+                        <td scope="row" class="p-1">05/01/2023</td>
+                        <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+                        <td scope="row" class="p-1" style="text-align: center;">THUR</td>
+                        <td scope="row" class="p-1">ECO(FT)/BM(FT)/STAT(ST)/CS(ST)</td>
                         <td scope="row" class="p-1"></td>
                     </tr>
-             
                     <tr>
-                    <td scope="row" class="p-1">27-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                    <td scope="row" class="p-1" style="text-align: center;">THUR</td>
-                    <td scope="row" class="p-1">COMPUTER SCIENCE</td>
+                        <td scope="row" class="p-1">07/01/2023</td>
+                        <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+                        <td scope="row" class="p-1" style="text-align: center;">SAT</td>
+                        <td scope="row" class="p-1">BUS(FT)/LANG(ST)</td>
+                        <td scope="row" class="p-1"></td>
+                    </tr>
+                    <tr>
+                    <td scope="row" class="p-1">09/01/2023</td>
+                    <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+                    <td scope="row" class="p-1" style="text-align: center;">MON</td>
+                    <td scope="row" class="p-1">ENG(FT)/ACC(ST)</td>
                     <td scope="row" class="p-1"></td>
                 </tr>
                 <tr>
-                <td scope="row" class="p-1">28-10-2022</td>
-                <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                <td scope="row" class="p-1" style="text-align: center;">FIR</td>
-                <td scope="row" class="p-1">ACCOUNTANCY</td>
+                <td scope="row" class="p-1">11/01/2023</td>
+                <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+                <td scope="row" class="p-1" style="text-align: center;">TUE</td>
+                <td scope="row" class="p-1">ACC(FT)/BUS(ST)</td>
                 <td scope="row" class="p-1"></td>
             </tr>
-                    <tr>
-                    <td scope="row" class="p-1">31-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                    <td scope="row" class="p-1" style="text-align: center;">MON</td>
-                    <td scope="row" class="p-1">BUSINESS STUDIES</td>
-                    <td scope="row" class="p-1"></td>
-                </tr>
+            <tr>
+            <td scope="row" class="p-1">13/01/2023</td>
+            <td scope="row" class="p-1">1:30AM to 4:45PM</td>
+            <td scope="row" class="p-1" style="text-align: center;">FIR</td>
+            <td scope="row" class="p-1">STAT(FT)/CS(FT)/ECO(ST)/BM(ST)</td>
+            <td scope="row" class="p-1"></td>
+        </tr>
               
                     
     ';
     }
         // stream EBAS
-if($row[2]=="EBAS"){
-    $subjects='
-    <tr>
-    <td scope="row" class="p-1">21-10-2022</td>
-    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-    <td scope="row" class="p-1" style="text-align: center;">FRI</td>
-    <td scope="row" class="p-1">STATISTICS</td>
-    <td scope="row" class="p-1"></td>
-</tr>
-    <tr>
-                        <td scope="row" class="p-1">22-10-2022</td>
-                        <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                        <td scope="row" class="p-1" style="text-align: center;">SAT</td>
-                        <td scope="row" class="p-1">ECONOMICS</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-             
-                   
-                <tr>
-                <td scope="row" class="p-1">28-10-2022</td>
-                <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                <td scope="row" class="p-1" style="text-align: center;">FIR</td>
-                <td scope="row" class="p-1">ACCOUNTANCY</td>
-                <td scope="row" class="p-1"></td>
-            </tr>
-                    <tr>
-                    <td scope="row" class="p-1">31-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                    <td scope="row" class="p-1" style="text-align: center;">MON</td>
-                    <td scope="row" class="p-1">BUSINESS STUDIES</td>
-                    <td scope="row" class="p-1"></td>
-                </tr>
-              
-                    
-    ';
-    }
-           // stream BASM
-if($row[2]=="BASM"){
-    $subjects='
-    <tr>
-    <td scope="row" class="p-1">21-10-2022</td>
-    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-    <td scope="row" class="p-1" style="text-align: center;">FRI</td>
-    <td scope="row" class="p-1">STATISTICS</td>
-    <td scope="row" class="p-1"></td>
-</tr>
-    <tr>
-                        <td scope="row" class="p-1">27-10-2022</td>
-                        <td scope="row" class="p-1">1:30PM to 4:45PM</td>
-                        <td scope="row" class="p-1" style="text-align: center;">THU</td>
-                        <td scope="row" class="p-1">BASIC MATHS</td>
-                        <td scope="row" class="p-1"></td>
-                    </tr>
-             
-                   
-                <tr>
-                <td scope="row" class="p-1">28-10-2022</td>
-                <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                <td scope="row" class="p-1" style="text-align: center;">FIR</td>
-                <td scope="row" class="p-1">ACCOUNTANCY</td>
-                <td scope="row" class="p-1"></td>
-            </tr>
-                    <tr>
-                    <td scope="row" class="p-1">31-10-2022</td>
-                    <td scope="row" class="p-1">9:30AM to 12:45PM</td>
-                    <td scope="row" class="p-1" style="text-align: center;">MON</td>
-                    <td scope="row" class="p-1">BUSINESS STUDIES</td>
-                    <td scope="row" class="p-1"></td>
-                </tr>
-              
-                    
-    ';
-    }
+
 ?>
     <section class="line pt-5 " style="padding-bottom:150px;">
 
@@ -316,7 +194,7 @@ if($row[2]=="BASM"){
                 <img src="logo.jpg" width="100px" alt="" srcset="">
             </div>
             <div class="text-center">
-                <h3>SMT. DANAMMA CHANNABASAVIAH (SDC) <br>
+                <h3>SMT. DANAMMA CHANNABASAVAIAH (SDC) <br>
                     INDEPENDENT PU COLLEGE
                 </h3>
                 <h5><?php echo $_POST['address']; ?></h5>
@@ -326,7 +204,7 @@ if($row[2]=="BASM"){
         </div>
         <div class="row">
             <div class="col-6 text-left">
-                <b> I / II PU MID-TERM Examination - OCT 2022</b>
+                <b>II PU PREPARATORY EXAMINATION - 3 </b>
             </div>
             <div class="col-6 text-right">
                 <b>College Code : <?php echo $_POST['code'];?></b>
@@ -359,7 +237,7 @@ if($row[2]=="BASM"){
 
                     <tr>
                         <td scope="row" class="p-1">20-10-2022</td>
-                        <td scope="row" class="p-1">9:30AM to 12:45PM</td>
+                        <td scope="row" class="p-1">1:30AM to 4:45PM</td>
                         <td scope="row" class="p-1" style="text-align: center;">THUR</td>
                         <td scope="row" class="p-1">ENGLISH</td>
                         <td scope="row" class="p-1"></td>
